@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+import "../static/style-mobile.css"
+import "../static/style-desktop.css"
+import "../static/style-tablet.css"
 
 class App extends React.Component {
 
