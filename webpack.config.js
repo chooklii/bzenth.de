@@ -1,6 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const path = require("path");
 
 module.exports = {
     module: {
@@ -25,22 +25,22 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../public/index.html",
+          filename: "../docs/index.html",
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../public/private/index.html"
+          filename: "../docs/private/index.html"
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../public/projekte/index.html"
+          filename: "../docs/projekte/index.html"
         }),
 
         new MiniCssExtractPlugin({
-          filename: "../public/style.css"
+          filename: "../docs/style.css"
         })
       ],
     output: {
-      filename: "../public/bundle.js"
+      filename: "../docs/bundle.js"
     }
   };
