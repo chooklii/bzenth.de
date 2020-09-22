@@ -1,13 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import {
-  Skills,
-  Contact,
-  Home,
-  NotFound,
-  Private,
-  Projects,
-} from "./Pages";
+import { Skills, Contact, Home, NotFound, Private, Projects } from "./Pages";
+import { ScrollToTop } from "./Components";
 
 import "../static/style-mobile.css";
 import "../static/style-desktop.css";
@@ -20,22 +14,34 @@ class App extends React.Component {
         <div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <ScrollToTop>
+                <Home />
+              </ScrollToTop>
             </Route>
             <Route exact path="/projekte">
-              <Projects />
+              <ScrollToTop>
+                <Projects />
+              </ScrollToTop>
             </Route>
             <Route exact path="/skills">
-              <Skills />
+              <ScrollToTop>
+                <Skills />
+              </ScrollToTop>
             </Route>
             <Route exact path="/privat">
-              <Private />
+              <ScrollToTop>
+                <Private />
+              </ScrollToTop>
             </Route>
             <Route exact path="/kontakt">
-              <Contact />
+              <ScrollToTop>
+                <Contact />
+              </ScrollToTop>
             </Route>
             <Route path="/*">
-              <NotFound />
+              <ScrollToTop>
+                <NotFound />
+              </ScrollToTop>
             </Route>
           </Switch>
         </div>

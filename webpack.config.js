@@ -46,6 +46,10 @@ module.exports = {
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
+          filename: "../docs/skills/index.html"
+        }),
+        new HtmlWebPackPlugin({
+          template: "./static/index.html",
           filename: "../docs/404.html"
         }),
         new MiniCssExtractPlugin({

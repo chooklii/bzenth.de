@@ -2,10 +2,19 @@
 
 @media screen and (min-width: 769px) {
 
+#root{
+    min-height: 2000px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
 .header-image{
     background-image: url("./header.jpg");
     background-size: cover;
-    min-height: 500px;
+    height: 200px;
     background-position: center;
 }
 
