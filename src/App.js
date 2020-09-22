@@ -10,17 +10,24 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <div>
+                    {console.log("test")}
                     <Switch>
                         <Route exact path="/">
                             <div>
                                 Seite in Arbeit
-                    </div>
+                            </div>
                         </Route>
 
-                        <Route exact path="/private">
+                        <Route exact path="/privat">
                             <div>
                                 About me in Arbeit :)
-                    </div>
+                            </div>
+                        </Route>
+
+                        <Route path="*">
+                            <div>
+                                Nicht gefunden
+                            </div>
                         </Route>
                     </Switch>
                 </div>

@@ -3,6 +3,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
 
 module.exports = {
+    devServer: {
+      contentBase: path.join(__dirname, 'docs'),
+      compress: true,
+      port: 9000
+    },
     module: {
       rules: [
         {
@@ -29,18 +34,27 @@ module.exports = {
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../docs/private/index.html"
+          filename: "../docs/privat/index.html"
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
           filename: "../docs/projekte/index.html"
         }),
-
+        new HtmlWebPackPlugin({
+          template: "./static/index.html",
+          filename: "../docs/kontakt/index.html"
+        }),
+        new HtmlWebPackPlugin({
+          template: "./static/index.html",
+          filename: "../docs/404.html"
+        }),
         new MiniCssExtractPlugin({
-          filename: "../docs/style.css"
+          filename: "style.css",
+          path: path.resolve(__dirname, "docs")
         })
       ],
     output: {
-      filename: "../docs/bundle.js"
+      filename: "bundle.js",
+      path: path.resolve(__dirname, "docs")
     }
   };
