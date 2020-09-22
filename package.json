@@ -21,8 +21,8 @@
     "sharp": "^0.24.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode production",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"

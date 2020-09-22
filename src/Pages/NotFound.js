@@ -1,4 +1,5 @@
 import React from "react"
+import {Header} from "../Components"
 
 class NotFound extends React.Component {
 
@@ -6,7 +7,8 @@ class NotFound extends React.Component {
     render(){
         return(
             <div>
-                Route nicht gefunden
+                <Header/>
+                Seite nicht gefunden
             </div>
         )
     }

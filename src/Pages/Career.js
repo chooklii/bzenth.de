@@ -1,7 +1,6 @@
 import React from "react"
 import {Header} from "../Components"
-
-class Private extends React.Component {
+class Career extends React.Component {
 
 
     render(){
@@ -13,4 +12,4 @@ class Private extends React.Component {
     }
 }
 
-export default Private
+export default Career

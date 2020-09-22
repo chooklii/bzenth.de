@@ -1,5 +1,38 @@
 /*Style Desktop Layout*/
 
-#bla{
-    color: red;
+@media screen and (min-width: 769px) {
+
+.header-image{
+    background-image: url("./header.jpg");
+    background-size: cover;
+    min-height: 500px;
+    background-position: center;
+}
+
+.header-nav{
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute;
+    background: rgba(0,0,0,.1);
+
+}
+
+.header-element{
+    padding: 1.5em 1.5em;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    display: inline-block
+}
+
+.header-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
 }
