@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
-  Career,
+  Skills,
   Contact,
   Home,
   NotFound,
@@ -25,8 +25,8 @@ class App extends React.Component {
             <Route exact path="/projekte">
               <Projects />
             </Route>
-            <Route exact path="/werdegang">
-              <Career />
+            <Route exact path="/skills">
+              <Skills />
             </Route>
             <Route exact path="/privat">
               <Private />

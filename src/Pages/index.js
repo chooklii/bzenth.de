@@ -1,4 +1,4 @@
-import Career from "./Career"
+import Skills from "./Career"
 import Contact from "./Contact"
 import NotFound from "./NotFound"
 import Private from "./Private"
@@ -6,7 +6,7 @@ import Projects from "./Projects"
 import Home from "./Home"
 
 export{
-    Career,
+    Skills,
     Contact,
     NotFound,
     Private,

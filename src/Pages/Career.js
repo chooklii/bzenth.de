@@ -1,6 +1,6 @@
 import React from "react"
 import {Header} from "../Components"
-class Career extends React.Component {
+class Skills extends React.Component {
 
 
     render(){
@@ -12,4 +12,4 @@ class Career extends React.Component {
     }
 }
 
-export default Career
+export default Skills
