@@ -9,6 +9,7 @@
 .header{
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .header-image{
@@ -60,4 +61,65 @@
     position: absolute;
     bottom: 150px
 }
+
+.contact{
+    padding-top: 230px;
+    position: fixed;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.contact-options{
+    display: inline-flex;
+    margin-left: 10%;
+    margin-top: 20px
+}
+
+.contact-icons{
+    display: grid
+}
+
+.contact-heading{
+    font-size: 50px;
+    margin-left: 20%;
+}
+
+.contact-mailadress{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 5px
+}
+
+.contact-xingname{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.contact-xing-icon{
+    margin-top: 15px;
+}
+
+.contact-image{
+    background-image: url("./contact.jpg");
+    background-size: cover;
+    height: 337px;
+    width: 600px;
+    float: right;
+    margin-right: 15%;
+}
+
+.contact-first-line{
+    font-size: 20px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.contact-second-line{
+    font-size: 17px;
+    margin-top: 10px;
+    width: 50%;
+}
+
 }
