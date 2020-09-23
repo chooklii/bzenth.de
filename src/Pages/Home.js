@@ -1,12 +1,13 @@
 import React from "react"
-import {Header} from "../Components"
+import {HomeHeader, Header} from "../Components"
 class Home extends React.Component {
 
 
     render(){
+        const callFromThisPage = document.referrer.includes(window.location.hostname)
         return(
             <div className="HomePage">
-                <Header effect={true}/>
+                {callFromThisPage ? <Header/> : <HomeHeader/>}
             </div>
         )
     }
