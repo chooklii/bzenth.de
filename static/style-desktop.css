@@ -2,6 +2,11 @@
 
 @media screen and (min-width: 769px) {
 
+body{
+    margin: 0;
+    font-family: system-ui;
+}
+
 #root{
     min-height: 2000px;
 }
@@ -121,5 +126,120 @@
     margin-top: 10px;
     width: 50%;
 }
+
+.projects-box{
+    padding-top: 230px
+}
+
+.projects-heading{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects-heading-underline{
+    font-size: 20px;
+    text-align: center;
+}
+
+.projects-picture-left{
+    width: 95%;
+    background-color: gainsboro;
+    min-height: 50px;
+    margin-top: 10px;
+    display: inline-flex;
+    border: 1px solid black;
+    margin-left: 2.5%;
+}
+
+.projects-picture-right{
+    width: 95%;
+    background-color: gray;
+    min-height: 50px;
+    margin-top: 25px;
+    display: inline-flex;
+    border: 1px solid black;
+    margin-left: 2.5%;
+}
+
+.projects{
+    width: 100%;
+}
+
+.project-oepnv-image{
+    background-image: url("./oepnv.png");
+    background-size: cover;
+    width: 600px;
+    height: 337.5px;
+    margin: 3%;
+    border: 1px solid black
+}
+
+.project-bzenth-image{
+    background-image: url("./oepnv.png");
+    background-size: cover;
+    width: 600px;
+    height: 337.5px;
+    margin: 3%;
+    border: 1px solid black
+}
+
+.project-left-content{
+    width: 50%;
+    margin: 3%
+}
+
+.project-right-content{
+    width: 50%;
+    margin: 3%
+}
+
+.project-hartwork-image{
+    background-image: url("./oepnv.png");
+    background-size: cover;
+    width: 600px;
+    height: 337.5px;
+    margin: 3%;
+    border: 1px solid black
+}
+
+.project-heading{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-description-one{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.project-description-two{
+    margin-top: 10px;
+    font-size: 18px;
+    display: inline-grid
+}
+
+.project-press-link{
+    display: list-item;
+    margin-left: 20%;
+    color: black
+}
+
+.project-description-three{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.project-link{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    color: black
+}
+
 
 }
