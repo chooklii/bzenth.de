@@ -8,7 +8,11 @@ class NotFound extends React.Component {
         return(
             <div>
                 <Header/>
-                Seite nicht gefunden
+                <div className="notFound-content">
+                    Ich kann Ihnen bei ihrer eigenen Internetseite oder ihrem IT-Projekt helfen, aber diese Seite finden kann ich leider nicht.
+                    Am besten nutzen Sie die Links im Header um auf eine gültige Adresse zu gelangen.
+                </div>
+                <div className="notFound-image"></div>
             </div>
         )
     }

@@ -28,6 +28,7 @@ body{
     background-size: cover;
     height: 200px;
     background-position: center;
+    border-bottom: 1px solid black;
 }
 
 .header-nav{
@@ -45,14 +46,11 @@ body{
     text-align: center;
     text-decoration: none;
     height: 100%;
-    display: inline-block
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
-.header-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
 
 .header-scroll-down{
     position: absolute;
@@ -119,6 +117,7 @@ body{
     width: 600px;
     float: right;
     margin-right: 15%;
+    border: 1px solid black
 }
 
 .contact-first-line{
@@ -157,13 +156,14 @@ body{
     display: inline-flex;
     border: 1px solid black;
     margin-left: 2.5%;
+    margin-bottom: 25px;
 }
 
 .projects-picture-right{
     width: 95%;
     background-color: gray;
     min-height: 50px;
-    margin-top: 25px;
+    margin-bottom: 25px;
     display: inline-flex;
     border: 1px solid black;
     margin-left: 2.5%;
@@ -183,7 +183,7 @@ body{
 }
 
 .project-bzenth-image{
-    background-image: url(../static/oepnv.png);
+    background-image: url(../static/bzenth.png);
     background-size: cover;
     width: 600px;
     height: 337.5px;
@@ -247,6 +247,53 @@ body{
     color: black
 }
 
+.skills{
+    padding-top: 230px;
+}
+
+.programming{
+    width: 100%;
+}
+
+.skills-heading{
+    text-align: center;
+}
+
+.skills-one-category{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.single-skill{
+    display: inline-flex;
+    min-height: 30px;
+    margin-left: 10%;
+    width: 40%;
+}
+
+.rating-element{
+    padding: 2px
+}
+
+.skill-name{
+    width: 30%;
+}
+
+.notFound-content{
+    padding-top: 230px;
+    padding-left: 3em;
+}
+
+.notFound-image{
+    background-image: url(../static/404.jpg);
+    width: 400px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 40%;
+    margin-top: 1em;
+    border: 1px solid black;
+}
 
 }
 /*Style Tablet Layout*/

@@ -1,4 +1,4 @@
-import Skills from "./Career"
+import Skills from "./Skills"
 import Contact from "./Contact"
 import NotFound from "./NotFound"
 import Private from "./Private"

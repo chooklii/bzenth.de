@@ -1,5 +1,12 @@
 import React from "react"
 import {Header} from "../Components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub
+} from "@fortawesome/free-brands-svg-icons";
+import {
+    faBus
+} from "@fortawesome/free-solid-svg-icons"
 
 class Projects extends React.Component {
 
@@ -29,7 +36,7 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="project-link">
-                <a target="_blank" href="https://www.oepnv-transparenzregister.de/" className="project-link">Link zur Internetseite</a>
+                <a target="_blank" href="https://www.oepnv-transparenzregister.de/" className="project-link"><FontAwesomeIcon icon={faBus}/>Link zur Internetseite</a>
                 </div>
             </div>
 
@@ -53,19 +60,25 @@ class Projects extends React.Component {
 
     bzenth_project(){
         return(
-            <div className="projects-picture-left">
-
-            <div className="project-bzenth-image"></div>
-            <div className="project-left-content">
-                <div className="project-heading">Diese Internetseite</div>
-
-                <div className="project-description-one">
-                        Beschreibung
+            <div className="projects-picture-right">
+            <div className="project-right-content">
+            <div className="project-heading">Diese Internetseite</div>
+            <div className="project-description-one">
+                Aktuell angezeigte Internetseite über meine Person.
+                    Mit dem Javascript Framework React.js entwickelt und durch Webpack gebundelt.
                 </div>
-
+                <div className="project-description-two">
+                    Die Seite wird über Github Pages gehostet.
+                </div>
+                <div className="project-description-three">
+                    Der Source Code der Seite ist bei Interesse öffentlich auf meinem GitHub Account einsehbar.
+                </div>
+                <div className="project-link">
+                <a target="_blank" href="https://github.com/chooklii/bzenth.de" className="project-link"><FontAwesomeIcon icon={faGithub}/>Link zu GitHub</a>
+                </div>
             </div>
-
-        </div>
+            <div className="project-bzenth-image"></div>
+            </div>
         )
     }
 
@@ -85,7 +98,6 @@ class Projects extends React.Component {
 
                     <div className="projects">
                     {this.oepnv_project()}
-                    {this.hartwork_project()}
                     {this.bzenth_project()}
                     </div>
 
