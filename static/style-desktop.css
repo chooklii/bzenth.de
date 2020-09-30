@@ -5,16 +5,18 @@
 body{
     margin: 0;
     font-family: system-ui;
-}
-
-#root{
-    min-height: 2000px;
+    height: 1100px;
 }
 
 .header{
     position: fixed;
     width: 100%;
     z-index: 10;
+    top: 0
+}
+
+.header-wrapper{
+    height: 100%;
 }
 
 .header-image{
@@ -23,6 +25,7 @@ body{
     height: 200px;
     background-position: center;
     border-bottom: 1px solid black;
+    transition: all .5s linear;
 }
 
 .header-nav{
@@ -254,14 +257,14 @@ body{
 }
 
 .skills-one-category{
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 25%;
 }
 
 .single-skill{
     display: inline-flex;
     min-height: 30px;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 40%;
 }
 
@@ -288,5 +291,75 @@ body{
     margin-top: 1em;
     border: 1px solid black;
 }
+
+.private-content{
+    padding-top: 230px
+}
+
+.private-cv-title{
+    text-align: center;
+}
+
+.private-single-cv{
+    display: flex;
+    padding: .5em
+}
+
+.cv-time{
+    width: 20%;
+}
+
+.private-cv{
+    width: 70%;
+    margin-left: 23%;
+}
+
+.private-private-title{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.private-private{
+    margin-left: 23%;
+    padding: .5em;
+    width: 50%;
+}
+
+.private-image-trollinger{
+    background-image: url("./it.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.private-image{
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-content{
+    padding-top: 230px
+}
+
+.home-welcome{
+    text-align: center;
+    font-size: 40px;
+    min-height: 80px;
+    display: grid
+}
+
+.home-rotating-text{
+    font-family: "Courier New", Courier, monospace;
+    height: 40px;
+}
+
+.home-welcome-text{
+    font-family: fantasy;
+}
+
+
 
 }

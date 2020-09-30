@@ -4,12 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 class HomeHeader extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      animationdone: false
+    }
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
   componentDidMount() {
-    document.getElementsByClassName("header-image")[0].style.height =
-      window.innerHeight + "px";
+    document.getElementsByClassName("header-image")[0].style.height =window.innerHeight + "px";
     document.getElementsByClassName("header-nav")[0].style.display = "none";
-    document.getElementsByClassName("header-scroll-down")[0].style.display =
-      "block";
+    document.getElementsByClassName("header-scroll-down")[0].style.display = "block";
     window.addEventListener("scroll", this.handleScroll);
   }
 
@@ -18,30 +26,24 @@ class HomeHeader extends React.Component {
   }
 
   handleScroll() {
-    const scrollValue = 3 * window.pageYOffset;
-    if (scrollValue !== 0) {
+    const scrollValue = document.documentElement.scrollTop
+    if (scrollValue !== 0 && !this.state.animationdone) {
       document.getElementsByClassName("header-nav")[0].style.display = "block";
-      document.getElementsByClassName("header-scroll-down")[0].style.display =
-        "none";
-      document.getElementsByClassName("header-name-text")[0].style.display =
-        "none";
-    } else {
-      document.getElementsByClassName("header-nav")[0].style.display = "none";
-      document.getElementsByClassName("header-scroll-down")[0].style.display =
-        "block";
-      document.getElementsByClassName("header-name-text")[0].style.display =
-        "block";
-    }
-    if (scrollValue >= 800) {
+      document.getElementsByClassName("header-scroll-down")[0].style.display ="none";
+      document.getElementsByClassName("header-name-text")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "200px";
-    } else {
-      document.getElementsByClassName("header-image")[0].style.height =
-        window.innerHeight - scrollValue + "px";
+      window.scrollTo(0,0)
+
+      setTimeout(function(){
+        this.setState({animationdone: true})
+      }.bind(this)
+      , 1000)
     }
   }
 
   render() {
     return (
+      <div className="header-wrapper">
       <div className="header">
         <div className="header-nav">
           <Link className="header-element" to="/">
@@ -67,6 +69,7 @@ class HomeHeader extends React.Component {
             <FontAwesomeIcon icon={faAngleDown} size="6x" />
           </div>
         </div>
+      </div>
       </div>
     );
   }
