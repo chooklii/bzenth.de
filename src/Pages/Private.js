@@ -52,8 +52,8 @@ class Private extends React.Component {
                             einem allgemeinen Interesse an fast jeder Sportart.
                         </div>
                             <figure className="private-image">
-                                <div className="private-image-trollinger"></div>
-                                <figcaption>Trollinger Marathon 2018 </figcaption>
+                                <div className="private-image-berlin"></div>
+                                <figcaption>Berlin Marathon 2019 </figcaption>
                             </figure>
 
 

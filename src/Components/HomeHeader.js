@@ -18,6 +18,7 @@ class HomeHeader extends React.Component {
     document.getElementsByClassName("header-image")[0].style.height =window.innerHeight + "px";
     document.getElementsByClassName("header-nav")[0].style.display = "none";
     document.getElementsByClassName("header-scroll-down")[0].style.display = "block";
+    document.getElementsByTagName("body")[0].style.height = window.innerHeight + 1 + "px"
     window.addEventListener("scroll", this.handleScroll);
   }
 
@@ -32,6 +33,7 @@ class HomeHeader extends React.Component {
       document.getElementsByClassName("header-scroll-down")[0].style.display ="none";
       document.getElementsByClassName("header-name-text")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "200px";
+      document.getElementsByTagName("body")[0].style.height = "auto"
       window.scrollTo(0,0)
 
       setTimeout(function(){

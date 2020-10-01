@@ -15,15 +15,10 @@ const rotatingText = function(el, toRotate, period) {
     const i = this.loopNum % this.toRotate.length;
     const fullTxt = this.toRotate[i];
 
-    if (this.isDeleting) {
-      this.text = fullTxt.substring(0, this.text.length - 1);
-    } else {
-      this.text = fullTxt.substring(0, this.text.length + 1);
-    }
-
-    this.element.innerHTML = '<span class="wrap">'+this.text+'</span>';
-
+    this.text = this.isDeleting ? fullTxt.substring(0, this.text.length - 1) : fullTxt.substring(0, this.text.length + 1)
+    this.element.innerHTML = '<span class="home-rotating-text">'+this.text+'</span>';
     const that = this;
+
     var delta = 300 - Math.random() * 100;
 
     if (this.isDeleting) {

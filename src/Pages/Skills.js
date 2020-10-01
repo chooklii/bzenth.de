@@ -48,6 +48,7 @@ class Skills extends React.Component {
       { name: "CSS", rating: 4 },
       { name: "Webpack", rating: 3 },
       { name: "Redux", rating: 3 },
+      { name: "Flask", rating: 3},
       { name: "Express", rating: 3 },
       { name: "Dropwizard", rating: 2 },
       { name: "Kafka", rating: 2 },

@@ -11,7 +11,6 @@
 body{
     margin: 0;
     font-family: system-ui;
-    height: 1100px;
 }
 
 .header{
@@ -331,8 +330,8 @@ body{
     width: 50%;
 }
 
-.private-image-trollinger{
-    background-image: url(../static/it.jpg);
+.private-image-berlin{
+    background-image: url(../static/berlin.jpg);
     background-size: cover;
     width: 300px;
     height: 200px;
