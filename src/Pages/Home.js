@@ -67,6 +67,24 @@ class Home extends React.Component {
                         text='[ "Welcome", "Willkommen", "Benvenuto", "欢迎", "Bienvenue", "Velkominn"]'></span>
                         <div className="home-welcome-text">auf meiner Webseite</div>
                     </div>
+                    <div className="home-images">
+                    <figure className="home-single-image">
+                            <div className="home-images-plan"></div>
+                            <figcaption className="home-underline">Design</figcaption>
+                    </figure>
+
+                    <figure className="home-single-image">
+                    <div className="home-images-code"></div>
+                            <figcaption className="home-underline">Implementation</figcaption>
+                    </figure>
+
+                    <figure className="home-single-image">
+                    <div className="home-images-page"></div>
+                            <figcaption className="home-underline">Launch</figcaption>
+                    </figure>
+
+
+                    </div>
                 </div>
             </div>
         )
