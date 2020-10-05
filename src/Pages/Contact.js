@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faXing } from "@fortawesome/free-brands-svg-icons";
+import { faXing, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class Contact extends React.Component {
   render() {
@@ -26,20 +26,31 @@ class Contact extends React.Component {
           <div className="contact-options">
             <div className="contact-icons">
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
-              <div className="contact-xing-icon">
+              <div className="contact-icon">
                 <FontAwesomeIcon icon={faXing} size="2x" />
+              </div>
+              <div className="contact-icon">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </div>
             </div>
             <div className="contact-values">
               <div className="contact-mailadress">
                 benjaminzenth(at)icloud.com
               </div>
-              <div className="contact-xingname">
+              <div className="contact-text">
                 <a
                   target="_blank"
                   href="https://www.xing.com/profile/Benjamin_Zenth/cv"
                 >
                   Benjamin Zenth
+                </a>
+              </div>
+              <div className="contact-text">
+              <a
+                  target="_blank"
+                  href="https://github.com/chooklii"
+                >
+                  Github
                 </a>
               </div>
             </div>
