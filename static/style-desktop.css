@@ -373,6 +373,13 @@ body{
     border: 1px solid black
 }
 
+.home-text-box{
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black
+}
+
 .home-images-code{
     background-image: url("/static/code.jpg");
     background-size: cover;
@@ -380,6 +387,7 @@ body{
     height: 300px;
     border: 1px solid black
 }
+
 
 .home-images-page{
     background-image: url("/static/page.jpg");
@@ -398,6 +406,28 @@ body{
 .home-underline{
     font-size: 20px;
     margin-top: 10px
+}
+
+.home-icon-black{
+    cursor: pointer;
+    float: right;
+    padding: 1%;
+    color: black
+}
+
+.home-icon-white{
+    cursor: pointer;
+    float: right;
+    padding: 1%;
+    color: white
+}
+
+.home-info-text{
+    height: 70%;
+    margin-top: 20%;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 
