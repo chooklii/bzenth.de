@@ -118,7 +118,7 @@ class Contact extends React.Component {
           </div>
 
           <h2 className="contact-formular-heading">Kontaktformular</h2>
-          <div className="contact-first-line">Einfach Daten eintragen und ich melde mich bei Ihnen.</div>
+          <div className="contact-first-line">Einfach Daten eingeben und ich melde mich bei Ihnen.</div>
           {this.state.showForm &&
           <form className="form-contact" noValidate autoComplete="off">
             <div className="form-topic">
