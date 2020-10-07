@@ -81,7 +81,7 @@ class Home extends React.Component {
               period="1000"
               text='[ "Welcome", "Willkommen", "Benvenuto", "欢迎", "Bienvenue", "Velkominn"]'
             ></span>
-            <div className="home-welcome-text">auf meiner Webseite</div>
+            <h1 className="home-welcome-text">auf meiner Webseite</h1>
           </div>
           <div className="home-images">
             <figure className="home-single-image">

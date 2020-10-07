@@ -69,7 +69,6 @@ body{
 
 .contact{
     padding-top: 230px;
-    position: fixed;
     padding-left: 30px;
     width: 100%;
 }
@@ -353,10 +352,14 @@ body{
 .home-rotating-text{
     font-family: "Courier New", Courier, monospace;
     height: 40px;
+
 }
 
 .home-welcome-text{
     font-family: fantasy;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0
 }
 
 .home-images{
@@ -430,6 +433,46 @@ body{
     padding-right: 5%;
 }
 
+.form-contact{
+    width: 100%;
+    display: inline-flex;
+    padding-top: 2em
+}
+
+.form-description{
+    margin-left: 1em
+}
+
+.form-mail{
+    margin-left: 1em
+}
+
+.form-crawler{
+    display: none
+}
+
+.form-button{
+    margin-left: 1em
+}
+
+.contact-formular-heading{
+    text-align: center;
+    width: 100%;
+}
+
+.contact-message-success{
+    color: darkgreen;
+    font-size: 20px;
+}
+
+.contact-success{
+    display: inline-flex;
+    padding-top: 1em
+}
+
+.contact-success-button{
+    margin-left: 1em
+}
 
 
 }
