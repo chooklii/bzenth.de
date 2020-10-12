@@ -8,7 +8,8 @@ class HomeHeader extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      animationdone: false
+      animationdone: false,
+      mobileMenu: false
     }
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -16,6 +17,7 @@ class HomeHeader extends React.Component {
 
   componentDidMount() {
     document.getElementsByClassName("header-image")[0].style.height =window.innerHeight + "px";
+    document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.display = "none";
     document.getElementsByClassName("header-nav")[0].style.display = "none";
     document.getElementsByClassName("header-scroll-down")[0].style.display = "block";
     document.getElementsByTagName("body")[0].style.height = window.innerHeight + 1 + "px"
@@ -29,11 +31,11 @@ class HomeHeader extends React.Component {
   handleScroll() {
     const scrollValue = document.documentElement.scrollTop
     if (scrollValue !== 0 && !this.state.animationdone) {
-      document.getElementsByClassName("header-nav")[0].style.display = "block";
       document.getElementsByClassName("header-scroll-down")[0].style.display ="none";
       document.getElementsByClassName("header-name-text")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "200px";
-      document.getElementsByTagName("body")[0].style.height = "auto"
+      document.getElementsByTagName("body")[0].style.height = "auto";
+      document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.display = "block";
       window.scrollTo(0,0)
 
       setTimeout(function(){
@@ -43,24 +45,59 @@ class HomeHeader extends React.Component {
     }
   }
 
+  showMobileMenu(){
+    const {mobileMenu} = this.state
+    if(mobileMenu){
+      document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByTagName("body")[0].style.display = "block"
+      document.getElementById("root").style.pointerEvents = "all"
+      document.getElementsByClassName("header-nav")[0].style.display = "none"
+    }else{
+      document.getElementsByTagName("body")[0].style.marginLeft = "256px"
+      document.getElementsByTagName("body")[0].style.display = "flex"
+      document.getElementById("root").style.pointerEvents = "none"
+      document.getElementsByClassName("header")[0].style.pointerEvents = "all "
+      document.getElementsByClassName("header-nav")[0].style.display = "block"
+    }
+    this.setState({mobileMenu: !mobileMenu})
+  }
+
+  hideMenu(){
+    const {mobileMenu} = this.state
+    if(mobileMenu){
+      this.setState({mobileMenu: false})
+      document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByTagName("body")[0].style.display = "block"
+      document.getElementById("root").style.pointerEvents = "all"
+      document.getElementsByClassName("header-nav")[0].style.display = "none"
+    }
+  }
+
   render() {
     return (
       <div className="header-wrapper">
       <div className="header">
+      <div className="header-mobile-menu-wrapper">
+          <span onClick={() => this.showMobileMenu()} className="header-mobile-span">
+            <div className="header-mobile-menu-icon"></div>
+          </span>
+          <h1 className="header-mobile-heading">Benjamin Zenth</h1>
+
+        </div>
         <div className="header-nav">
-          <Link className="header-element" to="/">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/">
             Home
           </Link>
-          <Link className="header-element" to="/projekte">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte">
             Projekte
           </Link>
-          <Link className="header-element" to="/skills">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/skills">
             Skills
           </Link>
-          <Link className="header-element" to="/privat">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/privat">
             About me
           </Link>
-          <Link className="header-element" to="/kontakt">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/kontakt">
             Kontakt
           </Link>
         </div>

@@ -2,6 +2,393 @@
 
 @media screen and (max-width: 480px) {
 
+    body{
+        margin: 0;
+        font-family: system-ui;
+    }
+
+    .header{
+        background-image: url(../static/header.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-name-text{
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        padding-top: 130%;
+        font-family: Brush Script MT,cursive
+    }
+
+    .header-scroll-down{
+        width: 100%;
+        text-align: center;
+        color: white
+    }
+
+    .home-rotating-text{
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        height: 20px;
+        font-size: 20px;
+    }
+
+    .home-welcome{
+        text-align: center;
+        font-size: 20px;
+        min-height: 50px;
+        display: grid;
+        padding-top: 1em
+    }
+
+    .home-welcome-text{
+        font-family: fantasy;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .home-images-plan{
+        background-image: url(/static/plan.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .home-images-code{
+        background-image: url(/static/code.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .home-images-page{
+        background-image: url(/static/page.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .home-underline{
+        text-align: center;
+    }
+
+    .home-icon-black{
+        cursor: pointer;
+        float: right;
+        padding: 1%;
+        color: black;
+    }
+
+    .home-icon-white{
+        cursor: pointer;
+        float: right;
+        padding: 1%;
+        color: white;
+    }
+
+    .skills{
+        margin-top: 4em
+    }
+
+    .private-content{
+        margin-top: 4em
+    }
+
+    .projects-box{
+        margin-top: 2em
+    }
+
+    .contact{
+        margin-top: 2em
+    }
+
+    .skills-heading{
+        text-align: center;
+    }
+
+    .skills-one-category{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .single-skill{
+        width: 100%;
+        display: inline-flex;
+        padding: .3em
+    }
+
+    .skill-name{
+        width: 50%;
+    }
+
+    .private-cv-title{
+        text-align: center;
+    }
+
+    .private-cv{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .private-single-cv{
+        padding: .3em
+    }
+
+    .cv-time{
+        font-style: oblique;
+    }
+
+    .cv-text{
+        font-weight: lighter;
+    }
+
+    .private-private-title{
+        text-align: center;
+    }
+
+    .private-private{
+        width: 90%;
+        margin-left: 5%;
+        font-weight: lighter;
+    }
+
+    .private-image-berlin{
+        background-image: url(../static/berlin.jpg);
+        background-size: cover;
+        width: 80%;
+        margin-left: 10%;
+        height: 200px;
+        background-position: center;
+    }
+
+    .private-image{
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .projects-heading{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 1em
+    }
+
+    .projects-heading-underline{
+        text-align: center;
+    }
+
+    .projects-picture-left{
+        width: 95%;
+    background-color: gainsboro;
+    min-height: 50px;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-left: 2.5%;
+    margin-bottom: 25px
+    }
+
+    .projects-picture-right{
+        width: 95%;
+    background-color: gray;
+    min-height: 50px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    margin-left: 2.5%;
+    }
+
+    .project-heading{
+        text-align: center;
+        font-weight: bold;
+        padding: 1em
+    }
+
+    .project-description-one{
+        padding: .5em
+    }
+
+    .project-description-two{
+        padding: .5em;
+        display: inline-grid
+    }
+
+    .project-description-three{
+        padding: .5em
+    }
+
+    .project-press-link{
+        display: list-item;
+        margin-left: 20%;
+        color: black;
+    }
+
+    .project-link{
+        text-align: center;
+        color: black;
+        padding-bottom: .5em;
+    }
+
+    .project-oepnv-image{
+    background-image: url(../static/oepnv.png);
+    background-size: cover;
+    width: 90%;
+    height: 150px;
+    margin-top: 1em;
+    margin-left: 5%;
+    border: 1px solid black;
+    }
+
+    .project-bzenth-image{
+        background-image: url(../static/bzenth.png);
+        background-size: cover;
+        width: 90%;
+        height: 150px;
+        margin-bottom: 1em;
+        margin-left: 5%;
+        border: 1px solid black;
+    }
+
+    .contact-heading{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 1em;
+    }
+
+    .contact-first-line{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contact-second-line{
+        width: 90%;
+        margin-left: 5%;
+        font-size: smaller;
+    }
+
+    .contact-options{
+        display: inline-flex;
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    .contact-icons{
+        width: 20%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .contact-mailadress{
+        padding: .3em;
+    }
+
+    .contact-text{
+        padding: .3em;
+    }
+
+    .contact-formular-heading{
+        text-align: center;
+    }
+
+    .form-topic{
+        margin-left: 10%;
+    }
+
+    .form-description{
+        margin-left: 10%;
+        padding-top: .4em
+    }
+
+    .form-crawler{
+        display: none;
+    }
+
+    .form-mail{
+        margin-left: 10%;
+        padding-top: .4em
+    }
+
+    .form-button{
+        text-align: center;
+        padding-top: .4em;
+    }
+
+
+    .MuiFormControl-root{
+        width: 90%;
+    }
+
+    .header-nav{
+        display: none;
+        backface-visibility: hidden;
+        z-index: 2000;
+        position: fixed;
+        overflow-y: hidden;
+        top: 0;
+        left: 0;
+        width: 256px;
+        height: 100%;
+        background-color:#615a5a;
+    }
+
+    .header-menu-element{
+        display: flex;
+        cursor: pointer;
+        font-size: large;
+        padding: 15px;
+        color: white
+    }
+
+    .header-menu-icon{
+        margin-right: 5px;
+    }
+
+    .header-mobile-menu-wrapper{
+        position: fixed;
+        width: 100%;
+        height: 3em;
+        padding: 0;
+        background-color: #615a5a;
+        z-index: 10000;
+        top: 0
+    }
+
+    .header-mobile-span{
+        cursor: pointer;
+        position: absolute;
+        height: 3em;
+        width: 20%;
+        top: 0;
+        left: 0
+    }
+
+    .header-mobile-menu-icon{
+        position: absolute;
+        top: 1em;
+        height: 0.75em;
+        width: 1.25em;
+        left: 1em;
+        background: url(../static/toggle.svg);
+    }
+
+    .header-mobile-heading{
+        color: white;
+        font-size: large;
+        text-align: center;
+    }
+
+    .header-element{
+        display: flex;
+        cursor: pointer;
+        font-size: large;
+        padding: 15px;
+        color: white
+    }
+
+
 
 }
 /*Style Desktop Layout*/
@@ -479,6 +866,7 @@ body{
 .contact-success-button{
     margin-left: 1em
 }
+
 
 
 }

@@ -2,23 +2,66 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      mobileMenu: false
+    }
+  }
+
+  showMobileMenu(){
+    const {mobileMenu} = this.state
+    if(mobileMenu){
+      document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByTagName("body")[0].style.display = "block"
+      document.getElementById("root").style.pointerEvents = "all"
+      document.getElementsByClassName("header-nav")[0].style.display = "none"
+    }else{
+      document.getElementsByTagName("body")[0].style.marginLeft = "256px"
+      document.getElementsByTagName("body")[0].style.display = "flex"
+      document.getElementById("root").style.pointerEvents = "none"
+      document.getElementsByClassName("header")[0].style.pointerEvents = "all "
+      document.getElementsByClassName("header-nav")[0].style.display = "block"
+    }
+    this.setState({mobileMenu: !mobileMenu})
+  }
+
+  hideMenu(){
+    const {mobileMenu} = this.state
+    if(mobileMenu){
+      this.setState({mobileMenu: false})
+      document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByTagName("body")[0].style.display = "block"
+      document.getElementById("root").style.pointerEvents = "all"
+      document.getElementsByClassName("header-nav")[0].style.display = "none"
+    }
+  }
+
   render() {
     return (
       <div className="header">
+        <div className="header-mobile-menu-wrapper">
+          <span onClick={() => this.showMobileMenu()} className="header-mobile-span">
+            <div className="header-mobile-menu-icon"></div>
+          </span>
+          <h1 className="header-mobile-heading">Benjamin Zenth</h1>
+
+        </div>
         <div className="header-nav">
-          <Link className="header-element" to="/">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/">
             Home
           </Link>
-          <Link className="header-element" to="/projekte">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte">
             Projekte
           </Link>
-          <Link className="header-element" to="/skills">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/skills">
             Skills
           </Link>
-          <Link className="header-element" to="/privat">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/privat">
             About me
           </Link>
-          <Link className="header-element" to="/kontakt">
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/kontakt">
             Kontakt
           </Link>
         </div>

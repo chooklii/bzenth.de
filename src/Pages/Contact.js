@@ -161,7 +161,6 @@ class Contact extends React.Component {
             </div>
           </form>
           }
-          {console.log(this.state)}
           {!this.state.showForm &&
           <div className="contact-success">
             <div className="contact-message-success">Danke für Ihre Nachricht! - Ich melde mich in Kürze bei Ihnen. </div>
