@@ -1,6 +1,6 @@
 /*Style Tablet Layout*/
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 1025px) and (min-width: 768px) {
 
     body{
         margin: 0;
@@ -17,8 +17,8 @@
         width: 100%;
         text-align: center;
         color: white;
-        font-size: 60px;
-        padding-top: 130%;
+        font-size: 80px;
+        padding-top: 100%;
         font-family: Brush Script MT,cursive
     }
 
@@ -118,13 +118,14 @@
     }
 
     .single-skill{
-        width: 100%;
+        width: 60%;
+        margin-left: 20%;
         display: inline-flex;
         padding: .3em
     }
 
     .skill-name{
-        width: 50%;
+        width: 70%;
     }
 
     .private-cv-title{
@@ -163,7 +164,8 @@
         background-size: cover;
         width: 80%;
         margin-left: 10%;
-        height: 200px;
+        height: 300px;
+        border: 1px solid black;
         background-position: center;
     }
 
