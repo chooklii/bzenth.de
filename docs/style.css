@@ -428,6 +428,10 @@ body{
     background: rgba(0,0,0,.1);
 }
 
+.header-mobile-menu-wrapper{
+    display: none
+}
+
 .header-element{
     padding: 1.5em 1.5em;
     font-size: 25px;
