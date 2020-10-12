@@ -30,12 +30,18 @@ class HomeHeader extends React.Component {
 
   handleScroll() {
     const scrollValue = document.documentElement.scrollTop
+    const width = window.innerWidth
+
     if (scrollValue !== 0 && !this.state.animationdone) {
       document.getElementsByClassName("header-scroll-down")[0].style.display ="none";
       document.getElementsByClassName("header-name-text")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "200px";
       document.getElementsByTagName("body")[0].style.height = "auto";
-      document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.display = "block";
+      if(width <=1025){
+        document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.display = "block";
+      }else{
+        document.getElementsByClassName("header-nav")[0].style.display = "block"
+      }
       window.scrollTo(0,0)
 
       setTimeout(function(){
