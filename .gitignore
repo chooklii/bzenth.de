@@ -1,8 +1,8 @@
 # dependencies
 /node_modules
 /.pnp
+
 .pnp.js
-index.html
 
 npm-debug.log*
 yarn-debug.log*
