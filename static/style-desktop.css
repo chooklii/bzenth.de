@@ -478,6 +478,23 @@ body{
     margin-left: 1em
 }
 
+.header-name-scroll{
+    color: white;
+    text-align: center;
+    bottom: 75px;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    animation: blinker 1s linear infinite;
+    font-style: italic;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
 
 
 }

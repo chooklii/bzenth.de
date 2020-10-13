@@ -18,14 +18,33 @@
         text-align: center;
         color: white;
         font-size: 60px;
-        padding-top: 130%;
+        position: absolute;
+        bottom: 100px;
         font-family: Brush Script MT,cursive
     }
 
+    .header-name-info{
+        color: white;
+        text-align: center;
+        bottom: 75px;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        animation: blinker 1s linear infinite;
+        font-style: italic;
+    }
+    
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
     .header-scroll-down{
         width: 100%;
         text-align: center;
-        color: white
+        color: white;
+        position: absolute;
+        bottom: 0;
     }
 
     .home-rotating-text{
@@ -236,7 +255,7 @@
     background-image: url(../static/oepnv.png);
     background-size: cover;
     width: 90%;
-    height: 150px;
+    height: 350px;
     margin-top: 1em;
     margin-left: 5%;
     border: 1px solid black;
@@ -246,7 +265,7 @@
         background-image: url(../static/bzenth.png);
         background-size: cover;
         width: 90%;
-        height: 150px;
+        height: 350px;
         margin-bottom: 1em;
         margin-left: 5%;
         border: 1px solid black;

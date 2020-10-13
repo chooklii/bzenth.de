@@ -35,6 +35,7 @@ class HomeHeader extends React.Component {
     if (scrollValue !== 0 && !this.state.animationdone) {
       document.getElementsByClassName("header-scroll-down")[0].style.display ="none";
       document.getElementsByClassName("header-name-text")[0].style.display ="none";
+      document.getElementsByClassName("header-name-scroll")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "200px";
       document.getElementsByTagName("body")[0].style.height = "auto";
       if(width <=1025){
@@ -60,7 +61,7 @@ class HomeHeader extends React.Component {
       document.getElementsByClassName("header-nav")[0].style.display = "none"
     }else{
       document.getElementsByTagName("body")[0].style.marginLeft = "256px"
-      document.getElementsByTagName("body")[0].style.display = "flex"
+      document.getElementsByTagName("body")[0].style.display = "block"
       document.getElementById("root").style.pointerEvents = "none"
       document.getElementsByClassName("header")[0].style.pointerEvents = "all "
       document.getElementsByClassName("header-nav")[0].style.display = "block"
@@ -110,6 +111,7 @@ class HomeHeader extends React.Component {
 
         <div className="header-image">
           <div className="header-name-text">Benjamin Zenth</div>
+          <div className="header-name-scroll">Scroll down</div>
           <div className="header-scroll-down">
             <FontAwesomeIcon icon={faAngleDown} size="6x" />
           </div>

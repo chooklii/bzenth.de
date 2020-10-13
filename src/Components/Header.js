@@ -19,7 +19,7 @@ class Header extends React.Component {
       document.getElementsByClassName("header-nav")[0].style.display = "none"
     }else{
       document.getElementsByTagName("body")[0].style.marginLeft = "256px"
-      document.getElementsByTagName("body")[0].style.display = "flex"
+      document.getElementsByTagName("body")[0].style.display = "block"
       document.getElementById("root").style.pointerEvents = "none"
       document.getElementsByClassName("header")[0].style.pointerEvents = "all "
       document.getElementsByClassName("header-nav")[0].style.display = "block"

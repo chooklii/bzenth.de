@@ -18,14 +18,33 @@
         text-align: center;
         color: white;
         font-size: 60px;
-        padding-top: 130%;
+        bottom: 100px;
+        position: absolute;
         font-family: Brush Script MT,cursive
     }
 
+    .header-name-scroll{
+        color: white;
+        text-align: center;
+        bottom: 75px;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        animation: blinker 1s linear infinite;
+        font-style: italic;
+    }
+    
+    @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
     .header-scroll-down{
         width: 100%;
         text-align: center;
-        color: white
+        color: white;
+        position: absolute;
+        bottom: 0;
     }
 
     .home-rotating-text{
@@ -50,6 +69,15 @@
         margin: 0;
     }
     
+    .home-text-box{
+        height: 150px;
+    }
+
+    .home-info-text{
+        text-align: justify;
+
+    }
+
     .home-images-plan{
         background-image: url(/static/plan.jpg);
         background-size: cover;
