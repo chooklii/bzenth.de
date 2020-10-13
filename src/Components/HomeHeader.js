@@ -56,11 +56,13 @@ class HomeHeader extends React.Component {
     const {mobileMenu} = this.state
     if(mobileMenu){
       document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.paddingLeft ="0px"
       document.getElementsByTagName("body")[0].style.display = "block"
       document.getElementById("root").style.pointerEvents = "all"
       document.getElementsByClassName("header-nav")[0].style.display = "none"
     }else{
       document.getElementsByTagName("body")[0].style.marginLeft = "256px"
+      document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.paddingLeft ="256px"
       document.getElementsByTagName("body")[0].style.display = "block"
       document.getElementById("root").style.pointerEvents = "none"
       document.getElementsByClassName("header")[0].style.pointerEvents = "all "
@@ -74,6 +76,7 @@ class HomeHeader extends React.Component {
     if(mobileMenu){
       this.setState({mobileMenu: false})
       document.getElementsByTagName("body")[0].style.marginLeft = "0px"
+      document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.paddingLeft ="0px"
       document.getElementsByTagName("body")[0].style.display = "block"
       document.getElementById("root").style.pointerEvents = "all"
       document.getElementsByClassName("header-nav")[0].style.display = "none"
@@ -81,6 +84,8 @@ class HomeHeader extends React.Component {
   }
 
   render() {
+    const width = window.innerWidth
+    const height = window.innerHeight
     return (
       <div className="header-wrapper">
       <div className="header">
@@ -110,6 +115,9 @@ class HomeHeader extends React.Component {
         </div>
 
         <div className="header-image">
+          {height}
+          -
+          {width}
           <div className="header-name-text">Benjamin Zenth</div>
           <div className="header-name-scroll">Scroll down</div>
           <div className="header-scroll-down">
