@@ -15,7 +15,7 @@ class Header extends React.Component {
     if(mobileMenu){
       document.getElementsByTagName("body")[0].style.marginLeft = "0px"
       document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.paddingLeft ="0px"
-      document.getElementsByTagName("body")[0].style.display = "block"
+      document.getElementsByTagName("body")[0].style.display = "flex"
       document.getElementById("root").style.pointerEvents = "all"
       document.getElementsByClassName("header-nav")[0].style.display = "none"
     }else{
