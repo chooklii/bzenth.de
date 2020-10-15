@@ -113,9 +113,9 @@ body{
     background-image: url("./contact.jpg");
     background-size: cover;
     height: 337px;
-    width: 600px;
+    width: 40%;
     float: right;
-    margin-right: 15%;
+    margin-right: 5%;
     border: 1px solid black
 }
 
@@ -434,13 +434,14 @@ body{
     margin-top: 20%;
     text-align: justify;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .form-contact{
     width: 100%;
     display: inline-flex;
-    padding-top: 2em
+    padding-top: 2em;
+    margin-bottom: 5em;
 }
 
 .form-description{
