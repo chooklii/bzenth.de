@@ -86,9 +86,8 @@ class Home extends React.Component {
           <div className="home-images">
             <figure className="home-single-image">
               {!this.state.designOpen && (
-                <div className="home-images-plan">
+                <div onClick={() => this.setState({ designOpen: true })} className="home-images-plan">
                   <FontAwesomeIcon
-                    onClick={() => this.setState({ designOpen: true })}
                     className="home-icon-black"
                     size="2x"
                     icon={faInfoCircle}
@@ -96,7 +95,7 @@ class Home extends React.Component {
                 </div>
               )}
               {this.state.designOpen && (
-                <div className="home-text-box">
+                <div className="home-text-box" >
                   <FontAwesomeIcon
                     onClick={() => this.setState({ designOpen: false })}
                     className="home-icon-black"
@@ -113,9 +112,8 @@ class Home extends React.Component {
 
             <figure className="home-single-image">
               {!this.state.devOpen && (
-                <div className="home-images-code">
+                <div className="home-images-code" onClick={() => this.setState({ devOpen: true })}>
                   <FontAwesomeIcon
-                    onClick={() => this.setState({ devOpen: true })}
                     className="home-icon-white"
                     size="2x"
                     icon={faInfoCircle}
@@ -140,9 +138,8 @@ class Home extends React.Component {
 
             <figure className="home-single-image">
               {!this.state.liveOpen && (
-                <div className="home-images-page">
+                <div onClick={() => this.setState({ liveOpen: true })} className="home-images-page">
                   <FontAwesomeIcon
-                    onClick={() => this.setState({ liveOpen: true })}
                     className="home-icon-black"
                     size="2x"
                     icon={faInfoCircle}
