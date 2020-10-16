@@ -4,6 +4,7 @@ import NotFound from "./NotFound"
 import Private from "./Private"
 import Projects from "./Projects"
 import Home from "./Home"
+import Imprint from "./Imprint"
 
 export{
     Skills,
@@ -11,5 +12,6 @@ export{
     NotFound,
     Private,
     Projects,
-    Home
+    Home,
+    Imprint
 }

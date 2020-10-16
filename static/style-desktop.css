@@ -499,6 +499,41 @@ body{
     }
   }
 
+  .imprint{
+    padding-top: 230px;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .imprint-heading{
+      text-align: center;
+      font-size: 50px;
+      margin: 0
+  }
+
+  .imprint-person-contact{
+      margin-left: 10%;
+  }
+
+  .imprint-mail{
+      margin-left: 5px;
+  }
+
+  .imprint-body{
+      margin-left: 5%;
+      width: 90%;
+      line-height: 160%;
+      margin-bottom: 3em
+  }
+
+  .imprint-subheading{
+      padding: 1em;
+      font-weight: bold;
+  }
+
+  .imprint-link{
+      margin-left: 5px;
+  }
 
 
 }

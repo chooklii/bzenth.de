@@ -33,7 +33,7 @@
         animation: blinker 1s linear infinite;
         font-style: italic;
     }
-    
+
     @keyframes blinker {
         50% {
           opacity: 0;
@@ -68,7 +68,7 @@
         font-weight: normal;
         margin: 0;
     }
-    
+
     .home-text-box{
         height: 150px;
     }
@@ -418,6 +418,45 @@
         padding: 15px;
         color: white
     }
+
+    .imprint{
+        padding-top: 4em;
+        width: 100%;
+      }
+
+      .imprint-heading{
+        text-align: center;
+        font-size: 25px;
+          margin: 0
+      }
+
+      .imprint-person-contact{
+          margin-left: 10%;
+      }
+
+      .imprint-mail{
+          margin-left: 5px;
+      }
+
+      .imprint-body{
+          margin-left: 5%;
+          width: 90%;
+          line-height: 160%;
+          margin-bottom: 3em
+      }
+
+      .imprint-subheading{
+          padding: 1em;
+          font-weight: bold;
+      }
+
+      .imprint-link{
+          margin-left: 5px;
+      }
+
+      .imprint-h2{
+          font-size: 20px;
+      }
 
 
 

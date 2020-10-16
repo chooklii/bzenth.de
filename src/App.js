@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Skills, Contact, Home, NotFound, Private, Projects } from "./Pages";
+import { Skills, Contact, Home, NotFound, Private, Projects, Imprint } from "./Pages";
 import { ScrollToTop } from "./Components";
 
 import "../static/style-mobile.css";
@@ -37,6 +37,11 @@ class App extends React.Component {
             <Route exact path="/kontakt">
               <ScrollToTop>
                 <Contact />
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/impressum">
+              <ScrollToTop>
+                <Imprint />
               </ScrollToTop>
             </Route>
             <Route path="/*">
