@@ -83,9 +83,6 @@ class Contact extends React.Component {
             Bei Interesse, Rückfragen oder unverbindlichen Anfragen bitte einen
             der folgenden Kommunikationskanäle nutzen:
           </div>
-          <div className="contact-second-line">
-            Telefongespräche durch formlose Abfrage der Nummer per Nachricht
-          </div>
 
           <div className="contact-options">
             <div className="contact-icons">
@@ -99,7 +96,7 @@ class Contact extends React.Component {
             </div>
             <div className="contact-values">
               <div className="contact-mailadress">
-                benjaminzenth(at)icloud.com
+                benjaminzenth@icloud.com
               </div>
               <div className="contact-text">
                 <a
