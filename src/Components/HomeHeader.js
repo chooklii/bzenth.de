@@ -38,6 +38,7 @@ class HomeHeader extends React.Component {
       document.getElementsByClassName("header-name-text")[0].style.display ="none";
       document.getElementsByClassName("header-name-scroll")[0].style.display ="none";
       document.getElementsByClassName("header-image")[0].style.height = "0px";
+      document.getElementsByClassName("header-name-box")[0].style.paddingTop = "0px";
       document.getElementsByTagName("body")[0].style.height = "auto";
       if(width <=1025){
         document.getElementsByClassName("header-mobile-menu-wrapper")[0].style.display = "block";
