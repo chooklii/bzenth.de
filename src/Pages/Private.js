@@ -48,7 +48,7 @@ class Private extends React.Component {
                         <div className="private-private">
                             Ich bin ein 23-jähriger aus dem Raum Öhringen und aktuell im 1. Semester meines Masterstudiums an der Hochschule Heilbronn.
                             <br></br>
-                            Neben meinem Studium und aktuellen Projekten verbringe ich meine Zeit mit Ausdauersport (5km - Marathon), Büchern, Videospielen und
+                            Neben meinem Studium und aktuellen Projekten verbringe ich meine Zeit mit Ausdauersport (5 bis 50km), Büchern, Videospielen und
                             einem allgemeinen Interesse an fast jeder Sportart.
                         </div>
                             <figure className="private-image">
