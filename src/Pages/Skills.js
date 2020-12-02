@@ -60,6 +60,7 @@ class Skills extends React.Component {
       { name: "Scrum", rating: 5 },
       { name: "Git / Git Flow", rating: 4 },
       { name: "SEO", rating: 3 },
+      { name: "Balsamiq", rating: 2 },
     ];
 
     const languages = [
