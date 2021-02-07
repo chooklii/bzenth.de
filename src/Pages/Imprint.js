@@ -77,7 +77,17 @@ class Imprint extends React.Component {
           den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle
           ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen
           Einzelfall die besonderen Nutzungsbedingungen.
-          
+
+
+
+          <div className="imprint-subheading">Datenschutz</div>
+
+          Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten.
+          Gehostet wird diese Webseite
+          über <a href="https://pages.github.com/" target="_blank">Github Pages</a>, bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States.
+          Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in
+          der <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" target="_blank">Datenschutzerklärung</a> von Github
+
           <p>
             Quelle:
             <a className="imprint-link" target="_blank" href="https://www.juraforum.de/impressum-generator/">
