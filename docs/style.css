@@ -265,7 +265,17 @@
 
     .project-oepnv-image{
     background-image: url(../static/oepnv.png);
-    background-size: cover;
+    background-size: contain;
+    width: 90%;
+    height: 150px;
+    margin-top: 1em;
+    margin-left: 5%;
+    border: 1px solid black;
+    }
+
+    .project-gradulator-image{
+    background-image: url(../static/gradulator.png);
+    background-size: contain;
     width: 90%;
     height: 150px;
     margin-top: 1em;
@@ -641,10 +651,21 @@ body{
 .project-oepnv-image{
     background-image: url(../static/oepnv.png);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 600px;
     height: 337.5px;
     margin: 3%;
     border: 1px solid black
+}
+
+.project-gradulator-image{
+    background-image: url(../static/gradulator.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 600px;
+    margin: 3%;
+    border: 1px solid black 
 }
 
 .project-bzenth-image{
@@ -1268,6 +1289,16 @@ body{
     border: 1px solid black;
     }
 
+    .project-gradulator-image{
+        background-image: url(../static/gradulator.png);
+        background-size: cover;
+        width: 90%;
+        height: 350px;
+        margin-top: 1em;
+        margin-left: 5%;
+        border: 1px solid black;
+    }
+
     .project-bzenth-image{
         background-image: url(../static/bzenth.png);
         background-size: cover;
@@ -1734,6 +1765,16 @@ body{
     margin-left: 5%;
     border: 1px solid black;
     }
+
+    .project-gradulator-image{
+        background-image: url(../static/gradulator.png);
+        background-size: cover;
+        width: 90%;
+        height: 350px;
+        margin-top: 1em;
+        margin-left: 5%;
+        border: 1px solid black;
+        }
 
     .project-bzenth-image{
         background-image: url(../static/bzenth.png);

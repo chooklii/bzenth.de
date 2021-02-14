@@ -178,10 +178,21 @@ body{
 .project-oepnv-image{
     background-image: url("./oepnv.png");
     background-size: cover;
+    background-repeat: no-repeat;
     width: 600px;
     height: 337.5px;
     margin: 3%;
     border: 1px solid black
+}
+
+.project-gradulator-image{
+    background-image: url("./gradulator.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 600px;
+    margin: 3%;
+    border: 1px solid black 
 }
 
 .project-bzenth-image{

@@ -278,6 +278,16 @@
     border: 1px solid black;
     }
 
+    .project-gradulator-image{
+        background-image: url(../static/gradulator.png);
+        background-size: cover;
+        width: 90%;
+        height: 350px;
+        margin-top: 1em;
+        margin-left: 5%;
+        border: 1px solid black;
+        }
+
     .project-bzenth-image{
         background-image: url(../static/bzenth.png);
         background-size: cover;

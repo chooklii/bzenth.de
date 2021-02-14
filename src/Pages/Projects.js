@@ -5,7 +5,8 @@ import {
     faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import {
-    faBus
+    faBus,
+    faGraduationCap
 } from "@fortawesome/free-solid-svg-icons"
 
 class Projects extends React.Component {
@@ -36,7 +37,7 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="project-link">
-                <a target="_blank" href="https://www.oepnv-transparenzregister.de/" className="project-link"><FontAwesomeIcon icon={faBus}/>Link zur Internetseite</a>
+                <a target="_blank" href="https://www.oepnv-transparenzregister.de/" className="project-link"><FontAwesomeIcon icon={faBus}/> Link zur Internetseite</a>
                 </div>
             </div>
 
@@ -65,7 +66,7 @@ class Projects extends React.Component {
             <div className="project-heading">Diese Internetseite</div>
             <div className="project-description-one">
                 Aktuell angezeigte Internetseite über meine Person.
-                    Mit dem Javascript Framework React.js entwickelt und durch Webpack gebundelt.
+                    Mit dem Javascript Framework React.js entwickelt und durch Webpack gebundelt. Dabei wurde bewusst keine Design-Bibiothek wie z.B. antd oder material-ui verwendet.
                 </div>
                 <div className="project-description-two">
                     Die Seite wird über Github Pages gehostet.
@@ -74,11 +75,37 @@ class Projects extends React.Component {
                     Der Source Code der Seite ist bei Interesse öffentlich auf meinem GitHub Account einsehbar.
                 </div>
                 <div className="project-link">
-                <a target="_blank" href="https://github.com/chooklii/bzenth.de" className="project-link"><FontAwesomeIcon icon={faGithub}/>Link zu GitHub</a>
+                <a target="_blank" href="https://github.com/chooklii/bzenth.de" className="project-link"><FontAwesomeIcon icon={faGithub}/> Link zu GitHub</a>
                 </div>
             </div>
             <div className="project-bzenth-image"></div>
             </div>
+        )
+    }
+
+    gradulator_project(){
+        return(
+            <div className="projects-picture-left">
+
+            <div className="project-gradulator-image"></div>
+            <div className="project-left-content">
+                <div className="project-heading">Gradulator</div>
+
+                <div className="project-description-one">
+                    In vielen Studiengängen der Hochschule Heilbronn herrscht Unklarheit darüber, wie der eigene Notenschnitt berechnet wird. Die 
+                    Prüfungsordnung ist komplex und unverständlich, eine händische Berechnung aufwendig und Fehleranfällig. <br/>
+                    Kein Problem mit dem Gradulator. Über einen simplen Upload des eigenen Notenspiegels kann der Durchschnitt innerhalb von einer Minute berechnet werden. 
+                    Dabei wird der Datenschutz großgeschrieben, das PDF wird im eigenen Browserfenster ausgelesen. <br/>
+                    Noch nicht alle Noten? Kein Problem! Entweder kann eine Schätzung eingegeben werden und der Gradulator zeigt entsprechend eine best- oder schlechtestmögliche
+                    Note an, oder die Note kann komplett weggelassen werden.
+                </div>
+
+                <div className="project-link">
+                <a target="_blank" href="https://www.gradulator.de" className="project-link"><FontAwesomeIcon icon={faGraduationCap}/> Link zur Internetseite</a>
+                </div>
+            </div>
+
+        </div>
         )
     }
 
@@ -99,6 +126,7 @@ class Projects extends React.Component {
                     <div className="projects">
                     {this.oepnv_project()}
                     {this.bzenth_project()}
+                    {this.gradulator_project()}
                     </div>
 
                 </div>
