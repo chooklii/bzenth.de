@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Skills, Contact, Home, NotFound, Private, Projects, Imprint } from "./Pages";
+import { GameHome } from "./GamePages";
 import { ScrollToTop } from "./Components";
 
 import "../static/style-mobile.css";
 import "../static/style-desktop.css";
 import "../static/style-tablet.css";
 import "../static/style-tablet-large.css";
+
 
 class App extends React.Component {
   render() {
@@ -42,6 +44,11 @@ class App extends React.Component {
             <Route exact path="/impressum">
               <ScrollToTop>
                 <Imprint />
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/game">
+              <ScrollToTop>
+                <GameHome />
               </ScrollToTop>
             </Route>
             <Route path="/*">

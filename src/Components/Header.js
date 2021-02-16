@@ -55,6 +55,9 @@ class Header extends React.Component {
           <Link onClick={() => this.hideMenu()} className="header-element" to="/">
             Home
           </Link>
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/game">
+            Game
+          </Link>
           <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte">
             Projekte
           </Link>
