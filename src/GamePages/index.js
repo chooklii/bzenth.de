@@ -1,5 +1,5 @@
-import Home from "./Home"
+import GameHome from "./GameHome"
 
 export{
-    Home as GameHome
+    GameHome
 }

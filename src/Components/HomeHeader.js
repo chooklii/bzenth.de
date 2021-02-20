@@ -106,6 +106,9 @@ class HomeHeader extends React.Component {
           <Link onClick={() => this.hideMenu()} className="header-element" to="/skills">
             Skills
           </Link>
+          <Link onClick={() => this.hideMenu()} className="header-element" to="/game">
+            Game
+          </Link>
           <Link onClick={() => this.hideMenu()} className="header-element" to="/privat">
             About me
           </Link>

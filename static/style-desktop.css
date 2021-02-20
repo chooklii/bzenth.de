@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 1025px) {
 
+    .game{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
 body{
     margin: 0;
     font-family: system-ui;

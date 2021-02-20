@@ -18,7 +18,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/">
               <ScrollToTop>
-                <Home />
+                <GameHome />
               </ScrollToTop>
             </Route>
             <Route exact path="/projekte">
@@ -44,11 +44,6 @@ class App extends React.Component {
             <Route exact path="/impressum">
               <ScrollToTop>
                 <Imprint />
-              </ScrollToTop>
-            </Route>
-            <Route exact path="/game">
-              <ScrollToTop>
-                <GameHome />
               </ScrollToTop>
             </Route>
             <Route path="/*">
