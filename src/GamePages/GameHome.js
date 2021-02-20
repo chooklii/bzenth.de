@@ -28,7 +28,7 @@ class GameHome extends React.Component{
         physics: {
           default: 'arcade',
           arcade: {
-              gravity: { y: 300 },
+              gravity: { y: 0 },
               debug: false
           }
         }
