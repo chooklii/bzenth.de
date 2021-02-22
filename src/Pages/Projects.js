@@ -101,7 +101,7 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="project-link">
-                <a target="_blank" href="https://www.gradulator.de" className="project-link"><FontAwesomeIcon icon={faGraduationCap}/> Link zur Internetseite</a>
+                <a target="_blank" href="https://gradulator.de" className="project-link"><FontAwesomeIcon icon={faGraduationCap}/> Link zur Internetseite</a>
                 </div>
             </div>
 
