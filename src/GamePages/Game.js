@@ -1,15 +1,25 @@
 import Phaser from "phaser";
 
 var player;
-var platforms;
-var rockhead;
-var rocks = []
 var width;
 var height;
 var lastMovingDirection = "r"
+var hit = false
+var finished = false
+var platforms;
+var rockheads;
+var spikeheads;
+var saws;
+var finish;
+var start;
 class Game extends Phaser.Scene{
   constructor(){
     super()
+    this.state = {
+      rocks: [],
+      saws: [],
+      spikeheads: []
+    }
   }
 
   preload(){
@@ -19,54 +29,179 @@ class Game extends Phaser.Scene{
     this.load.spritesheet("run_left", "../assets/character/run_left.png", { frameWidth: 32, frameHeight: 32 })
     this.load.spritesheet("idle_left", "../assets/character/idle_left.png", { frameWidth: 32, frameHeight: 32 })
     this.load.spritesheet("jump", "../assets/character/jump.png", { frameWidth: 32, frameHeight: 32 })
+    this.load.spritesheet("hit", "../assets/character/hit.png", { frameWidth: 32, frameHeight: 32 })
     // terrain
     this.load.spritesheet("terrain", "../assets/terrain.png", { frameWidth: 16, frameHeight: 16 })
     this.load.spritesheet("plattform", "../assets/plattform.png", { frameWidth: 16, frameHeight: 16 })
+    this.load.image("background", "../assets/background.png")
     // traps
     this.load.spritesheet("idle_rockhead", "../assets/rockhead/idle.png", {frameWidth: 42, frameHeight: 42})
     this.load.spritesheet("bottom_rockhead", "../assets/rockhead/bottom_hit.png", {frameWidth: 42, frameHeight: 42})
+    this.load.spritesheet("idle_saw", "../assets/saw/idle.png", {frameWidth: 38, frameHeight: 38})
+    this.load.spritesheet("animation_saw", "../assets/saw/animation.png", {frameWidth: 38, frameHeight: 38})
+    this.load.spritesheet("idle_spike", "../assets/rockheadSpikes/idle.png", {frameWidth: 54, frameHeight: 52})
+    this.load.spritesheet("blink_spike", "../assets/rockheadSpikes/blink.png", {frameWidth: 54, frameHeight: 52})
+    this.load.spritesheet("bottom_spike", "../assets/rockheadSpikes/bottom_hit.png", {frameWidth: 54, frameHeight: 52})
+    this.load.spritesheet("left_spike", "../assets/rockheadSpikes/left_hit.png", {frameWidth: 54, frameHeight: 52})
+    this.load.spritesheet("right_spike", "../assets/rockheadSpikes/right_hit.png", {frameWidth: 54, frameHeight: 52})
+    this.load.spritesheet("top_spike", "../assets/rockheadSpikes/top_hit.png", {frameWidth: 54, frameHeight: 52})
+    // start and finish
+    this.load.spritesheet("idle_start", "../assets/start/idle.png", {frameWidth: 64, frameHeight: 64})
+    this.load.spritesheet("animation_start", "../assets/start/animation.png", {frameWidth: 64, frameHeight: 64})
+    this.load.spritesheet("idle_finish", "../assets/finish/idle.png", {frameWidth: 64, frameHeight: 64})
+    this.load.spritesheet("animation_finish", "../assets/finish/animation.png", {frameWidth: 64, frameHeight: 64})
     this.objects = {}
   }
 
   create(){
+    width = this.game.config.width
+    height = this.game.config.height
+    this.add.tileSprite(width/2, height/2, width, height, "background")
+    this.initAnimations()
     this.initWorld()
     this.initPlayer()
+
     this.physics.add.collider(player, platforms);
-    this.physics.add.collider(rockhead, platforms);
-
-
+    this.physics.add.collider(rockheads, platforms);
+    this.physics.add.collider(rockheads, player, this.hitRockhead, null, this)
+    this.physics.add.collider(saws, player, this.hitSaw, null, this)
+    this.physics.add.collider(player, finish, this.finished, null, this)
+    this.physics.add.collider(player, spikeheads, this.hitSpikehead, null, this)
   }
 
   update(){
-    const cursors = this.input.keyboard.createCursorKeys();
-    this.movePlayer(cursors)
+    this.movePlayer()
     this.moveRockHeads()
+    this.moveSpikeheads()
   }
 
   initWorld(){
-    width = this.game.config.width
-    height = this.game.config.height
     platforms = this.physics.add.staticGroup();
-    rockhead = this.physics.add.group();
-    this.initPlattforms()
-    this.platformWithRockhead()
+    rockheads = this.physics.add.group({immovable: true, collideWorldBounds: true});
+    spikeheads = this.physics.add.group()
+    saws = this.physics.add.group({immovable: true});
+
+    this.createPlattforms()
+    this.addDefaultToHeads()
+    this.addStart()
+    this.addFinish()
   }
 
-  initPlattforms(){
+  addFinish(){
+    finish = this.physics.add.staticGroup()
+    platforms.create(width-30, 65, "terrain", 215)
+    platforms.create(width-45, 65, "terrain", 215)
+    platforms.create(width-60, 65, "terrain", 215)
+    platforms.create(width-75, 65, "terrain", 215)
+    finish.create(width-50, 30, "idle_finish").setScale(0.75,0.75).refreshBody()
+  }
+
+  addStart(){
+    start = this.physics.add.staticGroup()
+    start.create(30, height-40, "idle_start")
+  }
+
+  createPlattforms(){
+    // add Green Body
     platforms.create(0, height-8, "terrain", 7).setScale(width, 1).refreshBody()
-    platforms.create(200, 400, "terrain", 13).setScale(10, 1)
-    platforms.create(10, height - 100, "plattform")
+    // add randomly generated plattforms
+    this.addSpikehead(400, 600)
+    this.addSaw(500, 600)
+    this.addPlattformWithRockhead(300, 200)
   }
 
-  platformWithRockhead(){
-    platforms.create(200, 400, "terrain", 13).setScale(10, 1)
-    rocks.push(rockhead.create(200, 330, "idle_rockhead"))
+
+  addThickPlattform(x, y, scale){
+    platforms.create(x, y, "terrain", 7).setScale(scale, 1).refreshBody()
   }
 
-  initPlayer(){
-    player = this.physics.add.sprite(width/2, height-50, "idle_right")
-    player.setCollideWorldBounds(true)
-    player.body.setGravityY(400)
+  addSmallPlattform(x, y){
+    platforms.create(x, y, "plattform")
+  }
+
+  addSaw(x, y, amound = 1){
+    // creates given amound if savs add X / Y position
+    var current_x = x
+    for(var i = 1; i<=amound; i++){
+      const saw = saws.create(current_x, y, "idle_saw")
+      saw.anims.play("animation_saw", true)
+      this.state.saws.push(saw)
+      current_x+=40
+      }
+  }
+
+  addPlattformWithRockhead(x, y, scale = 5, multiple = false){
+    // create Rockheads
+    platforms.create(x, y, "terrain", 13).setScale(scale, 1).refreshBody()
+    const positionRockhead = Phaser.Math.Between(x-5*scale, x+5*scale)
+    this.state.rocks.push(rockheads.create(positionRockhead, y-70, "idle_rockhead"))
+    if(multiple){
+      this.state.rocks.push(rockheads.create(positionRockhead+40, y-70, "idle_rockhead"))
+    }
+  }
+
+  addSpikehead(x, y){
+    this.state.spikeheads.push(spikeheads.create(x, y, "idle_spike"))
+  }
+
+  addDefaultToHeads(){
+    // add the starting y to all rockheads in order to move them up and down
+    this.state.rocks.forEach(x => {
+      x.defaultY = x.y
+    })
+    this.state.spikeheads.forEach(x => {
+      x.defaultY = x.y
+    })
+  }
+
+  hitRockhead(){
+    // check if player got hit by rockhead or jumped on it
+    this.state.rocks.forEach(rockhead => {
+      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
+        if(player.y > rockhead.y){
+          hit=true
+          console.log("Player got hit by Rockhead!")
+          player.anims.play("hit", true)
+        }
+      } 
+    })
+}
+
+  hitSpikehead(){
+    this.state.spikeheads.forEach(single => {
+      if((player.x +player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
+        if(player.y > single.y){
+          single.anims.play("spikes_top")
+        }
+        else{
+          single.anims.play("spikes_bottom")
+        }
+      }else{
+        if(player.x +player.displayOriginX < single.x - single.displayOriginX){
+          single.anims.play("spikes_left")
+        }else{
+          single.anims.play("spikes_right")
+        }
+      }
+    })
+    hit=true
+    console.log("Player got hit by Spike-Rockhead!")
+    player.anims.play("hit", true)
+  }
+
+  hitSaw(){
+    hit=true
+    console.log("Player got hit by Saw!")
+    player.anims.play("hit", true)
+  }
+
+  finished(){
+    finished = true
+    finish.anims.play("animation_finished", true)
+  }
+
+  initAnimations(){
+    // Player Animations
     this.anims.create({
       key: "right",
       frames: this.anims.generateFrameNumbers('run_right'),
@@ -96,21 +231,91 @@ class Game extends Phaser.Scene{
       frames: this.anims.generateFrameNumbers('jump'),
       frameRate: 20,
     })
+    this.anims.create({
+      key: "hit",
+      frames: this.anims.generateFrameNumbers('hit'),
+      frameRate: 20,
+    })
+    // Rockhead Animation
+    this.anims.create({
+      key: "bottom_rockhead",
+      frames: this.anims.generateFrameNumbers("bottom_rockhead"),
+      frameRate: 20, 
+    })
+    // Saw Animation
+    this.anims.create({
+      key: "animation_saw",
+      frames: this.anims.generateFrameNumbers("animation_saw"),
+      frameRate: 20,
+      repeat: -1
+    })
+    this.anims.create({
+      key: "spikes_bottom",
+      frames: this.anims.generateFrameNumbers("bottom_spike"),
+      frameRate: 20
+    })
+    this.anims.create({
+      key: "spikes_left",
+      frames: this.anims.generateFrameNumbers("left_spike"),
+      frameRate: 20
+    })
+    this.anims.create({
+      key: "spikes_right",
+      frames: this.anims.generateFrameNumbers("right_spike"),
+      frameRate: 20
+    })
+    this.anims.create({
+      key: "spikes_top",
+      frames: this.anims.generateFrameNumbers("top_spike"),
+      frameRate: 20
+    })
+    this.anims.create({
+      key: "spikes_blink",
+      frames: this.anims.generateFrameNumbers("blink_spike"),
+      frameRate: 20
+    })
+    // finish Animation
+    this.anims.create({
+      key: "animation_finish",
+      frames: this.anims.generateFrameNumbers("animation_finish"),
+      frameRate: 20,
+      repeat: -1
+    })
+
+  }
+
+  initPlayer(){
+    player = this.physics.add.sprite(40, height-40, "idle_right")
+    player.setCollideWorldBounds(true)
+    player.body.setGravityY(400)
   }
 
   moveRockHeads(){
-    rocks.forEach(x => {
-      console.log(x)
-      if(x.body.velocity.equals(0)){
-        x.setVelocityY(-20)
-      }else{
-      x.setVelocityY(100)
+    this.state.rocks.forEach(single => {
+      if(single.y <= single.defaultY){
+        single.setVelocityY(200)
+      }
+      else if(single.y >= single.defaultY+45){
+        single.anims.play("bottom_rockhead")
+        single.setVelocityY(-20)
+      }
+    })
+  }
+
+  moveSpikeheads(){
+    this.state.spikeheads.forEach(single => {
+      if(single.y <= single.defaultY){
+        single.setVelocityY(100)
+      }
+      else if(single.y >= single.defaultY+100){
+        single.setVelocityY(-100)
       }
     })
   }
 
 
-  movePlayer(cursors){
+  movePlayer(){
+    const cursors = this.input.keyboard.createCursorKeys();
     if(cursors.space.isDown && player.body.touching.down){
       player.setVelocityY(-320);
       player.anims.play("jump", true)
@@ -124,9 +329,9 @@ class Game extends Phaser.Scene{
       lastMovingDirection = "l"
       player.setVelocityX(-160);
       player.anims.play("left", true)
-    }else{
+    }else if(!hit){
       if(lastMovingDirection == "r") player.anims.play("idle_right", true)
-      if(lastMovingDirection == "l") player.anims.play("idle_left", true)
+       if(lastMovingDirection == "l") player.anims.play("idle_left", true)
       player.setVelocityX(0)
      }
   }
