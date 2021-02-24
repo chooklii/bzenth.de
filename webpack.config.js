@@ -22,6 +22,12 @@ module.exports = {
           }
         },
         {
+          test: /\.(ttf)$/,
+          use: {
+            loader: "url-loader"
+          }
+        },
+        {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },

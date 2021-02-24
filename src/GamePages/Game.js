@@ -23,6 +23,7 @@ class Game extends Phaser.Scene{
   }
 
   preload(){
+    hit = false
     // player movement
     this.load.spritesheet("run_right", "../assets/character/run_right.png", { frameWidth: 32, frameHeight: 32 })
     this.load.spritesheet("idle_right", "../assets/character/idle_right.png", { frameWidth: 32, frameHeight: 32 })
@@ -62,8 +63,8 @@ class Game extends Phaser.Scene{
     width = this.game.config.width
     height = this.game.config.height
     this.add.tileSprite(width/2, height/2, width, height, "background")
-    this.initWorld()
     this.initAnimations()
+    this.initWorld()
     this.initPlayer()
 
     this.physics.add.collider(player, platforms);
@@ -75,7 +76,7 @@ class Game extends Phaser.Scene{
   }
 
   update(){
-    this.movePlayer()
+    !hit && this.movePlayer()
     this.moveRockHeads()
     this.moveSpikeheads()
   }
@@ -115,7 +116,7 @@ class Game extends Phaser.Scene{
     // add all other stuff
     levels.spikeheads.forEach(_ => this.addSpikehead(width * _.x, height*_.y))
     levels.plattforms.forEach(_ => this.addThickPlattform(width * _.x, height * _.y, _.scale))
-    levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y))
+    levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y, _.amound))
     levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
     levels.sticks.forEach(_ => this.addSmallPlattform(width*_.x, height*_.y))
   }
@@ -170,8 +171,8 @@ class Game extends Phaser.Scene{
       if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
         if(player.y > rockhead.y){
           hit=true
-          console.log("Player got hit by Rockhead!")
           player.anims.play("hit", true)
+          this.game.death("rockhead")
         }
       } 
     })
@@ -195,14 +196,14 @@ class Game extends Phaser.Scene{
       }
     })
     hit=true
-    console.log("Player got hit by Spike-Rockhead!")
     player.anims.play("hit", true)
+    this.game.death("spike")
   }
 
   hitSaw(){
     hit=true
-    console.log("Player got hit by Saw!")
     player.anims.play("hit", true)
+    this.game.death("saw")
   }
 
   finished(){
@@ -327,6 +328,10 @@ class Game extends Phaser.Scene{
 
   movePlayer(){
     const cursors = this.input.keyboard.createCursorKeys();
+    const keyR = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R)
+    if(keyR.isDown){
+      this.game.restart()
+    }
     if(cursors.space.isDown && player.body.touching.down){
       player.setVelocityY(-320);
       player.anims.play("jump", true)

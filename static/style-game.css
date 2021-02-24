@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Green Fuz';
+    src: url('./green_fuz.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('./lobster.ttf') format('truetype');
+  }
+
 .level_play{
     background-image: url("../assets/menu/play.png");
     background-repeat: no-repeat;
@@ -64,6 +74,7 @@
 
 .explaination_heading{
     text-align: center;
+    font-family: "Lobster";
     padding-top: 1em
 }
 
@@ -94,6 +105,88 @@
 .single_level_name{
     margin-left: 5px;
     font-size: 16px;
+}
+
+.settings_icon{
+    background-image: url("../assets/menu/settings.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 27.3px;
+    height: 28.6px;
+    position: absolute;
+    margin-left: 51px;
+    margin-top: 51px;
+    cursor: pointer; 
+}
+
+.restart_icon{
+    background-image: url("../assets/menu/restart.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 27.3px;
+    height: 28.6px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 51px;
+    cursor: pointer; 
+}
+
+.settings{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 80px;
+    background-color: #c1d5d9;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.single_setting{
+    display: flex;
+    padding: .5em
+}
+
+.setting_key{
+    width: 50%;
+    font-weight: bold;
+}
+
+.setting_value{
+    width: 50%;
+}
+
+.controll{
+    display: block
+}
+
+.gameover{
+    font-family: "Green Fuz";
+    font-size: 100px;
+    width: 100%;
+    position: absolute;
+    margin-top: 15%;
+    text-align: center;
+    color: darkred
+}
+
+.killedbytext{
+    color: black;
+    font-family: "Green Fuz";
+    font-size: 60px;
+    width: 100%;
+    position: absolute;
+    margin-top: 25%;
+    text-align: center;
+}
+
+.restart_text{
+    font-family: "Lobster";
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 30%;
+    text-align: center;
 }
 
 .l1{
