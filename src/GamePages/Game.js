@@ -33,7 +33,7 @@ class Game extends Phaser.Scene{
     // terrain
     this.load.spritesheet("terrain", "../assets/terrain.png", { frameWidth: 16, frameHeight: 16 })
     this.load.spritesheet("plattform", "../assets/plattform.png", { frameWidth: 16, frameHeight: 16 })
-    this.load.image("background", "../assets/background.png")
+    this.loadBackground()
     // traps
     this.load.spritesheet("idle_rockhead", "../assets/rockhead/idle.png", {frameWidth: 42, frameHeight: 42})
     this.load.spritesheet("bottom_rockhead", "../assets/rockhead/bottom_hit.png", {frameWidth: 42, frameHeight: 42})
@@ -53,12 +53,17 @@ class Game extends Phaser.Scene{
     this.objects = {}
   }
 
+  loadBackground(){
+    const background = this.game.levels.background
+    this.load.image("background", `../assets/backgrounds/${background}.png`)
+  }
+
   create(){
     width = this.game.config.width
     height = this.game.config.height
     this.add.tileSprite(width/2, height/2, width, height, "background")
-    this.initAnimations()
     this.initWorld()
+    this.initAnimations()
     this.initPlayer()
 
     this.physics.add.collider(player, platforms);
@@ -79,40 +84,45 @@ class Game extends Phaser.Scene{
     platforms = this.physics.add.staticGroup();
     rockheads = this.physics.add.group({immovable: true, collideWorldBounds: true});
     spikeheads = this.physics.add.group()
+    finish = this.physics.add.group({immovable: true})
     saws = this.physics.add.group({immovable: true});
 
     this.createPlattforms()
     this.addDefaultToHeads()
-    this.addStart()
-    this.addFinish()
   }
 
-  addFinish(){
-    finish = this.physics.add.staticGroup()
-    platforms.create(width-30, 65, "terrain", 215)
-    platforms.create(width-45, 65, "terrain", 215)
-    platforms.create(width-60, 65, "terrain", 215)
-    platforms.create(width-75, 65, "terrain", 215)
-    finish.create(width-50, 30, "idle_finish").setScale(0.75,0.75).refreshBody()
+  addFinish(x,y){
+    platforms.create(x-30, y, "terrain", 215)
+    platforms.create(x-45, y, "terrain", 215)
+    platforms.create(x-60, y, "terrain", 215)
+    platforms.create(x-75, y, "terrain", 215)
+    finish =  finish.create(x-50, y-35, "idle_finish").setScale(0.75,0.75).refreshBody()
   }
 
-  addStart(){
+  addStart(x,y){
     start = this.physics.add.staticGroup()
-    start.create(30, height-40, "idle_start")
+    start.create(x, y, "idle_start")
   }
 
   createPlattforms(){
     // add Green Body
     platforms.create(0, height-8, "terrain", 7).setScale(width, 1).refreshBody()
-    // add randomly generated plattforms
-    this.addSpikehead(400, 600)
-    this.addSaw(500, 600)
-    this.addPlattformWithRockhead(300, 200)
+    const levels = width >= 1500 ? this.game.levels.large : this.game.levels.small
+    // add start
+    this.addStart(width * levels.start.x, height * levels.start.y)
+    // add finish
+    this.addFinish(width *levels.finish.x, height * levels.finish.y)
+    // add all other stuff
+    levels.spikeheads.forEach(_ => this.addSpikehead(width * _.x, height*_.y))
+    levels.plattforms.forEach(_ => this.addThickPlattform(width * _.x, height * _.y, _.scale))
+    levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y))
+    levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
+    levels.sticks.forEach(_ => this.addSmallPlattform(width*_.x, height*_.y))
   }
 
 
   addThickPlattform(x, y, scale){
-    platforms.create(x, y, "terrain", 7).setScale(scale, 1).refreshBody()
+    platforms.create(x, y, "terrain", 13).setScale(scale, 1).refreshBody()
   }
 
   addSmallPlattform(x, y){
@@ -197,7 +207,8 @@ class Game extends Phaser.Scene{
 
   finished(){
     finished = true
-    finish.anims.play("animation_finished", true)
+    finish.anims.play("animation_finish", true)
+    this.game.finished()
   }
 
   initAnimations(){
