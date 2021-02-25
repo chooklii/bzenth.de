@@ -2,8 +2,8 @@ import React from "react"
 import Phaser from "phaser";
 import Game from "./Game"
 import {levels, starting} from "./levels"
-import {Button, Tooltip} from "antd"
-import { faGrinTongueSquint } from "@fortawesome/free-regular-svg-icons";
+import {Button, Tooltip, Row, Col} from "antd"
+import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
 
 const config = {
   type: Phaser.AUTO,
@@ -23,10 +23,11 @@ var game;
 
 const itemsToUnlock = {
   1: "About Me",
+  2: "Credits",
   3: "Skills",
   5: "GitHub Projekte",
-  7: "Projekte",
-  10: "Kontakt"
+  6: "Öffentliche Projekte",
+  8: "Kontakt"
 }
 
 class GameHome extends React.Component{
@@ -36,12 +37,14 @@ class GameHome extends React.Component{
         gameWidth: 0,
         gameHeight: 0,
         currentLevel: 1,
-        finishedLevel: [],
+        finishedLevel: [1],
         selectedLevel: null,
         showMenu: true,
         showSettings: false,
         deathscreen: false,
-        killedBy: null
+        killedBy: null,
+        currentPage: null,
+        displayPage: false
       }
     }
   
@@ -99,34 +102,44 @@ class GameHome extends React.Component{
           <div className="explaination">
           <h1 className="explaination_heading">Arcade-Modus</h1>
           <div className="explaination_text">Beende Level um einzelne Seiten freizuschalten. Erreiche mit deiner Spielfigur den Pokal, um ein Level anzuschließen.</div>
-          <div className="explaination_setting">Bewegung: Pfeiltasten - Springen: Leertaste - Neustarten: R</div>
+          <div className="explaination_setting">
+            <div className="single_setting">
+            <p className="key_setting">Bewegung: </p>
+            <p className="value_setting">Pfeiltasten</p>
+            </div>
+            <div className="single_setting">
+            <p className="key_setting">Springen: </p>
+            <p className="value_setting">Leertaste</p>
+            </div>
+            <div className="single_setting">
+            <p className="key_setting">Restart: </p>
+            <p className="value_setting">R</p>
+            </div>
+            </div>
           </div>
-          <div className="level_row">
-            {this.singleLevel(1)}
-            {this.singleLevel(2)}
+          <Row className="level_row">
+            {this.singleLevel(1, "Getting Started")}
+            {this.singleLevel(2, "Schlangen S")}
             {this.singleLevel(3)}
             {this.singleLevel(4)}
             {this.singleLevel(5)}
-          </div>
-          <div className="level_row">
             {this.singleLevel(6)}
             {this.singleLevel(7)}
             {this.singleLevel(8)}
-            {this.singleLevel(9)}
-            {this.singleLevel(10)}
 
-          </div>
+          </Row>
         </div>
       )
     }
 
-    singleLevel(levelID){
+    singleLevel(levelID, levelName){
       const disabled = (levelID == 1 || this.state.finishedLevel.includes(levelID -1)) ? false: true 
       return(
-        <div className="single_level">
+        <Col xl={6} xxl={6} lg={8} md={12} sm={12} xs={12}>
+          <div className="single_level">
           <div className="single_level_row">
             <div className={"level l"+levelID}></div>
-            <div className="single_level_name">Level {levelID}</div>
+            <div className="single_level_name">{levelName}</div>
           </div>
           {this.unlock_button(levelID)}
           <div className="button_start_level">
@@ -143,7 +156,9 @@ class GameHome extends React.Component{
           </Button>
           </Tooltip>
           </div>
-        </div>
+          </div>
+        </Col>
+        
       )
     }
 
@@ -155,6 +170,7 @@ class GameHome extends React.Component{
       <div className="button_start_level">
       <Tooltip title={disabled ? "Beende dieses Level, um diese Seite anzuzeigen." : "Klicke hier, um diese Seite anzuzeigen"}>
       <Button
+        onClick={() => this.setState({displayedPage: levelID, displayPage: true, showMenu: false})}
         style={{minWidth: "100%"}}
         type="dashed"
         disabled={disabled}>
@@ -261,17 +277,38 @@ class GameHome extends React.Component{
       )
     }
 
+    showPages(){
+      const {displayedPage} = this.state
+        return(
+          <div className="game_pages">
+            <div onClick={
+              () => this.setState({displayedPage: null, displayPage: false, showMenu: true})} 
+              className="back_icon"/>
+            <div className="content_game_pages"> 
+            {displayedPage === 1 && <AboutMeGame/>}
+            {displayedPage === 2 && <Credits/>}
+            {displayedPage === 3 && <SkillsGame/>}
+            {displayedPage === 5 && <PrivateProjectsGame/>}
+            {displayedPage === 6 && <PublicProjectsGame/>}
+            {displayedPage === 8 && <ContactGame/>}
+            </div>
+          </div>
+        )
+
+    }
+
     render(){
-      const {showMenu, showSettings, deathscreen} = this.state
+      const {showMenu, showSettings, deathscreen, displayPage} = this.state
         return(
             <div>
               {showMenu && this.levelSelection()}
-              {!showMenu && <div>
+              {(!showMenu && !displayPage) && <div>
                 {this.settingsIcon()}
                 {this.restartIcon()}
                 </div>}
               {deathscreen && this.deathScreen()}
               {showSettings && this.settings()}
+              {displayPage && this.showPages()}
               <div className="game">
                 <section id="phaser-target"/>
               </div>

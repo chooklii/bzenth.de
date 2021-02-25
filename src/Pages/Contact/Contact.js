@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../Components";
+import {Header} from "../../Components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faXing, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -70,9 +70,10 @@ class Contact extends React.Component {
   }
 
   render() {
+    const {game} = this.props
     return (
       <div>
-        <Header />
+        {!game && <Header />}
 
         <div className="contact">
           <div className="contact-heading">Kontakt:</div>

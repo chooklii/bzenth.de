@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Skills, Contact, Home, NotFound, Private, Projects, Imprint } from "./Pages";
+import { Skills, Contact, Home, NotFound, AboutMe, PublicProjects, Imprint } from "./Pages";
 import { GameHome } from "./GamePages";
 import { ScrollToTop } from "./Components";
 
@@ -24,7 +24,7 @@ class App extends React.Component {
             </Route>
             <Route exact path="/projekte">
               <ScrollToTop>
-                <Projects />
+                <PublicProjects />
               </ScrollToTop>
             </Route>
             <Route exact path="/skills">
@@ -34,7 +34,7 @@ class App extends React.Component {
             </Route>
             <Route exact path="/privat">
               <ScrollToTop>
-                <Private />
+                <AboutMe />
               </ScrollToTop>
             </Route>
             <Route exact path="/kontakt">

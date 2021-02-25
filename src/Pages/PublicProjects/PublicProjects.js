@@ -1,5 +1,5 @@
 import React from "react"
-import {Header} from "../Components"
+import {Header} from "../../Components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faGithub
@@ -9,7 +9,7 @@ import {
     faGraduationCap
 } from "@fortawesome/free-solid-svg-icons"
 
-class Projects extends React.Component {
+class PublicProjects extends React.Component {
 
     oepnv_project(){
         return(
@@ -135,4 +135,4 @@ class Projects extends React.Component {
     }
 }
 
-export default Projects
+export default PublicProjects

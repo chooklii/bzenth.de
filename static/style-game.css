@@ -32,7 +32,8 @@
     background-color: #c1d5d9;
     position: absolute;
     margin-top: 5%;
-    height: 80%;
+    height: fit-content;
+    min-height: 80%;
     border-radius: 5%;
 }
 
@@ -43,9 +44,7 @@
 }
 
 .single_level{
-    width: 15%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin: 10px;
     background-color: #a6b9bd;
 }
 
@@ -79,8 +78,8 @@
 }
 
 .explaination_text{
-    padding: 1em;
-    text-align: center;
+    padding: 1em 0 1em 0;
+    margin-left: 10%;
 }
 
 .game{
@@ -140,11 +139,6 @@
     border-radius: 10px;
 }
 
-.single_setting{
-    display: flex;
-    padding: .5em
-}
-
 .setting_key{
     width: 50%;
     font-weight: bold;
@@ -188,6 +182,77 @@
     margin-top: 30%;
     text-align: center;
 }
+
+.single_setting{
+    display: flex;
+    width: 100%;
+}
+
+.explaination_setting{
+    width: 100%;
+}
+
+.key_setting{
+    width: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.value_setting{
+    margin: 0
+}
+
+.game_pages{
+    position: absolute;
+    background-color: #def6fa;
+    z-index: 10;
+    margin-left: 2.5%;
+    height: fit-content;
+    min-height: 90%;
+    width: 95%;
+    margin-top: 2.5%;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    border-radius: 5%;
+    padding: 1.5em
+}
+
+.back_icon{
+    background-image: url("../assets/menu/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22.5px;
+    height: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.content-game{
+    padding-top: 10px
+}
+
+@keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+}
+
+ @-moz-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
+
+ @-webkit-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
+
+ @-o-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
 
 .l1{
     background-image: url("../assets/levels/01.png");
