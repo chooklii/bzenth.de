@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Skills, Contact, Home, NotFound, AboutMe, PublicProjects, Imprint } from "./Pages";
-import { GameHome } from "./GamePages";
+import { GameHome } from "./Game/GameHome";
 import { ScrollToTop } from "./Components";
 
 import "../static/style-mobile.css";
