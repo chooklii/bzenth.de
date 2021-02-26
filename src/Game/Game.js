@@ -5,13 +5,13 @@ var width;
 var height;
 var lastMovingDirection = "r"
 var hit = false
-var finished = false
 var platforms;
 var rockheads;
 var spikeheads;
 var saws;
 var finish;
 var start;
+
 class Game extends Phaser.Scene{
   constructor(){
     super()
@@ -207,7 +207,6 @@ class Game extends Phaser.Scene{
   }
 
   finished(){
-    finished = true
     finish.anims.play("animation_finish", true)
     this.game.finished()
   }

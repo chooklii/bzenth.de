@@ -53,7 +53,7 @@ module.exports = {
       ]
     },
     entry: {
-      bundle: "./src/index.js",
+      bundle: "./src/Classic/index.js",
       game: "./src/Game/index.js"
     },
     output: {

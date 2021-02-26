@@ -8,8 +8,8 @@ const cv_content = [
     {time: "09/2020 - heute", text: "Master Wirtschaftsinformatik - Informationsmanagement und Data Science"}
 ]
 
-const description = "Ich bin ein 23-jähriger aus dem Raum Öhringen und aktuell im 1. Semester meines Masterstudiums an der Hochschule Heilbronn."
-const hobbies = "Neben meinem Studium verbringe ich meine Zeit mit Ausdauersport (Any Surface - Any Distance), Lesen, Entwicklung, Videospielen und einem allgemeinen Interesse an fast jeder Sportart."
+const description = "Ich bin ein 23-jähriger aus dem Raum Öhringen und aktuell im 2. Semester meines Masterstudiums an der Hochschule Heilbronn. Zuvor habe ich an der HHN bereits meinen Bachelor abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
+const hobbies = "Privat verbringe ich meine Zeit mit Joggen (Any Surface - Any Distance), Lesen, Privaten Entwicklungsprojekten, Videospielen und einem allgemeinem Interesse an fast jeder Sportart."
 
 export{
     cv_content,

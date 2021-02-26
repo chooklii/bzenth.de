@@ -25,7 +25,7 @@ const itemsToUnlock = {
   1: "About Me",
   2: "Credits",
   3: "Skills",
-  5: "GitHub Projekte",
+  5: "Private Projekte",
   6: "Öffentliche Projekte",
   8: "Kontakt"
 }
@@ -37,7 +37,7 @@ class GameHome extends React.Component{
         gameWidth: 0,
         gameHeight: 0,
         currentLevel: 1,
-        finishedLevel: [1],
+        finishedLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         selectedLevel: null,
         showMenu: true,
         showSettings: false,

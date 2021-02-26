@@ -234,6 +234,121 @@
     padding-top: 10px
 }
 
+.icon_game{
+    margin-right: 5px;
+}
+
+
+.heading_game{
+    font-family: "Lobster";
+    text-align: center;
+}
+
+.skills_game{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.skill_key{
+    width: 30%;
+    font-family: "Brush Script MT", cursive;
+}
+
+.skill_value{
+    width: 70%;
+    font-family: "Brush Script MT", cursive;
+}
+
+.private_game{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.game_text{
+    font-family: "Brush Script MT", cursive;
+    line-height: 200%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.berlin{
+    background-image: url("../static/berlin.jpg");
+}
+
+.es{
+    background-image: url("../static/es.jpg");
+}
+
+.image_game{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    margin-left: 20%;
+    height: 80%;
+    min-height: 30vh;
+    margin-right: 5px;
+}
+
+.storagable{
+    background-image: url("../static/storagable.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 308px;
+    height: 330px; 
+    margin: 0 auto
+}
+
+.mealtracker{
+    background-image: url("../static/mealtracker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 324px; 
+    margin: 0 auto
+}
+
+.content_aboutme{
+    min-height: 40vh
+}
+
+.design_buttons{
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+}
+
+.headingMargin{
+    margin-top: 2em
+}
+
+.single_skill_box{
+    display: flex;
+    justify-content: center;
+}
+
+.private_project_game{
+    padding: 1em
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content_aboutme{
+        min-height: 0%;
+    }
+
+    .image_game{
+        min-height: 300px;
+        margin-bottom: 20px;
+    }
+
+
+
+    
+}
+
 @keyframes fadein{
     from {opacity:0%}
     to {opacity:100%}
