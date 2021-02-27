@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /static
+Disallow: /assets
 
 Sitemap: http://bzenth.de/sitemap.xml

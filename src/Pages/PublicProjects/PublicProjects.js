@@ -45,20 +45,6 @@ class PublicProjects extends React.Component {
         )
     }
 
-    hartwork_project(){
-        return(
-            <div className="projects-picture-right">
-            <div className="project-right-content">
-            <div className="project-heading">#HARTWORK</div>
-            <div className="project-description-one">
-                    Coming soon
-                </div>
-            </div>
-            <div className="project-hartwork-image"></div>
-            </div>
-        )
-    }
-
     bzenth_project(){
         return(
             <div className="projects-picture-right">

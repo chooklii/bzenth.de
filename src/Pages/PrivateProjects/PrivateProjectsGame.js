@@ -11,7 +11,7 @@ import {
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 const PrivateProjectsGame = () => {
 
-    const bodyProject = (description, link) => {
+    const bodyProject = (description) => {
         return (
             <div>
                 <div>
@@ -28,9 +28,14 @@ const PrivateProjectsGame = () => {
                         )
                     })}
                 </div>
-                <div className="design_buttons">
-                    <Button type="primary" onClick={() => window.open(link, '_blank')}>Zum Projekt</Button>
-                </div>
+            </div>
+        )
+    }
+
+    const buttonProject = (link) => {
+        return (
+            <div className="design_buttons private_projects">
+                <Button type="primary" onClick={() => window.open(link, '_blank')}>Zum Projekt</Button>
             </div>
         )
     }
@@ -43,49 +48,50 @@ const PrivateProjectsGame = () => {
             </p>
             <Row>
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="private_project_game">
+                    <div className="project_game">
                         <h2 className="heading_game">
                             <FontAwesomeIcon icon={faArchive} className="icon_game" />
                             Storagable
                         </h2>
                         <div className="storagable" />
-                        {bodyProject(storagable, "https://github.com/chooklii/storagable")}
+                        {bodyProject(storagable)}
                     </div>
+                    {buttonProject("https://github.com/chooklii/storagable")}
                 </Col>
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="private_project_game">
+                    <div className="project_game">
                         <h2 className="heading_game">
                             <FontAwesomeIcon icon={faCookieBite} className="icon_game" />
                             Mealtracker
                         </h2>
                         <div className="mealtracker" />
-                        {bodyProject(mealtracker, "https://github.com/chooklii/mealTracker")}
+                        {bodyProject(mealtracker)}
                     </div>
+                    {buttonProject("https://github.com/chooklii/mealTracker")}
                 </Col>
                 <Divider />
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="private_project_game">
+                    <div className="project_game">
                         <h2 className="heading_game">
                             <FontAwesomeIcon icon={faGamepad} className="icon_game" />
                             Bootlii
                         </h2>
                         <div className="bootlii" />
                         <p className="game_text">{bootlii}</p>
-                        <div className="design_buttons">
-                            <Button type="primary" onClick={() => window.open("https://github.com/chooklii/Bootlii", '_blank')}>Zum Projekt</Button>
-                        </div>
                     </div>
+                    {buttonProject("https://github.com/chooklii/Bootlii")}
                 </Col>
 
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="private_project_game">
+                    <div className="project_game">
                         <h2 className="heading_game">
                             <FontAwesomeIcon icon={faBrain} className="icon_game" />
                             Big Brain
                         </h2>
                         <div className="bigbrain" />
-                        {bodyProject(bigBrain, "https://github.com/chooklii/BigBrain")}
+                        {bodyProject(bigBrain)}
                     </div>
+                    {buttonProject("https://github.com/chooklii/BigBrain")}
                 </Col>
             </Row>
         </div>

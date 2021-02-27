@@ -4,6 +4,7 @@ import Game from "./Game"
 import {levels, starting} from "./levels"
 import {Button, Tooltip, Row, Col} from "antd"
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
+import { faWindowMinimize } from "@fortawesome/free-solid-svg-icons";
 
 const config = {
   type: Phaser.AUTO,
@@ -99,6 +100,7 @@ class GameHome extends React.Component{
     levelSelection(){
       return(
         <div className="level_selector">
+          <Button id="game_back" onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
           <div className="explaination">
           <h1 className="explaination_heading">Arcade-Modus</h1>
           <div className="explaination_text">Beende Level um einzelne Seiten freizuschalten. Erreiche mit deiner Spielfigur den Pokal, um ein Level anzuschließen.</div>

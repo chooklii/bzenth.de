@@ -7,7 +7,7 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Rating from "@material-ui/lab/Rating";
+import {Rate} from "antd"
 import {languages, technologySkills, otherSkills, programmingLanguage} from "./content"
 class Skills extends React.Component {
   renderSingleSkill(name, rating) {
@@ -16,10 +16,10 @@ class Skills extends React.Component {
     return (
       <div key={name} className="single-skill">
         <div className="skill-name">{name}</div>
-        {!isIE11 && <Rating
+        {!isIE11 && <Rate
           className="rating-element"
-          name="read-only"
-          value={rating}
+          disabled
+          defaultValue={rating}
           size="small"
           readOnly
         />

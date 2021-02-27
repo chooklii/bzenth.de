@@ -3,10 +3,7 @@ import {Header} from "../../Components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faXing, faGithub } from "@fortawesome/free-brands-svg-icons";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button"
-import axios from 'axios';
-
+import {Button} from "antd"
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -43,14 +40,14 @@ class Contact extends React.Component {
           description: description,
           topic: topic
         }
-        axios.post(url, body).then(
-          this.setState({
-            mail: "",
-            description: "",
-            topic: "",
-            showForm: false
-          })
-        )
+        // axios.post(url, body).then(
+        //   this.setState({
+        //     mail: "",
+        //     description: "",
+        //     topic: "",
+        //     showForm: false
+        //   })
+        // )
 
       }
     }
@@ -119,6 +116,7 @@ class Contact extends React.Component {
           <div className="contact-first-line">Einfach Daten eingeben und ich melde mich bei Ihnen.</div>
           {this.state.showForm &&
           <form className="form-contact" noValidate autoComplete="off">
+            {/*
             <div className="form-topic">
             <TextField
             className="form-topic"
@@ -154,6 +152,7 @@ class Contact extends React.Component {
               helperText={this.state.mailText}
             />
             </div>
+            */}
             <div className="form-button">
             <Button onClick={this.handleSubmit} variant="contained" color="primary" disabled={this.state.disabled}>Abschicken</Button>
             </div>

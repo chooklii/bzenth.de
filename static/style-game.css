@@ -310,6 +310,48 @@
     margin: 0 auto
 }
 
+.bzenth{
+    background-image: url("../static/bzenth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 212px; 
+    margin: 0 auto
+}
+
+.gradulator{
+    background-image: url("../static/gradulator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 417px;
+    height: 200px; 
+    margin: 0 auto
+}
+
+.oepnv{
+    background-image: url("../static/oepnv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 411px;
+    height: 218px; 
+    margin: 0 auto
+}
+
+.game_contact_image{
+    background-image: url("../static/win.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+    height: 320px; 
+    margin: 0 auto
+}
+
+#game_back{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 80%;
+}
+
 .content_aboutme{
     min-height: 40vh
 }
@@ -318,6 +360,11 @@
     justify-content: center;
     display: inline-flex;
     width: 100%;
+}
+
+.private_projects{
+    position: absolute;
+    bottom: -10px
 }
 
 .headingMargin{
@@ -329,8 +376,22 @@
     justify-content: center;
 }
 
-.private_project_game{
-    padding: 1em
+.project_game{
+    padding: 1em;
+    min-height: 100%;
+}
+
+.button_public_project{
+    margin-left: 5px;
+}
+
+.game_contact_link{
+    margin-left: 20%;
+    font-size: 16px;
+    color: black;
+    display: block;
+    padding: .3em;
+    width: fit-content;
 }
 
 @media screen and (max-width: 1200px) {
@@ -344,9 +405,9 @@
         margin-bottom: 20px;
     }
 
-
-
-    
+    #game_back{
+    margin-left: 70%;
+    }
 }
 
 @keyframes fadein{
