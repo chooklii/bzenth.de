@@ -8,6 +8,13 @@
     src: url('./lobster.ttf') format('truetype');
   }
 
+#root{
+    height: 100%;
+} 
+
+.game_home{
+    height: 100%;
+}
 .level_play{
     background-image: url("../assets/menu/play.png");
     background-repeat: no-repeat;
@@ -82,9 +89,27 @@
     margin-left: 10%;
 }
 
+.app{
+    height: 100%;
+}
+
 .game{
-    margin-left: 50px;
-    padding-top: 50px;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    display: -moz-box;
+    -moz-box-pack: center;
+    -mos-box-align: center;
+
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: box;
+    box-pack: center;
+    box-align: center;
+    height: 100%;
 }
 
 .level{

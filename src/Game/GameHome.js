@@ -4,7 +4,6 @@ import Game from "./Game"
 import {levels, starting} from "./levels"
 import {Button, Tooltip, Row, Col} from "antd"
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
-import { faWindowMinimize } from "@fortawesome/free-solid-svg-icons";
 
 const config = {
   type: Phaser.AUTO,
@@ -50,8 +49,10 @@ class GameHome extends React.Component{
     }
   
     componentDidMount(){
-      config.height = window.innerHeight-100
-      config.width = window.innerWidth-100
+      const maxWidth = 2000
+      const maxHeight = 1300
+      config.height = window.innerHeight < maxHeight ? window.innerHeight-100 : maxHeight
+      config.width = window.innerWidth < maxWidth ? window.innerWidth-100 : maxWidth
       game = new Phaser.Game(config)
       game.levels = starting
     }
@@ -122,8 +123,8 @@ class GameHome extends React.Component{
           <Row className="level_row">
             {this.singleLevel(1, "Getting Started")}
             {this.singleLevel(2, "Schlangen S")}
-            {this.singleLevel(3)}
-            {this.singleLevel(4)}
+            {this.singleLevel(3, "Kettensägenkantine")}
+            {this.singleLevel(4, "Spicy Spike")}
             {this.singleLevel(5)}
             {this.singleLevel(6)}
             {this.singleLevel(7)}
@@ -302,7 +303,7 @@ class GameHome extends React.Component{
     render(){
       const {showMenu, showSettings, deathscreen, displayPage} = this.state
         return(
-            <div>
+            <div className="game_home">
               {showMenu && this.levelSelection()}
               {(!showMenu && !displayPage) && <div>
                 {this.settingsIcon()}

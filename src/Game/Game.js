@@ -84,7 +84,7 @@ class Game extends Phaser.Scene{
   initWorld(){
     platforms = this.physics.add.staticGroup();
     rockheads = this.physics.add.group({immovable: true, collideWorldBounds: true});
-    spikeheads = this.physics.add.group()
+    spikeheads = this.physics.add.group({immovable: true})
     finish = this.physics.add.group({immovable: true})
     saws = this.physics.add.group({immovable: true});
 
@@ -180,20 +180,27 @@ class Game extends Phaser.Scene{
 
   hitSpikehead(){
     this.state.spikeheads.forEach(single => {
+      // check if player and single spikehead are within of 10 values
+      if((player.x +player.displayOriginX > single.x - single.displayOriginX -10) && (player.x - player.displayOriginX < single.x + single.displayOriginX +10) &&
+        (player.y +player.displayOriginY > single.y - single.displayOriginY -10) && (player.y - player.displayOriginY < single.y + single.displayOriginY +10)){
       if((player.x +player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
         if(player.y > single.y){
+          // player hit spikehead from top
           single.anims.play("spikes_top")
         }
-        else{
+        // player hit spikehead from bottom
+        else if(player.y < single.y){
           single.anims.play("spikes_bottom")
         }
       }else{
-        if(player.x +player.displayOriginX < single.x - single.displayOriginX){
+        if(player.x + player.displayOriginX < single.x - single.displayOriginX){
+          // player is left of spikehead
           single.anims.play("spikes_left")
         }else{
           single.anims.play("spikes_right")
         }
       }
+    }
     })
     hit=true
     player.anims.play("hit", true)
