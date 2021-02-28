@@ -1,6 +1,197 @@
 // positions are given in percent so plattforms are scalled
 // to larger and smaller screens
 const levels = {
+    8: {
+        small: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        large: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        background: "green"
+    },
+    7: {
+        small: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        large: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        background: "yellow"
+    },
+    6: {
+        small: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        large: {
+            spikeheads: [],
+            plattforms: [],
+            saws: [],
+            rockheads: [],
+            sticks: [],
+            finish: {},
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        background: "brown"
+    },
+    5: {
+        small: {
+            spikeheads: [
+                {x: 0.8, y: 0.28},
+                {x: 0.6, y: 0.28},
+                {x: 0.4, y: 0.28}
+            ],
+            plattforms: [
+                {x: 0.8, y: 0.5, scale: 1},
+                {x: 0.7, y: 0.5, scale: 1},
+                {x: 0.6, y: 0.5, scale: 1},
+                {x: 0.5, y: 0.5, scale: 1},
+                {x: 0.4, y: 0.5, scale: 1},
+                {x: 0.9, y: 0.5, scale: 3}
+            ],
+            saws: [
+                {x: 0.75, y: 0.1},
+                {x: 0.65, y: 0.12},
+                {x: 0.55, y: 0.14},
+                {x: 0.45, y: 0.16},
+                {x: 0.97, y: 0.6},
+            ],
+            rockheads: [
+                {x: 0.8, y: 0.25, scale: 1},
+                {x: 0.7, y: 0.25, scale: 1},
+                {x: 0.6, y: 0.25, scale: 1},
+                {x: 0.5, y: 0.25, scale: 1},
+                {x: 0.4, y: 0.25, scale: 1}
+            ],
+            sticks: [
+                {x: 0.85, y: 0.1},
+                {x: 0.3, y: 0.25},
+                {x: 0.2, y: 0.25},
+                {x: 0.1, y: 0.3},
+                {x: 0.03, y: 0.35},
+                {x: 0.1, y: 0.45},
+                {x: 0.2, y: 0.5},
+                {x: 0.3, y: 0.5},
+                {x: 0.95, y: 0.6},
+                {x: 0.85, y: 0.7},
+                {x: 0.72, y: 0.7},
+                {x: 0.6, y: 0.7},
+                {x: 0.48, y: 0.8},
+                {x: 0.35, y: 0.85}
+            ],
+            finish: {
+                x: 0.95,
+                y: 0.1
+            },
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        large: {
+            spikeheads: [
+                {x: 0.8, y: 0.28},
+                {x: 0.6, y: 0.28},
+                {x: 0.4, y: 0.28}
+            ],
+            plattforms: [
+                {x: 0.8, y: 0.5, scale: 1},
+                {x: 0.7, y: 0.5, scale: 1},
+                {x: 0.6, y: 0.5, scale: 1},
+                {x: 0.5, y: 0.5, scale: 1},
+                {x: 0.4, y: 0.5, scale: 1},
+                {x: 0.9, y: 0.5, scale: 3}
+            ],
+            saws: [
+                {x: 0.75, y: 0.1},
+                {x: 0.65, y: 0.12},
+                {x: 0.55, y: 0.14},
+                {x: 0.45, y: 0.16},
+                {x: 0.97, y: 0.6},
+            ],
+            rockheads: [
+                {x: 0.8, y: 0.25, scale: 1},
+                {x: 0.7, y: 0.25, scale: 1},
+                {x: 0.6, y: 0.25, scale: 1},
+                {x: 0.5, y: 0.25, scale: 1},
+                {x: 0.4, y: 0.25, scale: 1}
+            ],
+            sticks: [
+                {x: 0.85, y: 0.1},
+                {x: 0.3, y: 0.25},
+                {x: 0.2, y: 0.25},
+                {x: 0.1, y: 0.3},
+                {x: 0.03, y: 0.35},
+                {x: 0.1, y: 0.45},
+                {x: 0.2, y: 0.5},
+                {x: 0.3, y: 0.5},
+                {x: 0.95, y: 0.6},
+                {x: 0.85, y: 0.7},
+                {x: 0.72, y: 0.7},
+                {x: 0.6, y: 0.7},
+                {x: 0.48, y: 0.8},
+                {x: 0.35, y: 0.85},
+                {x: 0.25, y: 0.93},
+            ],
+            finish: {
+                x: 0.95,
+                y: 0.1
+            },
+            start: {
+                x: 0.02,
+                y: 0.95
+            },
+        },
+        background: "purple"
+    },
     4: {
         small: {
             spikeheads: [

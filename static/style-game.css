@@ -14,7 +14,14 @@
 
 .game_home{
     height: 100%;
+    background-color: #d3e9ed;
+    background-repeat: repeat;
 }
+
+#phaser-target{
+    border: 1px solid black
+}
+
 .level_play{
     background-image: url("../assets/menu/play.png");
     background-repeat: no-repeat;

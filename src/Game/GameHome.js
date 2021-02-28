@@ -49,10 +49,8 @@ class GameHome extends React.Component{
     }
   
     componentDidMount(){
-      const maxWidth = 2000
-      const maxHeight = 1300
-      config.height = window.innerHeight < maxHeight ? window.innerHeight-100 : maxHeight
-      config.width = window.innerWidth < maxWidth ? window.innerWidth-100 : maxWidth
+      config.height = window.innerHeight - 100
+      config.width = window.innerWidth - 100
       game = new Phaser.Game(config)
       game.levels = starting
     }
@@ -300,18 +298,24 @@ class GameHome extends React.Component{
 
     }
 
+    renderButtons(){
+      return(
+        <div className="ingame_icons">
+                {this.settingsIcon()}
+                {this.restartIcon()}
+        </div>
+      )
+    }
+
     render(){
       const {showMenu, showSettings, deathscreen, displayPage} = this.state
         return(
             <div className="game_home">
               {showMenu && this.levelSelection()}
-              {(!showMenu && !displayPage) && <div>
-                {this.settingsIcon()}
-                {this.restartIcon()}
-                </div>}
               {deathscreen && this.deathScreen()}
               {showSettings && this.settings()}
               {displayPage && this.showPages()}
+              {(!showMenu && !displayPage) && this.renderButtons()}
               <div className="game">
                 <section id="phaser-target"/>
               </div>
