@@ -34,9 +34,6 @@ class GameHome extends React.Component{
     constructor(props){
       super(props)
       this.state = {
-        gameWidth: 0,
-        gameHeight: 0,
-        currentLevel: 1,
         finishedLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         selectedLevel: null,
         showMenu: true,
@@ -44,7 +41,8 @@ class GameHome extends React.Component{
         deathscreen: false,
         killedBy: null,
         currentPage: null,
-        displayPage: false
+        displayPage: false,
+        type: null
       }
     }
   
@@ -54,7 +52,9 @@ class GameHome extends React.Component{
       config.width = width
       game = new Phaser.Game(config)
       game.levels = starting
+      game.restart = () => void(0)
       game.type = type
+      this.setState({type: type})
     }
 
     getScreenSize(){
@@ -73,7 +73,7 @@ class GameHome extends React.Component{
         }
       }else{
         return{
-          width: 1800, height: 900, type:"xl"
+          width: 1800, height: 900, type: "xl"
         }
       }
     }
@@ -108,6 +108,7 @@ class GameHome extends React.Component{
     initGame(id){
       game = new Phaser.Game(config)
       game.levels = levels[id]
+      game.type = this.state.type
       game.finished = () => this.finished()
       game.death = (way) => this.death(way)
       game.restart = () => this.restartLevel()
@@ -217,7 +218,7 @@ class GameHome extends React.Component{
     settingsIcon(){
       return(
         <div onClick={() => this.handleSettingsMenu()}
-        className="settings_icon"></div>
+        className="settings_icon" style={{marginTop: "-" + config.height /2 + "px"}}></div>
       )
     }
 
@@ -235,13 +236,15 @@ class GameHome extends React.Component{
       return(
         <div 
         onClick={() => this.restartLevel()}
-        className="restart_icon"></div>
+        className="restart_icon" style={{marginTop: "-" + config.height /2 + "px"}}></div>
       )
     }
 
     settings(){
       return(
-        <div className="settings">
+        <div 
+          className="settings" 
+          style={{marginTop: "-" + (config.height/2 - 30) + "px"}}>
           <div className="controll">
             <div className="single_setting">
               <div className="setting_key">Bewegung:</div>
@@ -326,20 +329,20 @@ class GameHome extends React.Component{
         <div className="ingame_icons">
                 {this.settingsIcon()}
                 {this.restartIcon()}
+                {this.state.showSettings && this.settings()}
         </div>
       )
     }
 
     render(){
-      const {showMenu, showSettings, deathscreen, displayPage} = this.state
+      const {showMenu, deathscreen, displayPage} = this.state
         return(
             <div className="game_home">
               {showMenu && this.levelSelection()}
               {deathscreen && this.deathScreen()}
-              {showSettings && this.settings()}
               {displayPage && this.showPages()}
-              {(!showMenu && !displayPage) && this.renderButtons()}
               <div className="game">
+              {(!showMenu && !displayPage) && this.renderButtons()}
                 <section id="phaser-target"/>
               </div>
             </div>

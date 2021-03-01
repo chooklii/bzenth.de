@@ -13,6 +13,9 @@ var saws;
 var finish;
 var start;
 
+
+const deathsound = new Audio("../assets/sounds/gameover.wav")
+const finishsound = new Audio("../assets/sounds/finish.wav")
 class Game extends Phaser.Scene{
   constructor(){
     super()
@@ -25,7 +28,10 @@ class Game extends Phaser.Scene{
   }
 
   preload(){
+    // reset game to enable full reload functionality
     hit = false
+    deathsound.pause()
+    deathsound.currentTime = 0
     // player movement
     this.load.spritesheet("run_right", "../assets/character/run_right.png", { frameWidth: 32, frameHeight: 32 })
     this.load.spritesheet("idle_right", "../assets/character/idle_right.png", { frameWidth: 32, frameHeight: 32 })
@@ -113,7 +119,7 @@ class Game extends Phaser.Scene{
   createPlattforms(){
     // add Green Body
     platforms.create(0, height-8, "terrain", 7).setScale(width, 1).refreshBody()
-    const levels = width >= 1500 ? this.game.levels.large : this.game.levels.small
+    const levels = this.game.levels[this.game.type]
     // add start
     this.addStart(width * levels.start.x, height * levels.start.y)
     // add finish
@@ -185,10 +191,15 @@ class Game extends Phaser.Scene{
         if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
           hit=true
           player.anims.play("hit", true)
-          this.game.death("rockhead")
+          this.playerdeath("rockhead")
         }
       } 
     })
+}
+
+playerdeath(type){
+  if(deathsound.currentTime == 0) deathsound.play()
+  this.game.death(type)
 }
 
   hitSpikehead(){
@@ -217,16 +228,17 @@ class Game extends Phaser.Scene{
     })
     hit=true
     player.anims.play("hit", true)
-    this.game.death("spike")
+    this.playerdeath("spike")
   }
 
   hitSaw(){
     hit=true
     player.anims.play("hit", true)
-    this.game.death("saw")
+    this.playerdeath("saw")
   }
 
   finished(){
+    finishsound.play()
     finish.anims.play("animation_finish", true)
     this.game.finished()
   }

@@ -1,8 +1,8 @@
 // positions are given in percent so plattforms are scalled
-// to larger and smaller screens
+// to lr and ser screens
 const levels = {
     8: {
-        small: {
+        s: {
             spikeheads: [],
             plattforms: [],
             saws: [],
@@ -14,7 +14,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [],
             plattforms: [],
             saws: [],
@@ -29,7 +29,7 @@ const levels = {
         background: "green"
     },
     7: {
-        small: {
+        s: {
             spikeheads: [],
             plattforms: [],
             saws: [],
@@ -41,7 +41,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [],
             plattforms: [],
             saws: [],
@@ -56,7 +56,7 @@ const levels = {
         background: "yellow"
     },
     6: {
-        small: {
+        s: {
             spikeheads: [
                 {x: 0.76, y: 0.13},
                 {x: 0.68, y: 0.23},
@@ -144,7 +144,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [
                 {x: 0.76, y: 0.13},
                 {x: 0.68, y: 0.23},
@@ -235,7 +235,7 @@ const levels = {
         background: "brown"
     },
     5: {
-        small: {
+        s: {
             spikeheads: [
                 {x: 0.8, y: 0.28},
                 {x: 0.6, y: 0.28},
@@ -288,7 +288,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [
                 {x: 0.8, y: 0.28},
                 {x: 0.6, y: 0.28},
@@ -345,7 +345,7 @@ const levels = {
         background: "purple"
     },
     4: {
-        small: {
+        s: {
             spikeheads: [
                 {x: 0.17, y: 0.75},
                 {x: 0.33, y: 0.72},
@@ -390,7 +390,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [
                 {x: 0.17, y: 0.75},
                 {x: 0.33, y: 0.72},
@@ -438,7 +438,7 @@ const levels = {
         background: "pink"
     },
     3: {
-        small: {
+        s: {
             spikeheads: [],
             plattforms: [
                 { x: 0.75, y: 0.5, scale: 5 },
@@ -509,7 +509,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [],
             plattforms: [
                 { x: 0.75, y: 0.5, scale: 5 },
@@ -584,7 +584,7 @@ const levels = {
         background: "blue"
     },
     2: {
-        small: {
+        s: {
             spikeheads: [],
             plattforms: [
                 { x: 0.95, y: 0.7, scale: 5 },
@@ -618,7 +618,7 @@ const levels = {
                 y: 0.95
             },
         },
-        large: {
+        l: {
             spikeheads: [],
             plattforms: [
                 { x: 0.90, y: 0.7, scale: 5 },
@@ -661,7 +661,7 @@ const levels = {
         background: "gray"
     },
     1: {
-        small: {
+        s: {
             spikeheads: [],
             plattforms: [
                 { x: 0.1, y: 0.9, scale: 2 },
@@ -682,7 +682,7 @@ const levels = {
             },
             start: {}
         },
-        large: {
+        l: {
             spikeheads: [],
             plattforms: [
                 { x: 0.1, y: 0.9, scale: 2 },
@@ -708,7 +708,7 @@ const levels = {
 }
 
 const starting = {
-    small: {
+    s: {
         spikeheads: [],
         plattforms: [],
         saws: [],
@@ -717,7 +717,7 @@ const starting = {
         finish: {},
         start: {}
     },
-    large: {
+    l: {
         spikeheads: [],
         plattforms: [],
         saws: [],
