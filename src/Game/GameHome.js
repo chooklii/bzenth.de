@@ -49,10 +49,33 @@ class GameHome extends React.Component{
     }
   
     componentDidMount(){
-      config.height = window.innerHeight - 100
-      config.width = window.innerWidth - 100
+      const {width, height, type} = this.getScreenSize()
+      config.height = height
+      config.width = width
       game = new Phaser.Game(config)
       game.levels = starting
+      game.type = type
+    }
+
+    getScreenSize(){
+      const width = window.innerWidth
+      if(width <= 1450){
+        return{
+          width: 1200, height: 600, type: "s"
+        }
+      }else if(width <= 1650){
+        return{
+          width: 1400, height: 700, type:"m"
+        }
+      }else if(width <= 1850){
+        return{
+          width: 1600, height: 800, type: "l"
+        }
+      }else{
+        return{
+          width: 1800, height: 900, type:"xl"
+        }
+      }
     }
 
     componentWillUnmount(){
@@ -123,8 +146,8 @@ class GameHome extends React.Component{
             {this.singleLevel(2, "Schlangen S")}
             {this.singleLevel(3, "Kettensägenkantine")}
             {this.singleLevel(4, "Spicy Spike")}
-            {this.singleLevel(5)}
-            {this.singleLevel(6)}
+            {this.singleLevel(5, "Obacht Oben")}
+            {this.singleLevel(6, "Aufregender Aufzug")}
             {this.singleLevel(7)}
             {this.singleLevel(8)}
 

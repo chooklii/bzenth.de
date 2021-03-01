@@ -7,6 +7,7 @@ var lastMovingDirection = "r"
 var hit = false
 var platforms;
 var rockheads;
+var elevatorHeads;
 var spikeheads;
 var saws;
 var finish;
@@ -18,7 +19,8 @@ class Game extends Phaser.Scene{
     this.state = {
       rocks: [],
       saws: [],
-      spikeheads: []
+      spikeheads: [],
+      elevatorheads: []
     }
   }
 
@@ -70,6 +72,7 @@ class Game extends Phaser.Scene{
     this.physics.add.collider(player, platforms);
     this.physics.add.collider(rockheads, platforms);
     this.physics.add.collider(rockheads, player, this.hitRockhead, null, this)
+    this.physics.add.collider(elevatorHeads, player, this.hitElevatorRockhead, null, this)
     this.physics.add.collider(saws, player, this.hitSaw, null, this)
     this.physics.add.collider(player, finish, this.finished, null, this)
     this.physics.add.collider(player, spikeheads, this.hitSpikehead, null, this)
@@ -78,12 +81,14 @@ class Game extends Phaser.Scene{
   update(){
     !hit && this.movePlayer()
     this.moveRockHeads()
+    this.moveElevatorHeads()
     this.moveSpikeheads()
   }
 
   initWorld(){
     platforms = this.physics.add.staticGroup();
     rockheads = this.physics.add.group({immovable: true, collideWorldBounds: true});
+    elevatorHeads = this.physics.add.group({immovable: true, collideWorldBounds: true});
     spikeheads = this.physics.add.group({immovable: true})
     finish = this.physics.add.group({immovable: true})
     saws = this.physics.add.group({immovable: true});
@@ -119,6 +124,7 @@ class Game extends Phaser.Scene{
     levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y, _.amound))
     levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
     levels.sticks.forEach(_ => this.addSmallPlattform(width*_.x, height*_.y))
+    if(levels.elevator) levels.elevator.forEach(_ => this.addElevatorHead(width*_.x, height*_.y))
   }
 
 
@@ -139,6 +145,10 @@ class Game extends Phaser.Scene{
       this.state.saws.push(saw)
       current_x+=40
       }
+  }
+  
+  addElevatorHead(x, y){
+    this.state.elevatorheads.push(elevatorHeads.create(x, y, "idle_rockhead"))
   }
 
   addPlattformWithRockhead(x, y, scale = 5, multiple = false){
@@ -163,13 +173,16 @@ class Game extends Phaser.Scene{
     this.state.spikeheads.forEach(x => {
       x.defaultY = x.y
     })
+    this.state.elevatorheads.forEach(x => {
+      x.setVelocityY(100)
+    })
   }
 
   hitRockhead(){
     // check if player got hit by rockhead or jumped on it
     this.state.rocks.forEach(rockhead => {
       if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
-        if(player.y > rockhead.y){
+        if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
           hit=true
           player.anims.play("hit", true)
           this.game.death("rockhead")
@@ -316,6 +329,18 @@ class Game extends Phaser.Scene{
       else if(single.y >= single.defaultY+45){
         single.anims.play("bottom_rockhead")
         single.setVelocityY(-20)
+      }
+    })
+  }
+
+  moveElevatorHeads(){
+    this.state.elevatorheads.forEach(single => {
+      if(single.y < 100){
+        single.setVelocityY(300)
+      }
+      else if(single.body.y + 50 >= height){
+        single.anims.play("bottom_rockhead")
+        single.setVelocityY(-100)
       }
     })
   }
