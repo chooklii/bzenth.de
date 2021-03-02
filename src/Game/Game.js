@@ -198,7 +198,7 @@ class Game extends Phaser.Scene{
 }
 
 playerdeath(type){
-  if(deathsound.currentTime == 0) deathsound.play()
+  if(deathsound.currentTime == 0 && this.game.playMusic) deathsound.play()
   this.game.death(type)
 }
 
@@ -238,7 +238,7 @@ playerdeath(type){
   }
 
   finished(){
-    finishsound.play()
+    this.game.playMusic && finishsound.play()
     finish.anims.play("animation_finish", true)
     this.game.finished()
   }
@@ -347,7 +347,7 @@ playerdeath(type){
 
   moveElevatorHeads(){
     this.state.elevatorheads.forEach(single => {
-      if(single.y < 100){
+      if(single.y < 100){ 
         single.setVelocityY(300)
       }
       else if(single.body.y + 50 >= height){

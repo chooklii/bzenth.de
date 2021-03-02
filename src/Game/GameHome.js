@@ -3,7 +3,10 @@ import Phaser from "phaser";
 import Game from "./Game"
 import {levels, starting} from "./levels"
 import {Button, Tooltip, Row, Col} from "antd"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeUp, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
+import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 
 const config = {
   type: Phaser.AUTO,
@@ -20,7 +23,7 @@ const config = {
   }
 }
 var game;
-
+var currentSong
 const itemsToUnlock = {
   1: "About Me",
   2: "Credits",
@@ -42,11 +45,51 @@ class GameHome extends React.Component{
         killedBy: null,
         currentPage: null,
         displayPage: false,
-        type: null
+        type: null,
+        music_playing: false,
+        music_playlist: music_menu,
+        music_index: 0
       }
     }
   
     componentDidMount(){
+      this.initDefaultGame()
+      this.initMusic()
+    }
+
+    initMusic(){
+      const starting_index = Math.floor(Math.random() * music_menu.length)
+      this.setState([{music_index: starting_index}])
+      currentSong = new Audio(music_menu[starting_index])
+      currentSong.addEventListener("ended", event => {
+          this.playNextSong()
+        })
+    }
+
+    playNextSong(){
+      const {music_index, music_playlist} = this.state
+      if(music_index < music_playlist.length){
+        this.setState({music_index: music_index+1})
+        currentSong = new Audio(music_playlist[music_index+1])
+        currentSong.play()
+      }else{
+        this.setState({music_index: 0})
+        currentSong = new Audio(music_playlist[0])
+        currentSong.play()
+      }
+    }
+
+    updateMusic(theme){
+      if(this.state.music_playing){
+      currentSong.pause()
+      const starting_index = Math.floor(Math.random() * theme.length)
+      this.setState([{music_index: starting_index, music_playing: theme}])
+      currentSong = new Audio(theme[starting_index])
+      currentSong.play()
+      }
+    }
+
+    initDefaultGame(){
       const {width, height, type} = this.getScreenSize()
       config.height = height
       config.width = width
@@ -54,6 +97,7 @@ class GameHome extends React.Component{
       game.levels = starting
       game.restart = () => void(0)
       game.type = type
+      game.playMusic = false
       this.setState({type: type})
     }
 
@@ -80,10 +124,12 @@ class GameHome extends React.Component{
 
     componentWillUnmount(){
       window.removeEventListener("keydown")
+      window.removeEventListener("ended")
     }
 
     finished(){
       this.state.finishedLevel.push(this.state.selectedLevel)
+      this.updateMusic(music_menu)
       this.setState({showMenu: true})
       game.scene.pause("default")
     }
@@ -97,9 +143,10 @@ class GameHome extends React.Component{
       })
     }
 
-    selectedLevel(id){
+    selectedLevel(id, music_theme){
       // kill current game
       game.destroy(true)
+      this.updateMusic(music_theme)
       this.setState({selectedLevel: id, showMenu: false})
       // create new game with correct level id
       this.initGame(id)
@@ -109,6 +156,7 @@ class GameHome extends React.Component{
       game = new Phaser.Game(config)
       game.levels = levels[id]
       game.type = this.state.type
+      game.playMusic = this.state.music_playing
       game.finished = () => this.finished()
       game.death = (way) => this.death(way)
       game.restart = () => this.restartLevel()
@@ -123,7 +171,10 @@ class GameHome extends React.Component{
     levelSelection(){
       return(
         <div className="level_selector">
-          <Button id="game_back" onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
+          <div className="game_back">
+            <Button onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
+            {this.renderMusicIconMenu()}
+          </div>
           <div className="explaination">
           <h1 className="explaination_heading">Arcade-Modus</h1>
           <div className="explaination_text">Beende Level um einzelne Seiten freizuschalten. Erreiche mit deiner Spielfigur den Pokal, um ein Level anzuschließen.</div>
@@ -143,7 +194,7 @@ class GameHome extends React.Component{
             </div>
           </div>
           <Row className="level_row">
-            {this.singleLevel(1, "Getting Started")}
+            {this.singleLevel(1, "Getting Started", field_theme)}
             {this.singleLevel(2, "Schlangen S")}
             {this.singleLevel(3, "Kettensägenkantine")}
             {this.singleLevel(4, "Spicy Spike")}
@@ -157,7 +208,7 @@ class GameHome extends React.Component{
       )
     }
 
-    singleLevel(levelID, levelName){
+    singleLevel(levelID, levelName, music_theme){
       const disabled = (levelID == 1 || this.state.finishedLevel.includes(levelID -1)) ? false: true 
       return(
         <Col xl={6} xxl={6} lg={8} md={12} sm={12} xs={12}>
@@ -172,7 +223,7 @@ class GameHome extends React.Component{
           <Button 
             type="primary"
             style={{minWidth: "100%"}}
-            onClick={() => this.selectedLevel(levelID)}
+            onClick={() => this.selectedLevel(levelID, music_theme)}
             disabled={disabled}>
             <div className="button_start_text">
             <div className="level_play"></div>
@@ -259,7 +310,6 @@ class GameHome extends React.Component{
               <div className="setting_value">R</div>
             </div>
           </div>
-
           <div className="options">
           <Button 
             type="default" 
@@ -270,9 +320,9 @@ class GameHome extends React.Component{
             style={{marginLeft: "10px"}}
             type="primary" 
             onClick={() => {
+              this.updateMusic(music_menu)
               this.setState({showSettings: false, showMenu: true})
             }}>Hauptmenü</Button>
-            
           </div>
         </div>
       )
@@ -330,6 +380,19 @@ class GameHome extends React.Component{
                 {this.settingsIcon()}
                 {this.restartIcon()}
                 {this.state.showSettings && this.settings()}
+        </div>
+      )
+    }
+
+    renderMusicIconMenu(){
+      const {music_playing} = this.state
+      return(
+        <div className="mute_icon_game" onClick={() => {
+          music_playing && currentSong.pause()
+          !music_playing && currentSong.play()
+          this.setState({music_playing: !music_playing})
+          }}>
+          <FontAwesomeIcon icon={music_playing ? faVolumeUp: faVolumeMute}/>
         </div>
       )
     }
