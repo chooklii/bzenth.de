@@ -14,6 +14,7 @@ var finish;
 var start;
 
 
+const rockheadUpTempo = -100
 const deathsound = new Audio("../assets/sounds/gameover.wav")
 const finishsound = new Audio("../assets/sounds/finish.wav")
 class Game extends Phaser.Scene{
@@ -197,6 +198,19 @@ class Game extends Phaser.Scene{
     })
 }
 
+hitElevatorRockhead(){
+  // check if player got hit by rockhead or jumped on it
+  this.state.elevatorheads.forEach(single => {
+    if((player.x + player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
+      if(player.y > single.y && single.body.velocity.y != rockheadUpTempo){
+        hit=true
+        player.anims.play("hit", true)
+        this.playerdeath("rockhead")
+      }
+    } 
+  })
+}
+
 playerdeath(type){
   if(deathsound.currentTime == 0 && this.game.playMusic) deathsound.play()
   this.game.death(type)
@@ -352,7 +366,7 @@ playerdeath(type){
       }
       else if(single.body.y + 50 >= height){
         single.anims.play("bottom_rockhead")
-        single.setVelocityY(-100)
+        single.setVelocityY(rockheadUpTempo)
       }
     })
   }
@@ -363,7 +377,7 @@ playerdeath(type){
         single.setVelocityY(100)
       }
       else if(single.y >= single.defaultY+100){
-        single.setVelocityY(-100)
+        single.setVelocityY(rockheadUpTempo)
       }
     })
   }

@@ -3,7 +3,9 @@ import {Row, Col, Button} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faImage,
-    faQuoteRight
+    faQuoteRight,
+    faMusic,
+    faHeadphones
 } from "@fortawesome/free-solid-svg-icons"
 
 const Credits = () => {
@@ -11,7 +13,36 @@ const Credits = () => {
     const music = () => {
         return(
             <div>
+                <h2 className="heading_game">
+                    <FontAwesomeIcon icon={faMusic} className="icon_game"/>
+                    Sounds
+                </h2>
+                <p className="game_text">Sämtliche im Arcade Mode genutzte Musik und Sounds stammt aus dem RPG Music Pack musiziert von SVL.</p>
 
+                <div className="design_buttons">
+                <Button onClick={() => window.open("https://svl.itch.io/rpg-music-pack-svl", '_blank')}>RPG Music Pack</Button>
+                </div>
+
+                <h2 className="heading_game headingMargin">
+                    <FontAwesomeIcon icon={faHeadphones} className="icon_game"/>
+                    Namen der Lieder
+                </h2>
+
+                <p className="game_text">Im Menü werden die Tracks #1 bis Track #6 abgespielt. In den einzelnen Level folgende Musik:</p>
+                <div className="credits_music">
+                    <div className="credits_music_half">
+                    <p className="game_text">Level 1: Field Theme</p>
+                    <p className="game_text">Level 3: Cave Theme</p>
+                    <p className="game_text">Level 5: Cave Theme</p>
+                    <p className="game_text">Level 7: Night Theme</p>
+                </div>
+                <div className="credits_music_half">
+                    <p className="game_text">Level 2: Sea Theme</p>
+                    <p className="game_text">Level 4: Sea Theme</p>
+                    <p className="game_text">Level 6: Dungeon Theme</p>
+                    <p className="game_text">Level 8: Night Theme</p>
+                </div>
+                </div>
             </div>
         )
     }
@@ -53,13 +84,13 @@ const Credits = () => {
              </p>
             <Row>
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                <div>
+                <div className="box_credits">
                     {design()}
                 </div>
                 </Col>
 
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                <div>
+                <div className="box_credits">
                     {music()}
                 </div>
                 </Col>

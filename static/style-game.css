@@ -383,6 +383,20 @@
     display: flex
 }
 
+.box_credits{
+    padding: 1em
+}
+
+.credits_music{
+    display: inline-flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.credits_music_half{
+    width: 50%;
+}
+
 .mute_icon_game{
     margin-left: 10px;
     font-size: 20px;

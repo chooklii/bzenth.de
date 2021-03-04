@@ -195,13 +195,13 @@ class GameHome extends React.Component{
           </div>
           <Row className="level_row">
             {this.singleLevel(1, "Getting Started", field_theme)}
-            {this.singleLevel(2, "Schlangen S")}
-            {this.singleLevel(3, "Kettensägenkantine")}
-            {this.singleLevel(4, "Spicy Spike")}
-            {this.singleLevel(5, "Obacht Oben")}
-            {this.singleLevel(6, "Aufregender Aufzug")}
-            {this.singleLevel(7)}
-            {this.singleLevel(8)}
+            {this.singleLevel(2, "Schlangen S", sea_theme)}
+            {this.singleLevel(3, "Kettensägenkantine", cave_theme)}
+            {this.singleLevel(4, "Spicy Spike", sea_theme)}
+            {this.singleLevel(5, "Obacht Oben", field_theme)}
+            {this.singleLevel(6, "Aufregender Aufzug", dungeon_theme)}
+            {this.singleLevel(7, "Name", night_theme)}
+            {this.singleLevel(8, "Name", night_theme)}
 
           </Row>
         </div>
