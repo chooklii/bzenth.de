@@ -71,6 +71,7 @@ class Game extends Phaser.Scene{
   create(){
     width = this.game.config.width
     height = this.game.config.height
+    
     this.add.tileSprite(width/2, height/2, width, height, "background")
     this.initAnimations()
     this.initWorld()

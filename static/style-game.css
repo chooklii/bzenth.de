@@ -100,6 +100,13 @@
     height: 100%;
 }
 
+.game_error{
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+    padding-top: 20%;
+}
+
 .game{
     display: -ms-flexbox;
     -ms-flex-pack: center;

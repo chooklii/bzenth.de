@@ -1,10 +1,10 @@
 import React from "react"
 import Phaser from "phaser";
 import Game from "./Game"
-import {levels, starting} from "./levels"
+import {levels, starting} from "./level"
 import {Button, Tooltip, Row, Col} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeUp, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
+import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 
@@ -37,7 +37,7 @@ class GameHome extends React.Component{
     constructor(props){
       super(props)
       this.state = {
-        finishedLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        finishedLevel: [],
         selectedLevel: null,
         showMenu: true,
         showSettings: false,
@@ -55,6 +55,12 @@ class GameHome extends React.Component{
     componentDidMount(){
       this.initDefaultGame()
       this.initMusic()
+    }
+
+    
+    componentWillUnmount(){
+      window.removeEventListener("keydown")
+      window.removeEventListener("ended")
     }
 
     initMusic(){
@@ -93,12 +99,14 @@ class GameHome extends React.Component{
       const {width, height, type} = this.getScreenSize()
       config.height = height
       config.width = width
+      if(width >=1250){
       game = new Phaser.Game(config)
       game.levels = starting
       game.restart = () => void(0)
       game.type = type
       game.playMusic = false
       this.setState({type: type})
+      }
     }
 
     getScreenSize(){
@@ -120,11 +128,6 @@ class GameHome extends React.Component{
           width: 1800, height: 900, type: "xl"
         }
       }
-    }
-
-    componentWillUnmount(){
-      window.removeEventListener("keydown")
-      window.removeEventListener("ended")
     }
 
     finished(){
@@ -200,8 +203,8 @@ class GameHome extends React.Component{
             {this.singleLevel(4, "Spicy Spike", sea_theme)}
             {this.singleLevel(5, "Obacht Oben", field_theme)}
             {this.singleLevel(6, "Aufregender Aufzug", dungeon_theme)}
-            {this.singleLevel(7, "Name", night_theme)}
-            {this.singleLevel(8, "Name", night_theme)}
+            {this.singleLevel(7, "Where is the Way?", night_theme)}
+            {this.singleLevel(8, "Furioses Finale", night_theme)}
 
           </Row>
         </div>
@@ -399,8 +402,25 @@ class GameHome extends React.Component{
 
     render(){
       const {showMenu, deathscreen, displayPage} = this.state
+      if(config.width < 1250){
         return(
+          <div className="game_home">
+            <div className="game_error">
+            <h2 className="heading_game">
+                    <FontAwesomeIcon icon={faTimes} className="icon_game"/>
+                    Bildschirm zu klein
+                </h2>
+                <p className="game_text">Der genutzte Bildschirm ist leider zu klein, um den Arcade-Modus optimal zu nutzen. Bitte nutze einen Bildschirm, 
+                der größer als 1250px ist und besuche die Seite anschließend erneut. Eine Unterstützung für kleine Bildschirme und Smartphones folgt in einer
+                zukünftigen Version.</p>
+            </div>
+          </div>
+        )
+      }
+      
+      return(
             <div className="game_home">
+
               {showMenu && this.levelSelection()}
               {deathscreen && this.deathScreen()}
               {displayPage && this.showPages()}
@@ -408,6 +428,7 @@ class GameHome extends React.Component{
               {(!showMenu && !displayPage) && this.renderButtons()}
                 <section id="phaser-target"/>
               </div>
+
             </div>
         )
     }
