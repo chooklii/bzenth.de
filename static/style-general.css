@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Kaushan';
+    src: url('./KaushanScript.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('./lobster.ttf') format('truetype');
+  }

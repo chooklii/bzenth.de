@@ -1,7 +1,6 @@
 import React from "react";
-import { HomeHeader } from "../Components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import {Row, Col, Button} from "antd"
 
 const rotatingText = function (el, toRotate, period) {
   this.toRotate = toRotate;
@@ -44,14 +43,6 @@ rotatingText.prototype.tick = function () {
 };
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      designOpen: false,
-      devOpen: false,
-      liveOpen: false,
-    };
-  }
 
   componentDidMount() {
     this.renderRotation();
@@ -70,98 +61,56 @@ class Home extends React.Component {
     });
   }
 
+  classicMode(){
+    return(
+      <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
+        <Link className="classic_content" to="/skills">
+        <div className="home_classic_image"></div>
+        <h2 className="home_classic_name">Klassische Webseite</h2>
+
+        <div className="home_button">
+        <Button type="primary">
+          Zur klassischen Webseite
+        </Button>
+      </div>
+      </Link>
+    </Col>
+    )
+  }
+
+  arcadeMode(){
+    return(
+      <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
+      <video loop muted="muted" id="video_game" onMouseOut={() => this.stopVideo()} onMouseOver={() => this.hoverVideo()}>
+          <source src="../static/game.mp4" type="video/mp4"/>
+          Der genutzte Browser unterstützt die Video-Funktionalität leider nicht. 
+      </video>
+        <h2 className="home_game_name">Arcade Modus</h2>
+      <p className="home_text">Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.</p>
+      <div className="home_button">
+        <Button onClick={() => window.location.href="/game"} type="primary">Zum Arcade-Modus</Button>
+      </div>
+    </Col>
+    )
+  }
+
+  hoverVideo(){
+    document.getElementById("video_game").play()
+  }
+
+  stopVideo(){
+    document.getElementById("video_game").pause()
+  }
+
   render() {
     return (
       <div className="HomePage">
-        <HomeHeader />
         <div className="home-content">
-          <div className="home-welcome">
-            <span
-              className="home-rotating-text"
-              period="1000"
-              text='[ "Welcome", "Willkommen", "Benvenuto", "欢迎", "Bienvenue", "Velkominn"]'
-            ></span>
-            <h1 className="home-welcome-text">auf meiner Webseite</h1>
-          </div>
-          <div className="home-images">
-            <figure className="home-single-image">
-              {!this.state.designOpen && (
-                <div onClick={() => this.setState({ designOpen: true })} className="home-images-plan">
-                  <FontAwesomeIcon
-                    className="home-icon-black"
-                    size="2x"
-                    icon={faInfoCircle}
-                  />
-                </div>
-              )}
-              {this.state.designOpen && (
-                <div className="home-text-box" >
-                  <FontAwesomeIcon
-                    onClick={() => this.setState({ designOpen: false })}
-                    className="home-icon-black"
-                    size="2x"
-                    icon={faTimesCircle}
-                  />
-                  <p className="home-info-text">Erstellung eines Individuelles Designs Ihres Internetauftritts auf Basis Ihrer Wünsche und Anforderungen. <br></br>
-                      Entweder nach bereits vorhandenen Vorstellungen oder gemeinsame Findung im persönlichen Gespräch.
-                  </p>
-                </div>
-              )}
-              <figcaption className="home-underline">Design</figcaption>
-            </figure>
-
-            <figure className="home-single-image">
-              {!this.state.devOpen && (
-                <div className="home-images-code" onClick={() => this.setState({ devOpen: true })}>
-                  <FontAwesomeIcon
-                    className="home-icon-white"
-                    size="2x"
-                    icon={faInfoCircle}
-                  />
-                </div>
-              )}
-              {this.state.devOpen && (
-                <div className="home-text-box">
-                  <FontAwesomeIcon
-                    onClick={() => this.setState({ devOpen: false })}
-                    className="home-icon-black"
-                    size="2x"
-                    icon={faTimesCircle}
-                  />
-                  <p className="home-info-text">Realisierung des besprochenen Designs in einem iterativen Prozess, bis die Webseite den entsprechenden Wünschen entspricht. <br></br>
-                      Typischerweise regelmäßige Statuscalls um aktuellen Stand zu besprechen und Änderungswünsche zu realisieren. </p>
-                </div>
-              )}
-
-              <figcaption className="home-underline">Entwicklung</figcaption>
-            </figure>
-
-            <figure className="home-single-image">
-              {!this.state.liveOpen && (
-                <div onClick={() => this.setState({ liveOpen: true })} className="home-images-page">
-                  <FontAwesomeIcon
-                    className="home-icon-black"
-                    size="2x"
-                    icon={faInfoCircle}
-                  />
-                </div>
-              )}
-              {this.state.liveOpen && (
-                <div className="home-text-box">
-                  <FontAwesomeIcon
-                    onClick={() => this.setState({ liveOpen: false })}
-                    className="home-icon-black"
-                    size="2x"
-                    icon={faTimesCircle}
-                  />
-                    <p className="home-info-text">Nach abgeschlossener Entwicklung Veröffentlichung der gemeinsam entwickelten Internetseite unter Ihrer Wunschdomain. <br></br>
-                        Anschließend bei Bedarf Anpassung des auf der Seite dargestellten Inhalts.
-                     </p>
-                </div>
-              )}
-              <figcaption className="home-underline">Going Live</figcaption>
-            </figure>
-          </div>
+        <h1 className="home_name">Benjamin Zenth</h1>
+        <Row className="home_options">
+          {this.classicMode()}
+          {this.arcadeMode()}
+        </Row>
         </div>
       </div>
     );

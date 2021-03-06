@@ -74,6 +74,27 @@ body{
     bottom: 150px
 }
 
+
+#video_game{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_classic_image{
+    background-image: url("../static/header.jpg");
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_text{
+    line-height: 200%;
+    text-align: center;
+}
+
 .contact{
     padding-top: 230px;
     padding-left: 30px;
@@ -356,15 +377,48 @@ body{
     margin-right: auto;
 }
 
-.home-content{
-    padding-top: 230px
-}
-
 .home-welcome{
     text-align: center;
     font-size: 40px;
+    padding-top: 5%;
     min-height: 80px;
     display: grid
+}
+
+.home_name{
+    font-family: "Kaushan";
+    text-align: center;
+    margin-top: 2%;
+    display: block;
+    font-size: 40px;
+}
+
+.home_option{
+    width: 98%;
+    padding: 1%;
+    height: 100%;
+}
+
+.home_button{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.home_options{
+    display: flex
+}
+
+.home_game_name{
+    font-family: "Lobster";
+    text-align: center;
+    font-size: 40px;
+}
+
+.home_classic_name{
+    font-family: "Lobster";
+    text-align: center;
+    font-size: 40px;
 }
 
 .home-rotating-text{
