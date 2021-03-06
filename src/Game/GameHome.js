@@ -37,7 +37,7 @@ class GameHome extends React.Component{
     constructor(props){
       super(props)
       this.state = {
-        finishedLevel: [],
+        finishedLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         selectedLevel: null,
         showMenu: true,
         showSettings: false,

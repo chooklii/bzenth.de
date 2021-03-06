@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import {Row, Col, Button} from "antd"
 
 const rotatingText = function (el, toRotate, period) {
@@ -44,7 +44,16 @@ rotatingText.prototype.tick = function () {
 
 class Home extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      redirect: false
+    }
+  }
+
   componentDidMount() {
+    const width = window.innerWidth
+    if(width < 1250) this.setState({redirect: true})
     this.renderRotation();
   }
 
@@ -64,16 +73,16 @@ class Home extends React.Component {
   classicMode(){
     return(
       <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
-        <Link className="classic_content" to="/skills">
+        <div className="classic_content" to="/skills">
         <div className="home_classic_image"></div>
         <h2 className="home_classic_name">Klassische Webseite</h2>
-
+        <p className="home_text">Klassische Webseite - Alle Seiten direkt verfügbar</p>
         <div className="home_button">
-        <Button type="primary">
+        <Button type="primary" onClick={() => this.setState({redirect: true})}>
           Zur klassischen Webseite
         </Button>
       </div>
-      </Link>
+      </div>
     </Col>
     )
   }
@@ -81,7 +90,7 @@ class Home extends React.Component {
   arcadeMode(){
     return(
       <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
-      <video loop muted="muted" id="video_game" onMouseOut={() => this.stopVideo()} onMouseOver={() => this.hoverVideo()}>
+      <video autoPlay loop muted="muted" id="video_game">
           <source src="../static/game.mp4" type="video/mp4"/>
           Der genutzte Browser unterstützt die Video-Funktionalität leider nicht. 
       </video>
@@ -94,19 +103,23 @@ class Home extends React.Component {
     )
   }
 
-  hoverVideo(){
-    document.getElementById("video_game").play()
-  }
-
-  stopVideo(){
-    document.getElementById("video_game").pause()
-  }
-
   render() {
+    if(this.state.redirect){
+      return(
+        <Redirect push to="/skills"/>
+      )
+    }
     return (
-      <div className="HomePage">
+      <div className="home">
         <div className="home-content">
         <h1 className="home_name">Benjamin Zenth</h1>
+        <div className="home-welcome">
+            <span
+              className="home-rotating-text"
+              period="1000"
+              text='[ "Welcome", "Willkommen", "Benvenuto", "欢迎", "Bienvenue", "Velkominn"]'
+            ></span>
+          </div>
         <Row className="home_options">
           {this.classicMode()}
           {this.arcadeMode()}

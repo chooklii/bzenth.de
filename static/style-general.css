@@ -6,4 +6,14 @@
 @font-face {
     font-family: 'Lobster';
     src: url('./lobster.ttf') format('truetype');
-  }
+}
+
+.home{
+    background-color: #d3e9ed;
+    min-height: 100vh;
+}
+
+body{
+    height: auto !important ;
+    font-family: system-ui;
+}

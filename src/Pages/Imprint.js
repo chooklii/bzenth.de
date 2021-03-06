@@ -16,8 +16,8 @@ class Imprint extends React.Component {
             </p>
             <p className="imprint-person-contact">
               Telefon: 0151/12612194 <br></br>
-              <a href="mailto:benjaminzenth@icloud.com">
-                benjaminzenth@icloud.com
+              <a href="mailto:kontakt@bzenth.de">
+                kontakt@bzenth.de
               </a>
             </p>
           </div>
@@ -70,15 +70,6 @@ class Imprint extends React.Component {
           persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.
           Die Darstellung dieser Website in fremden Frames ist nur mit
           schriftlicher Erlaubnis zulässig.
-
-          <div className="imprint-subheading">§ 4 Besondere Nutzungsbedingungen</div>
-
-          Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von
-          den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle
-          ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen
-          Einzelfall die besonderen Nutzungsbedingungen.
-
-
 
           <div className="imprint-subheading">Datenschutz</div>
 

@@ -2,17 +2,24 @@
 
 @media screen and (min-width: 1025px) {
 
-body{
-    margin: 0;
-    font-family: system-ui;
-}
-
 .header{
     position: fixed;
     width: 100%;
     height: 20%;
     z-index: 10;
     top: 0
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-link{
+    color: black;
+    float: right;
+    padding: 1em
 }
 
 .header-wrapper{
@@ -76,17 +83,20 @@ body{
 
 
 #video_game{
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 10%;
+    width: 70%;
+    height: 52.5%;
+    margin-left: 15%;
     border: 1px solid black
 }
 
 .home_classic_image{
     background-image: url("../static/header.jpg");
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 10%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    padding-top: 52.5%;
+    margin-left: 15%;
     border: 1px solid black
 }
 
@@ -380,7 +390,6 @@ body{
 .home-welcome{
     text-align: center;
     font-size: 40px;
-    padding-top: 5%;
     min-height: 80px;
     display: grid
 }
@@ -388,9 +397,10 @@ body{
 .home_name{
     font-family: "Kaushan";
     text-align: center;
-    margin-top: 2%;
     display: block;
-    font-size: 40px;
+    padding-top: .5em;
+    font-size: 50px;
+    margin-bottom: 0;
 }
 
 .home_option{
@@ -413,12 +423,14 @@ body{
     font-family: "Lobster";
     text-align: center;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
 .home_classic_name{
     font-family: "Lobster";
     text-align: center;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
 .home-rotating-text{
