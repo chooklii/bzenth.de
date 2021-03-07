@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from "../../Components"
+import {Footer, Header} from "../../Components"
 import {
   faLanguage,
   faLaptopCode,
@@ -7,15 +7,16 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {Rate} from "antd"
+import {Rate, Col, Row} from "antd"
 import {languages, technologySkills, otherSkills, programmingLanguage} from "./content"
 class Skills extends React.Component {
+
   renderSingleSkill(name, rating) {
     const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
     
     return (
       <div key={name} className="single-skill">
-        <div className="skill-name">{name}</div>
+        <p className="skill-name">{name}</p>
         {!isIE11 && <Rate
           className="rating-element"
           disabled
@@ -39,9 +40,8 @@ class Skills extends React.Component {
     return (
       <div>
         <Header />
-
-        <div className="skills">
-          <div>
+        <Row className="skills">          
+        <Col  xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
               <FontAwesomeIcon icon={faLaptopCode} /> Programmiersprachen:
             </h2>
@@ -50,9 +50,9 @@ class Skills extends React.Component {
                 this.renderSingleSkill(single.name, single.rating)
               )}
             </div>
-          </div>
+          </Col>
 
-          <div>
+          <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
               <FontAwesomeIcon icon={faServer} /> weitere Technologien:
             </h2>
@@ -61,9 +61,9 @@ class Skills extends React.Component {
                 this.renderSingleSkill(single.name, single.rating)
               )}
             </div>
-          </div>
+            </Col>
 
-          <div>
+            <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
               <FontAwesomeIcon icon={faGraduationCap} /> sonstige Skills:
             </h2>
@@ -72,9 +72,9 @@ class Skills extends React.Component {
                 this.renderSingleSkill(single.name, single.rating)
               )}
             </div>
-          </div>
+          </Col>
 
-          <div>
+          <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
               <FontAwesomeIcon icon={faLanguage} /> Sprachen:
             </h2>
@@ -83,8 +83,9 @@ class Skills extends React.Component {
                 this.renderSingleSkill(single.name, single.rating)
               )}
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
+        <Footer/>
       </div>
     );
   }

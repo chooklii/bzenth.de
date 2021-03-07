@@ -74,7 +74,7 @@ class Home extends React.Component {
     return(
       <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
         <div className="classic_content" to="/skills">
-        <div className="home_classic_image"></div>
+        <div className="home_classic_image"/>
         <h2 className="home_classic_name">Klassische Webseite</h2>
         <p className="home_text">Klassische Webseite - Alle Seiten direkt verfügbar</p>
         <div className="home_button">
@@ -91,8 +91,8 @@ class Home extends React.Component {
     return(
       <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
       <video autoPlay loop muted="muted" id="video_game">
-          <source src="../static/game.mp4" type="video/mp4"/>
-          Der genutzte Browser unterstützt die Video-Funktionalität leider nicht. 
+          <source src="../static/arcade.mp4" type="video/mp4"/>
+          <div className="home_game_image"/> 
       </video>
         <h2 className="home_game_name">Arcade Modus</h2>
       <p className="home_text">Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.</p>

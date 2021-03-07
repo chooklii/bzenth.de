@@ -13,6 +13,10 @@
         background-position: center;
     }
 
+    .header-desktop-heading{
+        display: none;
+    }
+
     .header-name-text{
         width: 100%;
         text-align: center;

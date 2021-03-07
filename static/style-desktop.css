@@ -3,11 +3,19 @@
 @media screen and (min-width: 1025px) {
 
 .header{
-    position: fixed;
     width: 100%;
-    height: 20%;
-    z-index: 10;
-    top: 0
+    height: 200px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header-desktop-heading{
+    font-family: "Kaushan";
+    text-align: center;
+    display: block;
+    padding-top: .5em;
+    font-size: 50px;
+    margin-bottom: 0;
 }
 
 .footer{
@@ -26,21 +34,14 @@
     height: 100%;
 }
 
-.header-image{
-    background-image: url("./header.jpg");
-    background-size: cover;
-    min-height: 100%;
-    background-position: center;
-    border-bottom: 1px solid black;
-    transition: all .5s linear;
+.notShownDesktop{
+    display: none !important
 }
 
 .header-nav{
     width: 100%;
     display: block;
     text-align: center;
-    position: absolute;
-    background: rgba(0,0,0,.1);
 }
 
 .header-mobile-menu-wrapper{
@@ -54,9 +55,9 @@
     text-align: center;
     text-decoration: none;
     height: 100%;
-    color: white;
     display: inline-block;
     text-transform: uppercase;
+    color: black
 }
 
 
@@ -83,9 +84,9 @@
 
 
 #video_game{
-    width: 70%;
-    height: 52.5%;
-    margin-left: 15%;
+    width: 80%;
+    height: 39.375%;
+    margin-left: 10%;
     border: 1px solid black
 }
 
@@ -94,9 +95,20 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 70%;
-    padding-top: 52.5%;
-    margin-left: 15%;
+    width: 80%;
+    padding-top: 45%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_game_image{
+    background-image: url("../static/bzenth.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding-top: 39.375%;
+    margin-left: 10%;
     border: 1px solid black
 }
 
@@ -291,8 +303,15 @@
     color: black
 }
 
+.heading-subpage{
+    text-align: center;
+    font-size: 30px;
+}
+
 .skills{
-    padding-top: 230px;
+    /*60px Footer 200px Header*/
+    padding-top: 10px;
+    min-height: calc(100vh - 260px);
 }
 
 .programming{
@@ -309,10 +328,8 @@
 }
 
 .single-skill{
-    display: inline-flex;
-    min-height: 30px;
+    display: flex;
     margin-left: 5%;
-    width: 40%;
 }
 
 .rating-element{
@@ -321,6 +338,7 @@
 
 .skill-name{
     width: 30%;
+    margin-top: .5em;
 }
 
 .notFound-content{
