@@ -114,39 +114,13 @@
         display: none;
     }
 
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 60px;
-        bottom: 100px;
-        position: absolute;
-        font-family: Brush Script MT,cursive
-    }
-
-    .header-name-scroll{
-        color: white;
-        text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
-        width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
-    }
 
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0;
-    }
+
 
     .home-rotating-text{
         text-align: center;
@@ -170,58 +144,9 @@
         margin: 0;
     }
 
-    .home-text-box{
-        height: 150px;
-    }
-
-    .home-info-text{
-        text-align: justify;
-
-    }
-
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
 
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
@@ -439,34 +364,6 @@
     .contact-text{
         padding: .3em;
     }
-
-    .contact-formular-heading{
-        text-align: center;
-    }
-
-    .form-topic{
-        margin-left: 10%;
-    }
-
-    .form-description{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-crawler{
-        display: none;
-    }
-
-    .form-mail{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-button{
-        text-align: center;
-        padding-top: .4em;
-    }
-
 
     .MuiFormControl-root{
         width: 90%;

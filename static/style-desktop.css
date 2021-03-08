@@ -62,27 +62,9 @@
 }
 
 
-.header-scroll-down{
-    bottom: 0;
-    margin-left: 48%;
-    margin-right: 48%;
-    display: none;
-    color: white
-}
-
 .header-name-box{
     padding-top: 30%
 }
-
-.header-name-text{
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-family: Brush Script MT,cursive;
-    font-size: 150px;
-    bottom: 150px
-}
-
 
 #video_game{
     width: 80%;
@@ -583,124 +565,9 @@
     margin-top: 3em;
 }
 
-.home-images-plan{
-    background-image: url("/static/plan.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-text-box{
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black
-}
-
-.home-images-code{
-    background-image: url("/static/code.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    cursor: pointer;
-    border: 1px solid black
-}
-
-
-.home-images-page{
-    background-image: url("/static/page.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-single-image{
-    width: 33%;
-    height: auto;
-    text-align: center;
-}
-
 .home-underline{
     font-size: 20px;
     margin-top: 10px
-}
-
-.home-icon-black{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: black
-}
-
-.home-icon-white{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: white
-}
-
-.home-info-text{
-    height: 70%;
-    margin-top: 20%;
-    text-align: justify;
-    padding-left: 5%;
-    padding-right: 10%;
-}
-
-.form-contact{
-    width: 100%;
-    display: inline-flex;
-    padding-top: 2em;
-    margin-bottom: 5em;
-}
-
-.form-description{
-    margin-left: 1em
-}
-
-.form-mail{
-    margin-left: 1em
-}
-
-.form-crawler{
-    display: none
-}
-
-.form-button{
-    margin-left: 1em
-}
-
-.contact-formular-heading{
-    text-align: center;
-    width: 100%;
-}
-
-.contact-message-success{
-    color: darkgreen;
-    font-size: 20px;
-}
-
-.contact-success{
-    display: inline-flex;
-    padding-top: 1em
-}
-
-.contact-success-button{
-    margin-left: 1em
-}
-
-.header-name-scroll{
-    color: white;
-    text-align: center;
-    bottom: 75px;
-    font-size: 30px;
-    width: 100%;
-    animation: blinker 1s linear infinite;
-    font-style: italic;
 }
 
 @keyframes blinker {
