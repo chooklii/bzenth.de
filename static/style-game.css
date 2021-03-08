@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'Green Fuz';
+    src: url('./green_fuz.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('./lobster.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('./JosefinSans.ttf') format('truetype');
+}
+
+#root{
+    height: 100%;
+} 
+
+.game_home{
+    height: 100%;
+    background-color: #d3e9ed;
+    background-repeat: repeat;
+}
+
+#phaser-target{
+    border: 1px solid black
+}
+
+.level_play{
+    background-image: url("../assets/menu/play.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.unlock_icon{
+    background-image: url("../assets/menu/achievements.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 22px;
+    margin-right: 5px;
+}
+
+.level_selector{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #c1d5d9;
+    position: absolute;
+    margin-top: 5%;
+    height: fit-content;
+    min-height: 80%;
+    border-radius: 5%;
+}
+
+.level_row{
+    display: inline-flex;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.single_level{
+    margin: 10px;
+    background-color: #a6b9bd;
+}
+
+.button_start_level{
+    width: 90%;
+    margin-left: 5%;
+    padding: 1em;
+    justify-content: center;
+    display: inline-flex;
+    height: 60px;
+}
+
+.no_unlock{
+    height: 60px;
+}
+
+.button_start_text{
+    display: inline-flex;
+    float: left;
+}
+
+.explaination{
+    width: 100%;
+    font-family: "Comic Sans";
+}
+
+.explaination_heading{
+    text-align: center;
+    font-family: "Lobster";
+    padding-top: 1em
+}
+
+.explaination_text{
+    padding: 1em 0 1em 0;
+    margin-left: 10%;
+    font-family: "JosefinSans";
+}
+
+.app{
+    height: 100%;
+}
+
+.game_error{
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+    padding-top: 20%;
+}
+
+.game{
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    display: -moz-box;
+    -moz-box-pack: center;
+    -mos-box-align: center;
+
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: box;
+    box-pack: center;
+    box-align: center;
+    height: 100%;
+}
+
+.level{
+    width: 28.5px;
+    height: 25.5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single_level_row{
+    display: inline-flex;
+    padding: 1em;
+    width: 100%;
+    justify-content: center;
+}
+
+.single_level_name{
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.settings_icon{
+    background-image: url("../assets/menu/settings.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 27.3px;
+    height: 28.6px;
+    margin-left: 2px;
+    position: absolute;
+    cursor: pointer; 
+}
+
+.restart_icon{
+    background-image: url("../assets/menu/restart.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 27.3px;
+    height: 28.6px;
+    position: absolute;
+    margin-left: 29px;
+    cursor: pointer; 
+}
+
+.settings{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 80px;
+    background-color: #c1d5d9;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.setting_key{
+    width: 50%;
+    font-weight: bold;
+}
+
+.setting_value{
+    width: 50%;
+}
+
+.controll{
+    display: block
+}
+
+.gameover{
+    font-family: "Green Fuz";
+    font-size: 100px;
+    width: 100%;
+    position: absolute;
+    margin-top: 15%;
+    text-align: center;
+    color: darkred
+}
+
+.killedbytext{
+    color: black;
+    font-family: "Green Fuz";
+    font-size: 60px;
+    width: 100%;
+    position: absolute;
+    margin-top: 25%;
+    text-align: center;
+}
+
+.restart_text{
+    font-family: "Lobster";
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.single_setting{
+    display: flex;
+    width: 100%;
+}
+
+.explaination_setting{
+    width: 100%;
+    font-family: "JosefinSans";
+}
+
+.key_setting{
+    width: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.value_setting{
+    margin: 0
+}
+
+.game_pages{
+    position: absolute;
+    background-color: #def6fa;
+    z-index: 10;
+    margin-left: 2.5%;
+    height: fit-content;
+    min-height: 90%;
+    width: 95%;
+    margin-top: 2.5%;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    border-radius: 5%;
+    padding: 1.5em
+}
+
+.back_icon{
+    background-image: url("../assets/menu/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22.5px;
+    height: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.content-game{
+    padding-top: 10px
+}
+
+.icon_game{
+    margin-right: 5px;
+}
+
+
+.heading_game{
+    font-family: "Lobster";
+    text-align: center;
+}
+
+.skills_game{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.skill_key{
+    width: 30%;
+    font-family: "JosefinSans";
+}
+
+.skill_value{
+    width: 70%;
+    font-family: "JosefinSans";
+}
+
+.private_game{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.game_text{
+    font-family: "JosefinSans";
+    line-height: 200%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.berlin{
+    background-image: url("../static/berlin.jpg");
+}
+
+.es{
+    background-image: url("../static/es.jpg");
+}
+
+.image_game{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    margin-left: 20%;
+    height: 80%;
+    min-height: 30vh;
+    margin-right: 5px;
+}
+
+.storagable{
+    background-image: url("../static/storagable.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 308px;
+    height: 330px; 
+    margin: 0 auto
+}
+
+.mealtracker{
+    background-image: url("../static/mealtracker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 324px; 
+    margin: 0 auto
+}
+
+.bzenth{
+    background-image: url("../static/bzenth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 407px;
+    height: 212px; 
+    margin: 0 auto
+}
+
+.gradulator{
+    background-image: url("../static/gradulator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 417px;
+    height: 200px; 
+    margin: 0 auto
+}
+
+.oepnv{
+    background-image: url("../static/oepnv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 411px;
+    height: 218px; 
+    margin: 0 auto
+}
+
+.game_contact_image{
+    background-image: url("../static/win.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+    height: 320px; 
+    margin: 0 auto
+}
+
+.game_back{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 80%;
+    display: flex
+}
+
+.box_credits{
+    padding: 1em
+}
+
+.credits_music{
+    display: inline-flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.credits_music_half{
+    width: 50%;
+}
+
+.mute_icon_game{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content_aboutme{
+    min-height: 40vh
+}
+
+.design_buttons{
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+}
+
+.private_projects{
+    position: absolute;
+    bottom: -10px
+}
+
+.headingMargin{
+    margin-top: 2em
+}
+
+.single_skill_box{
+    display: flex;
+    justify-content: center;
+}
+
+.project_game{
+    padding: 1em;
+    min-height: 100%;
+}
+
+.button_public_project{
+    margin-left: 5px;
+}
+
+.game_contact_link{
+    margin-left: 20%;
+    font-size: 16px;
+    color: black;
+    display: block;
+    padding: .3em;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content_aboutme{
+        min-height: 0%;
+    }
+
+    .image_game{
+        min-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    #game_back{
+    margin-left: 70%;
+    }
+}
+
+@keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+}
+
+ @-moz-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
+
+ @-webkit-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
+
+ @-o-keyframes fadein{
+    from {opacity:0%}
+    to {opacity:100%}
+ }
+
+.l1{
+    background-image: url("../assets/levels/01.png");
+}
+
+.l2{
+    background-image: url("../assets/levels/02.png");
+}
+
+.l3{
+    background-image: url("../assets/levels/03.png");
+}
+
+.l4{
+    background-image: url("../assets/levels/04.png");
+}
+
+.l5{
+    background-image: url("../assets/levels/05.png");
+}
+
+.l6{
+    background-image: url("../assets/levels/06.png");
+}
+
+.l7{
+    background-image: url("../assets/levels/07.png");
+}
+
+.l8{
+    background-image: url("../assets/levels/08.png");
+}
+
+.l9{
+    background-image: url("../assets/levels/09.png");
+}
+
+.l10{
+    background-image: url("../assets/levels/10.png");
+}
+
+.ant-tooltip-disabled-compatible-wrapper{
+    min-width: 100%
+}

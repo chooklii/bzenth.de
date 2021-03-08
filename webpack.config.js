@@ -1,6 +1,25 @@
+  
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
+
+// add paths for subdomains here
+const paths = [
+  "projekte/offentlich",
+  "projekte/privat",
+  "skills",
+  "kontakt",
+  "impressum",
+  "privat",
+]
+
+let multipleHtmlPlugins = paths.map(name => {
+  return new HtmlWebPackPlugin({
+    template: "./static/index.html",
+    filename: `../docs/${name}/index.html`,
+    chunks: ["bundle"]
+  })
+});
 
 module.exports = {
     devServer: {
@@ -22,47 +41,47 @@ module.exports = {
           }
         },
         {
+          test: /\.(ttf)$/,
+          use: {
+            loader: "url-loader"
+          }
+        },
+        {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
       ]
     },
+    entry: {
+      bundle: "./src/Classic/index.js",
+      arcade: "./src/Game/index.js"
+    },
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, "docs")
+    },
     plugins: [
         new HtmlWebPackPlugin({
           template: "./static/index.html",
           filename: "../docs/index.html",
+          chunks: ["bundle"]
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../docs/privat/index.html"
+          filename: "../docs/404.html",
+          chunks: ["bundle"]
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../docs/projekte/index.html"
+          filename: "../docs/arcade/index.html",
+          chunks: ["arcade"]
         }),
-        new HtmlWebPackPlugin({
-          template: "./static/index.html",
-          filename: "../docs/kontakt/index.html"
-        }),
-        new HtmlWebPackPlugin({
-          template: "./static/index.html",
-          filename: "../docs/skills/index.html"
-        }),
-        new HtmlWebPackPlugin({
-          template: "./static/index.html",
-          filename: "../docs/impressum/index.html"
-        }),
-        new HtmlWebPackPlugin({
-          template: "./static/index.html",
-          filename: "../docs/404.html"
+        new HtmlWebPackPlugin({   
+          favicon: './static/favicon.ico'
         }),
         new MiniCssExtractPlugin({
-          filename: "style.css",
+          filename: '[name].style.css',
           path: path.resolve(__dirname, "docs")
         })
-      ],
-    output: {
-      filename: "bundle.js",
-      path: path.resolve(__dirname, "docs")
-    }
+      ].concat(multipleHtmlPlugins),
   };

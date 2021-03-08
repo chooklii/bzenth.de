@@ -13,25 +13,121 @@
         background-position: center;
     }
 
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 60px;
-        position: absolute;
-        bottom: 100px;
-        font-family: Brush Script MT,cursive
+    .page_classic{
+        padding-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 20px;
     }
 
-    .header-name-scroll{
-        color: white;
+    .header-desktop-heading{
+        display: none;
+    }
+
+    .heading_classic{
         text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
+        padding-top: 1em
+    }
+
+    .design_buttons{
         width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .button_public_project{
+        margin-left: 10px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .classic_text{
+        line-height: 200%;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .icon{
+        margin-right: 5px;
+    }
+
+    .storagable{
+        background-image: url("../static/storagable.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;   
+        margin: 0 auto
+    }
+    
+    .mealtracker{
+        background-image: url("../static/mealtracker.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .bzenth{
+        background-image: url("../static/bzenth.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .gradulator{
+        background-image: url("../static/gradulator.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+    
+    .oepnv{
+        background-image: url("../static/oepnv.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+
+    .image_classic{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 70%;
+        margin-left: 15%;
+        min-height: 30vh;
+    }
+
+    .contact_link{
+        padding: 1em;
+        display: block;
+        color: black
+    }
+
+    .contact-options{
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 1em;
+    }
+
+    .contact-image-mobile{
+        background-image: url("./contact.jpg");
+        background-size: cover;
+        min-height: 25vh;
+        width: 70%;
+        margin-left: 15%;
     }
     
     @keyframes blinker {
@@ -39,13 +135,6 @@
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0;
-    }
 
     .home-rotating-text{
         text-align: center;
@@ -68,50 +157,9 @@
         font-weight: normal;
         margin: 0;
     }
-    
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
 
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
@@ -301,12 +349,6 @@
         font-size: smaller;
     }
 
-    .contact-options{
-        display: inline-flex;
-        width: 100%;
-        padding-top: 1em;
-    }
-
     .contact-icons{
         width: 20%;
         text-align: center;
@@ -420,15 +462,14 @@
         color: white
     }
 
-    .imprint{
-        padding-top: 4em;
-        width: 100%;
-      }
-
       .imprint-heading{
         text-align: center;
         font-size: 25px;
           margin: 0
+      }
+      
+      .imprint_source{
+          padding-top: .5em;
       }
 
       .imprint-person-contact{

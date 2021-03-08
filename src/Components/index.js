@@ -1,11 +1,9 @@
 import Header from "./Header"
-import Footer from "./Footer"
 import ScrollToTop from "./ScrollToTop"
-import HomeHeader from "./HomeHeader"
+import Footer from "./Footer"
 
 export {
     Header,
-    Footer,
     ScrollToTop,
-    HomeHeader
+    Footer
 }

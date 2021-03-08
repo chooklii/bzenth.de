@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 class Header extends React.Component {
 
   constructor(props){
@@ -42,39 +43,38 @@ class Header extends React.Component {
   }
 
   render() {
-    return (
+    return(
       <div className="header">
-        <div className="header-mobile-menu-wrapper">
-          <span onClick={() => this.showMobileMenu()} className="header-mobile-span">
-            <div className="header-mobile-menu-icon"></div>
-          </span>
-          <h1 className="header-mobile-heading">Benjamin Zenth</h1>
+      <div className="header-mobile-menu-wrapper">
+        <span onClick={() => this.showMobileMenu()} className="header-mobile-span">
+          <div className="header-mobile-menu-icon"></div>
+        </span>
+        <h1 className="header-mobile-heading">Benjamin Zenth</h1>
 
-        </div>
-        <div className="header-nav">
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/">
-            Home
-          </Link>
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte">
-            Projekte
-          </Link>
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/skills">
-            Skills
-          </Link>
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/privat">
-            About me
-          </Link>
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/kontakt">
-            Kontakt
-          </Link>
-          <Link onClick={() => this.hideMenu()} className="header-element" to="/impressum">
-            Impressum
-          </Link>
-        </div>
-
-        <div className="header-image"></div>
       </div>
-    );
+      <h1 onClick={() => window.location.href = "/"} className="header-desktop-heading">Benjamin Zenth</h1>
+      <div className="header-nav">
+      <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte/offentlich">
+          Öffentliche Projekte
+        </Link>
+        <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte/privat">
+          Private Projekte
+        </Link>
+        <Link onClick={() => this.hideMenu()} className="header-element" to="/skills">
+          Skills
+        </Link>
+        <Link onClick={() => this.hideMenu()} className="header-element" to="/privat">
+          About me
+        </Link>
+        <Link onClick={() => this.hideMenu()} className="header-element" to="/kontakt">
+          Kontakt
+        </Link>
+        <Link onClick={() => this.hideMenu()} className="header-element notShownDesktop" to="/impressum">
+          Impressum
+        </Link>
+      </div>
+    </div>
+    )
   }
 }
 

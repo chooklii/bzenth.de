@@ -2,38 +2,47 @@
 
 @media screen and (min-width: 1025px) {
 
-body{
-    margin: 0;
-    font-family: system-ui;
+.header{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.header{
-    position: fixed;
+.header-desktop-heading{
+    font-family: "Kaushan";
+    text-align: center;
+    display: block;
+    padding-top: .5em;
+    font-size: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.footer{
+    height: 50px;
     width: 100%;
-    height: 20%;
-    z-index: 10;
-    top: 0
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-link{
+    color: black;
+    float: right;
+    padding: 1em
 }
 
 .header-wrapper{
     height: 100%;
 }
 
-.header-image{
-    background-image: url("./header.jpg");
-    background-size: cover;
-    min-height: 100%;
-    background-position: center;
-    border-bottom: 1px solid black;
-    transition: all .5s linear;
+.notShownDesktop{
+    display: none !important
 }
 
 .header-nav{
     width: 100%;
     display: block;
     text-align: center;
-    position: absolute;
-    background: rgba(0,0,0,.1);
 }
 
 .header-mobile-menu-wrapper{
@@ -47,42 +56,69 @@ body{
     text-align: center;
     text-decoration: none;
     height: 100%;
-    color: white;
     display: inline-block;
     text-transform: uppercase;
+    color: black
 }
 
-
-.header-scroll-down{
-    bottom: 0;
-    margin-left: 48%;
-    margin-right: 48%;
-    display: none;
-    color: white
-}
 
 .header-name-box{
     padding-top: 30%
 }
 
-.header-name-text{
-    color: white;
-    width: 100%;
+#video_game{
+    width: 80%;
+    height: 39.375%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_classic_image{
+    background-image: url("../static/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding-top: 45%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_game_image{
+    background-image: url("../static/bzenth.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding-top: 39.375%;
+    margin-left: 10%;
+    border: 1px solid black
+}
+
+.home_text{
+    line-height: 200%;
     text-align: center;
-    font-family: Brush Script MT,cursive;
-    font-size: 150px;
-    bottom: 150px
 }
 
 .contact{
-    padding-top: 230px;
-    padding-left: 30px;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contact_link{
+    margin-left: 20%;
+    font-size: 16px;
+    color: black;
+    display: block;
+    padding: .3em;
+    width: fit-content;
+}
+
+.icon{
+    margin-right: 5px;
 }
 
 .contact-options{
-    display: inline-flex;
-    margin-left: 10%;
     margin-top: 20px
 }
 
@@ -115,6 +151,7 @@ body{
 .contact-image{
     background-image: url("./contact.jpg");
     background-size: cover;
+    margin-top: 30px;
     height: 337px;
     width: 40%;
     float: right;
@@ -125,17 +162,13 @@ body{
 .contact-first-line{
     font-size: 20px;
     width: 50%;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .contact-second-line{
     font-size: 17px;
     margin-top: 10px;
     width: 50%;
-}
-
-.projects-box{
-    padding-top: 230px
 }
 
 .projects-heading{
@@ -260,16 +293,116 @@ body{
     color: black
 }
 
-.skills{
-    padding-top: 230px;
+.heading-subpage{
+    text-align: center;
+    font-size: 30px;
 }
 
+.page_classic{
+    /*60px Footer 200px Header*/
+    padding-top: 10px;
+    min-height: calc(100vh - 270px);
+}
+
+.content_aboutme{
+    width: 90%;
+    min-height: 60vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.heading_classic{
+    text-align: center;
+    margin-top: 20px
+}
+
+.project_classic{
+    width: 90%;
+    min-height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mobile_divider{
+    display: none !important
+}
+
+
+.design_buttons{
+    width: 100%;
+    bottom: -20px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.button_public_project{
+    margin-left: 10px;
+}
+
+.marginleft{
+    margin-left: 10%;
+}
+
+.storagable{
+    background-image: url("../static/storagable.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 308px;
+    height: 330px; 
+    margin: 0 auto
+}
+
+.mealtracker{
+    background-image: url("../static/mealtracker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 324px; 
+    margin: 0 auto
+}
+
+.bzenth{
+    background-image: url("../static/bzenth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 488px;
+    height: 254px; 
+    margin: 0 auto
+}
+
+.gradulator{
+    background-image: url("../static/gradulator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 254px; 
+    margin: 0 auto
+}
+
+.oepnv{
+    background-image: url("../static/oepnv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 493px;
+    height: 261px; 
+    margin: 0 auto
+}
+
+.projects-box{
+    padding-bottom: 30px;
+}
+
+.padding{
+    padding: 1em
+}
 .programming{
     width: 100%;
 }
 
 .skills-heading{
     text-align: center;
+    margin-top: 20px
 }
 
 .skills-one-category{
@@ -278,10 +411,8 @@ body{
 }
 
 .single-skill{
-    display: inline-flex;
-    min-height: 30px;
+    display: flex;
     margin-left: 5%;
-    width: 40%;
 }
 
 .rating-element{
@@ -290,6 +421,7 @@ body{
 
 .skill-name{
     width: 30%;
+    margin-top: .5em;
 }
 
 .notFound-content{
@@ -306,10 +438,6 @@ body{
     margin-left: 40%;
     margin-top: 1em;
     border: 1px solid black;
-}
-
-.private-content{
-    padding-top: 230px
 }
 
 .private-cv-title{
@@ -356,15 +484,66 @@ body{
     margin-right: auto;
 }
 
-.home-content{
-    padding-top: 230px
-}
-
 .home-welcome{
     text-align: center;
     font-size: 40px;
     min-height: 80px;
     display: grid
+}
+
+.home_name{
+    font-family: "Kaushan";
+    text-align: center;
+    display: block;
+    padding-top: .5em;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.home_option{
+    width: 98%;
+    padding: 1%;
+    height: 100%;
+}
+
+.home_button{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.home_options{
+    display: flex
+}
+
+.home_game_name{
+    font-family: "Lobster";
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.home_classic_name{
+    font-family: "Lobster";
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.image_classic{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    margin-left: 20%;
+    height: 80%;
+    min-height: 30vh;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+
+
+.classic_text{
+    line-height: 200%;
 }
 
 .home-rotating-text{
@@ -386,136 +565,15 @@ body{
     margin-top: 3em;
 }
 
-.home-images-plan{
-    background-image: url("/static/plan.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-text-box{
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black
-}
-
-.home-images-code{
-    background-image: url("/static/code.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    cursor: pointer;
-    border: 1px solid black
-}
-
-
-.home-images-page{
-    background-image: url("/static/page.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-single-image{
-    width: 33%;
-    height: auto;
-    text-align: center;
-}
-
 .home-underline{
     font-size: 20px;
     margin-top: 10px
-}
-
-.home-icon-black{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: black
-}
-
-.home-icon-white{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: white
-}
-
-.home-info-text{
-    height: 70%;
-    margin-top: 20%;
-    text-align: justify;
-    padding-left: 5%;
-    padding-right: 10%;
-}
-
-.form-contact{
-    width: 100%;
-    display: inline-flex;
-    padding-top: 2em;
-    margin-bottom: 5em;
-}
-
-.form-description{
-    margin-left: 1em
-}
-
-.form-mail{
-    margin-left: 1em
-}
-
-.form-crawler{
-    display: none
-}
-
-.form-button{
-    margin-left: 1em
-}
-
-.contact-formular-heading{
-    text-align: center;
-    width: 100%;
-}
-
-.contact-message-success{
-    color: darkgreen;
-    font-size: 20px;
-}
-
-.contact-success{
-    display: inline-flex;
-    padding-top: 1em
-}
-
-.contact-success-button{
-    margin-left: 1em
-}
-
-.header-name-scroll{
-    color: white;
-    text-align: center;
-    bottom: 75px;
-    font-size: 30px;
-    width: 100%;
-    animation: blinker 1s linear infinite;
-    font-style: italic;
 }
 
 @keyframes blinker {
     50% {
       opacity: 0;
     }
-  }
-
-  .imprint{
-    padding-top: 230px;
-    padding-left: 30px;
-    width: 100%;
   }
 
   .imprint-heading{
@@ -544,9 +602,11 @@ body{
       font-weight: bold;
   }
 
+  .imprint_source{
+    padding-top: 1em
+  }
+
   .imprint-link{
       margin-left: 5px;
   }
-
-
 }

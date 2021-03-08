@@ -7,45 +7,120 @@
         font-family: system-ui;
     }
 
+    .footer{
+        display: none
+    }
+
+    .page_classic{
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    .content_aboutme{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .design_buttons{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    
+    .button_public_project{
+        margin-left: 10px;
+    }
+
+    .heading_classic{
+        text-align: center;
+    }
+
+    .image_classic{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        margin-left: 10%;
+        min-height: 30vh;
+    }
+
+    .classic_text{
+        width: 90%;
+        margin-left: 5%;
+        line-height: 200%;
+    }
+
+    .storagable{
+        background-image: url("../static/storagable.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;   
+        margin: 0 auto
+    }
+    
+    .mealtracker{
+        background-image: url("../static/mealtracker.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .bzenth{
+        background-image: url("../static/bzenth.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .gradulator{
+        background-image: url("../static/gradulator.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+    
+    .oepnv{
+        background-image: url("../static/oepnv.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+
     .header{
         background-image: url("./header.jpg");
         background-size: cover;
         background-position: center;
     }
 
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 60px;
-        bottom: 100px;
-        position: absolute;
-        font-family: Brush Script MT,cursive
+    .imprint_source{
+        padding-top: 10px
     }
 
-    .header-name-scroll{
-        color: white;
-        text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
-        width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
+    .header-desktop-heading{
+        display: none;
     }
+
 
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0;
-    }
+
 
     .home-rotating-text{
         text-align: center;
@@ -69,58 +144,9 @@
         margin: 0;
     }
 
-    .home-text-box{
-        height: 150px;
-    }
-
-    .home-info-text{
-        text-align: justify;
-
-    }
-
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
 
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
@@ -311,11 +337,20 @@
     }
 
     .contact-options{
-        display: inline-flex;
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
         padding-top: 1em;
     }
 
+    .contact_link{
+        padding: 1em;
+        display: block;
+        color: black
+    }
+
+    .icon{
+        margin-right: 5px;
+    }
     .contact-icons{
         width: 20%;
         text-align: center;
@@ -329,34 +364,6 @@
     .contact-text{
         padding: .3em;
     }
-
-    .contact-formular-heading{
-        text-align: center;
-    }
-
-    .form-topic{
-        margin-left: 10%;
-    }
-
-    .form-description{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-crawler{
-        display: none;
-    }
-
-    .form-mail{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-button{
-        text-align: center;
-        padding-top: .4em;
-    }
-
 
     .MuiFormControl-root{
         width: 90%;

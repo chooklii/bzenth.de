@@ -1,13 +1,12 @@
 import React from "react";
-import { Header } from "../Components";
+import { Footer, Header } from "../Components";
 
 class Imprint extends React.Component {
   render() {
     return (
       <div>
         <Header />
-        <div className="imprint">
-          <h1 className="imprint-heading">Impressum</h1>
+        <div className="imprint page_classic">
           <div className="imprint-person">
             <p className="imprint-person-contact">
               Benjamin Zenth <br></br>
@@ -16,15 +15,14 @@ class Imprint extends React.Component {
             </p>
             <p className="imprint-person-contact">
               Telefon: 0151/12612194 <br></br>
-              <a href="mailto:benjaminzenth@icloud.com">
-                benjaminzenth@icloud.com
+              <a href="mailto:kontakt@bzenth.de">
+                kontakt@bzenth.de
               </a>
             </p>
           </div>
           <div className="imprint-body">
-          <h2 className="imprint-h2">Disclaimer – rechtliche Hinweise</h2>
 
-          <div className="imprint-subheading">§ 1 Warnhinweis zu Inhalten</div>
+          <div className="imprint-subheading">Warnhinweis zu Inhalten</div>
 
           Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden
           mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite
@@ -37,7 +35,7 @@ class Imprint extends React.Component {
           Nutzer und dem Anbieter zustande, insoweit fehlt es am
           Rechtsbindungswillen des Anbieters.
 
-          <div className="imprint-subheading">§ 2 Externe Links</div>
+          <div className="imprint-subheading">Externe Links</div>
 
             Diese Website enthält Verknüpfungen zu Websites
           Dritter ("externe Links"). Diese Websites unterliegen der Haftung der
@@ -53,7 +51,7 @@ class Imprint extends React.Component {
           Rechtsverstößen werden jedoch derartige externe Links unverzüglich
           gelöscht.
 
-          <div className="imprint-subheading">§ 3 Urheber- und Leistungsschutzrechte</div>
+          <div className="imprint-subheading">Urheber- und Leistungsschutzrechte</div>
 
           Die auf dieser Website
           veröffentlichten Inhalte unterliegen dem deutschen Urheber- und
@@ -71,15 +69,6 @@ class Imprint extends React.Component {
           Die Darstellung dieser Website in fremden Frames ist nur mit
           schriftlicher Erlaubnis zulässig.
 
-          <div className="imprint-subheading">§ 4 Besondere Nutzungsbedingungen</div>
-
-          Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von
-          den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle
-          ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen
-          Einzelfall die besonderen Nutzungsbedingungen.
-
-
-
           <div className="imprint-subheading">Datenschutz</div>
 
           Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten.
@@ -88,7 +77,7 @@ class Imprint extends React.Component {
           Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in
           der <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" target="_blank">Datenschutzerklärung</a> von Github
 
-          <p>
+          <p className="imprint_source">
             Quelle:
             <a className="imprint-link" target="_blank" href="https://www.juraforum.de/impressum-generator/">
               Impressum Generator von JuraForum.de
@@ -96,6 +85,7 @@ class Imprint extends React.Component {
           </p>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }
