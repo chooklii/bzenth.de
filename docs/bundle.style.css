@@ -114,39 +114,13 @@
         display: none;
     }
 
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 60px;
-        bottom: 100px;
-        position: absolute;
-        font-family: Brush Script MT,cursive
-    }
-
-    .header-name-scroll{
-        color: white;
-        text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
-        width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
-    }
 
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0;
-    }
+
 
     .home-rotating-text{
         text-align: center;
@@ -170,58 +144,9 @@
         margin: 0;
     }
 
-    .home-text-box{
-        height: 150px;
-    }
-
-    .home-info-text{
-        text-align: justify;
-
-    }
-
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
 
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
@@ -440,34 +365,6 @@
         padding: .3em;
     }
 
-    .contact-formular-heading{
-        text-align: center;
-    }
-
-    .form-topic{
-        margin-left: 10%;
-    }
-
-    .form-description{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-crawler{
-        display: none;
-    }
-
-    .form-mail{
-        margin-left: 10%;
-        padding-top: .4em
-    }
-
-    .form-button{
-        text-align: center;
-        padding-top: .4em;
-    }
-
-
     .MuiFormControl-root{
         width: 90%;
     }
@@ -645,27 +542,9 @@
 }
 
 
-.header-scroll-down{
-    bottom: 0;
-    margin-left: 48%;
-    margin-right: 48%;
-    display: none;
-    color: white
-}
-
 .header-name-box{
     padding-top: 30%
 }
-
-.header-name-text{
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-family: Brush Script MT,cursive;
-    font-size: 150px;
-    bottom: 150px
-}
-
 
 #video_game{
     width: 80%;
@@ -1166,124 +1045,9 @@
     margin-top: 3em;
 }
 
-.home-images-plan{
-    background-image: url("/static/plan.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-text-box{
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black
-}
-
-.home-images-code{
-    background-image: url("/static/code.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    cursor: pointer;
-    border: 1px solid black
-}
-
-
-.home-images-page{
-    background-image: url("/static/page.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    cursor: pointer
-}
-
-.home-single-image{
-    width: 33%;
-    height: auto;
-    text-align: center;
-}
-
 .home-underline{
     font-size: 20px;
     margin-top: 10px
-}
-
-.home-icon-black{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: black
-}
-
-.home-icon-white{
-    cursor: pointer;
-    float: right;
-    padding: 1%;
-    color: white
-}
-
-.home-info-text{
-    height: 70%;
-    margin-top: 20%;
-    text-align: justify;
-    padding-left: 5%;
-    padding-right: 10%;
-}
-
-.form-contact{
-    width: 100%;
-    display: inline-flex;
-    padding-top: 2em;
-    margin-bottom: 5em;
-}
-
-.form-description{
-    margin-left: 1em
-}
-
-.form-mail{
-    margin-left: 1em
-}
-
-.form-crawler{
-    display: none
-}
-
-.form-button{
-    margin-left: 1em
-}
-
-.contact-formular-heading{
-    text-align: center;
-    width: 100%;
-}
-
-.contact-message-success{
-    color: darkgreen;
-    font-size: 20px;
-}
-
-.contact-success{
-    display: inline-flex;
-    padding-top: 1em
-}
-
-.contact-success-button{
-    margin-left: 1em
-}
-
-.header-name-scroll{
-    color: white;
-    text-align: center;
-    bottom: 75px;
-    font-size: 30px;
-    width: 100%;
-    animation: blinker 1s linear infinite;
-    font-style: italic;
 }
 
 @keyframes blinker {
@@ -1457,41 +1221,12 @@
         width: 70%;
         margin-left: 15%;
     }
-
-
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 60px;
-        position: absolute;
-        bottom: 100px;
-        font-family: Brush Script MT,cursive
-    }
-
-    .header-name-scroll{
-        color: white;
-        text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
-        width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
-    }
     
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0;
-    }
 
     .home-rotating-text{
         text-align: center;
@@ -1514,50 +1249,9 @@
         font-weight: normal;
         margin: 0;
     }
-    
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 150px;
-        border: 1px solid black;
-        cursor: pointer
-    }
 
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
@@ -2004,39 +1698,12 @@
         background-position: center;
     }
 
-    .header-name-text{
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 100px;
-        position: absolute;
-        bottom: 150px;
-        font-family: Brush Script MT,cursive
-    }
-
-    .header-name-scroll{
-        color: white;
-        text-align: center;
-        bottom: 75px;
-        font-size: 30px;
-        position: absolute;
-        width: 100%;
-        animation: blinker 1s linear infinite;
-        font-style: italic;
-    }
-
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-    .header-scroll-down{
-        width: 100%;
-        text-align: center;
-        color: white;
-        position: absolute;
-        bottom: 0px;
-    }
+
 
     .home-rotating-text{
         text-align: center;
@@ -2060,61 +1727,8 @@
         margin: 0;
     }
 
-    .home-text-box{
-        font-size: larger;
-        height: 250px;
-    }
-
-    .home-info-text{
-        text-align: justify;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 5%;
-    }
-
-    .home-images-plan{
-        background-image: url(/static/plan.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 250px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-code{
-        background-image: url(/static/code.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 250px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
-    .home-images-page{
-        background-image: url(/static/page.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 250px;
-        border: 1px solid black;
-        cursor: pointer
-    }
-
     .home-underline{
         text-align: center;
-    }
-
-    .home-icon-black{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: black;
-    }
-
-    .home-icon-white{
-        cursor: pointer;
-        float: right;
-        padding: 1%;
-        color: white;
     }
 
     .skills{
