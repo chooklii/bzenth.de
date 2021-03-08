@@ -23,7 +23,8 @@ const config = {
   }
 }
 var game;
-var currentSong
+var currentSong;
+
 const itemsToUnlock = {
   1: "About Me",
   2: "Credits",
@@ -37,7 +38,8 @@ class GameHome extends React.Component{
     constructor(props){
       super(props)
       this.state = {
-        finishedLevel: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        screenWidth: 0,
+        finishedLevel: [],
         selectedLevel: null,
         showMenu: true,
         showSettings: false,
@@ -67,20 +69,26 @@ class GameHome extends React.Component{
       const starting_index = Math.floor(Math.random() * music_menu.length)
       this.setState([{music_index: starting_index}])
       currentSong = new Audio(music_menu[starting_index])
-      currentSong.addEventListener("ended", event => {
-          this.playNextSong()
-        })
+      currentSong.addEventListener("ended", () => {
+        this.playNextSong()
+      })
     }
 
     playNextSong(){
       const {music_index, music_playlist} = this.state
-      if(music_index < music_playlist.length){
+      if(music_index < (music_playlist.length -1)){
         this.setState({music_index: music_index+1})
         currentSong = new Audio(music_playlist[music_index+1])
+        currentSong.addEventListener("ended", () => {
+          this.playNextSong()
+        })
         currentSong.play()
       }else{
         this.setState({music_index: 0})
         currentSong = new Audio(music_playlist[0])
+        currentSong.addEventListener("ended", () => {
+          this.playNextSong()
+        })
         currentSong.play()
       }
     }
@@ -89,8 +97,11 @@ class GameHome extends React.Component{
       if(this.state.music_playing){
       currentSong.pause()
       const starting_index = Math.floor(Math.random() * theme.length)
-      this.setState([{music_index: starting_index, music_playing: theme}])
+      this.setState([{music_index: starting_index}])
       currentSong = new Audio(theme[starting_index])
+      currentSong.addEventListener("ended", () => {
+        this.playNextSong()
+      })
       currentSong.play()
       }
     }
@@ -99,7 +110,9 @@ class GameHome extends React.Component{
       const {width, height, type} = this.getScreenSize()
       config.height = height
       config.width = width
-      if(width >=1250){
+      const screenWidth = window.innerWidth
+      this.setState({screenWidth: screenWidth})
+      if(screenWidth >=1250){
       game = new Phaser.Game(config)
       game.levels = starting
       game.restart = () => void(0)
@@ -150,7 +163,7 @@ class GameHome extends React.Component{
       // kill current game
       game.destroy(true)
       this.updateMusic(music_theme)
-      this.setState({selectedLevel: id, showMenu: false})
+      this.setState({selectedLevel: id, showMenu: false, music_playlist: music_theme})
       // create new game with correct level id
       this.initGame(id)
     }
@@ -401,8 +414,8 @@ class GameHome extends React.Component{
     }
 
     render(){
-      const {showMenu, deathscreen, displayPage} = this.state
-      if(config.width < 1250){
+      const {showMenu, deathscreen, displayPage, screenWidth} = this.state
+      if(screenWidth < 1250){
         return(
           <div className="game_home">
             <div className="game_error">

@@ -17,6 +17,7 @@ var start;
 const rockheadUpTempo = -100
 const deathsound = new Audio("../assets/sounds/gameover.wav")
 const finishsound = new Audio("../assets/sounds/finish.wav")
+
 class Game extends Phaser.Scene{
   constructor(){
     super()
@@ -189,6 +190,9 @@ class Game extends Phaser.Scene{
   hitRockhead(){
     // check if player got hit by rockhead or jumped on it
     this.state.rocks.forEach(rockhead => {
+      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX -10) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX +10) &&
+      (player.y +player.displayOriginY > rockhead.y - rockhead.displayOriginY -10) && (player.y - player.displayOriginY < rockhead.y + rockhead.displayOriginY +10)){
+
       if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
         if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
           hit=true
@@ -196,19 +200,24 @@ class Game extends Phaser.Scene{
           this.playerdeath("rockhead")
         }
       } 
+    }
     })
 }
 
 hitElevatorRockhead(){
   // check if player got hit by rockhead or jumped on it
   this.state.elevatorheads.forEach(single => {
+    if((player.x +player.displayOriginX > single.x - single.displayOriginX -10) && (player.x - player.displayOriginX < single.x + single.displayOriginX +10) &&
+    (player.y +player.displayOriginY > single.y - single.displayOriginY -10) && (player.y - player.displayOriginY < single.y + single.displayOriginY +10)){
+
     if((player.x + player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
       if(player.y > single.y && single.body.velocity.y != rockheadUpTempo){
         hit=true
         player.anims.play("hit", true)
         this.playerdeath("rockhead")
+        }  
       }
-    } 
+    }
   })
 }
 
