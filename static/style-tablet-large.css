@@ -7,6 +7,95 @@
         font-family: system-ui;
     }
 
+    .page_classic{
+        padding-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 20px;
+    }
+
+    .header-desktop-heading{
+        display: none;
+    }
+
+    .heading_classic{
+        text-align: center;
+        padding-top: 1em
+    }
+
+    .design_buttons{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .button_public_project{
+        margin-left: 10px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .classic_text{
+        line-height: 200%;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .icon{
+        margin-right: 5px;
+    }
+
+    .storagable{
+        background-image: url("../static/storagable.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;   
+        margin: 0 auto
+    }
+    
+    .mealtracker{
+        background-image: url("../static/mealtracker.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .bzenth{
+        background-image: url("../static/bzenth.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;  
+        margin: 0 auto
+    }
+    
+    .gradulator{
+        background-image: url("../static/gradulator.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+    
+    .oepnv{
+        background-image: url("../static/oepnv.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%; 
+        margin: 0 auto
+    }
+
     .header{
         background-image: url("./header.jpg");
         background-size: cover;
@@ -152,14 +241,35 @@
     }
 
     .single-skill{
-        width: 60%;
-        margin-left: 20%;
+        width: 80%;
+        margin-left: 10%;
         display: inline-flex;
         padding: .3em
     }
 
-    .skill-name{
+    .image_classic{
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 70%;
+        margin-left: 15%;
+        min-height: 30vh;
+    }
+
+    .contact_link{
+        padding: 1em;
+        display: block;
+        color: black
+    }
+
+    .contact-options{
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 1em;
+    }
+
+    .skill-name{
+        width: 30%;
+        margin-top: .5em;
     }
 
     .private-cv-title{
@@ -298,6 +408,14 @@
         border: 1px solid black;
     }
 
+    .contact-image-mobile{
+        background-image: url("./contact.jpg");
+        background-size: cover;
+        min-height: 25vh;
+        width: 70%;
+        margin-left: 15%;
+    }
+
     .contact-heading{
         text-align: center;
         font-size: 25px;
@@ -313,12 +431,6 @@
         width: 90%;
         margin-left: 5%;
         font-size: smaller;
-    }
-
-    .contact-options{
-        display: inline-flex;
-        width: 100%;
-        padding-top: 1em;
     }
 
     .contact-icons{
@@ -434,15 +546,14 @@
         color: white
     }
 
-    .imprint{
-        padding-top: 4em;
-        width: 100%;
-      }
-
       .imprint-heading{
         text-align: center;
         font-size: 25px;
           margin: 0
+      }
+
+      .imprint_source{
+          padding-top: .5em;
       }
 
       .imprint-person-contact{

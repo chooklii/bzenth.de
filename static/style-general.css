@@ -16,7 +16,7 @@
 body{
     height: auto !important ;
     font-family: system-ui;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .berlin{

@@ -37,6 +37,7 @@ class Contact extends React.Component {
                 GitHub
             </a>
           </div>
+          <div className="contact-image-mobile"></div>
         </div>
         <Footer/>
       </div>
