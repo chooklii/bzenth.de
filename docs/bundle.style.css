@@ -599,6 +599,7 @@
     padding-top: .5em;
     font-size: 50px;
     margin-bottom: 0;
+    cursor: pointer;
 }
 
 .footer{
@@ -976,7 +977,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 500px;
-    height: 240px; 
+    height: 254px; 
     margin: 0 auto
 }
 

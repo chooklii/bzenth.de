@@ -76,7 +76,7 @@ module.exports = {
           filename: "../docs/arcade/index.html",
           chunks: ["arcade"]
         }),
-      new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
           filename: '[name].style.css',
           path: path.resolve(__dirname, "docs")
         })

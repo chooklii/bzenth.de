@@ -52,7 +52,7 @@ class Header extends React.Component {
         <h1 className="header-mobile-heading">Benjamin Zenth</h1>
 
       </div>
-      <h1 className="header-desktop-heading">Benjamin Zenth</h1>
+      <h1 onClick={() => window.location.href = "/"} className="header-desktop-heading">Benjamin Zenth</h1>
       <div className="header-nav">
       <Link onClick={() => this.hideMenu()} className="header-element" to="/projekte/offentlich">
           Öffentliche Projekte
