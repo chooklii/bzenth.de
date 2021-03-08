@@ -66,10 +66,11 @@ const Credits = () => {
                     Textarten
                 </h2>
 
-                <p className="game_text">Des weiteren wurden die zwei Schriftarten "Green Fuz" und "Lobster" genutzt. Bei "Green Fuz" handelt es sich um die Schrift, 
-                welche im Game Over Screen genutzt ist, während "Lobster" für die Überschriften genutzt wurde. </p>
+                <p className="game_text">Des weiteren wurden die drei Schriftarten "Green Fuz", "JosefinSans" und "Lobster" genutzt. Bei "Green Fuz" handelt es sich um die Schrift, 
+                welche im Game Over Screen genutzt ist, Josefin Sans ist die auf den Seiten genutzt Schrift. "Lobster" wird für die Überschriften genutzt. </p>
                 <div className="design_buttons">
                 <Button onClick={() => window.open("https://www.fontsquirrel.com/fonts/Green-Fuz", '_blank')}>Green Fuz</Button>
+                <Button style={{marginLeft: "10px"}} onClick={() => window.open("https://www.fontsquirrel.com/fonts/josefin-sans", '_blank')}>JosefinSans</Button>
                 <Button style={{marginLeft: "10px"}} onClick={() => window.open("https://www.fontsquirrel.com/fonts/Lobster", '_blank')}>Lobster</Button>
                 </div>
             </div>

@@ -6,7 +6,12 @@
 @font-face {
     font-family: 'Lobster';
     src: url('./lobster.ttf') format('truetype');
-  }
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('./JosefinSans.ttf') format('truetype');
+}
 
 #root{
     height: 100%;
@@ -82,7 +87,7 @@
 
 .explaination{
     width: 100%;
-    font-family: "Brush Script MT", cursive;
+    font-family: "Comic Sans";
 }
 
 .explaination_heading{
@@ -94,6 +99,7 @@
 .explaination_text{
     padding: 1em 0 1em 0;
     margin-left: 10%;
+    font-family: "JosefinSans";
 }
 
 .app{
@@ -227,6 +233,7 @@
 
 .explaination_setting{
     width: 100%;
+    font-family: "JosefinSans";
 }
 
 .key_setting{
@@ -289,12 +296,12 @@
 
 .skill_key{
     width: 30%;
-    font-family: "Brush Script MT", cursive;
+    font-family: "JosefinSans";
 }
 
 .skill_value{
     width: 70%;
-    font-family: "Brush Script MT", cursive;
+    font-family: "JosefinSans";
 }
 
 .private_game{
@@ -303,7 +310,7 @@
 }
 
 .game_text{
-    font-family: "Brush Script MT", cursive;
+    font-family: "JosefinSans";
     line-height: 200%;
 }
 
