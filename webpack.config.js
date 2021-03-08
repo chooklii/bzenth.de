@@ -76,6 +76,9 @@ module.exports = {
           filename: "../docs/arcade/index.html",
           chunks: ["arcade"]
         }),
+        new HtmlWebPackPlugin({   
+          favicon: './static/favicon.ico'
+        }),
         new MiniCssExtractPlugin({
           filename: '[name].style.css',
           path: path.resolve(__dirname, "docs")
