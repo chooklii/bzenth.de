@@ -5,8 +5,8 @@ const path = require("path");
 
 // add paths for subdomains here
 const paths = [
-  "private",
-  "projekte",
+  "projekte/offentlich",
+  "projekte/privat",
   "skills",
   "kontakt",
   "impressum",

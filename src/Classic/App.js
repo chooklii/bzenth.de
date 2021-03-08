@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Skills, Contact, Home, NotFound, AboutMe, PublicProjects, Imprint } from "../Pages";
+import { Skills, Contact, Home, NotFound, AboutMe, PublicProjects, Imprint, PrivateProjects } from "../Pages";
 import { ScrollToTop } from "../Components";
 
 import "../../static/style-mobile.css";
@@ -21,9 +21,14 @@ class App extends React.Component {
                 <Home />
               </ScrollToTop>
             </Route>
-            <Route exact path="/projekte">
+            <Route exact path="/projekte/offentlich">
               <ScrollToTop>
                 <PublicProjects />
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/projekte/privat">
+              <ScrollToTop>
+                <PrivateProjects />
               </ScrollToTop>
             </Route>
             <Route exact path="/skills">

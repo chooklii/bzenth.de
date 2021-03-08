@@ -4,6 +4,7 @@ const programmingLanguage = [
     { name: "Scala", rating: 4 },
     { name: "Javascript", rating: 4 },
     { name: "Python", rating: 4 },
+    { name: "Typescript", rating: 3}
   ]
 
   const technologySkills = [
@@ -25,6 +26,7 @@ const programmingLanguage = [
     { name: "Scrum", rating: 5 },
     { name: "Git / Git Flow", rating: 4 },
     { name: "SEO", rating: 3 },
+    { name: "Datenanalyse", rating: 3},
     { name: "Balsamiq", rating: 2 },
   ]
 

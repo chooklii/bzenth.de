@@ -1,6 +1,6 @@
 const description = "Öffentliche Projekte sind solche, welche über eine Domain im Internet verfügbar sind. Folgend sind alle aufgelistet, an welchen ich außerhalb meiner Arbeitstätigkeit beteiligt war."
 
-const desc_bzenth = "Aktuell angezeigte Internetseite über meine Person. Zweigeteilt in einen klassische Internetseite und einen Arcade-Modus, in welchem die einzelnen Seiten über erfolgreich abgeschlossene Jump and Run Level freigeschalten werden."
+const desc_bzenth = "Aktuell angezeigte Internetseite über meine Person. Zweigeteilt in einen klassische Internetseite und einen Arcade-Modus, in welchem die einzelnen Seiten über erfolgreich abgeschlossene Jump and Run Level freigeschalten werden. (Arcade Modus nur auf Bildschirmen größer als 1250px verfügbar)"
 const tech_bzenth = "Die Seite ist mit dem Javascript Framework React.js entwickelt und wird durch Webpack gebundelt. Dabei wird durch Code Splitting zwischen den zwei Modi der Seite unterschieden. Gehosted wird die Seite über Github Pages."
 const bzenth = {
     desc: desc_bzenth,

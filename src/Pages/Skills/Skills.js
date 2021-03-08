@@ -40,7 +40,7 @@ class Skills extends React.Component {
     return (
       <div>
         <Header />
-        <Row className="skills">          
+        <Row className="page_classic">          
         <Col  xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
               <FontAwesomeIcon icon={faLaptopCode} /> Programmiersprachen:
