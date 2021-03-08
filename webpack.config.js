@@ -54,7 +54,7 @@ module.exports = {
     },
     entry: {
       bundle: "./src/Classic/index.js",
-      game: "./src/Game/index.js"
+      arcade: "./src/Game/index.js"
     },
     output: {
       filename: '[name].js',
@@ -73,8 +73,8 @@ module.exports = {
         }),
         new HtmlWebPackPlugin({
           template: "./static/index.html",
-          filename: "../docs/game/index.html",
-          chunks: ["game"]
+          filename: "../docs/arcade/index.html",
+          chunks: ["arcade"]
         }),
       new MiniCssExtractPlugin({
           filename: '[name].style.css',

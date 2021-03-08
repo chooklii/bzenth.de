@@ -97,7 +97,7 @@ class Home extends React.Component {
         <h2 className="home_game_name">Arcade Modus</h2>
       <p className="home_text">Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.</p>
       <div className="home_button">
-        <Button onClick={() => window.location.href="/game"} type="primary">Zum Arcade-Modus</Button>
+        <Button onClick={() => window.location.href="/arcade"} type="primary">Zum Arcade-Modus</Button>
       </div>
     </Col>
     )
