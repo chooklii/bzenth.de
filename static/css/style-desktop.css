@@ -9,6 +9,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.contact-image{
+    background-image: url("../images/contact.jpg")
+}
+
 .header-desktop-heading{
     font-family: "Kaushan";
     text-align: center;
@@ -74,7 +78,6 @@
 }
 
 .home_classic_image{
-    background-image: url("../static/header.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +88,6 @@
 }
 
 .home_game_image{
-    background-image: url("../static/bzenth.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,7 +151,6 @@
 }
 
 .contact-image{
-    background-image: url("./contact.jpg");
     background-size: cover;
     margin-top: 30px;
     height: 337px;
@@ -207,36 +208,6 @@
 .projects{
     width: 100%;
 }
-
-.project-oepnv-image{
-    background-image: url("./oepnv.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
-}
-
-.project-gradulator-image{
-    background-image: url("./gradulator.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 600px;
-    margin: 3%;
-    border: 1px solid black 
-}
-
-.project-bzenth-image{
-    background-image: url("./bzenth.png");
-    background-size: cover;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
-}
-
 .project-left-content{
     width: 50%;
     margin: 3%
@@ -245,15 +216,6 @@
 .project-right-content{
     width: 50%;
     margin: 3%
-}
-
-.project-hartwork-image{
-    background-image: url("./oepnv.png");
-    background-size: cover;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
 }
 
 .project-heading{
@@ -345,7 +307,6 @@
 }
 
 .storagable{
-    background-image: url("../static/storagable.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
@@ -354,7 +315,6 @@
 }
 
 .mealtracker{
-    background-image: url("../static/mealtracker.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
@@ -363,7 +323,6 @@
 }
 
 .bzenth{
-    background-image: url("../static/bzenth.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 488px;
@@ -372,7 +331,6 @@
 }
 
 .gradulator{
-    background-image: url("../static/gradulator.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 500px;
@@ -381,7 +339,6 @@
 }
 
 .oepnv{
-    background-image: url("../static/oepnv.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 493px;
@@ -430,7 +387,6 @@
 }
 
 .notFound-image{
-    background-image: url("./404.jpg");
     width: 400px;
     height: 300px;
     background-position: center;
@@ -467,13 +423,6 @@
     margin-left: 23%;
     padding: .5em;
     width: 50%;
-}
-
-.private-image-berlin{
-    background-image: url("./berlin.jpg");
-    background-size: cover;
-    width: 300px;
-    height: 200px;
 }
 
 .private-image{

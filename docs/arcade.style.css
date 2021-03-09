@@ -319,11 +319,11 @@
 }
 
 .berlin{
-    background-image: url(../static/berlin.jpg);
+    background-image: url(../static/images/berlin.jpg);
 }
 
 .es{
-    background-image: url(../static/es.jpg);
+    background-image: url(../static/images/es.jpg);
 }
 
 .image_game{
@@ -337,7 +337,7 @@
 }
 
 .storagable{
-    background-image: url(../static/storagable.png);
+    background-image: url(../static/images/storagable.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
@@ -346,7 +346,7 @@
 }
 
 .mealtracker{
-    background-image: url(../static/mealtracker.png);
+    background-image: url(../static/images/mealtracker.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
@@ -355,7 +355,7 @@
 }
 
 .bzenth{
-    background-image: url(../static/bzenth.png);
+    background-image: url(../static/images/bzenth.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 407px;
@@ -364,7 +364,7 @@
 }
 
 .gradulator{
-    background-image: url(../static/gradulator.png);
+    background-image: url(../static/images/gradulator.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 417px;
@@ -373,7 +373,7 @@
 }
 
 .oepnv{
-    background-image: url(../static/oepnv.png);
+    background-image: url(../static/images/oepnv.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 411px;
@@ -382,7 +382,7 @@
 }
 
 .game_contact_image{
-    background-image: url(../static/win.jpg);
+    background-image: url(../static/images/win.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 480px;

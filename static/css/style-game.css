@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Green Fuz';
-    src: url('./green_fuz.ttf') format('truetype');
+    src: url('../fonts/green_fuz.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Lobster';
-    src: url('./lobster.ttf') format('truetype');
+    src: url('../fonts/lobster.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'JosefinSans';
-    src: url('./JosefinSans.ttf') format('truetype');
+    src: url('../fonts/JosefinSans.ttf') format('truetype');
 }
 
 #root{
@@ -28,7 +28,7 @@
 }
 
 .level_play{
-    background-image: url("../assets/menu/play.png");
+    background-image: url("../../assets/menu/play.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 21px;
@@ -37,7 +37,7 @@
 }
 
 .unlock_icon{
-    background-image: url("../assets/menu/achievements.png");
+    background-image: url("../../assets/menu/achievements.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 21px;
@@ -152,7 +152,7 @@
 }
 
 .settings_icon{
-    background-image: url("../assets/menu/settings.png");
+    background-image: url("../../assets/menu/settings.png");
     background-repeat: no-repeat;
     background-size:contain;
     width: 27.3px;
@@ -163,7 +163,7 @@
 }
 
 .restart_icon{
-    background-image: url("../assets/menu/restart.png");
+    background-image: url("../../assets/menu/restart.png");
     background-repeat: no-repeat;
     background-size:contain;
     width: 27.3px;
@@ -265,7 +265,7 @@
 }
 
 .back_icon{
-    background-image: url("../assets/menu/close.png");
+    background-image: url("../../assets/menu/close.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 22.5px;
@@ -319,11 +319,11 @@
 }
 
 .berlin{
-    background-image: url("../static/berlin.jpg");
+    background-image: url("../images/berlin.jpg");
 }
 
 .es{
-    background-image: url("../static/es.jpg");
+    background-image: url("../images/es.jpg");
 }
 
 .image_game{
@@ -337,7 +337,7 @@
 }
 
 .storagable{
-    background-image: url("../static/storagable.png");
+    background-image: url("../images/storagable.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
@@ -346,7 +346,7 @@
 }
 
 .mealtracker{
-    background-image: url("../static/mealtracker.png");
+    background-image: url("../images/mealtracker.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
@@ -355,7 +355,7 @@
 }
 
 .bzenth{
-    background-image: url("../static/bzenth.png");
+    background-image: url("../images/bzenth.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 407px;
@@ -364,7 +364,7 @@
 }
 
 .gradulator{
-    background-image: url("../static/gradulator.png");
+    background-image: url("../images/gradulator.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 417px;
@@ -373,7 +373,7 @@
 }
 
 .oepnv{
-    background-image: url("../static/oepnv.png");
+    background-image: url("../images/oepnv.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 411px;
@@ -382,7 +382,7 @@
 }
 
 .game_contact_image{
-    background-image: url("../static/win.jpg");
+    background-image: url("../images/win.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 480px;
@@ -496,43 +496,43 @@
  }
 
 .l1{
-    background-image: url("../assets/levels/01.png");
+    background-image: url("../../assets/levels/01.png");
 }
 
 .l2{
-    background-image: url("../assets/levels/02.png");
+    background-image: url("../../assets/levels/02.png");
 }
 
 .l3{
-    background-image: url("../assets/levels/03.png");
+    background-image: url("../../assets/levels/03.png");
 }
 
 .l4{
-    background-image: url("../assets/levels/04.png");
+    background-image: url("../../assets/levels/04.png");
 }
 
 .l5{
-    background-image: url("../assets/levels/05.png");
+    background-image: url("../../assets/levels/05.png");
 }
 
 .l6{
-    background-image: url("../assets/levels/06.png");
+    background-image: url("../../assets/levels/06.png");
 }
 
 .l7{
-    background-image: url("../assets/levels/07.png");
+    background-image: url("../../assets/levels/07.png");
 }
 
 .l8{
-    background-image: url("../assets/levels/08.png");
+    background-image: url("../../assets/levels/08.png");
 }
 
 .l9{
-    background-image: url("../assets/levels/09.png");
+    background-image: url("../../assets/levels/09.png");
 }
 
 .l10{
-    background-image: url("../assets/levels/10.png");
+    background-image: url("../../assets/levels/10.png");
 }
 
 .ant-tooltip-disabled-compatible-wrapper{

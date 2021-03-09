@@ -54,7 +54,6 @@
     }
 
     .storagable{
-        background-image: url(../static/storagable.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -64,7 +63,6 @@
     }
     
     .mealtracker{
-        background-image: url(../static/mealtracker.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -74,7 +72,6 @@
     }
     
     .bzenth{
-        background-image: url(../static/bzenth.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -83,7 +80,6 @@
     }
     
     .gradulator{
-        background-image: url(../static/gradulator.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -92,7 +88,6 @@
     }
     
     .oepnv{
-        background-image: url(../static/oepnv.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -101,7 +96,6 @@
     }
 
     .header{
-        background-image: url(../static/header.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -215,15 +209,6 @@
         font-weight: lighter;
     }
 
-    .private-image-berlin{
-        background-image: url(../static/berlin.jpg);
-        background-size: cover;
-        width: 80%;
-        margin-left: 10%;
-        height: 200px;
-        background-position: center;
-    }
-
     .private-image{
         text-align: center;
         font-weight: lighter;
@@ -287,36 +272,6 @@
         text-align: center;
         color: black;
         padding-bottom: .5em;
-    }
-
-    .project-oepnv-image{
-    background-image: url(../static/oepnv.png);
-    background-size: contain;
-    width: 90%;
-    height: 150px;
-    margin-top: 1em;
-    margin-left: 5%;
-    border: 1px solid black;
-    }
-
-    .project-gradulator-image{
-    background-image: url(../static/gradulator.png);
-    background-size: contain;
-    width: 90%;
-    height: 150px;
-    margin-top: 1em;
-    margin-left: 5%;
-    border: 1px solid black;
-    }
-
-    .project-bzenth-image{
-        background-image: url(../static/bzenth.png);
-        background-size: cover;
-        width: 90%;
-        height: 150px;
-        margin-bottom: 1em;
-        margin-left: 5%;
-        border: 1px solid black;
     }
 
     .contact-heading{
@@ -404,6 +359,7 @@
         top: 0
     }
 
+
     .header-mobile-span{
         cursor: pointer;
         position: absolute;
@@ -419,7 +375,6 @@
         height: 0.75em;
         width: 1.25em;
         left: 1em;
-        background: url(../static/toggle.svg);
     }
 
     .header-mobile-heading{
@@ -489,6 +444,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.contact-image{
+    background-image: url(../static/images/contact.jpg)
+}
+
 .header-desktop-heading{
     font-family: "Kaushan";
     text-align: center;
@@ -554,7 +513,6 @@
 }
 
 .home_classic_image{
-    background-image: url(../static/header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -565,7 +523,6 @@
 }
 
 .home_game_image{
-    background-image: url(../static/bzenth.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -629,7 +586,6 @@
 }
 
 .contact-image{
-    background-image: url(../static/contact.jpg);
     background-size: cover;
     margin-top: 30px;
     height: 337px;
@@ -687,36 +643,6 @@
 .projects{
     width: 100%;
 }
-
-.project-oepnv-image{
-    background-image: url(../static/oepnv.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
-}
-
-.project-gradulator-image{
-    background-image: url(../static/gradulator.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 600px;
-    margin: 3%;
-    border: 1px solid black 
-}
-
-.project-bzenth-image{
-    background-image: url(../static/bzenth.png);
-    background-size: cover;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
-}
-
 .project-left-content{
     width: 50%;
     margin: 3%
@@ -725,15 +651,6 @@
 .project-right-content{
     width: 50%;
     margin: 3%
-}
-
-.project-hartwork-image{
-    background-image: url(../static/oepnv.png);
-    background-size: cover;
-    width: 600px;
-    height: 337.5px;
-    margin: 3%;
-    border: 1px solid black
 }
 
 .project-heading{
@@ -825,7 +742,6 @@
 }
 
 .storagable{
-    background-image: url(../static/storagable.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
@@ -834,7 +750,6 @@
 }
 
 .mealtracker{
-    background-image: url(../static/mealtracker.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
@@ -843,7 +758,6 @@
 }
 
 .bzenth{
-    background-image: url(../static/bzenth.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 488px;
@@ -852,7 +766,6 @@
 }
 
 .gradulator{
-    background-image: url(../static/gradulator.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 500px;
@@ -861,7 +774,6 @@
 }
 
 .oepnv{
-    background-image: url(../static/oepnv.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 493px;
@@ -910,7 +822,6 @@
 }
 
 .notFound-image{
-    background-image: url(../static/404.jpg);
     width: 400px;
     height: 300px;
     background-position: center;
@@ -947,13 +858,6 @@
     margin-left: 23%;
     padding: .5em;
     width: 50%;
-}
-
-.private-image-berlin{
-    background-image: url(../static/berlin.jpg);
-    background-size: cover;
-    width: 300px;
-    height: 200px;
 }
 
 .private-image{
@@ -1100,9 +1004,12 @@
     }
 
     .header{
-        background-image: url(../static/header.jpg);
         background-size: cover;
         background-position: center;
+    }
+
+    .contact-image{
+        background-image: url(../static/images/contact.jpg)
     }
 
     .page_classic{
@@ -1112,6 +1019,10 @@
         padding-bottom: 20px;
     }
 
+    .contact-image-mobile{
+        background-image: url(../static/images/contact.jpg);
+    }
+    
     .header-desktop-heading{
         display: none;
     }
@@ -1148,7 +1059,6 @@
     }
 
     .storagable{
-        background-image: url(../static/storagable.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1158,7 +1068,6 @@
     }
     
     .mealtracker{
-        background-image: url(../static/mealtracker.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1168,7 +1077,6 @@
     }
     
     .bzenth{
-        background-image: url(../static/bzenth.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1177,7 +1085,6 @@
     }
     
     .gradulator{
-        background-image: url(../static/gradulator.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1186,7 +1093,6 @@
     }
     
     .oepnv{
-        background-image: url(../static/oepnv.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1215,7 +1121,6 @@
     }
 
     .contact-image-mobile{
-        background-image: url(../static/contact.jpg);
         background-size: cover;
         min-height: 25vh;
         width: 70%;
@@ -1320,15 +1225,6 @@
         font-weight: lighter;
     }
 
-    .private-image-berlin{
-        background-image: url(../static/berlin.jpg);
-        background-size: cover;
-        width: 80%;
-        margin-left: 10%;
-        height: 200px;
-        background-position: center;
-    }
-
     .private-image{
         text-align: center;
         font-weight: lighter;
@@ -1392,36 +1288,6 @@
         text-align: center;
         color: black;
         padding-bottom: .5em;
-    }
-
-    .project-oepnv-image{
-    background-image: url(../static/oepnv.png);
-    background-size: cover;
-    width: 90%;
-    height: 350px;
-    margin-top: 1em;
-    margin-left: 5%;
-    border: 1px solid black;
-    }
-
-    .project-gradulator-image{
-        background-image: url(../static/gradulator.png);
-        background-size: cover;
-        width: 90%;
-        height: 350px;
-        margin-top: 1em;
-        margin-left: 5%;
-        border: 1px solid black;
-    }
-
-    .project-bzenth-image{
-        background-image: url(../static/bzenth.png);
-        background-size: cover;
-        width: 90%;
-        height: 350px;
-        margin-bottom: 1em;
-        margin-left: 5%;
-        border: 1px solid black;
     }
 
     .contact-heading{
@@ -1537,7 +1403,6 @@
         height: 0.75em;
         width: 1.25em;
         left: 1em;
-        background: url(../static/toggle.svg);
     }
 
     .header-mobile-heading{
@@ -1646,7 +1511,6 @@
     }
 
     .storagable{
-        background-image: url(../static/storagable.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1656,7 +1520,6 @@
     }
     
     .mealtracker{
-        background-image: url(../static/mealtracker.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1666,7 +1529,6 @@
     }
     
     .bzenth{
-        background-image: url(../static/bzenth.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1675,7 +1537,6 @@
     }
     
     .gradulator{
-        background-image: url(../static/gradulator.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1684,7 +1545,6 @@
     }
     
     .oepnv{
-        background-image: url(../static/oepnv.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -1693,9 +1553,12 @@
     }
 
     .header{
-        background-image: url(../static/header.jpg);
         background-size: cover;
         background-position: center;
+    }
+
+    .contact-image{
+        background-image: url(../static/images/contact.jpg)
     }
 
     @keyframes blinker {
@@ -1704,6 +1567,9 @@
         }
       }
 
+    .contact-image-mobile{
+        background-image: url(../static/images/contact.jpg);
+    }
 
     .home-rotating-text{
         text-align: center;
@@ -1819,16 +1685,6 @@
         font-weight: lighter;
     }
 
-    .private-image-berlin{
-        background-image: url(../static/berlin.jpg);
-        background-size: cover;
-        width: 80%;
-        margin-left: 10%;
-        height: 300px;
-        border: 1px solid black;
-        background-position: center;
-    }
-
     .private-image{
         text-align: center;
         font-weight: lighter;
@@ -1894,38 +1750,7 @@
         padding-bottom: .5em;
     }
 
-    .project-oepnv-image{
-    background-image: url(../static/oepnv.png);
-    background-size: cover;
-    width: 90%;
-    height: 350px;
-    margin-top: 1em;
-    margin-left: 5%;
-    border: 1px solid black;
-    }
-
-    .project-gradulator-image{
-        background-image: url(../static/gradulator.png);
-        background-size: cover;
-        width: 90%;
-        height: 350px;
-        margin-top: 1em;
-        margin-left: 5%;
-        border: 1px solid black;
-        }
-
-    .project-bzenth-image{
-        background-image: url(../static/bzenth.png);
-        background-size: cover;
-        width: 90%;
-        height: 350px;
-        margin-bottom: 1em;
-        margin-left: 5%;
-        border: 1px solid black;
-    }
-
     .contact-image-mobile{
-        background-image: url(../static/contact.jpg);
         background-size: cover;
         min-height: 25vh;
         width: 70%;
@@ -2045,7 +1870,6 @@
         height: 0.75em;
         width: 1.25em;
         left: 1em;
-        background: url(../static/toggle.svg);
     }
 
     .header-mobile-heading{
@@ -2124,12 +1948,50 @@ body{
 }
 
 .berlin{
-    background-image: url(../static/berlin.jpg);
+    background-image: url(../static/images/berlin.jpg);
 }
 
 .es{
-    background-image: url(../static/es.jpg);
+    background-image: url(../static/images/es.jpg);
 }
+
+.storagable{
+    background-image: url(../static/images/storagable.png);
+}
+
+.mealtracker{
+    background-image: url(../static/images/mealtracker.png);
+}
+
+.bzenth{
+    background-image: url(../static/images/bzenth.png);
+}
+
+.gradulator{
+    background-image: url(../static/images/gradulator.png);
+}
+
+.oepnv{
+    background-image: url(../static/images/oepnv.png);
+}
+
+.notFound-image{
+    background-image: url(../static/images/404.jpg);
+}
+
+.home_classic_image{
+    background-image: url(../static/images/header.jpg);
+}
+
+.home_game_image{
+    background-image: url(../static/images/bzenth.png);
+}
+
+.header-mobile-menu-icon{
+    background: url(../static/toggle.svg)
+}
+
+
 /*!
  * 
  * antd v4.12.3
