@@ -366,6 +366,9 @@ playerdeath(type){
         single.anims.play("bottom_rockhead")
         single.setVelocityY(-20)
       }
+      else if(single.body.velocity.y === 0){
+        single.setVelocityY(200)
+      }
     })
   }
 
@@ -377,6 +380,9 @@ playerdeath(type){
       else if(single.body.y + 50 >= height){
         single.anims.play("bottom_rockhead")
         single.setVelocityY(rockheadUpTempo)
+      }
+      else if(single.bidy.velocity.y === 0){
+        single.setVelocityY(300)
       }
     })
   }
