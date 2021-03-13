@@ -195,7 +195,6 @@ class Game extends Phaser.Scene{
 
       if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
         if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
-          hit=true
           player.anims.play("hit", true)
           this.playerdeath("rockhead")
         }
@@ -212,7 +211,6 @@ hitElevatorRockhead(){
 
     if((player.x + player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
       if(player.y > single.y && single.body.velocity.y != rockheadUpTempo){
-        hit=true
         player.anims.play("hit", true)
         this.playerdeath("rockhead")
         }  
@@ -223,7 +221,10 @@ hitElevatorRockhead(){
 
 playerdeath(type){
   if(deathsound.currentTime == 0 && this.game.playMusic) deathsound.play()
-  this.game.death(type)
+  if(!hit){
+    hit=true
+    this.game.death(type)
+  }
 }
 
   hitSpikehead(){
@@ -250,13 +251,11 @@ playerdeath(type){
       }
     }
     })
-    hit=true
     player.anims.play("hit", true)
     this.playerdeath("spike")
   }
 
   hitSaw(){
-    hit=true
     player.anims.play("hit", true)
     this.playerdeath("saw")
   }
@@ -381,7 +380,7 @@ playerdeath(type){
         single.anims.play("bottom_rockhead")
         single.setVelocityY(rockheadUpTempo)
       }
-      else if(single.bidy.velocity.y === 0){
+      else if(single.body.velocity.y === 0){
         single.setVelocityY(300)
       }
     })

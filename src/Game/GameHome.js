@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
+import {minHeight, minWidth, itemsToUnlock, rockheadTexts, sawTexts, spikeTexts} from "./config"
 
-const minHeight = 650
-const minWidth = 1250
 const config = {
   type: Phaser.AUTO,
   parent: "phaser-target",
@@ -26,15 +25,6 @@ const config = {
 }
 var game;
 var currentSong;
-
-const itemsToUnlock = {
-  1: "About Me",
-  2: "Credits",
-  3: "Skills",
-  5: "Private Projekte",
-  6: "Öffentliche Projekte",
-  8: "Kontakt"
-}
 
 class GameHome extends React.Component{
     constructor(props){
@@ -352,13 +342,16 @@ class GameHome extends React.Component{
       const {killedBy} = this.state
       var killText = "Gestorben"
       if(killedBy === "saw"){
-        killText = "Durch Säge zweigeteilt"
+        const index = Math.floor(Math.random() * sawTexts.length)
+        killText = sawTexts[index]
       }
       else if(killedBy === "spike"){
-        killText = "Aufgespießt und serviert"
+        const index = Math.floor(Math.random() * spikeTexts.length)
+        killText = spikeTexts[index]
       }
       else if(killedBy === "rockhead"){
-        killText = "Vom Stein begraben"
+        const index = Math.floor(Math.random() * rockheadTexts.length)
+        killText = rockheadTexts[index]
       }
       return(
         <div>
