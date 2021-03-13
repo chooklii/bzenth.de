@@ -8,6 +8,8 @@ import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-i
 import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 
+const minHeight = 650
+const minWidth = 1250
 const config = {
   type: Phaser.AUTO,
   parent: "phaser-target",
@@ -111,8 +113,9 @@ class GameHome extends React.Component{
       config.height = height
       config.width = width
       const screenWidth = window.innerWidth
-      this.setState({screenWidth: screenWidth})
-      if(screenWidth >=1250){
+      const screenHeight = window.innerHeight
+      this.setState({screenWidth: screenWidth, screenHeight: screenHeight})
+      if(screenWidth >=minWidth && screenHeight >=minHeight){
       game = new Phaser.Game(config)
       game.levels = starting
       game.restart = () => void(0)
@@ -124,15 +127,16 @@ class GameHome extends React.Component{
 
     getScreenSize(){
       const width = window.innerWidth
-      if(width <= 1450){
+      const height = window.innerHeight
+      if(width <= 1450 || height <= 750){
         return{
           width: 1200, height: 600, type: "s"
         }
-      }else if(width <= 1650){
+      }else if(width <= 1650 || height <= 850){
         return{
           width: 1400, height: 700, type:"m"
         }
-      }else if(width <= 1850){
+      }else if(width <= 1850 || height <=950){
         return{
           width: 1600, height: 800, type: "l"
         }
@@ -414,8 +418,8 @@ class GameHome extends React.Component{
     }
 
     render(){
-      const {showMenu, deathscreen, displayPage, screenWidth} = this.state
-      if(screenWidth < 1250){
+      const {showMenu, deathscreen, displayPage, screenWidth, screenHeight} = this.state
+      if(screenWidth < minWidth || screenHeight < minHeight){
         return(
           <div className="game_home">
             <div className="game_error">
@@ -424,7 +428,7 @@ class GameHome extends React.Component{
                     Bildschirm zu klein
                 </h2>
                 <p className="game_text">Der genutzte Bildschirm ist leider zu klein, um den Arcade-Modus optimal zu nutzen. Bitte nutze einen Bildschirm, 
-                der größer als 1250px ist und besuche die Seite anschließend erneut. Eine Unterstützung für kleine Bildschirme und Smartphones folgt in einer
+                der breiter als {minWidth}px und höher als {minHeight}px ist und besuche die Seite anschließend erneut. Eine Unterstützung für kleinere Bildschirme und Smartphones folgt in einer
                 zukünftigen Version.</p>
             </div>
           </div>
