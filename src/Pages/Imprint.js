@@ -77,6 +77,12 @@ class Imprint extends React.Component {
           Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in
           der <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" target="_blank">Datenschutzerklärung</a> von Github
 
+          <br></br><br></br>
+
+          <p>Diese Webseite verwendet zur Verarbeitung der Nutzungsstatistiken <a href="https://getinsights.io/" target="_blank">Insights</a>. Durch diese Anwendung werden keine personenbezogene Daten verarbeitet und von der Nutzung von Cookies zur Identifikation von Benutzern wird abgesehen.
+                    Weitere Informationen zum Umgang mit diesen Daten finden Sie in der <a href="https://getinsights.io/privacy" target="_blank">Datenschutzerklärung</a> von Insights.
+          </p>
+
           <p className="imprint_source">
             Quelle:
             <a className="imprint-link" target="_blank" href="https://www.juraforum.de/impressum-generator/">
