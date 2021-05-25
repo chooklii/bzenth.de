@@ -8,7 +8,7 @@ const bzenth = {
     urls: [{
         link: "https://github.com/chooklii/bzenth.de",
         name: "Source Code",
-        type: "normal" 
+        type: "normal"
     }]
 }
 
@@ -50,10 +50,30 @@ const gradulator = {
     ]
 }
 
+const desc_numwordsde = "Wenn über eine API eine Zahl zurückgegeben wird, welche anschließend in einem Text verwendet werden soll, ist von Vorteil, wenn nicht `1 der folgenden`, sondern `Eine der folgenden` als Text angezeigt wird. Hierfür kann dieses NPM-Paket genutzt werden, welches eine Zahl in das entsprechende Wort der Deutschen Sprache umwandelt. Hierbei werden bis zu 12-Zeichen lange Zahlen, sowie Indefinitivpronomen unterstützt."
+const tech_numwordsde = "Das Paket wird über NPM bereitgestellt und unterstützt Typescript."
+
+const numWordsDe = {
+    desc: desc_numwordsde,
+    tech: tech_numwordsde,
+    urls: [
+        {
+            link: "https://www.npmjs.com/package/num-words-de",
+            name: "NPM",
+            type: "primary"
+        },
+        {
+            link: "https://github.com/chooklii/num-words-de",
+            name: "Source Code",
+            type: "normal"
+        }
+    ]
+}
 
 export {
     description,
     bzenth,
     openv,
-    gradulator
+    gradulator,
+    numWordsDe
 }

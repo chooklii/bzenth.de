@@ -1,12 +1,10 @@
 import React from "react"
-import { description, storagable, mealtracker, bootlii, bigBrain } from "./content"
-import { Row, Col, Button, Divider } from "antd"
+import { description, storagable, mealtracker} from "./content"
+import { Row, Col, Button } from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faArchive,
     faCookieBite,
-    faGamepad,
-    faBrain
 } from "@fortawesome/free-solid-svg-icons"
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 const PrivateProjectsGame = () => {
@@ -68,30 +66,6 @@ const PrivateProjectsGame = () => {
                         {bodyProject(mealtracker)}
                     </div>
                     {buttonProject("https://github.com/chooklii/mealTracker")}
-                </Col>
-                <Divider />
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_game">
-                        <h2 className="heading_game">
-                            <FontAwesomeIcon icon={faGamepad} className="icon_game" />
-                            Bootlii
-                        </h2>
-                        <div className="bootlii" />
-                        <p className="game_text">{bootlii}</p>
-                    </div>
-                    {buttonProject("https://github.com/chooklii/Bootlii")}
-                </Col>
-
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_game">
-                        <h2 className="heading_game">
-                            <FontAwesomeIcon icon={faBrain} className="icon_game" />
-                            Big Brain
-                        </h2>
-                        <div className="bigbrain" />
-                        {bodyProject(bigBrain)}
-                    </div>
-                    {buttonProject("https://github.com/chooklii/BigBrain")}
                 </Col>
             </Row>
         </div>

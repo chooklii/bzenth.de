@@ -1,5 +1,5 @@
 import React from "react"
-import {description, bzenth, openv, gradulator} from "./content"
+import {description, bzenth, openv, gradulator, numWordsDe} from "./content"
 import { Row, Col, Button, Divider } from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +7,8 @@ import {
     faGraduationCap,
     faBus
 } from "@fortawesome/free-solid-svg-icons"
+import { faNpm } from "@fortawesome/free-brands-svg-icons";
+
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 
 const PublicProjectsGame = () => {
@@ -65,6 +67,18 @@ const PublicProjectsGame = () => {
                         <p className="game_text">{openv.tech}</p>
                     </div>
                     {buttonProject(openv.urls)}
+                </Col>
+                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
+                    <div className="project_game">
+                        <h2 className="heading_game">
+                            <FontAwesomeIcon icon={faNpm} className="icon_game" />
+                            num-words-de
+                        </h2>
+                        <div className="numwordsde" />
+                        <p className="game_text">{numWordsDe.desc}</p>
+                        <p className="game_text">{numWordsDe.tech}</p>
+                    </div>
+                    {buttonProject(numWordsDe.urls)}
                 </Col>
             </Row>
         </div>

@@ -30,7 +30,7 @@
         display: inline-flex;
         justify-content: center;
     }
-    
+
     .button_public_project{
         margin-left: 10px;
     }
@@ -53,45 +53,29 @@
         line-height: 200%;
     }
 
+    .image-project{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;
+        margin: 0 auto
+    }
+
     .storagable{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;   
+        padding-top: 52%;
         margin: 0 auto
     }
-    
+
     .mealtracker{
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .bzenth{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .gradulator{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
-        margin: 0 auto
-    }
-    
-    .oepnv{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
+        padding-top: 52%;
         margin: 0 auto
     }
 

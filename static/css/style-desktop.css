@@ -306,11 +306,19 @@
     margin-left: 10%;
 }
 
+.image-project{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 493px;
+    height: 261px;
+    margin: 0 auto
+}
+
 .storagable{
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
-    height: 330px; 
+    height: 330px;
     margin: 0 auto
 }
 
@@ -318,31 +326,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
-    height: 324px; 
-    margin: 0 auto
-}
-
-.bzenth{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 488px;
-    height: 254px; 
-    margin: 0 auto
-}
-
-.gradulator{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 254px; 
-    margin: 0 auto
-}
-
-.oepnv{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 493px;
-    height: 261px; 
+    height: 324px;
     margin: 0 auto
 }
 
