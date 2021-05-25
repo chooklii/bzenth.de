@@ -12,23 +12,18 @@ const storagableSolutionThree = "Lösung: Doppelte Backups durchführen. Upload 
 const mealtrackerProblemOne = "Problem: Fehlende Inspiration, um ein Essen zu finden, welches an diesem Tag oder zu einem beliebigen Zeitpunkt gekocht werden soll. Tendenz dazu einzelne Essen häufiger zu kochen, als andere"
 const mealtrackerSolutionOne = "Lösung: Webanwendung, welche über das Smartphone aufgerufen werden kann. Es wird das gekochte Essen eingetragen und die Anwendung gibt Empfehlungen für Essen, welche zuletzt vor längerer Zeit gekocht wurden. Dabei wird saisional nicht passendes Essen ignoriert."
 
-const bootlii = "Das Videospiel Rocket League bietet eine API an, über welche Daten über die aktuelle Spielsituation ausgegeben und Operationen für einen Bot eingegeben werden können. Bootlii ist ein Bot für das Videospiel Rocket League. Projekt aktuell noch in der Entwicklung."
-
-const bigBrainProblemOne = "Problem: Einzelne Probleme in der Entwicklung sind wiederkehrend. Einzelne Schritte innerhalb der Entwicklung in einzelnen Sprachen werden zu selten durchgeführt, um diese komplett in Erinnerung zu behalten. Folglich muss über Google geschaut werden, wie genau der benötigte Befehl lautet."
-const bigBrainSolutionOne = "Lösung: Entwicklung einer eigenen Wissenssammlung, in welcher Lösungen zu wiederkehrenden Problemen gesammelt und schnell gefunden werden können mit dem Ziel der Optimierung des eigenen Arbeitens. Projekt aktuell noch in Arbeit."
-
 const storagable = [
     {
     problem: storagableProblemOne,
-    solution: storagableSolutionOne 
+    solution: storagableSolutionOne
     },
     {
     problem: storagableProblemTwo,
-    solution: storagableSolutionTwo 
+    solution: storagableSolutionTwo
     },
     {
     problem: storagableProblemThree,
-    solution: storagableSolutionThree 
+    solution: storagableSolutionThree
     }
 ]
 
@@ -37,18 +32,9 @@ const mealtracker = [
         problem: mealtrackerProblemOne,
         solution: mealtrackerSolutionOne
     }]
-    
-const bigBrain = [
-    {
-        problem: bigBrainProblemOne,
-        solution: bigBrainSolutionOne
-    }
-]
 
 export {
     description,
     storagable,
-    mealtracker,
-    bigBrain,
-    bootlii
+    mealtracker
 }

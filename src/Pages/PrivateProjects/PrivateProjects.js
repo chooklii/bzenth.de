@@ -71,30 +71,6 @@ const PrivateProjects = () => {
                     </div>
                     {buttonProject("https://github.com/chooklii/mealTracker")}
                 </Col>
-                <Divider />
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faGamepad} className="icon" />
-                            Bootlii
-                        </h2>
-                        <div className="bootlii" />
-                        <p className="classic_text">{bootlii}</p>
-                    </div>
-                    {buttonProject("https://github.com/chooklii/Bootlii")}
-                </Col>
-                <Divider className="mobile_divider"/>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faBrain} className="icon" />
-                            Big Brain
-                        </h2>
-                        <div className="bigbrain" />
-                        {bodyProject(bigBrain)}
-                    </div>
-                    {buttonProject("https://github.com/chooklii/BigBrain")}
-                </Col>
             </Row>
             </div>
             <Footer/>
