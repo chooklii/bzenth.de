@@ -30,7 +30,7 @@
         display: inline-flex;
         justify-content: center;
     }
-    
+
     .button_public_project{
         margin-left: 10px;
     }
@@ -53,45 +53,29 @@
         line-height: 200%;
     }
 
+    .image-project{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;
+        margin: 0 auto
+    }
+
     .storagable{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;   
+        padding-top: 52%;
         margin: 0 auto
     }
-    
+
     .mealtracker{
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .bzenth{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .gradulator{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
-        margin: 0 auto
-    }
-    
-    .oepnv{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
+        padding-top: 52%;
         margin: 0 auto
     }
 
@@ -741,11 +725,19 @@
     margin-left: 10%;
 }
 
+.image-project{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 493px;
+    height: 261px;
+    margin: 0 auto
+}
+
 .storagable{
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
-    height: 330px; 
+    height: 330px;
     margin: 0 auto
 }
 
@@ -753,31 +745,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 302px;
-    height: 324px; 
-    margin: 0 auto
-}
-
-.bzenth{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 488px;
-    height: 254px; 
-    margin: 0 auto
-}
-
-.gradulator{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 254px; 
-    margin: 0 auto
-}
-
-.oepnv{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 493px;
-    height: 261px; 
+    height: 324px;
     margin: 0 auto
 }
 
@@ -1022,7 +990,7 @@
     .contact-image-mobile{
         background-image: url(../static/images/contact.jpg);
     }
-    
+
     .header-desktop-heading{
         display: none;
     }
@@ -1058,45 +1026,29 @@
         margin-right: 5px;
     }
 
+    .image-project{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;
+        margin: 0 auto
+    }
+
     .storagable{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;   
+        padding-top: 52%;
         margin: 0 auto
     }
-    
+
     .mealtracker{
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .bzenth{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .gradulator{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
-        margin: 0 auto
-    }
-    
-    .oepnv{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
+        padding-top: 52%;
         margin: 0 auto
     }
 
@@ -1126,7 +1078,7 @@
         width: 70%;
         margin-left: 15%;
     }
-    
+
     @keyframes blinker {
         50% {
           opacity: 0;
@@ -1424,7 +1376,7 @@
         font-size: 25px;
           margin: 0
       }
-      
+
       .imprint_source{
           padding-top: .5em;
       }
@@ -1510,45 +1462,29 @@
         margin-right: 5px;
     }
 
+    .image-project{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        padding-top: 52%;
+        margin: 0 auto
+    }
+
     .storagable{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;   
+        padding-top: 52%;
         margin: 0 auto
     }
-    
+
     .mealtracker{
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .bzenth{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;  
-        margin: 0 auto
-    }
-    
-    .gradulator{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
-        margin: 0 auto
-    }
-    
-    .oepnv{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%; 
+        padding-top: 52%;
         margin: 0 auto
     }
 
@@ -1975,6 +1911,10 @@ body{
     background-image: url(../static/images/oepnv.png);
 }
 
+.numwordsde{
+    background-image: url(../static/images/numwordsde.png);
+}
+
 .notFound-image{
     background-image: url(../static/images/404.jpg);
 }
@@ -1990,7 +1930,6 @@ body{
 .header-mobile-menu-icon{
     background: url(../static/toggle.svg)
 }
-
 
 /*!
  * 
