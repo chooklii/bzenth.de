@@ -1,4 +1,4 @@
-  
+
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
@@ -76,8 +76,8 @@ module.exports = {
           filename: "../docs/arcade/index.html",
           chunks: ["arcade"]
         }),
-        new HtmlWebPackPlugin({   
-          favicon: './static/favicon.ico'
+        new HtmlWebPackPlugin({
+          favicon: './static/favicons/favicon.ico'
         }),
         new MiniCssExtractPlugin({
           filename: '[name].style.css',

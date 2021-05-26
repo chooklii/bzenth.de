@@ -8,40 +8,41 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { Row, Col, Steps } from "antd"
 
+
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 class AboutMe extends React.Component {
 
     create_steps(cv_content) {
         return cv_content.map(single => {
-            return(
-            <Steps.Step key={keyGenerator()} title={single.time} description={single.text}/>
+            return (
+                <Steps.Step key={keyGenerator()} title={single.time} description={single.text} />
             )
         })
     }
 
     renderSkills() {
-        return(
-        <div className="content_aboutme">
-            <h2 className="heading_classic">
-                <FontAwesomeIcon icon={faUserGraduate} className="icon"/>
-                Werdegang
-            </h2>
-            <Steps progressDot current={7} direction="vertical">
-                {this.create_steps(cv_content)}
-            </Steps>
-        </div>
-    )
-    
-}
-
-    renderPrivate() {
-        return(
+        return (
             <div className="content_aboutme">
                 <h2 className="heading_classic">
-                    <FontAwesomeIcon icon={faUser} className="icon"/>
+                    <FontAwesomeIcon icon={faUserGraduate} className="icon" />
+                Werdegang
+            </h2>
+                <Steps progressDot current={7} direction="vertical">
+                    {this.create_steps(cv_content)}
+                </Steps>
+            </div>
+        )
+
+    }
+
+    renderPrivate() {
+        return (
+            <div className="content_aboutme">
+                <h2 className="heading_classic">
+                    <FontAwesomeIcon icon={faUser} className="icon" />
                     Privat
                 </h2>
-                
+
                 <div className="privat">
                     <p className="classic_text">{description}</p>
                     <p className="classic_text">{hobbies}</p>
@@ -54,7 +55,6 @@ class AboutMe extends React.Component {
         return (
             <div>
                 <Header />
-
                 <div className="page_classic">
 
                     <Row>
