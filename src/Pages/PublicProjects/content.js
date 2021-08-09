@@ -50,6 +50,21 @@ const gradulator = {
     ]
 }
 
+const desc_hw = "Internetauftritt von #HARTWORK - Physiotherapie und Personaltraining von Madeleine Perner und Stefan Kramer in Neuenstein."
+const tech_hw = ""
+
+const hartwork = {
+    desc: desc_hw,
+    tech: tech_hw,
+    urls: [
+        {
+            link: "https://hart-work.de",
+            name: "Webseite",
+            type: "primary"
+        }
+    ]
+}
+
 const desc_numwordsde = "Wenn über eine API eine Zahl zurückgegeben wird, welche anschließend in einem Text verwendet werden soll, ist von Vorteil, wenn nicht `1 der folgenden`, sondern `Eine der folgenden` als Text angezeigt wird. Hierfür kann dieses NPM-Paket genutzt werden, welches eine Zahl in das entsprechende Wort der Deutschen Sprache umwandelt. Hierbei werden bis zu 12-Zeichen lange Zahlen, sowie Indefinitivpronomen unterstützt."
 const tech_numwordsde = "Das Paket wird über NPM bereitgestellt und unterstützt Typescript."
 
@@ -75,5 +90,6 @@ export {
     bzenth,
     openv,
     gradulator,
+    hartwork,
     numWordsDe
 }

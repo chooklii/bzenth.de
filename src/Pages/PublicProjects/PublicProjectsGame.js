@@ -69,6 +69,19 @@ const PublicProjectsGame = () => {
                     {buttonProject(openv.urls)}
                 </Col>
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
+                    <div className="project_classic">
+                        <h2 className="heading_classic">
+                            <FontAwesomeIcon icon={faDumbbell} className="icon" />
+                            #HARTWORK
+                        </h2>
+                        <div className="hartwork image-project" />
+                        <p className="classic_text">{hartwork.desc}</p>
+                        <p className="classic_text">{hartwork.tech}</p>
+                    </div>
+                    {this.renderButton(hartwork.urls)}
+                </Col>
+                <Divider/>
+                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
                     <div className="project_game">
                         <h2 className="heading_game">
                             <FontAwesomeIcon icon={faNpm} className="icon_game" />

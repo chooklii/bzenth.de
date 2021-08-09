@@ -1,12 +1,13 @@
 import React from "react"
 import {Footer, Header} from "../../Components"
-import {description, bzenth, openv, gradulator, numWordsDe} from "./content"
+import {description, bzenth, openv, gradulator, numWordsDe, hartwork} from "./content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faUserCircle,
     faGraduationCap,
     faBus,
-    faListOl
+    faListOl,
+    faDumbbell
 } from "@fortawesome/free-solid-svg-icons"
 import {Row, Col, Button, Divider} from "antd"
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
@@ -73,6 +74,19 @@ class PublicProjects extends React.Component {
                     </div>
                     {this.renderButton(openv.urls)}
                 </Col>
+                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
+                    <div className="project_classic">
+                        <h2 className="heading_classic">
+                            <FontAwesomeIcon icon={faDumbbell} className="icon" />
+                            #HARTWORK
+                        </h2>
+                        <div className="hartwork image-project" />
+                        <p className="classic_text">{hartwork.desc}</p>
+                        <p className="classic_text">{hartwork.tech}</p>
+                    </div>
+                    {this.renderButton(hartwork.urls)}
+                </Col>
+                <Divider/>
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
                     <div className="project_classic">
                         <h2 className="heading_classic">
