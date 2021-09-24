@@ -15,6 +15,7 @@ const programmingLanguage = [
     { name: "Webpack", rating: 3 },
     { name: "Redux", rating: 3 },
     { name: "Flask", rating: 3},
+    { name: "Django", rating: 3},
     { name: "Express", rating: 3 },
     { name: "Dropwizard", rating: 2 },
     { name: "Kafka", rating: 2 },
