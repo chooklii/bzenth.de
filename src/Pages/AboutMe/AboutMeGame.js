@@ -1,11 +1,14 @@
 import React from "react"
-import {cv_content, description, hobbies} from "./content"
+import {cv_content, description, hobbies, certificates, publication} from "./content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faUserGraduate,
-    faUser
-} from "@fortawesome/free-solid-svg-icons"
-import {Row, Col} from "antd"
+    faUser,
+    faJournalWhills,
+    faMicroscope,
+    faCertificate,
+  } from "@fortawesome/free-solid-svg-icons";
+import {Row, Col, List} from "antd"
 
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 const AboutMeGame = () => {
@@ -50,6 +53,54 @@ const AboutMeGame = () => {
         )
     }
 
+    const publications = () => {
+        return (
+          <div className="content_aboutme_short">
+            <h2 className="heading_game">
+              <FontAwesomeIcon icon={faMicroscope} className="icon" />
+              Wissenschaftliche Publikationen
+            </h2>
+            <List
+              itemLayout="horizontal"
+              dataSource={publication}
+              renderItem={(item) => (
+                <List.Item>
+                  <List.Item.Meta
+                    avatar={<FontAwesomeIcon icon={faJournalWhills} size={"2x"} />}
+                    title={item.name}
+                    description={item.authors + " - " + item.conference}
+                  />
+                </List.Item>
+              )}
+            ></List>
+          </div>
+        );
+      }
+    
+    const renderCertificate = () => {
+        return (
+          <div className="content_aboutme_short">
+            <h2 className="heading_game">
+              <FontAwesomeIcon icon={faCertificate} className="icon" />
+              Zertifikate
+            </h2>
+            <List
+              itemLayout="horizontal"
+              dataSource={certificates}
+              renderItem={(item) => (
+                <List.Item>
+                  <List.Item.Meta
+                    avatar={<FontAwesomeIcon icon={item.icon} size={"2x"} />}
+                    title={item.name}
+                    description={<p><a className="link-certificate" target="_blank" href={item.link}>Verifikationslink</a>{item.id && "  ID: "}{item.id} </p>}
+                  />
+                </List.Item>
+              )}
+            ></List>
+          </div>
+        );
+      }
+
     return(
         <div>
             <h1 className="heading_game">About Me</h1>
@@ -58,14 +109,14 @@ const AboutMeGame = () => {
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
                 <div>
                     {skills()}
-                    <div className="image_game es"></div>
+                    {publications()}
                 </div>
                 </Col>
 
                 <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
                 <div>
                     {privat()}
-                    <div className="image_game berlin"></div>
+                    {renderCertificate()}
                 </div>
                 </Col>
             </Row>

@@ -53,8 +53,8 @@ class GameHome extends React.Component{
 
     
     componentWillUnmount(){
-      window.removeEventListener("keydown")
-      window.removeEventListener("ended")
+      //window.removeEventListener("keydown")
+      //window.removeEventListener("ended")
     }
 
     initMusic(){

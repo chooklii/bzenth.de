@@ -67,6 +67,11 @@
     background-color: #a6b9bd;
 }
 
+.link-certificate{
+    color: rgba(0, 0, 0, 0.45)
+}
+
+
 .button_start_level{
     width: 90%;
     margin-left: 5%;

@@ -1,3 +1,4 @@
+import { faGoogle, faGitlab } from "@fortawesome/free-brands-svg-icons"
 const cv_content = [
     {time: "09/2013 - 07/2016", text: "Ausbildung zum Industriekaufmann"},
     {time: "09/2013 - 07/2015", text: "Abendschule Fachhochschulreife"},
@@ -12,8 +13,33 @@ const cv_content = [
 const description = "Ich bin ein 23-jähriger aus dem Raum Öhringen und aktuell im 2. Semester meines Masterstudiums an der Hochschule Heilbronn. Zuvor habe ich an der HHN bereits meinen Bachelor abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
 const hobbies = "Privat verbringe ich meine Zeit mit Joggen (Any Surface - Any Distance), Lesen, Privaten Entwicklungsprojekten, Videospielen und einem allgemeinem Interesse an fast jeder Sportart."
 
+const publication = [
+    {
+        name: "IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung",
+        authors: "Benjamin Zenth und Majeed Malik",
+        conference: "SKILL 2021"
+    }
+]
+
+const certificates = [
+    {
+        name: "Grundlagen des Onlinemarketings",
+        id: "HU6HNCTGM",
+        link: "https://learndigital.withgoogle.com/zukunftswerkstatt/validate-certificate-code",
+        icon: faGoogle
+    },
+    {
+        name: "Gitlab Certified Associate",
+        id: "",
+        link: "https://eu.badgr.com/public/assertions/Am9EN643SZ-r9SaA90pssg?identity__email=benjaminzenth@icloud.com",
+        icon: faGitlab
+    }
+]
+
 export{
     cv_content,
     description,
-    hobbies
+    hobbies,
+    publication,
+    certificates
 }

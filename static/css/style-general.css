@@ -70,3 +70,7 @@ body{
 .header-mobile-menu-icon{
     background: url("../toggle.svg")
 }
+
+.link-certificate{
+    color: rgba(0, 0, 0, 0.45)
+}

@@ -21,6 +21,11 @@
         margin-left: 5%;
     }
 
+    .content_aboutme_short{
+        width: 90%;
+        margin-left: 5%;
+    }
+
     .bold{
         font-weight: bold;
     }
@@ -688,6 +693,13 @@
 .content_aboutme{
     width: 90%;
     min-height: 60vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content_aboutme_short{
+    width: 90%;
+    min-height: 30vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -1933,6 +1945,10 @@ body{
 
 .header-mobile-menu-icon{
     background: url(../static/toggle.svg)
+}
+
+.link-certificate{
+    color: rgba(0, 0, 0, 0.45)
 }
 
 /*!

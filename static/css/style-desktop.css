@@ -273,6 +273,13 @@
     margin-right: 5%;
 }
 
+.content_aboutme_short{
+    width: 90%;
+    min-height: 30vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .heading_classic{
     text-align: center;
     margin-top: 20px
