@@ -60,7 +60,7 @@ class AboutMe extends React.Component {
               <List.Item.Meta
                 avatar={<FontAwesomeIcon icon={faJournalWhills} size={"2x"} />}
                 title={item.name}
-                description={item.authors + " - " + item.conference}
+                description={<p>{item.authors} - {item.conference} -  <a className="link-certificate" target="_blank" href={item.link}>Link</a></p>}
               />
             </List.Item>
           )}
