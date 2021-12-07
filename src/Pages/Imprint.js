@@ -14,7 +14,6 @@ class Imprint extends React.Component {
               74629 Pfedelbach
             </p>
             <p className="imprint-person-contact">
-              Telefon: 0151/12612194 <br></br>
               <a href="mailto:kontakt@bzenth.de">
                 kontakt@bzenth.de
               </a>
