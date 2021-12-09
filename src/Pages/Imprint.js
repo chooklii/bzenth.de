@@ -10,8 +10,6 @@ class Imprint extends React.Component {
           <div className="imprint-person">
             <p className="imprint-person-contact">
               Benjamin Zenth <br></br>
-              Baierbacher Straße 41 <br></br>
-              74629 Pfedelbach
             </p>
             <p className="imprint-person-contact">
               <a href="mailto:kontakt@bzenth.de">
