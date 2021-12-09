@@ -9,7 +9,7 @@ class Imprint extends React.Component {
         <div className="imprint page_classic">
           <div className="imprint-person">
             <p className="imprint-person-contact">
-              Benjamin Zenth <br></br>
+              Benjamin Zenth
             </p>
             <p className="imprint-person-contact">
               <a href="mailto:kontakt@bzenth.de">
