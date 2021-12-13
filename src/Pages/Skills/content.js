@@ -29,6 +29,7 @@ const programmingLanguage = [
     { name: "Scrum", rating: 5 },
     { name: "Git / Git Flow", rating: 4 },
     { name: "SEO", rating: 3 },
+    { name: "Jira", rating: 3 },
     { name: "Datenanalyse", rating: 3},
     { name: "Balsamiq", rating: 2 },
   ]
