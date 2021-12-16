@@ -18,7 +18,7 @@ const publication = [
         name: "IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung",
         authors: "Benjamin Zenth und Majeed Malik",
         conference: "SKILL 2021",
-        link: "https://dl.gi.de/handle/20.500.12116/22"
+        link: "https://dl.gi.de/bitstream/handle/20.500.12116/37781/A2-2.pdf"
     }
 ]
 
