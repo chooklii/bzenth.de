@@ -1,13 +1,14 @@
 import React from "react"
 import {Footer, Header} from "../../Components"
-import {description, bzenth, openv, gradulator, numWordsDe, hartwork} from "./content"
+import {description, bzenth, openv, gradulator, numWordsDe, hartwork, vodafone} from "./content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faUserCircle,
     faGraduationCap,
     faBus,
     faListOl,
-    faDumbbell
+    faDumbbell,
+    faWifi
 } from "@fortawesome/free-solid-svg-icons"
 import {Row, Col, Button, Divider} from "antd"
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
@@ -93,11 +94,21 @@ class PublicProjects extends React.Component {
                             <FontAwesomeIcon icon={faNpm} className="icon" />
                             num-words-de
                         </h2>
-                        <div className="numwordsde image-project" />
                         <p className="classic_text">{numWordsDe.desc}</p>
                         <p className="classic_text">{numWordsDe.tech}</p>
                     </div>
                     {this.renderButton(numWordsDe.urls)}
+                </Col>
+                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
+                    <div className="project_classic">
+                        <h2 className="heading_classic">
+                            <FontAwesomeIcon icon={faWifi} className="icon" />
+                            Router Restarter
+                        </h2>
+                        <p className="classic_text">{vodafone.desc}</p>
+                        <p className="classic_text">{vodafone.tech}</p>
+                    </div>
+                    {this.renderButton(vodafone.urls)}
                 </Col>
             </Row>
                 </div>

@@ -23,6 +23,14 @@
         padding-top: 1em
     }
 
+    .desktop{
+        display: none
+    }
+
+    .image-contact{
+        text-align: center;
+    }
+
     .design_buttons{
         width: 100%;
         display: inline-flex;
@@ -80,19 +88,11 @@
         background-position: center;
     }
 
-    .contact-image{
-        background-image: url("../images/contact.jpg")
-    }
-
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-
-    .contact-image-mobile{
-        background-image: url("../images/contact.jpg");
-    }
 
     .home-rotating-text{
         text-align: center;

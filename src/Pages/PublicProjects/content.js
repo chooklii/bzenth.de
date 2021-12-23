@@ -85,11 +85,27 @@ const numWordsDe = {
     ]
 }
 
+const desc_vodafone = "Einige Vodafone Router haben das Problem, dass der RAM des Gerätes 'voll läuft' und anschließend ein Neustart benötigt wird. Alternative hierfür ist entweder eine Zeitschaltuhr, oder wenn sowiso ein Server vorhanden ist ein automatischer Neustart"
+const tech_vodafone = "Der Router wird jede Nacht um 3:00 Uhr unter Verwendung von Selenium neu gestartet."
+
+const vodafone = {
+    desc: desc_vodafone,
+    tech: tech_vodafone,
+    urls: [
+        {
+            link: "https://github.com/chooklii/RouterRestarter",
+            name: "Source Code",
+            type: "primary"
+        },
+    ]
+}
+
 export {
     description,
     bzenth,
     openv,
     gradulator,
     hartwork,
+    vodafone,
     numWordsDe
 }

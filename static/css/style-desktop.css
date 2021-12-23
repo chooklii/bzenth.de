@@ -10,7 +10,11 @@
 }
 
 .contact-image{
-    background-image: url("../images/contact.jpg")
+    background-image: url("../images/me.jpg")
+}
+
+.mobile{
+    display: none
 }
 
 .header-desktop-heading{
@@ -150,14 +154,10 @@
     margin-top: 15px;
 }
 
-.contact-image{
-    background-size: cover;
+.image-contact{
     margin-top: 30px;
-    height: 337px;
-    width: 40%;
     float: right;
-    margin-right: 5%;
-    border: 1px solid black
+    margin-right: 20%;
 }
 
 .contact-first-line{

@@ -16,6 +16,10 @@
         padding-bottom: 25px;
     }
 
+    .desktop{
+        display: none
+    }
+
     .content_aboutme{
         width: 90%;
         margin-left: 5%;
@@ -301,6 +305,10 @@
         margin-left: 10%;
     }
 
+    .image-contact{
+        text-align: center;
+    }
+
     .contact-mailadress{
         padding: .3em;
     }
@@ -434,7 +442,11 @@
 }
 
 .contact-image{
-    background-image: url(../static/images/contact.jpg)
+    background-image: url(../static/images/me.jpg)
+}
+
+.mobile{
+    display: none
 }
 
 .header-desktop-heading{
@@ -574,14 +586,10 @@
     margin-top: 15px;
 }
 
-.contact-image{
-    background-size: cover;
+.image-contact{
     margin-top: 30px;
-    height: 337px;
-    width: 40%;
     float: right;
-    margin-right: 5%;
-    border: 1px solid black
+    margin-right: 20%;
 }
 
 .contact-first-line{
@@ -988,19 +996,11 @@
         background-position: center;
     }
 
-    .contact-image{
-        background-image: url(../static/images/contact.jpg)
-    }
-
     .page_classic{
         padding-top: 50px;
         width: 90%;
         margin-left: 5%;
         padding-bottom: 20px;
-    }
-
-    .contact-image-mobile{
-        background-image: url(../static/images/contact.jpg);
     }
 
     .header-desktop-heading{
@@ -1010,6 +1010,14 @@
     .heading_classic{
         text-align: center;
         padding-top: 1em
+    }
+
+    .desktop{
+        display: none
+    }
+
+    .image-contact{
+        text-align: center;
     }
 
     .design_buttons{
@@ -1448,6 +1456,14 @@
         padding-top: 1em
     }
 
+    .desktop{
+        display: none
+    }
+
+    .image-contact{
+        text-align: center;
+    }
+
     .design_buttons{
         width: 100%;
         display: inline-flex;
@@ -1505,19 +1521,11 @@
         background-position: center;
     }
 
-    .contact-image{
-        background-image: url(../static/images/contact.jpg)
-    }
-
     @keyframes blinker {
         50% {
           opacity: 0;
         }
       }
-
-    .contact-image-mobile{
-        background-image: url(../static/images/contact.jpg);
-    }
 
     .home-rotating-text{
         text-align: center;
@@ -1925,10 +1933,6 @@ body{
 
 .oepnv{
     background-image: url(../static/images/oepnv.png);
-}
-
-.numwordsde{
-    background-image: url(../static/images/numwordsde.png);
 }
 
 .notFound-image{

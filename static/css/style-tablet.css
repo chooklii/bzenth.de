@@ -12,19 +12,11 @@
         background-position: center;
     }
 
-    .contact-image{
-        background-image: url("../images/contact.jpg")
-    }
-
     .page_classic{
         padding-top: 50px;
         width: 90%;
         margin-left: 5%;
         padding-bottom: 20px;
-    }
-
-    .contact-image-mobile{
-        background-image: url("../images/contact.jpg");
     }
 
     .header-desktop-heading{
@@ -34,6 +26,14 @@
     .heading_classic{
         text-align: center;
         padding-top: 1em
+    }
+
+    .desktop{
+        display: none
+    }
+
+    .image-contact{
+        text-align: center;
     }
 
     .design_buttons{
