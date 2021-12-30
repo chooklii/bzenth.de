@@ -49,12 +49,25 @@ class GameHome extends React.Component{
     componentDidMount(){
       this.initDefaultGame()
       this.initMusic()
+      this.readLocalStorage()
     }
 
     
     componentWillUnmount(){
       //window.removeEventListener("keydown")
       //window.removeEventListener("ended")
+    }
+
+    readLocalStorage(){
+      const dataFromLocalStorage = localStorage.getItem("finishedLevel")
+      if(dataFromLocalStorage){
+        this.state.finishedLevel = dataFromLocalStorage
+      }
+    }
+
+    resetLevel(){
+      localStorage.removeItem("finishedLevel")
+      this.setState({finishedLevel: []})
     }
 
     initMusic(){
@@ -139,6 +152,7 @@ class GameHome extends React.Component{
 
     finished(){
       this.state.finishedLevel.push(this.state.selectedLevel)
+      localStorage.setItem("finishedLevel", this.state.finishedLevel)
       this.updateMusic(music_menu)
       this.setState({showMenu: true})
       game.scene.pause("default")
@@ -182,7 +196,8 @@ class GameHome extends React.Component{
       return(
         <div className="level_selector">
           <div className="game_back">
-            <Button onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
+          <Button onClick={() => this.resetLevel()}>Fortschritt zurücksetzen</Button>
+            <Button className="margin_left" onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
             {this.renderMusicIconMenu()}
           </div>
           <div className="explaination">
