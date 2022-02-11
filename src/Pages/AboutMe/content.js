@@ -20,6 +20,11 @@ const publication = [
         authors: "Benjamin Zenth und Majeed Malik",
         conference: "SKILL 2021",
         link: "https://dl.gi.de/bitstream/handle/20.500.12116/37781/A2-2.pdf"
+    },
+    {
+        name: "Identifikation und Klassifizierung von Datenarchitekturen",
+        authors: "Benjamin Zenth und Helmut Beckmann",
+        conference: "17. Internationale Tagung Wirtschaftsinformatik"
     }
 ]
 

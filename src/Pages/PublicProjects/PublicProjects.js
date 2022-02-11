@@ -6,7 +6,6 @@ import {
     faUserCircle,
     faGraduationCap,
     faBus,
-    faListOl,
     faDumbbell,
     faWifi
 } from "@fortawesome/free-solid-svg-icons"
