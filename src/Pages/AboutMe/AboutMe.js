@@ -17,14 +17,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Row, Col, Steps, List } from "antd";
 
-const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 class AboutMe extends React.Component {
   create_steps(cv_content) {
-    return cv_content.map((single) => {
+    return cv_content.map((single, index) => {
       return (
         <Steps.Step
-          key={keyGenerator()}
+          key={index}
           title={single.time}
+          status={single.active ? "process" : "wait"}
           description={single.text}
         />
       );
