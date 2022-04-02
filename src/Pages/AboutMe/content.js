@@ -11,7 +11,7 @@ const cv_content = [
     {time: "04/2022 - ", text: "Softwareingenieur Bechtle AG", active: true},
 ]
 
-const description = "Ich bin ein 24-jähriger aus dem Raum Öhringen und aktuell im 3. Semester meines Masterstudiums an der Hochschule Heilbronn. Zuvor habe ich an der HHN bereits meinen Bachelor abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
+const description = "Ich bin ein 24-jähriger aus dem Raum Öhringen und aktuell als Softwareingenieur bei Bechtle in Neckarsulm angestellt. Zuvor habe ich an der HHN meinen Bachelor und Master abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
 const hobbies = "Privat verbringe ich meine Zeit mit Joggen (Any Surface - Any Distance), Lesen, Privaten Entwicklungsprojekten, Videospielen und einem allgemeinem Interesse an fast jeder Sportart."
 
 const publication = [
@@ -25,7 +25,13 @@ const publication = [
         name: "Identifikation und Klassifizierung von Datenarchitekturen",
         authors: "Benjamin Zenth und Helmut Beckmann",
         conference: "17. Internationale Tagung Wirtschaftsinformatik"
-    }
+    },
+    {
+        name: "Modelling and simulating the scalability of e-commerce web application architectures",
+        authors: "Benjamin Zenth",
+        conference: "Masterarbeit",
+        link: "https://t73f.de/hochschule/thesis/2022_zenth.pdf"
+    },
 ]
 
 const certificates = [
