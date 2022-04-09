@@ -30,7 +30,7 @@ const publication = [
         name: "Modelling and simulating the scalability of e-commerce web application architectures",
         authors: "Benjamin Zenth",
         conference: "Masterarbeit",
-        link: "https://t73f.de/hochschule/thesis/2022_zenth.pdf"
+        link: "https://opus-hshn.bsz-bw.de/frontdoor/index/index/searchtype/latest/docId/206/start/0/rows/10"
     },
 ]
 
