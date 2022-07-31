@@ -44,7 +44,7 @@ const certificates = [
     {
         name: "Gitlab Certified Associate",
         id: "",
-        link: "https://eu.badgr.com/public/assertions/Am9EN643SZ-r9SaA90pssg?identity__email=benjaminzenth@icloud.com",
+        link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url",
         icon: faGitlab
     }
 ]
