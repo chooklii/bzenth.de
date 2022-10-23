@@ -11,7 +11,7 @@ const cv_content = [
     {time: "04/2022 - ", text: "Softwareingenieur Bechtle AG", active: true},
 ]
 
-const description = "Ich bin ein 24-jähriger aus dem Raum Öhringen und aktuell als Softwareingenieur bei Bechtle in Neckarsulm angestellt. Zuvor habe ich an der HHN meinen Bachelor und Master abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
+const description = "Ich bin ein 25-jähriger aus dem Raum Öhringen und aktuell als Softwareingenieur bei Bechtle in Neckarsulm angestellt. Zuvor habe ich an der HHN meinen Bachelor und Master abgeschlossen. In diesem Studium hatte ich meine ersten Kontakte mit der Entwicklung, welche ich seitdem durch Praxissemester, Werkstudententätigkeit, Vollanstellung und private Projekte breitgefächert vertieft habe."
 const hobbies = "Privat verbringe ich meine Zeit mit Joggen (Any Surface - Any Distance), Lesen, Privaten Entwicklungsprojekten, Videospielen und einem allgemeinem Interesse an fast jeder Sportart."
 
 const publication = [
