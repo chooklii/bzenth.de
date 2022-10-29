@@ -1,7 +1,7 @@
-name: Build ob Push
-on:
-	repository_dispatch:
-    	types: [publish-event]
+name: Build on Trigger
+on: 
+   repository_dispatch: 
+     types: [publish-event]
 permissions:
   contents: write
 jobs:
