@@ -1,5 +1,5 @@
 
-name: Build ob Push
+name: Build on Push
 on: [push]
 permissions:
   contents: write
