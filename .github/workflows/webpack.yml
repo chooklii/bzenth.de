@@ -1,5 +1,5 @@
 
-name: Build and Deploy
+name: Build
 on: [push]
 permissions:
   contents: write
