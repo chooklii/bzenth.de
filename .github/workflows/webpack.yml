@@ -22,8 +22,3 @@ jobs:
           npm ci
           npm run build
     
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        ssh_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        folder: docs
