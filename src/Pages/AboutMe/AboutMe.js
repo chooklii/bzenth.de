@@ -10,70 +10,29 @@ const AboutMe = () => {
   const [aboutMe, setAboutMe] = useState(null)
   const [certificates, setCertificates] = useState(null)
   const [publications, setPublications] = useState(null)
+  const [headings, setHeadings] = useState(null)
   const {language, getData} = useContext(TranslationContext)
 
   useEffect(() => {
     const fetchData = async () => {
       try{
-        const data = await getData("certificates")
+        const data = await getData("aboutMe", true)
         if(data){
-          const formattedData = data.map(x => x.fields)
-          setCertificates(formattedData)
-        }
-      }catch(e){
-            console.log("Error while trying to fetch data from contentful", e)
-      }
-    }
-    fetchData()
-
-  }, [language])
-
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try{
-        const data = await getData("publications")
-        if(data){
-          const formattedData = data.map(x => x.fields)
-          setPublications(formattedData)
-        }
-      }catch(e){
-            console.log("Error while trying to fetch data from contentful", e)
-      }
-    }
-    fetchData()
-
-  }, [language])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try{
-        const data = await getData("career")
-        if(data){
-          const formatedCareer = data.map(x => x.fields)
-          formatedCareer.sort(function(a, b) {
-            return a.position - b.position;
-          })
-          setSkills(formatedCareer)
-        }
-      }catch(e){
-            console.log("Error while trying to fetch data from contentful", e)
-      }
-    }
-    fetchData()
-
-  }, [language])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try{
-        const data = await getData("aboutme")
-        if(data){
-          const formatted = data.map(x => x.fields)
-          formatted.sort(function(a, b) {
-            return a.position - b.position;
-          })
-          setAboutMe(formatted)
+          const aboutMeHeader = data.filter(x => x.sys.contentType.sys.id == "aboutMeHeader")
+          const certificates = data.filter(x => x.sys.contentType.sys.id == "certificates")
+          const aboutMe = data.filter(x => x.sys.contentType.sys.id == "aboutme")
+          const publications = data.filter(x => x.sys.contentType.sys.id == "publications")
+          const career = data.filter(x => x.sys.contentType.sys.id == "career")
+          setCertificates(certificates.map(x => x.fields))
+          setAboutMe(aboutMe.map(x => x.fields).sort(function(a, b) {
+            return a.position - b.position
+          }))
+          setPublications(publications.map(x => x.fields))
+          setSkills(career.map(x => x.fields).sort(function(a, b) {
+            return a.position - b.position
+          }))
+          setHeadings(aboutMeHeader.map(x => x.fields).reduce(
+            (obj, item) => Object.assign(obj, { [item.key]: item }), {}))
         }
       }catch(e){
             console.log("Error while trying to fetch data from contentful", e)
@@ -104,8 +63,8 @@ const AboutMe = () => {
     return (
       <div className="content_aboutme">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={findIcon("faUserGraduate")} className="icon" />
-          Werdegang
+        <FontAwesomeIcon icon={headings ? findIcon(headings.career.icon) :findIcon("faUserGraduate")} className="icon" />
+          {headings ? headings.career.titel : "Werdegang"}
         </h2>
         <Steps progressDot current={7} direction="vertical">
           {create_steps()}
@@ -121,8 +80,8 @@ const AboutMe = () => {
     return (
       <div className="content_aboutme_short">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={findIcon("faMicroscope")} className="icon" />
-          Wissenschaftliche Publikationen
+          <FontAwesomeIcon icon={headings ? findIcon(headings.publications.icon) :findIcon("faMicroscope")} className="icon" />
+          {headings ? headings.publications.titel : "Wissenschaftliche Publikationen"}
         </h2>
         <List
           itemLayout="horizontal"
@@ -148,8 +107,8 @@ const AboutMe = () => {
     return (
       <div className="content_aboutme_short">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={findIcon("faCertificate")} className="icon" />
-          Zertifikate
+          <FontAwesomeIcon icon={headings ? findIcon(headings.certificates.icon) :findIcon("faCertificate")} className="icon" />
+          {headings ? headings.certificates.titel : "Zertifikate"}
         </h2>
         <List
           itemLayout="horizontal"
@@ -175,8 +134,8 @@ const AboutMe = () => {
     return (
       <div className="content_aboutme">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={findIcon("faUser")} className="icon" />
-          Privat
+        <FontAwesomeIcon icon={headings ? findIcon(headings.private.icon) :findIcon("faUser")} className="icon" />
+          {headings ? headings.private.titel : "Privat"}
         </h2>
         <List
           itemLayout="horizontal"
@@ -195,6 +154,13 @@ const AboutMe = () => {
     );
   }
 
+  if(!aboutMe && !certificates && !publications && !skills){
+    return(
+      <div>
+      <Header />
+      </div>
+    )
+  }
     return (
       <div>
         <Header />

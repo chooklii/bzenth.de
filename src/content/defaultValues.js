@@ -9,3 +9,18 @@ export const localeNames = {
 
     }
 }
+
+export const skillsHeadings = {
+    "de": {
+        "programming": "Programmiersprachen",
+        "technology": "weitere Technologien",
+        "other": "sonstige Skills",
+        "language": "Sprachen"
+    },
+    "en": {
+        "programming": "Programming languages",
+        "technology": "other technologies",
+        "other": "other skills",
+        "language": "Languages"
+    }
+}

@@ -43,7 +43,7 @@ const App = () => {
     return entry.items;
   };
 
-  const getData = async (key) => {
+  const getData = async (key, byTag = false) => {
     // initial setup, fetch locales and setup empty data
     if (!data && !locales) {
       const fetchedLocales = await fetchLocales();
@@ -53,27 +53,39 @@ const App = () => {
         emptyData[key] = {};
       });
       setData(emptyData);
-      return checkIfDataExists(emptyData, key);
+      return checkIfDataExists(emptyData, key, byTag);
     }
-    return checkIfDataExists(data, key);
+    return checkIfDataExists(data, key, byTag);
   };
 
-  const checkIfDataExists = async (data, key) => {
+  const checkIfDataExists = async (data, key, byTag) => {
     // check if key for language is defined, if not fetch data
     if (key in data[language]) {
       return data[language][key];
-    } else{
-      const fetchedData = await fetchData(key)
+    } else if(!byTag){
+      const fetchedData = await fetchDataByContentType(key)
+      data[language][key] = fetchedData
+      return fetchedData
+    }else{
+      const fetchedData = await fetchDataByTag(key)
       data[language][key] = fetchedData
       return fetchedData
     }
   };
 
-  const fetchData = async (key) => {
+  const fetchDataByContentType = async (key) => {
     const fetchedData = await contentfulClient.getEntries({
       content_type: key,
       locale: language,
     });
+    return fetchedData.items;
+  };
+
+  const fetchDataByTag = async (key) => {
+    const fetchedData = await contentfulClient.getEntries({
+      [`metadata.tags[${key}]`]: true,
+      locale: language
+    })
     return fetchedData.items;
   };
 

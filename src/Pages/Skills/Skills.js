@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState, useContext} from "react";
 import {Footer, Header} from "../../Components"
 import {
   faLanguage,
@@ -8,10 +8,30 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Rate, Col, Row} from "antd"
-import {languages, technologySkills, otherSkills, programmingLanguage} from "./content"
-class Skills extends React.Component {
+import {languages, technologySkills, otherSkills, programmingLanguage, skillsHeadings, TranslationContext} from "../../content"
+const Skills = () => {
 
-  renderSingleSkill(name, rating) {
+  const [skills, setSkills] = useState(null)
+  const {language, locales, getData, setLanguage} = useContext(TranslationContext)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await getData("skills")
+        if(data){
+          setSkills(data.map(x => x.fields).sort(function(a, b) {
+            return b.raiting - a.raiting
+          })) 
+        }
+      }catch(e){
+            console.log("Error while trying to fetch data from contentful", e)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
+  const renderSingleSkill = (name, rating) => {
     const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
     
     return (
@@ -34,53 +54,57 @@ class Skills extends React.Component {
     );
   }
 
-  render() {
-
-
+  if(!skills){
+    return(
+      <div>
+      <Header/>
+      </div>
+    )
+  }
     return (
       <div>
         <Header />
         <Row className="page_classic">          
         <Col  xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
-              <FontAwesomeIcon icon={faLaptopCode} /> Programmiersprachen:
+              <FontAwesomeIcon icon={faLaptopCode} /> {skillsHeadings[language].programming}:
             </h2>
             <div className="skills-one-category">
-              {programmingLanguage.map((single) =>
-                this.renderSingleSkill(single.name, single.rating)
+              {skills.filter(x => x.group=="programming").map((single) =>
+                renderSingleSkill(single.name, single.raiting)
               )}
             </div>
           </Col>
 
           <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
-              <FontAwesomeIcon icon={faServer} /> weitere Technologien:
+              <FontAwesomeIcon icon={faServer} /> {skillsHeadings[language].technology}:
             </h2>
             <div className="skills-one-category">
-              {technologySkills.map((single) =>
-                this.renderSingleSkill(single.name, single.rating)
+              {skills.filter(x => x.group=="technology").map((single) =>
+                renderSingleSkill(single.name, single.raiting)
               )}
             </div>
             </Col>
 
             <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
-              <FontAwesomeIcon icon={faGraduationCap} /> sonstige Skills:
+              <FontAwesomeIcon icon={faGraduationCap} /> {skillsHeadings[language].other}:
             </h2>
             <div className="skills-one-category">
-              {otherSkills.map((single) =>
-                this.renderSingleSkill(single.name, single.rating)
+              {skills.filter(x => x.group=="other").map((single) =>
+                renderSingleSkill(single.name, single.raiting)
               )}
             </div>
           </Col>
 
           <Col xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
             <h2 className="skills-heading">
-              <FontAwesomeIcon icon={faLanguage} /> Sprachen:
+              <FontAwesomeIcon icon={faLanguage} /> {skillsHeadings[language].language}:
             </h2>
             <div className="skills-one-category">
-              {languages.map((single) =>
-                this.renderSingleSkill(single.name, single.rating)
+              {skills.filter(x => x.group=="language").map((single) =>
+                renderSingleSkill(single.name, single.raiting)
               )}
             </div>
           </Col>
@@ -88,7 +112,6 @@ class Skills extends React.Component {
         <Footer/>
       </div>
     );
-  }
 }
 
 export default Skills;

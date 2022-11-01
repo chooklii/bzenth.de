@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useContext, useEffect} from "react"
 import {Footer, Header} from "../../Components"
 import {description, bzenth, openv, gradulator, numWordsDe, hartwork, vodafone} from "./content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,110 +11,96 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import {Row, Col, Button, Divider} from "antd"
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
+import {technologySkills, TranslationContext, findIcon} from "../../content"
 
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 
 
-class PublicProjects extends React.Component {
+const PublicProjects = () =>  {
+  
+    const [data, setData] = useState(null)
+    const {language, locales, getData, setLanguage} = useContext(TranslationContext)
+  
+    useEffect(() => {
+      const fetchData = async () => {
+        try{
+          const data = await getData("publicProject")
+          if(data){
+            setData(data.map(x => x.fields).sort(function(a, b) {
+              return a.position - b.position
+            })) 
+          }
+        }catch(e){
+              console.log("Error while trying to fetch data from contentful", e)
+        }
+      }
+      fetchData()
+  
+    }, [language])  
 
-    renderButton(links){
+    const renderButton = (single) => {
         return (
             <div className="design_buttons">
-                {links.map(_ => {
-                return(
-                    <Button key={keyGenerator()} className="button_public_project" type={_.type} onClick={() => window.open(_.link, '_blank')}>{_.name}</Button>
-                )})}
+                {single.primaryLink && 
+                <Button key={keyGenerator()} className="button_public_project" type="primary" onClick={() => window.open(single.primaryLink, '_blank')}>
+                    {single.primaryLinkText}
+                    </Button>
+                }
+                {single.secondaryLink && 
+                <Button key={keyGenerator()} className="button_public_project" type="normal" onClick={() => window.open(single.secondaryLink, '_blank')}>
+                    {single.secondaryLinkText}
+                </Button>
+                }
+
             </div>
         )
     }
-    render(){
 
+    const renderProject = (single) => {
+        return(
+            <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
+            <Divider/>
+            <div className="project_classic">
+                <h2 className="heading_classic">
+                    <FontAwesomeIcon icon={findIcon(single.icon)} className="icon" />
+                    {single.name}
+                </h2>
+                {single.image && 
+                <img src={single.image.fields.file.url} alt={single.image.fields.description} className="image-project" />
+                }
+                {renderButton(single)}
+                <p className="classic_text">{single.text}</p>
+            </div>
+        </Col>
+        )
+    }
+
+    const renderData = () => {
+        return data.map((single, index) => {
+            return renderProject(single)
+        })
+    }
+
+    if(!data){
+        return(
+            <div>
+                <Header/>
+            </div>
+        )
+    }
         return(
             <div>
                 <Header/>
                 <div className="projects-box page_classic">
                 <p className="classic_text marginleft">{description}</p>
-                <Divider/>
                 <Row>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faUserCircle} className="icon" />
-                            bzenth
-                        </h2>
-                        <div className="bzenth image-project" />
-                        <p className="classic_text">{bzenth.desc}</p>
-                        <p className="classic_text">{bzenth.tech}</p>
-                    </div>
-                    {this.renderButton(bzenth.urls)}
-                </Col>
-                <Divider className="mobile_divider"/>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faGraduationCap} className="icon" />
-                            Gradulator
-                        </h2>
-                        <div className="gradulator image-project" />
-                        <p className="classic_text">{gradulator.desc}</p>
-                        <p className="classic_text">{gradulator.tech}</p>
-                    </div>
-                    {this.renderButton(gradulator.urls)}
-                </Col>
-                <Divider/>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faBus} className="icon" />
-                            ÖPNV-Transparenzregister
-                        </h2>
-                        <div className="oepnv image-project" />
-                        <p className="classic_text">{openv.desc}</p>
-                        <p className="classic_text">{openv.tech}</p>
-                    </div>
-                    {this.renderButton(openv.urls)}
-                </Col>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faDumbbell} className="icon" />
-                            #HARTWORK
-                        </h2>
-                        <div className="hartwork image-project" />
-                        <p className="classic_text">{hartwork.desc}</p>
-                        <p className="classic_text">{hartwork.tech}</p>
-                    </div>
-                    {this.renderButton(hartwork.urls)}
-                </Col>
-                <Divider/>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faNpm} className="icon" />
-                            num-words-de
-                        </h2>
-                        <p className="classic_text">{numWordsDe.desc}</p>
-                        <p className="classic_text">{numWordsDe.tech}</p>
-                    </div>
-                    {this.renderButton(numWordsDe.urls)}
-                </Col>
-                <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-                    <div className="project_classic">
-                        <h2 className="heading_classic">
-                            <FontAwesomeIcon icon={faWifi} className="icon" />
-                            Router Restarter
-                        </h2>
-                        <p className="classic_text">{vodafone.desc}</p>
-                        <p className="classic_text">{vodafone.tech}</p>
-                    </div>
-                    {this.renderButton(vodafone.urls)}
-                </Col>
+                {renderData()}
+                
             </Row>
                 </div>
                 <Footer/>
             </div>
-        )
-    }
+        )                    
 }
 
 export default PublicProjects

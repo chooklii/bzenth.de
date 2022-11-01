@@ -275,7 +275,7 @@
 
 .content_aboutme_short{
     width: 90%;
-    min-height: 30vh;
+    min-height: 40vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -299,8 +299,7 @@
 
 .design_buttons{
     width: 100%;
-    bottom: -20px;
-    position: absolute;
+    padding: 1em;
     display: inline-flex;
     justify-content: center;
 }
@@ -315,6 +314,7 @@
 
 .image-project{
     background-repeat: no-repeat;
+    display: block;
     background-size: cover;
     width: 493px;
     height: 261px;
