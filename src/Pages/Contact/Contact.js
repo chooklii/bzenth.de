@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
+import {TranslationContext} from "../../content"
 import { Footer, Header } from "../../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,8 +10,22 @@ import {
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { Avatar } from "antd";
 import { link_github, link_linkedin, link_xing, mail } from "./content";
-class Contact extends React.Component {
-  render() {
+
+const Contact = () => {
+  const [contactText, setContactText] = useState(null)
+  const {language, getData} = useContext(TranslationContext)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getData("contact")
+      if(data){
+        setContactText(data[0].fields.text)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
     return (
       <div>
         <Header />
@@ -21,8 +36,7 @@ class Contact extends React.Component {
           </div>
 
           <div className="contact-first-line">
-            Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen
-            Anliegen bitte einen der folgenden Kommunikationskanäle verwenden:
+            {contactText ? contactText : <div/>}
           </div>
 
           <div className="contact-options">
@@ -51,7 +65,6 @@ class Contact extends React.Component {
         <Footer />
       </div>
     );
-  }
 }
 
 export default Contact;

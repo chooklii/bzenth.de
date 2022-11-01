@@ -1,27 +1,95 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Skills, Contact, Home, NotFound, AboutMe, PublicProjects, Imprint, PrivateProjects } from "../Pages";
+import {
+  Skills,
+  Contact,
+  Home,
+  NotFound,
+  AboutMe,
+  PublicProjects,
+  Imprint,
+  PrivateProjects,
+} from "../Pages";
+import {
+  TranslationContext,
+  contentfulClient,
+  formatHeaderData,
+} from "../content";
 import { ScrollToTop } from "../Components";
-import { init, trackPages } from "insights-js"
+import { init, trackPages } from "insights-js";
 
 import "../../static/css/style-mobile.css";
 import "../../static/css/style-desktop.css";
 import "../../static/css/style-tablet.css";
 import "../../static/css/style-tablet-large.css";
-import "../../static/css/style-general.css"
-import 'antd/dist/antd.css'
+import "../../static/css/style-general.css";
+import "antd/dist/antd.css";
 
-class App extends React.Component {
+const App = () => {
+  const [language, setLanguage] = useState("de");
+  const [locales, setLocales] = useState(null);
+  const [data, setData] = useState(null);
 
-  componentDidMount(){
-    init("OMGVVhafavnD3FVc")
-    trackPages()
-  }
+  const fetchLocales = async () => {
+    const entry = await contentfulClient
+      .getLocales()
+      .catch((err) => console.log(err));
 
-  render() {
-    return (
-      <BrowserRouter>
-        <div className="app">
+    const defaultLanguage = entry.items
+      .filter((x) => x.default)
+      .map((x) => x.code)[0];
+    setLanguage(defaultLanguage);
+    setLocales(entry.items);
+    return entry.items;
+  };
+
+  const getData = async (key) => {
+    // initial setup, fetch locales and setup empty data
+    if (!data && !locales) {
+      const fetchedLocales = await fetchLocales();
+      const languageOptions = fetchedLocales.map((x) => x.code);
+      const emptyData = {};
+      languageOptions.forEach((key) => {
+        emptyData[key] = {};
+      });
+      setData(emptyData);
+      return checkIfDataExists(emptyData, key);
+    }
+    return checkIfDataExists(data, key);
+  };
+
+  const checkIfDataExists = async (data, key) => {
+    // check if key for language is defined, if not fetch data
+    if (key in data[language]) {
+      return data[language][key];
+    } else{
+      const fetchedData = await fetchData(key)
+      data[language][key] = fetchedData
+      return fetchedData
+    }
+  };
+
+  const fetchData = async (key) => {
+    const fetchedData = await contentfulClient.getEntries({
+      content_type: key,
+      locale: language,
+    });
+    return fetchedData.items;
+  };
+
+  useEffect(() => {
+    if (location.hostname != "localhost") {
+      init("OMGVVhafavnD3FVc");
+      trackPages();
+    }
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <div className="app">
+        <TranslationContext.Provider
+          value={{ language, locales, setLanguage, getData }}
+        >
           <Switch>
             <Route exact path="/">
               <ScrollToTop>
@@ -64,9 +132,9 @@ class App extends React.Component {
               </ScrollToTop>
             </Route>
           </Switch>
-        </div>
-      </BrowserRouter>
-    );
-  }
-}
+        </TranslationContext.Provider>
+      </div>
+    </BrowserRouter>
+  );
+};
 export default App;

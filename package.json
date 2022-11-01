@@ -8,6 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
     "antd": "^4.12.3",
+    "contentful": "^9.2.9",
     "cors": "^2.8.5",
     "fs": "0.0.1-security",
     "insights-js": "^1.2.10",
@@ -17,7 +18,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "regenerator-runtime": "^0.13.10"
   },
   "scripts": {
     "start": "webpack-dev-server",

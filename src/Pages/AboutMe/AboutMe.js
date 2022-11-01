@@ -1,66 +1,138 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Footer, Header } from "../../Components";
-import {
-  cv_content,
-  description,
-  hobbies,
-  publication,
-  certificates,
-} from "./content";
+import {TranslationContext, findIcon} from "../../content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUserGraduate,
-  faUser,
-  faJournalWhills,
-  faMicroscope,
-  faCertificate,
-} from "@fortawesome/free-solid-svg-icons";
 import { Row, Col, Steps, List } from "antd";
 
-class AboutMe extends React.Component {
-  create_steps(cv_content) {
-    return cv_content.map((single, index) => {
+
+const AboutMe = () => {
+  const [skills, setSkills] = useState(null)
+  const [aboutMe, setAboutMe] = useState(null)
+  const [certificates, setCertificates] = useState(null)
+  const [publications, setPublications] = useState(null)
+  const {language, getData} = useContext(TranslationContext)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await getData("certificates")
+        if(data){
+          const formattedData = data.map(x => x.fields)
+          setCertificates(formattedData)
+        }
+      }catch(e){
+            console.log("Error while trying to fetch data from contentful", e)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await getData("publications")
+        if(data){
+          const formattedData = data.map(x => x.fields)
+          setPublications(formattedData)
+        }
+      }catch(e){
+            console.log("Error while trying to fetch data from contentful", e)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await getData("career")
+        if(data){
+          const formatedCareer = data.map(x => x.fields)
+          formatedCareer.sort(function(a, b) {
+            return a.position - b.position;
+          })
+          setSkills(formatedCareer)
+        }
+      }catch(e){
+            console.log("Error while trying to fetch data from contentful", e)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await getData("aboutme")
+        if(data){
+          const formatted = data.map(x => x.fields)
+          formatted.sort(function(a, b) {
+            return a.position - b.position;
+          })
+          setAboutMe(formatted)
+        }
+      }catch(e){
+            console.log("Error while trying to fetch data from contentful", e)
+      }
+    }
+    fetchData()
+
+  }, [language])
+
+  const create_steps = () => {
+    const size = skills.length
+    return skills.map((single, index) => {
       return (
         <Steps.Step
           key={index}
-          title={single.time}
-          status={single.active ? "process" : "wait"}
-          description={single.text}
+          title={single.startDate + "- " + single.endDate}
+          status={single.position == size ? "process" : "wait"}
+          description={single.content}
         />
       );
     });
   }
 
-  renderSkills() {
+  const renderSkills = () => {
+    if(!skills){
+      return <div/>
+    }
     return (
       <div className="content_aboutme">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={faUserGraduate} className="icon" />
+          <FontAwesomeIcon icon={findIcon("faUserGraduate")} className="icon" />
           Werdegang
         </h2>
         <Steps progressDot current={7} direction="vertical">
-          {this.create_steps(cv_content)}
+          {create_steps()}
         </Steps>
       </div>
     );
   }
 
-  renderPublications() {
+  const renderPublications = () => {
+    if(!publications){
+      return <div/>
+    }
     return (
       <div className="content_aboutme_short">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={faMicroscope} className="icon" />
+          <FontAwesomeIcon icon={findIcon("faMicroscope")} className="icon" />
           Wissenschaftliche Publikationen
         </h2>
         <List
           itemLayout="horizontal"
-          dataSource={publication}
+          dataSource={publications}
           renderItem={(item) => (
             <List.Item>
               <List.Item.Meta
-                avatar={<FontAwesomeIcon icon={faJournalWhills} size={"2x"} />}
-                title={item.name}
-                description={<p>{item.authors} - {item.conference} {item.link ? "- " : null}{item.link ? <a className="link-certificate" target="_blank" href={item.link}>Link</a>: null}</p>}
+                avatar={<FontAwesomeIcon icon={findIcon("faJournalWhills")} size={"2x"} />}
+                title={item.title}
+                description={<p>{item.author} - {item.conference} {item.link ? "- " : null}{item.link ? <a className="link-certificate" target="_blank" href={item.link}>Link</a>: null}</p>}
               />
             </List.Item>
           )}
@@ -69,11 +141,14 @@ class AboutMe extends React.Component {
     );
   }
 
-  renderCertificate() {
+  const renderCertificate = () => {
+    if(!certificates){
+      return <div/>
+    }
     return (
       <div className="content_aboutme_short">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={faCertificate} className="icon" />
+          <FontAwesomeIcon icon={findIcon("faCertificate")} className="icon" />
           Zertifikate
         </h2>
         <List
@@ -82,7 +157,7 @@ class AboutMe extends React.Component {
           renderItem={(item) => (
             <List.Item>
               <List.Item.Meta
-                avatar={<FontAwesomeIcon icon={item.icon} size={"2x"} />}
+                avatar={<FontAwesomeIcon icon={findIcon(item.icon)} size={"2x"} />}
                 title={item.name}
                 description={<p><a className="link-certificate" target="_blank" href={item.link}>Verifikationslink</a>{item.id && "  ID: "}{item.id} </p>}
               />
@@ -93,23 +168,33 @@ class AboutMe extends React.Component {
     );
   }
 
-  renderPrivate() {
+  const renderPrivate =() => {
+    if(!aboutMe){
+      return <div/>
+    }
     return (
       <div className="content_aboutme">
         <h2 className="heading_classic">
-          <FontAwesomeIcon icon={faUser} className="icon" />
+          <FontAwesomeIcon icon={findIcon("faUser")} className="icon" />
           Privat
         </h2>
-
-        <div className="privat">
-          <p className="classic_text">{description}</p>
-          <p className="classic_text">{hobbies}</p>
+        <List
+          itemLayout="horizontal"
+          dataSource={aboutMe}
+          renderItem={(item) => (
+            <List.Item>
+              <List.Item.Meta
+                avatar={<FontAwesomeIcon icon={findIcon(item.icon)} size={"2x"} />}
+                title={item.key}
+                description={item.text}
+              />
+            </List.Item>
+          )}
+        ></List>
         </div>
-      </div>
     );
   }
 
-  render() {
     return (
       <div>
         <Header />
@@ -117,16 +202,16 @@ class AboutMe extends React.Component {
           <Row>
             <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
               <div>
-                {this.renderSkills()}
-                {this.renderPublications()}
+                {renderSkills()}
+                {renderPublications()}
                 <div className="image_classic es"></div>
               </div>
             </Col>
 
             <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
               <div>
-                {this.renderPrivate()}
-                {this.renderCertificate()}
+                {renderPrivate()}
+                {renderCertificate()}
                 <div className="image_classic berlin"></div>
               </div>
             </Col>
@@ -135,7 +220,6 @@ class AboutMe extends React.Component {
         <Footer />
       </div>
     );
-  }
 }
 
 export default AboutMe;
