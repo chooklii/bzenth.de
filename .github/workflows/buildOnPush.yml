@@ -1,6 +1,9 @@
 
 name: Build on Push
-on: [push]
+on:
+  push:
+    branches:
+    - master
 permissions:
   contents: write
 jobs:
