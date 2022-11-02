@@ -1,6 +1,6 @@
 import { contentfulClient, formatHeaderData } from "./fetchData";
 import { TranslationContext } from "./context";
-import { localeNames, skillsHeadings} from "./defaultValues"
+import { localeNames, skillsHeadings, projectsIntro} from "./defaultValues"
 import {findIcon} from "./findIcon"
 
 export {
@@ -9,5 +9,6 @@ export {
     formatHeaderData,
     localeNames,
     findIcon,
-    skillsHeadings
+    skillsHeadings,
+    projectsIntro
 }

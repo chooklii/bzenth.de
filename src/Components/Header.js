@@ -11,8 +11,7 @@ import {
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 
 const defaultHeaderNames = {
-  "public": "Öffentliche Projekte",
-  "private": "Private Projekte",
+  "public": "Projekte",
   "skills": "Skills",
   "about": "Über mich",
   "kontakt": "Kontakt",
@@ -101,7 +100,6 @@ const Header = () => {
       </div>
     )
   }
-
   return (
     <div className="header">
       <div className="header-mobile-menu-wrapper">
@@ -123,13 +121,6 @@ const Header = () => {
           to="/projekte/offentlich"
         >
           {headerNames.public}
-        </Link>
-        <Link
-          onClick={() => hideMenu()}
-          className="header-element"
-          to="/projekte/privat"
-        >
-          {headerNames.private}
         </Link>
         <Link
           onClick={() => hideMenu()}

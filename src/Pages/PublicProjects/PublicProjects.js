@@ -1,23 +1,13 @@
 import React, {useState, useContext, useEffect} from "react"
 import {Footer, Header} from "../../Components"
-import {description, bzenth, openv, gradulator, numWordsDe, hartwork, vodafone} from "./content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faUserCircle,
-    faGraduationCap,
-    faBus,
-    faDumbbell,
-    faWifi
-} from "@fortawesome/free-solid-svg-icons"
 import {Row, Col, Button, Divider} from "antd"
-import { faNpm } from "@fortawesome/free-brands-svg-icons";
-import {technologySkills, TranslationContext, findIcon} from "../../content"
+import {TranslationContext, findIcon, projectsIntro} from "../../content"
 
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 
 
-const PublicProjects = () =>  {
-  
+const PublicProjects = () =>  {  
     const [data, setData] = useState(null)
     const {language, locales, getData, setLanguage} = useContext(TranslationContext)
   
@@ -92,7 +82,7 @@ const PublicProjects = () =>  {
             <div>
                 <Header/>
                 <div className="projects-box page_classic">
-                <p className="classic_text marginleft">{description}</p>
+                <p className="classic_text marginLeftRight">{projectsIntro[language]}</p>
                 <Row>
                 {renderData()}
                 

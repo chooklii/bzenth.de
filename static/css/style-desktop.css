@@ -312,6 +312,11 @@
     margin-left: 10%;
 }
 
+.marginLeftRight{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .image-project{
     background-repeat: no-repeat;
     display: block;
