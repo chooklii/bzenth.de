@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GameHome from "./GameHome";
 import { init, trackPages } from "insights-js";
+import {
+  TranslationContext,
+  contentfulClient,
+} from "../helper";
+
 
 import "../../static/css/style-game.css";
 import "antd/dist/antd.css";

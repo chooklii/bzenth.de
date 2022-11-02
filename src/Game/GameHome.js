@@ -5,7 +5,7 @@ import {levels, starting} from "./level"
 import {Button, Tooltip, Row, Col} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-icons";
-import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "./Pages"
+import {AboutMe, Skills, Contact, Projects, Credits} from "../Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 import {minHeight, minWidth, itemsToUnlock, rockheadTexts, sawTexts, spikeTexts} from "./config"
 
@@ -390,12 +390,11 @@ class GameHome extends React.Component{
               () => this.setState({displayedPage: null, displayPage: false, showMenu: true})} 
               className="back_icon"/>
             <div className="content_game_pages"> 
-            {displayedPage === 1 && <AboutMeGame/>}
-            {displayedPage === 2 && <Credits/>}
-            {displayedPage === 3 && <SkillsGame/>}
-            {displayedPage === 5 && <PrivateProjectsGame/>}
-            {displayedPage === 6 && <PublicProjectsGame/>}
-            {displayedPage === 8 && <ContactGame/>}
+            {displayedPage === 1 && <AboutMe game={true}/>}
+            {displayedPage === 2 && <Credits game={true}/>}
+            {displayedPage === 3 && <Skills game={true}/>}
+            {displayedPage === 6 && <Projects game={true}/>}
+            {displayedPage === 8 && <Contact game={true}/>}
             </div>
           </div>
         )

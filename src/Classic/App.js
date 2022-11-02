@@ -8,12 +8,12 @@ import {
   AboutMe,
   Projects,
   Imprint,
-} from "./Pages"
+} from "../Pages"
 import {
   TranslationContext,
   contentfulClient,
-} from "../content";
-import { ScrollToTop } from "./Components";
+} from "../helper";
+import { ScrollToTop } from "../Components";
 import { init, trackPages } from "insights-js";
 
 import "../../static/css/style-mobile.css";
@@ -103,32 +103,32 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <ScrollToTop>
-                <Home />
+                <Home game={false}/>
               </ScrollToTop>
             </Route>
             <Route exact path="/projekte">
               <ScrollToTop>
-                <Projects />
+                <Projects game={false}/>
               </ScrollToTop>
             </Route>
             <Route exact path="/skills">
               <ScrollToTop>
-                <Skills />
+                <Skills game={false}/>
               </ScrollToTop>
             </Route>
             <Route exact path="/privat">
               <ScrollToTop>
-                <AboutMe />
+                <AboutMe game={false}/>
               </ScrollToTop>
             </Route>
             <Route exact path="/kontakt">
               <ScrollToTop>
-                <Contact />
+                <Contact game={false}/>
               </ScrollToTop>
             </Route>
             <Route exact path="/impressum">
               <ScrollToTop>
-                <Imprint />
+                <Imprint/>
               </ScrollToTop>
             </Route>
             <Route path="/*">
