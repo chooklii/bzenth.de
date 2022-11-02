@@ -324,7 +324,7 @@
     .header-nav{
         display: none;
         backface-visibility: hidden;
-        /*z-index: 2000; */
+        z-index: 2000;
         position: fixed;
         overflow-y: hidden;
         top: 0;
@@ -425,14 +425,6 @@
 
       .imprint-h2{
           font-size: 20px;
-      }
-
-      .selectOptionLanguage{
-        z-index: 2500;
-      }
-
-      .localeText{
-        margin-left: 5px;
       }
 
 
@@ -715,7 +707,7 @@
 
 .content_aboutme_short{
     width: 90%;
-    min-height: 40vh;
+    min-height: 30vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -739,7 +731,8 @@
 
 .design_buttons{
     width: 100%;
-    padding: 1em;
+    bottom: -20px;
+    position: absolute;
     display: inline-flex;
     justify-content: center;
 }
@@ -752,14 +745,8 @@
     margin-left: 10%;
 }
 
-.marginLeftRight{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .image-project{
     background-repeat: no-repeat;
-    display: block;
     background-size: cover;
     width: 493px;
     height: 261px;
@@ -994,11 +981,6 @@
   .imprint-link{
       margin-left: 5px;
   }
-
-  .localeText{
-    margin-left: 5px;
-  }
-  
 }
 /*Style Tablet Layout*/
 
@@ -1922,7 +1904,7 @@ body{
 }
 
 .berlin{
-    background-image: url(../static/images/madeira.jpeg);
+    background-image: url(../static/images/berlin.jpg);
 }
 
 .es{
