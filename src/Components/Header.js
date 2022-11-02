@@ -115,7 +115,7 @@ const Header = () => {
         <h1 className="header-mobile-heading">Benjamin Zenth</h1>
       </div>
       <h1
-        onClick={() => (window.location.href = "/")}
+        onClick={() => (window.location.href = `/?lang=${language}`)}
         className="header-desktop-heading"
       >
         Benjamin Zenth

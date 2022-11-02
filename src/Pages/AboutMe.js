@@ -5,15 +5,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Steps, List } from "antd";
 
 const AboutMe = (props) => {
-  console.log(props)
   const [skills, setSkills] = useState(null);
   const [aboutMe, setAboutMe] = useState(null);
   const [certificates, setCertificates] = useState(null);
   const [publications, setPublications] = useState(null);
   const [headings, setHeadings] = useState(null);
-  const { language, getData } = useContext(TranslationContext);
+  const {language, getData, setLanguage } = useContext(TranslationContext);
 
   useEffect(() => {
+    const searchParams = new URLSearchParams(document.location.search)
+    const langQueryParm = searchParams.get('lang')
+    if(langQueryParm){
+      setLanguage(langQueryParm)
+    }
+  }, [])
+
+  useEffect(() => {
+
     const fetchData = async () => {
       try {
         const data = await getData("aboutMe", true);

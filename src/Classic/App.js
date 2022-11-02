@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route  } from "react-router-dom";
 import {
   Skills,
   Contact,
@@ -33,10 +33,6 @@ const App = () => {
       .getLocales()
       .catch((err) => console.log(err));
 
-    const defaultLanguage = entry.items
-      .filter((x) => x.default)
-      .map((x) => x.code)[0];
-    setLanguage(defaultLanguage);
     setLocales(entry.items);
     return entry.items;
   };
@@ -88,6 +84,7 @@ const App = () => {
   };
 
   useEffect(() => {
+
     if (location.hostname != "localhost") {
       init("OMGVVhafavnD3FVc");
       trackPages();

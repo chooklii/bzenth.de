@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useContext, useState, useEffect} from "react"
 import Phaser from "phaser";
 import Game from "./Game"
 import {levels, starting} from "./level"
@@ -8,6 +8,10 @@ import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-i
 import {AboutMe, Skills, Contact, Projects, Credits} from "../Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 import {minHeight, minWidth, itemsToUnlock, rockheadTexts, sawTexts, spikeTexts} from "./config"
+import {
+  TranslationContext,
+  contentfulClient,
+} from "../helper";
 
 const config = {
   type: Phaser.AUTO,
@@ -26,109 +30,108 @@ const config = {
 var game;
 var currentSong;
 
-class GameHome extends React.Component{
-    constructor(props){
-      super(props)
-      this.state = {
-        screenWidth: 0,
-        finishedLevel: [],
-        selectedLevel: null,
-        showMenu: true,
-        showSettings: false,
-        deathscreen: false,
-        killedBy: null,
-        currentPage: null,
-        displayPage: false,
-        type: null,
-        music_playing: false,
-        music_playlist: music_menu,
-        music_index: 0
+const GameHome = () => {
+  const [screenHeight, setScreenHight] = useState(0)
+  const [screenWidth, setScreenWidth] = useState(0)
+  const [finishedLevel, setFinishedLevel] = useState([])
+  const [selectedLevel, setSelectedLevel] = useState(null)
+  const [showMenu, setShowMenu] = useState(true)
+  const [showSettings, setShowSettings] = useState(false)
+  const [deathscreen, setShowDeadscreen] = useState(false)
+  const [killedBy, setKilledBy] = useState(false)
+  const [currentPage, setCurrentPage] = useState(null)
+  const [displayPage, setDisplayPage] = useState(false)
+  const [type, setType] = useState(null)
+  const [music_playing, setMusicPlaying] = useState(false)
+  const [music_playlist, setMusicPlaylist] = useState(music_menu)
+  const [music_index, setMusicIndex] = useState(0)
+
+  useEffect(() => {
+    initDefaultGame()
+    initMusic()
+    readLocalStorage()
+  }, [])
+
+    const readLanguageFromQuery =() =>{
+      const searchParams = new URLSearchParams(document.location.search)
+      const langQueryParm = searchParams.get('lang')
+      if(langQueryParm){
+        setLanguage(langQueryParm)
       }
     }
-  
-    componentDidMount(){
-      this.initDefaultGame()
-      this.initMusic()
-      this.readLocalStorage()
-    }
 
-    
-    componentWillUnmount(){
-      //window.removeEventListener("keydown")
-      //window.removeEventListener("ended")
-    }
-
-    readLocalStorage(){
+    const readLocalStorage = () => {
       const dataFromLocalStorage = localStorage.getItem("finishedLevel")
       if(dataFromLocalStorage){
         this.state.finishedLevel = dataFromLocalStorage
       }
     }
 
-    resetLevel(){
+    const resetLevel =() => {
       localStorage.removeItem("finishedLevel")
-      this.setState({finishedLevel: []})
+      setFinishedLevel([])
     }
 
-    initMusic(){
+    const initMusic = () => {
       const starting_index = Math.floor(Math.random() * music_menu.length)
-      this.setState([{music_index: starting_index}])
+      setMusicIndex(starting_index)
       currentSong = new Audio(music_menu[starting_index])
       currentSong.addEventListener("ended", () => {
-        this.playNextSong()
+        playNextSong()
       })
     }
 
-    playNextSong(){
+    const playNextSong =() =>{
       const {music_index, music_playlist} = this.state
       if(music_index < (music_playlist.length -1)){
-        this.setState({music_index: music_index+1})
+        setMusicIndex(music_index+1)
         currentSong = new Audio(music_playlist[music_index+1])
         currentSong.addEventListener("ended", () => {
-          this.playNextSong()
+          playNextSong()
         })
         currentSong.play()
       }else{
-        this.setState({music_index: 0})
+        setMusicIndex(0)
         currentSong = new Audio(music_playlist[0])
         currentSong.addEventListener("ended", () => {
-          this.playNextSong()
+          playNextSong()
         })
         currentSong.play()
       }
     }
 
-    updateMusic(theme){
-      if(this.state.music_playing){
+    const updateMusic = (theme) => {
+      if(music_playing){
       currentSong.pause()
       const starting_index = Math.floor(Math.random() * theme.length)
-      this.setState([{music_index: starting_index}])
+      setMusicIndex(starting_index)
       currentSong = new Audio(theme[starting_index])
       currentSong.addEventListener("ended", () => {
-        this.playNextSong()
+        playNextSong()
       })
       currentSong.play()
       }
     }
 
-    initDefaultGame(){
-      const {width, height, type} = this.getScreenSize()
+    const initDefaultGame =() => {
+      const {width, height, type} = getScreenSize()
       config.height = height
       config.width = width
       const screenWidth = window.innerWidth
       const screenHeight = window.innerHeight
-      this.setState({screenWidth: screenWidth, screenHeight: screenHeight})
+      setScreenWidth(screenWidth)
+      setScreenHight(screenHeight)
       if(screenWidth >=minWidth && screenHeight >=minHeight){
       game = new Phaser.Game(config)
       game.levels = starting
       game.restart = () => void(0)
       game.type = type
       game.playMusic = false
-      this.setState({type: type})
+      setType(type)
       }
     }
 
-    getScreenSize(){
+    const getScreenSize =() => {
       const width = window.innerWidth
       const height = window.innerHeight
       if(width <= 1450 || height <= 750){
@@ -150,55 +153,58 @@ class GameHome extends React.Component{
       }
     }
 
-    finished(){
-      this.state.finishedLevel.push(this.state.selectedLevel)
+    const finished = () =>{
+      finishedLevel.push(selectedLevel)
       localStorage.setItem("finishedLevel", this.state.finishedLevel)
       this.updateMusic(music_menu)
-      this.setState({showMenu: true})
+      setShowMenu(true)
       game.scene.pause("default")
     }
 
-    death(way){
-      this.setState({deathscreen: true, killedBy: way})
+    const death = (way) =>{
+      setShowDeadscreen(true)
+      setKilledBy(way)
       window.addEventListener("keydown", event => {
         if((event.key === "r" || event.key === "R") && this.state.deathscreen){
-          this.restartLevel()
+          restartLevel()
         }
       })
     }
 
-    selectedLevel(id, music_theme){
+    const selectedNewLevel = (id, music_theme) =>{
       // kill current game
       game.destroy(true)
       this.updateMusic(music_theme)
-      this.setState({selectedLevel: id, showMenu: false, music_playlist: music_theme})
+      setSelectedLevel(id)
+      setShowMenu(false)
+      setMusicPlaylist(music_theme)
       // create new game with correct level id
       this.initGame(id)
     }
 
-    initGame(id){
+    const initGame =(id) =>{
       game = new Phaser.Game(config)
       game.levels = levels[id]
-      game.type = this.state.type
-      game.playMusic = this.state.music_playing
-      game.finished = () => this.finished()
-      game.death = (way) => this.death(way)
-      game.restart = () => this.restartLevel()
+      game.type = type
+      game.playMusic = music_playing
+      game.finished = () => finished()
+      game.death = (way) => death(way)
+      game.restart = () => restartLevel()
     }
 
-    restartLevel(){
+    const restartLevel =() =>{
       game.destroy(true)
-      this.setState({deathscreen: false})
-      this.initGame(this.state.selectedLevel)
+      setShowDeadscreen(false)
+      initGame(this.state.selectedLevel)
     }
 
-    levelSelection(){
+    const levelSelection =() => {
       return(
         <div className="level_selector">
           <div className="game_back">
-          <Button onClick={() => this.resetLevel()}>Fortschritt zurücksetzen</Button>
+          <Button onClick={() => resetLevel()}>Fortschritt zurücksetzen</Button>
             <Button className="margin_left" onClick={() => window.location.href="/"}>Zurück zur Startseite</Button>
-            {this.renderMusicIconMenu()}
+            {renderMusicIconMenu()}
           </div>
           <div className="explaination">
           <h1 className="explaination_heading">Arcade-Modus</h1>
@@ -219,22 +225,22 @@ class GameHome extends React.Component{
             </div>
           </div>
           <Row className="level_row">
-            {this.singleLevel(1, "Getting Started", field_theme)}
-            {this.singleLevel(2, "Schlangen S", sea_theme)}
-            {this.singleLevel(3, "Kettensägenkantine", cave_theme)}
-            {this.singleLevel(4, "Spicy Spike", sea_theme)}
-            {this.singleLevel(5, "Obacht Oben", field_theme)}
-            {this.singleLevel(6, "Aufregender Aufzug", dungeon_theme)}
-            {this.singleLevel(7, "Where is the Way?", night_theme)}
-            {this.singleLevel(8, "Furioses Finale", night_theme)}
+            {singleLevel(1, "Getting Started", field_theme)}
+            {singleLevel(2, "Schlangen S", sea_theme)}
+            {singleLevel(3, "Kettensägenkantine", cave_theme)}
+            {singleLevel(4, "Spicy Spike", sea_theme)}
+            {singleLevel(5, "Obacht Oben", field_theme)}
+            {singleLevel(6, "Aufregender Aufzug", dungeon_theme)}
+            {singleLevel(7, "Where is the Way?", night_theme)}
+            {singleLevel(8, "Furioses Finale", night_theme)}
 
           </Row>
         </div>
       )
     }
 
-    singleLevel(levelID, levelName, music_theme){
-      const disabled = (levelID == 1 || this.state.finishedLevel.includes(levelID -1)) ? false: true 
+    const singleLevel = (levelID, levelName, music_theme) =>{
+      const disabled = (levelID == 1 || finishedLevel.includes(levelID -1)) ? false: true 
       return(
         <Col xl={6} xxl={6} lg={8} md={12} sm={12} xs={12}>
           <div className="single_level">
@@ -242,13 +248,13 @@ class GameHome extends React.Component{
             <div className={"level l"+levelID}></div>
             <div className="single_level_name">{levelName}</div>
           </div>
-          {this.unlock_button(levelID)}
+          {unlock_button(levelID)}
           <div className="button_start_level">
           <Tooltip title={disabled ? "Beende das vorherige Level, um dieses zu spielen." : "Klicke hier, um das Level zu starten"}>
           <Button 
             type="primary"
             style={{minWidth: "100%"}}
-            onClick={() => this.selectedLevel(levelID, music_theme)}
+            onClick={() => selectedNewLevel(levelID, music_theme)}
             disabled={disabled}>
             <div className="button_start_text">
             <div className="level_play"></div>
@@ -263,15 +269,19 @@ class GameHome extends React.Component{
       )
     }
 
-    unlock_button(levelID){
-      const disabled = this.state.finishedLevel.includes(levelID) ? false: true
+    const unlock_button =(levelID) =>{
+      const disabled = finishedLevel.includes(levelID) ? false: true
       const unlock = Object.keys(itemsToUnlock).includes(levelID.toString()) ? true: false
       if(unlock){
       return(
       <div className="button_start_level">
       <Tooltip title={disabled ? "Beende dieses Level, um diese Seite anzuzeigen." : "Klicke hier, um diese Seite anzuzeigen"}>
       <Button
-        onClick={() => this.setState({displayedPage: levelID, displayPage: true, showMenu: false})}
+        onClick={() => {
+          setDisplayPage(levelID)
+          setDisplayPage(true)
+          setShowMenu(false)
+        }}
         style={{minWidth: "100%"}}
         type="dashed"
         disabled={disabled}>
@@ -291,20 +301,21 @@ class GameHome extends React.Component{
       }
     }
 
-    settingsIcon(){
+    const settingsIcon =() =>{
       return(
-        <div onClick={() => this.handleSettingsMenu()}
+        <div onClick={() => handleSettingsMenu()}
         className="settings_icon" style={{marginTop: "-" + config.height /2 + "px"}}></div>
       )
     }
 
-    handleSettingsMenu(){
+    const handleSettingsMenu =() =>{
       if(this.state.showSettings){
         game.scene.resume("default")
-        this.setState({showSettings: false})
+        setShowSettings(false)
       }else{
         game.scene.pause("default")
-        this.setState({showSettings: true, deathscreen: false})
+        setShowSettings(true)
+        setShowDeadscreen(false)
       }
 
     }

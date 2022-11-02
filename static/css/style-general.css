@@ -19,14 +19,6 @@ body{
     overflow-y: scroll;
 }
 
-.home_classic_image{
-    background-image: url("../images/header.jpg");
-}
-
-.home_game_image{
-    background-image: url("../images/bzenth.png");
-}
-
 .header-mobile-menu-icon{
     background: url("../toggle.svg")
 }
