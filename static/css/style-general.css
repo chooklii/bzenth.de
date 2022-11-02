@@ -19,50 +19,6 @@ body{
     overflow-y: scroll;
 }
 
-.berlin{
-    background-image: url("../images/berlin.jpg");
-}
-
-.es{
-    background-image: url("../images/es.jpg");
-}
-
-.storagable{
-    background-image: url("../images/storagable.png");
-}
-
-.mealtracker{
-    background-image: url("../images/mealtracker.png");
-}
-
-.bzenth{
-    background-image: url("../images/bzenth.png");
-}
-
-.hartwork{
-    background-image: url("../images/hartwork.png");
-}
-
-.gradulator{
-    background-image: url("../images/gradulator.png");
-}
-
-.oepnv{
-    background-image: url("../images/oepnv.png");
-}
-
-.notFound-image{
-    background-image: url("../images/404.jpg");
-}
-
-.home_classic_image{
-    background-image: url("../images/header.jpg");
-}
-
-.home_game_image{
-    background-image: url("../images/bzenth.png");
-}
-
 .header-mobile-menu-icon{
     background: url("../toggle.svg")
 }

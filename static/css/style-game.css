@@ -283,12 +283,16 @@
     padding-top: 10px
 }
 
-.icon_game{
+.icon{
     margin-right: 5px;
 }
 
+.skills-heading{
+    font-family: "Lobster";
+    text-align: center; 
+}
 
-.heading_game{
+.heading_classic{
     font-family: "Lobster";
     text-align: center;
 }
@@ -299,7 +303,7 @@
     margin-left: 10%;
 }
 
-.skill_key{
+.skill-name{
     width: 30%;
     font-family: "JosefinSans";
 }
@@ -314,21 +318,15 @@
     margin-left: 10%;
 }
 
-.game_text{
+.classic_text{
     font-family: "JosefinSans";
     line-height: 200%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .bold{
     font-weight: bold;
-}
-
-.berlin{
-    background-image: url("../images/berlin.jpg");
-}
-
-.es{
-    background-image: url("../images/es.jpg");
 }
 
 .image_game{
@@ -342,7 +340,6 @@
 }
 
 .storagable{
-    background-image: url("../images/storagable.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 308px;
@@ -350,26 +347,16 @@
     margin: 0 auto
 }
 
-.mealtracker{
-    background-image: url("../images/mealtracker.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 302px;
-    height: 324px;
-    margin: 0 auto
-}
-
-.bzenth{
-    background-image: url("../images/bzenth.png");
+.image-project{
     background-repeat: no-repeat;
     background-size: cover;
     width: 407px;
+    display: block;
     height: 212px;
     margin: 0 auto
 }
 
 .gradulator{
-    background-image: url("../images/gradulator.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 417px;
@@ -378,7 +365,6 @@
 }
 
 .oepnv{
-    background-image: url("../images/oepnv.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 411px;
@@ -387,7 +373,6 @@
 }
 
 .hartwork{
-    background-image: url("../images/hartwork.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 411px;
@@ -395,11 +380,15 @@
     margin: 0 auto
 }
 
+.localeText{
+    margin-left: 5px;
+}
+
 .game_contact_image{
-    background-image: url("../images/win.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 480px;
+    display: block;
     height: 320px;
     margin: 0 auto
 }
@@ -407,7 +396,7 @@
 .game_back{
     position: absolute;
     margin-top: 1%;
-    margin-left: 70%;
+    margin-left: 60%;
     display: flex
 }
 
@@ -436,13 +425,14 @@
 }
 
 .content_aboutme{
-    min-height: 40vh
+    min-height: 70vh
 }
 
 .design_buttons{
     justify-content: center;
     display: inline-flex;
     width: 100%;
+    padding: 1em
 }
 
 .private_projects{
@@ -454,12 +444,12 @@
     margin-top: 2em
 }
 
-.single_skill_box{
+.single-skill{
     display: flex;
     justify-content: center;
 }
 
-.project_game{
+.project_classic{
     padding: 1em;
     min-height: 100%;
 }

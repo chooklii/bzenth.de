@@ -9,10 +9,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.contact-image{
-    background-image: url("../images/me.jpg")
-}
-
 .mobile{
     display: none
 }
@@ -82,28 +78,23 @@
 }
 
 .home_classic_image{
+    display: block;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 80%;
-    padding-top: 45%;
     margin-left: 10%;
     border: 1px solid black
 }
 
-.home_game_image{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 80%;
-    padding-top: 39.375%;
-    margin-left: 10%;
-    border: 1px solid black
-}
 
 .home_text{
     line-height: 200%;
     text-align: center;
+}
+
+.homeLanguageSelect{
+    float: right
 }
 
 .contact{
@@ -268,14 +259,14 @@
 
 .content_aboutme{
     width: 90%;
-    min-height: 70vh;
+    min-height: 90vh;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .content_aboutme_short{
     width: 90%;
-    min-height: 30vh;
+    min-height: 40vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -299,8 +290,7 @@
 
 .design_buttons{
     width: 100%;
-    bottom: -20px;
-    position: absolute;
+    padding: 1em;
     display: inline-flex;
     justify-content: center;
 }
@@ -313,8 +303,14 @@
     margin-left: 10%;
 }
 
+.marginLeftRight{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .image-project{
     background-repeat: no-repeat;
+    display: block;
     background-size: cover;
     width: 493px;
     height: 261px;
@@ -473,12 +469,15 @@
 .image_classic{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
     margin-left: 20%;
-    height: 80%;
-    min-height: 30vh;
     margin-bottom: 20px;
     margin-right: 5px;
+
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    height: 350px;
+    margin: 0 auto
 }
 
 
@@ -549,4 +548,9 @@
   .imprint-link{
       margin-left: 5px;
   }
+
+  .localeText{
+    margin-left: 5px;
+  }
+  
 }

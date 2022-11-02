@@ -66,7 +66,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;
+        display: block;
         margin: 0 auto
     }
 
@@ -324,7 +324,7 @@
     .header-nav{
         display: none;
         backface-visibility: hidden;
-        z-index: 2000;
+        /*z-index: 2000; */
         position: fixed;
         overflow-y: hidden;
         top: 0;
@@ -425,6 +425,14 @@
 
       .imprint-h2{
           font-size: 20px;
+      }
+
+      .selectOptionLanguage{
+        z-index: 2500;
+      }
+
+      .localeText{
+        margin-left: 5px;
       }
 
 
