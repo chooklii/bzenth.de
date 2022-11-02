@@ -16,6 +16,7 @@ const AboutMe = (props) => {
     const searchParams = new URLSearchParams(document.location.search)
     const langQueryParm = searchParams.get('lang')
     if(langQueryParm){
+      window.history.pushState({}, document.title, window.location.pathname );
       setLanguage(langQueryParm)
     }
   }, [])

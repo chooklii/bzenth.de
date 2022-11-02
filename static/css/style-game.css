@@ -380,6 +380,10 @@
     margin: 0 auto
 }
 
+.localeText{
+    margin-left: 5px;
+}
+
 .game_contact_image{
     background-repeat: no-repeat;
     background-size: cover;
@@ -392,7 +396,7 @@
 .game_back{
     position: absolute;
     margin-top: 1%;
-    margin-left: 70%;
+    margin-left: 60%;
     display: flex
 }
 

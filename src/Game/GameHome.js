@@ -2,12 +2,13 @@ import React, { useContext, useState, useEffect } from "react";
 import Phaser from "phaser";
 import Game from "./Game";
 import { levels, starting } from "./level";
-import { Button, Tooltip, Row, Col } from "antd";
+import { Button, Tooltip, Row, Col, Select } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVolumeUp,
   faVolumeMute,
   faTimes,
+  faLanguage
 } from "@fortawesome/free-solid-svg-icons";
 import { AboutMe, Skills, Contact, Projects, Credits } from "../Pages";
 import {
@@ -26,9 +27,8 @@ import {
   rockheadTexts,
   sawTexts,
   spikeTexts,
-  back,
 } from "./config";
-import { TranslationContext } from "../helper";
+import { TranslationContext, localeNames, keyGenerator } from "../helper";
 
 const config = {
   type: Phaser.AUTO,
@@ -46,6 +46,8 @@ const config = {
 };
 var game;
 var currentSong;
+
+const locales = ["de", "en"]
 
 const GameHome = () => {
   const [screenHeight, setScreenHight] = useState(0);
@@ -74,6 +76,7 @@ const GameHome = () => {
     const searchParams = new URLSearchParams(document.location.search);
     const langQueryParm = searchParams.get("lang");
     if (langQueryParm) {
+      window.history.pushState({}, document.title, window.location.pathname );
       setLanguage(langQueryParm);
     }
   };
@@ -178,8 +181,8 @@ const GameHome = () => {
     }
   };
 
-  const finished = () => {
-    finishedLevel.push(selectedLevel);
+  const finished = (id) => {
+    finishedLevel.push(id);
     localStorage.setItem("finishedLevel", finishedLevel);
     updateMusic(music_menu);
     setShowMenu(true);
@@ -212,7 +215,7 @@ const GameHome = () => {
     game.levels = levels[id];
     game.type = type;
     game.playMusic = music_playing;
-    game.finished = () => finished();
+    game.finished = () => finished(id);
     game.death = (way) => death(way);
     game.restart = () => restartLevel();
   };
@@ -223,14 +226,43 @@ const GameHome = () => {
     initGame(selectedLevel);
   };
 
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang)
+  }
+
+  const renderLanguageOptions = () => {
+    return locales.map(localeOption => {
+      return(
+        <Select.Option  value={localeOption} key={keyGenerator()}>
+            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{localeNames[language][localeOption]}</span></div>
+        </Select.Option>
+      )
+    })
+
+  }
+
+  const languageSelect = () => {
+    if(!locales){
+      return <div></div>
+    }
+    return(
+      <div className="header-element">
+    <Select defaultValue={language} onChange={handleLanguageChange}>
+      {renderLanguageOptions()}
+    </Select>
+      </div>
+    )
+  }
+
   const levelSelection = () => {
     return (
       <div className="level_selector">
         <div className="game_back">
-          <Button onClick={() => resetLevel()}>{translation[language].reset}</Button>
+          {languageSelect()}
+          <Button className="margin_left" onClick={() => resetLevel()}>{translation[language].reset}</Button>
           <Button
             className="margin_left"
-            onClick={() => (window.location.href = "/")}
+            onClick={() => (window.location.href = `/?lang=${language}`)}
           >
             {translation[language].backMenu}
           </Button>
@@ -239,20 +271,19 @@ const GameHome = () => {
         <div className="explaination">
           <h1 className="explaination_heading">{translation[language].name}</h1>
           <div className="explaination_text">
-            Beende Level um einzelne Seiten freizuschalten. Erreiche mit deiner
-            Spielfigur den Pokal, um ein Level anzuschließen.
+          {translation[language].explaination}
           </div>
           <div className="explaination_setting">
             <div className="single_setting">
-              <p className="key_setting">Bewegung: </p>
-              <p className="value_setting">Pfeiltasten</p>
+              <p className="key_setting">{translation[language].controlls}: </p>
+              <p className="value_setting">{translation[language].arrow}</p>
             </div>
             <div className="single_setting">
-              <p className="key_setting">Springen: </p>
-              <p className="value_setting">Leertaste</p>
+              <p className="key_setting">{translation[language].jump}: </p>
+              <p className="value_setting">{translation[language].space}</p>
             </div>
             <div className="single_setting">
-              <p className="key_setting">Restart: </p>
+              <p className="key_setting">{translation[language].restart}: </p>
               <p className="value_setting">R</p>
             </div>
           </div>
@@ -286,8 +317,8 @@ const GameHome = () => {
             <Tooltip
               title={
                 disabled
-                  ? "Beende das vorherige Level, um dieses zu spielen."
-                  : "Klicke hier, um das Level zu starten"
+                  ? translation[language].startNotUnlocked
+                  : translation[language].startUnlocked
               }
             >
               <Button
@@ -310,7 +341,7 @@ const GameHome = () => {
 
   const unlock_button = (levelID) => {
     const disabled = finishedLevel.includes(levelID) ? false : true;
-    const unlock = Object.keys(itemsToUnlock).includes(levelID.toString())
+    const unlock = Object.keys(itemsToUnlock["de"]).includes(levelID.toString())
       ? true
       : false;
     if (unlock) {
@@ -319,8 +350,8 @@ const GameHome = () => {
           <Tooltip
             title={
               disabled
-                ? "Beende dieses Level, um diese Seite anzuzeigen."
-                : "Klicke hier, um diese Seite anzuzeigen"
+                ? translation[language].pageNotUnlocked
+                : translation[language].pageUnlocked
             }
           >
             <Button
@@ -335,7 +366,7 @@ const GameHome = () => {
             >
               <div className="button_start_text">
                 <div className="unlock_icon"></div>
-                {itemsToUnlock[levelID]}
+                {itemsToUnlock[language][levelID]}
               </div>
             </Button>
           </Tooltip>

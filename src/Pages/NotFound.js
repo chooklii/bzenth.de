@@ -11,7 +11,6 @@ class NotFound extends React.Component {
                 <div className="page_classic">
                     Page not Found :(
                 </div>
-                <div className="notFound-image"></div>
                 <Footer/>
             </div>
         )
