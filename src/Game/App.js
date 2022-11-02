@@ -20,10 +20,6 @@ const App = () => {
       .getLocales()
       .catch((err) => console.log(err));
 
-    const defaultLanguage = entry.items
-      .filter((x) => x.default)
-      .map((x) => x.code)[0];
-    setLanguage(defaultLanguage);
     setLocales(entry.items);
     return entry.items;
   };
