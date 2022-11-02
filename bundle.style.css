@@ -66,7 +66,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
-        padding-top: 52%;
+        display: block;
         margin: 0 auto
     }
 
@@ -324,7 +324,7 @@
     .header-nav{
         display: none;
         backface-visibility: hidden;
-        z-index: 2000;
+        /*z-index: 2000; */
         position: fixed;
         overflow-y: hidden;
         top: 0;
@@ -427,6 +427,14 @@
           font-size: 20px;
       }
 
+      .selectOptionLanguage{
+        z-index: 2500;
+      }
+
+      .localeText{
+        margin-left: 5px;
+      }
+
 
 
 }
@@ -439,10 +447,6 @@
     height: 200px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.contact-image{
-    background-image: url(../static/images/me.jpg)
 }
 
 .mobile{
@@ -707,7 +711,7 @@
 
 .content_aboutme_short{
     width: 90%;
-    min-height: 30vh;
+    min-height: 40vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -731,8 +735,7 @@
 
 .design_buttons{
     width: 100%;
-    bottom: -20px;
-    position: absolute;
+    padding: 1em;
     display: inline-flex;
     justify-content: center;
 }
@@ -745,8 +748,14 @@
     margin-left: 10%;
 }
 
+.marginLeftRight{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .image-project{
     background-repeat: no-repeat;
+    display: block;
     background-size: cover;
     width: 493px;
     height: 261px;
@@ -905,12 +914,15 @@
 .image_classic{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
     margin-left: 20%;
-    height: 80%;
-    min-height: 30vh;
     margin-bottom: 20px;
     margin-right: 5px;
+
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    height: 350px;
+    margin: 0 auto
 }
 
 
@@ -981,6 +993,11 @@
   .imprint-link{
       margin-left: 5px;
   }
+
+  .localeText{
+    margin-left: 5px;
+  }
+  
 }
 /*Style Tablet Layout*/
 
@@ -1901,42 +1918,6 @@ body{
     height: auto !important ;
     font-family: system-ui;
     overflow-y: scroll;
-}
-
-.berlin{
-    background-image: url(../static/images/berlin.jpg);
-}
-
-.es{
-    background-image: url(../static/images/es.jpg);
-}
-
-.storagable{
-    background-image: url(../static/images/storagable.png);
-}
-
-.mealtracker{
-    background-image: url(../static/images/mealtracker.png);
-}
-
-.bzenth{
-    background-image: url(../static/images/bzenth.png);
-}
-
-.hartwork{
-    background-image: url(../static/images/hartwork.png);
-}
-
-.gradulator{
-    background-image: url(../static/images/gradulator.png);
-}
-
-.oepnv{
-    background-image: url(../static/images/oepnv.png);
-}
-
-.notFound-image{
-    background-image: url(../static/images/404.jpg);
 }
 
 .home_classic_image{
