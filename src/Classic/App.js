@@ -6,16 +6,14 @@ import {
   Home,
   NotFound,
   AboutMe,
-  PublicProjects,
+  Projects,
   Imprint,
-  PrivateProjects,
-} from "../Pages";
+} from "./Pages"
 import {
   TranslationContext,
   contentfulClient,
-  formatHeaderData,
 } from "../content";
-import { ScrollToTop } from "../Components";
+import { ScrollToTop } from "./Components";
 import { init, trackPages } from "insights-js";
 
 import "../../static/css/style-mobile.css";
@@ -108,14 +106,9 @@ const App = () => {
                 <Home />
               </ScrollToTop>
             </Route>
-            <Route exact path="/projekte/offentlich">
+            <Route exact path="/projekte">
               <ScrollToTop>
-                <PublicProjects />
-              </ScrollToTop>
-            </Route>
-            <Route exact path="/projekte/privat">
-              <ScrollToTop>
-                <PrivateProjects />
+                <Projects />
               </ScrollToTop>
             </Route>
             <Route exact path="/skills">

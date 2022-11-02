@@ -1,5 +1,5 @@
 import React from "react"
-import {description, bzenth, openv, gradulator, numWordsDe, vodafone, hartwork} from "./content"
+import {description, bzenth, openv, gradulator, numWordsDe, vodafone, hartwork} from "../../Pages/Projects/content"
 import { Row, Col, Button, Divider } from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -9,8 +9,7 @@ class NotFound extends React.Component {
             <div>
                 <Header/>
                 <div className="page_classic">
-                    Ich kann Ihnen bei ihrer eigenen Internetseite oder ihrem IT-Projekt helfen, aber diese Seite finden kann ich leider nicht.
-                    Am besten nutzen Sie die Links im Header um auf eine gültige Adresse zu gelangen.
+                    Page not Found :(
                 </div>
                 <div className="notFound-image"></div>
                 <Footer/>

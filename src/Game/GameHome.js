@@ -5,7 +5,7 @@ import {levels, starting} from "./level"
 import {Button, Tooltip, Row, Col} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeUp, faVolumeMute, faTimes } from "@fortawesome/free-solid-svg-icons";
-import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "../Pages"
+import {AboutMeGame, SkillsGame, ContactGame, PublicProjectsGame, PrivateProjectsGame, Credits} from "./Pages"
 import { music_menu, sea_theme, night_theme, dungeon_theme, cave_theme, field_theme} from "./music"
 import {minHeight, minWidth, itemsToUnlock, rockheadTexts, sawTexts, spikeTexts} from "./config"
 

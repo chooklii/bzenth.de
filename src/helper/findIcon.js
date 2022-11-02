@@ -6,14 +6,13 @@ import {
   faMicroscope,
   faCertificate,
   faChild,
-  faUserCircle,
   faGraduationCap,
   faBus,
   faDumbbell,
   faWifi
 } from "@fortawesome/free-solid-svg-icons";
 import { faXmarkCircle, faAddressBook } from "@fortawesome/free-regular-svg-icons";
-import { faHouseUser, faRunning, faGamepad } from "@fortawesome/free-solid-svg-icons";
+import { faHouseUser, faRunning, faGamepad, faArchive } from "@fortawesome/free-solid-svg-icons";
 export const findIcon = (key) => {
   switch (key) {
     case "faGoogle":
@@ -52,6 +51,8 @@ export const findIcon = (key) => {
     return faWifi
     case "faNpm":
       return faNpm
+    case "faArchive":
+      return faArchive
     default:
       return faXmarkCircle;
   }

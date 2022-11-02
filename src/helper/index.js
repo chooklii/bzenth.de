@@ -1,14 +1,15 @@
-import { contentfulClient, formatHeaderData } from "./fetchData";
-import { TranslationContext } from "./context";
+import { contentfulClient } from "./contentfulClient";
+import { TranslationContext } from "./translationContext";
 import { localeNames, skillsHeadings, projectsIntro} from "./defaultValues"
 import {findIcon} from "./findIcon"
+import { keyGenerator } from "./helper";
 
 export {
     contentfulClient,
     TranslationContext,
-    formatHeaderData,
     localeNames,
     findIcon,
     skillsHeadings,
-    projectsIntro
+    projectsIntro,
+    keyGenerator
 }

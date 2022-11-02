@@ -1,5 +1,5 @@
 import React from "react"
-import {mail, link_github, link_linkedin, link_xing} from "./content"
+import {mail, link_github, link_linkedin, link_xing} from "../../Pages/Contact/content"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXing, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {faAt} from "@fortawesome/free-solid-svg-icons"

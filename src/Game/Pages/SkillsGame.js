@@ -8,8 +8,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { languages, technologySkills, otherSkills, programmingLanguage } from "./content"
 import { Rate, Row, Col } from "antd"
+import {skillsHeadings, TranslationContext, keyGenerator} from "../../helper"
 
-const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 const SkillsGame = () => {
 
     const singleSkill = (name, rating) => {

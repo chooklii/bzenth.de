@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext} from "react";
-import {Footer, Header} from "../../Components"
+import {Footer, Header} from "../Components"
 import {
   faLanguage,
   faLaptopCode,
@@ -8,11 +8,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Rate, Col, Row} from "antd"
-import {languages, technologySkills, otherSkills, programmingLanguage, skillsHeadings, TranslationContext} from "../../content"
+import {skillsHeadings, TranslationContext} from "../../helper"
 const Skills = () => {
 
   const [skills, setSkills] = useState(null)
-  const {language, locales, getData, setLanguage} = useContext(TranslationContext)
+  const {language, getData} = useContext(TranslationContext)
 
   useEffect(() => {
     const fetchData = async () => {

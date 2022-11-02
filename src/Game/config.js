@@ -2,8 +2,7 @@ const itemsToUnlock = {
     1: "About Me",
     2: "Credits",
     3: "Skills",
-    5: "Private Projekte",
-    6: "Öffentliche Projekte",
+    6: "Projekte",
     8: "Kontakt"
 }
 

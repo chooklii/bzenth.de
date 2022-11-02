@@ -9,10 +9,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.contact-image{
-    background-image: url("../images/me.jpg")
-}
-
 .mobile{
     display: none
 }
@@ -478,12 +474,15 @@
 .image_classic{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
     margin-left: 20%;
-    height: 80%;
-    min-height: 30vh;
     margin-bottom: 20px;
     margin-right: 5px;
+
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    height: 350px;
+    margin: 0 auto
 }
 
 

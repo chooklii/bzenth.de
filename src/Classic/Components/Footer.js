@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import {formatHeaderData, TranslationContext} from "../content/"
+import {TranslationContext} from "../../helper"
 
 const Footer = () => {
     const [imprintName, setImprintName] = useState(null)

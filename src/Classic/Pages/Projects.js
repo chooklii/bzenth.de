@@ -1,8 +1,8 @@
 import React, {useState, useContext, useEffect} from "react"
-import {Footer, Header} from "../../Components"
+import {Footer, Header} from "../Components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Row, Col, Button, Divider} from "antd"
-import {TranslationContext, findIcon, projectsIntro} from "../../content"
+import {TranslationContext, findIcon, projectsIntro} from "../../helper"
 
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
 

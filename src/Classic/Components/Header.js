@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import {formatHeaderData, TranslationContext, localeNames} from "../content/"
+import {TranslationContext, localeNames} from "../../helper"
 import {Select} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +9,12 @@ import {
 
 
 const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
+
+const formatHeaderData = (entries) => {
+  const fields =  entries.map(x => x.fields)
+  return fields.reduce(
+      (obj, item) => Object.assign(obj, { [item.key]: item.name }), {});
+}
 
 const defaultHeaderNames = {
   "public": "Projekte",
