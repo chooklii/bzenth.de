@@ -1,14 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import {TranslationContext, localeNames} from "../helper"
-import {Select} from "antd"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLanguage,
-} from "@fortawesome/free-solid-svg-icons";
-
-
-const keyGenerator = () => "_" + Math.random().toString(36).substr(2, 9);
+import {LanguageSwitch} from "./LanguageSwitch"
 
 const formatHeaderData = (entries) => {
   const fields =  entries.map(x => x.fields)
@@ -27,7 +20,7 @@ const defaultHeaderNames = {
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [headerNames, setHeaderNames] = useState(defaultHeaderNames)
-  const {language, locales, getData, setLanguage} = useContext(TranslationContext)
+  const {language, getData} = useContext(TranslationContext)
 
   useEffect(() => {
     const fetchHeaderData = async () => {
@@ -79,33 +72,6 @@ const Header = () => {
     }
   };
 
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang)
-  }
-
-  const renderLanguageOptions = () => {
-    return locales.map(localeOption => {
-      return(
-        <Select.Option  value={localeOption.code} key={keyGenerator()}>
-            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{localeNames[language][localeOption.code]}</span></div>
-        </Select.Option>
-      )
-    })
-
-  }
-
-  const languageSelect = () => {
-    if(!locales){
-      return <div></div>
-    }
-    return(
-      <div className="header-element">
-    <Select defaultValue={language} style={{ fontSize: "20px" }} onChange={handleLanguageChange}>
-      {renderLanguageOptions()}
-    </Select>
-      </div>
-    )
-  }
   return (
     <div className="header">
       <div className="header-mobile-menu-wrapper">
@@ -156,7 +122,7 @@ const Header = () => {
         >
           {headerNames.impressum}
         </Link>
-        {languageSelect()}
+        <LanguageSwitch/>
       </div>
     </div>
   );
