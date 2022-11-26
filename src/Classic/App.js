@@ -14,7 +14,6 @@ import {
   contentfulClient,
 } from "../helper";
 import { ScrollToTop } from "../Components";
-import { init, trackPages } from "insights-js";
 
 import "../../static/css/style-mobile.css";
 import "../../static/css/style-desktop.css";
@@ -83,13 +82,6 @@ const App = () => {
     return fetchedData.items;
   };
 
-  useEffect(() => {
-
-    if (location.hostname != "localhost") {
-      init("OMGVVhafavnD3FVc");
-      trackPages();
-    }
-  }, []);
 
   return (
     <BrowserRouter>

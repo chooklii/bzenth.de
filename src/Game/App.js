@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import GameHome from "./GameHome";
-import { init, trackPages } from "insights-js";
 import {
   TranslationContext,
   contentfulClient,
@@ -70,12 +69,6 @@ const App = () => {
     return fetchedData.items;
   };
 
-  useEffect(() => {
-    if (location.hostname != "localhost") {
-      init("OMGVVhafavnD3FVc");
-      trackPages();
-    }
-  }, []);
 
   return (
     <div className="app">
