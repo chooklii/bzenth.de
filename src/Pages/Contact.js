@@ -3,14 +3,12 @@ import { TranslationContext } from "../helper";
 import { Footer, Header } from "../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faXing,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { Avatar } from "antd";
 
-const link_xing = "https://www.xing.com/profile/Benjamin_Zenth/cv";
 const link_linkedin = "https://www.linkedin.com/in/benjamin-zenth-6290681ba/";
 const link_github = "https://github.com/chooklii";
 const mail = "kontakt@bzenth.de";
@@ -90,10 +88,6 @@ const Contact = (props) => {
             <a className="contact_link" href={link_linkedin} target="_blank">
               <FontAwesomeIcon className="icon" icon={faLinkedin} />
               LinkedIn
-            </a>
-            <a className="contact_link" href={link_xing} target="_blank">
-              <FontAwesomeIcon className="icon" icon={faXing} />
-              Xing
             </a>
             <a className="contact_link" href={link_github} target="_blank">
               <FontAwesomeIcon className="icon" icon={faGithub} />
