@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
-import {Row, Col, Button,Select} from "antd"
+import {Row, Col, Button,Select, Skeleton} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   contentfulClient,
@@ -111,13 +111,25 @@ const Home = () => {
     });
   }
 
+  const skeleton = () => {
+    return(
+      <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
+      <div className="classic_content" >
+        <div className="home_classic_image skeleton">
+        <Skeleton active/>
+        <Skeleton active/>
+        <Skeleton active/>
+          </div>  
+      </div>
+    </Col>
+    )
+  }
+
   const classicMode =() =>{
     if(!data){
-      return(
-        <div/>
-      )
+      return skeleton()
     }
-    return(
+    return (
       <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
         <div className="classic_content" to="/skills">
         <img
@@ -139,9 +151,7 @@ const Home = () => {
 
   const arcadeMode =() => {
     if(!data){
-      return(
-        <div/>
-      )
+      return skeleton()
     }
     return(
       <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>

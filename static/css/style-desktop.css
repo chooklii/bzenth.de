@@ -87,6 +87,10 @@
     border: 1px solid black
 }
 
+.skeleton{
+    border: 0px !important
+}
+
 
 .home_text{
     line-height: 200%;

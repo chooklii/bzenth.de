@@ -55,10 +55,6 @@ const Contact = (props) => {
           <FontAwesomeIcon className="icon_game" icon={faLinkedin} />
           LinkedIn
         </a>
-        <a className="game_contact_link" href={link_xing} target="_blank">
-          <FontAwesomeIcon className="icon_game" icon={faXing} />
-          Xing
-        </a>
         <a className="game_contact_link" href={link_github} target="_blank">
           <FontAwesomeIcon className="icon_game" icon={faGithub} />
           GitHub
