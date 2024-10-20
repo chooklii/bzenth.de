@@ -1,0 +1,34 @@
+{
+    "home": {
+        "classic": {
+            "heading": "Normal Webseite",
+            "info": "Normal Website - All Pages are available.",
+            "alt": "A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI",
+            "button": "Classic Webseite"
+        },
+        "arcade": {
+            "heading": "Arcade Modus",
+            "info": "Play a Jump and Run Game and unlock pages by finishing levels.",
+            "button": "Play the Arcade Modus"
+        }
+    },
+    "skills": {
+        "programming": "Programming languages",
+        "frameworks": "Frameworks",
+        "databases": "Databases",
+        "technology": "other technologies",
+        "other": "other skills",
+        "language": "Languages"
+    },
+    "header": {
+        "projects": "Projects",
+        "skills": "Skills",
+        "aboutMe": "About me",
+        "contact": "Contact",
+        "imprint": "Imprint"
+    },
+    "locales": {
+        "de": "German",
+        "en": "English"
+    }
+}

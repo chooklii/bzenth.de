@@ -23,6 +23,10 @@ body{
     background: url("../toggle.svg")
 }
 
+.home_classic_image{
+    background: url("../home.jpeg");
+}
+
 .link-certificate{
     color: rgba(0, 0, 0, 0.45)
 }

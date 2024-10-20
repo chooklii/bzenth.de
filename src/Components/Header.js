@@ -1,41 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import {TranslationContext, localeNames} from "../helper"
+import {TranslationContext} from "../helper"
 import {LanguageSwitch} from "./LanguageSwitch"
 
-const formatHeaderData = (entries) => {
-  const fields =  entries.map(x => x.fields)
-  return fields.reduce(
-      (obj, item) => Object.assign(obj, { [item.key]: item.name }), {});
-}
-
-const defaultHeaderNames = {
-  "public": "Projekte",
-  "skills": "Skills",
-  "about": "Über mich",
-  "kontakt": "Kontakt",
-  "impressum": "Impressum"
-}
-
-const Header = () => {
+const  Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [headerNames, setHeaderNames] = useState(defaultHeaderNames)
-  const {language, getData} = useContext(TranslationContext)
-
-  useEffect(() => {
-    const fetchHeaderData = async () => {
-      try{
-        const headerData = await getData("header")
-        if(headerData){
-          setHeaderNames(formatHeaderData(headerData))
-        }
-      }catch(e){
-            console.log("Error while trying to fetch data from contentful", e)
-      }
-    }
-    fetchHeaderData()
-
-  }, [language])
+  const {language, getText} = useContext(TranslationContext)
 
   const showMobileMenu = () => {
     if (mobileMenu) {
@@ -92,35 +62,35 @@ const Header = () => {
           className="header-element"
           to="/projekte"
         >
-          {headerNames.public}
+          {getText("header.projects")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
           to="/skills"
         >
-          {headerNames.skills}
+          {getText("header.skills")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
           to="/privat"
         >
-          {headerNames.about}
+          {getText("header.aboutMe")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
           to="/kontakt"
         >
-          {headerNames.kontakt}
+          {getText("header.contact")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element notShownDesktop"
           to="/impressum"
         >
-          {headerNames.impressum}
+          {getText("header.imprint")}
         </Link>
         <LanguageSwitch/>
       </div>

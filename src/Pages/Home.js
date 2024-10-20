@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
-import {Row, Col, Button,Select, Skeleton} from "antd"
+import {Row, Col, Button,Select} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  contentfulClient,
   localeNames,
   keyGenerator,
+  TranslationContext,
 } from "../helper";
 import {
   faLanguage,
@@ -20,8 +20,6 @@ const rotatingText = function (el, toRotate, period) {
   this.tick();
   this.isDeleting = false;
 };
-
-const locales = ["de", "en"]
 
 rotatingText.prototype.tick = function () {
   const i = this.loopNum % this.toRotate.length;
@@ -55,8 +53,8 @@ rotatingText.prototype.tick = function () {
 
 const Home = () => {
   const [redirect, setRedirect] = useState(false)
-  const [data, setData] = useState(null)
-  const [language, setLanguage] = useState("de")
+  const { language, setLanguage, getText, locales } = useContext(TranslationContext);
+
 
   useEffect(() => {
     const searchParams = new URLSearchParams(document.location.search)
@@ -73,31 +71,6 @@ const Home = () => {
     renderRotation();
   }, [])
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try{
-        const data = await getData("home")
-        if(data){
-          setData(data.map(x => x.fields)[0])
-        }
-      }catch(e){
-            console.log("Error while trying to fetch data from contentful", e)
-      }
-    }
-    fetchData()
-
-  }, [language]);
-
-
-  const getData = async (key) => {
-    const fetchedData = await contentfulClient.getEntries({
-      content_type: key,
-      locale: language,
-    });
-    return fetchedData.items;
-  };
-
-
   const renderRotation = () => {
     const languageOptions = Array.prototype.slice.call(
       document.getElementsByClassName("home-rotating-text")
@@ -111,37 +84,19 @@ const Home = () => {
     });
   }
 
-  const skeleton = () => {
-    return(
-      <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
-      <div className="classic_content" >
-        <div className="home_classic_image skeleton">
-        <Skeleton active/>
-        <Skeleton active/>
-        <Skeleton active/>
-          </div>  
-      </div>
-    </Col>
-    )
-  }
-
   const classicMode =() =>{
-    if(!data){
-      return skeleton()
-    }
     return (
       <Col className="home_option option_classic" xl={12} xxl={12} lg={12} md={12} sm={24} xs={24}>
         <div className="classic_content" to="/skills">
         <img
-            src={data.normalImage.fields.file.url}
-            alt={data.normalImage.fields.description}
+            alt={getText("home.classic.alt")}
             className="home_classic_image"
           />
-        <h2 className="home_classic_name">{data.normalTitle}</h2>
-        <p className="home_text">{data.normalText}</p>
+        <h2 className="home_classic_name">{getText("home.classic.heading")}</h2>
+        <p className="home_text">{getText("home.classic.info")}</p>
         <div className="home_button">
         <Button type="primary" onClick={() => setRedirect(true)}>
-          {data.normalButtonText}
+          {getText("home.classic.button")}
         </Button>
       </div>
       </div>
@@ -150,19 +105,16 @@ const Home = () => {
   }
 
   const arcadeMode =() => {
-    if(!data){
-      return skeleton()
-    }
     return(
       <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
 
       <video autoPlay loop muted="muted" id="video_game">
-          <source src={data.gameImage.fields.file.url} type="video/mp4"/> 
+          <source src={"www.bzenth.de/static/arcade.mp4"} type="video/mp4"/> 
       </video>
-        <h2 className="home_game_name">{data.gameTitle}</h2>
-      <p className="home_text">{data.gameText}</p>
+        <h2 className="home_game_name">{getText("home.arcade.heading")}</h2>
+      <p className="home_text">{getText("home.arcade.info")}</p>
       <div className="home_button">
-        <Button onClick={() => window.location.href=`/arcade?lang=${language}`} type="primary">{data.gameButtonText}</Button>
+        <Button onClick={() => window.location.href=`/arcade?lang=${language}`} type="primary">{getText("home.arcade.button")}</Button>
       </div>
     </Col>
     )
@@ -184,9 +136,6 @@ const Home = () => {
   }
 
   const languageSelect = () => {
-    if(!locales){
-      return <div></div>
-    }
     return(
       <div className="header-element homeLanguageSelect">
     <Select defaultValue={language} style={{ fontSize: "20px" }} onChange={handleLanguageChange}>

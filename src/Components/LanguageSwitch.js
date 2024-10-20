@@ -1,39 +1,32 @@
-import React, {useContext} from "react"
-import {Select} from "antd"
+import React, { useContext } from "react";
+import { Select } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLanguage,
-} from "@fortawesome/free-solid-svg-icons";
-import {localeNames, keyGenerator, TranslationContext} from "../helper"
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { keyGenerator, TranslationContext } from "../helper";
 
 export const LanguageSwitch = () => {
-    const {language, locales, setLanguage} = useContext(TranslationContext)
+  const { language, locales, setLanguage, getText } =
+    useContext(TranslationContext);
 
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+  };
 
-const handleLanguageChange = (lang) => {
-  setLanguage(lang);
-};
+  const renderLanguageOptions = () => {
+    return locales.map((localeOption) => {
+      return (
+        <Select.Option value={localeOption} key={keyGenerator()}>
+          <div>
+            <FontAwesomeIcon icon={faLanguage} />
+            <span className="localeText">
+              {getText("locales." + localeOption)}
+            </span>
+          </div>
+        </Select.Option>
+      );
+    });
+  };
 
-const renderLanguageOptions = () => {
-  return locales.map((localeOption) => {
-    return (
-      <Select.Option value={localeOption.code} key={keyGenerator()}>
-        <div>
-          <FontAwesomeIcon icon={faLanguage} />
-          <span className="localeText">
-            {localeNames[language][localeOption.code]}
-          </span>
-        </div>
-      </Select.Option>
-    );
-  });
-};
-
-const languageSelect = () => {
-    console.log(locales)
-  if (!locales) {
-    return <div></div>;
-  }
   return (
     <div className="header-element">
       <Select
@@ -46,19 +39,3 @@ const languageSelect = () => {
     </div>
   );
 };
-
-if (!locales) {
-    return <div></div>;
-  }
-  return (
-    <div className="header-element">
-      <Select
-        defaultValue={language}
-        style={{ fontSize: "20px" }}
-        onChange={handleLanguageChange}
-      >
-        {renderLanguageOptions()}
-      </Select>
-    </div>
-  );
-}

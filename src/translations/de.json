@@ -1,0 +1,36 @@
+{
+    "home": {
+        "classic": {
+            "heading": "Klassische Webseite",
+            "info": "Normale Webseite - Alle Inhalte direkt verfügbar.",
+            "alt": "Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon",
+            "button": "Zur Webseite"
+        },
+        "arcade": {
+            "heading": "Arcade Modus",
+            "info": "Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.",
+            "alt": "Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel",
+            "button": "Zum Arcade Modus"
+        }
+    },
+    "skills": {
+        "programming": "Programmiersprachen",
+        "frameworks": "Frameworks",
+        "databases": "Datenbanken",
+        "technology": "weitere Technologien",
+        "other": "sonstige Skills",
+        "language": "Sprachen"
+    },
+    "header": {
+        "projects": "Projekte",
+        "skills": "Skills",
+        "aboutMe": "Über mich",
+        "contact": "Kontakt",
+        "imprint": "Impressum"
+    },
+    "locales": {
+        "de": "Deutsch",
+        "en": "Englisch"
+    }
+
+}
