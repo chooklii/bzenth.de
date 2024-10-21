@@ -1,79 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import GameHome from "./GameHome";
 import {
   TranslationContext,
-  contentfulClient,
 } from "../helper";
-
 
 import "../../static/css/style-game.css";
 import "antd/dist/antd.css";
+import { translations } from "../translations";
 
 const App = () => {
   const [language, setLanguage] = useState("de");
-  const [locales, setLocales] = useState(null);
-  const [data, setData] = useState(null);
 
-  const fetchLocales = async () => {
-    const entry = await contentfulClient
-      .getLocales()
-      .catch((err) => console.log(err));
-
-    setLocales(entry.items);
-    return entry.items;
-  };
-
-  const getData = async (key, byTag = false) => {
-    // initial setup, fetch locales and setup empty data
-    if (!data && !locales) {
-      const fetchedLocales = await fetchLocales();
-      const languageOptions = fetchedLocales.map((x) => x.code);
-      const emptyData = {};
-      languageOptions.forEach((key) => {
-        emptyData[key] = {};
-      });
-      setData(emptyData);
-      return checkIfDataExists(emptyData, key, byTag);
+  const getText = (key) => {
+    if(key in translations[language]){
+      return translations[language][key]
     }
-    return checkIfDataExists(data, key, byTag);
-  };
-
-  const checkIfDataExists = async (data, key, byTag) => {
-    // check if key for language is defined, if not fetch data
-    if (key in data[language]) {
-      return data[language][key];
-    } else if (!byTag) {
-      const fetchedData = await fetchDataByContentType(key);
-      data[language][key] = fetchedData;
-      return fetchedData;
-    } else {
-      const fetchedData = await fetchDataByTag(key);
-      data[language][key] = fetchedData;
-      return fetchedData;
-    }
-  };
-
-  const fetchDataByContentType = async (key) => {
-    const fetchedData = await contentfulClient.getEntries({
-      content_type: key,
-      locale: language,
-    });
-    return fetchedData.items;
-  };
-
-  const fetchDataByTag = async (key) => {
-    const fetchedData = await contentfulClient.getEntries({
-      [`metadata.tags[${key}]`]: true,
-      locale: language,
-    });
-    return fetchedData.items;
-  };
-
+    return translations["de"][key]
+  }
 
   return (
     <div className="app">
       <TranslationContext.Provider
-        value={{ language, locales, setLanguage, getData }}
+          value={{ language, locales: ["de", "en"], setLanguage, texts: translations, getText }}
       >
         <GameHome />
       </TranslationContext.Provider>

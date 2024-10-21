@@ -19,14 +19,44 @@ body{
     overflow-y: scroll;
 }
 
+.classic_first{
+    content:url("../img/aboutme_01.jpeg");
+}
+
+.bzenth{
+    content:url("../img/bzenth.png")
+}
+
+.gradulator{
+    content:url("../img/gradulator.png")
+}
+
+.opnv{
+    content:url("../img/oepnv.png")
+}
+
+.hartwork{
+    content:url("../img/hartwork.png")
+}
+
+.classic_second{
+    content:url("../img/aboutme_02.jpeg");
+}
+
+.image-contact{
+    content: url("../img/contact.jpeg")
+}
+
 .header-mobile-menu-icon{
     background: url("../toggle.svg")
 }
 
 .home_classic_image{
-    background: url("../home.jpeg");
+    content:url("../img/home.jpeg");
 }
 
 .link-certificate{
-    color: rgba(0, 0, 0, 0.45)
+    color: rgba(0, 0, 0, 0.45);
+    outline: black !important;
+    text-decoration: underline !important
 }

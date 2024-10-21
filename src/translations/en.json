@@ -25,10 +25,120 @@
         "skills": "Skills",
         "aboutMe": "About me",
         "contact": "Contact",
+        "blog": "Blog",
         "imprint": "Imprint"
     },
     "locales": {
         "de": "German",
         "en": "English"
+    },
+    "aboutme": {
+        "path": {
+            "01": "training as an industrial clerk",
+            "02": "Evening school technical college entrance qualification",
+            "03": "Bachelor's degree Business informatics",
+            "04": "Working student application developer at Bechtle AG",
+            "05": "Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG",
+            "06": "Full Time Software Engineer at Bechtle AG",
+            "07": "Masters-degree Business Informatics - Information Management and Data Science",
+            "08": "Masterthesis: Modelling and Simulating the scalability of web application architectures",
+            "09": "Software Engineer at Bechtle AG",
+            "10": "IT Team lead software development at Bechtle AG",
+            "11": "Freelancer"
+        },
+        "paper": {
+            "01": "Modelling and simulating the scalability of e-commerce web application architectures",
+            "02": "Identification and classification of data architectures",
+            "03": "IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration"
+        },
+        "certificates": {
+            "01": "Gitlab Certified Associate",
+            "02": "Grundlagen des Onlinemarketings",
+            "link": "Verifikationslink"
+        },
+        "private": {
+            "headings": {
+                "age": "Age",
+                "location": "Location",
+                "sport_hobbies": "Sport Hobbies",
+                "other_hobbies": "Other Hobbies"
+            },
+            "content": {
+                "age": "27",
+                "location": "Area of Öhringen, Germany",
+                "sport_hobbies": "Running, Cycling, Swimming and general interests for all kinds of sports",
+                "other_hobbies": "Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming"
+            }
+        },
+        "headings": {
+            "path": "Career",
+            "papers": "Scientific publications",
+            "private": "Privat",
+            "zertificates": "Certificates"
+        },
+        "alt_img_one": "Picture of me within an old telephone booth",
+        "alt_img_two": "Picture of me within an old telephone booth"
+    },
+    "contact": {
+        "text": "For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels",
+        "text_game": "Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.",
+        "alt_game": "Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.",
+        "alt": "Picture of me within an old telephone booth"
+    },
+    "imprint": {
+        "01": "The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.",
+        "02": "This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.",
+        "03": "The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.",
+        "04": "This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).",
+        "01_heading": "content warning",
+        "02_heading": "external links",
+        "03_heading": "Copyright and neighbouring rights",
+        "04_heading": "data privacy",
+        "source": "Source" 
+    },
+    "projects": {
+        "links": "Links",
+        "info": "Description",
+        "tech": "Technology",
+        "code": "Source Code",
+        "site": "Website",
+        "alt": "Image of the Website",
+        "npm": "NPM",
+        "bzenth": {
+            "info": "My own website. Split into a regular page and an arcade-mode.",
+            "tech": "Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages"
+        },
+        "gradulator": {
+            "info": "Webapplication to calculate the current average grade of your Heilbronn University degree",
+            "tech": "Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side."
+        },
+        "opnv": {
+            "info": "Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.",
+            "tech": "Flask Application hosted on Heilbronn University Servers",
+            "press": "Press release"
+        },
+        "hartwork": {
+            "info": "Reference from my time as a freelancer - physiotherapie website"
+        },
+        "numwords": {
+            "info": "NPM package to convert numbers into their equivalent german language word",
+            "tech": "Javascript"
+        },
+        "bool": {
+            "info": "NPM package to convert booleans into true/false in a given language",
+            "tech": "Javascript"
+        },
+        "router": {
+            "info": "Script to restart a vodafone-router at a given time of the day",
+            "tech": "Python with Selenium"
+        },
+        "storagable": {
+            "info": "Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive",
+            "tech": "Javascript with React in the Frontend - Express Backend"
+        },
+        "simulation": {
+            "info": "Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)",
+            "tech": "Python with the framework simpy"
+        }
     }
 }

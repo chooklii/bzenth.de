@@ -3,7 +3,6 @@ import { Redirect } from "react-router-dom";
 import {Row, Col, Button,Select} from "antd"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  localeNames,
   keyGenerator,
   TranslationContext,
 } from "../helper";
@@ -128,7 +127,7 @@ const Home = () => {
     return locales.map(localeOption => {
       return(
         <Select.Option  value={localeOption} key={keyGenerator()}>
-            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{localeNames[language][localeOption]}</span></div>
+            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{getText("locales."+localeOption)}</span></div>
         </Select.Option>
       )
     })

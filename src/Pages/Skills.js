@@ -41,19 +41,20 @@ const technologies = [
   {name: "Apache Kafka", rating: 4},
   {name: "HTML", rating: 4},
   {name: "JUnit", rating: 4},
+  {name: "Splunk",rating: 4},
   {name: "Pytest", rating: 3},
   {name: "CSS", rating: 3},
   {name: "Webpack", rating: 3},
   {name: "Redux", rating: 2},
   {name: "Kubernetes", rating: 2},
-  {name: "Docker", rating: 2}
+  {name: "Docker", rating: 2},
+  {name: "Contentful", rating: 2}
 ]
 
 const other = [
   {name: "Git/Gitflow",rating: 5},
   {name: "Scrum",rating: 5},
   {name: "Jira/Bamboo",rating: 4},
-  {name: "Splunk",rating: 4},
   {name: "Data Science",rating: 3},
   {name: "Unit Tests",rating: 3},
   {name: "SEO",rating: 3}

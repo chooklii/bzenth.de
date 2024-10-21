@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Switch, Route  } from "react-router-dom";
 import {
   Skills,
@@ -10,8 +10,7 @@ import {
   Imprint,
 } from "../Pages"
 import {
-  TranslationContext,
-  contentfulClient,
+  TranslationContext
 } from "../helper";
 import { ScrollToTop } from "../Components";
 
@@ -37,7 +36,7 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <TranslationContext.Provider
-c          value={{ language, locales: ["de", "en"], setLanguage, texts: translations, getText }}
+         value={{ language, locales: ["de", "en"], setLanguage, texts: translations, getText }}
         >
           <Switch>
             <Route exact path="/">

@@ -356,28 +356,29 @@
     margin: 0 auto
 }
 
-.gradulator{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 417px;
-    height: 200px;
-    margin: 0 auto
+.bzenth{
+    content:url("../img/bzenth.png")
 }
 
-.oepnv{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 411px;
-    height: 218px;
-    margin: 0 auto
+.gradulator{
+    content:url("../img/gradulator.png")
+}
+
+.opnv{
+    content:url("../img/oepnv.png")
 }
 
 .hartwork{
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 411px;
-    height: 218px;
-    margin: 0 auto
+    content:url("../img/hartwork.png")
+}
+
+
+.game_contact_image{
+    content: url("../img/contact_game.jpg");
+}
+
+.projects_text{
+    min-height: 60px;
 }
 
 .localeText{

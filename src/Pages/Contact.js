@@ -2,10 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { TranslationContext } from "../helper";
 import { Footer, Header } from "../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { Avatar } from "antd";
 
@@ -14,36 +11,12 @@ const link_github = "https://github.com/chooklii";
 const mail = "kontakt@bzenth.de";
 
 const Contact = (props) => {
-  const [contactText, setContactText] = useState(null);
-  const [image, setImage] = useState(null);
-  const [gameImage, setGameImage] = useState(null)
-  const { language, getData } = useContext(TranslationContext);
+  const { getText } = useContext(TranslationContext);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await getData("contact");
-        if (data) {
-          setGameImage(data[0].fields.gameImage.fields);
-          setImage(data[0].fields.image.fields);
-          setContactText(data[0].fields);
-        }
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchData();
-  }, [language]);
-
-  if (!contactText) {
-    return <div>{!props.game && <Header />}</div>;
-  }
   if (props.game) {
     return (
       <div>
-        <p className="game_text">
-          {contactText.game}
-        </p>
+        <p className="game_text">{getText("contact.text_game")}</p>
 
         <a className="game_contact_link" href={"mailto:" + mail}>
           <FontAwesomeIcon className="icon_game" icon={faAt} />
@@ -57,28 +30,16 @@ const Contact = (props) => {
           <FontAwesomeIcon className="icon_game" icon={faGithub} />
           GitHub
         </a>
-        <img
-            src={gameImage.file.url}
-            alt={gameImage.description}
-            className="game_contact_image"
-          />
+        <img alt={getText("contact.alt_game")} className="game_contact_image" />
       </div>
     );
   } else
     return (
       <div>
-        {!props.game && <Header />}
-
+        <Header />
         <div className="contact page_classic">
-          <div className="image-contact desktop">
-            {image && (
-              <Avatar size={250} alt={image.description} src={image.file.url} />
-            )}
-          </div>
-
-          <div className="contact-first-line">
-            {contactText ? contactText.text : <div />}
-          </div>
+          <img alt={getText("contact.alt")} className="image-contact desktop" />
+          <div className="contact-first-line">{getText("contact.text")}</div>
 
           <div className="contact-options">
             <a className="contact_link" href={"mailto:" + mail}>
@@ -94,13 +55,9 @@ const Contact = (props) => {
               GitHub
             </a>
           </div>
-          <div className="image-contact mobile">
-            {image && (
-              <Avatar size={200} alt={image.description} src={image.file.url} />
-            )}
-          </div>
+          <img alt={getText("contact.alt")} className="image-contact mobile" />
         </div>
-        {!props.game && <Footer />}
+        <Footer />
       </div>
     );
 };

@@ -38,6 +38,7 @@
         width: 100%;
         display: inline-flex;
         justify-content: center;
+        min-height: 70px
     }
 
     .button_public_project{
@@ -51,9 +52,10 @@
     .image_classic{
         background-repeat: no-repeat;
         background-size: cover;
-        width: 80%;
-        margin-left: 10%;
-        min-height: 30vh;
+        max-height: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .classic_text{
@@ -306,7 +308,10 @@
     }
 
     .image-contact{
-        text-align: center;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .contact-mailadress{
@@ -435,6 +440,16 @@
         margin-left: 5px;
       }
 
+      .projects_text{
+        text-align: center;
+        width: 90%;
+        min-height: 70px;
+        margin-left: 5%
+      }
+
+      .project_classic{
+        margin-bottom: 65px
+      }
 
 
 }

@@ -8,7 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.10",
-    "antd": "^4.12.3",
+    "antd": "^4.23.0",
     "contentful": "^9.2.9",
     "cors": "^2.8.5",
     "flat": "^6.0.1",

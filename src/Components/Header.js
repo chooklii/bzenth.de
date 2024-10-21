@@ -81,6 +81,13 @@ const  Header = () => {
         <Link
           onClick={() => hideMenu()}
           className="header-element"
+          to="/blog"
+        >
+          {getText("header.blog")}
+        </Link>
+        <Link
+          onClick={() => hideMenu()}
+          className="header-element"
           to="/kontakt"
         >
           {getText("header.contact")}

@@ -26,11 +26,121 @@
         "skills": "Skills",
         "aboutMe": "Über mich",
         "contact": "Kontakt",
+        "blog": "Blog",
         "imprint": "Impressum"
     },
     "locales": {
         "de": "Deutsch",
         "en": "Englisch"
-    }
+    },
+    "aboutme": {
+        "path": {
+            "01": "Ausbildung zum Industriekaufmann",
+            "02": "Abendschule Fachhochschulreife",
+            "03": "Bachelorstudium Wirtschaftsinformatik",
+            "04": "Werksstudent Anwendungsentwickler Bechtle AG",
+            "05": "Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG",
+            "06": "Vollzeit Softwareingenieur Bechtle AG",
+            "07": "Master Wirtschaftsinformatik - Informationsmanagement und Data Science",
+            "08": "Masterarbeit: Modelling and Simulating the scalability of web application architectures",
+            "09": "Softwareingenieur Bechtle AG",
+            "10": "Teamleiter Softwareentwicklung Bechtle AG",
+            "11": "Freiberuflicher Softwareentwickler"
+        },
+        "paper": {
+            "01": "Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen",
+            "02": "Identifikation und Klassifizierung von Datenarchitekturen",
+            "03": "IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung"
+        },
+        "headings": {
+            "path": "Werdegang",
+            "papers": "Wissenschaftliche Publikationen",
+            "private": "Privat",
+            "certificates": "Zertifikate"
+        },
+        "certificates": {
+            "01": "Gitlab Certified Associate",
+            "02": "Fundamentals of online marketing",
+            "link": "Verification"
+        },
+        "private": {
+            "headings": {
+                "age": "Alter",
+                "location": "Wohnort",
+                "sport_hobbies": "Sport Hobbies",
+                "other_hobbies": "Andere Hobbies"
+            },
+            "content": {
+                "age": "27",
+                "location": "Raum Öhringen, Deutschland",
+                "sport_hobbies": "Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart",
+                "other_hobbies": "Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospieleg"
+            }
+        },
+        "alt_img_one": "Bild von mir in einer alten Telefonzelle",
+        "alt_img_two": "Bild von mir in einer alten Telefonzelle"
+    },
+    "contact": {
+        "text": "Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden",
+        "text_game": "Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.",
+        "alt_game": "Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.",
+        "alt": "Bild von mir in einer alten Telefonzelle"
+    },
+    "imprint": {
+        "01": "Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.",
+        "02": "Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.",
+        "03": "Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.",
+        "04": "Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)",
+        "01_heading": "Warnhinweis zu Inhalten",
+        "02_heading": "Externe Links",
+        "03_heading": "Urheber- und Leistungsschutzrechte",
+        "04_heading": "Datenschutz",
+        "source": "Quelle"
+    },
+    "projects": {
+        "links": "Links",
+        "info": "Beschreibung",
+        "tech": "Technologie",
+        "code": "Programmcode",
+        "site": "Webseite",
+        "alt": "Image of the Website",
+        "npm": "NPM",
+        "bzenth": {
+            "info": "Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus",
+            "tech": "Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages"
+        },
+        "gradulator": {
+            "info": "Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten",
+            "tech": "Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt."
+        },
+        "opnv": {
+            "info": "Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.",
+            "tech": "Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.",
+            "press": "Pressemitteilung"
+        },
+        "hartwork": {
+            "info": "Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie"
+        },
+        "numwords": {
+            "info": "NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln",
+            "tech": "Javascript"
+        },
+        "bool": {
+            "info": "NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln",
+            "tech": "Javascript"
+        },
+        "router": {
+            "info": "Skript um automatisiert Vodafone-Router neuzustarten.",
+            "tech": "Python mit Selenium"
+        },
+        "storagable": {
+            "info": "Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)",
+            "tech": "Javascript mit React im FE - Express Backend. "
+        },
+        "simulation": {
+            "info": "Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)",
+            "tech": "Python unter Verwendung von Simpy"
+        }
 
+    }
 }

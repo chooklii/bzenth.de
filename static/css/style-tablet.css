@@ -29,17 +29,25 @@
     }
 
     .desktop{
-        display: none
+        display: none !important
     }
 
     .image-contact{
-        text-align: center;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .design_buttons{
         width: 100%;
         display: inline-flex;
         justify-content: center;
+        min-height: 50px
+    }
+
+    .projects_text{
+        min-height: 50px
     }
 
     .button_public_project{
@@ -62,38 +70,13 @@
         margin-right: 5px;
     }
 
-    .image-project{
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;
-        margin: 0 auto
-    }
-
-    .storagable{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 80%;
-        padding-top: 52%;
-        margin: 0 auto
-    }
-
-    .mealtracker{
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 80%;
-        padding-top: 52%;
-        margin: 0 auto
-    }
-
     .image_classic{
         background-repeat: no-repeat;
         background-size: cover;
-        width: 70%;
-        margin-left: 15%;
-        min-height: 30vh;
+        max-height: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact_link{
@@ -443,6 +426,16 @@
 
       .imprint-h2{
           font-size: 20px;
+      }
+
+      .image-project{
+        background-repeat: no-repeat;
+        background-size: contain;   
+        max-height: 250px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
 
 

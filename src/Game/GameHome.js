@@ -28,7 +28,7 @@ import {
   sawTexts,
   spikeTexts,
 } from "./config";
-import { TranslationContext, localeNames, keyGenerator } from "../helper";
+import { TranslationContext, keyGenerator } from "../helper";
 
 const config = {
   type: Phaser.AUTO,
@@ -64,7 +64,7 @@ const GameHome = () => {
   const [music_playing, setMusicPlaying] = useState(false);
   const [music_playlist, setMusicPlaylist] = useState(music_menu);
   const [music_index, setMusicIndex] = useState(0);
-  const { language, setLanguage } = useContext(TranslationContext);
+  const { language, setLanguage, getText } = useContext(TranslationContext);
 
   useEffect(() => {
     initDefaultGame();
@@ -234,7 +234,7 @@ const GameHome = () => {
     return locales.map(localeOption => {
       return(
         <Select.Option  value={localeOption} key={keyGenerator()}>
-            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{localeNames[language][localeOption]}</span></div>
+            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{getText("locales."+localeOption)}</span></div>
         </Select.Option>
       )
     })
