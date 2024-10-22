@@ -25,7 +25,8 @@ class Game extends Phaser.Scene{
       rocks: [],
       saws: [],
       spikeheads: [],
-      elevatorheads: []
+      elevatorheads: [],
+      startRun: null
     }
   }
 
@@ -223,6 +224,7 @@ playerdeath(type){
   if(deathsound.currentTime == 0 && this.game.playMusic) deathsound.play()
   if(!hit){
     hit=true
+    this.state.startRun=null
     this.game.death(type)
   }
 }
@@ -263,7 +265,9 @@ playerdeath(type){
   finished(){
     this.game.playMusic && finishsound.play()
     finish.anims.play("animation_finish", true)
-    this.game.finished()
+
+    const runTime = Date.now() - this.state.startRun
+    this.game.finished(runTime)
   }
 
   initAnimations(){
@@ -397,23 +401,33 @@ playerdeath(type){
     })
   }
 
+  setStartDate(){
+    if(this.state.startRun === null){
+      this.state.startRun = Date.now()
+    }
+  }
+
 
   movePlayer(){
     const cursors = this.input.keyboard.createCursorKeys();
     const keyR = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R)
     if(keyR.isDown){
       this.game.restart()
+      this.state.startRun = null;
     }
     if(cursors.space.isDown && player.body.touching.down){
+      this.setStartDate()
       player.setVelocityY(-320);
       player.anims.play("jump", true)
     }
     if(cursors.right.isDown){
+      this.setStartDate()
       lastMovingDirection = "r"
       player.setVelocityX(160);
       player.anims.play("right", true)
     }
     else if(cursors.left.isDown){
+      this.setStartDate()
       lastMovingDirection = "l"
       player.setVelocityX(-160);
       player.anims.play("left", true)
@@ -424,8 +438,7 @@ playerdeath(type){
      }
   }
 
-  init(){
-  }
+  init(){}
 
 
 }

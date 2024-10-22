@@ -8,7 +8,10 @@ import {
   faVolumeUp,
   faVolumeMute,
   faTimes,
-  faLanguage
+  faLanguage,
+  faSkull,
+  faExpand,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { AboutMe, Skills, Contact, Projects, Credits } from "../Pages";
 import {
@@ -29,6 +32,7 @@ import {
   spikeTexts,
 } from "./config";
 import { TranslationContext, keyGenerator } from "../helper";
+import { sign, verify } from "jsonwebtoken";
 
 const config = {
   type: Phaser.AUTO,
@@ -47,16 +51,19 @@ const config = {
 var game;
 var currentSong;
 
-const locales = ["de", "en"]
+const locales = ["de", "en"];
 
 const GameHome = () => {
   const [screenHeight, setScreenHight] = useState(0);
   const [screenWidth, setScreenWidth] = useState(0);
   const [finishedLevel, setFinishedLevel] = useState([]);
+  const [metaData, setMetaData] = useState({});
   const [selectedLevel, setSelectedLevel] = useState(null);
   const [showMenu, setShowMenu] = useState(true);
   const [showSettings, setShowSettings] = useState(false);
   const [deathscreen, setShowDeadscreen] = useState(false);
+  const [finishScreen, setShowFinishScreen] = useState(false);
+  const [finishScreenData, setFinishScreenData] = useState({});
   const [killedBy, setKilledBy] = useState(false);
   const [currentPage, setCurrentPage] = useState(null);
   const [displayPage, setDisplayPage] = useState(false);
@@ -76,20 +83,87 @@ const GameHome = () => {
     const searchParams = new URLSearchParams(document.location.search);
     const langQueryParm = searchParams.get("lang");
     if (langQueryParm) {
-      window.history.pushState({}, document.title, window.location.pathname );
+      window.history.pushState({}, document.title, window.location.pathname);
       setLanguage(langQueryParm);
     }
   };
 
   const readLocalStorage = () => {
-    const dataFromLocalStorage = localStorage.getItem("finishedLevel");
-    if (dataFromLocalStorage) {
-      setFinishedLevel(dataFromLocalStorage);
+    const dataFromLocalStorage = localStorage.getItem("gamedata");
+    if (!dataFromLocalStorage) return;
+    try {
+      const decoded = verify(dataFromLocalStorage, "hackerman");
+      if (decoded) {
+        setFinishedLevel(decoded.finishedLevel);
+        setMetaData(decoded.metaData);
+      }
+    } catch (e) {
+      console.log("Found invalid JWT - ignore");
     }
   };
 
+  const addDeathToCount = (id) => {
+    let newData;
+    if(!(id in metaData)){
+      newData = Object.assign(metaData, {[id]: {deaths: 1}})
+    }
+    else{
+      const oldData = metaData[id];
+      newData = Object.assign(metaData, {[id]: {
+        deaths: oldData.deaths +=1,
+        record: oldData.record,
+        screenSize: oldData.screenSize
+      }})
+    }
+    setMetaData(newData);
+
+    const tokenData = {
+      finishedLevel: finishedLevel,
+      metaData: newData,
+    };
+    writeJsonToStorage(tokenData)
+  }
+
+      // i know that this is not the way to use jwt, but its the easiest way to prevent my friends from simple cheating - now they at least need to show some efford.
+  const writeJsonToStorage = (object) => {
+    const token = sign(object, "hackerman");
+    localStorage.setItem("gamedata", token);
+  }
+
+  const writeLocalStorage = (id, runTime) => {
+    let newData;
+    if (id in metaData) {
+      const oldLevelData = metaData[id];
+      const newLevelData = {
+        deaths: oldLevelData.deaths,
+        record: oldLevelData.record > runTime ? runTime : oldLevelData.record,
+        screenSize:
+          oldLevelData.record > runTime
+            ? getScreenSize().type
+            : oldLevelData.screenSize,
+      };
+      newData = Object.assign(metaData, { [id]: newLevelData });
+      setMetaData(newData);
+    } else {
+      const levelData = {
+        deaths: 0,
+        record: runTime,
+        screenSize: getScreenSize().type,
+      };
+      newData = Object.assign(metaData, { [id]: levelData });
+      setMetaData(newData);
+    }
+
+    const tokenData = {
+      finishedLevel: finishedLevel,
+      metaData: newData,
+    };
+    writeJsonToStorage(tokenData)
+  };
+
   const resetLevel = () => {
-    localStorage.removeItem("finishedLevel");
+    localStorage.removeItem("gamedata");
+    setMetaData({})
     setFinishedLevel([]);
   };
 
@@ -181,16 +255,23 @@ const GameHome = () => {
     }
   };
 
-  const finished = (id) => {
-    finishedLevel.push(id);
-    localStorage.setItem("finishedLevel", finishedLevel);
-    updateMusic(music_menu);
-    setShowMenu(true);
+  const finished = (runTime, id) => {
+    if (!finishedLevel.includes(id)) {
+      finishedLevel.push(id);
+    }
+    setFinishScreenData({
+      id: id,
+      time: runTime,
+      oldMetaData: JSON.parse(JSON.stringify(metaData)),
+    });
+    writeLocalStorage(id, runTime);
     game.scene.pause("default");
+    setShowFinishScreen(true);
   };
 
-  const death = (way) => {
+  const death = (way, levelId) => {
     setShowDeadscreen(true);
+    addDeathToCount(levelId);
     setKilledBy(way);
     window.addEventListener("keydown", (event) => {
       if ((event.key === "r" || event.key === "R") && deathscreen) {
@@ -215,51 +296,58 @@ const GameHome = () => {
     game.levels = levels[id];
     game.type = type;
     game.playMusic = music_playing;
-    game.finished = () => finished(id);
-    game.death = (way) => death(way);
+    game.finished = (runTime) => finished(runTime, id);
+    game.death = (way) => death(way, id);
     game.restart = () => restartLevel();
   };
 
   const restartLevel = () => {
     game.destroy(true);
     setShowDeadscreen(false);
+    setShowFinishScreen(false);
     initGame(selectedLevel);
   };
 
   const handleLanguageChange = (lang) => {
-    setLanguage(lang)
-  }
+    setLanguage(lang);
+  };
 
   const renderLanguageOptions = () => {
-    return locales.map(localeOption => {
-      return(
-        <Select.Option  value={localeOption} key={keyGenerator()}>
-            <div><FontAwesomeIcon icon={faLanguage} /><span className="localeText">{getText("locales."+localeOption)}</span></div>
+    return locales.map((localeOption) => {
+      return (
+        <Select.Option value={localeOption} key={keyGenerator()}>
+          <div>
+            <FontAwesomeIcon icon={faLanguage} />
+            <span className="localeText">
+              {getText("locales." + localeOption)}
+            </span>
+          </div>
         </Select.Option>
-      )
-    })
-
-  }
+      );
+    });
+  };
 
   const languageSelect = () => {
-    if(!locales){
-      return <div></div>
+    if (!locales) {
+      return <div></div>;
     }
-    return(
+    return (
       <div className="header-element">
-    <Select defaultValue={language} onChange={handleLanguageChange}>
-      {renderLanguageOptions()}
-    </Select>
+        <Select defaultValue={language} onChange={handleLanguageChange}>
+          {renderLanguageOptions()}
+        </Select>
       </div>
-    )
-  }
+    );
+  };
 
   const levelSelection = () => {
     return (
       <div className="level_selector">
         <div className="game_back">
           {languageSelect()}
-          <Button className="margin_left" onClick={() => resetLevel()}>{translation[language].reset}</Button>
+          <Button className="margin_left" onClick={() => resetLevel()}>
+            {translation[language].reset}
+          </Button>
           <Button
             className="margin_left"
             onClick={() => (window.location.href = `/?lang=${language}`)}
@@ -271,7 +359,7 @@ const GameHome = () => {
         <div className="explaination">
           <h1 className="explaination_heading">{translation[language].name}</h1>
           <div className="explaination_text">
-          {translation[language].explaination}
+            {translation[language].explaination}
           </div>
           <div className="explaination_setting">
             <div className="single_setting">
@@ -312,31 +400,66 @@ const GameHome = () => {
             <div className={"level l" + levelID}></div>
             <div className="single_level_name">{levelName}</div>
           </div>
-          {unlock_button(levelID)}
-          <div className="button_start_level">
-            <Tooltip
-              title={
-                disabled
-                  ? translation[language].startNotUnlocked
-                  : translation[language].startUnlocked
-              }
-            >
-              <Button
-                type="primary"
-                style={{ minWidth: "100%" }}
-                onClick={() => selectedNewLevel(levelID, music_theme)}
-                disabled={disabled}
+
+          {highscore(levelID)}
+          <div className="button_wrapper">
+            {unlock_button(levelID)}
+
+            <div className="button_start_level">
+              <Tooltip
+                title={
+                  disabled
+                    ? translation[language].startNotUnlocked
+                    : translation[language].startUnlocked
+                }
               >
-                <div className="button_start_text">
-                  <div className="level_play"></div>
-                  {translation[language].start}
-                </div>
-              </Button>
-            </Tooltip>
+                <Button
+                  type="primary"
+                  style={{ minWidth: "100%" }}
+                  onClick={() => selectedNewLevel(levelID, music_theme)}
+                  disabled={disabled}
+                >
+                  <div className="button_start_text">
+                    <div className="level_play"></div>
+                    {translation[language].start}
+                  </div>
+                </Button>
+              </Tooltip>
+            </div>
           </div>
         </div>
       </Col>
     );
+  };
+
+  const highscore = (levelID) => {
+    if (levelID in metaData) {
+      const levelData = metaData[levelID];
+
+      return (
+        <div className="highscore">
+            <Tooltip
+            title={
+              "Bisherige Bestzeit, die Bildschirmgröße der Bestzeit und die Anzahl der Tode in diesem Level"
+            }
+          >
+          <span className="icon_game">
+          <FontAwesomeIcon icon={faClock} className="icon"/>
+          {levelData.record ? levelData.record/1000 + "s" : "-"}
+          </span>
+          <span className="icon_game">
+          <FontAwesomeIcon icon={faExpand} className="icon"/>
+          {levelData.screenSize}
+          </span>
+          <span className="icon_game">
+          <FontAwesomeIcon icon={faSkull} className="icon"/>
+          {levelData.deaths}
+          </span>
+          </Tooltip>
+        </div>
+      );
+    }
+    return <div className="highscore"/>;
   };
 
   const unlock_button = (levelID) => {
@@ -395,6 +518,7 @@ const GameHome = () => {
       game.scene.pause("default");
       setShowSettings(true);
       setShowDeadscreen(false);
+      setShowFinishScreen(false);
     }
   };
   const restartIcon = () => {
@@ -415,7 +539,9 @@ const GameHome = () => {
       >
         <div className="controll">
           <div className="single_setting">
-            <div className="setting_key">{translation[language].controlls}:</div>
+            <div className="setting_key">
+              {translation[language].controlls}:
+            </div>
             <div className="setting_value">{translation[language].arrow}</div>
           </div>
           <div className="single_setting">
@@ -448,6 +574,96 @@ const GameHome = () => {
             {translation[language].mainMenu}
           </Button>
         </div>
+      </div>
+    );
+  };
+
+  const finishMenu = () => {
+    const generalHeading = (deaths) => (
+      <div>
+        <p className="finish_heading">
+          <span className="finish_blur">
+            Glückwunsch - Level {finishScreenData.id} erfolgreich beendet!
+          </span>
+        </p>
+        <p className="finish_time">
+          Der Lauf dauerte: {finishScreenData.time / 1000}s
+        </p>
+        <p className="finish_deaths">Anzahl Tode: {deaths}</p>
+        <p className="finish_size">Bildschirmgröße: {getScreenSize().type}</p>
+      </div>
+    );
+
+    const buttons = (
+      <div className="finish_button_wrapper">
+        <p
+          onClick={() => {
+            updateMusic(music_menu);
+            setShowFinishScreen(false);
+            setShowMenu(true);
+          }}
+          className="finish_button"
+        >
+          Zum Hauptmenü
+        </p>
+        <p
+          onClick={() => {
+            setShowFinishScreen(false);
+            restartLevel();
+          }}
+          className="finish_button"
+        >
+          Erneut spielen
+        </p>
+      </div>
+    );
+
+    const oldMetaForLevel =
+      finishScreenData.id in finishScreenData.oldMetaData
+        ? finishScreenData.oldMetaData[finishScreenData.id]
+        : null;
+
+    if (oldMetaForLevel) {
+      const oldBestTime = oldMetaForLevel.record;
+      const newRecord = finishScreenData.time < oldBestTime;
+      return (
+        <div className="finish_data_wrapper">
+          {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths: 0)}
+          {newRecord && (
+            <div>
+              <p className="finish_heading_newRecord">Thats a new Record!</p>
+              <p className="finish_oldRecordTime">
+                Die bisherige Rekordzeit war {oldBestTime / 1000}s
+              </p>
+              <p className="finish_record_improvement">
+                Die neue Bestzeit ist{" "}
+                {(oldBestTime - finishScreenData.time) / 1000}s schneller
+              </p>
+              <p className="finish_old_screen_size">
+                Die Bildschirmgröße der alten Bestzeit war: {" "}
+                {oldMetaForLevel.screenSize}
+              </p>
+            </div>
+          )}
+          {!newRecord && (
+            <div className="finish_oldRecordWrapper">
+              <p className="finish_oldRecord_time">
+                Die Bestzeit ist {oldBestTime / 1000}s
+              </p>
+              <p className="finish_oldRecord_size">
+                Die Bildschirmgröße der alten Bestzeit ist:{" "}
+                {oldMetaForLevel.screenSize}
+              </p>
+            </div>
+          )}
+          {buttons}
+        </div>
+      );
+    }
+    return (
+      <div className="finish_data_wrapper">
+        {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths: 0)}
+        {buttons}
       </div>
     );
   };
@@ -536,9 +752,7 @@ const GameHome = () => {
             <FontAwesomeIcon icon={faTimes} className="icon_game" />
             {translation[language].screenToSmall}
           </h2>
-          <p className="game_text">
-          {translation[language].screenToSmallText}
-          </p>
+          <p className="game_text">{translation[language].screenToSmallText}</p>
         </div>
       </div>
     );
@@ -548,6 +762,7 @@ const GameHome = () => {
     <div className="game_home">
       {showMenu && levelSelection()}
       {deathscreen && deathScreen()}
+      {finishScreen && finishMenu()}
       {displayPage && showPages()}
       <div className="game">
         {!showMenu && !displayPage && renderButtons()}

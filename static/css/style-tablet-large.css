@@ -326,7 +326,7 @@
     .header-nav{
         display: none;
         backface-visibility: hidden;
-        z-index: 2000;
+
         position: fixed;
         overflow-y: hidden;
         top: 0;
@@ -437,6 +437,10 @@
         margin-left: auto;
         margin-right: auto;
       }
+
+      .iconWrapper{
+        min-width: 40px;
+    }
 
       .projects_text{
         min-height: 70px;

@@ -122,6 +122,10 @@
     margin-right: 5px;
 }
 
+.iconWrapper{
+    min-width: 40px;
+}
+
 .contact-options{
     margin-top: 20px
 }

@@ -215,7 +215,7 @@ const AboutMe = (props) => {
           renderItem={(item) => (
             <List.Item>
               <List.Item.Meta
-                avatar={<FontAwesomeIcon icon={item.icon} size={"2x"} />}
+                avatar={<div className="iconWrapper"><FontAwesomeIcon icon={item.icon} size={"2x"} /></div>}
                 title={getText(item.heading)}
                 description={getText(item.content)}
               />

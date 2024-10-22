@@ -73,9 +73,9 @@
 
 
 .button_start_level{
-    width: 90%;
+    width: 40%;
     margin-left: 5%;
-    padding: 1em;
+    margin-right: 5%;
     justify-content: center;
     display: inline-flex;
     height: 60px;
@@ -83,6 +83,7 @@
 
 .no_unlock{
     height: 60px;
+    width: 50%;
 }
 
 .button_start_text{
@@ -546,4 +547,110 @@
 
 .ant-tooltip-disabled-compatible-wrapper{
     min-width: 100%
+}
+
+.button_wrapper{
+    display: inline-flex;
+    width: 100%;
+}
+
+.finish_heading{
+    font-family: "JosefinSans";
+    font-size: 50px;
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 0px;
+}
+
+.finish_blur{
+    backdrop-filter: blur(10px);
+}
+
+.finish_data_wrapper{
+    position: absolute;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.finish_deaths,.finish_size,.finish_time{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.finish_time{
+    font-weight: bold;
+    font-size: 30px;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.finish_size, .finish_deaths{
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.finish_button_wrapper{
+    display: inline-flex;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.finish_button{
+    font-family: "Lobster";
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.finish_oldRecordWrapper{
+    margin-left: 20%;
+}
+
+
+
+.finish_oldRecord_time{
+    font-size: 30px;
+    margin-bottom: 0px;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.finish_oldRecord_size{
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.finish_heading_newRecord,
+.finish_oldRecordTime,
+.finish_record_improvement,
+.finish_old_screen_size{
+    backdrop-filter: blur(10px);
+    margin-left: 20%;
+    font-size: 20px;
+    margin-bottom: 0px;
+    width: fit-content;
+    color: white;
+}
+
+
+.finish_heading_newRecord{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.icon_game{
+    padding: 10px
+}
+
+.highscore{
+    text-align: center;
+    min-height: 25px;
 }
