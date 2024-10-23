@@ -9,7 +9,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.10",
     "antd": "^4.23.0",
-    "contentful": "^9.2.9",
     "cors": "^2.8.5",
     "flat": "^6.0.1",
     "fs": "0.0.1-security",
