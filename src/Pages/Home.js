@@ -108,7 +108,7 @@ const Home = () => {
       <Col className="home_option option_game" xl={12} xxl={12} lg={12} md={24} sm={24} xs={24}>
 
       <video autoPlay loop muted="muted" id="video_game">
-          <source src={"www.bzenth.de/static/arcade.mp4"} type="video/mp4"/> 
+          <source src={"https://bzenth.de/static/img/arcade.mp4"} type="video/mp4"/> 
       </video>
         <h2 className="home_game_name">{getText("home.arcade.heading")}</h2>
       <p className="home_text">{getText("home.arcade.info")}</p>
