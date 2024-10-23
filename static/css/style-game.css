@@ -654,3 +654,10 @@
     text-align: center;
     min-height: 25px;
 }
+
+.explaination_record{
+    margin-left: 10%;
+    margin-bottom: 0px;
+    padding: 0;
+    font-family: "JosefinSans";
+}

@@ -62,6 +62,9 @@ const translation = {
     arrow: "Pfeiltasten",
     jump: "Springen",
     space: "Leertaste",
+    record: "Stelle persönliche Bestzeiten für jedes Level auf oder beende alle Level mit möglichst wenig Toden!",
+    screenSize: "Level unterscheiden sich je nach Bildschirmgröße (s,m,l,xl), weswegen die Info mit der Bestzeit angezeigt wird",
+    toolTipRecord: "Bisherige Bestzeit, die Bildschirmgröße der Bestzeit und die Anzahl der Tode in diesem Level",
     restart: "Neu Starten",
     start: "Level starten",
     mainMenu: "Hauptmenü",
@@ -74,8 +77,21 @@ const translation = {
     screenToSmallText: `Der genutzte Bildschirm ist leider zu klein, um den Arcade-Modus
         optimal zu nutzen. Bitte nutze einen Bildschirm, der breiter 
         als ${minWidth}px und höher als ${minHeight}px ist und besuche die Seite
-        anschließend erneut. Eine Unterstützung für kleinere Bildschirme und
-        Smartphones folgt in einer zukünftigen Version.`,
+        anschließend erneut.`,
+    finish: `Glückwunsch - Level erfolgreich beendet!`,
+    finish_time: "Der Lauf dauerte: ",
+    finish_deaths: "Gesamtzahl Tode: ",
+    finish_screen:  "Bildschirmgröße: ",
+    finish_menu: "Zum Hauptmenü",
+    finish_replay: "Erneut spielen",
+    finish_record: "Thats a new Record!",
+    finish_oldRecord: "Die bisherige Rekordzeit war: ",
+    finish_newRecord_faster_01: "Die neue Bestzeit ist ",
+    finish_newRecord_faster_02: " schneller",
+    finish_oldRecord_screen: "Die Bildschirmgröße der alten Bestzeit war:",
+    finish_best_time: "Die Bestzeit ist",
+    finish_best_time_screen: "Die Bildschirmgröße der alten Bestzeit ist:"
+
   },
   en: {
     reset: "Reset",
@@ -88,6 +104,9 @@ const translation = {
     jump: "Jump",
     space: "Space",
     restart: "Restart",
+    record: "Set record times for each level and finish all level with the least amount of deaths!",
+    screenSize: "Levels differ on different screen Sizes (s, m, l, xl) thus the information is provided with the record",
+    toolTipRecord: "Current Record, Screen Size of the Record and total amount of deaths within this level",
     back: "Back",
     start: "Start level",
     mainMenu: "Main Menu",
@@ -100,8 +119,20 @@ const translation = {
     screenToSmallText: `Unfortunately, the screen used is too small to make the best use of the arcade mode.
         to use the arcade mode optimally. Please use a screen that is wider 
         than ${minWidth}px and higher than ${minHeight}px and then visit the page
-        page again. Support for smaller screens and smartphones
-        smartphones will follow in a future version.`,
+        page again.`,
+    finish: `Congrats - You finished the level!`,
+    finish_time: "Your run took: ",
+    finish_deaths: "Total Deaths: ",
+    finish_screen:  "Screen Size: ",
+    finish_menu: "Main Menu",
+    finish_replay: "Play again",
+    finish_record: "Thats a new Record!",
+    finish_oldRecord: "The old record was: ",
+    finish_newRecord_faster_01: `The new record is `,
+    finish_newRecord_faster_02: "faster",
+    finish_oldRecord_screen: "The Screen Size of the old record was: ",
+    finish_best_time: "The record is: ",
+    finish_best_time_screen: "The Screen Size of the record is: "
   },
 };
 

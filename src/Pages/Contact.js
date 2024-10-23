@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { TranslationContext } from "../helper";
 import { Footer, Header } from "../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
-import { Avatar } from "antd";
 
 const link_linkedin = "https://www.linkedin.com/in/benjamin-zenth-6290681ba/";
 const link_github = "https://github.com/chooklii";

@@ -104,16 +104,17 @@ const GameHome = () => {
 
   const addDeathToCount = (id) => {
     let newData;
-    if(!(id in metaData)){
-      newData = Object.assign(metaData, {[id]: {deaths: 1}})
-    }
-    else{
+    if (!(id in metaData)) {
+      newData = Object.assign(metaData, { [id]: { deaths: 1 } });
+    } else {
       const oldData = metaData[id];
-      newData = Object.assign(metaData, {[id]: {
-        deaths: oldData.deaths +=1,
-        record: oldData.record,
-        screenSize: oldData.screenSize
-      }})
+      newData = Object.assign(metaData, {
+        [id]: {
+          deaths: (oldData.deaths += 1),
+          record: oldData.record,
+          screenSize: oldData.screenSize,
+        },
+      });
     }
     setMetaData(newData);
 
@@ -121,14 +122,14 @@ const GameHome = () => {
       finishedLevel: finishedLevel,
       metaData: newData,
     };
-    writeJsonToStorage(tokenData)
-  }
+    writeJsonToStorage(tokenData);
+  };
 
-      // i know that this is not the way to use jwt, but its the easiest way to prevent my friends from simple cheating - now they at least need to show some efford.
+  // i know that this is not the way to use jwt, but its the easiest way to prevent my friends from simple cheating - now they at least need to show some efford.
   const writeJsonToStorage = (object) => {
     const token = sign(object, "hackerman");
     localStorage.setItem("gamedata", token);
-  }
+  };
 
   const writeLocalStorage = (id, runTime) => {
     let newData;
@@ -158,12 +159,12 @@ const GameHome = () => {
       finishedLevel: finishedLevel,
       metaData: newData,
     };
-    writeJsonToStorage(tokenData)
+    writeJsonToStorage(tokenData);
   };
 
   const resetLevel = () => {
     localStorage.removeItem("gamedata");
-    setMetaData({})
+    setMetaData({});
     setFinishedLevel([]);
   };
 
@@ -361,6 +362,14 @@ const GameHome = () => {
           <div className="explaination_text">
             {translation[language].explaination}
           </div>
+          <div>
+            <p className="explaination_record">
+              {translation[language].record}
+            </p>
+            <p className="explaination_record">
+              {translation[language].screenSize}
+            </p>
+          </div>
           <div className="explaination_setting">
             <div className="single_setting">
               <p className="key_setting">{translation[language].controlls}: </p>
@@ -438,28 +447,24 @@ const GameHome = () => {
 
       return (
         <div className="highscore">
-            <Tooltip
-            title={
-              "Bisherige Bestzeit, die Bildschirmgröße der Bestzeit und die Anzahl der Tode in diesem Level"
-            }
-          >
-          <span className="icon_game">
-          <FontAwesomeIcon icon={faClock} className="icon"/>
-          {levelData.record ? levelData.record/1000 + "s" : "-"}
-          </span>
-          <span className="icon_game">
-          <FontAwesomeIcon icon={faExpand} className="icon"/>
-          {levelData.screenSize}
-          </span>
-          <span className="icon_game">
-          <FontAwesomeIcon icon={faSkull} className="icon"/>
-          {levelData.deaths}
-          </span>
+          <Tooltip title={translation[language].toolTipRecord}>
+            <span className="icon_game">
+              <FontAwesomeIcon icon={faClock} className="icon" />
+              {levelData.record ? levelData.record / 1000 + "s" : "-"}
+            </span>
+            <span className="icon_game">
+              <FontAwesomeIcon icon={faExpand} className="icon" />
+              {levelData.screenSize}
+            </span>
+            <span className="icon_game">
+              <FontAwesomeIcon icon={faSkull} className="icon" />
+              {levelData.deaths}
+            </span>
           </Tooltip>
         </div>
       );
     }
-    return <div className="highscore"/>;
+    return <div className="highscore" />;
   };
 
   const unlock_button = (levelID) => {
@@ -582,15 +587,17 @@ const GameHome = () => {
     const generalHeading = (deaths) => (
       <div>
         <p className="finish_heading">
-          <span className="finish_blur">
-            Glückwunsch - Level {finishScreenData.id} erfolgreich beendet!
-          </span>
+          <span className="finish_blur">{translation[language].finish}</span>
         </p>
         <p className="finish_time">
-          Der Lauf dauerte: {finishScreenData.time / 1000}s
+          {translation[language].finish_time} {finishScreenData.time / 1000}s
         </p>
-        <p className="finish_deaths">Anzahl Tode: {deaths}</p>
-        <p className="finish_size">Bildschirmgröße: {getScreenSize().type}</p>
+        <p className="finish_deaths">
+          {translation[language].finish_deaths} {deaths}
+        </p>
+        <p className="finish_size">
+          {translation[language].finish_screen} {getScreenSize().type}
+        </p>
       </div>
     );
 
@@ -604,7 +611,7 @@ const GameHome = () => {
           }}
           className="finish_button"
         >
-          Zum Hauptmenü
+          {translation[language].finish_menu}
         </p>
         <p
           onClick={() => {
@@ -613,7 +620,7 @@ const GameHome = () => {
           }}
           className="finish_button"
         >
-          Erneut spielen
+          {translation[language].finish_replay}
         </p>
       </div>
     );
@@ -628,19 +635,22 @@ const GameHome = () => {
       const newRecord = finishScreenData.time < oldBestTime;
       return (
         <div className="finish_data_wrapper">
-          {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths: 0)}
+          {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
           {newRecord && (
             <div>
-              <p className="finish_heading_newRecord">Thats a new Record!</p>
+              <p className="finish_heading_newRecord">
+                {translation[language].finish_record}
+              </p>
               <p className="finish_oldRecordTime">
-                Die bisherige Rekordzeit war {oldBestTime / 1000}s
+                {translation[language].finish_oldRecord} {oldBestTime / 1000}s
               </p>
               <p className="finish_record_improvement">
-                Die neue Bestzeit ist{" "}
-                {(oldBestTime - finishScreenData.time) / 1000}s schneller
+                {translation[language].finish_newRecord_faster_01}
+                {(oldBestTime - finishScreenData.time) / 1000}s
+                {translation[language].finish_newRecord_faster_02}
               </p>
               <p className="finish_old_screen_size">
-                Die Bildschirmgröße der alten Bestzeit war: {" "}
+                {translation[language].finish_oldRecord_screen}
                 {oldMetaForLevel.screenSize}
               </p>
             </div>
@@ -648,11 +658,10 @@ const GameHome = () => {
           {!newRecord && (
             <div className="finish_oldRecordWrapper">
               <p className="finish_oldRecord_time">
-                Die Bestzeit ist {oldBestTime / 1000}s
+                {translation[language].finish_best_time}
               </p>
               <p className="finish_oldRecord_size">
-                Die Bildschirmgröße der alten Bestzeit ist:{" "}
-                {oldMetaForLevel.screenSize}
+                {translation[language].finish_best_time_screen}
               </p>
             </div>
           )}
@@ -662,7 +671,7 @@ const GameHome = () => {
     }
     return (
       <div className="finish_data_wrapper">
-        {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths: 0)}
+        {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
         {buttons}
       </div>
     );
