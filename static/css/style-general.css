@@ -72,3 +72,11 @@ body{
 .blog_fish{
     content: url("../img/blog/fisch.jpeg")
 }
+
+.blog_passadicios_01{
+    content: url("../img/blog/passadicos_1.jpeg")
+}
+
+.blog_passadicios_02{
+    content: url("../img/blog/passadicos_2.jpeg")
+}

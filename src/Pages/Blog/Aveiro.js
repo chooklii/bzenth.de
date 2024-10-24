@@ -59,6 +59,16 @@ const Aveiro = () => {
                   <span className="title">Moliceiro-Boote</span>
                 </a>
               </li>
+              <li>
+                <a href="#passadicos">
+                  <span className="title">Passadiços de Aveiro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#uni">
+                  <span className="title">Universität</span>
+                </a>
+              </li>
             </ul>
           </li>
         </ol>
@@ -217,6 +227,80 @@ const Aveiro = () => {
           entschieden habe ist, dass die Boote auch nur die Wege befahren,
           welche man sich auch zu Fuß anschauen kann.
         </div>
+
+        <h3 className="blog_heading" id="passadicos">
+          Passadiços de Aveiro
+        </h3>
+
+        <div className="blog_text">
+          Die 'Passadicios de Aveiro' sind ein 5km (one-way) langer Weg, welcher
+          durch die wunderbare Natur Portugals führt. Sie befinden sich nördlich
+          von Aveiro. Ich habe meinen Besuch der Passadicios mit einem der
+          'BUGA'-Fahrräder aus Aveiro durchgeführt. Über die gleichnamige App
+          kann man sich Fahrräder in der Stadt ausleihen.
+
+          <figure className="blog_figure_center">
+            <img
+              className="blog_passadicios_01 blog_img"
+              aria-label="Bild von Bacalhau in einer Auflaufform mit Kartoffeln"
+            />
+            <figcaption className="blog_img_text">
+              Typischer Weg der Passadicios
+            </figcaption>
+          </figure>
+          <br />
+          Anschließend bin ich über den unterhalb auf der Karte eingezeichneten
+          Weg am Kanal entlang zu den Passadicios gefahren. Die Route dorthin,
+          sowie auch die Passadicios ist flach und mehrheitlich einfach zu
+          befahren (ein oder andere Sand- oder Engstelle vorhanden). Für die
+          Passadicios empfehlt sich die Nutzung eines Fahrrads, da sonst wenn
+          der komplette Weg gelaufen wird die exakt gleiche Strecke wieder
+          zurück gelaufen werden muss (was am Ende mehr als 10km wären).
+          <br />
+          <br />
+
+          <figure className="blog_figure_center">
+            <img
+              className="blog_passadicios_02 blog_img"
+              aria-label="Bild von Bacalhau in einer Auflaufform mit Kartoffeln"
+            />
+            <figcaption className="blog_img_text">
+              See und Weg der Passadicios
+            </figcaption>
+          </figure>
+
+          Aus genau diesem Grund laufen viele Leute auch nur ein Stück und
+          drehen anschließend um. Am Ende der Route sind dann fast nur noch
+          Fahrradfahrer unterwegs (Fahrräder kann man auch vor Ort ausleihen,
+          Preis mir unbekannt). In manchen Guides wird auch der Weg zu den
+          Passadicios als Teil dieser angegeben, dieser ist jedoch deutlich
+          unattraktiver, als die tatsächlichen Wege, weswegen ich davon abraten
+          würde diesen Weg aus dem Zentrum Aveiros zu gehen.
+          <br />
+          .
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F"
+            className="blog_googleMaps"
+          />
+        </div>
+
+        <h3 className="blog_heading" id="uni">
+          Universität
+        </h3>
+
+        <p className="blog_text">
+          Die Universität von Aveiro wird ab und an als Sehenswürdigkeit
+          aufgelistet. Nachdem ich die 'Passadiços de Aveiro' besucht hatte
+          nutzt ich mein ausgeliehenes Fahrrad (es gibt einen Tageshöchstsatz
+          für alles mehr als 2h) um die ebenfalls etwas außerhalb, jedoch
+          südlich befindliche Universität von Aveiro zu besuchen.
+          <br />
+          Wenn man ein Fahrrad (oder Zeit) hat kann man kurz über das Gelände
+          fahren, die Universität ist relativ groß und geht in die Richtung, wie
+          sie sonst nur in Kinofilmen dargestellt ist, jedoch nichts, was man
+          zwingend gesehen haben muss. Am Ende des Tages ist es eine Universität
+          und nicht mehr.
+        </p>
       </div>
       <Footer />
     </div>
