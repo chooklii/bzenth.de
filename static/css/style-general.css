@@ -80,3 +80,15 @@ body{
 .blog_passadicios_02{
     content: url("../img/blog/passadicos_2.jpeg")
 }
+
+.blog_wald{
+    content: url("../img/blog/wald.jpeg")
+}
+
+.blog_stadion{
+    content: url("../img/blog/stadion.jpeg")
+}
+
+.blog_stadion_nah{
+    content: url("../img/blog/stadion_nah.jpeg")
+}

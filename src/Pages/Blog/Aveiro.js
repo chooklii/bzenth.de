@@ -69,6 +69,23 @@ const Aveiro = () => {
                   <span className="title">Universität</span>
                 </a>
               </li>
+              <li>
+                <a href="#scbeiramar">
+                  <span className="title">
+                    Estádio Municipal de Aveiro - SC Beira-Mar
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#salt">
+                  <span className="title">Salinas de Aveiro</span>
+                </a>
+              </li>
+              <li>
+                <a href="#park">
+                  <span className="title">Infante Dom Pedro City Park</span>
+                </a>
+              </li>
             </ul>
           </li>
         </ol>
@@ -238,7 +255,6 @@ const Aveiro = () => {
           von Aveiro. Ich habe meinen Besuch der Passadicios mit einem der
           'BUGA'-Fahrräder aus Aveiro durchgeführt. Über die gleichnamige App
           kann man sich Fahrräder in der Stadt ausleihen.
-
           <figure className="blog_figure_center">
             <img
               className="blog_passadicios_01 blog_img"
@@ -248,7 +264,6 @@ const Aveiro = () => {
               Typischer Weg der Passadicios
             </figcaption>
           </figure>
-          <br />
           Anschließend bin ich über den unterhalb auf der Karte eingezeichneten
           Weg am Kanal entlang zu den Passadicios gefahren. Die Route dorthin,
           sowie auch die Passadicios ist flach und mehrheitlich einfach zu
@@ -258,7 +273,6 @@ const Aveiro = () => {
           zurück gelaufen werden muss (was am Ende mehr als 10km wären).
           <br />
           <br />
-
           <figure className="blog_figure_center">
             <img
               className="blog_passadicios_02 blog_img"
@@ -268,7 +282,6 @@ const Aveiro = () => {
               See und Weg der Passadicios
             </figcaption>
           </figure>
-
           Aus genau diesem Grund laufen viele Leute auch nur ein Stück und
           drehen anschließend um. Am Ende der Route sind dann fast nur noch
           Fahrradfahrer unterwegs (Fahrräder kann man auch vor Ort ausleihen,
@@ -277,13 +290,12 @@ const Aveiro = () => {
           unattraktiver, als die tatsächlichen Wege, weswegen ich davon abraten
           würde diesen Weg aus dem Zentrum Aveiros zu gehen.
           <br />
-          .
           <iframe
             src="https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F"
             className="blog_googleMaps"
           />
         </div>
-
+        <br />
         <h3 className="blog_heading" id="uni">
           Universität
         </h3>
@@ -301,6 +313,85 @@ const Aveiro = () => {
           zwingend gesehen haben muss. Am Ende des Tages ist es eine Universität
           und nicht mehr.
         </p>
+
+        <h3 className="blog_heading" id="scbeiramar">
+          Estádio Municipal de Aveiro - SC Beira-Mar
+        </h3>
+
+        <div className="blog_text">
+          Der lokale Fußballverein aus Aveiro ist der SC Beira-Mar. Früher noch
+          in der ersten Liga spielt der Verein nun in der 3. Portugisischen
+          Liga. Nach Problemen mit dem eigenen Stadion ist der Verein umgezogen
+          in das ursprünglich für die EM 2004 gebaute 'Estadio Municipal de
+          Aveiro'.
+          <figure className="blog_figure_center">
+            <img
+              className="blog_stadion blog_img"
+              aria-label="Estádio Municipal de Aveiro von vorne in der Sonne"
+            />
+            <figcaption className="blog_img_text">
+              Estádio Municipal de Aveiro
+            </figcaption>
+          </figure>
+          Zu Ligaspielen des SC Beira-Mar kommen ~1000 Zuschauer, weswegen
+          Tickets für jedes Spiel problemlos an der Tageskasse mit freier
+          Platzwahl erhältlich sind. Das Stadion liegt etwas außerhalb von
+          Aveiro, weswegen die Anreise zum Spiel abenteuerlich werden kann. Mit
+          dem Auto absolut kein Problem, es gibt mehr als genug Parkplätze
+          direkt am Stadion und das ist auch das Verkehrsmittel, welches 99%
+          aller anwesenden Zuschauer nutzen. <br />
+          <figure className="blog_figure_left">
+            <img
+              className="blog_wald blog_img"
+              aria-label="Bild vom Wald auf dem Weg zum Stadion in Aveiro"
+            />
+            <figcaption className="blog_img_text">
+              Waldweg zum Stadion
+            </figcaption>
+          </figure>
+          Es fährt kein Bus und auch keine BUGA-Station ist in der direkten
+          Umgebung des Stadions. Das einzige öffentliche Verkehrsmittel, welches
+          in die Nähe des Stadions fährt ist ein Zug (Tickets gibts nicht am
+          Automaten, sondern nur Online oder am Schalter, da er nicht von CP
+          betrieben wird), welcher ca. 1x alle 90 min fährt (über Google Maps zu
+          finden).
+          <br />
+          Diesen Zug kann man 2 Stationen bis 'Azurva' nehmen und anschließend
+          knapp 2km durch den Wald zum Stadion laufen. Das Wohngebiet, in
+          welchem die Bahnstation ist ist schon sehr verlassen mit nur hohen
+          Mauern und Zäunen, der Wald zum Stadion ist komplett verlassen und
+          sieht so aus, als wäre es nicht wirklich ein üblicher Weg, welchen die
+          Menschen regelmäßig nutzen. (kommt auf dem Bild nicht so rüber)
+          <br />
+          Nach 2 Kilometern, bei denen ich auch irgendwie froh war, dass mir
+          keine wilden Hunde begegnet sind kommt man dann zum Stadion
+          (Groundhopper würden diese Anreise lieben), bei welchem keiner, egal
+          ob an der Kasse, Einlass oder Essensstand auch nur ein Wort Englisch
+          spricht. Basic-Portugisisch absolut notwendig.
+          <figure className="blog_figure_center">
+            <img
+              className="blog_stadion_nah blog_img"
+              aria-label="Bild aus der Nähe vom Stadion, welches kaputt ist"
+            />
+            <figcaption className="blog_img_text">Kaputtes Stadion</figcaption>
+          </figure>
+          Das Stadion selber befindet sich, wie man auf oberem Bild sieht in
+          einem katastrophalen Zustand. Bei meinem nächsten Besuch im Stadion
+          werde ich entweder mit dem BUGA-Fahrrad (mit eigenem Schloss) anreisen
+          oder Uber/Bolt nutzen.
+        </div>
+
+        <h3 className="blog_heading" id="salt">
+          Salinas de Aveiro
+        </h3>
+
+        <h3 className="blog_heading" id="park">
+          Infante Dom Pedro City Park
+        </h3>
+
+
+
+
       </div>
       <Footer />
     </div>

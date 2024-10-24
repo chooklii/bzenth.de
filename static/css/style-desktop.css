@@ -632,6 +632,18 @@
     width: 300px;
   }
 
+  .blog_stadion{
+    width: 450px;
+  }
+
+  .blog_stadion_nah{
+    width: 300px;
+  }
+
+  .blog_wald{
+    width: 150px;
+  }
+
   .blog_figure_left{
     float: left;
     text-align: center;
