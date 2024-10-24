@@ -60,3 +60,15 @@ body{
     outline: black !important;
     text-decoration: underline !important
 }
+
+.avatar_blog{
+    content: url("../img/blog/benjamin.jpeg")
+}
+
+.blog_tripas{
+    content: url("../img/blog/tripas.jpeg")
+}
+
+.blog_fish{
+    content: url("../img/blog/fisch.jpeg")
+}

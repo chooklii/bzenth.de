@@ -455,5 +455,24 @@
         margin-bottom: 65px
       }
 
+      .link_blog{
+        margin-left: 15%;
+    
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    
+      .blog{
+        min-height: calc(100vh - 270px);
+        padding: 1em;
+        padding-top: 5em
+      }
+      
+      .avatar_blog{
+        width: 100px !important;
+        height: 100px !important;
+        margin-left: 10% !important;
+      }
 
 }

@@ -8,6 +8,8 @@ import {
   AboutMe,
   Projects,
   Imprint,
+  Blog,
+  Aveiro
 } from "../Pages"
 import {
   TranslationContext
@@ -62,6 +64,16 @@ const App = () => {
             <Route exact path="/kontakt">
               <ScrollToTop>
                 <Contact game={false}/>
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/blog">
+              <ScrollToTop>
+                <Blog/>
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/blog/reisebericht-4-wochen-in-aveiro">
+              <ScrollToTop>
+                <Aveiro/>
               </ScrollToTop>
             </Route>
             <Route exact path="/impressum">
