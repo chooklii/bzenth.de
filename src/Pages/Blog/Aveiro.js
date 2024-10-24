@@ -38,16 +38,28 @@ const Aveiro = () => {
           </p>
         </div>
 
-        <ol class="toc" role="list">
+        <ol className="toc" role="list">
           <li>
             <a href="#anreise">
-              <span class="title">Anreise</span>
+              <span className="title">Anreise</span>
             </a>
           </li>
           <li>
             <a href="#essen">
-              <span class="title">Essen</span>
+              <span className="title">Essen</span>
             </a>
+          </li>
+          <li>
+            <a href="#sehenswurdigkeiten">
+              <span className="title">Sehenswürdigkeiten</span>
+            </a>
+            <ul>
+              <li>
+                <a href="#boote">
+                  <span className="title">Moliceiro-Boote</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ol>
 
@@ -94,7 +106,7 @@ const Aveiro = () => {
         <h2 className="blog_heading" id="essen">
           Essen
         </h2>
-        <p className="blog_text">
+        <div className="blog_text">
           Die 'Locals' in Aveiro sind sich absolut einig, dass egal wo man in
           Aveiro Essen geht das Essen gut ist. Was sich in Aveiro bei quasi
           allem, besonders aber beim Essen konstant durchzieht ist, dass die
@@ -102,7 +114,10 @@ const Aveiro = () => {
           komplett Aveiro und auch deutlich weniger, als die großen Städte des
           Landes.
           <figure className="blog_figure_left">
-            <img className="blog_tripas blog_img" />
+            <img
+              className="blog_tripas blog_img"
+              aria-label="Tripas de Aveiro in meiner Hand"
+            />
             <figcaption className="blog_img_text">Tripas de Aveiro</figcaption>
           </figure>
           <br />
@@ -119,37 +134,89 @@ const Aveiro = () => {
           'Buden' in Aveiro, welche beide nur 'Tripas de Aveiro' verkaufen (Grün
           markiert auf der unteren Karte). Ich selber konnte keinen Favoriten
           unter den beiden ausmachen.
-        </p>
+          <br />
+          <br />
+        </div>
         <iframe
           className="blog_googleMaps"
           src="https://www.google.com/maps/d/embed?mid=19H697wyrPopZl4UaST9b_nh4ab1CCac&ehbc=2E312F"
         />
         <br />
-        <p className="blog_text">
+        <div className="blog_text">
           Wo sich alle Leute, mit denen ich gesprochen habe einig waren ist,
           dass 'Ramos' (rot markiert) die beste Bäckerei für Süßwaren jeder Art
           in Aveiro ist. Ich habe mich dort durch die große Auswahl an Süßwaren
           gegessen und es war wirklich durch die Bank alles hervorragend.
           Absolute Empfehlung!
-          <br/>
+          <br />
           Was Restaurants (blau markiert) angeht habe ich bei Madrigal auf
           Empfehlung einer Kollegin einen leckeren (aber mit Gräten
           durchzogenen) Bacalhau mit Kartoffeln gegessen. Aber auch mit 'O
           Bairro', welche sich auf Risotto spezialisiert haben habe ich gute
           Erfahrung gemacht.
-          
           <figure className="blog_figure_center">
-            <img className="blog_fish blog_img" />
+            <img
+              className="blog_fish blog_img"
+              aria-label="Bild von Bacalhau in einer Auflaufform mit Kartoffeln"
+            />
             <figcaption className="blog_img_text">Bacalhau</figcaption>
           </figure>
-
           Keine Portugisische Küche, aber wirklich einheimliche Restaurants von
           Aveiro sind 'La Mamaroma', eine hervorragende Pizzaria und auch
           'Ramona'. Ramona ist ein Fast-Food ähnliches Burgerrestaurant, bei
           welchem sich trotz sehr vieler Sitzplätze zu den Stoßzeiten oder am
           Wochenende häufig eine Schlange vor der Tür bildet. Die Burger sind
           sehr gut und besonders bei den Studenten der Stadt sehr beliebt.
-        </p>
+        </div>
+
+        <h2 className="blog_heading" id="sehenswurdigkeiten">
+          Sehenswürdigkeiten
+        </h2>
+
+        <h3 className="blog_heading" id="boote">
+          Moliceiro-Boote
+        </h3>
+
+        <div className="blog_text">
+          Die wohl bekannteste Atraktion in Aveiro selber sind die bunten
+          Moliceiro-Boote. Die Boote wurden früher zum Transport von Salz und
+          von Gütern verwendet. Heute sind die Boote die mit Abstand
+          frequentierteste Atraktion in Aveiro. An Tagen mit gutem Wetter kann
+          man am Kanal in Aveiro alle paar Minuten ein Boot voller Menschen
+          beobachten.
+          <br />
+          Ich muss zugeben, dass ich trotz meiner langen Aufenthaltszeit in
+          Aveiro nie selber mit den Booten gefahren bin, sondern sie lediglich
+          nur von außen beobachtet habe. Das liegt primär daran, dass mich
+          persönlich die Boote nicht wirklich angesprochen haben. Trotzdem
+          möchte ich meine Beobachtungen teilen, sodass sich jeder selber eine
+          Meinung bilden kann, ob man eine Bootsfahrt machen möchte.
+          <br />
+          <br />
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F"
+            className="blog_googleMaps"
+          />
+          Die Boote fahren alle ungefähr an der gleichen Stelle in Aveiro los
+          (roter Marker) und fahren von dort unabhängig vom Anbieter die auf der
+          Karte eingezeichnete Route. Einzelne fahren links nach der Abbiegung
+          noch gerade aus zu den Salzfeldern von Aveiro, jedoch sieht man diese
+          nicht wirklich vom Boot. Die Fahrt selber dauert ca. 45min und kostet
+          15€ pro Person.
+          <br />
+          Auf jedem Boot ist ein Steuermann und eine weitere Person. Auf manchen
+          Booten erklärt diese Person ausführlich die Region und die Umgebung,
+          durch welche das Boot gerade fährt. Andere wurden durch ihn und sein
+          Gesang oder seine Interaktion mit Menschen am Fluss eher zu
+          Party-Booten. Auf dritten saß diese Person nur mit im Boot ohne etwas
+          zu sagen. Wie man beim Kauf der Fahrt erfährt für welche Art von Boot
+          man sich eine Fahrt kauft kann ich leider nicht sagen, nur das dieser
+          deutliche Unterschied zwischen den Anbietern besteht.
+          <br />
+          Mein primärer Grund, weswegen ich mich gegen eine Bootsfahrt
+          entschieden habe ist, dass die Boote auch nur die Wege befahren,
+          welche man sich auch zu Fuß anschauen kann.
+        </div>
       </div>
       <Footer />
     </div>
