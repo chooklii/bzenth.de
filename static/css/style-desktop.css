@@ -678,4 +678,8 @@
         margin-left: 10%;
     }
 
+    .blog{
+        min-height: calc(100vh - 270px);
+    }
+
 }

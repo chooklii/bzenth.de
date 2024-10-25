@@ -183,6 +183,7 @@ const Aveiro = () => {
           <br />
         </div>
         <iframe
+          title="Karte aller meiner Essensoptionen in Aveiro"
           className="blog_googleMaps"
           src="https://www.google.com/maps/d/embed?mid=19H697wyrPopZl4UaST9b_nh4ab1CCac&ehbc=2E312F"
         />
@@ -239,6 +240,7 @@ const Aveiro = () => {
           <br />
           <br />
           <iframe
+            title="Route der Boote in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F"
             className="blog_googleMaps"
           />
@@ -309,6 +311,7 @@ const Aveiro = () => {
           würde diesen Weg aus dem Zentrum Aveiros zu gehen.
           <br />
           <iframe
+            title="Route zu und der Passadicios de Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F"
             className="blog_googleMaps"
           />
@@ -472,6 +475,7 @@ const Aveiro = () => {
           <br />
           <br />
           <iframe
+            title="Bushaltestellen nach Costa Nova in Aveiro"          
             src="https://www.google.com/maps/d/embed?mid=1Yw_l_xwHO8sqmSAknzUfTEtgcrsn4RM&ehbc=2E312F"
             className="blog_googleMaps"
           />
@@ -483,6 +487,7 @@ const Aveiro = () => {
 
         <div className="blog_text">
           <iframe
+            title="Bushaltestellen und Leuchtturm in Costa Nova"
             src="https://www.google.com/maps/d/embed?mid=13F5ruSeYmEwbOW3e7Ye1mgV_sTgQL34&ehbc=2E312F"
             className="blog_googleMaps"
           />
