@@ -56,12 +56,15 @@
             "path": "Werdegang",
             "papers": "Wissenschaftliche Publikationen",
             "private": "Privat",
-            "certificates": "Zertifikate"
+            "certificates": "Zertifikate und Konferenzen"
         },
         "certificates": {
             "01": "Gitlab Certified Associate",
             "02": "Fundamentals of online marketing",
-            "link": "Verification"
+            "link": "Verification",
+            "devoxx": "Devoxx 2023, Antwerpen",
+            "react": "React Summit 2022, Amsterdam",
+            "js": "JS-Nation 2022, Amsterdam"
         },
         "private": {
             "headings": {
@@ -74,7 +77,7 @@
                 "age": "27",
                 "location": "Raum Öhringen, Deutschland",
                 "sport_hobbies": "Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart",
-                "other_hobbies": "Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospieleg"
+                "other_hobbies": "Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele"
             }
         },
         "alt_img_one": "Bild von mir in einer alten Telefonzelle",

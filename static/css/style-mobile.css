@@ -2,55 +2,55 @@
 
 @media screen and (max-width: 480px) {
 
-    body{
+    body {
         margin: 0;
         font-family: system-ui;
     }
 
-    .footer{
+    .footer {
         display: none
     }
 
-    .page_classic{
+    .page_classic {
         padding-top: 50px;
         padding-bottom: 25px;
     }
 
-    .desktop{
+    .desktop {
         display: none !important
     }
 
-    .content_aboutme{
+    .content_aboutme {
         width: 90%;
         margin-left: 5%;
     }
 
-    .content_aboutme_short{
+    .content_aboutme_short {
         width: 90%;
         margin-left: 5%;
     }
 
-    .bold{
+    .bold {
         font-weight: bold;
     }
 
-    .design_buttons{
+    .design_buttons {
         width: 100%;
         display: inline-flex;
         justify-content: center;
         min-height: 70px
     }
 
-    .button_public_project{
+    .button_public_project {
         margin-left: 10px;
     }
 
-    .heading_classic{
+    .heading_classic {
         text-align: center;
         margin-top: 20px
     }
 
-    .image_classic{
+    .image_classic {
         background-repeat: no-repeat;
         background-size: cover;
         max-height: 350px;
@@ -59,13 +59,13 @@
         margin-right: auto;
     }
 
-    .classic_text{
+    .classic_text {
         width: 90%;
         margin-left: 5%;
         line-height: 200%;
     }
 
-    .image-project{
+    .image-project {
         background-repeat: no-repeat;
         background-size: contain;
         width: 80%;
@@ -73,11 +73,11 @@
         margin: 0 auto
     }
 
-    .iconWrapper{
+    .iconWrapper {
         min-width: 40px;
     }
 
-    .storagable{
+    .storagable {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -86,7 +86,7 @@
         margin: 0 auto
     }
 
-    .mealtracker{
+    .mealtracker {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -95,35 +95,35 @@
         margin: 0 auto
     }
 
-    .header{
+    .header {
         background-size: cover;
         background-position: center;
     }
 
-    .imprint_source{
+    .imprint_source {
         padding-top: 10px
     }
 
-    .header-desktop-heading{
+    .header-desktop-heading {
         display: none;
     }
 
 
     @keyframes blinker {
         50% {
-          opacity: 0;
+            opacity: 0;
         }
-      }
+    }
 
 
-    .home-rotating-text{
+    .home-rotating-text {
         text-align: center;
         font-family: "Courier New", Courier, monospace;
         height: 20px;
         font-size: 25px;
     }
 
-    .home-welcome{
+    .home-welcome {
         text-align: center;
         font-size: 20px;
         min-height: 50px;
@@ -131,7 +131,7 @@
         padding-top: 4em
     }
 
-    .home-welcome-text{
+    .home-welcome-text {
         font-family: Impact, Charcoal, sans-serif;
         font-size: 20px;
         font-weight: normal;
@@ -139,199 +139,200 @@
     }
 
 
-    .home-underline{
+    .home-underline {
         text-align: center;
     }
 
-    .skills{
+    .skills {
         margin-top: 4em
     }
 
-    .private-content{
+    .private-content {
         margin-top: 4em
     }
 
-    .projects-box{
+    .projects-box {
         margin-top: 2em
     }
 
-    .contact{
+    .contact {
         margin-top: 2em
     }
 
-    .skills-heading{
+    .skills-heading {
         text-align: center;
     }
 
-    .skills-one-category{
+    .skills-one-category {
         width: 90%;
         margin-left: 5%;
     }
 
-    .single-skill{
+    .single-skill {
         width: 100%;
         display: inline-flex;
         padding: .3em
     }
 
-    .skill-name{
+    .skill-name {
         width: 50%;
     }
 
-    .private-cv-title{
+    .private-cv-title {
         text-align: center;
     }
 
-    .private-cv{
+    .private-cv {
         width: 90%;
         margin-left: 5%;
     }
 
-    .private-single-cv{
+    .private-single-cv {
         padding: .3em
     }
 
-    .cv-time{
+    .cv-time {
         font-style: oblique;
     }
 
-    .cv-text{
+    .cv-text {
         font-weight: lighter;
     }
 
-    .private-private-title{
+    .private-private-title {
         text-align: center;
     }
 
-    .private-private{
+    .private-private {
         width: 90%;
         margin-left: 5%;
         font-weight: lighter;
     }
 
-    .private-image{
+    .private-image {
         text-align: center;
         font-weight: lighter;
     }
 
-    .projects-heading{
+    .projects-heading {
         text-align: center;
         font-size: 25px;
         padding-top: 1em
     }
 
-    .projects-heading-underline{
+    .projects-heading-underline {
         text-align: center;
     }
 
-    .projects-picture-left{
+    .projects-picture-left {
         width: 95%;
-    background-color: gainsboro;
-    min-height: 50px;
-    margin-top: 10px;
-    border: 1px solid black;
-    margin-left: 2.5%;
-    margin-bottom: 25px
+        background-color: gainsboro;
+        min-height: 50px;
+        margin-top: 10px;
+        border: 1px solid black;
+        margin-left: 2.5%;
+        margin-bottom: 25px
     }
 
-    .projects-picture-right{
+    .projects-picture-right {
         width: 95%;
-    background-color: gray;
-    min-height: 50px;
-    margin-bottom: 25px;
-    border: 1px solid black;
-    margin-left: 2.5%;
+        background-color: gray;
+        min-height: 50px;
+        margin-bottom: 25px;
+        border: 1px solid black;
+        margin-left: 2.5%;
     }
 
-    .project-heading{
+    .project-heading {
         text-align: center;
         font-weight: bold;
         padding: 1em
     }
 
-    .project-description-one{
+    .project-description-one {
         padding: .5em
     }
 
-    .project-description-two{
+    .project-description-two {
         padding: .5em;
         display: inline-grid
     }
 
-    .project-description-three{
+    .project-description-three {
         padding: .5em
     }
 
-    .project-press-link{
+    .project-press-link {
         display: list-item;
         margin-left: 20%;
         color: black;
     }
 
-    .project-link{
+    .project-link {
         text-align: center;
         color: black;
         padding-bottom: .5em;
     }
 
-    .contact-heading{
+    .contact-heading {
         text-align: center;
         font-size: 25px;
         padding-top: 1em;
     }
 
-    .contact-first-line{
+    .contact-first-line {
         width: 90%;
         margin-left: 5%;
     }
 
-    .contact-second-line{
+    .contact-second-line {
         width: 90%;
         margin-left: 5%;
         font-size: smaller;
     }
 
-    .contact-options{
+    .contact-options {
         width: 80%;
         margin-left: 10%;
         padding-top: 1em;
     }
 
-    .contact_link{
+    .contact_link {
         padding: 1em;
         display: block;
         color: black
     }
 
-    .icon{
+    .icon {
         margin-right: 5px;
     }
-    .contact-icons{
+
+    .contact-icons {
         width: 20%;
         text-align: center;
         margin-left: 10%;
     }
 
-    .image-contact{
+    .image-contact {
         height: 450px;
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
 
-    .contact-mailadress{
+    .contact-mailadress {
         padding: .3em;
     }
 
-    .contact-text{
+    .contact-text {
         padding: .3em;
     }
 
-    .MuiFormControl-root{
+    .MuiFormControl-root {
         width: 90%;
     }
 
-    .header-nav{
+    .header-nav {
         display: none;
         backface-visibility: hidden;
         position: fixed;
@@ -340,10 +341,10 @@
         left: 0;
         width: 256px;
         height: 100%;
-        background-color:#615a5a;
+        background-color: #615a5a;
     }
 
-    .header-menu-element{
+    .header-menu-element {
         display: flex;
         cursor: pointer;
         font-size: large;
@@ -351,11 +352,11 @@
         color: white
     }
 
-    .header-menu-icon{
+    .header-menu-icon {
         margin-right: 5px;
     }
 
-    .header-mobile-menu-wrapper{
+    .header-mobile-menu-wrapper {
         position: fixed;
         width: 100%;
         height: 3em;
@@ -366,7 +367,7 @@
     }
 
 
-    .header-mobile-span{
+    .header-mobile-span {
         cursor: pointer;
         position: absolute;
         height: 3em;
@@ -375,7 +376,7 @@
         left: 0
     }
 
-    .header-mobile-menu-icon{
+    .header-mobile-menu-icon {
         position: absolute;
         top: 1em;
         height: 0.75em;
@@ -383,13 +384,13 @@
         left: 1em;
     }
 
-    .header-mobile-heading{
+    .header-mobile-heading {
         color: white;
         font-size: large;
         text-align: center;
     }
 
-    .header-element{
+    .header-element {
         display: flex;
         cursor: pointer;
         font-size: large;
@@ -397,63 +398,177 @@
         color: white
     }
 
-    .imprint{
+    .imprint {
         padding-top: 4em;
         width: 100%;
-      }
+    }
 
-      .imprint-heading{
+    .imprint-heading {
         text-align: center;
         font-size: 25px;
-          margin: 0
-      }
+        margin: 0
+    }
 
-      .imprint-person-contact{
-          margin-left: 10%;
-      }
+    .imprint-person-contact {
+        margin-left: 10%;
+    }
 
-      .imprint-mail{
-          margin-left: 5px;
-      }
-
-      .imprint-body{
-          margin-left: 5%;
-          width: 90%;
-          line-height: 160%;
-          margin-bottom: 3em
-      }
-
-      .imprint-subheading{
-          padding: 1em;
-          font-weight: bold;
-      }
-
-      .imprint-link{
-          margin-left: 5px;
-      }
-
-      .imprint-h2{
-          font-size: 20px;
-      }
-
-      .selectOptionLanguage{
-        z-index: 2500;
-      }
-
-      .localeText{
+    .imprint-mail {
         margin-left: 5px;
-      }
+    }
 
-      .projects_text{
+    .imprint-body {
+        margin-left: 5%;
+        width: 90%;
+        line-height: 160%;
+        margin-bottom: 3em
+    }
+
+    .imprint-subheading {
+        padding: 1em;
+        font-weight: bold;
+    }
+
+    .imprint-link {
+        margin-left: 5px;
+    }
+
+    .imprint-h2 {
+        font-size: 20px;
+    }
+
+    .selectOptionLanguage {
+        z-index: 2500;
+    }
+
+    .localeText {
+        margin-left: 5px;
+    }
+
+    .projects_text {
         text-align: center;
         width: 90%;
         min-height: 70px;
         margin-left: 5%
-      }
+    }
 
-      .project_classic{
+    .project_classic {
         margin-bottom: 65px
-      }
+    }
+
+    .link_blog {
+        margin-left: 15%;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .blog {
+        min-height: calc(100vh - 270px);
+        padding: 1em;
+        padding-top: 5em
+    }
+
+    .avatar_blog {
+        width: 100px !important;
+        height: 100px !important;
+        margin-left: 10% !important;
+    }
 
 
+    .avatar_blog {
+        min-width: 150px !important;
+        min-height: 150px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important
+    }
+
+    .blog_page {
+        font-size: 17px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .blog_text {
+        font-size: 17px;
+    }
+
+    .blog_heading {
+        margin-top: 20px
+    }
+
+    .blog_googleMaps {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        height: 400px
+    }
+
+    .blog_img {
+        margin-right: 10px;
+    }
+
+    .blog_fish {
+        width: 100%
+    }
+
+    .blog_tripas {
+        width: 100%
+    }
+
+    .blog_passadicios_01 {
+        width: 100%
+    }
+
+    .blog_passadicios_02 {
+        width: 100%
+    }
+
+    .blog_stadion {
+        width: 100%
+    }
+
+    .blog_stadion_nah {
+        width: 100%
+    }
+
+    .blog_wald {
+        width: 100%
+    }
+
+    .blog_park {
+        width: 100%
+    }
+
+    .beach_01 {
+        width: 100%
+    }
+
+    .beach_02 {
+        width: 100%
+    }
+
+    .walk_costa {
+        width: 100%
+    }
+
+    .houses {
+        width: 100%
+    }
+
+    .blog_figure_left {
+        float: left;
+        text-align: center;
+    }
+
+    .blog_figure_center {
+        text-align: center;
+    }
+
+    .blog_img_text {
+        font-size: 14px;
+    }
 }

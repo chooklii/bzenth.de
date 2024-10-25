@@ -14,7 +14,7 @@ import {
   faUser,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGitlab, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faGitlab, faGoogle, faJava, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const path = [
   { key: "aboutme.path.01", from: "09/2013", to: "07/2016" },
@@ -74,6 +74,18 @@ const privato = [
 ];
 
 const certificates = [
+  {
+    key: "aboutme.certificates.react",
+    icon: faReact
+  },
+  {
+    key: "aboutme.certificates.js",
+    icon: faJs
+  },
+  {
+    key: "aboutme.certificates.devoxx",
+    icon: faJava
+  },
   {
     key: "aboutme.certificates.01",
     icon: faGitlab,

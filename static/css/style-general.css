@@ -60,3 +60,55 @@ body{
     outline: black !important;
     text-decoration: underline !important
 }
+
+.avatar_blog{
+    content: url("../img/blog/benjamin.jpeg")
+}
+
+.blog_tripas{
+    content: url("../img/blog/tripas.jpeg")
+}
+
+.blog_fish{
+    content: url("../img/blog/fisch.jpeg")
+}
+
+.blog_passadicios_01{
+    content: url("../img/blog/passadicos_1.jpeg")
+}
+
+.blog_passadicios_02{
+    content: url("../img/blog/passadicos_2.jpeg")
+}
+
+.blog_wald{
+    content: url("../img/blog/wald.jpeg")
+}
+
+.blog_stadion{
+    content: url("../img/blog/stadion.jpeg")
+}
+
+.blog_stadion_nah{
+    content: url("../img/blog/stadion_nah.jpeg")
+}
+
+.blog_park{
+    content: url("../img/blog/park.jpeg");
+}
+
+.houses{
+    content: url("../img/blog/houses.jpeg")
+}
+
+.beach_01{
+    content: url("../img/blog/beach_01.jpeg");
+}
+
+.beach_02{
+    content: url("../img/blog/beach_02.jpeg");
+}
+
+.walk_costa{
+    content: url("../img/blog/walk.jpeg");
+}

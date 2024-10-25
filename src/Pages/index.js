@@ -7,6 +7,8 @@ import AboutMe from "./AboutMe"
 import Projects from "./Projects"
 import Contact from "./Contact"
 import Skills from "./Skills"
+import Blog from "./Blog"
+import Aveiro from "./Blog/Aveiro"
 
 export{
     Skills,
@@ -16,5 +18,7 @@ export{
     Projects,
     Home,
     Imprint,
-    Credits
+    Credits,
+    Blog,
+    Aveiro
 }

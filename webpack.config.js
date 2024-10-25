@@ -10,6 +10,7 @@ const paths = [
   "kontakt",
   "impressum",
   "privat",
+  "blog",
 ]
 
 let multipleHtmlPlugins = paths.map(name => {
@@ -74,6 +75,11 @@ module.exports = {
           template: "./static/index.html",
           filename: "../docs/arcade/index.html",
           chunks: ["arcade"]
+        }),
+        new HtmlWebPackPlugin({
+          template: "./static/index-blog.html",
+          filename: `../docs/blog/reisebericht-4-wochen-in-aveiro/index.html`,
+          chunks: ["bundle"]
         }),
         new HtmlWebPackPlugin({
           favicon: './static/favicons/favicon.ico'

@@ -54,7 +54,10 @@
         "certificates": {
             "01": "Gitlab Certified Associate",
             "02": "Grundlagen des Onlinemarketings",
-            "link": "Verifikationslink"
+            "link": "Verifikationslink",
+            "devoxx": "Devoxx Belgium 2023",
+            "react": "React Summit 2022, Amsterdam",
+            "js": "JS-Nation 2022, Amsterdam"
         },
         "private": {
             "headings": {
@@ -74,7 +77,7 @@
             "path": "Career",
             "papers": "Scientific publications",
             "private": "Privat",
-            "zertificates": "Certificates"
+            "zertificates": "Certificates and Conferences"
         },
         "alt_img_one": "Picture of me within an old telephone booth",
         "alt_img_two": "Picture of me within an old telephone booth"
