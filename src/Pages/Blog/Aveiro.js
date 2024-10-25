@@ -28,10 +28,10 @@ const Aveiro = () => {
         <div className="blog_intro">
           <Avatar className="avatar_blog" />
           <p className="blog_whoami">
-            Ich, Benjamin hatte die Möglichkeit im September 2024 4 Wochen in
-            Aveiro zu arbeiten. In diesem Blogbeitrag/Reisebericht möchte ich
-            meine subjektiven Tipps, Tricks, Erfahrungen und Eindrücke, sowie
-            erhaltene Empfehlungen von Einwohnern Aveiros mit dir teilen, um dir
+            Ich, Benjamin, hatte die Möglichkeit im September 2024 vier Wochen
+            in Aveiro zu arbeiten. In diesem Blogbeitrag/Reisebericht, möchte
+            ich meine subjektiven Tipps, Tricks, Erfahrungen und Eindrücke,
+            sowie Empfehlungen von Einwohnern Aveiros, mit dir teilen, um dir
             ein Bild zu vermitteln, worauf du dich im 'Venedig Portugals' freuen
             kannst.
             <br />
@@ -114,24 +114,24 @@ const Aveiro = () => {
         </h2>
         <p className="blog_text">
           Die typische Tagesreise nach Aveiro findet von Porto statt. In Porto
-          finden sich regelmäßig Angebote für Tagestripps nach Aveiro und Costa
+          finden sich regelmäßig Angebote für Tagestrips nach Aveiro und Costa
           Nova. Bei eigener Reise zwischen Porto und Aveiro habe ich immer den
-          Zug verwendet. Es gibt theoretisch noch die Möglichkeit einen
-          günstigen Flixbus (auch direkt vom Flughafen in Porto) zu bekommen.
+          Zug verwendet. Es gibt theoretisch noch die Möglichkeit, einen
+          günstigen Flixbus zu bekommen.
           <br />
           Es gibt auf dieser Strecke unterschiedliche Züge unterschiedlichster
-          Unternehmen. Sie fahren alle von den Stationen Campanha oder Sao Bento
+          Unternehmen. Sie fahren alle von den Stationen Campanhã oder São Bento
           (alle halten in Campanha, manche fahren von dort noch weiter nach Sao
           Bento).
           <br />
           Die normale und mit Abstand günstigste Option hierbei ist der
           'normale' Zug betrieben von CP, welcher 3,80€ kostet. Die Karte für
-          diesen Zug funktioniert ähnlich, wie die Metro in Porto. Initial 50ct
-          Pfand für eine wiederaufladbare Karte. Das Ticket gibt es an Automaten
-          oder auch am Schalter.
+          diesen Zug funktioniert ähnlich, wie die Metro in Porto. Initial 50
+          Cent Pfand für eine wiederaufladbare Karte. Das Ticket gibt es an
+          Automaten oder auch am Schalter.
           <br />
-          Das Ticket muss vor der Fahrt validiert werden (Ticket am Gleis auf
-          die dafür vorgesehen Geräte halten). Schwarzfahren ist keine gute
+          Das Ticket muss vor der Fahrt validiert werden (das Ticket am Gleis an
+          die dafür vorgesehenen Geräte halten). Schwarzfahren ist keine gute
           Idee, ich wurde auf 90% meiner Zugfahrten kontrolliert!
           <br />
           Die anderen Züge sind alles Schnellzüge, oder auch Stops des Zuges
@@ -144,7 +144,7 @@ const Aveiro = () => {
           dein Zug für z.B. Gleis 2 angekündigt wurde, sich jedoch das Gleis auf
           Gleis 6 geändert hat. Dies wird durch eine Durchsage (welche nur auf
           Portugisisch ist) verkündet. Sollte also plötzlich viel Bewegung auf
-          deinem Bahnsteig sein und alle auf einen anderen wechseln könnte es
+          deinem Bahnsteig sein und alle auf einen anderen wechseln, könnte es
           daran liegen. Dies wird auch ersichtlich, weil der Zug nach der
           Durchsage nicht mehr auf der Anzeige auf deinem Gleis zu sehen ist.
         </p>
@@ -154,7 +154,7 @@ const Aveiro = () => {
         </h2>
         <div className="blog_text">
           Die 'Locals' in Aveiro sind sich absolut einig, dass egal wo man in
-          Aveiro Essen geht das Essen gut ist.
+          Aveiro essen geht das Essen gut ist.
           <figure className="blog_figure_left">
             <img
               className="blog_tripas blog_img"
@@ -163,7 +163,7 @@ const Aveiro = () => {
             <figcaption className="blog_img_text">Tripas de Aveiro</figcaption>
           </figure>
           Was sich in Aveiro bei quasi allem, besonders aber beim Essen konstant
-          durchzieht ist, dass die Stadt zwar durchaus Touristisch erschlossen
+          durchzieht ist, dass die Stadt zwar durchaus touristisch erschlossen
           ist, aber lange nicht komplett Aveiro und auch deutlich weniger, als
           die großen Städte des Landes.
           <br />
@@ -224,10 +224,10 @@ const Aveiro = () => {
         </h3>
 
         <div className="blog_text">
-          Die wohl bekannteste Atraktion in Aveiro selber sind die bunten
+          Die wohl bekannteste Attraktion in Aveiro selber sind die bunten
           Moliceiro-Boote. Die Boote wurden früher zum Transport von Salz und
-          von Gütern verwendet. Heute sind die Boote die mit Abstand
-          frequentierteste Atraktion in Aveiro. An Tagen mit gutem Wetter kann
+          von Gütern verwendet. Heute sind die Boote, die mit Abstand
+          frequentierteste Attraktion in Aveiro. An Tagen mit gutem Wetter kann
           man am Kanal in Aveiro alle paar Minuten ein Boot voller Menschen
           beobachten.
           <br />
@@ -235,7 +235,7 @@ const Aveiro = () => {
           Aveiro nie selber mit den Booten gefahren bin, sondern sie lediglich
           nur von außen beobachtet habe. Das liegt primär daran, dass mich
           persönlich die Boote nicht wirklich angesprochen haben. Trotzdem
-          möchte ich meine Beobachtungen teilen, sodass sich jeder selber eine
+          möchte ich meine Beobachtungen teilen, sodass sich jeder selbst eine
           Meinung bilden kann, ob man eine Bootsfahrt machen möchte.
           <br />
           <br />
@@ -245,19 +245,19 @@ const Aveiro = () => {
             className="blog_googleMaps"
           />
           Die Boote fahren alle ungefähr an der gleichen Stelle in Aveiro los
-          (roter Marker) und fahren von dort unabhängig vom Anbieter die auf der
-          Karte eingezeichnete Route. Einzelne fahren links nach der Abbiegung
-          noch gerade aus zu den Salzfeldern von Aveiro, jedoch sieht man diese
-          nicht wirklich vom Boot. Die Fahrt selber dauert ca. 45min und kostet
-          15€ pro Person.
+          (siehe roter Marker) und fahren von dort unabhängig vom Anbieter die
+          auf der Karte eingezeichnete Route. Einige Boote fahren nach der
+          Abbiegung nach links geradeaus zu den Salzfeldern von Aveiro, jedoch
+          sieht man diese nicht wirklich vom Boot. Die Fahrt selber dauert ca.
+          45min und kostet 15€ pro Person.
           <br />
           Auf jedem Boot ist ein Steuermann und eine weitere Person. Auf manchen
           Booten erklärt diese Person ausführlich die Region und die Umgebung,
           durch welche das Boot gerade fährt. Andere wurden durch ihn und sein
           Gesang oder seine Interaktion mit Menschen am Fluss eher zu
-          Party-Booten. Auf dritten saß diese Person nur mit im Boot ohne etwas
-          zu sagen. Wie man beim Kauf der Fahrt erfährt für welche Art von Boot
-          man sich eine Fahrt kauft kann ich leider nicht sagen, nur das dieser
+          Party-Booten. Auf dritten Booten saß diese Person nur mit im Boot ohne
+          etwas zu sagen. Wie man beim Kauf der Fahrt erfährt, welche Art von
+          Boot man gebucht hat kann ich leider nicht sagen, nur das dieser
           deutliche Unterschied zwischen den Anbietern besteht.
           <br />
           Mein primärer Grund, weswegen ich mich gegen eine Bootsfahrt
@@ -270,11 +270,11 @@ const Aveiro = () => {
         </h3>
 
         <div className="blog_text">
-          Die 'Passadicios de Aveiro' sind ein 5km (one-way) langer Weg, welcher
-          durch die wunderbare Natur Portugals führt. Sie befinden sich nördlich
-          von Aveiro. Ich habe meinen Besuch der Passadicios mit einem der
-          'BUGA'-Fahrräder aus Aveiro durchgeführt. Über die gleichnamige App
-          kann man sich Fahrräder in der Stadt ausleihen.
+          Die 'Passadicios de Aveiro' sind ein 5km langer Weg in eine Richtung,
+          der durch die wunderbare Natur Portugals führt. Sie befinden sich
+          nördlich von Aveiro.Ich habe die Passadicos mit einem der
+          'BUGA'-Fahrräder aus Aveiro besucht.Über die gleichnamige App kann man
+          Fahrräder in der Stadt ausleihen.
           <figure className="blog_figure_center">
             <img
               className="blog_passadicios_01 blog_img"
@@ -285,12 +285,12 @@ const Aveiro = () => {
             </figcaption>
           </figure>
           Anschließend bin ich über den unterhalb auf der Karte eingezeichneten
-          Weg am Kanal entlang zu den Passadicios gefahren. Die Route dorthin,
-          sowie auch die Passadicios ist flach und mehrheitlich einfach zu
-          befahren (ein oder andere Sand- oder Engstelle vorhanden). Für die
-          Passadicios empfehlt sich die Nutzung eines Fahrrads, da sonst wenn
-          der komplette Weg gelaufen wird die exakt gleiche Strecke wieder
-          zurück gelaufen werden muss (was am Ende mehr als 10km wären).
+          Weg am Kanal entlang zu den Passadicios gefahren. Die Route dorthin
+          sowie die Passadicos sind flach und größtenteils einfach zu befahren
+          (einige Sand- oder Engstelle vorhanden). Für die Passadicios empfiehlt
+          sich die Nutzung eines Fahrrads,da man, wenn man den kompletten Weg
+          läuft, die exakt gleiche Strecke zurücklegen muss. (was am Ende mehr
+          als 10km bedeutet).
           <br />
           <br />
           <figure className="blog_figure_center">
@@ -302,13 +302,13 @@ const Aveiro = () => {
               See und Weg der Passadicios
             </figcaption>
           </figure>
-          Aus genau diesem Grund laufen viele Leute auch nur ein Stück und
-          drehen anschließend um. Am Ende der Route sind dann fast nur noch
-          Fahrradfahrer unterwegs (Fahrräder kann man auch vor Ort ausleihen,
-          Preis mir unbekannt). In manchen Guides wird auch der Weg zu den
-          Passadicios als Teil dieser angegeben, dieser ist jedoch deutlich
-          unattraktiver, als die tatsächlichen Wege, weswegen ich davon abraten
-          würde diesen Weg aus dem Zentrum Aveiros zu gehen.
+          Aus diesem Grund laufen viele Leute nur ein Stück und drehen dann um.
+          Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs.
+          (Fahrräder kann man auch vor Ort ausleihen; der Preis ist mir jedoch
+          unbekannt.)In manchen Reiseführern wird der Weg zu den Passadicos auch
+          als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver,
+          als die tatsächlichen Wege, deshalb würde ich abraten, diesen Weg aus
+          dem Zentrum von Aveiro zu nehmen.
           <br />
           <iframe
             title="Route zu und der Passadicios de Aveiro"
@@ -475,7 +475,7 @@ const Aveiro = () => {
           <br />
           <br />
           <iframe
-            title="Bushaltestellen nach Costa Nova in Aveiro"          
+            title="Bushaltestellen nach Costa Nova in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1Yw_l_xwHO8sqmSAknzUfTEtgcrsn4RM&ehbc=2E312F"
             className="blog_googleMaps"
           />
@@ -573,17 +573,20 @@ const Aveiro = () => {
           </figure>
           Der Bus hält in Aveiro bei den gleichen Stationen, wie auf der
           Hinfahrt. Nördlich vom Leuchtturm in Costa Nova befindet sich noch das
-          'Reserva Natural das Dunas de São Jacinto'. Hierbei handelt es ähnlich wie die <a href="#passadicos">Passadiços de Aveiro</a>
-          {" "} um ein Naturgebiet. Mir wurde empfohlen bei einem Besuch die Fähre zu nutzen. Ich habe jedoch von einem Besuch abgesehen, da sich 
-          laut Rezessionen sowohl bei Google Maps, als auch Tripadvisor dort ein wildes Rudel von 5 Hunden befindet, welches Besucher angreift.
+          'Reserva Natural das Dunas de São Jacinto'. Hierbei handelt es ähnlich
+          wie die <a href="#passadicos">Passadiços de Aveiro</a> um ein
+          Naturgebiet. Mir wurde empfohlen bei einem Besuch die Fähre zu nutzen.
+          Ich habe jedoch von einem Besuch abgesehen, da sich laut Rezessionen
+          sowohl bei Google Maps, als auch Tripadvisor dort ein wildes Rudel von
+          5 Hunden befindet, welches Besucher angreift.
         </div>
-        <Divider/>
-        <p>Ich hoffe mein Beitrag hat dir gefallen und Hilft bei deiner Reise nach Aveiro. Schreibe mir gerne über meine <Link
-          to="/kontakt"
-        >
-          Kontaktmöglichkeiten
-        </Link> deine Meinung zu diesem 
-          Bericht, Aveiro allgemein oder wenn du sonstige Fragen zu deiner Reise oder diesem Beitrag hast. 
+        <Divider />
+        <p>
+          Ich hoffe mein Beitrag hat dir gefallen und Hilft bei deiner Reise
+          nach Aveiro. Schreibe mir gerne über meine{" "}
+          <Link to="/kontakt">Kontaktmöglichkeiten</Link> deine Meinung zu
+          diesem Bericht, Aveiro allgemein oder wenn du sonstige Fragen zu
+          deiner Reise oder diesem Beitrag hast.
         </p>
       </div>
       <Footer />
