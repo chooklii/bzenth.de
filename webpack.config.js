@@ -61,11 +61,6 @@ module.exports = {
       filename: '[name].js',
       path: path.resolve(__dirname, "docs")
     },
-    optimization: {
-      minimizer: [
-        new CssMinimizerPlugin(),
-      ],
-    },
     plugins: [
         new HtmlWebPackPlugin({
           template: "./static/index.html",
