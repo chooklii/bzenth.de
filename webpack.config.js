@@ -59,11 +59,6 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./static/index.html",
-      filename: "../docs/index.html",
-      chunks: ["bundle"],
-    }),
-    new HtmlWebPackPlugin({
-      template: "./static/index.html",
       filename: "../docs/404.html",
       chunks: ["bundle"],
     }),
@@ -77,12 +72,14 @@ module.exports = {
       filename: `../docs/blog/reisebericht-4-wochen-in-aveiro/index.html`,
       chunks: ["bundle"],
     }),
-    new HtmlWebPackPlugin({
-      favicon: "./static/favicons/favicon.ico",
-    }),
     new MiniCssExtractPlugin({
       filename: "[name].style.css",
       path: path.resolve(__dirname, "docs"),
+    }),
+    new HtmlWebPackPlugin({
+      template: "./static/index.html",
+      filename: "../docs/index.html",
+      chunks: ["bundle"],
     }),
   ].concat(multipleHtmlPlugins),
 };
