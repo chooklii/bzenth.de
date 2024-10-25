@@ -1,6 +1,7 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
 // add paths for subdomains here
@@ -59,6 +60,11 @@ module.exports = {
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, "docs")
+    },
+    optimization: {
+      minimizer: [
+        new CssMinimizerPlugin(),
+      ],
     },
     plugins: [
         new HtmlWebPackPlugin({
