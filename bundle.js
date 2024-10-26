@@ -28429,7 +28429,7 @@ var Aveiro_Aveiro = function Aveiro() {
     id: "essen"
   }, "Essen"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "blog_text"
-  }, "Die 'Locals' in Aveiro sind sich absolut einig, dass egal wo man in Aveiro essen geht das Essen gut ist.", /*#__PURE__*/react_default.a.createElement("figure", {
+  }, "Die 'Locals' in Aveiro sind sich absolut einig, dass egal wo man in Aveiro essen geht das Essen gut ist.", " ", /*#__PURE__*/react_default.a.createElement("figure", {
     className: "blog_figure_left"
   }, /*#__PURE__*/react_default.a.createElement("img", {
     className: "blog_tripas blog_img",
@@ -28461,12 +28461,12 @@ var Aveiro_Aveiro = function Aveiro() {
     title: "Route der Boote in Aveiro",
     src: "https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F",
     className: "blog_googleMaps"
-  }), "Die Boote fahren alle ungef\xE4hr an der gleichen Stelle in Aveiro los (siehe roter Marker) und fahren von dort unabh\xE4ngig vom Anbieter die auf der Karte eingezeichnete Route. Einige Boote fahren nach der Abbiegung nach links geradeaus zu den Salzfeldern von Aveiro, jedoch sieht man diese nicht wirklich vom Boot. Die Fahrt selber dauert ca. 45min und kostet 15\u20AC pro Person.", /*#__PURE__*/react_default.a.createElement("br", null), "Auf jedem Boot ist ein Steuermann und eine weitere Person. Auf manchen Booten erkl\xE4rt diese Person ausf\xFChrlich die Region und die Umgebung, durch welche das Boot gerade f\xE4hrt. Andere wurden durch ihn und sein Gesang oder seine Interaktion mit Menschen am Fluss eher zu Party-Booten. Auf dritten Booten sa\xDF diese Person nur mit im Boot ohne etwas zu sagen. Wie man beim Kauf der Fahrt erf\xE4hrt, welche Art von Boot man gebucht hat kann ich leider nicht sagen, nur das dieser deutliche Unterschied zwischen den Anbietern besteht.", /*#__PURE__*/react_default.a.createElement("br", null), "Mein prim\xE4rer Grund, weswegen ich mich gegen eine Bootsfahrt entschieden habe ist, dass die Boote auch nur die Wege befahren, welche man sich auch zu Fu\xDF anschauen kann."), /*#__PURE__*/react_default.a.createElement("h3", {
+  }), "Die Boote fahren alle ungef\xE4hr an der gleichen Stelle in Aveiro los (siehe roter Marker) und fahren von dort unabh\xE4ngig vom Anbieter die auf der Karte eingezeichnete Route. Einige Boote fahren nach der Abbiegung ganz links geradeaus zu den Salzfeldern von Aveiro, jedoch sieht man diese nicht wirklich vom Boot. Die Fahrt selber dauert ca. 45min und kostet 15\u20AC pro Person.", /*#__PURE__*/react_default.a.createElement("br", null), "Auf jedem Boot ist ein Steuermann und eine weitere Person. Auf manchen Booten erkl\xE4rt diese Person ausf\xFChrlich die Region und die Umgebung, durch welche das Boot gerade f\xE4hrt. Andere wurden durch ihn und sein Gesang oder seine Interaktion mit Menschen am Fluss eher zu Party-Booten. Auf dritten Booten sa\xDF diese Person nur mit im Boot ohne etwas zu sagen. Wie man beim Kauf der Fahrt erf\xE4hrt, welche Art von Boot man gebucht hat kann ich leider nicht sagen, nur das dieser deutliche Unterschied zwischen den Anbietern besteht.", /*#__PURE__*/react_default.a.createElement("br", null), "Mein prim\xE4rer Grund, weswegen ich mich gegen eine Bootsfahrt entschieden habe ist, dass die Boote auch nur die Wege befahren, welche man sich auch zu Fu\xDF anschauen kann."), /*#__PURE__*/react_default.a.createElement("h3", {
     className: "blog_heading",
     id: "passadicos"
   }, "Passadi\xE7os de Aveiro"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "blog_text"
-  }, "Die 'Passadicios de Aveiro' sind ein 5km langer Weg in eine Richtung, der durch die wunderbare Natur Portugals f\xFChrt. Sie befinden sich n\xF6rdlich von Aveiro.Ich habe die Passadicos mit einem der 'BUGA'-Fahrr\xE4der aus Aveiro besucht.\xDCber die gleichnamige App kann man Fahrr\xE4der in der Stadt ausleihen.", /*#__PURE__*/react_default.a.createElement("figure", {
+  }, "Die 'Passadicios de Aveiro' sind ein 5km langer Weg in eine Richtung, der durch die wunderbare Natur Portugals f\xFChrt. Sie befinden sich n\xF6rdlich von Aveiro. Ich habe die Passadicos mit einem der 'BUGA'-Fahrr\xE4der aus Aveiro besucht. \xDCber die gleichnamige App kann man Fahrr\xE4der in der Stadt ausleihen.", /*#__PURE__*/react_default.a.createElement("figure", {
     className: "blog_figure_center"
   }, /*#__PURE__*/react_default.a.createElement("img", {
     className: "blog_passadicios_01 blog_img",
@@ -28480,7 +28480,7 @@ var Aveiro_Aveiro = function Aveiro() {
     "aria-label": "Bild von Bacalhau in einer Auflaufform mit Kartoffeln"
   }), /*#__PURE__*/react_default.a.createElement("figcaption", {
     className: "blog_img_text"
-  }, "See und Weg der Passadicios")), "Aus diesem Grund laufen viele Leute nur ein St\xFCck und drehen dann um. Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs. (Fahrr\xE4der kann man auch vor Ort ausleihen; der Preis ist mir jedoch unbekannt.)In manchen Reisef\xFChrern wird der Weg zu den Passadicos auch als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver, als die tats\xE4chlichen Wege, deshalb w\xFCrde ich abraten, diesen Weg aus dem Zentrum von Aveiro zu nehmen.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, "See und Weg der Passadicios")), "Aus diesem Grund laufen viele Leute nur ein St\xFCck und drehen dann um. Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs. (Fahrr\xE4der kann man auch vor Ort ausleihen; der Preis ist mir jedoch unbekannt) In manchen Reisef\xFChrern wird der Weg zu den Passadicos auch als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver, als die tats\xE4chlichen Wege, deshalb w\xFCrde ich abraten, diesen Weg aus dem Zentrum von Aveiro zu nehmen.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Route zu und der Passadicios de Aveiro",
     src: "https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F",
     className: "blog_googleMaps"
