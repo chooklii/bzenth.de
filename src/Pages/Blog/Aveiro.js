@@ -154,7 +154,7 @@ const Aveiro = () => {
         </h2>
         <div className="blog_text">
           Die 'Locals' in Aveiro sind sich absolut einig, dass egal wo man in
-          Aveiro essen geht das Essen gut ist.
+          Aveiro essen geht das Essen gut ist.{" "}
           <figure className="blog_figure_left">
             <img
               className="blog_tripas blog_img"
@@ -247,7 +247,7 @@ const Aveiro = () => {
           Die Boote fahren alle ungefähr an der gleichen Stelle in Aveiro los
           (siehe roter Marker) und fahren von dort unabhängig vom Anbieter die
           auf der Karte eingezeichnete Route. Einige Boote fahren nach der
-          Abbiegung nach links geradeaus zu den Salzfeldern von Aveiro, jedoch
+          Abbiegung ganz links geradeaus zu den Salzfeldern von Aveiro, jedoch
           sieht man diese nicht wirklich vom Boot. Die Fahrt selber dauert ca.
           45min und kostet 15€ pro Person.
           <br />
@@ -272,8 +272,8 @@ const Aveiro = () => {
         <div className="blog_text">
           Die 'Passadicios de Aveiro' sind ein 5km langer Weg in eine Richtung,
           der durch die wunderbare Natur Portugals führt. Sie befinden sich
-          nördlich von Aveiro.Ich habe die Passadicos mit einem der
-          'BUGA'-Fahrräder aus Aveiro besucht.Über die gleichnamige App kann man
+          nördlich von Aveiro. Ich habe die Passadicos mit einem der
+          'BUGA'-Fahrräder aus Aveiro besucht. Über die gleichnamige App kann man
           Fahrräder in der Stadt ausleihen.
           <figure className="blog_figure_center">
             <img
@@ -305,7 +305,7 @@ const Aveiro = () => {
           Aus diesem Grund laufen viele Leute nur ein Stück und drehen dann um.
           Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs.
           (Fahrräder kann man auch vor Ort ausleihen; der Preis ist mir jedoch
-          unbekannt.)In manchen Reiseführern wird der Weg zu den Passadicos auch
+          unbekannt) In manchen Reiseführern wird der Weg zu den Passadicos auch
           als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver,
           als die tatsächlichen Wege, deshalb würde ich abraten, diesen Weg aus
           dem Zentrum von Aveiro zu nehmen.
