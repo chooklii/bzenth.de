@@ -632,7 +632,7 @@ const GameHome = () => {
 
     if (oldMetaForLevel) {
       const oldBestTime = oldMetaForLevel.record;
-      const newRecord = finishScreenData.time < oldBestTime;
+      const newRecord = oldBestTime != undefined && finishScreenData.time < oldBestTime;
       return (
         <div className="finish_data_wrapper">
           {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
