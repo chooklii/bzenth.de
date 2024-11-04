@@ -135,11 +135,11 @@ const GameHome = () => {
     let newData;
     if (id in metaData) {
       const oldLevelData = metaData[id];
+      const newRecord = oldLevelData.record === undefined || oldLevelData.record > runTime
       const newLevelData = {
         deaths: oldLevelData.deaths,
-        record: oldLevelData.record > runTime ? runTime : oldLevelData.record,
-        screenSize:
-          oldLevelData.record > runTime
+        record: newRecord ? runTime : oldLevelData.record,
+        screenSize: newRecord
             ? getScreenSize().type
             : oldLevelData.screenSize,
       };
@@ -219,7 +219,7 @@ const GameHome = () => {
     if (screenWidth >= minWidth && screenHeight >= minHeight) {
       game = new Phaser.Game(config);
       game.levels = starting;
-      game.restart = () => void 0;
+      game.restart = () => restartLevel();
       game.type = type;
       game.playMusic = false;
       setType(type);
@@ -276,7 +276,7 @@ const GameHome = () => {
     setKilledBy(way);
     window.addEventListener("keydown", (event) => {
       if ((event.key === "r" || event.key === "R") && deathscreen) {
-        restartLevel();
+        restartLevel(levelId);
       }
     });
   };
@@ -285,10 +285,10 @@ const GameHome = () => {
     // kill current game
     game.destroy(true);
     updateMusic(music_theme);
-    setSelectedLevel(id);
     setShowMenu(false);
     setMusicPlaylist(music_theme);
     // create new game with correct level id
+    setSelectedLevel(id);
     initGame(id);
   };
 
@@ -299,14 +299,14 @@ const GameHome = () => {
     game.playMusic = music_playing;
     game.finished = (runTime) => finished(runTime, id);
     game.death = (way) => death(way, id);
-    game.restart = () => restartLevel();
+    game.restart = () => restartLevel(id);
   };
 
-  const restartLevel = () => {
+  const restartLevel = (id) => {
     game.destroy(true);
     setShowDeadscreen(false);
     setShowFinishScreen(false);
-    initGame(selectedLevel);
+    initGame(id ?? selectedLevel);
   };
 
   const handleLanguageChange = (lang) => {
@@ -658,10 +658,10 @@ const GameHome = () => {
           {!newRecord && (
             <div className="finish_oldRecordWrapper">
               <p className="finish_oldRecord_time">
-                {translation[language].finish_best_time}
+                {translation[language].finish_best_time} {oldBestTime / 1000}s
               </p>
               <p className="finish_oldRecord_size">
-                {translation[language].finish_best_time_screen}
+                {translation[language].finish_best_time_screen} {oldMetaForLevel.screenSize}
               </p>
             </div>
           )}
