@@ -60,42 +60,42 @@ const  Header = () => {
         <Link
           onClick={() => hideMenu()}
           className="header-element"
-          to="/projekte"
+          to="/projekte/"
         >
           {getText("header.projects")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
-          to="/skills"
+          to="/skills/"
         >
           {getText("header.skills")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
-          to="/privat"
+          to="/privat/"
         >
           {getText("header.aboutMe")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
-          to="/blog"
+          to="/blog/"
         >
           {getText("header.blog")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element"
-          to="/kontakt"
+          to="/kontakt/"
         >
           {getText("header.contact")}
         </Link>
         <Link
           onClick={() => hideMenu()}
           className="header-element notShownDesktop"
-          to="/impressum"
+          to="/impressum/"
         >
           {getText("header.imprint")}
         </Link>
