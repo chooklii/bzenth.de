@@ -8713,37 +8713,37 @@ var Header_Header = function Header() {
       return hideMenu();
     },
     className: "header-element",
-    to: "/projekte"
+    to: "/projekte/"
   }, getText("header.projects")), /*#__PURE__*/react_default.a.createElement(react_router_dom["b" /* Link */], {
     onClick: function onClick() {
       return hideMenu();
     },
     className: "header-element",
-    to: "/skills"
+    to: "/skills/"
   }, getText("header.skills")), /*#__PURE__*/react_default.a.createElement(react_router_dom["b" /* Link */], {
     onClick: function onClick() {
       return hideMenu();
     },
     className: "header-element",
-    to: "/privat"
+    to: "/privat/"
   }, getText("header.aboutMe")), /*#__PURE__*/react_default.a.createElement(react_router_dom["b" /* Link */], {
     onClick: function onClick() {
       return hideMenu();
     },
     className: "header-element",
-    to: "/blog"
+    to: "/blog/"
   }, getText("header.blog")), /*#__PURE__*/react_default.a.createElement(react_router_dom["b" /* Link */], {
     onClick: function onClick() {
       return hideMenu();
     },
     className: "header-element",
-    to: "/kontakt"
+    to: "/kontakt/"
   }, getText("header.contact")), /*#__PURE__*/react_default.a.createElement(react_router_dom["b" /* Link */], {
     onClick: function onClick() {
       return hideMenu();
     },
     className: "header-element notShownDesktop",
-    to: "/impressum"
+    to: "/impressum/"
   }, getText("header.imprint")), /*#__PURE__*/react_default.a.createElement(LanguageSwitch_LanguageSwitch, null)));
 };
 
