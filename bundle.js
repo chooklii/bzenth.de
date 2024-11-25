@@ -28346,6 +28346,7 @@ var react_router_dom = __webpack_require__(42);
 
 
 
+var noMaps = false;
 
 var Aveiro_Aveiro = function Aveiro() {
   return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(Helmet["a" /* Helmet */], null, /*#__PURE__*/react_default.a.createElement("title", null, "4 Wochen in Aveiro"), /*#__PURE__*/react_default.a.createElement("meta", {
@@ -28436,7 +28437,7 @@ var Aveiro_Aveiro = function Aveiro() {
     "aria-label": "Tripas de Aveiro in meiner Hand"
   }), /*#__PURE__*/react_default.a.createElement("figcaption", {
     className: "blog_img_text"
-  }, "Tripas de Aveiro")), "Was sich in Aveiro bei quasi allem, besonders aber beim Essen konstant durchzieht ist, dass die Stadt zwar durchaus touristisch erschlossen ist, aber lange nicht komplett Aveiro und auch deutlich weniger, als die gro\xDFen St\xE4dte des Landes.", /*#__PURE__*/react_default.a.createElement("br", null), "Das hat zur Folge, dass die Preise in der Regel im Bereich, welcher von vielen Touristen besucht wird (besonders die Tagesreisen mit dem Bus, welche nur im alten Stadtzentrum unterwegs sind) etwas h\xF6her sind und wenn man diese Bereiche verl\xE4sst die Preise wieder fallen.", /*#__PURE__*/react_default.a.createElement("br", null), "Wie \xFCberall in Portugal ist auch in Aveiro die 'S\xFC\xDFwarenabteilung' absolut genial. Aveiro selber ist bekannt f\xFCr seine 'Ovos Moles de Aveiro', welche du auf jeden Fall probieren solltest. Auch 'Tripas de Aveiro' sind eine Cr\xE9pe \xE4hnliche Spezialit\xE4t aus Aveiro. Es gibt zwei 'Buden' in Aveiro, welche beide nur 'Tripas de Aveiro' verkaufen (Gr\xFCn markiert auf der unteren Karte). Ich selber konnte keinen Favoriten unter den beiden ausmachen.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null)), /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, "Tripas de Aveiro")), "Was sich in Aveiro bei quasi allem, besonders aber beim Essen konstant durchzieht ist, dass die Stadt zwar durchaus touristisch erschlossen ist, aber lange nicht komplett Aveiro und auch deutlich weniger, als die gro\xDFen St\xE4dte des Landes.", /*#__PURE__*/react_default.a.createElement("br", null), "Das hat zur Folge, dass die Preise in der Regel im Bereich, welcher von vielen Touristen besucht wird (besonders die Tagesreisen mit dem Bus, welche nur im alten Stadtzentrum unterwegs sind) etwas h\xF6her sind und wenn man diese Bereiche verl\xE4sst die Preise wieder fallen.", /*#__PURE__*/react_default.a.createElement("br", null), "Wie \xFCberall in Portugal ist auch in Aveiro die 'S\xFC\xDFwarenabteilung' absolut genial. Aveiro selber ist bekannt f\xFCr seine 'Ovos Moles de Aveiro', welche du auf jeden Fall probieren solltest. Auch 'Tripas de Aveiro' sind eine Cr\xE9pe \xE4hnliche Spezialit\xE4t aus Aveiro. Es gibt zwei 'Buden' in Aveiro, welche beide nur 'Tripas de Aveiro' verkaufen (Gr\xFCn markiert auf der unteren Karte). Ich selber konnte keinen Favoriten unter den beiden ausmachen.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null)), noMaps && /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Karte aller meiner Essensoptionen in Aveiro",
     className: "blog_googleMaps",
     src: "https://www.google.com/maps/d/embed?mid=19H697wyrPopZl4UaST9b_nh4ab1CCac&ehbc=2E312F"
@@ -28457,7 +28458,7 @@ var Aveiro_Aveiro = function Aveiro() {
     id: "boote"
   }, "Moliceiro-Boote"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "blog_text"
-  }, "Die wohl bekannteste Attraktion in Aveiro selber sind die bunten Moliceiro-Boote. Die Boote wurden fr\xFCher zum Transport von Salz und von G\xFCtern verwendet. Heute sind die Boote, die mit Abstand frequentierteste Attraktion in Aveiro. An Tagen mit gutem Wetter kann man am Kanal in Aveiro alle paar Minuten ein Boot voller Menschen beobachten.", /*#__PURE__*/react_default.a.createElement("br", null), "Ich muss zugeben, dass ich trotz meiner langen Aufenthaltszeit in Aveiro nie selber mit den Booten gefahren bin, sondern sie lediglich nur von au\xDFen beobachtet habe. Das liegt prim\xE4r daran, dass mich pers\xF6nlich die Boote nicht wirklich angesprochen haben. Trotzdem m\xF6chte ich meine Beobachtungen teilen, sodass sich jeder selbst eine Meinung bilden kann, ob man eine Bootsfahrt machen m\xF6chte.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, "Die wohl bekannteste Attraktion in Aveiro selber sind die bunten Moliceiro-Boote. Die Boote wurden fr\xFCher zum Transport von Salz und von G\xFCtern verwendet. Heute sind die Boote, die mit Abstand frequentierteste Attraktion in Aveiro. An Tagen mit gutem Wetter kann man am Kanal in Aveiro alle paar Minuten ein Boot voller Menschen beobachten.", /*#__PURE__*/react_default.a.createElement("br", null), "Ich muss zugeben, dass ich trotz meiner langen Aufenthaltszeit in Aveiro nie selber mit den Booten gefahren bin, sondern sie lediglich nur von au\xDFen beobachtet habe. Das liegt prim\xE4r daran, dass mich pers\xF6nlich die Boote nicht wirklich angesprochen haben. Trotzdem m\xF6chte ich meine Beobachtungen teilen, sodass sich jeder selbst eine Meinung bilden kann, ob man eine Bootsfahrt machen m\xF6chte.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), noMaps && /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Route der Boote in Aveiro",
     src: "https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F",
     className: "blog_googleMaps"
@@ -28480,7 +28481,7 @@ var Aveiro_Aveiro = function Aveiro() {
     "aria-label": "Bild von Bacalhau in einer Auflaufform mit Kartoffeln"
   }), /*#__PURE__*/react_default.a.createElement("figcaption", {
     className: "blog_img_text"
-  }, "See und Weg der Passadicios")), "Aus diesem Grund laufen viele Leute nur ein St\xFCck und drehen dann um. Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs. (Fahrr\xE4der kann man auch vor Ort ausleihen; der Preis ist mir jedoch unbekannt) In manchen Reisef\xFChrern wird der Weg zu den Passadicos auch als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver, als die tats\xE4chlichen Wege, deshalb w\xFCrde ich abraten, diesen Weg aus dem Zentrum von Aveiro zu nehmen.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, "See und Weg der Passadicios")), "Aus diesem Grund laufen viele Leute nur ein St\xFCck und drehen dann um. Am Ende der Route sind fast nur noch Fahrradfahrer unterwegs. (Fahrr\xE4der kann man auch vor Ort ausleihen; der Preis ist mir jedoch unbekannt) In manchen Reisef\xFChrern wird der Weg zu den Passadicos auch als Teil dieser beschrieben, dieser ist jedoch deutlich unattraktiver, als die tats\xE4chlichen Wege, deshalb w\xFCrde ich abraten, diesen Weg aus dem Zentrum von Aveiro zu nehmen.", /*#__PURE__*/react_default.a.createElement("br", null), noMaps && /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Route zu und der Passadicios de Aveiro",
     src: "https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F",
     className: "blog_googleMaps"
@@ -28545,7 +28546,7 @@ var Aveiro_Aveiro = function Aveiro() {
   }, "Wenn man kein Mietwagen besitzt ist der Bus von Aveiro das am h\xE4ufigsten genutzte Verkehrsmittel, um von der Stadt nach Costa Nova zu gelangen. Der Bus startet am Busbahnhof (roter Marker), h\xE4lt aber ebenfalls auch im Stadtzentrum (gr\xFCner Marker). Tickets gibt es direkt beim Fahrer zu kaufen und kosten 2,80\u20AC.", /*#__PURE__*/react_default.a.createElement("br", null), "Der Bus und seine Routen sind nicht \xFCber Google Maps zu finden. Es gibt im Internet Fahrpl\xE4ne des Busses, zum Beispiel \xFCber", " ", /*#__PURE__*/react_default.a.createElement("a", {
     target: "_blank",
     href: "https://www.rome2rio.com/de/map/Aveiro/Costa-Nova-Biarritz?search=Aveiro,Costa-Nova-Biarritz#trips/transport/Aveiro/Costa-Nova-Biarritz/r/Line-36-bus/s/0"
-  }, "Rome2Rio"), ". Die Endstation des Busses 'Costa Nova - Biarritz' befindet sich direkt vor den 'bunten H\xE4usern von Costa Nova'.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, "Rome2Rio"), ". Die Endstation des Busses 'Costa Nova - Biarritz' befindet sich direkt vor den 'bunten H\xE4usern von Costa Nova'.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), noMaps && /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Bushaltestellen nach Costa Nova in Aveiro",
     src: "https://www.google.com/maps/d/embed?mid=1Yw_l_xwHO8sqmSAknzUfTEtgcrsn4RM&ehbc=2E312F",
     className: "blog_googleMaps"
@@ -28554,7 +28555,7 @@ var Aveiro_Aveiro = function Aveiro() {
     id: "incostanova"
   }, "in Costa Nova"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "blog_text"
-  }, /*#__PURE__*/react_default.a.createElement("iframe", {
+  }, noMaps && /*#__PURE__*/react_default.a.createElement("iframe", {
     title: "Bushaltestellen und Leuchtturm in Costa Nova",
     src: "https://www.google.com/maps/d/embed?mid=13F5ruSeYmEwbOW3e7Ye1mgV_sTgQL34&ehbc=2E312F",
     className: "blog_googleMaps"
