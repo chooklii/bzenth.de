@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import { Avatar, Divider } from "antd";
 import { Link } from "react-router-dom";
 
+const noMaps = false
+
 const Aveiro = () => {
   return (
     <div>
@@ -182,11 +184,13 @@ const Aveiro = () => {
           <br />
           <br />
         </div>
+        {noMaps &&
         <iframe
           title="Karte aller meiner Essensoptionen in Aveiro"
           className="blog_googleMaps"
           src="https://www.google.com/maps/d/embed?mid=19H697wyrPopZl4UaST9b_nh4ab1CCac&ehbc=2E312F"
         />
+        }
         <br />
         <div className="blog_text">
           Wo sich alle Leute, mit denen ich gesprochen habe einig waren ist,
@@ -239,11 +243,13 @@ const Aveiro = () => {
           Meinung bilden kann, ob man eine Bootsfahrt machen möchte.
           <br />
           <br />
+          {noMaps &&
           <iframe
             title="Route der Boote in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F"
             className="blog_googleMaps"
           />
+          }
           Die Boote fahren alle ungefähr an der gleichen Stelle in Aveiro los
           (siehe roter Marker) und fahren von dort unabhängig vom Anbieter die
           auf der Karte eingezeichnete Route. Einige Boote fahren nach der
@@ -310,11 +316,13 @@ const Aveiro = () => {
           als die tatsächlichen Wege, deshalb würde ich abraten, diesen Weg aus
           dem Zentrum von Aveiro zu nehmen.
           <br />
+          {noMaps &&
           <iframe
             title="Route zu und der Passadicios de Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F"
             className="blog_googleMaps"
           />
+          }
         </div>
         <h3 className="blog_heading" id="scbeiramar">
           Estádio Municipal de Aveiro - SC Beira-Mar
@@ -474,11 +482,13 @@ const Aveiro = () => {
           direkt vor den 'bunten Häusern von Costa Nova'.
           <br />
           <br />
+          {noMaps &&
           <iframe
             title="Bushaltestellen nach Costa Nova in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1Yw_l_xwHO8sqmSAknzUfTEtgcrsn4RM&ehbc=2E312F"
             className="blog_googleMaps"
           />
+          }
         </p>
 
         <h3 className="blog_heading" id="incostanova">
@@ -486,11 +496,13 @@ const Aveiro = () => {
         </h3>
 
         <div className="blog_text">
+        {noMaps &&
           <iframe
             title="Bushaltestellen und Leuchtturm in Costa Nova"
             src="https://www.google.com/maps/d/embed?mid=13F5ruSeYmEwbOW3e7Ye1mgV_sTgQL34&ehbc=2E312F"
             className="blog_googleMaps"
           />
+        }
           <br />
           <br />
           Der Bus kommt bei unterem roten Marker in Costa Nova an. Der Ausstieg
