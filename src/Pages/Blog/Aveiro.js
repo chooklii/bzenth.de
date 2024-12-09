@@ -14,7 +14,7 @@ const Aveiro = () => {
   return (
     <div>
       <Helmet>
-        <title>4 Wochen in Aveiro</title>
+        <title>4 Wochen Leben und Arbeiten in Aveiro - Meine Reisetipps</title>
         <meta
           name="description"
           content="Schon mal von Aveiro, dem 'Venedig' Portugals gehört? Ich durfte dort vier Wochen arbeiten und Teile meine Erfahrungen in meinem Blog"
