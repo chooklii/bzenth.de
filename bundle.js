@@ -28687,16 +28687,19 @@ var Aveiro_Aveiro = function Aveiro() {
 
   return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(Helmet["a" /* Helmet */], null, /*#__PURE__*/react_default.a.createElement("title", null, "4 Wochen in Aveiro"), /*#__PURE__*/react_default.a.createElement("meta", {
     name: "description",
-    content: "Reisebericht \xFCber 4 Wochen in Aveiro, Portugal"
+    content: "Schon mal von Aveiro, dem 'Venedig' Portugals geh\xF6rt? Ich durfte dort vier Wochen arbeiten und Teile meine Erfahrungen in meinem Blog"
   }), /*#__PURE__*/react_default.a.createElement("meta", {
     name: "keywords",
-    content: "Aveiro, Reisebericht, Blog, Portugal, Reisetipps"
+    content: "Aveiro, Reisebericht, Reiseblog,Blog, Portugal, Reisetipps"
   }), /*#__PURE__*/react_default.a.createElement("meta", {
     property: "og:title",
-    content: "4 Wochen in Aveiro"
+    content: "4 Wochen Leben und Arbeiten in Aveiro - Meine Reisetipps"
   }), /*#__PURE__*/react_default.a.createElement("meta", {
     property: "og:description",
-    content: "Reisebericht \xFCber 4 Wochen in Aveiro, Portugal"
+    content: "Schon mal von Aveiro, dem 'Venedig' Portugals geh\xF6rt? Ich durfte dort vier Wochen arbeiten und Teile meine Erfahrungen in meinem Blog"
+  }), /*#__PURE__*/react_default.a.createElement("meta", {
+    property: "canonical",
+    content: "https://bzenth.de/blog/reisebericht-4-wochen-in-aveiro/"
   })), /*#__PURE__*/react_default.a.createElement(Components["b" /* Header */], null), /*#__PURE__*/react_default.a.createElement("div", {
     className: "page_classic blog_page"
   }, /*#__PURE__*/react_default.a.createElement("div", {
