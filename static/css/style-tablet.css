@@ -563,6 +563,25 @@
         margin-left: 10%;
     }
 
+    .blog_map_vertical{
+        width: 80%;
+    }
+
+    .blog_map_horizontal{
+        width: 400px;
+    }
+
+    .blog_map_food{
+        margin-left: 10%;
+    }
+
+    .blog_checkbox{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
 
 
 

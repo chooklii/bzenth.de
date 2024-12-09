@@ -571,4 +571,17 @@
     .blog_img_text {
         font-size: 14px;
     }
+
+    .blog_map_vertical, 
+    .blog_map_horizontal{
+        width: 100%;
+    }
+
+    .blog_checkbox{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
 }

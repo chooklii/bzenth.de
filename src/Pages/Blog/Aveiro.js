@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer, Header } from "../../Components";
 import { Helmet } from "react-helmet";
-import { Avatar, Divider } from "antd";
+import { Avatar, Divider, Checkbox  } from "antd";
 import { Link } from "react-router-dom";
 
-const noMaps = false
-
 const Aveiro = () => {
+  const [showMaps, setShowMaps] = useState(false)
+  
+  const onChange = (e) => {
+    setShowMaps(e.target.checked)
+  }
+  
   return (
     <div>
       <Helmet>
@@ -39,6 +43,15 @@ const Aveiro = () => {
             <br />
             Dieser Beitrag wurde im Oktober 2024 geschrieben.
           </p>
+        </div>
+
+        <div className="blog_text">
+          Dieser Blog verwendet interaktive Karten von Google Maps. Um diese Karten anzuzeigen bitte folgende Checkbox aktivieren:
+          <div className="blog_checkbox">
+          <Checkbox checked={showMaps} onChange={onChange}>Google Maps Karten aktivieren</Checkbox>
+          </div>
+          Alternativ werden 'nur' Fotos der Karten angezeigt. Diese sind zum Verständnis des Blogs ebenfalls komplett ausreichend. 
+
         </div>
 
         <ol className="blog_content" role="list">
@@ -184,12 +197,21 @@ const Aveiro = () => {
           <br />
           <br />
         </div>
-        {noMaps &&
+        {showMaps &&
         <iframe
           title="Karte aller meiner Essensoptionen in Aveiro"
           className="blog_googleMaps"
           src="https://www.google.com/maps/d/embed?mid=19H697wyrPopZl4UaST9b_nh4ab1CCac&ehbc=2E312F"
         />
+        }
+        {!showMaps &&
+          <figure className="blog_figure_center">
+          <img
+            className="blog_map_food blog_map_vertical"
+            aria-label="Karte aller meiner Essensoptionen in Aveiro"
+          />
+          <figcaption className="blog_img_text">Karte aller meiner Essensoptionen in Aveiro</figcaption>
+        </figure>
         }
         <br />
         <div className="blog_text">
@@ -243,13 +265,22 @@ const Aveiro = () => {
           Meinung bilden kann, ob man eine Bootsfahrt machen möchte.
           <br />
           <br />
-          {noMaps &&
+          {showMaps &&
           <iframe
             title="Route der Boote in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1BcaSGF_CYHusIe5Bn1xWz_zIWQVz7Ys&ehbc=2E312F"
             className="blog_googleMaps"
           />
           }
+          {!showMaps &&
+          <figure className="blog_figure_center">
+          <img
+            className="blog_map_boat blog_map_vertical"
+            aria-label="Route der Boote in Aveiro"
+          />
+          <figcaption className="blog_img_text">Route der Boote in Aveiro</figcaption>
+        </figure>
+        }
           Die Boote fahren alle ungefähr an der gleichen Stelle in Aveiro los
           (siehe roter Marker) und fahren von dort unabhängig vom Anbieter die
           auf der Karte eingezeichnete Route. Einige Boote fahren nach der
@@ -316,13 +347,22 @@ const Aveiro = () => {
           als die tatsächlichen Wege, deshalb würde ich abraten, diesen Weg aus
           dem Zentrum von Aveiro zu nehmen.
           <br />
-          {noMaps &&
+          {showMaps &&
           <iframe
             title="Route zu und der Passadicios de Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1NdQCEhSdKMRO1im0vRZk6yzdUK3qjq8&ehbc=2E312F"
             className="blog_googleMaps"
           />
           }
+          {!showMaps &&
+          <figure className="blog_figure_center">
+          <img
+            className="blog_map_passadicios blog_map_horizontal"
+            aria-label="Route zu und der Passadicios de Aveiro"
+          />
+          <figcaption className="blog_img_text">Route zu und der Passadicios de Aveiro</figcaption>
+        </figure>
+        }
         </div>
         <h3 className="blog_heading" id="scbeiramar">
           Estádio Municipal de Aveiro - SC Beira-Mar
@@ -482,13 +522,22 @@ const Aveiro = () => {
           direkt vor den 'bunten Häusern von Costa Nova'.
           <br />
           <br />
-          {noMaps &&
+          {showMaps &&
           <iframe
             title="Bushaltestellen nach Costa Nova in Aveiro"
             src="https://www.google.com/maps/d/embed?mid=1Yw_l_xwHO8sqmSAknzUfTEtgcrsn4RM&ehbc=2E312F"
             className="blog_googleMaps"
           />
           }
+          {!showMaps &&
+          <figure className="blog_figure_center">
+          <img
+            className="blog_map_bus blog_map_vertical"
+            aria-label="Bushaltestellen nach Costa Nova in Aveiro"
+          />
+          <figcaption className="blog_img_text">Bushaltestellen nach Costa Nova in Aveiro</figcaption>
+        </figure>
+        }
         </p>
 
         <h3 className="blog_heading" id="incostanova">
@@ -496,12 +545,21 @@ const Aveiro = () => {
         </h3>
 
         <div className="blog_text">
-        {noMaps &&
+        {showMaps &&
           <iframe
             title="Bushaltestellen und Leuchtturm in Costa Nova"
             src="https://www.google.com/maps/d/embed?mid=13F5ruSeYmEwbOW3e7Ye1mgV_sTgQL34&ehbc=2E312F"
             className="blog_googleMaps"
           />
+        }
+        {!showMaps &&
+          <figure className="blog_figure_center">
+          <img
+            className="blog_map_costanova blog_map_horizontal"
+            aria-label="Bushaltestellen und Leuchtturm in Costa Nova"
+          />
+          <figcaption className="blog_img_text">Bushaltestellen und Leuchtturm in Costa Nova</figcaption>
+        </figure>
         }
           <br />
           <br />

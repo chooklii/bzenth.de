@@ -112,3 +112,23 @@ body{
 .walk_costa{
     content: url("../img/blog/walk.jpeg");
 }
+
+.blog_map_food{
+    content: url("../img/blog/map_food.png")
+}
+
+.blog_map_boat{
+    content: url("../img/blog/map_boat.png")
+}
+
+.blog_map_passadicios{
+    content: url("../img/blog/map_passadicios.png")
+}
+
+.blog_map_bus{
+    content: url("../img/blog/map_bus_stop.png")
+}
+
+.blog_map_costanova{
+    content: url("../img/blog/map_costa_nova.png")
+}
