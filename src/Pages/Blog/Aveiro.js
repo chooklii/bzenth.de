@@ -17,16 +17,20 @@ const Aveiro = () => {
         <title>4 Wochen in Aveiro</title>
         <meta
           name="description"
-          content="Reisebericht über 4 Wochen in Aveiro, Portugal"
+          content="Schon mal von Aveiro, dem 'Venedig' Portugals gehört? Ich durfte dort vier Wochen arbeiten und Teile meine Erfahrungen in meinem Blog"
         />
         <meta
           name="keywords"
-          content="Aveiro, Reisebericht, Blog, Portugal, Reisetipps"
+          content="Aveiro, Reisebericht, Reiseblog,Blog, Portugal, Reisetipps"
         />
-        <meta property="og:title" content="4 Wochen in Aveiro" />
+        <meta property="og:title" content="4 Wochen Leben und Arbeiten in Aveiro - Meine Reisetipps" />
         <meta
           property="og:description"
-          content="Reisebericht über 4 Wochen in Aveiro, Portugal"
+          content="Schon mal von Aveiro, dem 'Venedig' Portugals gehört? Ich durfte dort vier Wochen arbeiten und Teile meine Erfahrungen in meinem Blog"
+        />
+        <meta
+          property="canonical"
+          content="https://bzenth.de/blog/reisebericht-4-wochen-in-aveiro/" 
         />
       </Helmet>
       <Header />
