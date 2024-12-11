@@ -132,6 +132,10 @@
             "info": "NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln",
             "tech": "Javascript"
         },
+        "lichess": {
+            "info": "Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen",
+            "tech": "Javascript"
+        },
         "router": {
             "info": "Skript um automatisiert Vodafone-Router neuzustarten.",
             "tech": "Python mit Selenium"

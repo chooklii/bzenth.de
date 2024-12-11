@@ -131,6 +131,10 @@
             "info": "NPM package to convert booleans into true/false in a given language",
             "tech": "Javascript"
         },
+        "lichess": {
+            "info": "Google Chrome Extension to hide ratings during games on lichess.org",
+            "tech": "Javascript"
+        },
         "router": {
             "info": "Script to restart a vodafone-router at a given time of the day",
             "tech": "Python with Selenium"

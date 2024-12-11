@@ -6,6 +6,7 @@ import { TranslationContext, keyGenerator } from "../helper";
 import {
   faArchive,
   faBus,
+  faChessPawn,
   faDumbbell,
   faFlask,
   faGraduationCap,
@@ -79,6 +80,14 @@ const projects = [
     info: "projects.numwords.info",
     tech: "projects.numwords.tech",
     icon: faNpm
+  },
+  {
+    name: "Lichess Hide Ratings Chrome Extension",
+    additionalLink: "https://github.com/chooklii/lichess-hide-rating-extension",
+    additionalLink_name: "projects.code",
+    info: "projects.lichess.info",
+    tech: "projects.lichess.tech",
+    icon: faChessPawn
   },
   {
     name: "Router Restarter",
