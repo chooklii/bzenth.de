@@ -21,7 +21,7 @@ import {
   dungeon_theme,
   cave_theme,
   field_theme,
-} from "./music";
+} from "./resources/music";
 import {
   translation,
   minHeight,
@@ -30,7 +30,7 @@ import {
   rockheadTexts,
   sawTexts,
   spikeTexts,
-} from "./config";
+} from "./resources/config";
 import { TranslationContext, keyGenerator } from "../helper";
 import { sign, verify } from "jsonwebtoken";
 

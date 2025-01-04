@@ -50,6 +50,10 @@ const rockheadTexts = {
   en: ["Buried by the stone", "Struck by the stone", "Not looked up"],
 };
 
+const minHeight = 650;
+const minWidth = 1250;
+
+
 const translation = {
   de: {
     reset: "Fortschritt zurücksetzen",
@@ -135,9 +139,6 @@ const translation = {
     finish_best_time_screen: "The Screen Size of the record is: "
   },
 };
-
-const minHeight = 650;
-const minWidth = 1250;
 
 export {
   itemsToUnlock,
