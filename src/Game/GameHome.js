@@ -33,6 +33,7 @@ import {
 } from "./resources/config";
 import { TranslationContext, keyGenerator } from "../helper";
 import { sign, verify } from "jsonwebtoken";
+import IngameButtons from "./components/IngameButtons";
 
 const config = {
   type: Phaser.AUTO,
@@ -135,13 +136,12 @@ const GameHome = () => {
     let newData;
     if (id in metaData) {
       const oldLevelData = metaData[id];
-      const newRecord = oldLevelData.record === undefined || oldLevelData.record > runTime
+      const newRecord =
+        oldLevelData.record === undefined || oldLevelData.record > runTime;
       const newLevelData = {
         deaths: oldLevelData.deaths,
         record: newRecord ? runTime : oldLevelData.record,
-        screenSize: newRecord
-            ? getScreenSize().type
-            : oldLevelData.screenSize,
+        screenSize: newRecord ? getScreenSize().type : oldLevelData.screenSize,
       };
       newData = Object.assign(metaData, { [id]: newLevelData });
       setMetaData(newData);
@@ -505,16 +505,6 @@ const GameHome = () => {
     }
   };
 
-  const settingsIcon = () => {
-    return (
-      <div
-        onClick={() => handleSettingsMenu()}
-        className="settings_icon"
-        style={{ marginTop: "-" + config.height / 2 + "px" }}
-      ></div>
-    );
-  };
-
   const handleSettingsMenu = () => {
     if (showSettings) {
       game.scene.resume("default");
@@ -525,62 +515,6 @@ const GameHome = () => {
       setShowDeadscreen(false);
       setShowFinishScreen(false);
     }
-  };
-  const restartIcon = () => {
-    return (
-      <div
-        onClick={() => restartLevel()}
-        className="restart_icon"
-        style={{ marginTop: "-" + config.height / 2 + "px" }}
-      ></div>
-    );
-  };
-
-  const settings = () => {
-    return (
-      <div
-        className="settings"
-        style={{ marginTop: "-" + (config.height / 2 - 30) + "px" }}
-      >
-        <div className="controll">
-          <div className="single_setting">
-            <div className="setting_key">
-              {translation[language].controlls}:
-            </div>
-            <div className="setting_value">{translation[language].arrow}</div>
-          </div>
-          <div className="single_setting">
-            <div className="setting_key">{translation[language].jump}:</div>
-            <div className="setting_value">{translation[language].space}</div>
-          </div>
-          <div className="single_setting">
-            <div className="setting_key">{translation[language].restart}:</div>
-            <div className="setting_value">R</div>
-          </div>
-        </div>
-        <div className="options">
-          <Button
-            type="default"
-            onClick={() => {
-              handleSettingsMenu();
-            }}
-          >
-            {translation[language].back}
-          </Button>
-          <Button
-            style={{ marginLeft: "10px" }}
-            type="primary"
-            onClick={() => {
-              updateMusic(music_menu);
-              setShowSettings(false);
-              setShowMenu(true);
-            }}
-          >
-            {translation[language].mainMenu}
-          </Button>
-        </div>
-      </div>
-    );
   };
 
   const finishMenu = () => {
@@ -632,7 +566,8 @@ const GameHome = () => {
 
     if (oldMetaForLevel) {
       const oldBestTime = oldMetaForLevel.record;
-      const newRecord = oldBestTime != undefined && finishScreenData.time < oldBestTime;
+      const newRecord =
+        oldBestTime != undefined && finishScreenData.time < oldBestTime;
       return (
         <div className="finish_data_wrapper">
           {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
@@ -661,7 +596,8 @@ const GameHome = () => {
                 {translation[language].finish_best_time} {oldBestTime / 1000}s
               </p>
               <p className="finish_oldRecord_size">
-                {translation[language].finish_best_time_screen} {oldMetaForLevel.screenSize}
+                {translation[language].finish_best_time_screen}{" "}
+                {oldMetaForLevel.screenSize}
               </p>
             </div>
           )}
@@ -728,16 +664,6 @@ const GameHome = () => {
     );
   };
 
-  const renderButtons = () => {
-    return (
-      <div className="ingame_icons">
-        {settingsIcon()}
-        {restartIcon()}
-        {showSettings && settings()}
-      </div>
-    );
-  };
-
   const renderMusicIconMenu = () => {
     return (
       <div
@@ -774,7 +700,18 @@ const GameHome = () => {
       {finishScreen && finishMenu()}
       {displayPage && showPages()}
       <div className="game">
-        {!showMenu && !displayPage && renderButtons()}
+        {(!showMenu && !displayPage) && (
+          <IngameButtons
+            showSettings={showSettings}
+            translation={translation}
+            handleSettingsMenu={handleSettingsMenu}
+            updateMusic={updateMusic}
+            setShowSettings={setShowSettings}
+            setShowMenu={setShowMenu}
+            pageHeight={config.height}
+            language={language}
+          />
+        )}
         <section id="phaser-target" />
       </div>
     </div>
