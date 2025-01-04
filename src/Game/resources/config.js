@@ -70,7 +70,7 @@ const translation = {
     screenSize: "Level unterscheiden sich je nach Bildschirmgröße (s,m,l,xl), weswegen die Info mit der Bestzeit angezeigt wird",
     toolTipRecord: "Bisherige Bestzeit, die Bildschirmgröße der Bestzeit und die Anzahl der Tode in diesem Level",
     restart: "Neu Starten",
-    start: "Level starten",
+    start: "Spielen",
     mainMenu: "Hauptmenü",
     restartText: "R zum Neustarten oder hick klicken",
     screenToSmall: "Bildschirm zu klein",
@@ -94,8 +94,8 @@ const translation = {
     finish_newRecord_faster_02: " schneller",
     finish_oldRecord_screen: "Die Bildschirmgröße der alten Bestzeit war:",
     finish_best_time: "Die Bestzeit ist",
-    finish_best_time_screen: "Die Bildschirmgröße der alten Bestzeit ist:"
-
+    finish_best_time_screen: "Die Bildschirmgröße der alten Bestzeit ist:",
+    wasKilled: "Gestorben!"
   },
   en: {
     reset: "Reset",
@@ -136,7 +136,8 @@ const translation = {
     finish_newRecord_faster_02: "faster",
     finish_oldRecord_screen: "The Screen Size of the old record was: ",
     finish_best_time: "The record is: ",
-    finish_best_time_screen: "The Screen Size of the record is: "
+    finish_best_time_screen: "The Screen Size of the record is: ",
+    wasKilled: "Dead!"
   },
 };
 

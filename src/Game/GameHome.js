@@ -26,14 +26,11 @@ import {
   translation,
   minHeight,
   minWidth,
-  itemsToUnlock,
-  rockheadTexts,
-  sawTexts,
-  spikeTexts,
+  itemsToUnlock
 } from "./resources/config";
 import { TranslationContext, keyGenerator } from "../helper";
-import { sign, verify } from "jsonwebtoken";
-import IngameButtons from "./components/IngameButtons";
+import { FinishScreen, DeathScreen, IngameButtons } from "./components";
+import { writeLocalStorage, addDeathToCount, readLocalStorage } from "./StorageManagement";
 
 const config = {
   type: Phaser.AUTO,
@@ -55,8 +52,8 @@ var currentSong;
 const locales = ["de", "en"];
 
 const GameHome = () => {
-  const [screenHeight, setScreenHight] = useState(0);
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenHeight, setScreenHight] = useState(1500);
+  const [screenWidth, setScreenWidth] = useState(1500);
   const [finishedLevel, setFinishedLevel] = useState([]);
   const [metaData, setMetaData] = useState({});
   const [selectedLevel, setSelectedLevel] = useState(null);
@@ -77,7 +74,15 @@ const GameHome = () => {
   useEffect(() => {
     initDefaultGame();
     initMusic();
-    readLocalStorage(), readLanguageFromQuery();
+
+
+    const data = readLocalStorage();
+    if(data){
+      setFinishedLevel(data.finishedLevel);
+      setMetaData(data.metaData);
+    }
+
+    readLanguageFromQuery();
   }, []);
 
   const readLanguageFromQuery = () => {
@@ -87,79 +92,6 @@ const GameHome = () => {
       window.history.pushState({}, document.title, window.location.pathname);
       setLanguage(langQueryParm);
     }
-  };
-
-  const readLocalStorage = () => {
-    const dataFromLocalStorage = localStorage.getItem("gamedata");
-    if (!dataFromLocalStorage) return;
-    try {
-      const decoded = verify(dataFromLocalStorage, "hackerman");
-      if (decoded) {
-        setFinishedLevel(decoded.finishedLevel);
-        setMetaData(decoded.metaData);
-      }
-    } catch (e) {
-      console.log("Found invalid JWT - ignore");
-    }
-  };
-
-  const addDeathToCount = (id) => {
-    let newData;
-    if (!(id in metaData)) {
-      newData = Object.assign(metaData, { [id]: { deaths: 1 } });
-    } else {
-      const oldData = metaData[id];
-      newData = Object.assign(metaData, {
-        [id]: {
-          deaths: (oldData.deaths += 1),
-          record: oldData.record,
-          screenSize: oldData.screenSize,
-        },
-      });
-    }
-    setMetaData(newData);
-
-    const tokenData = {
-      finishedLevel: finishedLevel,
-      metaData: newData,
-    };
-    writeJsonToStorage(tokenData);
-  };
-
-  // i know that this is not the way to use jwt, but its the easiest way to prevent my friends from simple cheating - now they at least need to show some efford.
-  const writeJsonToStorage = (object) => {
-    const token = sign(object, "hackerman");
-    localStorage.setItem("gamedata", token);
-  };
-
-  const writeLocalStorage = (id, runTime) => {
-    let newData;
-    if (id in metaData) {
-      const oldLevelData = metaData[id];
-      const newRecord =
-        oldLevelData.record === undefined || oldLevelData.record > runTime;
-      const newLevelData = {
-        deaths: oldLevelData.deaths,
-        record: newRecord ? runTime : oldLevelData.record,
-        screenSize: newRecord ? getScreenSize().type : oldLevelData.screenSize,
-      };
-      newData = Object.assign(metaData, { [id]: newLevelData });
-      setMetaData(newData);
-    } else {
-      const levelData = {
-        deaths: 0,
-        record: runTime,
-        screenSize: getScreenSize().type,
-      };
-      newData = Object.assign(metaData, { [id]: levelData });
-      setMetaData(newData);
-    }
-
-    const tokenData = {
-      finishedLevel: finishedLevel,
-      metaData: newData,
-    };
-    writeJsonToStorage(tokenData);
   };
 
   const resetLevel = () => {
@@ -265,14 +197,14 @@ const GameHome = () => {
       time: runTime,
       oldMetaData: JSON.parse(JSON.stringify(metaData)),
     });
-    writeLocalStorage(id, runTime);
+    writeLocalStorage(id, metaData, getScreenSize().type, runTime, finishedLevel, setMetaData);
     game.scene.pause("default");
     setShowFinishScreen(true);
   };
 
   const death = (way, levelId) => {
     setShowDeadscreen(true);
-    addDeathToCount(levelId);
+    addDeathToCount(levelId, metaData, finishedLevel, setMetaData);
     setKilledBy(way);
     window.addEventListener("keydown", (event) => {
       if ((event.key === "r" || event.key === "R") && deathscreen) {
@@ -517,137 +449,11 @@ const GameHome = () => {
     }
   };
 
-  const finishMenu = () => {
-    const generalHeading = (deaths) => (
-      <div>
-        <p className="finish_heading">
-          <span className="finish_blur">{translation[language].finish}</span>
-        </p>
-        <p className="finish_time">
-          {translation[language].finish_time} {finishScreenData.time / 1000}s
-        </p>
-        <p className="finish_deaths">
-          {translation[language].finish_deaths} {deaths}
-        </p>
-        <p className="finish_size">
-          {translation[language].finish_screen} {getScreenSize().type}
-        </p>
-      </div>
-    );
-
-    const buttons = (
-      <div className="finish_button_wrapper">
-        <p
-          onClick={() => {
-            updateMusic(music_menu);
-            setShowFinishScreen(false);
-            setShowMenu(true);
-          }}
-          className="finish_button"
-        >
-          {translation[language].finish_menu}
-        </p>
-        <p
-          onClick={() => {
-            setShowFinishScreen(false);
-            restartLevel();
-          }}
-          className="finish_button"
-        >
-          {translation[language].finish_replay}
-        </p>
-      </div>
-    );
-
-    const oldMetaForLevel =
-      finishScreenData.id in finishScreenData.oldMetaData
-        ? finishScreenData.oldMetaData[finishScreenData.id]
-        : null;
-
-    if (oldMetaForLevel) {
-      const oldBestTime = oldMetaForLevel.record;
-      const newRecord =
-        oldBestTime != undefined && finishScreenData.time < oldBestTime;
-      return (
-        <div className="finish_data_wrapper">
-          {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
-          {newRecord && (
-            <div>
-              <p className="finish_heading_newRecord">
-                {translation[language].finish_record}
-              </p>
-              <p className="finish_oldRecordTime">
-                {translation[language].finish_oldRecord} {oldBestTime / 1000}s
-              </p>
-              <p className="finish_record_improvement">
-                {translation[language].finish_newRecord_faster_01}
-                {(oldBestTime - finishScreenData.time) / 1000}s
-                {translation[language].finish_newRecord_faster_02}
-              </p>
-              <p className="finish_old_screen_size">
-                {translation[language].finish_oldRecord_screen}
-                {oldMetaForLevel.screenSize}
-              </p>
-            </div>
-          )}
-          {!newRecord && (
-            <div className="finish_oldRecordWrapper">
-              <p className="finish_oldRecord_time">
-                {translation[language].finish_best_time} {oldBestTime / 1000}s
-              </p>
-              <p className="finish_oldRecord_size">
-                {translation[language].finish_best_time_screen}{" "}
-                {oldMetaForLevel.screenSize}
-              </p>
-            </div>
-          )}
-          {buttons}
-        </div>
-      );
-    }
-    return (
-      <div className="finish_data_wrapper">
-        {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
-        {buttons}
-      </div>
-    );
-  };
-
-  const deathScreen = () => {
-    var killText = "Gestorben";
-    if (killedBy === "saw") {
-      const index = Math.floor(Math.random() * sawTexts[language].length);
-      killText = sawTexts[language][index];
-    } else if (killedBy === "spike") {
-      const index = Math.floor(Math.random() * spikeTexts[language].length);
-      killText = spikeTexts[language][index];
-    } else if (killedBy === "rockhead") {
-      const index = Math.floor(Math.random() * rockheadTexts[language].length);
-      killText = rockheadTexts[language][index];
-    }
-    return (
-      <div>
-        <p className="gameover">Game over!</p>
-        <p className="killedbytext">{killText}</p>
-        <p
-          onClick={() => {
-            restartLevel();
-            setShowDeadscreen(false);
-          }}
-          className="restart_text"
-        >
-          {translation[language].restartText}
-        </p>
-      </div>
-    );
-  };
-
   const showPages = () => {
     return (
       <div className="game_pages">
         <div
           onClick={() => {
-            setDisplayPage(null);
             setDisplayPage(false);
             setShowMenu(true);
           }}
@@ -696,11 +502,31 @@ const GameHome = () => {
   return (
     <div className="game_home">
       {showMenu && levelSelection()}
-      {deathscreen && deathScreen()}
-      {finishScreen && finishMenu()}
+      {deathscreen && (
+        <DeathScreen
+          language={language}
+          restartLevel={restartLevel}
+          setShowDeadscreen={setShowDeadscreen}
+          killedBy={killedBy}
+        />
+      )}
+
+      {finishScreen && (
+        <FinishScreen
+          finishScreenData={finishScreenData}
+          translation={translation}
+          language={language}
+          screenSizeType={getScreenSize().type}
+          updateMusic={updateMusic}
+          setShowFinishScreen={setShowFinishScreen}
+          setShowMenu={setShowMenu}
+          restartLevel={restartLevel}
+        />
+      )}
+
       {displayPage && showPages()}
       <div className="game">
-        {(!showMenu && !displayPage) && (
+        {!showMenu && !displayPage && (
           <IngameButtons
             showSettings={showSettings}
             translation={translation}

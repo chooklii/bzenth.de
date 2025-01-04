@@ -47,13 +47,17 @@
 
 .level_selector{
     width: 80%;
-    margin-left: 10%;
+    min-width: 1250px;
     background-color: #c1d5d9;
     position: absolute;
     margin-top: 5%;
     height: fit-content;
     min-height: 80%;
     border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
 }
 
 .level_row{
@@ -93,6 +97,7 @@
 
 .explaination{
     width: 100%;
+    margin-top: 30px;
     font-family: "Comic Sans";
 }
 
@@ -396,10 +401,10 @@
 }
 
 .game_back{
-    position: absolute;
     margin-top: 1%;
-    margin-left: 60%;
-    display: flex
+    display: flex;
+    float: right;
+    margin-right: 10px;
 }
 
 .margin_left{

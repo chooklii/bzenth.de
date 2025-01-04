@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "antd";
 import { music_menu } from "../resources/music";
 
-const IngameButtons = ({
+export const IngameButtons = ({
   showSettings,
   translation,
   handleSettingsMenu,
@@ -88,5 +88,3 @@ const IngameButtons = ({
     </div>
   );
 };
-
-export default IngameButtons;
