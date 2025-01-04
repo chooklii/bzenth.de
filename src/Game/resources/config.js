@@ -67,7 +67,7 @@ const translation = {
     jump: "Springen",
     space: "Leertaste",
     record: "Stelle persönliche Bestzeiten für jedes Level auf oder beende alle Level mit möglichst wenig Toden!",
-    screenSize: "Level unterscheiden sich je nach Bildschirmgröße (s,m,l,xl), weswegen die Info mit der Bestzeit angezeigt wird",
+    screenSize: "Level unterscheiden sich minimal jenach Bildschirmgröße (s,m,l,xl), weswegen die Info mit der Bestzeit angezeigt wird",
     toolTipRecord: "Bisherige Bestzeit, die Bildschirmgröße der Bestzeit und die Anzahl der Tode in diesem Level",
     restart: "Neu Starten",
     start: "Spielen",

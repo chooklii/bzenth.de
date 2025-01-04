@@ -108,22 +108,24 @@ class Game extends Phaser.Scene{
   }
 
   addFinish(x,y){
-    platforms.create(x-30, y, "terrain", 215)
-    platforms.create(x-45, y, "terrain", 215)
-    platforms.create(x-60, y, "terrain", 215)
-    platforms.create(x-75, y, "terrain", 215)
-    finish =  finish.create(x-50, y-35, "idle_finish").setScale(0.75,0.75).refreshBody()
+    const differenceBetween = 15*this.game.scaleFactor
+    platforms.create(x-differenceBetween*2, y, "terrain", 215).setScale(this.game.scaleFactor, this.game.scaleFactor)
+    platforms.create(x-differenceBetween*3, y, "terrain", 215).setScale(this.game.scaleFactor, this.game.scaleFactor)
+    platforms.create(x-differenceBetween*4, y, "terrain", 215).setScale(this.game.scaleFactor, this.game.scaleFactor)
+    platforms.create(x-differenceBetween*5, y, "terrain", 215).setScale(this.game.scaleFactor, this.game.scaleFactor)
+    finish =  finish.create(x-50*this.game.scaleFactor, y-35*this.game.scaleFactor, "idle_finish").setScale(0.75*this.game.scaleFactor,0.75*this.game.scaleFactor).refreshBody()
   }
 
   addStart(x,y){
     start = this.physics.add.staticGroup()
-    start.create(x, y, "idle_start")
+    start.create(x, y, "idle_start").setScale(this.game.scaleFactor, this.game.scaleFactor)
   }
 
   createPlattforms(){
     // add Green Body
-    platforms.create(0, height-8, "terrain", 7).setScale(width, 1).refreshBody()
-    const levels = this.game.levels[this.game.type]
+    platforms.create(0, height-8, "terrain", 7).setScale(width*this.game.scaleFactor, this.game.scaleFactor).refreshBody()
+    const levels = this.game.levels.data
+    if(!levels) return
     // add start
     this.addStart(width * levels.start.x, height * levels.start.y)
     // add finish
@@ -131,7 +133,7 @@ class Game extends Phaser.Scene{
     // add all other stuff
     levels.spikeheads.forEach(_ => this.addSpikehead(width * _.x, height*_.y))
     levels.plattforms.forEach(_ => this.addThickPlattform(width * _.x, height * _.y, _.scale))
-    levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y, _.amound))
+    levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y,  _.amound))
     levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
     levels.sticks.forEach(_ => this.addSmallPlattform(width*_.x, height*_.y))
     if(levels.elevator) levels.elevator.forEach(_ => this.addElevatorHead(width*_.x, height*_.y))
@@ -139,40 +141,40 @@ class Game extends Phaser.Scene{
 
 
   addThickPlattform(x, y, scale){
-    platforms.create(x, y, "terrain", 13).setScale(scale, 1).refreshBody()
+    platforms.create(x, y, "terrain", 13).setScale(scale*this.game.scaleFactor, this.game.scaleFactor).refreshBody()
   }
 
   addSmallPlattform(x, y){
-    platforms.create(x, y, "plattform")
+    platforms.create(x, y, "plattform").setScale(this.game.scaleFactor, this.game.scaleFactor)
   }
 
   addSaw(x, y, amound = 1){
     // creates given amound if savs add X / Y position
     var current_x = x
     for(var i = 1; i<=amound; i++){
-      const saw = saws.create(current_x, y, "idle_saw")
+      const saw = saws.create(current_x, y, "idle_saw").setScale(this.game.scaleFactor, this.game.scaleFactor)
       saw.anims.play("animation_saw", true)
       this.state.saws.push(saw)
-      current_x+=40
+      current_x+=(40*this.game.scaleFactor)
       }
   }
   
   addElevatorHead(x, y){
-    this.state.elevatorheads.push(elevatorHeads.create(x, y, "idle_rockhead"))
+    this.state.elevatorheads.push(elevatorHeads.create(x, y, "idle_rockhead").setScale(this.game.scaleFactor, this.game.scaleFactor))
   }
 
   addPlattformWithRockhead(x, y, scale = 5, multiple = false){
     // create Rockheads
-    platforms.create(x, y, "terrain", 13).setScale(scale, 1).refreshBody()
-    const positionRockhead = Phaser.Math.Between(x-5*scale, x+5*scale)
-    this.state.rocks.push(rockheads.create(positionRockhead, y-70, "idle_rockhead"))
+    platforms.create(x, y, "terrain", 13).setScale(scale*this.game.scaleFactor, this.game.scaleFactor).refreshBody()
+    const positionRockhead = Phaser.Math.Between(x-5*scale*this.game.scaleFactor, x+5*scale*this.game.scaleFactor)
+    this.state.rocks.push(rockheads.create(positionRockhead, y-(70*this.game.scaleFactor), "idle_rockhead").setScale(this.game.scaleFactor, this.game.scaleFactor))
     if(multiple){
-      this.state.rocks.push(rockheads.create(positionRockhead+40, y-70, "idle_rockhead"))
+      this.state.rocks.push(rockheads.create(positionRockhead+(40*this.game.scaleFactor), y-(70*this.game.scaleFactor), "idle_rockhead").setScale(this.game.scaleFactor, this.game.scaleFactor))
     }
   }
 
   addSpikehead(x, y){
-    this.state.spikeheads.push(spikeheads.create(x, y, "idle_spike"))
+    this.state.spikeheads.push(spikeheads.create(x, y, "idle_spike").setScale(this.game.scaleFactor, this.game.scaleFactor))
   }
 
   addDefaultToHeads(){
@@ -184,15 +186,16 @@ class Game extends Phaser.Scene{
       x.defaultY = x.y
     })
     this.state.elevatorheads.forEach(x => {
-      x.setVelocityY(100)
+      x.setVelocityY(100*this.game.scaleFactor)
     })
   }
 
   hitRockhead(){
     // check if player got hit by rockhead or jumped on it
+    const rockheadHitRadius = 10*this.game.scaleFactor
     this.state.rocks.forEach(rockhead => {
-      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX -10) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX +10) &&
-      (player.y +player.displayOriginY > rockhead.y - rockhead.displayOriginY -10) && (player.y - player.displayOriginY < rockhead.y + rockhead.displayOriginY +10)){
+      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX -rockheadHitRadius) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX +rockheadHitRadius) &&
+      (player.y +player.displayOriginY > rockhead.y - rockhead.displayOriginY -rockheadHitRadius) && (player.y - player.displayOriginY < rockhead.y + rockhead.displayOriginY +rockheadHitRadius)){
 
       if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
         if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
@@ -206,9 +209,10 @@ class Game extends Phaser.Scene{
 
 hitElevatorRockhead(){
   // check if player got hit by rockhead or jumped on it
+  const rockheadHitRadius = 10*this.game.scaleFactor
   this.state.elevatorheads.forEach(single => {
-    if((player.x +player.displayOriginX > single.x - single.displayOriginX -10) && (player.x - player.displayOriginX < single.x + single.displayOriginX +10) &&
-    (player.y +player.displayOriginY > single.y - single.displayOriginY -10) && (player.y - player.displayOriginY < single.y + single.displayOriginY +10)){
+    if((player.x +player.displayOriginX > single.x - single.displayOriginX -rockheadHitRadius) && (player.x - player.displayOriginX < single.x + single.displayOriginX +rockheadHitRadius) &&
+    (player.y +player.displayOriginY > single.y - single.displayOriginY -rockheadHitRadius) && (player.y - player.displayOriginY < single.y + single.displayOriginY +rockheadHitRadius)){
 
     if((player.x + player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
       if(player.y > single.y && single.body.velocity.y != rockheadUpTempo){
@@ -230,10 +234,11 @@ playerdeath(type){
 }
 
   hitSpikehead(){
+    const spikeHeadHitRadius = 10*this.game.scaleFactor
     this.state.spikeheads.forEach(single => {
       // check if player and single spikehead are within of 10 values
-      if((player.x +player.displayOriginX > single.x - single.displayOriginX -10) && (player.x - player.displayOriginX < single.x + single.displayOriginX +10) &&
-        (player.y +player.displayOriginY > single.y - single.displayOriginY -10) && (player.y - player.displayOriginY < single.y + single.displayOriginY +10)){
+      if((player.x +player.displayOriginX > single.x - single.displayOriginX -spikeHeadHitRadius) && (player.x - player.displayOriginX < single.x + single.displayOriginX +spikeHeadHitRadius) &&
+        (player.y +player.displayOriginY > single.y - single.displayOriginY -spikeHeadHitRadius) && (player.y - player.displayOriginY < single.y + single.displayOriginY +spikeHeadHitRadius)){
       if((player.x +player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
         if(player.y > single.y){
           // player hit spikehead from top
@@ -355,37 +360,37 @@ playerdeath(type){
   }
 
   initPlayer(){
-    player = this.physics.add.sprite(40, height-40, "idle_right")
+    player = this.physics.add.sprite(40, height-40, "idle_right").setScale(this.game.scaleFactor, this.game.scaleFactor)
     player.setCollideWorldBounds(true)
-    player.body.setGravityY(400)
+    player.body.setGravityY(400*this.game.scaleFactor)
   }
 
   moveRockHeads(){
     this.state.rocks.forEach(single => {
       if(single.y <= single.defaultY){
-        single.setVelocityY(200)
+        single.setVelocityY(200*this.game.scaleFactor)
       }
-      else if(single.y >= single.defaultY+45){
+      else if(single.y >= single.defaultY+(45*this.game.scaleFactor)){
         single.anims.play("bottom_rockhead")
-        single.setVelocityY(-20)
+        single.setVelocityY(-(20*this.game.scaleFactor))
       }
       else if(single.body.velocity.y === 0){
-        single.setVelocityY(200)
+        single.setVelocityY(200*this.game.scaleFactor)
       }
     })
   }
 
   moveElevatorHeads(){
     this.state.elevatorheads.forEach(single => {
-      if(single.y < 100){ 
-        single.setVelocityY(300)
+      if(single.y < 100*this.game.scaleFactor){ 
+        single.setVelocityY(300*this.game.scaleFactor)
       }
-      else if(single.body.y + 50 >= height){
+      else if(single.body.y + (50*this.game.scaleFactor) >= height){
         single.anims.play("bottom_rockhead")
-        single.setVelocityY(rockheadUpTempo)
+        single.setVelocityY(rockheadUpTempo*this.game.scaleFactor)
       }
       else if(single.body.velocity.y === 0){
-        single.setVelocityY(300)
+        single.setVelocityY(300*this.game.scaleFactor)
       }
     })
   }
@@ -393,10 +398,10 @@ playerdeath(type){
   moveSpikeheads(){
     this.state.spikeheads.forEach(single => {
       if(single.y <= single.defaultY){
-        single.setVelocityY(100)
+        single.setVelocityY(100*this.game.scaleFactor)
       }
-      else if(single.y >= single.defaultY+100){
-        single.setVelocityY(rockheadUpTempo)
+      else if(single.y >= single.defaultY+(100*this.game.scaleFactor)){
+        single.setVelocityY(rockheadUpTempo*this.game.scaleFactor)
       }
     })
   }
@@ -417,19 +422,19 @@ playerdeath(type){
     }
     if(cursors.space.isDown && player.body.touching.down){
       this.setStartDate()
-      player.setVelocityY(-320);
+      player.setVelocityY(-320*this.game.scaleFactor);
       player.anims.play("jump", true)
     }
     if(cursors.right.isDown){
       this.setStartDate()
       lastMovingDirection = "r"
-      player.setVelocityX(160);
+      player.setVelocityX(160*this.game.scaleFactor);
       player.anims.play("right", true)
     }
     else if(cursors.left.isDown){
       this.setStartDate()
       lastMovingDirection = "l"
-      player.setVelocityX(-160);
+      player.setVelocityX(-160*this.game.scaleFactor);
       player.anims.play("left", true)
     }else if(!hit){
       if(lastMovingDirection == "r") player.anims.play("idle_right", true)
@@ -439,7 +444,6 @@ playerdeath(type){
   }
 
   init(){}
-
 
 }
 

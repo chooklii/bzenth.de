@@ -152,7 +152,7 @@ const GameHome = () => {
       game = new Phaser.Game(config);
       game.levels = starting;
       game.restart = () => restartLevel();
-      game.type = type;
+      game.scaleFactor = getScaleFactor(type)
       game.playMusic = false;
       setType(type);
     }
@@ -224,10 +224,24 @@ const GameHome = () => {
     initGame(id);
   };
 
+  const getScaleFactor = (type) => {
+    switch(type){
+      case "s":
+        return 0.75
+      case "m": 
+        return 0.875
+      case "l":
+        return 1
+      case "xl": 
+        return 1.125
+    }
+  }
+
   const initGame = (id) => {
     game = new Phaser.Game(config);
     game.levels = levels[id];
     game.type = type;
+    game.scaleFactor = getScaleFactor(type)
     game.playMusic = music_playing;
     game.finished = (runTime) => finished(runTime, id);
     game.death = (way) => death(way, id);
