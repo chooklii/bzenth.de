@@ -18,6 +18,7 @@ export const four = {
         saws: [
             {x: 0.1, y: 0.1}
         ],
+        fires: [],
         rockheads: [],
         sticks: [
             {x: 0.05, y: 0.9},

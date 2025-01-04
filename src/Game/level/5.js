@@ -13,6 +13,7 @@ export const five = {
             {x: 0.4, y: 0.5, scale: 1},
             {x: 0.9, y: 0.5, scale: 3}
         ],
+        fires: [],
         saws: [
             {x: 0.75, y: 0.1},
             {x: 0.65, y: 0.12},

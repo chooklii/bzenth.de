@@ -82,7 +82,7 @@ const GameHome = () => {
 
     const data = readLocalStorage();
     if (data) {
-      setFinishedLevel(data.finishedLevel);
+      setFinishedLevel([...data.finishedLevel, 5, 6, 7, 8]);
       setMetaData(data.metaData);
     }
 
@@ -347,7 +347,7 @@ const GameHome = () => {
           <Button
             style={{ width: "80%", marginLeft: "10%" }}
             onClick={() => setCurrentGamePage(currentGamePage === 0 ? 1 : 0)}
-            disabled={true && !finishedLevel.includes(8)}
+            disabled={false && !finishedLevel.includes(8)}
           >
             {currentGamePage === 0 && translation[language].nextPage}
             {currentGamePage === 1 && translation[language].lastPage}
@@ -593,6 +593,7 @@ const GameHome = () => {
             setShowMenu={setShowMenu}
             pageHeight={config.height}
             language={language}
+            restartLevel={restartLevel}
           />
         )}
         <section id="phaser-target" />

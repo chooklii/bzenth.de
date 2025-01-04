@@ -4,6 +4,7 @@ data: {
         plattforms: [
             { x: 0.75, y: 0.5, scale: 5 },
         ],
+        fires: [],
         saws: [
             {x: 0.1, y: 0.95},
             {x: 0.1, y: 0.85},

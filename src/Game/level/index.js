@@ -6,6 +6,7 @@ import {five} from "./5.js"
 import {six} from "./6.js"
 import {seven} from "./7.js"
 import {eight} from "./8.js"
+import { nine } from "./9.js"
 
 const levels = {
     1: one,
@@ -15,41 +16,16 @@ const levels = {
     5: five,
     6: six,
     7: seven,
-    8: eight
+    8: eight,
+    9: nine
 }
 
 const starting = {
-    s: {
+    data: {
         spikeheads: [],
         plattforms: [],
         saws: [],
-        rockheads: [],
-        sticks: [],
-        finish: {},
-        start: {}
-    },
-    m: {
-        spikeheads: [],
-        plattforms: [],
-        saws: [],
-        rockheads: [],
-        sticks: [],
-        finish: {},
-        start: {}
-    },
-    l: {
-        spikeheads: [],
-        plattforms: [],
-        saws: [],
-        rockheads: [],
-        sticks: [],
-        finish: {},
-        start: {}
-    },
-    xl: {
-        spikeheads: [],
-        plattforms: [],
-        saws: [],
+        fires: [],
         rockheads: [],
         sticks: [],
         finish: {},

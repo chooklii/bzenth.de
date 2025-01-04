@@ -14,6 +14,7 @@ export const one = {
         saws: [],
         rockheads: [],
         sticks: [],
+        fires: [],
         finish: {
             x: 0.9,
             y: 0.1

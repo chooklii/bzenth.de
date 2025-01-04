@@ -117,6 +117,7 @@ export const eight = {
             x: 1,
             y: 0.97
         },
+        fires: [],
         start: {
             x: 0.02,
             y: 0.95

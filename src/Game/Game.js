@@ -9,6 +9,7 @@ var platforms;
 var rockheads;
 var elevatorHeads;
 var spikeheads;
+var fires;
 var saws;
 var finish;
 var start;
@@ -25,6 +26,7 @@ class Game extends Phaser.Scene{
       rocks: [],
       saws: [],
       spikeheads: [],
+      fires: [],
       elevatorheads: [],
       startRun: null
     }
@@ -57,6 +59,12 @@ class Game extends Phaser.Scene{
     this.load.spritesheet("left_spike", "../assets/rockheadSpikes/left_hit.png", {frameWidth: 54, frameHeight: 52})
     this.load.spritesheet("right_spike", "../assets/rockheadSpikes/right_hit.png", {frameWidth: 54, frameHeight: 52})
     this.load.spritesheet("top_spike", "../assets/rockheadSpikes/top_hit.png", {frameWidth: 54, frameHeight: 52})
+
+    this.load.spritesheet("fire_on", "../assets/fire/On.png", {frameWidth: 16, frameHeight: 32})
+    this.load.spritesheet("fire_off", "../assets/fire/Off.png", {frameWidth: 16, frameHeight: 32})
+    this.load.spritesheet("fire_hit", "../assets/fire/Hit.png", {frameWidth: 16, frameHeight: 32})
+
+
     // start and finish
     this.load.spritesheet("idle_start", "../assets/start/idle.png", {frameWidth: 64, frameHeight: 64})
     this.load.spritesheet("animation_start", "../assets/start/animation.png", {frameWidth: 64, frameHeight: 64})
@@ -86,6 +94,7 @@ class Game extends Phaser.Scene{
     this.physics.add.collider(saws, player, this.hitSaw, null, this)
     this.physics.add.collider(player, finish, this.finished, null, this)
     this.physics.add.collider(player, spikeheads, this.hitSpikehead, null, this)
+    this.physics.add.collider(fires, player, this.hitFire, null, this)
   }
 
   update(){
@@ -93,6 +102,7 @@ class Game extends Phaser.Scene{
     this.moveRockHeads()
     this.moveElevatorHeads()
     this.moveSpikeheads()
+    this.toggleFire()
   }
 
   initWorld(){
@@ -100,11 +110,12 @@ class Game extends Phaser.Scene{
     rockheads = this.physics.add.group({immovable: true, collideWorldBounds: true});
     elevatorHeads = this.physics.add.group({immovable: true, collideWorldBounds: true});
     spikeheads = this.physics.add.group({immovable: true})
-    finish = this.physics.add.group({immovable: true})
+    fires = this.physics.add.group({immovable: true});
+    finish = this.physics.add.group({immovable: true});
     saws = this.physics.add.group({immovable: true});
 
     this.createPlattforms()
-    this.addDefaultToHeads()
+    this.addDefaultToObjects()
   }
 
   addFinish(x,y){
@@ -132,6 +143,7 @@ class Game extends Phaser.Scene{
     this.addFinish(width *levels.finish.x, height * levels.finish.y)
     // add all other stuff
     levels.spikeheads.forEach(_ => this.addSpikehead(width * _.x, height*_.y))
+    levels.fires.forEach(_ => this.addFires(width * _.x, height *_.y))
     levels.plattforms.forEach(_ => this.addThickPlattform(width * _.x, height * _.y, _.scale))
     levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y,  _.amound))
     levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
@@ -172,12 +184,16 @@ class Game extends Phaser.Scene{
       this.state.rocks.push(rockheads.create(positionRockhead+(40*this.game.scaleFactor), y-(70*this.game.scaleFactor), "idle_rockhead").setScale(this.game.scaleFactor, this.game.scaleFactor))
     }
   }
+  
+  addFires(x, y){
+    this.state.fires.push(fires.create(x, y, "fire_off").setScale(this.game.scaleFactor, this.game.scaleFactor))
+  }
 
   addSpikehead(x, y){
     this.state.spikeheads.push(spikeheads.create(x, y, "idle_spike").setScale(this.game.scaleFactor, this.game.scaleFactor))
   }
 
-  addDefaultToHeads(){
+  addDefaultToObjects(){
     // add the starting y to all rockheads in order to move them up and down
     this.state.rocks.forEach(x => {
       x.defaultY = x.y
@@ -188,39 +204,44 @@ class Game extends Phaser.Scene{
     this.state.elevatorheads.forEach(x => {
       x.setVelocityY(100*this.game.scaleFactor)
     })
+    // add state and current Date to fire
+    this.state.fires.forEach(x => {
+      x.active = true;
+      x.anims.play("fire_on")
+      x.activeChangeTime = Date.now()
+    })
   }
 
-  hitRockhead(){
-    // check if player got hit by rockhead or jumped on it
-    const rockheadHitRadius = 10*this.game.scaleFactor
-    this.state.rocks.forEach(rockhead => {
-      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX -rockheadHitRadius) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX +rockheadHitRadius) &&
-      (player.y +player.displayOriginY > rockhead.y - rockhead.displayOriginY -rockheadHitRadius) && (player.y - player.displayOriginY < rockhead.y + rockhead.displayOriginY +rockheadHitRadius)){
+  hitFire(){ 
+    const activeFires = this.state.fires.filter(_ => _.active)
+    // check if player got burned by fire or just touched it from any other side
+    activeFires.forEach(fire => {
+      if(fire.body.touching.up){
+        player.anims.play("hit", true)
+        fire.anims.play("fire_hit", true)
+        this.playerdeath("fire")
+      }
+    })
 
-      if((player.x +player.displayOriginX > rockhead.x - rockhead.displayOriginX) && (player.x - player.displayOriginX < rockhead.x + rockhead.displayOriginX)){
-        if(player.y > rockhead.y && rockhead.body.velocity.y >= 0){
+  }
+
+
+
+  hitRockhead(){
+    this.state.rocks.forEach(rockhead => {
+      if(rockhead.body.touching.down && rockhead.body.velocity.y >= 0){
           player.anims.play("hit", true)
           this.playerdeath("rockhead")
-        }
-      } 
     }
     })
 }
 
 hitElevatorRockhead(){
-  // check if player got hit by rockhead or jumped on it
-  const rockheadHitRadius = 10*this.game.scaleFactor
-  this.state.elevatorheads.forEach(single => {
-    if((player.x +player.displayOriginX > single.x - single.displayOriginX -rockheadHitRadius) && (player.x - player.displayOriginX < single.x + single.displayOriginX +rockheadHitRadius) &&
-    (player.y +player.displayOriginY > single.y - single.displayOriginY -rockheadHitRadius) && (player.y - player.displayOriginY < single.y + single.displayOriginY +rockheadHitRadius)){
-
-    if((player.x + player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
-      if(player.y > single.y && single.body.velocity.y != rockheadUpTempo){
+  this.state.elevatorheads.forEach(rockhead => {
+    if(rockhead.body.touching.down && rockhead.body.velocity.y >= 0){
         player.anims.play("hit", true)
         this.playerdeath("rockhead")
         }  
-      }
-    }
   })
 }
 
@@ -234,12 +255,8 @@ playerdeath(type){
 }
 
   hitSpikehead(){
-    const spikeHeadHitRadius = 10*this.game.scaleFactor
     this.state.spikeheads.forEach(single => {
-      // check if player and single spikehead are within of 10 values
-      if((player.x +player.displayOriginX > single.x - single.displayOriginX -spikeHeadHitRadius) && (player.x - player.displayOriginX < single.x + single.displayOriginX +spikeHeadHitRadius) &&
-        (player.y +player.displayOriginY > single.y - single.displayOriginY -spikeHeadHitRadius) && (player.y - player.displayOriginY < single.y + single.displayOriginY +spikeHeadHitRadius)){
-      if((player.x +player.displayOriginX > single.x - single.displayOriginX) && (player.x - player.displayOriginX < single.x + single.displayOriginX)){
+      if(!single.body.touching.none){
         if(player.y > single.y){
           // player hit spikehead from top
           single.anims.play("spikes_top")
@@ -247,7 +264,6 @@ playerdeath(type){
         // player hit spikehead from bottom
         else if(player.y < single.y){
           single.anims.play("spikes_bottom")
-        }
       }else{
         if(player.x + player.displayOriginX < single.x - single.displayOriginX){
           // player is left of spikehead
@@ -256,8 +272,7 @@ playerdeath(type){
           single.anims.play("spikes_right")
         }
       }
-    }
-    })
+    }})
     player.anims.play("hit", true)
     this.playerdeath("spike")
   }
@@ -323,6 +338,25 @@ playerdeath(type){
       frames: this.anims.generateFrameNumbers("animation_saw"),
       frameRate: 20,
       repeat: -1
+    })
+    // Fire
+    this.anims.create({
+      key: "fire_hit",
+      frames: this.anims.generateFrameNumbers("fire_hit"),
+      repeat: -1
+    })
+    this.anims.create({
+      key: "fire_on",
+      frames: this.anims.generateFrameNumbers("fire_on"),
+      frameRate: 20,
+      repeat: -1,
+      repeatDelay: 0,
+      yoyo: true
+    })
+    this.anims.create({
+      key: "fire_off",
+      frames: this.anims.generateFrameNumbers("fire_off"),
+      frameRate: 20,
     })
     this.anims.create({
       key: "spikes_bottom",
@@ -393,6 +427,30 @@ playerdeath(type){
         single.setVelocityY(300*this.game.scaleFactor)
       }
     })
+  }
+
+  toggleFire(){
+    this.state.fires.forEach(single => {
+      const currentDate = Date.now();
+      // Change Fire every two seconds
+      if(currentDate - single.activeChangeTime > 2000){
+        if(single.active){
+          
+          single.setSize(32*this.game.scaleFactor, 20*this.game.scaleFactor)
+          single.active = false;
+          // ugly fix to prevent endless fire on animation :-)
+          single.anims.play("fire_off")
+          single.activeChangeTime = currentDate
+        }
+        else{
+          single.setSize(32*this.game.scaleFactor, 32*this.game.scaleFactor)
+          single.anims.play("fire_on")
+          single.activeChangeTime = currentDate
+          single.active = true;
+        }
+      }
+    }
+    )
   }
 
   moveSpikeheads(){
