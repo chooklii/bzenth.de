@@ -8579,7 +8579,7 @@ __webpack_require__.d(__webpack_exports__, "c", function() { return /* reexport 
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ Components_Footer; });
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(35);
+var slicedToArray = __webpack_require__(34);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -10438,8 +10438,7 @@ function omit(obj, fields) {
 }
 
 /***/ }),
-/* 34 */,
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayWithHoles = __webpack_require__(181);
@@ -10457,6 +10456,7 @@ function _slicedToArray(arr, i) {
 module.exports = _slicedToArray;
 
 /***/ }),
+/* 35 */,
 /* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18395,7 +18395,7 @@ var NotFound_NotFound = /*#__PURE__*/function (_React$Component) {
 
 /* harmony default export */ var Pages_NotFound = (NotFound_NotFound);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(35);
+var slicedToArray = __webpack_require__(34);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
@@ -53042,7 +53042,7 @@ var react_dom = __webpack_require__(30);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(35);
+var slicedToArray = __webpack_require__(34);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 4 modules
