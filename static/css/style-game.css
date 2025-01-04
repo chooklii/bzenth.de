@@ -550,6 +550,29 @@
     background-image: url("../../assets/levels/10.png");
 }
 
+.l11{
+    background-image: url("../../assets/levels/11.png");
+}
+
+.l12{
+    background-image: url("../../assets/levels/12.png");
+}
+
+.l13{
+    background-image: url("../../assets/levels/13.png");
+}
+
+.l14{
+    background-image: url("../../assets/levels/14.png");
+}
+
+.l15{
+    background-image: url("../../assets/levels/15.png");
+}
+
+.l16{
+    background-image: url("../../assets/levels/16.png");
+}
 .ant-tooltip-disabled-compatible-wrapper{
     min-width: 100%
 }

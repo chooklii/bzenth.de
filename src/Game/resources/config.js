@@ -95,7 +95,10 @@ const translation = {
     finish_oldRecord_screen: "Die Bildschirmgröße der alten Bestzeit war:",
     finish_best_time: "Die Bestzeit ist",
     finish_best_time_screen: "Die Bildschirmgröße der alten Bestzeit ist:",
-    wasKilled: "Gestorben!"
+    wasKilled: "Gestorben!",
+    changeLevelPage: "Seite der Level ändern",
+    nextPage: "Nächste Seite",
+    lastPage: "Letzte Seite"
   },
   en: {
     reset: "Reset",
@@ -137,7 +140,10 @@ const translation = {
     finish_oldRecord_screen: "The Screen Size of the old record was: ",
     finish_best_time: "The record is: ",
     finish_best_time_screen: "The Screen Size of the record is: ",
-    wasKilled: "Dead!"
+    wasKilled: "Dead!",
+    changeLevelPage: "Change current Site of Levels",
+    nextPage: "Next Page",
+    lastPage: "Last Page"
   },
 };
 

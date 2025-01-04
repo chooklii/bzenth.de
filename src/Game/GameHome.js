@@ -26,11 +26,15 @@ import {
   translation,
   minHeight,
   minWidth,
-  itemsToUnlock
+  itemsToUnlock,
 } from "./resources/config";
 import { TranslationContext, keyGenerator } from "../helper";
 import { FinishScreen, DeathScreen, IngameButtons } from "./components";
-import { writeLocalStorage, addDeathToCount, readLocalStorage } from "./StorageManagement";
+import {
+  writeLocalStorage,
+  addDeathToCount,
+  readLocalStorage,
+} from "./StorageManagement";
 
 const config = {
   type: Phaser.AUTO,
@@ -69,15 +73,15 @@ const GameHome = () => {
   const [music_playing, setMusicPlaying] = useState(false);
   const [music_playlist, setMusicPlaylist] = useState(music_menu);
   const [music_index, setMusicIndex] = useState(0);
+  const [currentGamePage, setCurrentGamePage] = useState(0);
   const { language, setLanguage, getText } = useContext(TranslationContext);
 
   useEffect(() => {
     initDefaultGame();
     initMusic();
 
-
     const data = readLocalStorage();
-    if(data){
+    if (data) {
       setFinishedLevel(data.finishedLevel);
       setMetaData(data.metaData);
     }
@@ -152,7 +156,7 @@ const GameHome = () => {
       game = new Phaser.Game(config);
       game.levels = starting;
       game.restart = () => restartLevel();
-      game.scaleFactor = getScaleFactor(type)
+      game.scaleFactor = getScaleFactor(type);
       game.playMusic = false;
       setType(type);
     }
@@ -197,7 +201,14 @@ const GameHome = () => {
       time: runTime,
       oldMetaData: JSON.parse(JSON.stringify(metaData)),
     });
-    writeLocalStorage(id, metaData, getScreenSize().type, runTime, finishedLevel, setMetaData);
+    writeLocalStorage(
+      id,
+      metaData,
+      getScreenSize().type,
+      runTime,
+      finishedLevel,
+      setMetaData
+    );
     game.scene.pause("default");
     setShowFinishScreen(true);
   };
@@ -225,23 +236,23 @@ const GameHome = () => {
   };
 
   const getScaleFactor = (type) => {
-    switch(type){
+    switch (type) {
       case "s":
-        return 0.75
-      case "m": 
-        return 0.875
+        return 0.75;
+      case "m":
+        return 0.875;
       case "l":
-        return 1
-      case "xl": 
-        return 1.125
+        return 1;
+      case "xl":
+        return 1.125;
     }
-  }
+  };
 
   const initGame = (id) => {
     game = new Phaser.Game(config);
     game.levels = levels[id];
     game.type = type;
-    game.scaleFactor = getScaleFactor(type)
+    game.scaleFactor = getScaleFactor(type);
     game.playMusic = music_playing;
     game.finished = (runTime) => finished(runTime, id);
     game.death = (way) => death(way, id);
@@ -331,6 +342,24 @@ const GameHome = () => {
             </div>
           </div>
         </div>
+        {renderLevelOptions()}
+        <Tooltip title={translation[language].changeLevelPage}>
+          <Button
+            style={{ width: "80%", marginLeft: "10%" }}
+            onClick={() => setCurrentGamePage(currentGamePage === 0 ? 1 : 0)}
+            disabled={true && !finishedLevel.includes(8)}
+          >
+            {currentGamePage === 0 && translation[language].nextPage}
+            {currentGamePage === 1 && translation[language].lastPage}
+          </Button>
+        </Tooltip>
+      </div>
+    );
+  };
+
+  const renderLevelOptions = () => {
+    if (currentGamePage === 0) {
+      return (
         <Row className="level_row">
           {singleLevel(1, "Getting Started", field_theme)}
           {singleLevel(2, "Schlangen S", sea_theme)}
@@ -341,8 +370,22 @@ const GameHome = () => {
           {singleLevel(7, "Where is the Way?", night_theme)}
           {singleLevel(8, "Furioses Finale", night_theme)}
         </Row>
-      </div>
-    );
+      );
+    }
+    if (currentGamePage === 1) {
+      return (
+        <Row className="level_row">
+          {singleLevel(9, "", field_theme)}
+          {singleLevel(10, "", sea_theme)}
+          {singleLevel(11, "", cave_theme)}
+          {singleLevel(12, "", sea_theme)}
+          {singleLevel(13, "", field_theme)}
+          {singleLevel(14, "", dungeon_theme)}
+          {singleLevel(15, "", night_theme)}
+          {singleLevel(16, "", night_theme)}
+        </Row>
+      );
+    }
   };
 
   const singleLevel = (levelID, levelName, music_theme) => {
