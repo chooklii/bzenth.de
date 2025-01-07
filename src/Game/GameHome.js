@@ -217,11 +217,6 @@ const GameHome = () => {
     setShowDeadscreen(true);
     addDeathToCount(levelId, metaData, finishedLevel, setMetaData);
     setKilledBy(way);
-    window.addEventListener("keydown", (event) => {
-      if ((event.key === "r" || event.key === "R") && deathscreen) {
-        restartLevel(levelId);
-      }
-    });
   };
 
   const selectedNewLevel = (id, music_theme) => {
@@ -260,6 +255,9 @@ const GameHome = () => {
   };
 
   const restartLevel = (id) => {
+    if(!id && !selectedLevel){
+      return
+    }
     game.destroy(true);
     setShowDeadscreen(false);
     setShowFinishScreen(false);

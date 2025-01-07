@@ -302,6 +302,9 @@ playerdeath(type){
   }
 
   finished(){
+    if(hit){
+      return
+    }
     this.game.playMusic && finishsound.play()
     finish.anims.play("animation_finish", true)
 
