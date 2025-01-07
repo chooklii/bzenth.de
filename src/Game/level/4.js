@@ -19,6 +19,7 @@ export const four = {
             {x: 0.1, y: 0.1}
         ],
         fires: [],
+        spikes: [],
         rockheads: [],
         sticks: [
             {x: 0.05, y: 0.9},

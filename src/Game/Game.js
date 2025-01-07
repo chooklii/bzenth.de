@@ -11,6 +11,7 @@ var elevatorHeads;
 var spikeheads;
 var fires;
 var saws;
+var spikes;
 var finish;
 var start;
 
@@ -28,6 +29,7 @@ class Game extends Phaser.Scene{
       spikeheads: [],
       fires: [],
       elevatorheads: [],
+      spikes: [],
       startRun: null
     }
   }
@@ -64,6 +66,7 @@ class Game extends Phaser.Scene{
     this.load.spritesheet("fire_off", "../assets/fire/Off.png", {frameWidth: 16, frameHeight: 32})
     this.load.spritesheet("fire_hit", "../assets/fire/Hit.png", {frameWidth: 16, frameHeight: 32})
 
+    this.load.spritesheet("idle_spike_bottom", "../assets/spike/Idle.png", { frameWidth: 16, frameHeight: 16})
 
     // start and finish
     this.load.spritesheet("idle_start", "../assets/start/idle.png", {frameWidth: 64, frameHeight: 64})
@@ -95,6 +98,7 @@ class Game extends Phaser.Scene{
     this.physics.add.collider(player, finish, this.finished, null, this)
     this.physics.add.collider(player, spikeheads, this.hitSpikehead, null, this)
     this.physics.add.collider(fires, player, this.hitFire, null, this)
+    this.physics.add.collider(spikes, player, this.hitSpike, null, this)
   }
 
   update(){
@@ -113,6 +117,7 @@ class Game extends Phaser.Scene{
     fires = this.physics.add.group({immovable: true});
     finish = this.physics.add.group({immovable: true});
     saws = this.physics.add.group({immovable: true});
+    spikes = this.physics.add.group({immovable: true})
 
     this.createPlattforms()
     this.addDefaultToObjects()
@@ -148,6 +153,7 @@ class Game extends Phaser.Scene{
     levels.saws.forEach(_ => this.addSaw(width*_.x, height*_.y,  _.amound))
     levels.rockheads.forEach(_ => this.addPlattformWithRockhead(width*_.x, height*_.y, _.scale,_.multiple))
     levels.sticks.forEach(_ => this.addSmallPlattform(width*_.x, height*_.y))
+    levels.spikes.forEach(_ => this.addSpike(width*_.x, height*_.y, _.plattform))
     if(levels.elevator) levels.elevator.forEach(_ => this.addElevatorHead(width*_.x, height*_.y))
   }
 
@@ -158,6 +164,13 @@ class Game extends Phaser.Scene{
 
   addSmallPlattform(x, y){
     platforms.create(x, y, "plattform").setScale(this.game.scaleFactor, this.game.scaleFactor)
+  }
+
+  addSpike(x, y, plattform){
+    this.state.spikes.push(spikes.create(x, y, "idle_spike_bottom").setScale(this.game.scaleFactor, this.game.scaleFactor))
+    if(plattform){
+      platforms.create(x, y+(16*this.game.scaleFactor), "terrain", 1).setScale(this.game.scaleFactor, this.game.scaleFactor).refreshBody()
+    }
   }
 
   addSaw(x, y, amound = 1){
@@ -212,9 +225,17 @@ class Game extends Phaser.Scene{
     })
   }
 
+  hitSpike(){
+    this.state.spikes.forEach(spike => {
+      if(spike.body.touching.up){
+        player.anims.play("hit", true)
+        this.playerdeath("spike_bottom")
+      }
+    })
+  }
+
   hitFire(){ 
     const activeFires = this.state.fires.filter(_ => _.active)
-    // check if player got burned by fire or just touched it from any other side
     activeFires.forEach(fire => {
       if(fire.body.touching.up){
         player.anims.play("hit", true)
@@ -224,8 +245,6 @@ class Game extends Phaser.Scene{
     })
 
   }
-
-
 
   hitRockhead(){
     this.state.rocks.forEach(rockhead => {
@@ -383,7 +402,6 @@ playerdeath(type){
       frames: this.anims.generateFrameNumbers("blink_spike"),
       frameRate: 20
     })
-    // finish Animation
     this.anims.create({
       key: "animation_finish",
       frames: this.anims.generateFrameNumbers("animation_finish"),
@@ -436,17 +454,18 @@ playerdeath(type){
       if(currentDate - single.activeChangeTime > 2000){
         if(single.active){
           
-          single.setSize(32*this.game.scaleFactor, 20*this.game.scaleFactor)
+          single.setSize(32*this.game.scaleFactor, 15*this.game.scaleFactor)
           single.active = false;
           // ugly fix to prevent endless fire on animation :-)
           single.anims.play("fire_off")
           single.activeChangeTime = currentDate
         }
-        else{
+        else{          
+          single.active = true;
+          this.hitFire()
           single.setSize(32*this.game.scaleFactor, 32*this.game.scaleFactor)
           single.anims.play("fire_on")
           single.activeChangeTime = currentDate
-          single.active = true;
         }
       }
     }

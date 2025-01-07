@@ -13,6 +13,7 @@ export const two = {
         ],
         saws: [],
         fires: [],
+        spikes: [],
         rockheads: [
             { x: 0.4, y: 0.3, scale: 8, multiple: false }
         ],

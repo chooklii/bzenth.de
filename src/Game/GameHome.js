@@ -82,7 +82,7 @@ const GameHome = () => {
 
     const data = readLocalStorage();
     if (data) {
-      setFinishedLevel([...data.finishedLevel, 5, 6, 7, 8]);
+      setFinishedLevel([...data.finishedLevel]);
       setMetaData(data.metaData);
     }
 
@@ -375,9 +375,9 @@ const GameHome = () => {
     if (currentGamePage === 1) {
       return (
         <Row className="level_row">
-          {singleLevel(9, "", field_theme)}
-          {singleLevel(10, "", sea_theme)}
-          {singleLevel(11, "", cave_theme)}
+          {singleLevel(9, "Rotes Licht - Grünes Licht", dungeon_theme)}
+          {singleLevel(10, "'Bad Hitbox' Tilt", sea_theme)}
+          {singleLevel(11, "Coming Soon!", cave_theme)}
           {singleLevel(12, "", sea_theme)}
           {singleLevel(13, "", field_theme)}
           {singleLevel(14, "", dungeon_theme)}
@@ -389,8 +389,7 @@ const GameHome = () => {
   };
 
   const singleLevel = (levelID, levelName, music_theme) => {
-    const disabled =
-      levelID == 1 || finishedLevel.includes(levelID - 1) ? false : true;
+    const disabled = !((levelID == 1 || finishedLevel.includes(levelID - 1)) && levelID < 11);
     return (
       <Col xl={6} xxl={6} lg={8} md={12} sm={12} xs={12}>
         <div className="single_level">

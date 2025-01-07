@@ -79,6 +79,7 @@ export const six = {
             {x: 0.9, y: 0.1},
         ],
         fires: [],
+        spikes: [],
         finish: {
             x: 0.99,
             y: 0.97

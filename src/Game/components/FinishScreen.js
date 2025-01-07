@@ -59,8 +59,7 @@ export const FinishScreen = ({
 
   if (oldMetaForLevel) {
     const oldBestTime = oldMetaForLevel.record;
-    const newRecord =
-      oldBestTime != undefined && finishScreenData.time < oldBestTime;
+    const newRecord = oldBestTime === undefined || finishScreenData.time < oldBestTime;
     return (
       <div className="finish_data_wrapper">
         {generalHeading(oldMetaForLevel ? oldMetaForLevel.deaths : 0)}
@@ -70,17 +69,21 @@ export const FinishScreen = ({
               {translation[language].finish_record}
             </p>
             <p className="finish_oldRecordTime">
-              {translation[language].finish_oldRecord} {oldBestTime / 1000}s
+              {translation[language].finish_oldRecord} {oldBestTime === undefined ? "-" : oldBestTime / 1000}s
             </p>
+            {oldBestTime != undefined &&
             <p className="finish_record_improvement">
               {translation[language].finish_newRecord_faster_01}
               {(oldBestTime - finishScreenData.time) / 1000}s
               {translation[language].finish_newRecord_faster_02}
             </p>
+            }
+            {oldBestTime != undefined &&
             <p className="finish_old_screen_size">
               {translation[language].finish_oldRecord_screen}
               {oldMetaForLevel.screenSize}
             </p>
+            }
           </div>
         )}
         {!newRecord && (
