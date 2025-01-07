@@ -76,6 +76,20 @@ const GameHome = () => {
   const [currentGamePage, setCurrentGamePage] = useState(0);
   const { language, setLanguage, getText } = useContext(TranslationContext);
 
+  // Restart Function on Deathscreen
+  useEffect(() => {
+    if(deathscreen){
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "r" || event.key === "R") {
+          restartLevel();
+        }
+    });
+  }else{
+    window.removeEventListener("keydown", (event), true)
+  }
+  }, [deathscreen])
+
+
   useEffect(() => {
     initDefaultGame();
     initMusic();
