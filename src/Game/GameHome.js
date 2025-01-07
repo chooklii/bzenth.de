@@ -345,7 +345,7 @@ const GameHome = () => {
           <Button
             style={{ width: "80%", marginLeft: "10%" }}
             onClick={() => setCurrentGamePage(currentGamePage === 0 ? 1 : 0)}
-            disabled={false && !finishedLevel.includes(8)}
+            disabled={false && !finishedLevel.includes(9)}
           >
             {currentGamePage === 0 && translation[language].nextPage}
             {currentGamePage === 1 && translation[language].lastPage}
