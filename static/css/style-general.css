@@ -62,73 +62,73 @@ body{
 }
 
 .avatar_blog{
-    content: url("../img/blog/benjamin.jpeg")
+    content: url("../blog/benjamin.jpeg")
 }
 
 .blog_tripas{
-    content: url("../img/blog/tripas.jpeg")
+    content: url("../blog/tripas.jpeg")
 }
 
 .blog_fish{
-    content: url("../img/blog/fisch.jpeg")
+    content: url("../blog/fisch.jpeg")
 }
 
 .blog_passadicios_01{
-    content: url("../img/blog/passadicos_1.jpeg")
+    content: url("../blog/passadicos_1.jpeg")
 }
 
 .blog_passadicios_02{
-    content: url("../img/blog/passadicos_2.jpeg")
+    content: url("../blog/passadicos_2.jpeg")
 }
 
 .blog_wald{
-    content: url("../img/blog/wald.jpeg")
+    content: url("../blog/wald.jpeg")
 }
 
 .blog_stadion{
-    content: url("../img/blog/stadion.jpeg")
+    content: url("../blog/stadion.jpeg")
 }
 
 .blog_stadion_nah{
-    content: url("../img/blog/stadion_nah.jpeg")
+    content: url("../blog/stadion_nah.jpeg")
 }
 
 .blog_park{
-    content: url("../img/blog/park.jpeg");
+    content: url("../blog/park.jpeg");
 }
 
 .houses{
-    content: url("../img/blog/houses.jpeg")
+    content: url("../blog/houses.jpeg")
 }
 
 .beach_01{
-    content: url("../img/blog/beach_01.jpeg");
+    content: url("../blog/beach_01.jpeg");
 }
 
 .beach_02{
-    content: url("../img/blog/beach_02.jpeg");
+    content: url("../blog/beach_02.jpeg");
 }
 
 .walk_costa{
-    content: url("../img/blog/walk.jpeg");
+    content: url("../blog/walk.jpeg");
 }
 
 .blog_map_food{
-    content: url("../img/blog/map_food.png")
+    content: url("../blog/map_food.png")
 }
 
 .blog_map_boat{
-    content: url("../img/blog/map_boat.png")
+    content: url("../blog/map_boat.png")
 }
 
 .blog_map_passadicios{
-    content: url("../img/blog/map_passadicios.png")
+    content: url("../blog/map_passadicios.png")
 }
 
 .blog_map_bus{
-    content: url("../img/blog/map_bus_stop.png")
+    content: url("../blog/map_bus_stop.png")
 }
 
 .blog_map_costanova{
-    content: url("../img/blog/map_costa_nova.png")
+    content: url("../blog/map_costa_nova.png")
 }
