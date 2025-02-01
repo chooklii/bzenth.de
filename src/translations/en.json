@@ -107,6 +107,7 @@
         "site": "Website",
         "alt": "Image of the Website",
         "npm": "NPM",
+        "rust": "Crate",
         "bzenth": {
             "info": "My own website. Split into a regular page and an arcade-mode.",
             "tech": "Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages"
@@ -126,6 +127,10 @@
         "numwords": {
             "info": "NPM package to convert numbers into their equivalent german language word",
             "tech": "Javascript"
+        },
+        "numwords-rust": {
+            "info": "Rust crate to convert u32 numbers into their equivalent german language word",
+            "tech": "Rust"
         },
         "bool": {
             "info": "NPM package to convert booleans into true/false in a given language",

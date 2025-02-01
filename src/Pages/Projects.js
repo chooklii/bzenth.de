@@ -13,7 +13,7 @@ import {
   faUser,
   faWifi,
 } from "@fortawesome/free-solid-svg-icons";
-import { faNpm } from "@fortawesome/free-brands-svg-icons";
+import { faNpm, faRust } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
   {
@@ -80,6 +80,16 @@ const projects = [
     info: "projects.numwords.info",
     tech: "projects.numwords.tech",
     icon: faNpm
+  },
+  {
+    name: "num-to-words-de",
+    link: "https://crates.io/crates/num-to-words-de",
+    link_name: "projects.rust",
+    additionalLink: "https://github.com/chooklii/num-to-words-de",
+    additionalLink_name: "projects.code",
+    info: "projects.numwords-rust.info",
+    tech: "projects.numwords-rust.tech",
+    icon: faRust
   },
   {
     name: "Lichess Hide Ratings Chrome Extension",

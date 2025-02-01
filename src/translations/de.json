@@ -108,6 +108,7 @@
         "site": "Webseite",
         "alt": "Image of the Website",
         "npm": "NPM",
+        "rust": "Crate",
         "bzenth": {
             "info": "Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus",
             "tech": "Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages"
@@ -127,6 +128,10 @@
         "numwords": {
             "info": "NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln",
             "tech": "Javascript"
+        },
+        "numwords-rust": {
+            "info": "Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln",
+            "tech": "Rust"
         },
         "bool": {
             "info": "NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln",
