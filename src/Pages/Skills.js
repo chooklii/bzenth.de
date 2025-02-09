@@ -17,6 +17,7 @@ const programmingLanguages = [
   {name: "Javascript", rating: 4},
   {name: "Typescript", rating: 3},
   {name: "Python", rating: 3},
+  {name: "Rust", rating: 3},
   {name: "Scala", rating: 2}
 ]
 
