@@ -27724,6 +27724,9 @@ var programmingLanguages = [{
   name: "Python",
   rating: 3
 }, {
+  name: "Rust",
+  rating: 3
+}, {
   name: "Scala",
   rating: 2
 }];
