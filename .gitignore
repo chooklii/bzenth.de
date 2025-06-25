@@ -1,9 +1,5 @@
 .scannerwork
 /node_modules
-/docs/arcade.js
-/docs/bundle.js
-/docs/arcade.style.css
-/docs/bundle.style.css
 
 /.pnp
 
