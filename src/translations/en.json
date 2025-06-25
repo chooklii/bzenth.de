@@ -44,7 +44,8 @@
             "08": "Masterthesis: Modelling and Simulating the scalability of web application architectures",
             "09": "Software Engineer at Bechtle AG",
             "10": "IT Team lead software development at Bechtle AG",
-            "11": "Freelancer"
+            "11": "Freelancer",
+            "12": "Software Engineer at Bechtle AG"
         },
         "paper": {
             "01": "Modelling and simulating the scalability of e-commerce web application architectures",
@@ -67,7 +68,7 @@
                 "other_hobbies": "Other Hobbies"
             },
             "content": {
-                "age": "27",
+                "age": "28",
                 "location": "Area of Öhringen, Germany",
                 "sport_hobbies": "Running, Cycling, Swimming and general interests for all kinds of sports",
                 "other_hobbies": "Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming"
@@ -151,6 +152,15 @@
         "simulation": {
             "info": "Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)",
             "tech": "Python with the framework simpy"
+        },
+        "rustyRook": {
+            "info": "UCI Schach Engine playing on Lichess",
+            "tech": "Rust",
+            "blog": "Blog"
         }
+    },
+    "blog": {
+        "onlyGerman": "This Page is only available in German Language",
+        "onlyEnglish": ""
     }
 }

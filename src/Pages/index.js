@@ -9,6 +9,7 @@ import Contact from "./Contact"
 import Skills from "./Skills"
 import Blog from "./Blog"
 import Aveiro from "./Blog/Aveiro"
+import RustyRook from "./Blog/RustyRook"
 
 export{
     Skills,
@@ -20,5 +21,6 @@ export{
     Imprint,
     Credits,
     Blog,
-    Aveiro
+    Aveiro,
+    RustyRook
 }

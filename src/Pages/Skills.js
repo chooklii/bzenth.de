@@ -15,9 +15,9 @@ import { TranslationContext } from "../helper";
 const programmingLanguages = [
   {name: "Java", rating: 5},
   {name: "Javascript", rating: 4},
+  {name: "Rust", rating: 4},
   {name: "Typescript", rating: 3},
   {name: "Python", rating: 3},
-  {name: "Rust", rating: 3},
   {name: "Scala", rating: 2}
 ]
 
@@ -64,7 +64,7 @@ const other = [
 const languages = [
   {name: "Deutsch", rating: 5},
   {name: "Englisch", rating: 5},
-  {name: "Portugisisch", rating: 2}
+  {name: "Portugisisch", rating: 3}
 ]
 
 

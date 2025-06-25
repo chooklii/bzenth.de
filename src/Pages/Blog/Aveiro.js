@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Footer, Header } from "../../Components";
 import { Helmet } from "react-helmet";
 import { Avatar, Divider, Checkbox  } from "antd";
 import { Link } from "react-router-dom";
+import { TranslationContext } from "../../helper";
 
 const Aveiro = () => {
   const [showMaps, setShowMaps] = useState(false)
-  
+  const { getText } = useContext(TranslationContext);
+
   const onChange = (e) => {
     setShowMaps(e.target.checked)
   }
@@ -35,6 +37,8 @@ const Aveiro = () => {
       </Helmet>
       <Header />
       <div className="page_classic blog_page">
+        <div className="blog_date">geschrieben im Dezember 2024</div>
+        <div className="blog_translation">{getText("blog.onlyGerman")}</div>
         <div className="blog_intro">
           <Avatar className="avatar_blog" />
           <p className="blog_whoami">

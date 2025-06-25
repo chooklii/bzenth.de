@@ -72,6 +72,11 @@ module.exports = {
       filename: `../docs/blog/reisebericht-4-wochen-in-aveiro/index.html`,
       chunks: ["bundle"],
     }),
+    new HtmlWebPackPlugin({
+      template: "./static/index-blog.html",
+      filename: `../docs/blog/rustyrook/index.html`,
+      chunks: ["bundle"],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].style.css",
       path: path.resolve(__dirname, "docs"),

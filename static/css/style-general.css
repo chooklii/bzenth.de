@@ -132,3 +132,60 @@ body{
 .blog_map_costanova{
     content: url("../../static_blog/map_costa_nova.png")
 }
+
+.blog_movgen_old{
+    content: url("../../static_blog/movegen_old.png");
+}
+
+.blog_movgen_knight{
+    content: url("../../static_blog/movegen_knight.png");
+}
+
+.blog_movgen_magic_bitboards_one{
+    content: url("../../static_blog/movegen_magic_bitboards.png");
+}
+
+.blog_pinns{
+    content: url("../../static_blog/pinned_pieces.png");
+}
+
+.blog_en_passant_check{
+    content: url("../../static_blog/en_passant_into_check.png")
+}
+
+.blog_minimax{
+    content: url("../../static_blog/minimax.png");
+}
+
+.blog_alphabeta{
+    content: url("../../static_blog/alphabeta.png")
+}
+
+.blog_transposition{
+    content: url("../../static_blog/transpositional.png");
+}
+
+.blog_iterativedeepening{
+    content: url("../../static_blog/iterativedeepening.png")
+}
+
+.blog_castle{
+    content: url("../../static_blog/castle_right.png")
+}
+
+.blog_push_pawns{
+    content: url("../../static_blog/push_pawns.png")
+}
+
+.blog_king_movement{
+    content: url("../../static_blog/king_movement.png")
+}
+
+
+
+
+.blog_translation{
+    text-align: center;
+    margin: 1em;
+    font-weight: bold;
+}

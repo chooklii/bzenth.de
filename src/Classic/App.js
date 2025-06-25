@@ -9,7 +9,8 @@ import {
   Projects,
   Imprint,
   Blog,
-  Aveiro
+  Aveiro,
+  RustyRook
 } from "../Pages"
 import {
   TranslationContext
@@ -74,6 +75,11 @@ const App = () => {
             <Route exact path="/blog/reisebericht-4-wochen-in-aveiro">
               <ScrollToTop>
                 <Aveiro/>
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/blog/rustyrook">
+              <ScrollToTop>
+                <RustyRook/>
               </ScrollToTop>
             </Route>
             <Route exact path="/impressum">

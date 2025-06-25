@@ -449,6 +449,7 @@
 
     .link_blog {
         margin-left: 15%;
+        display: block;
 
         &:hover {
             text-decoration: underline;
@@ -484,6 +485,13 @@
     .blog_text {
         font-size: 17px;
         margin-left: 10%;
+    }
+
+    .blog_date {
+        float: right;
+        width: 100%;
+        text-align: end;
+        padding: 1em;
     }
 
     .blog_heading {
@@ -551,6 +559,25 @@
         width: 350px;
     }
 
+    .blog_code {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    .blog_code_pre {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+        white-space: pre-wrap;
+        overflow: hidden;
+    }
+
+    .nocenter {
+        text-align: unset;
+    }
+
     .blog_figure_left {
         float: left;
         text-align: center;
@@ -568,24 +595,30 @@
         margin-left: 10%;
     }
 
-    .blog_map_vertical{
+    .blog_map_vertical {
         width: 80%;
     }
 
-    .blog_map_horizontal{
+    .blog_map_horizontal {
         width: 400px;
     }
 
-    .blog_map_food{
+    .blog_map_food {
         margin-left: 10%;
     }
 
-    .blog_checkbox{
+    .blog_checkbox {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
 
+
+    .blog_iterativedeepening,
+    .blog_alphabeta,
+    .blog_minimax {
+        width: 100%
+    }
 
 }

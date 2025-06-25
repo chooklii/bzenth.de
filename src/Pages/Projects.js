@@ -6,6 +6,7 @@ import { TranslationContext, keyGenerator } from "../helper";
 import {
   faArchive,
   faBus,
+  faChess,
   faChessPawn,
   faDumbbell,
   faFlask,
@@ -36,10 +37,26 @@ const projects = [
     icon: faGraduationCap,
     img: "gradulator",
   },
+    {
+    name: "RustyRook",
+    link: "https://bzenth.de/blog/rustyrook",
+    link_name: "projects.rustyRook.blog",
+    additionalLink: "https://github.com/chooklii/RustyRook",
+    additionalLink_name: "projects.code",
+    info: "projects.rustyRook.info",
+    tech: "projects.rustyRook.tech",
+    icon: faChess,
+  },
+    {
+    name: "simulationmodel",
+    additionalLink: "https://github.com/chooklii/simulationmodel",
+    additionalLink_name: "projects.code",
+    info: "projects.simulation.info",
+    tech: "projects.simulation.tech",
+    icon: faFlask
+  },
   {
     name: "ÖPNV-Transparenzregister",
-    link: "https://www.oepnv-transparenzregister.de/",
-    link_name: "projects.site",
     additionalLink: "https://background.tagesspiegel.de/verkehr-und-smart-mobility/briefing/oepnv-transparenzregister-geht-online",
     additionalLink_name: "projects.opnv.press",
     info: "projects.opnv.info",
@@ -54,14 +71,6 @@ const projects = [
     info: "projects.hartwork.info",
     icon: faDumbbell,
     img: "hartwork",
-  },
-  {
-    name: "simulationmodel",
-    additionalLink: "https://github.com/chooklii/simulationmodel",
-    additionalLink_name: "projects.code",
-    info: "projects.simulation.info",
-    tech: "projects.simulation.tech",
-    icon: faFlask
   },
   {
     name: "Storagable",

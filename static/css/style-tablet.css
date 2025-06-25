@@ -443,6 +443,7 @@
 
     .link_blog {
         margin-left: 15%;
+        display: block;
 
         &:hover {
             text-decoration: underline;
@@ -463,7 +464,7 @@
 
     .blog_page {
         font-size: 17px;
-        margin-left: 10%;
+        margin-left: 5%;
         width: 90%;
     }
 
@@ -481,6 +482,13 @@
         margin-left: 10%;
     }
 
+    .blog_date {
+        float: right;
+        width: 100%;
+        text-align: end;
+        padding: 1em;
+    }
+
     .blog_heading {
         margin-left: 15%;
         margin-top: 20px
@@ -492,6 +500,54 @@
         display: block;
         width: 640px;
         height: 480px;
+    }
+
+    .blog_fish,
+    .blog_park,
+    .blog_tripas,
+    .blog_passadicios_01,
+    .blog_passadicios_02,
+    .blog_stadion,
+    .blog_stadion_nah,
+    .blog_wald,
+    .blog_park,
+    .beach_01,
+    .beach_02,
+    .walk_costa,
+    .houses,
+    .blog_movgen_old,
+    .blog_movgen_knight,
+    .blog_pinns,
+    .blog_movgen_magic_bitboards_one,
+    .blog_en_passant_check,
+    .blog_minimax,
+    .blog_alphabeta,
+    .blog_transposition,
+    .blog_iterativedeepening,
+    .blog_king_movement,
+    .blog_push_pawns,
+    .blog_castle
+    {
+        width: 100%
+    }
+
+    .blog_code {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    .blog_code_pre {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+        white-space: pre-wrap;
+        overflow: hidden;
+    }
+
+    .nocenter {
+        text-align: unset;
     }
 
     .blog_img {
@@ -563,19 +619,19 @@
         margin-left: 10%;
     }
 
-    .blog_map_vertical{
+    .blog_map_vertical {
         width: 80%;
     }
 
-    .blog_map_horizontal{
+    .blog_map_horizontal {
         width: 400px;
     }
 
-    .blog_map_food{
+    .blog_map_food {
         margin-left: 10%;
     }
 
-    .blog_checkbox{
+    .blog_checkbox {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;

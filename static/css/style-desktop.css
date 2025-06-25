@@ -566,6 +566,7 @@
 
     .link_blog {
         margin-left: 30%;
+        display: block;
 
         &:hover {
             text-decoration: underline;
@@ -594,6 +595,32 @@
     .blog_text {
         font-size: 17px;
         margin-left: 10%;
+    }
+
+    .blog_date{
+        float: right;
+        width: 100%;
+        text-align: end;
+        padding: 1em;
+    }
+
+    .blog_code{
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      overflow-x: auto;
+    }
+
+    .blog_code_pre{
+      padding: 1rem;
+      display: block;
+      text-align: center;
+      white-space: pre-wrap;
+      overflow:hidden;
+    }
+
+    .nocenter{
+        text-align: unset;
     }
 
     .blog_heading {
@@ -701,4 +728,17 @@
         text-align: center;
         font-weight: bold;
     }
+
+
+    @media screen and (max-width: 1200px) {
+        .blog_alphabeta,
+        .blog_minimax{
+        width: 100%
+    }        
+    }
+
+    .blog_iterativedeepening{
+            width: 100%;
+        }
+
 }

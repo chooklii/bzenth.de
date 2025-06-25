@@ -45,7 +45,8 @@
             "08": "Masterarbeit: Modelling and Simulating the scalability of web application architectures",
             "09": "Softwareingenieur Bechtle AG",
             "10": "Teamleiter Softwareentwicklung Bechtle AG",
-            "11": "Freiberuflicher Softwareentwickler"
+            "11": "Freiberuflicher Softwareentwickler",
+            "12": "Softwareingenieur Bechtle AG"
         },
         "paper": {
             "01": "Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen",
@@ -74,7 +75,7 @@
                 "other_hobbies": "Andere Hobbies"
             },
             "content": {
-                "age": "27",
+                "age": "28",
                 "location": "Raum Öhringen, Deutschland",
                 "sport_hobbies": "Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart",
                 "other_hobbies": "Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele"
@@ -152,7 +153,15 @@
         "simulation": {
             "info": "Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)",
             "tech": "Python unter Verwendung von Simpy"
+        },
+        "rustyRook": {
+            "info": "UCI Schach Engine, welche auf Lichess spielt",
+            "tech": "Rust",
+            "blog": "Blog"
         }
-
+    },
+    "blog": {
+        "onlyEnglish": "Dieser Blogeintrag ist nur in Englisch verfügbar",
+        "onlyGerman": ""
     }
 }

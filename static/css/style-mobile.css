@@ -458,6 +458,7 @@
 
     .link_blog {
         margin-left: 15%;
+        display: block;
 
         &:hover {
             text-decoration: underline;
@@ -495,6 +496,13 @@
         font-size: 17px;
     }
 
+    .blog_date{
+        float: right;
+        width: 100%;
+        text-align: end;
+        padding: 1em;
+    }
+
     .blog_heading {
         margin-top: 20px
     }
@@ -511,53 +519,58 @@
         margin-right: 10px;
     }
 
-    .blog_fish {
+    .blog_fish,
+    .blog_park,
+    .blog_tripas,
+    .blog_passadicios_01,
+    .blog_passadicios_02,
+    .blog_stadion,
+    .blog_stadion_nah,
+    .blog_wald,
+    .blog_park,
+    .beach_01,
+    .beach_02,
+    .walk_costa,
+    .houses,
+    .blog_movgen_old,
+    .blog_movgen_knight,
+    .blog_pinns,
+    .blog_movgen_magic_bitboards_one,
+    .blog_en_passant_check,
+    .blog_minimax,
+    .blog_alphabeta,
+    .blog_transposition,
+    .blog_iterativedeepening,
+    .blog_king_movement,
+    .blog_push_pawns,
+    .blog_castle
+    {
         width: 100%
     }
 
-    .blog_tripas {
-        width: 100%
+    .blog_code {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: auto;
     }
 
-    .blog_passadicios_01 {
-        width: 100%
+    .blog_code_pre {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+        white-space: pre-wrap;
+        overflow: hidden;
     }
 
-    .blog_passadicios_02 {
-        width: 100%
+    .nocenter {
+        text-align: unset;
     }
 
-    .blog_stadion {
-        width: 100%
+    .blog_code_smaller{
+        font-size: smaller;
     }
 
-    .blog_stadion_nah {
-        width: 100%
-    }
-
-    .blog_wald {
-        width: 100%
-    }
-
-    .blog_park {
-        width: 100%
-    }
-
-    .beach_01 {
-        width: 100%
-    }
-
-    .beach_02 {
-        width: 100%
-    }
-
-    .walk_costa {
-        width: 100%
-    }
-
-    .houses {
-        width: 100%
-    }
 
     .blog_figure_left {
         float: left;
