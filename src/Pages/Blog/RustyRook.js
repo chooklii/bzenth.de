@@ -603,7 +603,7 @@ const RustyRook = () => {
         of the possible moves) I changed this data structure to <a href="https://crates.io/crates/smallvec" target="_blank">SmallVecs</a> thus moving the Possible Moves from 
         the Heap to the Stack gaining some milliseconds on the way.  <br/><br/>
 
-        This is also a perfect example for Chess Programming in general. It is super fun, but also always a rabbid hole searching for every possible improvement doing things 
+        This is also a perfect example for Chess Programming in general. It is super fun, but also always a rabbit hole searching for every possible improvement doing things 
         your Pull Requests would be declined for at work (rightfully so). No Vibe Code in the world can help when your chess engine is playing horrible moves because you 
         missed a little "-" in one position of the code. Its super hard to debug (no breakpoints can help) and the only way to fix a bug is to really 
         understand the algorithm. RustyRook was an excellent project to understand and learn Rust and lots of other things on the way. But due to the things stated it is 
