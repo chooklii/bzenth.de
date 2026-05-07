@@ -468,6 +468,10 @@
         width: 90%;
     }
 
+    .blog_code {
+        font-size: 17px;
+    }    
+
     .blog_intro {
         display: inline-flex;
         margin-left: 10%;

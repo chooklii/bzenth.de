@@ -58,7 +58,8 @@
             "link": "Verifikationslink",
             "devoxx": "Devoxx Belgium 2023",
             "react": "React Summit 2022, Amsterdam",
-            "js": "JS-Nation 2022, Amsterdam"
+            "js": "JS-Nation 2022, Amsterdam",
+            "ocp": "Oracle Certified Professional: Java SE 21 Developer"
         },
         "private": {
             "headings": {

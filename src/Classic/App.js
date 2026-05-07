@@ -24,6 +24,7 @@ import "../../static/css/style-tablet-large.css";
 import "../../static/css/style-general.css";
 import "antd/dist/antd.css";
 import { translations } from "../translations";
+import OCP21 from "../Pages/Blog/OCP21";
 
 const App = () => {
   const [language, setLanguage] = useState("de")
@@ -80,6 +81,11 @@ const App = () => {
             <Route exact path="/blog/rustyrook">
               <ScrollToTop>
                 <RustyRook/>
+              </ScrollToTop>
+            </Route>
+            <Route exact path="/blog/ocp21">
+              <ScrollToTop>
+                <OCP21/>
               </ScrollToTop>
             </Route>
             <Route exact path="/impressum">

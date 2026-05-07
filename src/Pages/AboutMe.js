@@ -24,7 +24,7 @@ const path = [
   { key: "aboutme.path.05", from: "12/2019", to: "03/2020" },
   { key: "aboutme.path.06", from: "04/2020", to: "09/2020" },
   { key: "aboutme.path.07", from: "09/2020", to: "03/2022" },
-  { key: "aboutme.path.11", from: "09/2020", to: "03/2022"},
+  { key: "aboutme.path.11", from: "09/2020", to: "03/2022" },
   { key: "aboutme.path.08", from: "09/2021", to: "03/2022" },
   { key: "aboutme.path.09", from: "04/2022", to: "12/2023" },
   { key: "aboutme.path.10", from: "01/2024", to: "05/2025" },
@@ -77,15 +77,15 @@ const privato = [
 const certificates = [
   {
     key: "aboutme.certificates.react",
-    icon: faReact
+    icon: faReact,
   },
   {
     key: "aboutme.certificates.js",
-    icon: faJs
+    icon: faJs,
   },
   {
     key: "aboutme.certificates.devoxx",
-    icon: faJava
+    icon: faJava,
   },
   {
     key: "aboutme.certificates.01",
@@ -93,6 +93,11 @@ const certificates = [
     link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url",
   },
   { key: "aboutme.certificates.02", icon: faGoogle },
+  {
+    key: "aboutme.certificates.ocp",
+    icon: faJava,
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5",
+  },
 ];
 
 const AboutMe = (props) => {
@@ -150,19 +155,13 @@ const AboutMe = (props) => {
             renderItem={(item) => (
               <List.Item>
                 <List.Item.Meta
-                  avatar={
-                    <FontAwesomeIcon icon={faJournalWhills} size={"2x"} />
-                  }
+                  avatar={<FontAwesomeIcon icon={faJournalWhills} size={"2x"} />}
                   title={getText(item.key)}
                   description={
                     <p>
                       {item.author} - {item.conf} {item.link && "- "}
                       {item.link && (
-                        <a
-                          className="link-certificate"
-                          target="_blank"
-                          href={item.link}
-                        >
+                        <a className="link-certificate" target="_blank" href={item.link}>
                           Link
                         </a>
                       )}
@@ -196,11 +195,7 @@ const AboutMe = (props) => {
                   description={
                     item.link && (
                       <p>
-                        <a
-                          className="link-certificate"
-                          target="_blank"
-                          href={item.link}
-                        >
+                        <a className="link-certificate" target="_blank" href={item.link}>
                           {getText("aboutme.certificates.link")}
                         </a>
                       </p>
@@ -228,7 +223,11 @@ const AboutMe = (props) => {
           renderItem={(item) => (
             <List.Item>
               <List.Item.Meta
-                avatar={<div className="iconWrapper"><FontAwesomeIcon icon={item.icon} size={"2x"} /></div>}
+                avatar={
+                  <div className="iconWrapper">
+                    <FontAwesomeIcon icon={item.icon} size={"2x"} />
+                  </div>
+                }
                 title={getText(item.heading)}
                 description={getText(item.content)}
               />
@@ -252,12 +251,7 @@ const AboutMe = (props) => {
           </Col>
           {!isDesktop && (
             <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-              {!props.game && (
-                <img
-                  alt={getText("aboutme.alt_img_one")}
-                  className="image_classic classic_first"
-                />
-              )}
+              {!props.game && <img alt={getText("aboutme.alt_img_one")} className="image_classic classic_first" />}
             </Col>
           )}
           <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
@@ -268,21 +262,11 @@ const AboutMe = (props) => {
           </Col>
           {isDesktop && (
             <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-              {!props.game && (
-                <img
-                  alt={getText("aboutme.alt_img_one")}
-                  className="image_classic classic_first"
-                />
-              )}
+              {!props.game && <img alt={getText("aboutme.alt_img_one")} className="image_classic classic_first" />}
             </Col>
           )}
           <Col xl={12} xxl={12} lg={24} md={24} sm={24} xs={24}>
-            {!props.game && (
-              <img
-                alt={getText("aboutme.alt_img_two")}
-                className="image_classic classic_second"
-              />
-            )}
+            {!props.game && <img alt={getText("aboutme.alt_img_two")} className="image_classic classic_second" />}
           </Col>
         </Row>
       </div>
