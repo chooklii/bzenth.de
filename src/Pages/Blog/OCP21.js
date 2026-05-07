@@ -70,6 +70,10 @@ abstract class B extends A {
 public class Question3 extends B {
   int i = 30;
 
+  void getId() {
+    System.out.println(i);  
+  }
+
   void getName() {
     System.out.println("Question3");
   }
@@ -80,6 +84,7 @@ public class Question3 extends B {
     System.out.println(object.i);
     object.getName();
   }
+}
 `;
 
 const question4 = `
@@ -328,7 +333,9 @@ const OCP21 = () => {
         null. I find it useful to know such things myself. I've had good experiences being able to provide actual
         feedback on pull requests (e.g., regarding IO) without the need to check the documentation. To provide you with
         a number (at the end): I had (yes, I counted them for this) 317 flashcards on my desk, which is definitely on
-        the higher count of what I think is needed, but I wanted to be safe, not sorry. <br />
+        the higher count of what I think is needed, but I wanted to be safe, not sorry. The example with the Queue was one 
+        flashcard (with the addition of the other Queue functions <code>add(T), element(), offer(T), poll()</code>).
+         <br />
         <br /> At this point, I felt well prepared to take on the exam for the first time. I failed my first attempt in
         a nail-biter with 33 out of 34 correct answers (required to pass). <br /> Which meant: back to the drawing
         board. In hindsight, I think I am actually happy I did not pass the exam within my first attempt, as I did learn
@@ -396,8 +403,12 @@ const OCP21 = () => {
               <br />
               <br />
               The function <code>getName()</code> is correctly overridden; thus, even though the reference in line 25 is
-              of type A, polymorphism is applied and the function from Question3 is called. This does not apply to
-              fields, as they can only be hidden, which results in line 27 using the int from interface A.
+              of type A the object it references is still of the type Question3. Thus polymorphism is applied and the
+              function from Question3 is called. Note that due to the fact that the reference is of the type A this type
+              'decides' what functions are available. Calling <code>object.getId()</code> would not compile as this
+              function is not available for A. Casting it to the type Question3 would allow us to call the 
+              function <code>((Question3) object).getId()</code>. This does not apply to fields, as they can only be hidden, which results in line
+              27 using the int from class A.
             </div>
           </Panel>
         </Collapse>
@@ -477,15 +488,22 @@ const OCP21 = () => {
           Final Thoughts
         </h2>
         After all, was it worth it? I would say 100%. In hindsight, looking back at my Java knowledge prior to taking
-        the OCP exam, I would say that now I know that I didn't know anything. The exam is — as everyone who takes it
-        says in forums and blogs — really difficult, but I am quite sure I will try to complete the OCP 25 whenever it
-        comes out. This seems like a good way to really understand all the new features implemented. I am happy my
-        collegue asked me to do this exam and motivated me whenever I had motivation issues. I would not agree with the
-        AI saying that I personally have now reached an 'elite level of mastery in the Java language', but I definitely
-        improved a lot. When it comes to my daily work, I haven't encountered Java concepts I did not know and fully
-        understand in a long time. Additionally, I found lots of implementations which can be improved. If this
-        conclusion changes, I will update it in the future. To whoever reads this and is currently studying for their
-        own OCP exam: Good luck, you got this! <br />
+        the OCP exam, I would say that now I know that I didn't know anything. Wherever this puts me (in hindsight and
+        today) on the 'Mount Stupid' graph or the{" "}
+        <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect" target="_blank">
+          Dunning-Kruger effect
+        </a>{" "}
+        is something I’ll have to think about in the future. The exam is — as everyone who takes it says in forums and
+        blogs — really difficult, but I am quite sure I will try to complete the OCP 25 whenever it comes out. This
+        seems like a good way to really understand all the new features implemented. I am happy my collegue asked me to
+        do this exam and motivated me whenever I had motivation issues. Thank you! I would not agree with the AI saying
+        that I personally have now reached an 'elite level of mastery in the Java language', but I definitely improved a
+        lot. When it comes to my daily work, I haven't encountered Java concepts I did not know and fully understand in
+        a long time. <br />A few weeks ago, I was assigned the <i>priviledge</i> to maintain a legacy Java 8 project
+        waiting for its final coffin dance. It contained all kinds of retired Java features, all of which I was familiar
+        with. Additionally, I found lots of implementations which can be improved. If this conclusion changes, I will
+        update it in the future. To whoever reads this and is currently studying for their own OCP exam: Good luck, you
+        got this! <br />
         <br />
         Thank you for reading this blog. Please share your thoughts, comments and ideas using the{" "}
         <Link to="/kontakt">contact options</Link> on this website. <br />
