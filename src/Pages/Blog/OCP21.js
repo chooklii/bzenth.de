@@ -156,7 +156,7 @@ const OCP21 = () => {
       </Helmet>
       <Header />
       <div className="page_classic blog_page">
-        <div className="blog_date">written in Mai 2026</div>
+        <div className="blog_date">written in May 2026</div>
         <div className="blog_translation">{getText("blog.onlyEnglish")}</div>
         <h2 className="blog_heading">My Journey to OCP21: A Personal Experience Report</h2>
         Back in 2025, my back then teamlead and now coworker/mentor asked me if we should take this really difficult
@@ -328,14 +328,24 @@ const OCP21 = () => {
         Even though this may all be fun and exciting, there are some parts you — in my opinion — just need to learn as
         they may be used within the exam. The study guide does a good job here, mentioning whenever you need to simply
         know something.
+        <figure className="blog_figure_left">
+          <img className="blog_flashcards blog_img" aria-label="All my flashcards and a tenisball" />
+          <figcaption className="blog_img_text">317 flashcards or one serve and volley at Wimbledon. ;)</figcaption>
+        </figure>
         <br /> It's up to you to decide if you need to know that a Queue has two functions to read a value, of which{" "}
         <code>.element()</code> throws a runtime exception if the queue is empty while <code>.peek()</code> returns
         null. I find it useful to know such things myself. I've had good experiences being able to provide actual
         feedback on pull requests (e.g., regarding IO) without the need to check the documentation. To provide you with
         a number (at the end): I had (yes, I counted them for this) 317 flashcards on my desk, which is definitely on
-        the higher count of what I think is needed, but I wanted to be safe, not sorry. The example with the Queue was one 
-        flashcard (with the addition of the other Queue functions <code>add(T), element(), offer(T), poll()</code>).
-         <br />
+        the higher count of what I think is needed, but I wanted to be safe, not sorry. The example with the Queue was
+        one flashcard (with the addition of the other Queue functions <code>add(T), element(), offer(T), poll()</code>).
+        <br/><br/>
+        I also had a note pad on my desk where I wrote down all special cases I stumbled across during my learning. To 
+        provide an example: <br/>Did you know, that dividing an Integer or Long with 0 results in an ArithmeticException 
+        (RuntimeException)? But what happens when you do this with an float or double? You guessed correctly, the result 
+        is positive infinity. (With an extra function <code>.isInfinite()</code> for the reference type Double and Float) <br/>
+
+        <br />
         <br /> At this point, I felt well prepared to take on the exam for the first time. I failed my first attempt in
         a nail-biter with 33 out of 34 correct answers (required to pass). <br /> Which meant: back to the drawing
         board. In hindsight, I think I am actually happy I did not pass the exam within my first attempt, as I did learn
@@ -406,9 +416,9 @@ const OCP21 = () => {
               of type A the object it references is still of the type Question3. Thus polymorphism is applied and the
               function from Question3 is called. Note that due to the fact that the reference is of the type A this type
               'decides' what functions are available. Calling <code>object.getId()</code> would not compile as this
-              function is not available for A. Casting it to the type Question3 would allow us to call the 
-              function <code>((Question3) object).getId()</code>. This does not apply to fields, as they can only be hidden, which results in line
-              27 using the int from class A.
+              function is not available for A. Casting it to the type Question3 would allow us to call the function{" "}
+              <code>((Question3) object).getId()</code>. This does not apply to fields, as they can only be hidden,
+              which results in line 27 using the int from class A.
             </div>
           </Panel>
         </Collapse>
@@ -488,7 +498,7 @@ const OCP21 = () => {
           Final Thoughts
         </h2>
         After all, was it worth it? I would say 100%. In hindsight, looking back at my Java knowledge prior to taking
-        the OCP exam, I would say that now I know that I didn't know anything. Wherever this puts me (in hindsight and
+        the OCP exam, I would say that now I know that I didn't know anything. Wherever this puts me (in the past and
         today) on the 'Mount Stupid' graph or the{" "}
         <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect" target="_blank">
           Dunning-Kruger effect
@@ -499,7 +509,7 @@ const OCP21 = () => {
         do this exam and motivated me whenever I had motivation issues. Thank you! I would not agree with the AI saying
         that I personally have now reached an 'elite level of mastery in the Java language', but I definitely improved a
         lot. When it comes to my daily work, I haven't encountered Java concepts I did not know and fully understand in
-        a long time. <br />A few weeks ago, I was assigned the <i>priviledge</i> to maintain a legacy Java 8 project
+        a long time. <br />A few weeks ago, I was assigned the <i>privilege</i> to maintain a legacy Java 8 project
         waiting for its final coffin dance. It contained all kinds of retired Java features, all of which I was familiar
         with. Additionally, I found lots of implementations which can be improved. If this conclusion changes, I will
         update it in the future. To whoever reads this and is currently studying for their own OCP exam: Good luck, you
