@@ -24,9 +24,11 @@ const programmingLanguages = [
 const frameworks = [
   {name: "React", rating: 4},
   {name: "Dropwizard", rating: 4},
+  {name: "NestJS", rating: 3},
   {name: "Express", rating: 3},
   {name: "Django", rating: 2},
   {name: "Flask", rating: 2},
+  {name: "NextJS", rating: 2},
   {name: "Spring Boot", rating: 2}
 ]
 
