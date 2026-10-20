@@ -28,7 +28,8 @@ const path = [
   { key: "aboutme.path.08", from: "09/2021", to: "03/2022" },
   { key: "aboutme.path.09", from: "04/2022", to: "12/2023" },
   { key: "aboutme.path.10", from: "01/2024", to: "05/2025" },
-  { key: "aboutme.path.12", from: "06/2025", to: "now" },
+  { key: "aboutme.path.12", from: "06/2025", to: "11/2026" },
+  { key: "aboutme.path.13", from: "12/2026", to: "-"}
 ];
 
 const paper = [
