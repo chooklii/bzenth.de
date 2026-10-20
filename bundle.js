@@ -20824,7 +20824,11 @@ var path = [{
 }, {
   key: "aboutme.path.12",
   from: "06/2025",
-  to: "now"
+  to: "11/2026"
+}, {
+  key: "aboutme.path.13",
+  from: "12/2026",
+  to: "-"
 }];
 var paper = [{
   key: "aboutme.paper.01",
