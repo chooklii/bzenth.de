@@ -120,7 +120,7 @@ const AboutMe = (props) => {
       return (
         <Steps.Step
           key={index}
-          title={single.from + "- " + single.to}
+          title={single.from + " - " + single.to}
           status={single.position == size ? "process" : "wait"}
           description={getText(single.key)}
         />
