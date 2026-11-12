@@ -20905,7 +20905,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
     return path.map(function (single, index) {
       return /*#__PURE__*/react_default.a.createElement(es_steps.Step, {
         key: index,
-        title: single.from + "- " + single.to,
+        title: single.from + " - " + single.to,
         status: single.position == size ? "process" : "wait",
         description: getText(single.key)
       });
