@@ -967,73 +967,6 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export preMessage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return warning; });
-/* unused harmony export note */
-/* unused harmony export resetWarned */
-/* unused harmony export call */
-/* unused harmony export warningOnce */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return noteOnce; });
-/* eslint-disable no-console */
-var warned = {};
-var preWarningFns = [];
-
-/**
- * Pre warning enable you to parse content before console.error.
- * Modify to null will prevent warning.
- */
-var preMessage = function preMessage(fn) {
-  preWarningFns.push(fn);
-};
-
-/**
- * Warning if condition not match.
- * @param valid Condition
- * @param message Warning message
- * @example
- * ```js
- * warning(false, 'some error'); // print some error
- * warning(true, 'some error'); // print nothing
- * warning(1 === 2, 'some error'); // print some error
- * ```
- */
-function warning(valid, message) {
-  if (false) { var finalMessage; }
-}
-
-/** @see Similar to {@link warning} */
-function note(valid, message) {
-  if (false) { var finalMessage; }
-}
-function resetWarned() {
-  warned = {};
-}
-function call(method, valid, message) {
-  if (!valid && !warned[message]) {
-    method(false, message);
-    warned[message] = true;
-  }
-}
-
-/** @see Same as {@link warning}, but only warn once for the same message */
-function warningOnce(valid, message) {
-  call(warning, valid, message);
-}
-
-/** @see Same as {@link warning}, but only warn once for the same message */
-function noteOnce(valid, message) {
-  call(note, valid, message);
-}
-warningOnce.preMessage = preMessage;
-warningOnce.resetWarned = resetWarned;
-warningOnce.noteOnce = noteOnce;
-/* harmony default export */ __webpack_exports__["a"] = (warningOnce);
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* unused harmony export fas */
 /* unused harmony export prefix */
 /* unused harmony export faAd */
@@ -8062,6 +7995,73 @@ var _iconsCache = {
 
 
 /***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export preMessage */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return warning; });
+/* unused harmony export note */
+/* unused harmony export resetWarned */
+/* unused harmony export call */
+/* unused harmony export warningOnce */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return noteOnce; });
+/* eslint-disable no-console */
+var warned = {};
+var preWarningFns = [];
+
+/**
+ * Pre warning enable you to parse content before console.error.
+ * Modify to null will prevent warning.
+ */
+var preMessage = function preMessage(fn) {
+  preWarningFns.push(fn);
+};
+
+/**
+ * Warning if condition not match.
+ * @param valid Condition
+ * @param message Warning message
+ * @example
+ * ```js
+ * warning(false, 'some error'); // print some error
+ * warning(true, 'some error'); // print nothing
+ * warning(1 === 2, 'some error'); // print some error
+ * ```
+ */
+function warning(valid, message) {
+  if (false) { var finalMessage; }
+}
+
+/** @see Similar to {@link warning} */
+function note(valid, message) {
+  if (false) { var finalMessage; }
+}
+function resetWarned() {
+  warned = {};
+}
+function call(method, valid, message) {
+  if (!valid && !warned[message]) {
+    method(false, message);
+    warned[message] = true;
+  }
+}
+
+/** @see Same as {@link warning}, but only warn once for the same message */
+function warningOnce(valid, message) {
+  call(warning, valid, message);
+}
+
+/** @see Same as {@link warning}, but only warn once for the same message */
+function noteOnce(valid, message) {
+  call(note, valid, message);
+}
+warningOnce.preMessage = preMessage;
+warningOnce.resetWarned = resetWarned;
+warningOnce.noteOnce = noteOnce;
+/* harmony default export */ __webpack_exports__["a"] = (warningOnce);
+
+/***/ }),
 /* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8563,7 +8563,7 @@ var es_select = __webpack_require__(95);
 var index_es = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
-var free_solid_svg_icons_index_es = __webpack_require__(12);
+var free_solid_svg_icons_index_es = __webpack_require__(11);
 
 // CONCATENATED MODULE: ./src/Components/LanguageSwitch.js
 
@@ -9007,7 +9007,7 @@ var esm_typeof = __webpack_require__(15);
 var index_esm = __webpack_require__(68);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/dynamicCSS.js
 var dynamicCSS = __webpack_require__(113);
@@ -13297,7 +13297,7 @@ var react = __webpack_require__(0);
 var toArray = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/rc-resize-observer/node_modules/@babel/runtime/helpers/esm/typeof.js
 function _typeof(o) {
@@ -14711,7 +14711,7 @@ var index_es = __webpack_require__(14);
 var helper = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
-var free_solid_svg_icons_index_es = __webpack_require__(12);
+var free_solid_svg_icons_index_es = __webpack_require__(11);
 
 // CONCATENATED MODULE: ./src/Pages/Home.js
 
@@ -20863,6 +20863,10 @@ var privato = [{
   icon: free_solid_svg_icons_index_es["n" /* faGamepad */]
 }];
 var certificates = [{
+  key: "aboutme.certificates.ocp",
+  icon: faJava,
+  link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5"
+}, {
   key: "aboutme.certificates.react",
   icon: faReact
 }, {
@@ -20879,9 +20883,17 @@ var certificates = [{
   key: "aboutme.certificates.02",
   icon: faGoogle
 }, {
-  key: "aboutme.certificates.ocp",
-  icon: faJava,
-  link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5"
+  key: "aboutme.certificates.03",
+  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  link: "https://www.credly.com/badges/f0c9c7d1-bc0a-459e-9935-8ed668dff40a/public_url"
+}, {
+  key: "aboutme.certificates.04",
+  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  link: "https://www.credly.com/badges/a0f6a19e-f5b0-4fc7-b2e3-8f60759f7855/public_url"
+}, {
+  key: "aboutme.certificates.05",
+  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  link: "https://www.credly.com/badges/b03f80f2-84be-45bd-bdf1-b93299db7bce/public_url"
 }];
 
 var AboutMe_AboutMe = function AboutMe(props) {
@@ -22838,7 +22850,7 @@ function TabNavListWrapper(_ref) {
   return /*#__PURE__*/react["createElement"](es_TabNavList, restProps);
 }
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/rc-tabs/es/hooks/useAnimateConfig.js
 
@@ -24016,6 +24028,9 @@ var programmingLanguages = [{
   name: "Typescript",
   rating: 3
 }, {
+  name: "Kotlin",
+  rating: 3
+}, {
   name: "Python",
   rating: 3
 }, {
@@ -24052,6 +24067,9 @@ var databases = [{
   rating: 5
 }, {
   name: "Redis",
+  rating: 3
+}, {
+  name: "MongoDB",
   rating: 3
 }, {
   name: "ArangoDB",
@@ -25605,7 +25623,7 @@ var RustyRook_RustyRook = function RustyRook() {
 
 "use strict";
 /* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(40);
-/* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 
 
 
@@ -30542,7 +30560,7 @@ function useMemo(getValue, condition, shouldUpdate) {
 /* harmony import */ var _ref__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
 /* harmony import */ var _utils_get__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(57);
 /* harmony import */ var _utils_set__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(51);
-/* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
+/* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(12);
 
 
 
@@ -34482,7 +34500,7 @@ var toArray = __webpack_require__(26);
 var isEqual = __webpack_require__(62);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/rc-field-form/es/FieldContext.js
 
@@ -38300,7 +38318,7 @@ var esm_typeof = __webpack_require__(15);
 var useMergedState = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(0);
@@ -44186,7 +44204,7 @@ var es = __webpack_require__(56);
 var useMergedState = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
-var warning = __webpack_require__(11);
+var warning = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(0);
@@ -48506,13 +48524,13 @@ module.exports = function isEqual(a, b) {
 /* 170 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
 
 /***/ }),
 /* 171 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
 
 /***/ }),
 /* 172 */
