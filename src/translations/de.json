@@ -63,6 +63,9 @@
         "certificates": {
             "01": "Gitlab Certified Associate",
             "02": "Fundamentals of online marketing",
+            "03": "CRUD Operations in MongoDB",
+            "04": "From Relational Model (SQL) to MongoDBs Document Model",
+            "05": "MongoDB Schema Design Patterns and Anti-patterns Skill Badge",
             "link": "Verification",
             "devoxx": "Devoxx 2023, Antwerpen",
             "react": "React Summit 2022, Amsterdam",

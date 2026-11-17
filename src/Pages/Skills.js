@@ -17,6 +17,7 @@ const programmingLanguages = [
   {name: "Javascript", rating: 4},
   {name: "Rust", rating: 4},
   {name: "Typescript", rating: 3},
+  {name: "Kotlin", rating: 3},
   {name: "Python", rating: 3},
   {name: "Scala", rating: 2}
 ]
@@ -35,6 +36,7 @@ const frameworks = [
 const databases = [
   {name: "MySQL", rating: 5},
   {name: "Redis", rating: 3},
+  {name: "MongoDB", rating: 3},
   {name: "ArangoDB", rating: 2},
   {name: "Grakn", rating: 2}
 ]

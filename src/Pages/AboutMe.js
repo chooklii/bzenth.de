@@ -6,6 +6,7 @@ import { Row, Col, Steps, List } from "antd";
 import {
   faCertificate,
   faChild,
+  faDatabase,
   faGamepad,
   faHouseUser,
   faJournalWhills,
@@ -77,6 +78,11 @@ const privato = [
 
 const certificates = [
   {
+    key: "aboutme.certificates.ocp",
+    icon: faJava,
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5",
+  },
+  {
     key: "aboutme.certificates.react",
     icon: faReact,
   },
@@ -95,9 +101,19 @@ const certificates = [
   },
   { key: "aboutme.certificates.02", icon: faGoogle },
   {
-    key: "aboutme.certificates.ocp",
-    icon: faJava,
-    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5",
+    key: "aboutme.certificates.03", 
+    icon: faDatabase,
+    link: "https://www.credly.com/badges/f0c9c7d1-bc0a-459e-9935-8ed668dff40a/public_url"
+  },
+  {
+    key: "aboutme.certificates.04", 
+    icon: faDatabase,
+    link: "https://www.credly.com/badges/a0f6a19e-f5b0-4fc7-b2e3-8f60759f7855/public_url"
+  },
+    {
+    key: "aboutme.certificates.05", 
+    icon: faDatabase,
+    link: "https://www.credly.com/badges/b03f80f2-84be-45bd-bdf1-b93299db7bce/public_url"
   },
 ];
 
