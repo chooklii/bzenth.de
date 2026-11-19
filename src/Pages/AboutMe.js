@@ -110,11 +110,17 @@ const certificates = [
     icon: faDatabase,
     link: "https://www.credly.com/badges/a0f6a19e-f5b0-4fc7-b2e3-8f60759f7855/public_url"
   },
-    {
+  {
     key: "aboutme.certificates.05", 
     icon: faDatabase,
     link: "https://www.credly.com/badges/b03f80f2-84be-45bd-bdf1-b93299db7bce/public_url"
   },
+    {
+    key: "aboutme.certificates.06", 
+    icon: faDatabase,
+    link: "https://www.credly.com/badges/7fc6b2cf-b9e2-4268-9823-12786a0d916f/public_url"
+  },
+
 ];
 
 const AboutMe = (props) => {
