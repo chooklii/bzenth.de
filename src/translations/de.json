@@ -68,6 +68,7 @@
             "04": "From Relational Model (SQL) to MongoDBs Document Model",
             "05": "MongoDB Schema Design Patterns and Anti-patterns Skill Badge",
             "06": "MongoDB Indexing Design Fundamentals",
+            "07": "MongoDB Overview: Core Concepts and Architecture",
             "link": "Verification",
             "devoxx": "Devoxx 2023, Antwerpen",
             "react": "React Summit 2022, Amsterdam",

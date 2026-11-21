@@ -101,6 +101,11 @@ const certificates = [
 const moreCertificates = [
   { key: "aboutme.certificates.02", icon: faGoogle },
   {
+    key: "aboutme.certificates.07", 
+    icon: faDatabase,
+    link: "https://www.credly.com/badges/c87857ce-e482-4f55-b154-ceb2f2bd1ea3/public_url"
+  },
+  {
     key: "aboutme.certificates.01",
     icon: faGitlab,
     link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url",
@@ -120,7 +125,7 @@ const moreCertificates = [
     icon: faDatabase,
     link: "https://www.credly.com/badges/b03f80f2-84be-45bd-bdf1-b93299db7bce/public_url"
   },
-    {
+  {
     key: "aboutme.certificates.06", 
     icon: faDatabase,
     link: "https://www.credly.com/badges/7fc6b2cf-b9e2-4268-9823-12786a0d916f/public_url"
