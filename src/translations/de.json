@@ -58,7 +58,8 @@
             "path": "Werdegang",
             "papers": "Wissenschaftliche Publikationen",
             "private": "Privat",
-            "certificates": "Zertifikate und Konferenzen"
+            "certificates": "Zertifikate und Konferenzen",
+            "moreCertificates": "weitere Zertifikate und Konferenzen"
         },
         "certificates": {
             "01": "Gitlab Certified Associate",

@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Footer, Header } from "../Components";
 import { TranslationContext } from "../helper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row, Col, Steps, List } from "antd";
+import { Row, Col, Steps, List, Collapse } from "antd";
 import {
   faCertificate,
   faChild,
@@ -16,6 +16,8 @@ import {
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGitlab, faGoogle, faJava, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+
+const { Panel } = Collapse;
 
 const path = [
   { key: "aboutme.path.01", from: "09/2013", to: "07/2016" },
@@ -93,13 +95,16 @@ const certificates = [
   {
     key: "aboutme.certificates.devoxx",
     icon: faJava,
-  },
+  }
+];
+
+const moreCertificates = [
+  { key: "aboutme.certificates.02", icon: faGoogle },
   {
     key: "aboutme.certificates.01",
     icon: faGitlab,
     link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url",
   },
-  { key: "aboutme.certificates.02", icon: faGoogle },
   {
     key: "aboutme.certificates.03", 
     icon: faDatabase,
@@ -120,8 +125,7 @@ const certificates = [
     icon: faDatabase,
     link: "https://www.credly.com/badges/7fc6b2cf-b9e2-4268-9823-12786a0d916f/public_url"
   },
-
-];
+]
 
 const AboutMe = (props) => {
   const { getText, setLanguage } = useContext(TranslationContext);
@@ -228,6 +232,31 @@ const AboutMe = (props) => {
               </List.Item>
             )}
           ></List>
+          <Collapse defaultActiveKey={["1"]} ghost style={{fontSize: "15px"}}>
+            <Panel header={getText("aboutme.headings.moreCertificates")} key="0">
+            <List
+              itemLayout="horizontal"
+              dataSource={moreCertificates}
+              renderItem={(item) => (
+                <List.Item>
+                  <List.Item.Meta
+                    avatar={<FontAwesomeIcon icon={item.icon} size={"2x"} />}
+                    title={getText(item.key)}
+                    description={
+                      item.link && (
+                        <p>
+                          <a className="link-certificate" target="_blank" href={item.link}>
+                            {getText("aboutme.certificates.link")}
+                          </a>
+                        </p>
+                      )
+                    }
+                  />
+                </List.Item>
+              )}
+            ></List>
+            </Panel>
+        </Collapse>
         </div>
       </div>
     );

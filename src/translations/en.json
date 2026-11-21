@@ -84,7 +84,8 @@
             "path": "Career",
             "papers": "Scientific publications",
             "private": "Privat",
-            "zertificates": "Certificates and Conferences"
+            "zertificates": "Certificates and Conferences",
+            "moreCertificates": "show more Certificates and Conferences"
         },
         "alt_img_one": "Picture of me within an old telephone booth",
         "alt_img_two": "Picture of me within an old telephone booth"
