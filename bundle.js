@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 650);
+/******/ 	return __webpack_require__(__webpack_require__.s = 651);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -227,7 +227,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _defineProperty; });
-/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(122);
+/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(124);
 
 function _defineProperty(e, r, t) {
   return (r = Object(_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(r)) in e ? Object.defineProperty(e, r, {
@@ -287,7 +287,7 @@ function _defineProperty(obj, key, value) {
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ _slicedToArray; });
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-var arrayWithHoles = __webpack_require__(104);
+var arrayWithHoles = __webpack_require__(105);
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
 function _iterableToArrayLimit(arr, i) {
@@ -320,7 +320,7 @@ function _iterableToArrayLimit(arr, i) {
 var unsupportedIterableToArray = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-var nonIterableRest = __webpack_require__(105);
+var nonIterableRest = __webpack_require__(106);
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
 
@@ -8123,7 +8123,7 @@ if (false) {}
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FontAwesomeIcon; });
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(133);
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(134);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
@@ -8543,7 +8543,7 @@ __webpack_require__.d(__webpack_exports__, "c", function() { return /* reexport 
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ Components_Footer; });
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(34);
+var slicedToArray = __webpack_require__(38);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -8551,13 +8551,13 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 4 modules
-var react_router_dom = __webpack_require__(43);
+var react_router_dom = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./src/helper/index.js + 2 modules
 var helper = __webpack_require__(17);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/select/index.js + 6 modules
-var es_select = __webpack_require__(95);
+var es_select = __webpack_require__(96);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
 var index_es = __webpack_require__(14);
@@ -8733,7 +8733,7 @@ var getPrototypeOf = __webpack_require__(66);
 var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(24);
+var react_router = __webpack_require__(25);
 
 // CONCATENATED MODULE: ./src/Components/ScrollToTop.js
 
@@ -8851,7 +8851,7 @@ function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return Object(arrayLikeToArray["a" /* default */])(arr);
 }
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-var iterableToArray = __webpack_require__(103);
+var iterableToArray = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
 var unsupportedIterableToArray = __webpack_require__(74);
@@ -9010,10 +9010,10 @@ var index_esm = __webpack_require__(68);
 var warning = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/dynamicCSS.js
-var dynamicCSS = __webpack_require__(113);
+var dynamicCSS = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./node_modules/lodash/camelCase.js
-var camelCase = __webpack_require__(162);
+var camelCase = __webpack_require__(163);
 var camelCase_default = /*#__PURE__*/__webpack_require__.n(camelCase);
 
 // CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/utils.js
@@ -9236,7 +9236,8 @@ Icon.setTwoToneColor = setTwoToneColor;
 /* harmony default export */ var AntdIcon = __webpack_exports__["a"] = (Icon);
 
 /***/ }),
-/* 21 */
+/* 21 */,
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9245,7 +9246,7 @@ Icon.setTwoToneColor = setTwoToneColor;
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ _slicedToArray; });
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-var arrayWithHoles = __webpack_require__(164);
+var arrayWithHoles = __webpack_require__(165);
 
 // CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
 function _iterableToArrayLimit(r, l) {
@@ -9277,10 +9278,10 @@ function _iterableToArrayLimit(r, l) {
 }
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
-var unsupportedIterableToArray = __webpack_require__(115);
+var unsupportedIterableToArray = __webpack_require__(116);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-var nonIterableRest = __webpack_require__(165);
+var nonIterableRest = __webpack_require__(166);
 
 // CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js
 
@@ -9293,7 +9294,6 @@ function _slicedToArray(r, e) {
 
 
 /***/ }),
-/* 22 */,
 /* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9312,6 +9312,36 @@ function _typeof(o) {
 
 /***/ }),
 /* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toArray; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function toArray(children) {
+  var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var ret = [];
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.forEach(children, function (child) {
+    if ((child === undefined || child === null) && !option.keepEmpty) {
+      return;
+    }
+    if (Array.isArray(child)) {
+      ret = ret.concat(toArray(child));
+    } else if (Object(react_is__WEBPACK_IMPORTED_MODULE_1__["isFragment"])(child) && child.props) {
+      ret = ret.concat(toArray(child.props.children, option));
+    } else {
+      ret.push(child);
+    }
+  });
+  return ret;
+}
+
+/***/ }),
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9338,14 +9368,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42);
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(44);
+/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(45);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(58);
-/* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(134);
+/* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(135);
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(path_to_regexp__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(152);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(153);
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(135);
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(163);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(136);
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(164);
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_9__);
 
 
@@ -10184,10 +10214,10 @@ if (false) { var secondaryBuildName, initialBuildName, buildNames, key, global$1
 
 //# sourceMappingURL=react-router.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10226,38 +10256,7 @@ var useLayoutUpdateEffect = function useLayoutUpdateEffect(callback, deps) {
 /* harmony default export */ __webpack_exports__["a"] = (useLayoutEffect);
 
 /***/ }),
-/* 26 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toArray; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(72);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function toArray(children) {
-  var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var ret = [];
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.forEach(children, function (child) {
-    if ((child === undefined || child === null) && !option.keepEmpty) {
-      return;
-    }
-    if (Array.isArray(child)) {
-      ret = ret.concat(toArray(child));
-    } else if (Object(react_is__WEBPACK_IMPORTED_MODULE_1__["isFragment"])(child) && child.props) {
-      ret = ret.concat(toArray(child.props.children, option));
-    } else {
-      ret.push(child);
-    }
-  });
-  return ret;
-}
-
-/***/ }),
-/* 27 */,
-/* 28 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10284,14 +10283,31 @@ function cloneElement(element, props) {
 }
 
 /***/ }),
+/* 28 */,
 /* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return omit; });
+function omit(obj, fields) {
+  var clone = Object.assign({}, obj);
+  if (Array.isArray(fields)) {
+    fields.forEach(function (key) {
+      delete clone[key];
+    });
+  }
+  return clone;
+}
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return useMergedState; });
 /* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(70);
 /* harmony import */ var _useEvent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50);
-/* harmony import */ var _useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25);
+/* harmony import */ var _useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26);
 /* harmony import */ var _useState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(55);
 
 
@@ -10355,22 +10371,6 @@ function useMergedState(defaultStateValue, option) {
     setPrevValue([mergedValue], ignoreDestroy);
   });
   return [postMergedValue, triggerChange];
-}
-
-/***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return omit; });
-function omit(obj, fields) {
-  var clone = Object.assign({}, obj);
-  if (Array.isArray(fields)) {
-    fields.forEach(function (key) {
-      delete clone[key];
-    });
-  }
-  return clone;
 }
 
 /***/ }),
@@ -10440,25 +10440,6 @@ var tupleNum = function tupleNum() {
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(187);
-
-var iterableToArrayLimit = __webpack_require__(188);
-
-var unsupportedIterableToArray = __webpack_require__(147);
-
-var nonIterableRest = __webpack_require__(189);
-
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-
-module.exports = _slicedToArray;
-
-/***/ }),
-/* 35 */,
-/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10470,7 +10451,7 @@ function _classCallCheck(instance, Constructor) {
 }
 
 /***/ }),
-/* 37 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10492,7 +10473,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 /***/ }),
-/* 38 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10558,7 +10539,7 @@ function _createSuper(Derived) {
 }
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10593,6 +10574,25 @@ function _inherits(subClass, superClass) {
 }
 
 /***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(187);
+
+var iterableToArrayLimit = __webpack_require__(188);
+
+var unsupportedIterableToArray = __webpack_require__(148);
+
+var nonIterableRest = __webpack_require__(189);
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
+
+/***/ }),
+/* 39 */,
 /* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10817,7 +10817,7 @@ function valueEqual(a, b) {
 /* harmony default export */ var value_equal = (valueEqual);
 
 // EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
-var tiny_invariant_esm = __webpack_require__(44);
+var tiny_invariant_esm = __webpack_require__(45);
 
 // CONCATENATED MODULE: ./node_modules/history/esm/history.js
 
@@ -11747,560 +11747,6 @@ function createMemoryHistory(props) {
 
 "use strict";
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ react_router_dom_BrowserRouter; });
-__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ Link; });
-
-// UNUSED EXPORTS: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, HashRouter, NavLink
-
-// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(24);
-
-// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-  return _setPrototypeOf(o, p);
-}
-// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  _setPrototypeOf(subClass, superClass);
-}
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/history/esm/history.js + 2 modules
-var esm_history = __webpack_require__(42);
-
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(10);
-
-// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/extends.js
-function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  };
-  return _extends.apply(this, arguments);
-}
-// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-// EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
-var tiny_invariant_esm = __webpack_require__(44);
-
-// CONCATENATED MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The public API for a <Router> that uses HTML5 history.
- */
-
-var react_router_dom_BrowserRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose(BrowserRouter, _React$Component);
-
-  function BrowserRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = Object(esm_history["createBrowserHistory"])(_this.props);
-    return _this;
-  }
-
-  var _proto = BrowserRouter.prototype;
-
-  _proto.render = function render() {
-    return /*#__PURE__*/react_default.a.createElement(react_router["Router"], {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return BrowserRouter;
-}(react_default.a.Component);
-
-if (false) {}
-
-/**
- * The public API for a <Router> that uses window.location.hash.
- */
-
-var react_router_dom_HashRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose(HashRouter, _React$Component);
-
-  function HashRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = Object(esm_history["createHashHistory"])(_this.props);
-    return _this;
-  }
-
-  var _proto = HashRouter.prototype;
-
-  _proto.render = function render() {
-    return /*#__PURE__*/react_default.a.createElement(react_router["Router"], {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return HashRouter;
-}(react_default.a.Component);
-
-if (false) {}
-
-var resolveToLocation = function resolveToLocation(to, currentLocation) {
-  return typeof to === "function" ? to(currentLocation) : to;
-};
-var react_router_dom_normalizeToLocation = function normalizeToLocation(to, currentLocation) {
-  return typeof to === "string" ? Object(esm_history["createLocation"])(to, null, null, currentLocation) : to;
-};
-
-var forwardRefShim = function forwardRefShim(C) {
-  return C;
-};
-
-var forwardRef = react_default.a.forwardRef;
-
-if (typeof forwardRef === "undefined") {
-  forwardRef = forwardRefShim;
-}
-
-function isModifiedEvent(event) {
-  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-}
-
-var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
-  var innerRef = _ref.innerRef,
-      navigate = _ref.navigate,
-      _onClick = _ref.onClick,
-      rest = _objectWithoutPropertiesLoose(_ref, ["innerRef", "navigate", "onClick"]);
-
-  var target = rest.target;
-
-  var props = _extends({}, rest, {
-    onClick: function onClick(event) {
-      try {
-        if (_onClick) _onClick(event);
-      } catch (ex) {
-        event.preventDefault();
-        throw ex;
-      }
-
-      if (!event.defaultPrevented && // onClick prevented default
-      event.button === 0 && ( // ignore everything but left clicks
-      !target || target === "_self") && // let browser handle "target=_blank" etc.
-      !isModifiedEvent(event) // ignore clicks with modifier keys
-      ) {
-          event.preventDefault();
-          navigate();
-        }
-    }
-  }); // React 15 compat
-
-
-  if (forwardRefShim !== forwardRef) {
-    props.ref = forwardedRef || innerRef;
-  } else {
-    props.ref = innerRef;
-  }
-  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
-
-
-  return /*#__PURE__*/react_default.a.createElement("a", props);
-});
-
-if (false) {}
-/**
- * The public API for rendering a history-aware <a>.
- */
-
-
-var Link = forwardRef(function (_ref2, forwardedRef) {
-  var _ref2$component = _ref2.component,
-      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
-      replace = _ref2.replace,
-      to = _ref2.to,
-      innerRef = _ref2.innerRef,
-      rest = _objectWithoutPropertiesLoose(_ref2, ["component", "replace", "to", "innerRef"]);
-
-  return /*#__PURE__*/react_default.a.createElement(react_router["__RouterContext"].Consumer, null, function (context) {
-    !context ?  false ? undefined : Object(tiny_invariant_esm["default"])(false) : void 0;
-    var history = context.history;
-    var location = react_router_dom_normalizeToLocation(resolveToLocation(to, context.location), context.location);
-    var href = location ? history.createHref(location) : "";
-
-    var props = _extends({}, rest, {
-      href: href,
-      navigate: function navigate() {
-        var location = resolveToLocation(to, context.location);
-        var isDuplicateNavigation = Object(esm_history["createPath"])(context.location) === Object(esm_history["createPath"])(react_router_dom_normalizeToLocation(location));
-        var method = replace || isDuplicateNavigation ? history.replace : history.push;
-        method(location);
-      }
-    }); // React 15 compat
-
-
-    if (forwardRefShim !== forwardRef) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return /*#__PURE__*/react_default.a.createElement(component, props);
-  });
-});
-
-if (false) { var refType, toType; }
-
-var forwardRefShim$1 = function forwardRefShim(C) {
-  return C;
-};
-
-var forwardRef$1 = react_default.a.forwardRef;
-
-if (typeof forwardRef$1 === "undefined") {
-  forwardRef$1 = forwardRefShim$1;
-}
-
-function joinClassnames() {
-  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classnames[_key] = arguments[_key];
-  }
-
-  return classnames.filter(function (i) {
-    return i;
-  }).join(" ");
-}
-/**
- * A <Link> wrapper that knows if it's "active" or not.
- */
-
-
-var NavLink = forwardRef$1(function (_ref, forwardedRef) {
-  var _ref$ariaCurrent = _ref["aria-current"],
-      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
-      _ref$activeClassName = _ref.activeClassName,
-      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
-      activeStyle = _ref.activeStyle,
-      classNameProp = _ref.className,
-      exact = _ref.exact,
-      isActiveProp = _ref.isActive,
-      locationProp = _ref.location,
-      sensitive = _ref.sensitive,
-      strict = _ref.strict,
-      styleProp = _ref.style,
-      to = _ref.to,
-      innerRef = _ref.innerRef,
-      rest = _objectWithoutPropertiesLoose(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
-
-  return /*#__PURE__*/react_default.a.createElement(react_router["__RouterContext"].Consumer, null, function (context) {
-    !context ?  false ? undefined : Object(tiny_invariant_esm["default"])(false) : void 0;
-    var currentLocation = locationProp || context.location;
-    var toLocation = react_router_dom_normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
-    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
-
-    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
-    var match = escapedPath ? Object(react_router["matchPath"])(currentLocation.pathname, {
-      path: escapedPath,
-      exact: exact,
-      sensitive: sensitive,
-      strict: strict
-    }) : null;
-    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
-    var className = typeof classNameProp === "function" ? classNameProp(isActive) : classNameProp;
-    var style = typeof styleProp === "function" ? styleProp(isActive) : styleProp;
-
-    if (isActive) {
-      className = joinClassnames(className, activeClassName);
-      style = _extends({}, style, activeStyle);
-    }
-
-    var props = _extends({
-      "aria-current": isActive && ariaCurrent || null,
-      className: className,
-      style: style,
-      to: toLocation
-    }, rest); // React 15 compat
-
-
-    if (forwardRefShim$1 !== forwardRef$1) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return /*#__PURE__*/react_default.a.createElement(Link, props);
-  });
-});
-
-if (false) { var ariaCurrentType; }
-
-
-//# sourceMappingURL=react-router-dom.js.map
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return invariant; });
-var isProduction = "production" === 'production';
-var prefix = 'Invariant failed';
-function invariant(condition, message) {
-    if (condition) {
-        return;
-    }
-    if (isProduction) {
-        throw new Error(prefix);
-    }
-    var provided = typeof message === 'function' ? message() : message;
-    var value = provided ? "".concat(prefix, ": ").concat(provided) : prefix;
-    throw new Error(value);
-}
-
-
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
 // UNUSED EXPORTS: Provider, CSSMotionList
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
@@ -12344,16 +11790,16 @@ function MotionProvider(_ref) {
   }, children);
 }
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__(36);
+var classCallCheck = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-var createClass = __webpack_require__(37);
+var createClass = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__(39);
+var inherits = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
-var createSuper = __webpack_require__(38);
+var createSuper = __webpack_require__(36);
 
 // CONCATENATED MODULE: ./node_modules/rc-motion/es/DomWrapper.js
 
@@ -13272,7 +12718,562 @@ function genCSSMotionList(transitionSupport) {
 /* harmony default export */ var rc_motion_es = __webpack_exports__["a"] = (es_CSSMotion);
 
 /***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ react_router_dom_BrowserRouter; });
+__webpack_require__.d(__webpack_exports__, "b", function() { return /* binding */ Link; });
+
+// UNUSED EXPORTS: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, HashRouter, NavLink
+
+// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
+var react_router = __webpack_require__(25);
+
+// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+  return _setPrototypeOf(o, p);
+}
+// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  _setPrototypeOf(subClass, superClass);
+}
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(0);
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./node_modules/history/esm/history.js + 2 modules
+var esm_history = __webpack_require__(42);
+
+// EXTERNAL MODULE: ./node_modules/prop-types/index.js
+var prop_types = __webpack_require__(10);
+
+// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/extends.js
+function _extends() {
+  _extends = Object.assign ? Object.assign.bind() : function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends.apply(this, arguments);
+}
+// CONCATENATED MODULE: ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+// EXTERNAL MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
+var tiny_invariant_esm = __webpack_require__(45);
+
+// CONCATENATED MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * The public API for a <Router> that uses HTML5 history.
+ */
+
+var react_router_dom_BrowserRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose(BrowserRouter, _React$Component);
+
+  function BrowserRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = Object(esm_history["createBrowserHistory"])(_this.props);
+    return _this;
+  }
+
+  var _proto = BrowserRouter.prototype;
+
+  _proto.render = function render() {
+    return /*#__PURE__*/react_default.a.createElement(react_router["Router"], {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return BrowserRouter;
+}(react_default.a.Component);
+
+if (false) {}
+
+/**
+ * The public API for a <Router> that uses window.location.hash.
+ */
+
+var react_router_dom_HashRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose(HashRouter, _React$Component);
+
+  function HashRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = Object(esm_history["createHashHistory"])(_this.props);
+    return _this;
+  }
+
+  var _proto = HashRouter.prototype;
+
+  _proto.render = function render() {
+    return /*#__PURE__*/react_default.a.createElement(react_router["Router"], {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return HashRouter;
+}(react_default.a.Component);
+
+if (false) {}
+
+var resolveToLocation = function resolveToLocation(to, currentLocation) {
+  return typeof to === "function" ? to(currentLocation) : to;
+};
+var react_router_dom_normalizeToLocation = function normalizeToLocation(to, currentLocation) {
+  return typeof to === "string" ? Object(esm_history["createLocation"])(to, null, null, currentLocation) : to;
+};
+
+var forwardRefShim = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef = react_default.a.forwardRef;
+
+if (typeof forwardRef === "undefined") {
+  forwardRef = forwardRefShim;
+}
+
+function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+
+var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
+  var innerRef = _ref.innerRef,
+      navigate = _ref.navigate,
+      _onClick = _ref.onClick,
+      rest = _objectWithoutPropertiesLoose(_ref, ["innerRef", "navigate", "onClick"]);
+
+  var target = rest.target;
+
+  var props = _extends({}, rest, {
+    onClick: function onClick(event) {
+      try {
+        if (_onClick) _onClick(event);
+      } catch (ex) {
+        event.preventDefault();
+        throw ex;
+      }
+
+      if (!event.defaultPrevented && // onClick prevented default
+      event.button === 0 && ( // ignore everything but left clicks
+      !target || target === "_self") && // let browser handle "target=_blank" etc.
+      !isModifiedEvent(event) // ignore clicks with modifier keys
+      ) {
+          event.preventDefault();
+          navigate();
+        }
+    }
+  }); // React 15 compat
+
+
+  if (forwardRefShim !== forwardRef) {
+    props.ref = forwardedRef || innerRef;
+  } else {
+    props.ref = innerRef;
+  }
+  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
+
+
+  return /*#__PURE__*/react_default.a.createElement("a", props);
+});
+
+if (false) {}
+/**
+ * The public API for rendering a history-aware <a>.
+ */
+
+
+var Link = forwardRef(function (_ref2, forwardedRef) {
+  var _ref2$component = _ref2.component,
+      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
+      replace = _ref2.replace,
+      to = _ref2.to,
+      innerRef = _ref2.innerRef,
+      rest = _objectWithoutPropertiesLoose(_ref2, ["component", "replace", "to", "innerRef"]);
+
+  return /*#__PURE__*/react_default.a.createElement(react_router["__RouterContext"].Consumer, null, function (context) {
+    !context ?  false ? undefined : Object(tiny_invariant_esm["default"])(false) : void 0;
+    var history = context.history;
+    var location = react_router_dom_normalizeToLocation(resolveToLocation(to, context.location), context.location);
+    var href = location ? history.createHref(location) : "";
+
+    var props = _extends({}, rest, {
+      href: href,
+      navigate: function navigate() {
+        var location = resolveToLocation(to, context.location);
+        var isDuplicateNavigation = Object(esm_history["createPath"])(context.location) === Object(esm_history["createPath"])(react_router_dom_normalizeToLocation(location));
+        var method = replace || isDuplicateNavigation ? history.replace : history.push;
+        method(location);
+      }
+    }); // React 15 compat
+
+
+    if (forwardRefShim !== forwardRef) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return /*#__PURE__*/react_default.a.createElement(component, props);
+  });
+});
+
+if (false) { var refType, toType; }
+
+var forwardRefShim$1 = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef$1 = react_default.a.forwardRef;
+
+if (typeof forwardRef$1 === "undefined") {
+  forwardRef$1 = forwardRefShim$1;
+}
+
+function joinClassnames() {
+  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
+    classnames[_key] = arguments[_key];
+  }
+
+  return classnames.filter(function (i) {
+    return i;
+  }).join(" ");
+}
+/**
+ * A <Link> wrapper that knows if it's "active" or not.
+ */
+
+
+var NavLink = forwardRef$1(function (_ref, forwardedRef) {
+  var _ref$ariaCurrent = _ref["aria-current"],
+      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
+      _ref$activeClassName = _ref.activeClassName,
+      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
+      activeStyle = _ref.activeStyle,
+      classNameProp = _ref.className,
+      exact = _ref.exact,
+      isActiveProp = _ref.isActive,
+      locationProp = _ref.location,
+      sensitive = _ref.sensitive,
+      strict = _ref.strict,
+      styleProp = _ref.style,
+      to = _ref.to,
+      innerRef = _ref.innerRef,
+      rest = _objectWithoutPropertiesLoose(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+
+  return /*#__PURE__*/react_default.a.createElement(react_router["__RouterContext"].Consumer, null, function (context) {
+    !context ?  false ? undefined : Object(tiny_invariant_esm["default"])(false) : void 0;
+    var currentLocation = locationProp || context.location;
+    var toLocation = react_router_dom_normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
+    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
+
+    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
+    var match = escapedPath ? Object(react_router["matchPath"])(currentLocation.pathname, {
+      path: escapedPath,
+      exact: exact,
+      sensitive: sensitive,
+      strict: strict
+    }) : null;
+    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
+    var className = typeof classNameProp === "function" ? classNameProp(isActive) : classNameProp;
+    var style = typeof styleProp === "function" ? styleProp(isActive) : styleProp;
+
+    if (isActive) {
+      className = joinClassnames(className, activeClassName);
+      style = _extends({}, style, activeStyle);
+    }
+
+    var props = _extends({
+      "aria-current": isActive && ariaCurrent || null,
+      className: className,
+      style: style,
+      to: toLocation
+    }, rest); // React 15 compat
+
+
+    if (forwardRefShim$1 !== forwardRef$1) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return /*#__PURE__*/react_default.a.createElement(Link, props);
+  });
+});
+
+if (false) { var ariaCurrentType; }
+
+
+//# sourceMappingURL=react-router-dom.js.map
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return invariant; });
+var isProduction = "production" === 'production';
+var prefix = 'Invariant failed';
+function invariant(condition, message) {
+    if (condition) {
+        return;
+    }
+    if (isProduction) {
+        throw new Error(prefix);
+    }
+    var provided = typeof message === 'function' ? message() : message;
+    var value = provided ? "".concat(prefix, ": ").concat(provided) : prefix;
+    throw new Error(value);
+}
+
+
+
+
+/***/ }),
+/* 46 */,
 /* 47 */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13294,7 +13295,7 @@ function _extends() {
 var react = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var toArray = __webpack_require__(26);
+var toArray = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
 var warning = __webpack_require__(12);
@@ -13407,7 +13408,7 @@ function Collection(_ref) {
   }, children);
 }
 // EXTERNAL MODULE: ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js
-var ResizeObserver_es = __webpack_require__(108);
+var ResizeObserver_es = __webpack_require__(109);
 
 // CONCATENATED MODULE: ./node_modules/rc-resize-observer/es/utils/observerUtil.js
 
@@ -13703,7 +13704,7 @@ RefResizeObserver.Collection = Collection;
 /* harmony default export */ var es = __webpack_exports__["a"] = (RefResizeObserver);
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports) {
 
 var g;
@@ -13729,7 +13730,6 @@ module.exports = g;
 
 
 /***/ }),
-/* 49 */,
 /* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13768,19 +13768,19 @@ var esm_typeof = __webpack_require__(40);
 var objectSpread2 = __webpack_require__(69);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js + 2 modules
-var toConsumableArray = __webpack_require__(93);
+var toConsumableArray = __webpack_require__(94);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-var arrayWithHoles = __webpack_require__(106);
+var arrayWithHoles = __webpack_require__(107);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-var iterableToArray = __webpack_require__(109);
+var iterableToArray = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
 var unsupportedIterableToArray = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-var nonIterableRest = __webpack_require__(107);
+var nonIterableRest = __webpack_require__(108);
 
 // CONCATENATED MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/toArray.js
 
@@ -14053,10 +14053,10 @@ var classnames = __webpack_require__(2);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/rc-resize-observer/es/index.js + 19 modules
-var es = __webpack_require__(47);
+var es = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useLayoutEffect.js
-var useLayoutEffect = __webpack_require__(25);
+var useLayoutEffect = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./node_modules/rc-overflow/es/Item.js
 
@@ -14686,20 +14686,20 @@ var NotFound_NotFound = /*#__PURE__*/function (_React$Component) {
 
 /* harmony default export */ var Pages_NotFound = (NotFound_NotFound);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(34);
+var slicedToArray = __webpack_require__(38);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(24);
+var react_router = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/col/index.js
 var col = __webpack_require__(324);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/button/index.js + 13 modules
-var es_button = __webpack_require__(651);
+var es_button = __webpack_require__(650);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/select/index.js + 6 modules
-var es_select = __webpack_require__(95);
+var es_select = __webpack_require__(96);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/row/index.js
 var row = __webpack_require__(325);
@@ -15081,6 +15081,9 @@ var Credits_Credits = function Credits() {
 };
 
 /* harmony default export */ var Pages_Credits = (Credits_Credits);
+// EXTERNAL MODULE: ./node_modules/antd/es/collapse/index.js + 6 modules
+var collapse = __webpack_require__(652);
+
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/extends.js
 var esm_extends = __webpack_require__(4);
 
@@ -15625,10 +15628,10 @@ _defineProperty(Steps_Steps, "defaultProps", {
 
 /* harmony default export */ var es = (Steps_Steps);
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var config_provider_context = __webpack_require__(138);
+var config_provider_context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
-var esm_slicedToArray = __webpack_require__(21);
+var esm_slicedToArray = __webpack_require__(22);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/_util/hooks/useForceUpdate.js
 
@@ -15694,10 +15697,10 @@ var RefIcon = /*#__PURE__*/react["forwardRef"](icons_CheckCircleFilled_CheckCirc
 if (false) {}
 /* harmony default export */ var icons_CheckCircleFilled = (RefIcon);
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/CloseCircleFilled.js + 1 modules
-var CloseCircleFilled = __webpack_require__(121);
+var CloseCircleFilled = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/type.js
 var _util_type = __webpack_require__(33);
@@ -16425,7 +16428,7 @@ var progress_Progress = function Progress(props) {
 
 /* harmony default export */ var es_progress = (progress_progress);
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var Children_toArray = __webpack_require__(26);
+var Children_toArray = __webpack_require__(24);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/steps/useLegacyItems.js
 
@@ -16550,10 +16553,10 @@ function _arrayWithoutHoles(r) {
 }
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-var iterableToArray = __webpack_require__(166);
+var iterableToArray = __webpack_require__(167);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
-var unsupportedIterableToArray = __webpack_require__(115);
+var unsupportedIterableToArray = __webpack_require__(116);
 
 // CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
 function _nonIterableSpread() {
@@ -16573,7 +16576,7 @@ function _toConsumableArray(r) {
 var helpers_esm_typeof = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/defaultRenderEmpty.js + 3 modules
-var defaultRenderEmpty = __webpack_require__(120);
+var defaultRenderEmpty = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/grid/row.js + 2 modules
 var grid_row = __webpack_require__(258);
@@ -16642,22 +16645,22 @@ var LeftOutlined_RefIcon = /*#__PURE__*/react["forwardRef"](icons_LeftOutlined_L
 if (false) {}
 /* harmony default export */ var icons_LeftOutlined = (LeftOutlined_RefIcon);
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js + 1 modules
-var RightOutlined = __webpack_require__(132);
+var RightOutlined = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 var esm_defineProperty = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-var esm_classCallCheck = __webpack_require__(36);
+var esm_classCallCheck = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-var esm_createClass = __webpack_require__(37);
+var esm_createClass = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
-var esm_inherits = __webpack_require__(39);
+var esm_inherits = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
-var createSuper = __webpack_require__(38);
+var createSuper = __webpack_require__(36);
 
 // CONCATENATED MODULE: ./node_modules/rc-pagination/es/Pager.js
 
@@ -17480,10 +17483,10 @@ Pagination_Pagination.defaultProps = {
 // CONCATENATED MODULE: ./node_modules/rc-pagination/es/index.js
 
 // EXTERNAL MODULE: ./node_modules/rc-pagination/es/locale/en_US.js
-var en_US = __webpack_require__(112);
+var en_US = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/locale-provider/LocaleReceiver.js + 7 modules
-var LocaleReceiver = __webpack_require__(118);
+var LocaleReceiver = __webpack_require__(119);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/pagination/Select.js
 
@@ -17611,11 +17614,11 @@ var pagination_Pagination_Pagination = function Pagination(_a) {
 
 /* harmony default export */ var es_pagination = (pagination_Pagination);
 // EXTERNAL MODULE: ./node_modules/lodash/debounce.js
-var debounce = __webpack_require__(167);
+var debounce = __webpack_require__(168);
 var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
-var reactNode = __webpack_require__(28);
+var reactNode = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/spin/index.js
 
@@ -20777,6 +20780,7 @@ var _iconsCache = {
 
 
 
+var Panel = collapse["a" /* default */].Panel;
 var path = [{
   key: "aboutme.path.01",
   from: "09/2013",
@@ -20875,13 +20879,14 @@ var certificates = [{
 }, {
   key: "aboutme.certificates.devoxx",
   icon: faJava
+}];
+var moreCertificates = [{
+  key: "aboutme.certificates.02",
+  icon: faGoogle
 }, {
   key: "aboutme.certificates.01",
   icon: faGitlab,
   link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url"
-}, {
-  key: "aboutme.certificates.02",
-  icon: faGoogle
 }, {
   key: "aboutme.certificates.03",
   icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
@@ -20996,7 +21001,33 @@ var AboutMe_AboutMe = function AboutMe(props) {
           }, getText("aboutme.certificates.link")))
         }));
       }
-    })));
+    }), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+      defaultActiveKey: ["1"],
+      ghost: true,
+      style: {
+        fontSize: "15px"
+      }
+    }, /*#__PURE__*/react_default.a.createElement(Panel, {
+      header: getText("aboutme.headings.moreCertificates"),
+      key: "0"
+    }, /*#__PURE__*/react_default.a.createElement(list, {
+      itemLayout: "horizontal",
+      dataSource: moreCertificates,
+      renderItem: function renderItem(item) {
+        return /*#__PURE__*/react_default.a.createElement(list.Item, null, /*#__PURE__*/react_default.a.createElement(list.Item.Meta, {
+          avatar: /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
+            icon: item.icon,
+            size: "2x"
+          }),
+          title: getText(item.key),
+          description: item.link && /*#__PURE__*/react_default.a.createElement("p", null, /*#__PURE__*/react_default.a.createElement("a", {
+            className: "link-certificate",
+            target: "_blank",
+            href: item.link
+          }, getText("aboutme.certificates.link")))
+        }));
+      }
+    })))));
   };
 
   var renderPrivate = function renderPrivate() {
@@ -21135,10 +21166,10 @@ if (false) {}
 var isMobile = __webpack_require__(76);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useMergedState.js
-var useMergedState = __webpack_require__(29);
+var useMergedState = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
-var rc_motion_es = __webpack_require__(46);
+var rc_motion_es = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./node_modules/rc-tabs/es/TabContext.js
 
@@ -21226,7 +21257,7 @@ function TabPanelList(_ref) {
 var toConsumableArray = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./node_modules/rc-resize-observer/es/index.js + 19 modules
-var rc_resize_observer_es = __webpack_require__(47);
+var rc_resize_observer_es = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useEvent.js
 var useEvent = __webpack_require__(50);
@@ -21446,7 +21477,7 @@ function useTouchMove(ref, onOffset) {
   }, []);
 }
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useLayoutEffect.js
-var useLayoutEffect = __webpack_require__(25);
+var useLayoutEffect = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./node_modules/rc-tabs/es/hooks/useUpdate.js
 
@@ -21837,7 +21868,7 @@ var placements_placements = {
 var es_KeyCode = __webpack_require__(8);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/focus.js
-var Dom_focus = __webpack_require__(116);
+var Dom_focus = __webpack_require__(117);
 
 // CONCATENATED MODULE: ./node_modules/rc-dropdown/es/hooks/useAccessibility.js
 
@@ -22092,7 +22123,7 @@ function Dropdown(props, ref) {
 
 /* harmony default export */ var rc_dropdown_es = (es_Dropdown);
 // EXTERNAL MODULE: ./node_modules/rc-menu/es/index.js + 24 modules
-var rc_menu_es = __webpack_require__(137);
+var rc_menu_es = __webpack_require__(138);
 
 // CONCATENATED MODULE: ./node_modules/rc-tabs/es/TabNavList/OperationNode.js
 
@@ -23965,7 +23996,7 @@ Rate_Rate.defaultProps = {
 
 /* harmony default export */ var rc_rate_es = (es_Rate);
 // EXTERNAL MODULE: ./node_modules/antd/es/tooltip/index.js + 6 modules
-var tooltip = __webpack_require__(119);
+var tooltip = __webpack_require__(120);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/rate/index.js
 
@@ -24720,7 +24751,7 @@ var Checkbox = /*#__PURE__*/Object(react["forwardRef"])(function (props, ref) {
 });
 /* harmony default export */ var rc_checkbox_es = (Checkbox);
 // EXTERNAL MODULE: ./node_modules/antd/es/form/context.js + 44 modules
-var form_context = __webpack_require__(117);
+var form_context = __webpack_require__(118);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/checkbox/Group.js
 
@@ -24968,7 +24999,7 @@ es_checkbox_Checkbox.__ANT_CHECKBOX = true;
 var divider = __webpack_require__(326);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 4 modules
-var react_router_dom = __webpack_require__(43);
+var react_router_dom = __webpack_require__(44);
 
 // CONCATENATED MODULE: ./src/Pages/Blog/Aveiro.js
 
@@ -26058,7 +26089,7 @@ function _objectWithoutProperties(e, t) {
 var isMobile = __webpack_require__(76);
 
 // EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
-var es = __webpack_require__(46);
+var es = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./node_modules/rc-trigger/es/utils/legacyUtil.js
 function getMotion(_ref) {
@@ -27318,10 +27349,10 @@ function dist_web_alignPoint(el, tgtPoint, align) {
 var isEqual = __webpack_require__(62);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/isVisible.js
-var isVisible = __webpack_require__(110);
+var isVisible = __webpack_require__(111);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useLayoutEffect.js
-var useLayoutEffect = __webpack_require__(25);
+var useLayoutEffect = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./node_modules/rc-align/es/hooks/useBuffer.js
 
@@ -27360,7 +27391,7 @@ var useLayoutEffect = __webpack_require__(25);
   }];
 });
 // EXTERNAL MODULE: ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js
-var ResizeObserver_es = __webpack_require__(108);
+var ResizeObserver_es = __webpack_require__(109);
 
 // CONCATENATED MODULE: ./node_modules/rc-align/es/util.js
 
@@ -30393,7 +30424,7 @@ function _objectSpread2(e) {
 __webpack_require__.d(__webpack_exports__, "a", function() { return /* binding */ _slicedToArray; });
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-var arrayWithHoles = __webpack_require__(106);
+var arrayWithHoles = __webpack_require__(107);
 
 // CONCATENATED MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
 function _iterableToArrayLimit(r, l) {
@@ -30428,7 +30459,7 @@ function _iterableToArrayLimit(r, l) {
 var unsupportedIterableToArray = __webpack_require__(75);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-var nonIterableRest = __webpack_require__(107);
+var nonIterableRest = __webpack_require__(108);
 
 // CONCATENATED MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/slicedToArray.js
 
@@ -30445,7 +30476,7 @@ function _slicedToArray(r, e) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}Object.defineProperty(exports,"__esModule",{value:!0});var reactRouter=__webpack_require__(24),React=_interopDefault(__webpack_require__(0)),history=__webpack_require__(42);__webpack_require__(10),__webpack_require__(100);var invariant=_interopDefault(__webpack_require__(44));function _extends(){return(_extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var o in r)Object.prototype.hasOwnProperty.call(r,o)&&(e[o]=r[o])}return e}).apply(this,arguments)}function _inheritsLoose(e,t){e.prototype=Object.create(t.prototype),_setPrototypeOf(e.prototype.constructor=e,t)}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function _objectWithoutPropertiesLoose(e,t){if(null==e)return{};var r,o,n={},a=Object.keys(e);for(o=0;o<a.length;o++)r=a[o],0<=t.indexOf(r)||(n[r]=e[r]);return n}var BrowserRouter=function(n){function e(){for(var e,t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o];return(e=n.call.apply(n,[this].concat(r))||this).history=history.createBrowserHistory(e.props),e}return _inheritsLoose(e,n),e.prototype.render=function(){return React.createElement(reactRouter.Router,{history:this.history,children:this.props.children})},e}(React.Component),HashRouter=function(n){function e(){for(var e,t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o];return(e=n.call.apply(n,[this].concat(r))||this).history=history.createHashHistory(e.props),e}return _inheritsLoose(e,n),e.prototype.render=function(){return React.createElement(reactRouter.Router,{history:this.history,children:this.props.children})},e}(React.Component),resolveToLocation=function(e,t){return"function"==typeof e?e(t):e},normalizeToLocation=function(e,t){return"string"==typeof e?history.createLocation(e,null,null,t):e},forwardRefShim=function(e){return e},forwardRef=React.forwardRef;function isModifiedEvent(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}void 0===forwardRef&&(forwardRef=forwardRefShim);var LinkAnchor=forwardRef(function(e,t){var r=e.innerRef,o=e.navigate,n=e.onClick,a=_objectWithoutPropertiesLoose(e,["innerRef","navigate","onClick"]),i=a.target,c=_extends({},a,{onClick:function(t){try{n&&n(t)}catch(e){throw t.preventDefault(),e}t.defaultPrevented||0!==t.button||i&&"_self"!==i||isModifiedEvent(t)||(t.preventDefault(),o())}});return c.ref=forwardRefShim!==forwardRef&&t||r,React.createElement("a",c)}),Link=forwardRef(function(e,a){var t=e.component,i=void 0===t?LinkAnchor:t,c=e.replace,u=e.to,f=e.innerRef,s=_objectWithoutPropertiesLoose(e,["component","replace","to","innerRef"]);return React.createElement(reactRouter.__RouterContext.Consumer,null,function(r){r||invariant(!1);var o=r.history,e=normalizeToLocation(resolveToLocation(u,r.location),r.location),t=e?o.createHref(e):"",n=_extends({},s,{href:t,navigate:function(){var e=resolveToLocation(u,r.location),t=history.createPath(r.location)===history.createPath(normalizeToLocation(e));(c||t?o.replace:o.push)(e)}});return forwardRefShim!==forwardRef?n.ref=a||f:n.innerRef=f,React.createElement(i,n)})}),forwardRefShim$1=function(e){return e},forwardRef$1=React.forwardRef;function joinClassnames(){for(var e=arguments.length,t=new Array(e),r=0;r<e;r++)t[r]=arguments[r];return t.filter(function(e){return e}).join(" ")}void 0===forwardRef$1&&(forwardRef$1=forwardRefShim$1);var NavLink=forwardRef$1(function(e,s){var t=e["aria-current"],l=void 0===t?"page":t,r=e.activeClassName,p=void 0===r?"active":r,R=e.activeStyle,h=e.className,y=e.exact,d=e.isActive,m=e.location,v=e.sensitive,b=e.strict,P=e.style,w=e.to,x=e.innerRef,g=_objectWithoutPropertiesLoose(e,["aria-current","activeClassName","activeStyle","className","exact","isActive","location","sensitive","strict","style","to","innerRef"]);return React.createElement(reactRouter.__RouterContext.Consumer,null,function(e){e||invariant(!1);var t=m||e.location,r=normalizeToLocation(resolveToLocation(w,t),t),o=r.pathname,n=o&&o.replace(/([.+*?=^!:${}()[\]|/\\])/g,"\\$1"),a=n?reactRouter.matchPath(t.pathname,{path:n,exact:y,sensitive:v,strict:b}):null,i=!!(d?d(a,t):a),c="function"==typeof h?h(i):h,u="function"==typeof P?P(i):P;i&&(c=joinClassnames(c,p),u=_extends({},u,R));var f=_extends({"aria-current":i&&l||null,className:c,style:u,to:r},g);return forwardRefShim$1!==forwardRef$1?f.ref=s||x:f.innerRef=x,React.createElement(Link,f)})});Object.defineProperty(exports,"MemoryRouter",{enumerable:!0,get:function(){return reactRouter.MemoryRouter}}),Object.defineProperty(exports,"Prompt",{enumerable:!0,get:function(){return reactRouter.Prompt}}),Object.defineProperty(exports,"Redirect",{enumerable:!0,get:function(){return reactRouter.Redirect}}),Object.defineProperty(exports,"Route",{enumerable:!0,get:function(){return reactRouter.Route}}),Object.defineProperty(exports,"Router",{enumerable:!0,get:function(){return reactRouter.Router}}),Object.defineProperty(exports,"StaticRouter",{enumerable:!0,get:function(){return reactRouter.StaticRouter}}),Object.defineProperty(exports,"Switch",{enumerable:!0,get:function(){return reactRouter.Switch}}),Object.defineProperty(exports,"generatePath",{enumerable:!0,get:function(){return reactRouter.generatePath}}),Object.defineProperty(exports,"matchPath",{enumerable:!0,get:function(){return reactRouter.matchPath}}),Object.defineProperty(exports,"useHistory",{enumerable:!0,get:function(){return reactRouter.useHistory}}),Object.defineProperty(exports,"useLocation",{enumerable:!0,get:function(){return reactRouter.useLocation}}),Object.defineProperty(exports,"useParams",{enumerable:!0,get:function(){return reactRouter.useParams}}),Object.defineProperty(exports,"useRouteMatch",{enumerable:!0,get:function(){return reactRouter.useRouteMatch}}),Object.defineProperty(exports,"withRouter",{enumerable:!0,get:function(){return reactRouter.withRouter}}),exports.BrowserRouter=BrowserRouter,exports.HashRouter=HashRouter,exports.Link=Link,exports.NavLink=NavLink;
+function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}Object.defineProperty(exports,"__esModule",{value:!0});var reactRouter=__webpack_require__(25),React=_interopDefault(__webpack_require__(0)),history=__webpack_require__(42);__webpack_require__(10),__webpack_require__(101);var invariant=_interopDefault(__webpack_require__(45));function _extends(){return(_extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var o in r)Object.prototype.hasOwnProperty.call(r,o)&&(e[o]=r[o])}return e}).apply(this,arguments)}function _inheritsLoose(e,t){e.prototype=Object.create(t.prototype),_setPrototypeOf(e.prototype.constructor=e,t)}function _setPrototypeOf(e,t){return(_setPrototypeOf=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function _objectWithoutPropertiesLoose(e,t){if(null==e)return{};var r,o,n={},a=Object.keys(e);for(o=0;o<a.length;o++)r=a[o],0<=t.indexOf(r)||(n[r]=e[r]);return n}var BrowserRouter=function(n){function e(){for(var e,t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o];return(e=n.call.apply(n,[this].concat(r))||this).history=history.createBrowserHistory(e.props),e}return _inheritsLoose(e,n),e.prototype.render=function(){return React.createElement(reactRouter.Router,{history:this.history,children:this.props.children})},e}(React.Component),HashRouter=function(n){function e(){for(var e,t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o];return(e=n.call.apply(n,[this].concat(r))||this).history=history.createHashHistory(e.props),e}return _inheritsLoose(e,n),e.prototype.render=function(){return React.createElement(reactRouter.Router,{history:this.history,children:this.props.children})},e}(React.Component),resolveToLocation=function(e,t){return"function"==typeof e?e(t):e},normalizeToLocation=function(e,t){return"string"==typeof e?history.createLocation(e,null,null,t):e},forwardRefShim=function(e){return e},forwardRef=React.forwardRef;function isModifiedEvent(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}void 0===forwardRef&&(forwardRef=forwardRefShim);var LinkAnchor=forwardRef(function(e,t){var r=e.innerRef,o=e.navigate,n=e.onClick,a=_objectWithoutPropertiesLoose(e,["innerRef","navigate","onClick"]),i=a.target,c=_extends({},a,{onClick:function(t){try{n&&n(t)}catch(e){throw t.preventDefault(),e}t.defaultPrevented||0!==t.button||i&&"_self"!==i||isModifiedEvent(t)||(t.preventDefault(),o())}});return c.ref=forwardRefShim!==forwardRef&&t||r,React.createElement("a",c)}),Link=forwardRef(function(e,a){var t=e.component,i=void 0===t?LinkAnchor:t,c=e.replace,u=e.to,f=e.innerRef,s=_objectWithoutPropertiesLoose(e,["component","replace","to","innerRef"]);return React.createElement(reactRouter.__RouterContext.Consumer,null,function(r){r||invariant(!1);var o=r.history,e=normalizeToLocation(resolveToLocation(u,r.location),r.location),t=e?o.createHref(e):"",n=_extends({},s,{href:t,navigate:function(){var e=resolveToLocation(u,r.location),t=history.createPath(r.location)===history.createPath(normalizeToLocation(e));(c||t?o.replace:o.push)(e)}});return forwardRefShim!==forwardRef?n.ref=a||f:n.innerRef=f,React.createElement(i,n)})}),forwardRefShim$1=function(e){return e},forwardRef$1=React.forwardRef;function joinClassnames(){for(var e=arguments.length,t=new Array(e),r=0;r<e;r++)t[r]=arguments[r];return t.filter(function(e){return e}).join(" ")}void 0===forwardRef$1&&(forwardRef$1=forwardRefShim$1);var NavLink=forwardRef$1(function(e,s){var t=e["aria-current"],l=void 0===t?"page":t,r=e.activeClassName,p=void 0===r?"active":r,R=e.activeStyle,h=e.className,y=e.exact,d=e.isActive,m=e.location,v=e.sensitive,b=e.strict,P=e.style,w=e.to,x=e.innerRef,g=_objectWithoutPropertiesLoose(e,["aria-current","activeClassName","activeStyle","className","exact","isActive","location","sensitive","strict","style","to","innerRef"]);return React.createElement(reactRouter.__RouterContext.Consumer,null,function(e){e||invariant(!1);var t=m||e.location,r=normalizeToLocation(resolveToLocation(w,t),t),o=r.pathname,n=o&&o.replace(/([.+*?=^!:${}()[\]|/\\])/g,"\\$1"),a=n?reactRouter.matchPath(t.pathname,{path:n,exact:y,sensitive:v,strict:b}):null,i=!!(d?d(a,t):a),c="function"==typeof h?h(i):h,u="function"==typeof P?P(i):P;i&&(c=joinClassnames(c,p),u=_extends({},u,R));var f=_extends({"aria-current":i&&l||null,className:c,style:u,to:r},g);return forwardRefShim$1!==forwardRef$1?f.ref=s||x:f.innerRef=x,React.createElement(Link,f)})});Object.defineProperty(exports,"MemoryRouter",{enumerable:!0,get:function(){return reactRouter.MemoryRouter}}),Object.defineProperty(exports,"Prompt",{enumerable:!0,get:function(){return reactRouter.Prompt}}),Object.defineProperty(exports,"Redirect",{enumerable:!0,get:function(){return reactRouter.Redirect}}),Object.defineProperty(exports,"Route",{enumerable:!0,get:function(){return reactRouter.Route}}),Object.defineProperty(exports,"Router",{enumerable:!0,get:function(){return reactRouter.Router}}),Object.defineProperty(exports,"StaticRouter",{enumerable:!0,get:function(){return reactRouter.StaticRouter}}),Object.defineProperty(exports,"Switch",{enumerable:!0,get:function(){return reactRouter.Switch}}),Object.defineProperty(exports,"generatePath",{enumerable:!0,get:function(){return reactRouter.generatePath}}),Object.defineProperty(exports,"matchPath",{enumerable:!0,get:function(){return reactRouter.matchPath}}),Object.defineProperty(exports,"useHistory",{enumerable:!0,get:function(){return reactRouter.useHistory}}),Object.defineProperty(exports,"useLocation",{enumerable:!0,get:function(){return reactRouter.useLocation}}),Object.defineProperty(exports,"useParams",{enumerable:!0,get:function(){return reactRouter.useParams}}),Object.defineProperty(exports,"useRouteMatch",{enumerable:!0,get:function(){return reactRouter.useRouteMatch}}),Object.defineProperty(exports,"withRouter",{enumerable:!0,get:function(){return reactRouter.withRouter}}),exports.BrowserRouter=BrowserRouter,exports.HashRouter=HashRouter,exports.Link=Link,exports.NavLink=NavLink;
 //# sourceMappingURL=react-router-dom.min.js.map
 
 
@@ -30560,7 +30591,7 @@ function useMemo(getValue, condition, shouldUpdate) {
 /* harmony import */ var _hooks_useEvent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(50);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _hooks_useEvent__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
-/* harmony import */ var _hooks_useMergedState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
+/* harmony import */ var _hooks_useMergedState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30);
 /* harmony import */ var _ref__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
 /* harmony import */ var _utils_get__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(57);
 /* harmony import */ var _utils_set__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(51);
@@ -30735,13 +30766,13 @@ module.exports = _possibleConstructorReturn;
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelmetExport; });
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(168);
+/* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(169);
 /* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_side_effect__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(169);
+/* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(170);
 /* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_fast_compare__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(102);
+/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(103);
 /* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(object_assign__WEBPACK_IMPORTED_MODULE_4__);
 
 
@@ -31643,7 +31674,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /* unused harmony default export */ var _unused_webpack_default_export = (HelmetExport);
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49)))
 
 /***/ }),
 /* 89 */
@@ -31703,6 +31734,58 @@ function _arrayLikeToArray(r, a) {
 
 /***/ }),
 /* 93 */
+/***/ (function(module, exports) {
+
+//
+
+module.exports = function shallowEqual(objA, objB, compare, compareContext) {
+  var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
+
+  if (ret !== void 0) {
+    return !!ret;
+  }
+
+  if (objA === objB) {
+    return true;
+  }
+
+  if (typeof objA !== "object" || !objA || typeof objB !== "object" || !objB) {
+    return false;
+  }
+
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
+
+  if (keysA.length !== keysB.length) {
+    return false;
+  }
+
+  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+
+  // Test for A's keys different from B.
+  for (var idx = 0; idx < keysA.length; idx++) {
+    var key = keysA[idx];
+
+    if (!bHasOwnProperty(key)) {
+      return false;
+    }
+
+    var valueA = objA[key];
+    var valueB = objB[key];
+
+    ret = compare ? compare.call(compareContext, valueA, valueB, key) : void 0;
+
+    if (ret === false || (ret === void 0 && valueA !== valueB)) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+
+/***/ }),
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31720,7 +31803,7 @@ function _arrayWithoutHoles(r) {
 }
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-var iterableToArray = __webpack_require__(109);
+var iterableToArray = __webpack_require__(110);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
 var unsupportedIterableToArray = __webpack_require__(75);
@@ -31741,7 +31824,7 @@ function _toConsumableArray(r) {
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31778,7 +31861,7 @@ if (false) {}
 /* harmony default export */ var icons_LoadingOutlined = __webpack_exports__["a"] = (RefIcon);
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31794,19 +31877,19 @@ var classnames = __webpack_require__(2);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/rc-select/es/index.js + 28 modules
-var es = __webpack_require__(123);
+var es = __webpack_require__(125);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
+var context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/defaultRenderEmpty.js + 3 modules
-var defaultRenderEmpty = __webpack_require__(120);
+var defaultRenderEmpty = __webpack_require__(121);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/DisabledContext.js
 var DisabledContext = __webpack_require__(80);
@@ -31815,7 +31898,7 @@ var DisabledContext = __webpack_require__(80);
 var SizeContext = __webpack_require__(79);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/form/context.js + 44 modules
-var form_context = __webpack_require__(117);
+var form_context = __webpack_require__(118);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/motion.js
 var motion = __webpack_require__(54);
@@ -31838,7 +31921,7 @@ var getMergedStatus = function getMergedStatus(contextStatus, customStatus) {
 var CheckOutlined = __webpack_require__(81);
 
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/CloseCircleFilled.js + 1 modules
-var CloseCircleFilled = __webpack_require__(121);
+var CloseCircleFilled = __webpack_require__(122);
 
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/CloseOutlined.js + 1 modules
 var CloseOutlined = __webpack_require__(64);
@@ -31871,7 +31954,7 @@ var RefIcon = /*#__PURE__*/react["forwardRef"](icons_DownOutlined_DownOutlined);
 if (false) {}
 /* harmony default export */ var icons_DownOutlined = (RefIcon);
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/LoadingOutlined.js + 1 modules
-var LoadingOutlined = __webpack_require__(94);
+var LoadingOutlined = __webpack_require__(95);
 
 // CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/SearchOutlined.js
 // This icon file is generated automatically.
@@ -31965,7 +32048,7 @@ function getIcons(_ref) {
   };
 }
 // EXTERNAL MODULE: ./node_modules/antd/es/space/Compact.js
-var Compact = __webpack_require__(111);
+var Compact = __webpack_require__(112);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/select/index.js
 
@@ -32114,7 +32197,7 @@ Select.OptGroup = es["a" /* OptGroup */];
 /* harmony default export */ var es_select = __webpack_exports__["a"] = (Select);
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32282,10 +32365,10 @@ function unflatten (target, opts) {
 }
 
 // EXTERNAL MODULE: ./src/translations/en.json
-var en = __webpack_require__(170);
+var en = __webpack_require__(171);
 
 // EXTERNAL MODULE: ./src/translations/de.json
-var de = __webpack_require__(171);
+var de = __webpack_require__(172);
 
 // CONCATENATED MODULE: ./src/translations/index.js
 
@@ -32297,8 +32380,8 @@ var translations = {
 };
 
 /***/ }),
-/* 97 */,
-/* 98 */
+/* 98 */,
+/* 99 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -32319,7 +32402,7 @@ function _defineProperty(obj, key, value) {
 module.exports = _defineProperty;
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseToString = __webpack_require__(198);
@@ -32353,7 +32436,7 @@ module.exports = toString;
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32381,8 +32464,8 @@ function warning(condition, message) {
 
 
 /***/ }),
-/* 101 */,
-/* 102 */
+/* 102 */,
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32479,7 +32562,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32489,7 +32572,7 @@ function _iterableToArray(iter) {
 }
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32499,7 +32582,7 @@ function _arrayWithHoles(arr) {
 }
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32509,7 +32592,7 @@ function _nonIterableRest() {
 }
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32520,7 +32603,7 @@ function _arrayWithHoles(r) {
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32531,7 +32614,7 @@ function _nonIterableRest() {
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33464,10 +33547,10 @@ var index = (function () {
 
 /* harmony default export */ __webpack_exports__["a"] = (index);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49)))
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33478,7 +33561,7 @@ function _iterableToArray(r) {
 
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33511,7 +33594,7 @@ function _iterableToArray(r) {
 });
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33522,10 +33605,10 @@ function _iterableToArray(r) {
 /* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
+/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(138);
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(139);
 
 
 var __rest = undefined && undefined.__rest || function (s, e) {
@@ -33609,7 +33692,7 @@ var Compact = function Compact(props) {
 /* unused harmony default export */ var _unused_webpack_default_export = (Compact);
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33630,7 +33713,7 @@ var Compact = function Compact(props) {
 });
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33791,7 +33874,7 @@ function updateCSS(css, key) {
 }
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33802,7 +33885,7 @@ var RowContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createC
 /* harmony default export */ __webpack_exports__["a"] = (RowContext);
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33819,7 +33902,7 @@ function _unsupportedIterableToArray(r, a) {
 
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33828,8 +33911,8 @@ function _unsupportedIterableToArray(r, a) {
 /* unused harmony export clearLastFocusNode */
 /* unused harmony export backLastFocusNode */
 /* unused harmony export limitTabRange */
-/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(93);
-/* harmony import */ var _isVisible__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(110);
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(94);
+/* harmony import */ var _isVisible__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(111);
 
 
 function focusable(node) {
@@ -33914,7 +33997,7 @@ function limitTabRange(node, e) {
 }
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34498,7 +34581,7 @@ function _createSuper(t) {
 }
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var toArray = __webpack_require__(26);
+var toArray = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/isEqual.js
 var isEqual = __webpack_require__(62);
@@ -34565,7 +34648,7 @@ function isFormInstance(form) {
   return form && !!form._init;
 }
 // EXTERNAL MODULE: ./node_modules/async-validator/dist-web/index.js
-var dist_web = __webpack_require__(161);
+var dist_web = __webpack_require__(162);
 
 // CONCATENATED MODULE: ./node_modules/rc-field-form/es/utils/messages.js
 var typeTemplate = "'${name}' is not a valid ${type}";
@@ -37140,7 +37223,7 @@ RefForm.useWatch = es_useWatch;
 
 /* harmony default export */ var es = (RefForm);
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/form/context.js
 
@@ -37185,7 +37268,7 @@ var context_NoFormStyle = function NoFormStyle(_ref) {
 };
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37203,7 +37286,7 @@ var react = __webpack_require__(0);
 var LocaleContext = /*#__PURE__*/Object(react["createContext"])(undefined);
 /* harmony default export */ var context = (LocaleContext);
 // EXTERNAL MODULE: ./node_modules/rc-pagination/es/locale/en_US.js
-var en_US = __webpack_require__(112);
+var en_US = __webpack_require__(113);
 
 // CONCATENATED MODULE: ./node_modules/rc-picker/es/locale/en_US.js
 var en_US_locale = {
@@ -37444,7 +37527,7 @@ var LocaleReceiver_useLocaleReceiver = function useLocaleReceiver(componentName,
 };
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37453,7 +37536,7 @@ var LocaleReceiver_useLocaleReceiver = function useLocaleReceiver(componentName,
 var defineProperty = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
-var slicedToArray = __webpack_require__(21);
+var slicedToArray = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/extends.js
 var esm_extends = __webpack_require__(4);
@@ -37693,10 +37776,10 @@ var Tooltip_Tooltip = function Tooltip(props, ref) {
 
 /* harmony default export */ var rc_tooltip_es = (es_Tooltip);
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useMergedState.js
-var useMergedState = __webpack_require__(29);
+var useMergedState = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
+var context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/type.js
 var type = __webpack_require__(33);
@@ -37798,7 +37881,7 @@ function getPlacements(config) {
   return placementMap;
 }
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
-var reactNode = __webpack_require__(28);
+var reactNode = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/tooltip/index.js
 
@@ -38010,7 +38093,7 @@ if (false) {}
 /* harmony default export */ var tooltip = __webpack_exports__["a"] = (tooltip_Tooltip);
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38019,7 +38102,7 @@ if (false) {}
 var react = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
+var context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 var defineProperty = __webpack_require__(3);
@@ -38032,7 +38115,7 @@ var classnames = __webpack_require__(2);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/locale-provider/LocaleReceiver.js + 7 modules
-var LocaleReceiver = __webpack_require__(118);
+var LocaleReceiver = __webpack_require__(119);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/empty/empty.js
 
@@ -38215,7 +38298,7 @@ var defaultRenderEmpty_defaultRenderEmpty = function defaultRenderEmpty(componen
 /* harmony default export */ var config_provider_defaultRenderEmpty = __webpack_exports__["a"] = (defaultRenderEmpty_defaultRenderEmpty);
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38252,7 +38335,44 @@ if (false) {}
 /* harmony default export */ var icons_CloseCircleFilled = __webpack_exports__["a"] = (RefIcon);
 
 /***/ }),
-/* 122 */
+/* 123 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(0);
+
+// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/RightOutlined.js
+// This icon file is generated automatically.
+var RightOutlined_RightOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z" } }] }, "name": "right", "theme": "outlined" };
+/* harmony default export */ var asn_RightOutlined = (RightOutlined_RightOutlined);
+
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 4 modules
+var AntdIcon = __webpack_require__(20);
+
+// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+var icons_RightOutlined_RightOutlined = function RightOutlined(props, ref) {
+  return /*#__PURE__*/react["createElement"](AntdIcon["a" /* default */], Object(objectSpread2["a" /* default */])(Object(objectSpread2["a" /* default */])({}, props), {}, {
+    ref: ref,
+    icon: asn_RightOutlined
+  }));
+};
+var RefIcon = /*#__PURE__*/react["forwardRef"](icons_RightOutlined_RightOutlined);
+if (false) {}
+/* harmony default export */ var icons_RightOutlined = __webpack_exports__["a"] = (RefIcon);
+
+/***/ }),
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38286,7 +38406,7 @@ function toPropertyKey(t) {
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38319,7 +38439,7 @@ var objectWithoutProperties = __webpack_require__(9);
 var esm_typeof = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useMergedState.js
-var useMergedState = __webpack_require__(29);
+var useMergedState = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
 var warning = __webpack_require__(12);
@@ -38332,7 +38452,7 @@ var classnames = __webpack_require__(2);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useLayoutEffect.js
-var useLayoutEffect = __webpack_require__(25);
+var useLayoutEffect = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/isMobile.js
 var isMobile = __webpack_require__(76);
@@ -39232,16 +39352,16 @@ var RefSelectTrigger = /*#__PURE__*/react["forwardRef"](SelectTrigger_SelectTrig
 RefSelectTrigger.displayName = 'SelectTrigger';
 /* harmony default export */ var es_SelectTrigger = (RefSelectTrigger);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-var arrayWithHoles = __webpack_require__(104);
+var arrayWithHoles = __webpack_require__(105);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-var iterableToArray = __webpack_require__(103);
+var iterableToArray = __webpack_require__(104);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
 var unsupportedIterableToArray = __webpack_require__(74);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-var nonIterableRest = __webpack_require__(105);
+var nonIterableRest = __webpack_require__(106);
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toArray.js
 
@@ -40059,10 +40179,10 @@ function includes(test, search) {
   }, [options, filterOption, optionFilterProp, searchValue, fieldNames]);
 });
 // EXTERNAL MODULE: ./node_modules/rc-select/es/hooks/useId.js
-var useId = __webpack_require__(160);
+var useId = __webpack_require__(161);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var Children_toArray = __webpack_require__(26);
+var Children_toArray = __webpack_require__(24);
 
 // CONCATENATED MODULE: ./node_modules/rc-select/es/utils/legacyUtil.js
 
@@ -40189,13 +40309,13 @@ var Option = function Option() {
 Option.isSelectOption = true;
 /* harmony default export */ var es_Option = (Option);
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useMemo.js
 var useMemo = __webpack_require__(77);
 
 // EXTERNAL MODULE: ./node_modules/rc-virtual-list/es/index.js + 32 modules
-var rc_virtual_list_es = __webpack_require__(172);
+var rc_virtual_list_es = __webpack_require__(173);
 
 // CONCATENATED MODULE: ./node_modules/rc-select/es/utils/platformUtil.js
 /* istanbul ignore file */
@@ -41196,14 +41316,14 @@ TypedSelect.OptGroup = es_OptGroup;
 /* harmony default export */ var rc_select_es = __webpack_exports__["c"] = (es_Select);
 
 /***/ }),
-/* 124 */,
-/* 125 */,
 /* 126 */,
 /* 127 */,
-/* 128 */
+/* 128 */,
+/* 129 */,
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(149);
+var root = __webpack_require__(150);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -41212,47 +41332,10 @@ module.exports = Symbol;
 
 
 /***/ }),
-/* 129 */,
-/* 130 */,
 /* 131 */,
-/* 132 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
-var objectSpread2 = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-
-// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/RightOutlined.js
-// This icon file is generated automatically.
-var RightOutlined_RightOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z" } }] }, "name": "right", "theme": "outlined" };
-/* harmony default export */ var asn_RightOutlined = (RightOutlined_RightOutlined);
-
-// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 4 modules
-var AntdIcon = __webpack_require__(20);
-
-// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js
-
-// GENERATE BY ./scripts/generate.ts
-// DON NOT EDIT IT MANUALLY
-
-
-
-var icons_RightOutlined_RightOutlined = function RightOutlined(props, ref) {
-  return /*#__PURE__*/react["createElement"](AntdIcon["a" /* default */], Object(objectSpread2["a" /* default */])(Object(objectSpread2["a" /* default */])({}, props), {}, {
-    ref: ref,
-    icon: asn_RightOutlined
-  }));
-};
-var RefIcon = /*#__PURE__*/react["forwardRef"](icons_RightOutlined_RightOutlined);
-if (false) {}
-/* harmony default export */ var icons_RightOutlined = __webpack_exports__["a"] = (RefIcon);
-
-/***/ }),
-/* 133 */
+/* 132 */,
+/* 133 */,
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43694,10 +43777,10 @@ var autoReplace = function autoReplace() {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48), __webpack_require__(174).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49), __webpack_require__(174).setImmediate))
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isarray = __webpack_require__(222)
@@ -44129,7 +44212,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44148,14 +44231,14 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayWithoutHoles = __webpack_require__(229);
 
 var iterableToArray = __webpack_require__(230);
 
-var unsupportedIterableToArray = __webpack_require__(147);
+var unsupportedIterableToArray = __webpack_require__(148);
 
 var nonIterableSpread = __webpack_require__(231);
 
@@ -44166,7 +44249,7 @@ function _toConsumableArray(arr) {
 module.exports = _toConsumableArray;
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44205,7 +44288,7 @@ var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 var es = __webpack_require__(56);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useMergedState.js
-var useMergedState = __webpack_require__(29);
+var useMergedState = __webpack_require__(30);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/warning.js
 var warning = __webpack_require__(12);
@@ -44306,7 +44389,7 @@ var KeyCode = __webpack_require__(8);
 var raf = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/focus.js
-var Dom_focus = __webpack_require__(116);
+var Dom_focus = __webpack_require__(117);
 
 // CONCATENATED MODULE: ./node_modules/rc-menu/es/hooks/useAccessibility.js
 
@@ -44731,19 +44814,19 @@ function useUUID(id) {
   return uuid;
 }
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__(36);
+var classCallCheck = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-var createClass = __webpack_require__(37);
+var createClass = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__(39);
+var inherits = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
-var createSuper = __webpack_require__(38);
+var createSuper = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/ref.js
 var es_ref = __webpack_require__(19);
@@ -45077,7 +45160,7 @@ SubMenuList.displayName = 'SubMenuList';
 var esm_typeof = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var toArray = __webpack_require__(26);
+var toArray = __webpack_require__(24);
 
 // CONCATENATED MODULE: ./node_modules/rc-menu/es/utils/nodeUtil.js
 
@@ -45313,7 +45396,7 @@ function PopupTrigger(_ref) {
   }, children);
 }
 // EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
-var rc_motion_es = __webpack_require__(46);
+var rc_motion_es = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./node_modules/rc-menu/es/SubMenu/InlineSubMenuList.js
 
@@ -46233,7 +46316,7 @@ ExportMenu.Divider = Divider;
 /* harmony default export */ var rc_menu_es = __webpack_exports__["e"] = (ExportMenu);
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46278,7 +46361,6 @@ function withConfigConsumer(config) {
 }
 
 /***/ }),
-/* 139 */,
 /* 140 */,
 /* 141 */,
 /* 142 */,
@@ -46286,10 +46368,11 @@ function withConfigConsumer(config) {
 /* 144 */,
 /* 145 */,
 /* 146 */,
-/* 147 */
+/* 147 */,
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(148);
+var arrayLikeToArray = __webpack_require__(149);
 
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
@@ -46303,7 +46386,7 @@ function _unsupportedIterableToArray(o, minLen) {
 module.exports = _unsupportedIterableToArray;
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports) {
 
 function _arrayLikeToArray(arr, len) {
@@ -46319,7 +46402,7 @@ function _arrayLikeToArray(arr, len) {
 module.exports = _arrayLikeToArray;
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var freeGlobal = __webpack_require__(199);
@@ -46334,7 +46417,7 @@ module.exports = root;
 
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(202),
@@ -46369,7 +46452,7 @@ module.exports = isSymbol;
 
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -46401,7 +46484,7 @@ module.exports = hasUnicode;
 
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46413,7 +46496,7 @@ if (true) {
 
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46447,7 +46530,7 @@ function isStyleSupport(styleName, styleValue) {
 }
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports) {
 
 /**
@@ -46484,12 +46567,12 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 155 */,
 /* 156 */,
 /* 157 */,
 /* 158 */,
 /* 159 */,
-/* 160 */
+/* 160 */,
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46535,7 +46618,7 @@ function useId(id) {
 }
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47870,10 +47953,10 @@ Schema.validators = validators;
 
 //# sourceMappingURL=index.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(45)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(47)))
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var capitalize = __webpack_require__(197),
@@ -47908,13 +47991,13 @@ module.exports = camelCase;
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var reactIs = __webpack_require__(152);
+var reactIs = __webpack_require__(153);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -48018,7 +48101,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48029,7 +48112,7 @@ function _arrayWithHoles(r) {
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48040,7 +48123,7 @@ function _nonIterableRest() {
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48051,10 +48134,10 @@ function _iterableToArray(r) {
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(154),
+var isObject = __webpack_require__(155),
     now = __webpack_require__(224),
     toNumber = __webpack_require__(225);
 
@@ -48248,7 +48331,7 @@ module.exports = debounce;
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48380,7 +48463,7 @@ module.exports = withSideEffect;
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports) {
 
 /* global Map:readonly, Set:readonly, ArrayBuffer:readonly */
@@ -48525,19 +48608,19 @@ module.exports = function isEqual(a, b) {
 
 
 /***/ }),
-/* 170 */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
-
-/***/ }),
 /* 171 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\",\"moreCertificates\":\"show more Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
 
 /***/ }),
 /* 172 */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\",\"moreCertificates\":\"weitere Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
+
+/***/ }),
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48715,13 +48798,13 @@ var classnames = __webpack_require__(2);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/rc-resize-observer/es/index.js + 19 modules
-var es = __webpack_require__(47);
+var es = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/index.js
 var rc_util_es = __webpack_require__(78);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/hooks/useLayoutEffect.js
-var useLayoutEffect = __webpack_require__(25);
+var useLayoutEffect = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(0);
@@ -50245,58 +50328,6 @@ List.displayName = 'List';
 /* harmony default export */ var rc_virtual_list_es = __webpack_exports__["a"] = (es_List);
 
 /***/ }),
-/* 173 */
-/***/ (function(module, exports) {
-
-//
-
-module.exports = function shallowEqual(objA, objB, compare, compareContext) {
-  var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
-
-  if (ret !== void 0) {
-    return !!ret;
-  }
-
-  if (objA === objB) {
-    return true;
-  }
-
-  if (typeof objA !== "object" || !objA || typeof objB !== "object" || !objB) {
-    return false;
-  }
-
-  var keysA = Object.keys(objA);
-  var keysB = Object.keys(objB);
-
-  if (keysA.length !== keysB.length) {
-    return false;
-  }
-
-  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
-
-  // Test for A's keys different from B.
-  for (var idx = 0; idx < keysA.length; idx++) {
-    var key = keysA[idx];
-
-    if (!bHasOwnProperty(key)) {
-      return false;
-    }
-
-    var valueA = objA[key];
-    var valueB = objB[key];
-
-    ret = compare ? compare.call(compareContext, valueA, valueB, key) : void 0;
-
-    if (ret === false || (ret === void 0 && valueA !== valueB)) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
-
-/***/ }),
 /* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50364,7 +50395,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49)))
 
 /***/ }),
 /* 175 */,
@@ -50388,7 +50419,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
  * LICENSE file in the root directory of this source tree.
  */
 
-var l=__webpack_require__(102),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.forward_ref"):60112,y=n?Symbol.for("react.suspense"):60113,z=n?Symbol.for("react.memo"):60115,A=n?Symbol.for("react.lazy"):
+var l=__webpack_require__(103),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.forward_ref"):60112,y=n?Symbol.for("react.suspense"):60113,z=n?Symbol.for("react.memo"):60115,A=n?Symbol.for("react.lazy"):
 60116,B="function"===typeof Symbol&&Symbol.iterator;function C(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var D={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},E={};function F(a,b,c){this.props=a;this.context=b;this.refs=E;this.updater=c||D}F.prototype.isReactComponent={};F.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error(C(85));this.updater.enqueueSetState(this,a,b,"setState")};F.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function G(){}G.prototype=F.prototype;function H(a,b,c){this.props=a;this.context=b;this.refs=E;this.updater=c||D}var I=H.prototype=new G;I.constructor=H;l(I,F.prototype);I.isPureReactComponent=!0;var J={current:null},K=Object.prototype.hasOwnProperty,L={key:!0,ref:!0,__self:!0,__source:!0};
@@ -50423,7 +50454,7 @@ exports.useLayoutEffect=function(a,b){return Z().useLayoutEffect(a,b)};exports.u
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),n=__webpack_require__(102),r=__webpack_require__(185);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
+var aa=__webpack_require__(0),n=__webpack_require__(103),r=__webpack_require__(185);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
 function ba(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,k){da=!1;ea=null;ba.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,k){ja.apply(this,arguments);if(da){if(da){var l=ea;da=!1;ea=null}else throw Error(u(198));fa||(fa=!0,ha=l)}}var la=null,ma=null,na=null;
 function oa(a,b,c){var d=a.type||"unknown-event";a.currentTarget=na(c);ka(d,b,void 0,a);a.currentTarget=null}var pa=null,qa={};
 function ra(){if(pa)for(var a in qa){var b=qa[a],c=pa.indexOf(a);if(!(-1<c))throw Error(u(96,a));if(!sa[c]){if(!b.extractEvents)throw Error(u(97,a));sa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;if(ta.hasOwnProperty(h))throw Error(u(99,h));ta[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ua(k[e],g,h);e=!0}else f.registrationName?(ua(f.registrationName,g,h),e=!0):e=!1;if(!e)throw Error(u(98,d,a));}}}}
@@ -51040,7 +51071,7 @@ module.exports = _assertThisInitialized;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48), __webpack_require__(45)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49), __webpack_require__(47)))
 
 /***/ }),
 /* 194 */
@@ -51157,7 +51188,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 /* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toString = __webpack_require__(99),
+var toString = __webpack_require__(100),
     upperFirst = __webpack_require__(206);
 
 /**
@@ -51186,10 +51217,10 @@ module.exports = capitalize;
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(128),
+var Symbol = __webpack_require__(130),
     arrayMap = __webpack_require__(200),
     isArray = __webpack_require__(201),
-    isSymbol = __webpack_require__(150);
+    isSymbol = __webpack_require__(151);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -51234,7 +51265,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(49)))
 
 /***/ }),
 /* 200 */
@@ -51299,7 +51330,7 @@ module.exports = isArray;
 /* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(128),
+var Symbol = __webpack_require__(130),
     getRawTag = __webpack_require__(203),
     objectToString = __webpack_require__(204);
 
@@ -51333,7 +51364,7 @@ module.exports = baseGetTag;
 /* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(128);
+var Symbol = __webpack_require__(130);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -51477,9 +51508,9 @@ module.exports = upperFirst;
 /***/ (function(module, exports, __webpack_require__) {
 
 var castSlice = __webpack_require__(208),
-    hasUnicode = __webpack_require__(151),
+    hasUnicode = __webpack_require__(152),
     stringToArray = __webpack_require__(210),
-    toString = __webpack_require__(99);
+    toString = __webpack_require__(100);
 
 /**
  * Creates a function like `_.lowerFirst`.
@@ -51577,7 +51608,7 @@ module.exports = baseSlice;
 /***/ (function(module, exports, __webpack_require__) {
 
 var asciiToArray = __webpack_require__(211),
-    hasUnicode = __webpack_require__(151),
+    hasUnicode = __webpack_require__(152),
     unicodeToArray = __webpack_require__(212);
 
 /**
@@ -51727,7 +51758,7 @@ module.exports = arrayReduce;
 /***/ (function(module, exports, __webpack_require__) {
 
 var deburrLetter = __webpack_require__(216),
-    toString = __webpack_require__(99);
+    toString = __webpack_require__(100);
 
 /** Used to match Latin Unicode letters (excluding mathematical operators). */
 var reLatin = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
@@ -51876,7 +51907,7 @@ module.exports = basePropertyOf;
 
 var asciiWords = __webpack_require__(219),
     hasUnicodeWord = __webpack_require__(220),
-    toString = __webpack_require__(99),
+    toString = __webpack_require__(100),
     unicodeWords = __webpack_require__(221);
 
 /**
@@ -52063,7 +52094,7 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(149);
+var root = __webpack_require__(150);
 
 /**
  * Gets the timestamp of the number of milliseconds that have elapsed since
@@ -52093,8 +52124,8 @@ module.exports = now;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseTrim = __webpack_require__(226),
-    isObject = __webpack_require__(154),
-    isSymbol = __webpack_require__(150);
+    isObject = __webpack_require__(155),
+    isSymbol = __webpack_require__(151);
 
 /** Used as references for various `Number` constants. */
 var NAN = 0 / 0;
@@ -52218,7 +52249,7 @@ module.exports = trimmedEndIndex;
 /* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(148);
+var arrayLikeToArray = __webpack_require__(149);
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
@@ -52282,8 +52313,8 @@ module.exports = _nonIterableSpread;
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(138);
-/* harmony import */ var _RowContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(114);
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(139);
+/* harmony import */ var _RowContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(115);
 
 
 
@@ -52389,7 +52420,7 @@ var defineProperty = __webpack_require__(3);
 var esm_typeof = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
-var slicedToArray = __webpack_require__(21);
+var slicedToArray = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(2);
@@ -52399,13 +52430,13 @@ var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 var react = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
+var context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/canUseDom.js
 var canUseDom = __webpack_require__(31);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/styleChecker.js
-var styleChecker = __webpack_require__(153);
+var styleChecker = __webpack_require__(154);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/_util/styleChecker.js
 
@@ -52457,7 +52488,7 @@ var responsiveObserve = __webpack_require__(41);
 var type = __webpack_require__(33);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/grid/RowContext.js
-var RowContext = __webpack_require__(114);
+var RowContext = __webpack_require__(115);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/grid/row.js
 
@@ -53073,7 +53104,7 @@ module.exports = _extends;
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(138);
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(139);
 
 
 var __rest = undefined && undefined.__rest || function (s, e) {
@@ -100216,6 +100247,704 @@ module.exports = _objectWithoutPropertiesLoose;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+
+// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(4);
+
+// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(3);
+
+// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+var slicedToArray = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/typeof.js
+var esm_typeof = __webpack_require__(23);
+
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(2);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+
+// EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
+var omit = __webpack_require__(29);
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(0);
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
+var context = __webpack_require__(139);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/DisabledContext.js
+var DisabledContext = __webpack_require__(80);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/SizeContext.js
+var SizeContext = __webpack_require__(79);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/space/Compact.js
+var Compact = __webpack_require__(112);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
+var reactNode = __webpack_require__(27);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/type.js
+var _util_type = __webpack_require__(33);
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+function _classCallCheck(a, n) {
+  if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
+}
+
+// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js + 1 modules
+var toPropertyKey = __webpack_require__(124);
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/createClass.js
+
+function _defineProperties(e, r) {
+  for (var t = 0; t < r.length; t++) {
+    var o = r[t];
+    o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, Object(toPropertyKey["a" /* default */])(o.key), o);
+  }
+}
+function _createClass(e, r, t) {
+  return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", {
+    writable: !1
+  }), e;
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
+function _assertThisInitialized(e) {
+  if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  return e;
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
+
+
+function _possibleConstructorReturn(t, e) {
+  if (e && ("object" == Object(esm_typeof["a" /* default */])(e) || "function" == typeof e)) return e;
+  if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
+  return _assertThisInitialized(t);
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
+function _isNativeReflectConstruct() {
+  try {
+    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+  } catch (t) {}
+  return (_isNativeReflectConstruct = function _isNativeReflectConstruct() {
+    return !!t;
+  })();
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
+function _getPrototypeOf(t) {
+  return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) {
+    return t.__proto__ || Object.getPrototypeOf(t);
+  }, _getPrototypeOf(t);
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+function _setPrototypeOf(t, e) {
+  return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
+    return t.__proto__ = e, t;
+  }, _setPrototypeOf(t, e);
+}
+
+// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/inherits.js
+
+function _inherits(t, e) {
+  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
+  t.prototype = Object.create(e && e.prototype, {
+    constructor: {
+      value: t,
+      writable: !0,
+      configurable: !0
+    }
+  }), Object.defineProperty(t, "prototype", {
+    writable: !1
+  }), e && _setPrototypeOf(t, e);
+}
+
+// EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/dynamicCSS.js
+var dynamicCSS = __webpack_require__(114);
+
+// EXTERNAL MODULE: ./node_modules/rc-util/es/ref.js
+var es_ref = __webpack_require__(19);
+
+// EXTERNAL MODULE: ./node_modules/rc-util/es/raf.js
+var raf = __webpack_require__(13);
+
+// CONCATENATED MODULE: ./node_modules/antd/es/_util/raf.js
+
+var id = 0;
+var ids = {};
+// Support call raf with delay specified frame
+function wrapperRaf(callback) {
+  var delayFrames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  var myId = id++;
+  var restFrames = delayFrames;
+  function internalCallback() {
+    restFrames -= 1;
+    if (restFrames <= 0) {
+      callback();
+      delete ids[myId];
+    } else {
+      ids[myId] = Object(raf["a" /* default */])(internalCallback);
+    }
+  }
+  ids[myId] = Object(raf["a" /* default */])(internalCallback);
+  return myId;
+}
+wrapperRaf.cancel = function cancel(pid) {
+  if (pid === undefined) return;
+  raf["a" /* default */].cancel(ids[pid]);
+  delete ids[pid];
+};
+wrapperRaf.ids = ids; // export this for test usage
+// CONCATENATED MODULE: ./node_modules/antd/es/_util/wave.js
+
+
+
+
+
+
+
+function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
+
+
+
+
+
+
+var styleForPseudo;
+// Where el is the DOM element you'd like to test for visibility
+function isHidden(element) {
+  if (false) {}
+  return !element || element.offsetParent === null || element.hidden;
+}
+function getValidateContainer(nodeRoot) {
+  if (nodeRoot instanceof Document) {
+    return nodeRoot.body;
+  }
+  return Array.from(nodeRoot.childNodes).find(function (ele) {
+    return (ele === null || ele === void 0 ? void 0 : ele.nodeType) === Node.ELEMENT_NODE;
+  });
+}
+function isNotGrey(color) {
+  // eslint-disable-next-line no-useless-escape
+  var match = (color || '').match(/rgba?\((\d*), (\d*), (\d*)(, [\d.]*)?\)/);
+  if (match && match[1] && match[2] && match[3]) {
+    return !(match[1] === match[2] && match[2] === match[3]);
+  }
+  return true;
+}
+var wave_Wave = /*#__PURE__*/function (_React$Component) {
+  _inherits(Wave, _React$Component);
+  function Wave() {
+    var _this;
+    _classCallCheck(this, Wave);
+    _this = _callSuper(this, Wave, arguments);
+    _this.containerRef = /*#__PURE__*/react["createRef"]();
+    _this.animationStart = false;
+    _this.destroyed = false;
+    _this.onClick = function (node, waveColor) {
+      var _a, _b;
+      var _this$props = _this.props,
+        insertExtraNode = _this$props.insertExtraNode,
+        disabled = _this$props.disabled;
+      if (disabled || !node || isHidden(node) || node.className.includes('-leave')) {
+        return;
+      }
+      _this.extraNode = document.createElement('div');
+      var _assertThisInitialize = _assertThisInitialized(_this),
+        extraNode = _assertThisInitialize.extraNode;
+      var getPrefixCls = _this.context.getPrefixCls;
+      extraNode.className = "".concat(getPrefixCls(''), "-click-animating-node");
+      var attributeName = _this.getAttributeName();
+      node.setAttribute(attributeName, 'true');
+      // Not white or transparent or grey
+      if (waveColor && waveColor !== '#fff' && waveColor !== '#ffffff' && waveColor !== 'rgb(255, 255, 255)' && waveColor !== 'rgba(255, 255, 255, 1)' && isNotGrey(waveColor) && !/rgba\((?:\d*, ){3}0\)/.test(waveColor) &&
+      // any transparent rgba color
+      waveColor !== 'transparent') {
+        extraNode.style.borderColor = waveColor;
+        var nodeRoot = ((_a = node.getRootNode) === null || _a === void 0 ? void 0 : _a.call(node)) || node.ownerDocument;
+        var nodeBody = (_b = getValidateContainer(nodeRoot)) !== null && _b !== void 0 ? _b : nodeRoot;
+        styleForPseudo = Object(dynamicCSS["a" /* updateCSS */])("\n      [".concat(getPrefixCls(''), "-click-animating-without-extra-node='true']::after, .").concat(getPrefixCls(''), "-click-animating-node {\n        --antd-wave-shadow-color: ").concat(waveColor, ";\n      }"), 'antd-wave', {
+          csp: _this.csp,
+          attachTo: nodeBody
+        });
+      }
+      if (insertExtraNode) {
+        node.appendChild(extraNode);
+      }
+      ['transition', 'animation'].forEach(function (name) {
+        node.addEventListener("".concat(name, "start"), _this.onTransitionStart);
+        node.addEventListener("".concat(name, "end"), _this.onTransitionEnd);
+      });
+    };
+    _this.onTransitionStart = function (e) {
+      if (_this.destroyed) {
+        return;
+      }
+      var node = _this.containerRef.current;
+      if (!e || e.target !== node || _this.animationStart) {
+        return;
+      }
+      _this.resetEffect(node);
+    };
+    _this.onTransitionEnd = function (e) {
+      if (!e || e.animationName !== 'fadeEffect') {
+        return;
+      }
+      _this.resetEffect(e.target);
+    };
+    _this.bindAnimationEvent = function (node) {
+      if (!node || !node.getAttribute || node.getAttribute('disabled') || node.className.includes('disabled')) {
+        return;
+      }
+      var onClick = function onClick(e) {
+        // Fix radio button click twice
+        if (e.target.tagName === 'INPUT' || isHidden(e.target)) {
+          return;
+        }
+        _this.resetEffect(node);
+        // Get wave color from target
+        var waveColor = getComputedStyle(node).getPropertyValue('border-top-color') ||
+        // Firefox Compatible
+        getComputedStyle(node).getPropertyValue('border-color') || getComputedStyle(node).getPropertyValue('background-color');
+        _this.clickWaveTimeoutId = window.setTimeout(function () {
+          return _this.onClick(node, waveColor);
+        }, 0);
+        wrapperRaf.cancel(_this.animationStartId);
+        _this.animationStart = true;
+        // Render to trigger transition event cost 3 frames. Let's delay 10 frames to reset this.
+        _this.animationStartId = wrapperRaf(function () {
+          _this.animationStart = false;
+        }, 10);
+      };
+      node.addEventListener('click', onClick, true);
+      return {
+        cancel: function cancel() {
+          node.removeEventListener('click', onClick, true);
+        }
+      };
+    };
+    _this.renderWave = function (_ref) {
+      var csp = _ref.csp;
+      var children = _this.props.children;
+      _this.csp = csp;
+      if (! /*#__PURE__*/react["isValidElement"](children)) return children;
+      var ref = _this.containerRef;
+      if (Object(es_ref["c" /* supportRef */])(children)) {
+        ref = Object(es_ref["a" /* composeRef */])(children.ref, _this.containerRef);
+      }
+      return Object(reactNode["a" /* cloneElement */])(children, {
+        ref: ref
+      });
+    };
+    return _this;
+  }
+  _createClass(Wave, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.destroyed = false;
+      var node = this.containerRef.current;
+      if (!node || node.nodeType !== 1) {
+        return;
+      }
+      this.instance = this.bindAnimationEvent(node);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.instance) {
+        this.instance.cancel();
+      }
+      if (this.clickWaveTimeoutId) {
+        clearTimeout(this.clickWaveTimeoutId);
+      }
+      this.destroyed = true;
+    }
+  }, {
+    key: "getAttributeName",
+    value: function getAttributeName() {
+      var getPrefixCls = this.context.getPrefixCls;
+      var insertExtraNode = this.props.insertExtraNode;
+      return insertExtraNode ? "".concat(getPrefixCls(''), "-click-animating") : "".concat(getPrefixCls(''), "-click-animating-without-extra-node");
+    }
+  }, {
+    key: "resetEffect",
+    value: function resetEffect(node) {
+      var _this2 = this;
+      if (!node || node === this.extraNode || !(node instanceof Element)) {
+        return;
+      }
+      var insertExtraNode = this.props.insertExtraNode;
+      var attributeName = this.getAttributeName();
+      node.setAttribute(attributeName, 'false'); // edge has bug on `removeAttribute` #14466
+      if (styleForPseudo) {
+        styleForPseudo.innerHTML = '';
+      }
+      if (insertExtraNode && this.extraNode && node.contains(this.extraNode)) {
+        node.removeChild(this.extraNode);
+      }
+      ['transition', 'animation'].forEach(function (name) {
+        node.removeEventListener("".concat(name, "start"), _this2.onTransitionStart);
+        node.removeEventListener("".concat(name, "end"), _this2.onTransitionEnd);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react["createElement"](context["a" /* ConfigConsumer */], null, this.renderWave);
+    }
+  }]);
+  return Wave;
+}(react["Component"]);
+wave_Wave.contextType = context["b" /* ConfigContext */];
+/* harmony default export */ var wave = (wave_Wave);
+// CONCATENATED MODULE: ./node_modules/antd/es/button/button-group.js
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+var GroupSizeContext = /*#__PURE__*/react["createContext"](undefined);
+var button_group_ButtonGroup = function ButtonGroup(props) {
+  var _React$useContext = react["useContext"](context["b" /* ConfigContext */]),
+    getPrefixCls = _React$useContext.getPrefixCls,
+    direction = _React$useContext.direction;
+  var customizePrefixCls = props.prefixCls,
+    size = props.size,
+    className = props.className,
+    others = __rest(props, ["prefixCls", "size", "className"]);
+  var prefixCls = getPrefixCls('btn-group', customizePrefixCls);
+  // large => lg
+  // small => sm
+  var sizeCls = '';
+  switch (size) {
+    case 'large':
+      sizeCls = 'lg';
+      break;
+    case 'small':
+      sizeCls = 'sm';
+      break;
+    case 'middle':
+    case undefined:
+      break;
+    default:
+       false ? undefined : void 0;
+  }
+  var classes = classnames_default()(prefixCls, Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])({}, "".concat(prefixCls, "-").concat(sizeCls), sizeCls), "".concat(prefixCls, "-rtl"), direction === 'rtl'), className);
+  return /*#__PURE__*/react["createElement"](GroupSizeContext.Provider, {
+    value: size
+  }, /*#__PURE__*/react["createElement"]("div", Object(esm_extends["a" /* default */])({}, others, {
+    className: classes
+  })));
+};
+/* harmony default export */ var button_group = (button_group_ButtonGroup);
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/LoadingOutlined.js + 1 modules
+var LoadingOutlined = __webpack_require__(95);
+
+// EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
+var es = __webpack_require__(43);
+
+// CONCATENATED MODULE: ./node_modules/antd/es/button/LoadingIcon.js
+
+
+
+var getCollapsedWidth = function getCollapsedWidth() {
+  return {
+    width: 0,
+    opacity: 0,
+    transform: 'scale(0)'
+  };
+};
+var getRealWidth = function getRealWidth(node) {
+  return {
+    width: node.scrollWidth,
+    opacity: 1,
+    transform: 'scale(1)'
+  };
+};
+var LoadingIcon_LoadingIcon = function LoadingIcon(_ref) {
+  var prefixCls = _ref.prefixCls,
+    loading = _ref.loading,
+    existIcon = _ref.existIcon;
+  var visible = !!loading;
+  if (existIcon) {
+    return /*#__PURE__*/react_default.a.createElement("span", {
+      className: "".concat(prefixCls, "-loading-icon")
+    }, /*#__PURE__*/react_default.a.createElement(LoadingOutlined["a" /* default */], null));
+  }
+  return /*#__PURE__*/react_default.a.createElement(es["a" /* default */], {
+    visible: visible,
+    // We do not really use this motionName
+    motionName: "".concat(prefixCls, "-loading-icon-motion"),
+    removeOnLeave: true,
+    onAppearStart: getCollapsedWidth,
+    onAppearActive: getRealWidth,
+    onEnterStart: getCollapsedWidth,
+    onEnterActive: getRealWidth,
+    onLeaveStart: getRealWidth,
+    onLeaveActive: getCollapsedWidth
+  }, function (_ref2, ref) {
+    var className = _ref2.className,
+      style = _ref2.style;
+    return /*#__PURE__*/react_default.a.createElement("span", {
+      className: "".concat(prefixCls, "-loading-icon"),
+      style: style,
+      ref: ref
+    }, /*#__PURE__*/react_default.a.createElement(LoadingOutlined["a" /* default */], {
+      className: className
+    }));
+  });
+};
+/* harmony default export */ var button_LoadingIcon = (LoadingIcon_LoadingIcon);
+// CONCATENATED MODULE: ./node_modules/antd/es/button/button.js
+
+
+
+
+var button_rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+/* eslint-disable react/button-has-type */
+
+
+
+
+
+
+
+
+
+
+
+
+
+var rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
+var isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
+function isString(str) {
+  return typeof str === 'string';
+}
+function isUnBorderedButtonType(type) {
+  return type === 'text' || type === 'link';
+}
+// Insert one space between two chinese characters automatically.
+function insertSpace(child, needInserted) {
+  // Check the child if is undefined or null.
+  if (child === null || child === undefined) {
+    return;
+  }
+  var SPACE = needInserted ? ' ' : '';
+  // strictNullChecks oops.
+  if (typeof child !== 'string' && typeof child !== 'number' && isString(child.type) && isTwoCNChar(child.props.children)) {
+    return Object(reactNode["a" /* cloneElement */])(child, {
+      children: child.props.children.split('').join(SPACE)
+    });
+  }
+  if (typeof child === 'string') {
+    return isTwoCNChar(child) ? /*#__PURE__*/react["createElement"]("span", null, child.split('').join(SPACE)) : /*#__PURE__*/react["createElement"]("span", null, child);
+  }
+  if (Object(reactNode["b" /* isFragment */])(child)) {
+    return /*#__PURE__*/react["createElement"]("span", null, child);
+  }
+  return child;
+}
+function spaceChildren(children, needInserted) {
+  var isPrevChildPure = false;
+  var childList = [];
+  react["Children"].forEach(children, function (child) {
+    var type = Object(esm_typeof["a" /* default */])(child);
+    var isCurrentChildPure = type === 'string' || type === 'number';
+    if (isPrevChildPure && isCurrentChildPure) {
+      var lastIndex = childList.length - 1;
+      var lastChild = childList[lastIndex];
+      childList[lastIndex] = "".concat(lastChild).concat(child);
+    } else {
+      childList.push(child);
+    }
+    isPrevChildPure = isCurrentChildPure;
+  });
+  // Pass to React.Children.map to auto fill key
+  return react["Children"].map(childList, function (child) {
+    return insertSpace(child, needInserted);
+  });
+}
+var ButtonTypes = Object(_util_type["a" /* tuple */])('default', 'primary', 'ghost', 'dashed', 'link', 'text');
+var ButtonShapes = Object(_util_type["a" /* tuple */])('default', 'circle', 'round');
+var ButtonHTMLTypes = Object(_util_type["a" /* tuple */])('submit', 'button', 'reset');
+function convertLegacyProps(type) {
+  if (type === 'danger') {
+    return {
+      danger: true
+    };
+  }
+  return {
+    type: type
+  };
+}
+var button_InternalButton = function InternalButton(props, ref) {
+  var _classNames;
+  var _props$loading = props.loading,
+    loading = _props$loading === void 0 ? false : _props$loading,
+    customizePrefixCls = props.prefixCls,
+    _props$type = props.type,
+    type = _props$type === void 0 ? 'default' : _props$type,
+    danger = props.danger,
+    _props$shape = props.shape,
+    shape = _props$shape === void 0 ? 'default' : _props$shape,
+    customizeSize = props.size,
+    customDisabled = props.disabled,
+    className = props.className,
+    children = props.children,
+    icon = props.icon,
+    _props$ghost = props.ghost,
+    ghost = _props$ghost === void 0 ? false : _props$ghost,
+    _props$block = props.block,
+    block = _props$block === void 0 ? false : _props$block,
+    _props$htmlType = props.htmlType,
+    htmlType = _props$htmlType === void 0 ? 'button' : _props$htmlType,
+    rest = button_rest(props, ["loading", "prefixCls", "type", "danger", "shape", "size", "disabled", "className", "children", "icon", "ghost", "block", "htmlType"]);
+  var size = react["useContext"](SizeContext["a" /* default */]);
+  // ===================== Disabled =====================
+  var disabled = react["useContext"](DisabledContext["a" /* default */]);
+  var mergedDisabled = customDisabled !== null && customDisabled !== void 0 ? customDisabled : disabled;
+  var groupSize = react["useContext"](GroupSizeContext);
+  var _React$useState = react["useState"](!!loading),
+    _React$useState2 = Object(slicedToArray["a" /* default */])(_React$useState, 2),
+    innerLoading = _React$useState2[0],
+    setLoading = _React$useState2[1];
+  var _React$useState3 = react["useState"](false),
+    _React$useState4 = Object(slicedToArray["a" /* default */])(_React$useState3, 2),
+    hasTwoCNChar = _React$useState4[0],
+    setHasTwoCNChar = _React$useState4[1];
+  var _React$useContext = react["useContext"](context["b" /* ConfigContext */]),
+    getPrefixCls = _React$useContext.getPrefixCls,
+    autoInsertSpaceInButton = _React$useContext.autoInsertSpaceInButton,
+    direction = _React$useContext.direction;
+  var buttonRef = ref || /*#__PURE__*/react["createRef"]();
+  var isNeedInserted = function isNeedInserted() {
+    return react["Children"].count(children) === 1 && !icon && !isUnBorderedButtonType(type);
+  };
+  var fixTwoCNChar = function fixTwoCNChar() {
+    // Fix for HOC usage like <FormatMessage />
+    if (!buttonRef || !buttonRef.current || autoInsertSpaceInButton === false) {
+      return;
+    }
+    var buttonText = buttonRef.current.textContent;
+    if (isNeedInserted() && isTwoCNChar(buttonText)) {
+      if (!hasTwoCNChar) {
+        setHasTwoCNChar(true);
+      }
+    } else if (hasTwoCNChar) {
+      setHasTwoCNChar(false);
+    }
+  };
+  // =============== Update Loading ===============
+  var loadingOrDelay = typeof loading === 'boolean' ? loading : (loading === null || loading === void 0 ? void 0 : loading.delay) || true;
+  react["useEffect"](function () {
+    var delayTimer = null;
+    if (typeof loadingOrDelay === 'number') {
+      delayTimer = window.setTimeout(function () {
+        delayTimer = null;
+        setLoading(loadingOrDelay);
+      }, loadingOrDelay);
+    } else {
+      setLoading(loadingOrDelay);
+    }
+    return function () {
+      if (delayTimer) {
+        // in order to not perform a React state update on an unmounted component
+        // and clear timer after 'loadingOrDelay' updated.
+        window.clearTimeout(delayTimer);
+        delayTimer = null;
+      }
+    };
+  }, [loadingOrDelay]);
+  react["useEffect"](fixTwoCNChar, [buttonRef]);
+  var handleClick = function handleClick(e) {
+    var onClick = props.onClick;
+    // https://github.com/ant-design/ant-design/issues/30207
+    if (innerLoading || mergedDisabled) {
+      e.preventDefault();
+      return;
+    }
+    onClick === null || onClick === void 0 ? void 0 : onClick(e);
+  };
+   false ? undefined : void 0;
+   false ? undefined : void 0;
+  var prefixCls = getPrefixCls('btn', customizePrefixCls);
+  var autoInsertSpace = autoInsertSpaceInButton !== false;
+  var _useCompactItemContex = Object(Compact["a" /* useCompactItemContext */])(prefixCls, direction),
+    compactSize = _useCompactItemContex.compactSize,
+    compactItemClassnames = _useCompactItemContex.compactItemClassnames;
+  var sizeClassNameMap = {
+    large: 'lg',
+    small: 'sm',
+    middle: undefined
+  };
+  var sizeFullname = compactSize || groupSize || customizeSize || size;
+  var sizeCls = sizeFullname ? sizeClassNameMap[sizeFullname] || '' : '';
+  var iconType = innerLoading ? 'loading' : icon;
+  var linkButtonRestProps = Object(omit["a" /* default */])(rest, ['navigate']);
+  var classes = classnames_default()(prefixCls, (_classNames = {}, Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(_classNames, "".concat(prefixCls, "-").concat(shape), shape !== 'default' && shape), "".concat(prefixCls, "-").concat(type), type), "".concat(prefixCls, "-").concat(sizeCls), sizeCls), "".concat(prefixCls, "-icon-only"), !children && children !== 0 && !!iconType), "".concat(prefixCls, "-background-ghost"), ghost && !isUnBorderedButtonType(type)), "".concat(prefixCls, "-loading"), innerLoading), "".concat(prefixCls, "-two-chinese-chars"), hasTwoCNChar && autoInsertSpace && !innerLoading), "".concat(prefixCls, "-block"), block), "".concat(prefixCls, "-dangerous"), !!danger), "".concat(prefixCls, "-rtl"), direction === 'rtl'), Object(defineProperty["a" /* default */])(_classNames, "".concat(prefixCls, "-disabled"), linkButtonRestProps.href !== undefined && mergedDisabled)), compactItemClassnames, className);
+  var iconNode = icon && !innerLoading ? icon : ( /*#__PURE__*/react["createElement"](button_LoadingIcon, {
+    existIcon: !!icon,
+    prefixCls: prefixCls,
+    loading: !!innerLoading
+  }));
+  var kids = children || children === 0 ? spaceChildren(children, isNeedInserted() && autoInsertSpace) : null;
+  if (linkButtonRestProps.href !== undefined) {
+    return /*#__PURE__*/react["createElement"]("a", Object(esm_extends["a" /* default */])({}, linkButtonRestProps, {
+      className: classes,
+      onClick: handleClick,
+      ref: buttonRef
+    }), iconNode, kids);
+  }
+  var buttonNode = /*#__PURE__*/react["createElement"]("button", Object(esm_extends["a" /* default */])({}, rest, {
+    type: htmlType,
+    className: classes,
+    onClick: handleClick,
+    disabled: mergedDisabled,
+    ref: buttonRef
+  }), iconNode, kids);
+  if (isUnBorderedButtonType(type)) {
+    return buttonNode;
+  }
+  return /*#__PURE__*/react["createElement"](wave, {
+    disabled: !!innerLoading
+  }, buttonNode);
+};
+var Button = /*#__PURE__*/react["forwardRef"](button_InternalButton);
+if (false) {}
+Button.Group = button_group;
+Button.__ANT_BUTTON = true;
+/* harmony default export */ var button_button = (Button);
+// CONCATENATED MODULE: ./node_modules/antd/es/button/index.js
+
+/* harmony default export */ var es_button = __webpack_exports__["a"] = (button_button);
+
+/***/ }),
+/* 651 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
@@ -100228,14 +100957,14 @@ var react_dom = __webpack_require__(32);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(34);
+var slicedToArray = __webpack_require__(38);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js + 4 modules
-var react_router_dom = __webpack_require__(43);
+var react_router_dom = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(24);
+var react_router = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./src/Pages/index.js + 130 modules
 var Pages = __webpack_require__(61);
@@ -100265,10 +100994,978 @@ var style_general = __webpack_require__(331);
 var antd = __webpack_require__(228);
 
 // EXTERNAL MODULE: ./src/translations/index.js + 1 modules
-var translations = __webpack_require__(96);
+var translations = __webpack_require__(97);
 
 // EXTERNAL MODULE: ./node_modules/react-helmet/es/Helmet.js
 var Helmet = __webpack_require__(88);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/collapse/index.js + 6 modules
+var collapse = __webpack_require__(652);
+
+// EXTERNAL MODULE: ./node_modules/antd/es/divider/index.js
+var divider = __webpack_require__(326);
+
+// EXTERNAL MODULE: ./node_modules/react-router-dom/cjs/react-router-dom.min.js
+var react_router_dom_min = __webpack_require__(71);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
+var objectWithoutProperties = __webpack_require__(321);
+var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectWithoutProperties);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
+var toConsumableArray = __webpack_require__(137);
+var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
+var defineProperty = __webpack_require__(99);
+var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
+var helpers_extends = __webpack_require__(322);
+var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
+
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/create-element.js
+
+
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { defineProperty_default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+
+
+// Get all possible permutations of all power sets
+//
+// Super simple, non-algorithmic solution since the
+// number of class names will not be greater than 4
+function powerSetPermutations(arr) {
+  var arrLength = arr.length;
+  if (arrLength === 0 || arrLength === 1) return arr;
+  if (arrLength === 2) {
+    // prettier-ignore
+    return [arr[0], arr[1], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0])];
+  }
+  if (arrLength === 3) {
+    return [arr[0], arr[1], arr[2], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
+  }
+  if (arrLength >= 4) {
+    // Currently does not support more than 4 extra
+    // class names (after `.token` has been removed)
+    return [arr[0], arr[1], arr[2], arr[3], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3]), "".concat(arr[3], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
+  }
+}
+var classNameCombinations = {};
+function getClassNameCombinations(classNames) {
+  if (classNames.length === 0 || classNames.length === 1) return classNames;
+  var key = classNames.join('.');
+  if (!classNameCombinations[key]) {
+    classNameCombinations[key] = powerSetPermutations(classNames);
+  }
+  return classNameCombinations[key];
+}
+function createStyleObject(classNames) {
+  var elementStyle = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var stylesheet = arguments.length > 2 ? arguments[2] : undefined;
+  var nonTokenClassNames = classNames.filter(function (className) {
+    return className !== 'token';
+  });
+  var classNamesCombinations = getClassNameCombinations(nonTokenClassNames);
+  return classNamesCombinations.reduce(function (styleObject, className) {
+    return _objectSpread(_objectSpread({}, styleObject), stylesheet[className]);
+  }, elementStyle);
+}
+function createClassNameString(classNames) {
+  return classNames.join(' ');
+}
+function createChildren(stylesheet, useInlineStyles) {
+  var childrenCount = 0;
+  return function (children) {
+    childrenCount += 1;
+    return children.map(function (child, i) {
+      return createElement({
+        node: child,
+        stylesheet: stylesheet,
+        useInlineStyles: useInlineStyles,
+        key: "code-segment-".concat(childrenCount, "-").concat(i)
+      });
+    });
+  };
+}
+function createElement(_ref) {
+  var node = _ref.node,
+    stylesheet = _ref.stylesheet,
+    _ref$style = _ref.style,
+    style = _ref$style === void 0 ? {} : _ref$style,
+    useInlineStyles = _ref.useInlineStyles,
+    key = _ref.key;
+  var properties = node.properties,
+    type = node.type,
+    TagName = node.tagName,
+    value = node.value;
+  if (type === 'text') {
+    return value;
+  } else if (TagName) {
+    var childrenCreator = createChildren(stylesheet, useInlineStyles);
+    var props;
+    if (!useInlineStyles) {
+      props = _objectSpread(_objectSpread({}, properties), {}, {
+        className: createClassNameString(properties.className)
+      });
+    } else {
+      var allStylesheetSelectors = Object.keys(stylesheet).reduce(function (classes, selector) {
+        selector.split('.').forEach(function (className) {
+          if (!classes.includes(className)) classes.push(className);
+        });
+        return classes;
+      }, []);
+
+      // For compatibility with older versions of react-syntax-highlighter
+      var startingClassName = properties.className && properties.className.includes('token') ? ['token'] : [];
+      var className = properties.className && startingClassName.concat(properties.className.filter(function (className) {
+        return !allStylesheetSelectors.includes(className);
+      }));
+      props = _objectSpread(_objectSpread({}, properties), {}, {
+        className: createClassNameString(className) || undefined,
+        style: createStyleObject(properties.className, Object.assign({}, properties.style, style), stylesheet)
+      });
+    }
+    var children = childrenCreator(node.children);
+    return /*#__PURE__*/react_default.a.createElement(TagName, extends_default()({
+      key: key
+    }, props), children);
+  }
+}
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/checkForListedLanguage.js
+/* harmony default export */ var checkForListedLanguage = (function (astGenerator, language) {
+  var langs = astGenerator.listLanguages();
+  return langs.indexOf(language) !== -1;
+});
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/highlight.js
+
+
+
+var _excluded = ["language", "children", "style", "customStyle", "codeTagProps", "useInlineStyles", "showLineNumbers", "showInlineLineNumbers", "startingLineNumber", "lineNumberContainerStyle", "lineNumberStyle", "wrapLines", "wrapLongLines", "lineProps", "renderer", "PreTag", "CodeTag", "code", "astGenerator"];
+function highlight_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function highlight_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? highlight_ownKeys(Object(t), !0).forEach(function (r) { defineProperty_default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : highlight_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+
+
+
+var newLineRegex = /\n/g;
+function getNewLines(str) {
+  return str.match(newLineRegex);
+}
+function getAllLineNumbers(_ref) {
+  var lines = _ref.lines,
+    startingLineNumber = _ref.startingLineNumber,
+    style = _ref.style;
+  return lines.map(function (_, i) {
+    var number = i + startingLineNumber;
+    return /*#__PURE__*/react_default.a.createElement("span", {
+      key: "line-".concat(i),
+      className: "react-syntax-highlighter-line-number",
+      style: typeof style === 'function' ? style(number) : style
+    }, "".concat(number, "\n"));
+  });
+}
+function AllLineNumbers(_ref2) {
+  var codeString = _ref2.codeString,
+    codeStyle = _ref2.codeStyle,
+    _ref2$containerStyle = _ref2.containerStyle,
+    containerStyle = _ref2$containerStyle === void 0 ? {
+      "float": 'left',
+      paddingRight: '10px'
+    } : _ref2$containerStyle,
+    _ref2$numberStyle = _ref2.numberStyle,
+    numberStyle = _ref2$numberStyle === void 0 ? {} : _ref2$numberStyle,
+    startingLineNumber = _ref2.startingLineNumber;
+  return /*#__PURE__*/react_default.a.createElement("code", {
+    style: Object.assign({}, codeStyle, containerStyle)
+  }, getAllLineNumbers({
+    lines: codeString.replace(/\n$/, '').split('\n'),
+    style: numberStyle,
+    startingLineNumber: startingLineNumber
+  }));
+}
+function getEmWidthOfNumber(num) {
+  return "".concat(num.toString().length, ".25em");
+}
+function getInlineLineNumber(lineNumber, inlineLineNumberStyle) {
+  return {
+    type: 'element',
+    tagName: 'span',
+    properties: {
+      key: "line-number--".concat(lineNumber),
+      className: ['comment', 'linenumber', 'react-syntax-highlighter-line-number'],
+      style: inlineLineNumberStyle
+    },
+    children: [{
+      type: 'text',
+      value: lineNumber
+    }]
+  };
+}
+function assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber) {
+  // minimally necessary styling for line numbers
+  var defaultLineNumberStyle = {
+    display: 'inline-block',
+    minWidth: getEmWidthOfNumber(largestLineNumber),
+    paddingRight: '1em',
+    textAlign: 'right',
+    userSelect: 'none'
+  };
+  // prep custom styling
+  var customLineNumberStyle = typeof lineNumberStyle === 'function' ? lineNumberStyle(lineNumber) : lineNumberStyle;
+  // combine
+  var assembledStyle = highlight_objectSpread(highlight_objectSpread({}, defaultLineNumberStyle), customLineNumberStyle);
+  return assembledStyle;
+}
+function createLineElement(_ref3) {
+  var children = _ref3.children,
+    lineNumber = _ref3.lineNumber,
+    lineNumberStyle = _ref3.lineNumberStyle,
+    largestLineNumber = _ref3.largestLineNumber,
+    showInlineLineNumbers = _ref3.showInlineLineNumbers,
+    _ref3$lineProps = _ref3.lineProps,
+    lineProps = _ref3$lineProps === void 0 ? {} : _ref3$lineProps,
+    _ref3$className = _ref3.className,
+    className = _ref3$className === void 0 ? [] : _ref3$className,
+    showLineNumbers = _ref3.showLineNumbers,
+    wrapLongLines = _ref3.wrapLongLines,
+    _ref3$wrapLines = _ref3.wrapLines,
+    wrapLines = _ref3$wrapLines === void 0 ? false : _ref3$wrapLines;
+  var properties = wrapLines ? highlight_objectSpread({}, typeof lineProps === 'function' ? lineProps(lineNumber) : lineProps) : {};
+  properties['className'] = properties['className'] ? [].concat(toConsumableArray_default()(properties['className'].trim().split(/\s+/)), toConsumableArray_default()(className)) : className;
+  if (lineNumber && showInlineLineNumbers) {
+    var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
+    children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
+  }
+  if (wrapLongLines & showLineNumbers) {
+    properties.style = highlight_objectSpread({
+      display: 'flex'
+    }, properties.style);
+  }
+  return {
+    type: 'element',
+    tagName: 'span',
+    properties: properties,
+    children: children
+  };
+}
+function flattenCodeTree(tree) {
+  var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+  var newTree = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+  for (var i = 0; i < tree.length; i++) {
+    var node = tree[i];
+    if (node.type === 'text') {
+      newTree.push(createLineElement({
+        children: [node],
+        className: toConsumableArray_default()(new Set(className))
+      }));
+    } else if (node.children) {
+      var classNames = className.concat(node.properties.className);
+      flattenCodeTree(node.children, classNames).forEach(function (i) {
+        return newTree.push(i);
+      });
+    }
+  }
+  return newTree;
+}
+function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines) {
+  var _ref4;
+  var tree = flattenCodeTree(codeTree.value);
+  var newTree = [];
+  var lastLineBreakIndex = -1;
+  var index = 0;
+  function createWrappedLine(children, lineNumber) {
+    var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+    return createLineElement({
+      children: children,
+      lineNumber: lineNumber,
+      lineNumberStyle: lineNumberStyle,
+      largestLineNumber: largestLineNumber,
+      showInlineLineNumbers: showInlineLineNumbers,
+      lineProps: lineProps,
+      className: className,
+      showLineNumbers: showLineNumbers,
+      wrapLongLines: wrapLongLines,
+      wrapLines: wrapLines
+    });
+  }
+  function createUnwrappedLine(children, lineNumber) {
+    if (showLineNumbers && lineNumber && showInlineLineNumbers) {
+      var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
+      children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
+    }
+    return children;
+  }
+  function createLine(children, lineNumber) {
+    var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+    return wrapLines || className.length > 0 ? createWrappedLine(children, lineNumber, className) : createUnwrappedLine(children, lineNumber);
+  }
+  var _loop = function _loop() {
+    var node = tree[index];
+    var value = node.children[0].value;
+    var newLines = getNewLines(value);
+    if (newLines) {
+      var splitValue = value.split('\n');
+      splitValue.forEach(function (text, i) {
+        var lineNumber = showLineNumbers && newTree.length + startingLineNumber;
+        var newChild = {
+          type: 'text',
+          value: "".concat(text, "\n")
+        };
+
+        // if it's the first line
+        if (i === 0) {
+          var _children = tree.slice(lastLineBreakIndex + 1, index).concat(createLineElement({
+            children: [newChild],
+            className: node.properties.className
+          }));
+          var _line = createLine(_children, lineNumber);
+          newTree.push(_line);
+
+          // if it's the last line
+        } else if (i === splitValue.length - 1) {
+          var stringChild = tree[index + 1] && tree[index + 1].children && tree[index + 1].children[0];
+          var lastLineInPreviousSpan = {
+            type: 'text',
+            value: "".concat(text)
+          };
+          if (stringChild) {
+            var newElem = createLineElement({
+              children: [lastLineInPreviousSpan],
+              className: node.properties.className
+            });
+            tree.splice(index + 1, 0, newElem);
+          } else {
+            var _children2 = [lastLineInPreviousSpan];
+            var _line2 = createLine(_children2, lineNumber, node.properties.className);
+            newTree.push(_line2);
+          }
+
+          // if it's neither the first nor the last line
+        } else {
+          var _children3 = [newChild];
+          var _line3 = createLine(_children3, lineNumber, node.properties.className);
+          newTree.push(_line3);
+        }
+      });
+      lastLineBreakIndex = index;
+    }
+    index++;
+  };
+  while (index < tree.length) {
+    _loop();
+  }
+  if (lastLineBreakIndex !== tree.length - 1) {
+    var children = tree.slice(lastLineBreakIndex + 1, tree.length);
+    if (children && children.length) {
+      var lineNumber = showLineNumbers && newTree.length + startingLineNumber;
+      var line = createLine(children, lineNumber);
+      newTree.push(line);
+    }
+  }
+  return wrapLines ? newTree : (_ref4 = []).concat.apply(_ref4, newTree);
+}
+function defaultRenderer(_ref5) {
+  var rows = _ref5.rows,
+    stylesheet = _ref5.stylesheet,
+    useInlineStyles = _ref5.useInlineStyles;
+  return rows.map(function (node, i) {
+    return createElement({
+      node: node,
+      stylesheet: stylesheet,
+      useInlineStyles: useInlineStyles,
+      key: "code-segement".concat(i)
+    });
+  });
+}
+
+// only highlight.js has the highlightAuto method
+function isHighlightJs(astGenerator) {
+  return astGenerator && typeof astGenerator.highlightAuto !== 'undefined';
+}
+function getCodeTree(_ref6) {
+  var astGenerator = _ref6.astGenerator,
+    language = _ref6.language,
+    code = _ref6.code,
+    defaultCodeValue = _ref6.defaultCodeValue;
+  // figure out whether we're using lowlight/highlight or refractor/prism
+  // then attempt highlighting accordingly
+
+  // lowlight/highlight?
+  if (isHighlightJs(astGenerator)) {
+    var hasLanguage = checkForListedLanguage(astGenerator, language);
+    if (language === 'text') {
+      return {
+        value: defaultCodeValue,
+        language: 'text'
+      };
+    } else if (hasLanguage) {
+      return astGenerator.highlight(language, code);
+    } else {
+      return astGenerator.highlightAuto(code);
+    }
+  }
+
+  // must be refractor/prism, then
+  try {
+    return language && language !== 'text' ? {
+      value: astGenerator.highlight(code, language)
+    } : {
+      value: defaultCodeValue
+    };
+  } catch (e) {
+    return {
+      value: defaultCodeValue
+    };
+  }
+}
+/* harmony default export */ var highlight = (function (defaultAstGenerator, defaultStyle) {
+  return function SyntaxHighlighter(_ref7) {
+    var language = _ref7.language,
+      children = _ref7.children,
+      _ref7$style = _ref7.style,
+      style = _ref7$style === void 0 ? defaultStyle : _ref7$style,
+      _ref7$customStyle = _ref7.customStyle,
+      customStyle = _ref7$customStyle === void 0 ? {} : _ref7$customStyle,
+      _ref7$codeTagProps = _ref7.codeTagProps,
+      codeTagProps = _ref7$codeTagProps === void 0 ? {
+        className: language ? "language-".concat(language) : undefined,
+        style: highlight_objectSpread(highlight_objectSpread({}, style['code[class*="language-"]']), style["code[class*=\"language-".concat(language, "\"]")])
+      } : _ref7$codeTagProps,
+      _ref7$useInlineStyles = _ref7.useInlineStyles,
+      useInlineStyles = _ref7$useInlineStyles === void 0 ? true : _ref7$useInlineStyles,
+      _ref7$showLineNumbers = _ref7.showLineNumbers,
+      showLineNumbers = _ref7$showLineNumbers === void 0 ? false : _ref7$showLineNumbers,
+      _ref7$showInlineLineN = _ref7.showInlineLineNumbers,
+      showInlineLineNumbers = _ref7$showInlineLineN === void 0 ? true : _ref7$showInlineLineN,
+      _ref7$startingLineNum = _ref7.startingLineNumber,
+      startingLineNumber = _ref7$startingLineNum === void 0 ? 1 : _ref7$startingLineNum,
+      lineNumberContainerStyle = _ref7.lineNumberContainerStyle,
+      _ref7$lineNumberStyle = _ref7.lineNumberStyle,
+      lineNumberStyle = _ref7$lineNumberStyle === void 0 ? {} : _ref7$lineNumberStyle,
+      wrapLines = _ref7.wrapLines,
+      _ref7$wrapLongLines = _ref7.wrapLongLines,
+      wrapLongLines = _ref7$wrapLongLines === void 0 ? false : _ref7$wrapLongLines,
+      _ref7$lineProps = _ref7.lineProps,
+      lineProps = _ref7$lineProps === void 0 ? {} : _ref7$lineProps,
+      renderer = _ref7.renderer,
+      _ref7$PreTag = _ref7.PreTag,
+      PreTag = _ref7$PreTag === void 0 ? 'pre' : _ref7$PreTag,
+      _ref7$CodeTag = _ref7.CodeTag,
+      CodeTag = _ref7$CodeTag === void 0 ? 'code' : _ref7$CodeTag,
+      _ref7$code = _ref7.code,
+      code = _ref7$code === void 0 ? (Array.isArray(children) ? children[0] : children) || '' : _ref7$code,
+      astGenerator = _ref7.astGenerator,
+      rest = objectWithoutProperties_default()(_ref7, _excluded);
+    astGenerator = astGenerator || defaultAstGenerator;
+    var allLineNumbers = showLineNumbers ? /*#__PURE__*/react_default.a.createElement(AllLineNumbers, {
+      containerStyle: lineNumberContainerStyle,
+      codeStyle: codeTagProps.style || {},
+      numberStyle: lineNumberStyle,
+      startingLineNumber: startingLineNumber,
+      codeString: code
+    }) : null;
+    var defaultPreStyle = style.hljs || style['pre[class*="language-"]'] || {
+      backgroundColor: '#fff'
+    };
+    var generatorClassName = isHighlightJs(astGenerator) ? 'hljs' : 'prismjs';
+    var preProps = useInlineStyles ? Object.assign({}, rest, {
+      style: Object.assign({}, defaultPreStyle, customStyle)
+    }) : Object.assign({}, rest, {
+      className: rest.className ? "".concat(generatorClassName, " ").concat(rest.className) : generatorClassName,
+      style: Object.assign({}, customStyle)
+    });
+    if (wrapLongLines) {
+      codeTagProps.style = highlight_objectSpread({
+        whiteSpace: 'pre-wrap'
+      }, codeTagProps.style);
+    } else {
+      codeTagProps.style = highlight_objectSpread({
+        whiteSpace: 'pre'
+      }, codeTagProps.style);
+    }
+    if (!astGenerator) {
+      return /*#__PURE__*/react_default.a.createElement(PreTag, preProps, allLineNumbers, /*#__PURE__*/react_default.a.createElement(CodeTag, codeTagProps, code));
+    }
+
+    /*
+     * Some custom renderers rely on individual row elements so we need to turn wrapLines on
+     * if renderer is provided and wrapLines is undefined.
+     */
+    if (wrapLines === undefined && renderer || wrapLongLines) wrapLines = true;
+    renderer = renderer || defaultRenderer;
+    var defaultCodeValue = [{
+      type: 'text',
+      value: code
+    }];
+    var codeTree = getCodeTree({
+      astGenerator: astGenerator,
+      language: language,
+      code: code,
+      defaultCodeValue: defaultCodeValue
+    });
+    if (codeTree.language === null) {
+      codeTree.value = defaultCodeValue;
+    }
+
+    // determine largest line number so that we can force minWidth on all linenumber elements
+    var lineCount = codeTree.value.length;
+    if (lineCount === 1 && codeTree.value[0].type === 'text') {
+      // Since codeTree for an unparsable text (e.g. 'a\na\na') is [{ type: 'text', value: 'a\na\na' }]
+      lineCount = codeTree.value[0].value.split('\n').length;
+    }
+    var largestLineNumber = lineCount + startingLineNumber;
+    var rows = processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines);
+    return /*#__PURE__*/react_default.a.createElement(PreTag, preProps, /*#__PURE__*/react_default.a.createElement(CodeTag, codeTagProps, !showInlineLineNumbers && allLineNumbers, renderer({
+      rows: rows,
+      stylesheet: style,
+      useInlineStyles: useInlineStyles
+    })));
+  };
+});
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/styles/hljs/default-style.js
+/* harmony default export */ var default_style = ({
+  "hljs": {
+    "display": "block",
+    "overflowX": "auto",
+    "padding": "0.5em",
+    "background": "#F0F0F0",
+    "color": "#444"
+  },
+  "hljs-subst": {
+    "color": "#444"
+  },
+  "hljs-comment": {
+    "color": "#888888"
+  },
+  "hljs-keyword": {
+    "fontWeight": "bold"
+  },
+  "hljs-attribute": {
+    "fontWeight": "bold"
+  },
+  "hljs-selector-tag": {
+    "fontWeight": "bold"
+  },
+  "hljs-meta-keyword": {
+    "fontWeight": "bold"
+  },
+  "hljs-doctag": {
+    "fontWeight": "bold"
+  },
+  "hljs-name": {
+    "fontWeight": "bold"
+  },
+  "hljs-type": {
+    "color": "#880000"
+  },
+  "hljs-string": {
+    "color": "#880000"
+  },
+  "hljs-number": {
+    "color": "#880000"
+  },
+  "hljs-selector-id": {
+    "color": "#880000"
+  },
+  "hljs-selector-class": {
+    "color": "#880000"
+  },
+  "hljs-quote": {
+    "color": "#880000"
+  },
+  "hljs-template-tag": {
+    "color": "#880000"
+  },
+  "hljs-deletion": {
+    "color": "#880000"
+  },
+  "hljs-title": {
+    "color": "#880000",
+    "fontWeight": "bold"
+  },
+  "hljs-section": {
+    "color": "#880000",
+    "fontWeight": "bold"
+  },
+  "hljs-regexp": {
+    "color": "#BC6060"
+  },
+  "hljs-symbol": {
+    "color": "#BC6060"
+  },
+  "hljs-variable": {
+    "color": "#BC6060"
+  },
+  "hljs-template-variable": {
+    "color": "#BC6060"
+  },
+  "hljs-link": {
+    "color": "#BC6060"
+  },
+  "hljs-selector-attr": {
+    "color": "#BC6060"
+  },
+  "hljs-selector-pseudo": {
+    "color": "#BC6060"
+  },
+  "hljs-literal": {
+    "color": "#78A960"
+  },
+  "hljs-built_in": {
+    "color": "#397300"
+  },
+  "hljs-bullet": {
+    "color": "#397300"
+  },
+  "hljs-code": {
+    "color": "#397300"
+  },
+  "hljs-addition": {
+    "color": "#397300"
+  },
+  "hljs-meta": {
+    "color": "#1f7199"
+  },
+  "hljs-meta-string": {
+    "color": "#4d99bf"
+  },
+  "hljs-emphasis": {
+    "fontStyle": "italic"
+  },
+  "hljs-strong": {
+    "fontWeight": "bold"
+  }
+});
+// EXTERNAL MODULE: ./node_modules/lowlight/index.js
+var lowlight = __webpack_require__(320);
+var lowlight_default = /*#__PURE__*/__webpack_require__.n(lowlight);
+
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/languages/hljs/supported-languages.js
+//
+// This file has been auto-generated by the `npm run build-languages-hljs` task
+//
+
+/* harmony default export */ var supported_languages = (['1c', 'abnf', 'accesslog', 'actionscript', 'ada', 'angelscript', 'apache', 'applescript', 'arcade', 'arduino', 'armasm', 'asciidoc', 'aspectj', 'autohotkey', 'autoit', 'avrasm', 'awk', 'axapta', 'bash', 'basic', 'bnf', 'brainfuck', 'c-like', 'c', 'cal', 'capnproto', 'ceylon', 'clean', 'clojure-repl', 'clojure', 'cmake', 'coffeescript', 'coq', 'cos', 'cpp', 'crmsh', 'crystal', 'csharp', 'csp', 'css', 'd', 'dart', 'delphi', 'diff', 'django', 'dns', 'dockerfile', 'dos', 'dsconfig', 'dts', 'dust', 'ebnf', 'elixir', 'elm', 'erb', 'erlang-repl', 'erlang', 'excel', 'fix', 'flix', 'fortran', 'fsharp', 'gams', 'gauss', 'gcode', 'gherkin', 'glsl', 'gml', 'go', 'golo', 'gradle', 'groovy', 'haml', 'handlebars', 'haskell', 'haxe', 'hsp', 'htmlbars', 'http', 'hy', 'inform7', 'ini', 'irpf90', 'isbl', 'java', 'javascript', 'jboss-cli', 'json', 'julia-repl', 'julia', 'kotlin', 'lasso', 'latex', 'ldif', 'leaf', 'less', 'lisp', 'livecodeserver', 'livescript', 'llvm', 'lsl', 'lua', 'makefile', 'markdown', 'mathematica', 'matlab', 'maxima', 'mel', 'mercury', 'mipsasm', 'mizar', 'mojolicious', 'monkey', 'moonscript', 'n1ql', 'nginx', 'nim', 'nix', 'node-repl', 'nsis', 'objectivec', 'ocaml', 'openscad', 'oxygene', 'parser3', 'perl', 'pf', 'pgsql', 'php-template', 'php', 'plaintext', 'pony', 'powershell', 'processing', 'profile', 'prolog', 'properties', 'protobuf', 'puppet', 'purebasic', 'python-repl', 'python', 'q', 'qml', 'r', 'reasonml', 'rib', 'roboconf', 'routeros', 'rsl', 'ruby', 'ruleslanguage', 'rust', 'sas', 'scala', 'scheme', 'scilab', 'scss', 'shell', 'smali', 'smalltalk', 'sml', 'sqf', 'sql', 'sql_more', 'stan', 'stata', 'step21', 'stylus', 'subunit', 'swift', 'taggerscript', 'tap', 'tcl', 'thrift', 'tp', 'twig', 'typescript', 'vala', 'vbnet', 'vbscript-html', 'vbscript', 'verilog', 'vhdl', 'vim', 'x86asm', 'xl', 'xml', 'xquery', 'yaml', 'zephir']);
+// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/default-highlight.js
+
+
+
+
+var highlighter = highlight(lowlight_default.a, default_style);
+highlighter.supportedLanguages = supported_languages;
+/* harmony default export */ var default_highlight = (highlighter);
+// CONCATENATED MODULE: ./src/Pages/Blog/OCP21.js
+
+
+
+
+
+
+
+var Panel = collapse["a" /* default */].Panel;
+var question1 = "\npublic class Question1 {\n  public static void main(String... args) {\n    String pre = \"Ben\";\n    String post = \"jamin\";\n\n    String s1 = \"Benjamin\";\n    String s2 = pre + post;\n    String s3 = \"Ben\" + \"jamin\";\n    String s4 = getName();\n\n    System.out.println(s1.equals(s2));\n    System.out.println(s1 == s2);\n    System.out.println(s1 == s3);\n    System.out.println(s1 == s4);\n    System.out.println(s3.equals(s4));\n  }\n  static String getName() {\n    return \"Benjamin\";\n  }\n}\n";
+var question2 = "\npublic class Question2{\npublic static void main(String... args) {\n\tgetName(null)\n}\n\nstatic void getName(Number number) {\n    System.out.println(\"Number\");\n}\n\nstatic void getName(Object object) {\n    System.out.println(\"Object\");\n}\n\nstatic void getName(Integer integer ) {\n    System.out.println(\"Integer\");\n}\n}\n";
+var question3 = "\nabstract class A {\n  int i = 10;\n\n  void getName() {\n    System.out.println(\"Interface A\");\n  }\n}\nabstract class B extends A {\n  int i = 20;\n\n  void getName() {\n    System.out.println(\"Interface B\");\n  }\n}\n\npublic class Question3 extends B {\n  int i = 30;\n\n  void getId() {\n    System.out.println(i);  \n  }\n\n  void getName() {\n    System.out.println(\"Question3\");\n  }\n\n  public static void main(String... args) {\n    A object = new Question3();\n\n    System.out.println(object.i);\n    object.getName();\n  }\n}\n";
+var question4 = "\nclass A {};\nclass B extends A {};\nclass C extends B {};\n\npublic class Question4 {\n\n  public static void main(String...args) {\n    List < ? super B > listA = new ArrayList();\n    List < ? extends B > listB = new ArrayList();\n\n    //B b = listA.get(0);\n    //C c = listA.get(0);\n    //listA.add(new B());\n    //listA.add(new C());\n\n    //B b = listB.get(0); \n    //C c = listB.get(0);\n    //listB.add(new B());\n    //listB.add(new C());\n  }\n}\n\n";
+var question5 = "\npublic class Question5{\n    \n    public static void main(String... args){\n        AtomicInteger count = new AtomicInteger(0);\n\n        var list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n        \n        Predicate<Integer> predicate = i -> i > 5;\n        list.stream()\n            .parallel()\n            .map(x -> x + 10)\n            .filter(x -> x %2 == 0)\n            .map(x -> x * 5)\n            .filter(predicate)\n            .peek(i -> count.getAndAdd(i));\n            \n        System.out.println(count);\n    }\n}\n\n";
+
+var OCP21_OCP21 = function OCP21() {
+  var _useContext = Object(react["useContext"])(helper["a" /* TranslationContext */]),
+      getText = _useContext.getText;
+
+  return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(Helmet["a" /* Helmet */], null, /*#__PURE__*/react_default.a.createElement("title", null, "Java SE 21 Developer Professional"), /*#__PURE__*/react_default.a.createElement("meta", {
+    name: "description",
+    content: "I took and passed the 'Java SE 21 Developer Professional' exam. I share my experience and my learning"
+  }), /*#__PURE__*/react_default.a.createElement("meta", {
+    name: "keywords",
+    content: "OCP, 21, Java, Java SE 21 Developer Professional, 1Z0-830"
+  }), /*#__PURE__*/react_default.a.createElement("meta", {
+    property: "og:title",
+    content: "Java SE 21 Developer Professional"
+  }), /*#__PURE__*/react_default.a.createElement("meta", {
+    property: "og:description",
+    content: "I took and passed the 'Java SE 21 Developer Professional' exam. I share my experience and my learning"
+  }), /*#__PURE__*/react_default.a.createElement("meta", {
+    property: "canonical",
+    content: "https://bzenth.de/blog/ocp21/"
+  })), /*#__PURE__*/react_default.a.createElement(Components["b" /* Header */], null), /*#__PURE__*/react_default.a.createElement("div", {
+    className: "page_classic blog_page"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_date"
+  }, "written in May 2026"), /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_translation"
+  }, getText("blog.onlyEnglish")), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: "blog_heading"
+  }, "My Journey to OCP21: A Personal Experience Report"), "Back in 2025, my back then teamlead and now coworker/mentor asked me if we should take this really difficult Java exam called \"Oracle Certified Professional: Java SE 21 Developer\" (OCP21). ", /*#__PURE__*/react_default.a.createElement("br", null), "I didn't know much about the OCP21 back then, but I successfully passed the exam this week. During my preparation, I was constantly looking for other people describing their experience taking the exam, but there are only a few. Therefore, I decided to share my own experience learning and taking the exam for all the people out there interested in taking on the OCP themselves. To make it a better read, I will add some questions I created myself to this post regarding topics most of the people working with Java are using on their daily basis. (They might be hard to read on smartphones thus I recommend solving them on your computer) ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("i", null, /*#__PURE__*/react_default.a.createElement("b", null, "Note:"), " I am not allowed - nor willing - to share questions I encountered during my exam. The following questions are entirely self-created practice examples inspired by public Java topics covered in the certification syllabus and are not based on actual exam questions. Examples within the text are based on things that came to my mind in that moment and not on actual exam questions."), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("ol", {
+    className: "blog_content",
+    role: "list"
+  }, /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#what"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "What is the OCP21?"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#learning"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Learning for the Exam"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#exam"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Taking the exam")), /*#__PURE__*/react_default.a.createElement("ul", null, /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#format"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Format"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#buying"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Buying"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#schedule"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Schedule"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#examitself"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "The Exam itself"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#post"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Post Exam"))))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
+    href: "#final"
+  }, /*#__PURE__*/react_default.a.createElement("span", {
+    className: "title"
+  }, "Final Thoughts")))), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: "blog_heading",
+    id: "what"
+  }, "What is the OCP21?"), "For the people that don't know the OCP Exam, I asked an AI to describe the exam in a few sentences:", /*#__PURE__*/react_default.a.createElement("pre", {
+    className: "blog_code_pre"
+  }, /*#__PURE__*/react_default.a.createElement("i", null, "\"The OCP 21 Java Exam is essentially the 'Black Belt' of the programming world. Officially known as the Oracle Certified Professional: Java SE 21 Developer certification, it serves as the global gold standard for proving that a developer has reached a professional, elite level of mastery in the Java language.\"")), "The scope of the exam can be found", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    target: "_blank",
+    href: "https://mylearn.oracle.com/ou/exam/java-se-21-developer-professional-1z0-830/40805/139080/220555"
+  }, "here"), ". If I had to describe the scope within one sentence I would say that 'if it is within the language it is within the scope of the exam'.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 1: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
+    showLineNumbers: true,
+    wrapLongLines: "true",
+    className: "blog-code",
+    language: "java"
+  }, question1), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["1"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See Results and Explaination",
+    key: "0"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_code"
+  }, "true false true true true", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "There are some things to know here. ", /*#__PURE__*/react_default.a.createElement("br", null), "First: The difference between ", /*#__PURE__*/react_default.a.createElement("code", null, ".equals()"), " and ", /*#__PURE__*/react_default.a.createElement("code", null, "=="), " is that ", /*#__PURE__*/react_default.a.createElement("code", null, ".equals()"), " ", "checks for the equality of both objects, while ", /*#__PURE__*/react_default.a.createElement("code", null, "=="), " only compares the objects' references. Thus, line 12 is true, while line 13 is false, as both strings reference different objects. ", /*#__PURE__*/react_default.a.createElement("br", null), "Second: Line 14 is where some \"magic\" happens. Java uses a String Pool for compile-time constant strings. As a string is immutable, all compile-time constant strings refer to the same object in memory. The compiler detects the concatenation of \"Ben\" and \"jamin\" at compile time and thus uses the existing string from the pool. Given this, ", /*#__PURE__*/react_default.a.createElement("code", null, "s1 == s3"), " is true."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: "blog_heading",
+    id: "learning"
+  }, "Learning for the Exam"), "My initial learning process, and what I can recommend to all, is the 'OCP Study Guide' by", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://www.selikoff.net/ocp21/",
+    target: "_blank"
+  }, "Jeanne Boyarsky and Scott Selikoff"), ". ", /*#__PURE__*/react_default.a.createElement("br", null), "Both have created similar books for the OCP 11 and OCP 17 (Java versions). This almost 1,000-page book is split into 14 chapters, starting with basic building blocks and ending with I/O. It ends each chapter with questions regarding that topic. I read the book and each chapter multiple times, and I think it is important to really understand each individual topic. ", /*#__PURE__*/react_default.a.createElement("br", null), "I used it as a guide and did deep dives into each topic I wasn't comfortable with. My favorites have been the JEPs regarding each topic as they, in my opinion, provide a great reasoning for the implementation of some features, which then helps (at least me) to use these (e.g.,", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://openjdk.org/jeps/444",
+    target: "_blank"
+  }, "on Virtual Threads"), "). ", /*#__PURE__*/react_default.a.createElement("br", null), " My recommendation is to also actively use these features. I created a repo for my learning process and continuously developed dummy features within this. At least for me, it is easier to understand how to compile Java code on the command line when having put some code on the module path multiple times (vs. just reading about it). I dont know how many more times I will compile and run my java programms using the terminal vs. 'just' starting them within my IDE but it is within the scope of the exam so it is time to learn it and I think it helps my understanding of the language I am working with on a daily basis.", /*#__PURE__*/react_default.a.createElement("br", null), " As I am only 28 years old, I am in fact almost 2 years younger than Java itself. Thus, I only used the language for a small period of time. Reading the study guide helped me understand older features, backward compatibility, and such. Thus, I can also recommend this book to people who just want to improve their Java knowledge. Knowing why ", /*#__PURE__*/react_default.a.createElement("code", null, "ThreadLocal"), " was implemented is useful for understanding why", " ", /*#__PURE__*/react_default.a.createElement("code", null, "Scoped Values"), " are added in Java 25.", /*#__PURE__*/react_default.a.createElement("br", null), " The numbers guy that I am, I wrote down all my results for the chapters, assessment tests, and test exams.", /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["0"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See my results here",
+    key: "1"
+  }, /*#__PURE__*/react_default.a.createElement("div", null, "Note: I did some of these questions multiple times (with months inbetween). I include only the result of my last run. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 1: 22/23 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 2: 15/20 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 3: 25/30 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 4: 17/22 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 5: 16/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 6: 22/26 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 7: 18/30 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 8: 17/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 9: 14/23 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 10: 21/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 11: 21/26 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 12: 16/25 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 13: 19/25 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 14: 18/25 ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 1: 30/50 ", /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 2: 28/50 ", /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 3: 43/50 ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null)))), "Even though this may all be fun and exciting, there are some parts you \u2014 in my opinion \u2014 just need to learn as they may be used within the exam. The study guide does a good job here, mentioning whenever you need to simply know something.", /*#__PURE__*/react_default.a.createElement("figure", {
+    className: "blog_figure_left"
+  }, /*#__PURE__*/react_default.a.createElement("img", {
+    className: "blog_flashcards blog_img",
+    "aria-label": "All my flashcards and a tenisball"
+  }), /*#__PURE__*/react_default.a.createElement("figcaption", {
+    className: "blog_img_text"
+  }, "317 flashcards or one serve and volley at Wimbledon. ;)")), /*#__PURE__*/react_default.a.createElement("br", null), " It's up to you to decide if you need to know that a Queue has two functions to read a value, of which", " ", /*#__PURE__*/react_default.a.createElement("code", null, ".element()"), " throws a runtime exception if the queue is empty while ", /*#__PURE__*/react_default.a.createElement("code", null, ".peek()"), " returns null. I find it useful to know such things myself. I've had good experiences being able to provide actual feedback on pull requests (e.g., regarding IO) without the need to check the documentation. To provide you with a number (at the end): I had (yes, I counted them for this) 317 flashcards on my desk, which is definitely on the higher count of what I think is needed, but I wanted to be safe, not sorry. The example with the Queue was one flashcard (with the addition of the other Queue functions ", /*#__PURE__*/react_default.a.createElement("code", null, "add(T), element(), offer(T), poll()"), ").", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "I also had a note pad on my desk where I wrote down all special cases I stumbled across during my learning. To provide an example: ", /*#__PURE__*/react_default.a.createElement("br", null), "Did you know, that dividing an Integer or Long with 0 results in an ArithmeticException (RuntimeException)? But what happens when you do this with an float or double? You guessed correctly, the result is positive infinity. (With an extra function ", /*#__PURE__*/react_default.a.createElement("code", null, ".isInfinite()"), " for the reference type Double and Float) ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), " At this point, I felt well prepared to take on the exam for the first time. I failed my first attempt in a nail-biter with 33 out of 34 correct answers (required to pass). ", /*#__PURE__*/react_default.a.createElement("br", null), " Which meant: back to the drawing board. In hindsight, I think I am actually happy I did not pass the exam within my first attempt, as I did learn much more afterwards. To improve my knowledge after this attempt, I used the mock exams from Enthuware. I took all but two tests (total of 18 mock exams with 4 foundation tests) and scored an average score of 74% in them. Similar to the study guide, I used these tests as a baseline and read about all kinds of topics. I spend over an month of learning between my first and second attempt.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 2: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
+    showLineNumbers: true,
+    wrapLongLines: "true",
+    className: "blog-code",
+    language: "java"
+  }, question2), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["1"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See Results and Explaination",
+    key: "0"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_code"
+  }, "Integer", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "The Output is Integer, as an Integer is the most specific within the three options, as it is a sub-type of Number which is a sub-type of Object. ", /*#__PURE__*/react_default.a.createElement("br", null), "If we add a function with the input type String it would not compile, as the compiler cannot tell if the function for the type String or Integer should be selected."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: "blog_heading",
+    id: "exam"
+  }, "Taking the exam"), /*#__PURE__*/react_default.a.createElement("h3", {
+    className: "blog_heading",
+    id: "format"
+  }, "Format"), "The exam can be taken online. It consists of 50 multiple choice questions, of which you need to correctly answer 34 in a given time of two hours. One question contains up to 10 options (I did not count them, that's what the study guide says :D), of which you need to choose a given number of options. The exam will tell you how many answers are correct. Some of these answers are really long (the study guide says up to 30 lines of code each). Within both of my takes, I only had a few minutes left after the last question (which is odd, as I never had issues with time in all the exams I have taken in my life). 2.5 minutes for each question sound a lot, but this time is short when there are multiple options and you need to evaulate them all one by one.", /*#__PURE__*/react_default.a.createElement("h3", {
+    className: "blog_heading",
+    id: "buying"
+  }, "Buying"), "To take the exam, you need to buy an 'attempt'. Selikoff provides a great", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://www.selikoff.net/2024/07/18/paying-for-the-java-certification-online-2024-edition/",
+    target: "_blank"
+  }, "guide"), " ", "for this. An important note is that if your employer pays for this exam, the 'exam attempts' will be granted to the account linked to the invoice address. If no account for this email address exists, you need to create one. At least in my opinion, that's an important note, as it may not be a good idea to add, e.g., a general company-wide email address or accounting as an invoice recipient. The invoice email address account is then able to send these exam attempts to other accounts. I guess this makes sense for companies where employees regularly take exams at Oracle and thus the company just buys 30 exam attempts and uses these whenever needed.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 3: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
+    showLineNumbers: true,
+    wrapLongLines: "true",
+    className: "blog-code",
+    language: "java"
+  }, question3), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["1"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See Results and Explaination",
+    key: "0"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_code"
+  }, "10 Question3", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "The function ", /*#__PURE__*/react_default.a.createElement("code", null, "getName()"), " is correctly overridden; thus, even though the reference in line 25 is of type A the object it references is still of the type Question3. Thus polymorphism is applied and the function from Question3 is called. Note that due to the fact that the reference is of the type A this type 'decides' what functions are available. Calling ", /*#__PURE__*/react_default.a.createElement("code", null, "object.getId()"), " would not compile as this function is not available for A. Casting it to the type Question3 would allow us to call the function", " ", /*#__PURE__*/react_default.a.createElement("code", null, "((Question3) object).getId()"), ". This does not apply to fields, as they can only be hidden, which results in line 27 using the int from class A."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h3", {
+    className: "blog_heading",
+    id: "schedule"
+  }, "Schedule"), "I can once again only recommend the", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://www.selikoff.net/2024/07/18/scheduling-the-a-java-certification-online-2024-edition/",
+    target: "_blank"
+  }, "guide"), " ", "from Selikoff. I recommend completing the system check and test exam beforehand to be comfortable when it comes to your actual exam attempt. The exam attempts can be rescheduled up until 24h prior to the exam and also taken quite spontaneously. When checking the website, I was always able to schedule my attempt ~1h in the future. That\u2019s what I did with my second attempt, as I decided on Tuesday evening to take the exam, scheduled it on Wednesday morning, and wrote it 1h later. The exam comes with a check-in time which starts 30min prior to the scheduled time. AFAIK, you need to check in within these 30min. The check-in is quickly done with verification and such (especially when you have checked your system the day prior). You can start your exam attempt as soon as this check-in is complete. Thus, I started my exam attempt initially scheduled for 09:00 (check-in starts at 08:30) at 08:35 and finished at 10:35.", /*#__PURE__*/react_default.a.createElement("h3", {
+    className: "blog_heading",
+    id: "examitself"
+  }, "Exam itself"), "The exam itself is quite unspectacular: 50 questions, 2h, and go-time. Within my first attempt, I had no issues. My second attempt was quite exciting. After ~45 questions, I got an error message saying my internet connection was not stable. I was thrown out of the exam and was not able to get back in. This was quite a shocker, as I had a great feeling about my run and was almost 90% sure that I would pass this time. I immediately opened a ticket at Oracle. My result was pending as my time was still running. After my exam timed out (and was submitted, which will happen automatically if the time runs out), I got my result and passed with 35 correct answers (out of 34 required; keep in mind I only answered ~45 questions). Happy result \u2014 including those 20 minutes between my internet issues and the result, which felt like forever.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 4: Which three individual lines of code can be uncommented without causing compilation errors?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
+    showLineNumbers: true,
+    wrapLongLines: "true",
+    className: "blog-code",
+    language: "java"
+  }, question4), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["1"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See Results and Explaination",
+    key: "0"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_code"
+  }, "14, 15 and 17", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "We leave the easy questions behind and start with some Generics fun. ", /*#__PURE__*/react_default.a.createElement("br", null), " listA is a list of B or a supertype of B (such as A or Object). listB is a list of B or a child type of B (such as C). ", /*#__PURE__*/react_default.a.createElement("br", null), "Given this, lines 12 and 13 do not compile because listA could be a list of A or Object, and neither can be automatically cast down to a B or C. In contrast, lines 14 and 15 do compile because both are objects of type B (since C extends B, every C is also a B). As listA is guaranteed to handle at least type B, adding these is safe.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Line 17 compiles because no matter what specific type listB is (B or C), it is always safe to treat an element from that list as a B. This is not true for line 18, as the list might be a", " ", /*#__PURE__*/react_default.a.createElement("code", null, "List<B>"), ", which could contain objects that are not of type C. Lines 19 and 20 do not compile because the list might be a ", /*#__PURE__*/react_default.a.createElement("code", null, "List<C>"), ", making it unsafe to add a B. It could even be a list of an even more specific subtype of C. While we can see there is no more specific implementation than C in this file, the compiler cannot assume this as class D could extend B."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h3", {
+    className: "blog_heading",
+    id: "post"
+  }, "Post Exam"), "You will be sent an email with your result. You can access the result manually using the Oracle CertView website. They will also send you a detailed description of how to get your certification. Thus, I can say that after all the work,", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5",
+    target: "_blank"
+  }, "here it is!"), /*#__PURE__*/react_default.a.createElement("h2", {
+    className: "blog_heading",
+    id: "final"
+  }, "Final Thoughts"), "After all, was it worth it? I would say 100%. In hindsight, looking back at my Java knowledge prior to taking the OCP exam, I would say that now I know that I didn't know anything. Wherever this puts me (in the past and today) on the 'Mount Stupid' graph or the", " ", /*#__PURE__*/react_default.a.createElement("a", {
+    href: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+    target: "_blank"
+  }, "Dunning-Kruger effect"), " ", "is something I\u2019ll have to think about in the future. The exam is \u2014 as everyone who takes it says in forums and blogs \u2014 really difficult, but I am quite sure I will try to complete the OCP 25 whenever it comes out. This seems like a good way to really understand all the new features implemented. I am happy my collegue asked me to do this exam and motivated me whenever I had motivation issues. Thank you! I would not agree with the AI saying that I personally have now reached an 'elite level of mastery in the Java language', but I definitely improved a lot. When it comes to my daily work, I haven't encountered Java concepts I did not know and fully understand in a long time. ", /*#__PURE__*/react_default.a.createElement("br", null), "A few weeks ago, I was assigned the ", /*#__PURE__*/react_default.a.createElement("i", null, "privilege"), " to maintain a legacy Java 8 project waiting for its final coffin dance. It contained all kinds of retired Java features, all of which I was familiar with. Additionally, I found lots of implementations which can be improved. If this conclusion changes, I will update it in the future. To whoever reads this and is currently studying for their own OCP exam: Good luck, you got this! ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Thank you for reading this blog. Please share your thoughts, comments and ideas using the", " ", /*#__PURE__*/react_default.a.createElement(react_router_dom_min["Link"], {
+    to: "/kontakt"
+  }, "contact options"), " on this website. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 5: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
+    showLineNumbers: true,
+    wrapLongLines: "true",
+    className: "blog-code",
+    language: "java"
+  }, question5), /*#__PURE__*/react_default.a.createElement(collapse["a" /* default */], {
+    defaultActiveKey: ["1"],
+    ghost: true
+  }, /*#__PURE__*/react_default.a.createElement(Panel, {
+    header: "See Results and Explaination",
+    key: "0"
+  }, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "blog_code"
+  }, "0", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Did you see it? The stream may be long and look complicated, but it lacks a terminal operation. Since Java Streams are evaluated lazily, this stream is not executed at all. Note that if a terminal operation were added, the parallel stream would not cause any issues because an AtomicInteger is used. In that case, it would result in a count of 400."))), /*#__PURE__*/react_default.a.createElement("br", null)), /*#__PURE__*/react_default.a.createElement(Components["a" /* Footer */], null));
+};
+
+/* harmony default export */ var Blog_OCP21 = (OCP21_OCP21);
+// CONCATENATED MODULE: ./src/Classic/App.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var App_App = function App() {
+  var _useState = Object(react["useState"])("de"),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      language = _useState2[0],
+      setLanguage = _useState2[1];
+
+  var getText = function getText(key) {
+    if (key in translations["a" /* translations */][language]) {
+      return translations["a" /* translations */][language][key];
+    }
+
+    return translations["a" /* translations */]["de"][key];
+  };
+
+  return /*#__PURE__*/react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, /*#__PURE__*/react_default.a.createElement("div", {
+    className: "app"
+  }, /*#__PURE__*/react_default.a.createElement(helper["a" /* TranslationContext */].Provider, {
+    value: {
+      language: language,
+      locales: ["de", "en"],
+      setLanguage: setLanguage,
+      texts: translations["a" /* translations */],
+      getText: getText
+    }
+  }, /*#__PURE__*/react_default.a.createElement(react_router["Switch"], null, /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["f" /* Home */], {
+    game: false
+  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/projekte"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["i" /* Projects */], {
+    game: false
+  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/skills"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["k" /* Skills */], {
+    game: false
+  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/privat"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["a" /* AboutMe */], {
+    game: false
+  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/kontakt"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["d" /* Contact */], {
+    game: false
+  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/blog"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["c" /* Blog */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/blog/reisebericht-4-wochen-in-aveiro"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["b" /* Aveiro */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/blog/rustyrook"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["j" /* RustyRook */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/blog/ocp21"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Blog_OCP21, null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    exact: true,
+    path: "/impressum"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["g" /* Imprint */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
+    path: "/*"
+  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["h" /* NotFound */], null)))))));
+};
+
+/* harmony default export */ var Classic_App = (App_App);
+// CONCATENATED MODULE: ./src/Classic/index.js
+
+
+
+react_dom_default.a.render( /*#__PURE__*/react_default.a.createElement(Classic_App, null), document.getElementById('root'));
+
+/***/ }),
+/* 652 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 
 // EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/extends.js
 var esm_extends = __webpack_require__(4);
@@ -100277,7 +101974,7 @@ var esm_extends = __webpack_require__(4);
 var defineProperty = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js + 1 modules
-var RightOutlined = __webpack_require__(132);
+var RightOutlined = __webpack_require__(123);
 
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
 var classnames = __webpack_require__(2);
@@ -100290,25 +101987,28 @@ var esm_defineProperty = __webpack_require__(5);
 var toConsumableArray = __webpack_require__(18);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__(36);
+var classCallCheck = __webpack_require__(34);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-var createClass = __webpack_require__(37);
+var createClass = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__(39);
+var inherits = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
-var createSuper = __webpack_require__(38);
+var createSuper = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 var esm_typeof = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var toArray = __webpack_require__(26);
+var toArray = __webpack_require__(24);
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/shallowequal/index.js
-var shallowequal = __webpack_require__(173);
+var shallowequal = __webpack_require__(93);
 var shallowequal_default = /*#__PURE__*/__webpack_require__.n(shallowequal);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
@@ -100318,10 +102018,10 @@ var helpers_esm_extends = __webpack_require__(7);
 var objectWithoutProperties = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
-var es = __webpack_require__(46);
+var es = __webpack_require__(43);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
-var esm_slicedToArray = __webpack_require__(6);
+var slicedToArray = __webpack_require__(6);
 
 // CONCATENATED MODULE: ./node_modules/rc-collapse/es/PanelContent.js
 
@@ -100344,7 +102044,7 @@ var PanelContent = /*#__PURE__*/react["forwardRef"](function (props, ref) {
       role = props.role;
 
   var _React$useState = react["useState"](isActive || forceRender),
-      _React$useState2 = Object(esm_slicedToArray["a" /* default */])(_React$useState, 2),
+      _React$useState2 = Object(slicedToArray["a" /* default */])(_React$useState, 2),
       rendered = _React$useState2[0],
       setRendered = _React$useState2[1];
 
@@ -100742,16 +102442,16 @@ Collapse_Collapse.Panel = Panel;
 var es_Panel = es_Collapse.Panel;
 
 // EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
+var omit = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
+var context = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/motion.js
 var motion = __webpack_require__(54);
 
 // EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
-var reactNode = __webpack_require__(28);
+var reactNode = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/antd/es/collapse/CollapsePanel.js
 
@@ -100861,1663 +102561,7 @@ collapse_Collapse_Collapse.Panel = collapse_CollapsePanel;
 /* harmony default export */ var collapse_Collapse = (collapse_Collapse_Collapse);
 // CONCATENATED MODULE: ./node_modules/antd/es/collapse/index.js
 
-/* harmony default export */ var collapse = (collapse_Collapse);
-// EXTERNAL MODULE: ./node_modules/antd/es/divider/index.js
-var divider = __webpack_require__(326);
-
-// EXTERNAL MODULE: ./node_modules/react-router-dom/cjs/react-router-dom.min.js
-var react_router_dom_min = __webpack_require__(71);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
-var helpers_objectWithoutProperties = __webpack_require__(321);
-var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(helpers_objectWithoutProperties);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
-var helpers_toConsumableArray = __webpack_require__(136);
-var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(helpers_toConsumableArray);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
-var helpers_defineProperty = __webpack_require__(98);
-var defineProperty_default = /*#__PURE__*/__webpack_require__.n(helpers_defineProperty);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
-var helpers_extends = __webpack_require__(322);
-var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
-
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/create-element.js
-
-
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { defineProperty_default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-
-
-// Get all possible permutations of all power sets
-//
-// Super simple, non-algorithmic solution since the
-// number of class names will not be greater than 4
-function powerSetPermutations(arr) {
-  var arrLength = arr.length;
-  if (arrLength === 0 || arrLength === 1) return arr;
-  if (arrLength === 2) {
-    // prettier-ignore
-    return [arr[0], arr[1], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0])];
-  }
-  if (arrLength === 3) {
-    return [arr[0], arr[1], arr[2], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
-  }
-  if (arrLength >= 4) {
-    // Currently does not support more than 4 extra
-    // class names (after `.token` has been removed)
-    return [arr[0], arr[1], arr[2], arr[3], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3]), "".concat(arr[3], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
-  }
-}
-var classNameCombinations = {};
-function getClassNameCombinations(classNames) {
-  if (classNames.length === 0 || classNames.length === 1) return classNames;
-  var key = classNames.join('.');
-  if (!classNameCombinations[key]) {
-    classNameCombinations[key] = powerSetPermutations(classNames);
-  }
-  return classNameCombinations[key];
-}
-function createStyleObject(classNames) {
-  var elementStyle = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var stylesheet = arguments.length > 2 ? arguments[2] : undefined;
-  var nonTokenClassNames = classNames.filter(function (className) {
-    return className !== 'token';
-  });
-  var classNamesCombinations = getClassNameCombinations(nonTokenClassNames);
-  return classNamesCombinations.reduce(function (styleObject, className) {
-    return _objectSpread(_objectSpread({}, styleObject), stylesheet[className]);
-  }, elementStyle);
-}
-function createClassNameString(classNames) {
-  return classNames.join(' ');
-}
-function createChildren(stylesheet, useInlineStyles) {
-  var childrenCount = 0;
-  return function (children) {
-    childrenCount += 1;
-    return children.map(function (child, i) {
-      return createElement({
-        node: child,
-        stylesheet: stylesheet,
-        useInlineStyles: useInlineStyles,
-        key: "code-segment-".concat(childrenCount, "-").concat(i)
-      });
-    });
-  };
-}
-function createElement(_ref) {
-  var node = _ref.node,
-    stylesheet = _ref.stylesheet,
-    _ref$style = _ref.style,
-    style = _ref$style === void 0 ? {} : _ref$style,
-    useInlineStyles = _ref.useInlineStyles,
-    key = _ref.key;
-  var properties = node.properties,
-    type = node.type,
-    TagName = node.tagName,
-    value = node.value;
-  if (type === 'text') {
-    return value;
-  } else if (TagName) {
-    var childrenCreator = createChildren(stylesheet, useInlineStyles);
-    var props;
-    if (!useInlineStyles) {
-      props = _objectSpread(_objectSpread({}, properties), {}, {
-        className: createClassNameString(properties.className)
-      });
-    } else {
-      var allStylesheetSelectors = Object.keys(stylesheet).reduce(function (classes, selector) {
-        selector.split('.').forEach(function (className) {
-          if (!classes.includes(className)) classes.push(className);
-        });
-        return classes;
-      }, []);
-
-      // For compatibility with older versions of react-syntax-highlighter
-      var startingClassName = properties.className && properties.className.includes('token') ? ['token'] : [];
-      var className = properties.className && startingClassName.concat(properties.className.filter(function (className) {
-        return !allStylesheetSelectors.includes(className);
-      }));
-      props = _objectSpread(_objectSpread({}, properties), {}, {
-        className: createClassNameString(className) || undefined,
-        style: createStyleObject(properties.className, Object.assign({}, properties.style, style), stylesheet)
-      });
-    }
-    var children = childrenCreator(node.children);
-    return /*#__PURE__*/react_default.a.createElement(TagName, extends_default()({
-      key: key
-    }, props), children);
-  }
-}
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/checkForListedLanguage.js
-/* harmony default export */ var checkForListedLanguage = (function (astGenerator, language) {
-  var langs = astGenerator.listLanguages();
-  return langs.indexOf(language) !== -1;
-});
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/highlight.js
-
-
-
-var highlight_excluded = ["language", "children", "style", "customStyle", "codeTagProps", "useInlineStyles", "showLineNumbers", "showInlineLineNumbers", "startingLineNumber", "lineNumberContainerStyle", "lineNumberStyle", "wrapLines", "wrapLongLines", "lineProps", "renderer", "PreTag", "CodeTag", "code", "astGenerator"];
-function highlight_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function highlight_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? highlight_ownKeys(Object(t), !0).forEach(function (r) { defineProperty_default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : highlight_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-
-
-
-var newLineRegex = /\n/g;
-function getNewLines(str) {
-  return str.match(newLineRegex);
-}
-function getAllLineNumbers(_ref) {
-  var lines = _ref.lines,
-    startingLineNumber = _ref.startingLineNumber,
-    style = _ref.style;
-  return lines.map(function (_, i) {
-    var number = i + startingLineNumber;
-    return /*#__PURE__*/react_default.a.createElement("span", {
-      key: "line-".concat(i),
-      className: "react-syntax-highlighter-line-number",
-      style: typeof style === 'function' ? style(number) : style
-    }, "".concat(number, "\n"));
-  });
-}
-function AllLineNumbers(_ref2) {
-  var codeString = _ref2.codeString,
-    codeStyle = _ref2.codeStyle,
-    _ref2$containerStyle = _ref2.containerStyle,
-    containerStyle = _ref2$containerStyle === void 0 ? {
-      "float": 'left',
-      paddingRight: '10px'
-    } : _ref2$containerStyle,
-    _ref2$numberStyle = _ref2.numberStyle,
-    numberStyle = _ref2$numberStyle === void 0 ? {} : _ref2$numberStyle,
-    startingLineNumber = _ref2.startingLineNumber;
-  return /*#__PURE__*/react_default.a.createElement("code", {
-    style: Object.assign({}, codeStyle, containerStyle)
-  }, getAllLineNumbers({
-    lines: codeString.replace(/\n$/, '').split('\n'),
-    style: numberStyle,
-    startingLineNumber: startingLineNumber
-  }));
-}
-function getEmWidthOfNumber(num) {
-  return "".concat(num.toString().length, ".25em");
-}
-function getInlineLineNumber(lineNumber, inlineLineNumberStyle) {
-  return {
-    type: 'element',
-    tagName: 'span',
-    properties: {
-      key: "line-number--".concat(lineNumber),
-      className: ['comment', 'linenumber', 'react-syntax-highlighter-line-number'],
-      style: inlineLineNumberStyle
-    },
-    children: [{
-      type: 'text',
-      value: lineNumber
-    }]
-  };
-}
-function assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber) {
-  // minimally necessary styling for line numbers
-  var defaultLineNumberStyle = {
-    display: 'inline-block',
-    minWidth: getEmWidthOfNumber(largestLineNumber),
-    paddingRight: '1em',
-    textAlign: 'right',
-    userSelect: 'none'
-  };
-  // prep custom styling
-  var customLineNumberStyle = typeof lineNumberStyle === 'function' ? lineNumberStyle(lineNumber) : lineNumberStyle;
-  // combine
-  var assembledStyle = highlight_objectSpread(highlight_objectSpread({}, defaultLineNumberStyle), customLineNumberStyle);
-  return assembledStyle;
-}
-function createLineElement(_ref3) {
-  var children = _ref3.children,
-    lineNumber = _ref3.lineNumber,
-    lineNumberStyle = _ref3.lineNumberStyle,
-    largestLineNumber = _ref3.largestLineNumber,
-    showInlineLineNumbers = _ref3.showInlineLineNumbers,
-    _ref3$lineProps = _ref3.lineProps,
-    lineProps = _ref3$lineProps === void 0 ? {} : _ref3$lineProps,
-    _ref3$className = _ref3.className,
-    className = _ref3$className === void 0 ? [] : _ref3$className,
-    showLineNumbers = _ref3.showLineNumbers,
-    wrapLongLines = _ref3.wrapLongLines,
-    _ref3$wrapLines = _ref3.wrapLines,
-    wrapLines = _ref3$wrapLines === void 0 ? false : _ref3$wrapLines;
-  var properties = wrapLines ? highlight_objectSpread({}, typeof lineProps === 'function' ? lineProps(lineNumber) : lineProps) : {};
-  properties['className'] = properties['className'] ? [].concat(toConsumableArray_default()(properties['className'].trim().split(/\s+/)), toConsumableArray_default()(className)) : className;
-  if (lineNumber && showInlineLineNumbers) {
-    var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
-    children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
-  }
-  if (wrapLongLines & showLineNumbers) {
-    properties.style = highlight_objectSpread({
-      display: 'flex'
-    }, properties.style);
-  }
-  return {
-    type: 'element',
-    tagName: 'span',
-    properties: properties,
-    children: children
-  };
-}
-function flattenCodeTree(tree) {
-  var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-  var newTree = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-  for (var i = 0; i < tree.length; i++) {
-    var node = tree[i];
-    if (node.type === 'text') {
-      newTree.push(createLineElement({
-        children: [node],
-        className: toConsumableArray_default()(new Set(className))
-      }));
-    } else if (node.children) {
-      var classNames = className.concat(node.properties.className);
-      flattenCodeTree(node.children, classNames).forEach(function (i) {
-        return newTree.push(i);
-      });
-    }
-  }
-  return newTree;
-}
-function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines) {
-  var _ref4;
-  var tree = flattenCodeTree(codeTree.value);
-  var newTree = [];
-  var lastLineBreakIndex = -1;
-  var index = 0;
-  function createWrappedLine(children, lineNumber) {
-    var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-    return createLineElement({
-      children: children,
-      lineNumber: lineNumber,
-      lineNumberStyle: lineNumberStyle,
-      largestLineNumber: largestLineNumber,
-      showInlineLineNumbers: showInlineLineNumbers,
-      lineProps: lineProps,
-      className: className,
-      showLineNumbers: showLineNumbers,
-      wrapLongLines: wrapLongLines,
-      wrapLines: wrapLines
-    });
-  }
-  function createUnwrappedLine(children, lineNumber) {
-    if (showLineNumbers && lineNumber && showInlineLineNumbers) {
-      var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
-      children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
-    }
-    return children;
-  }
-  function createLine(children, lineNumber) {
-    var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-    return wrapLines || className.length > 0 ? createWrappedLine(children, lineNumber, className) : createUnwrappedLine(children, lineNumber);
-  }
-  var _loop = function _loop() {
-    var node = tree[index];
-    var value = node.children[0].value;
-    var newLines = getNewLines(value);
-    if (newLines) {
-      var splitValue = value.split('\n');
-      splitValue.forEach(function (text, i) {
-        var lineNumber = showLineNumbers && newTree.length + startingLineNumber;
-        var newChild = {
-          type: 'text',
-          value: "".concat(text, "\n")
-        };
-
-        // if it's the first line
-        if (i === 0) {
-          var _children = tree.slice(lastLineBreakIndex + 1, index).concat(createLineElement({
-            children: [newChild],
-            className: node.properties.className
-          }));
-          var _line = createLine(_children, lineNumber);
-          newTree.push(_line);
-
-          // if it's the last line
-        } else if (i === splitValue.length - 1) {
-          var stringChild = tree[index + 1] && tree[index + 1].children && tree[index + 1].children[0];
-          var lastLineInPreviousSpan = {
-            type: 'text',
-            value: "".concat(text)
-          };
-          if (stringChild) {
-            var newElem = createLineElement({
-              children: [lastLineInPreviousSpan],
-              className: node.properties.className
-            });
-            tree.splice(index + 1, 0, newElem);
-          } else {
-            var _children2 = [lastLineInPreviousSpan];
-            var _line2 = createLine(_children2, lineNumber, node.properties.className);
-            newTree.push(_line2);
-          }
-
-          // if it's neither the first nor the last line
-        } else {
-          var _children3 = [newChild];
-          var _line3 = createLine(_children3, lineNumber, node.properties.className);
-          newTree.push(_line3);
-        }
-      });
-      lastLineBreakIndex = index;
-    }
-    index++;
-  };
-  while (index < tree.length) {
-    _loop();
-  }
-  if (lastLineBreakIndex !== tree.length - 1) {
-    var children = tree.slice(lastLineBreakIndex + 1, tree.length);
-    if (children && children.length) {
-      var lineNumber = showLineNumbers && newTree.length + startingLineNumber;
-      var line = createLine(children, lineNumber);
-      newTree.push(line);
-    }
-  }
-  return wrapLines ? newTree : (_ref4 = []).concat.apply(_ref4, newTree);
-}
-function defaultRenderer(_ref5) {
-  var rows = _ref5.rows,
-    stylesheet = _ref5.stylesheet,
-    useInlineStyles = _ref5.useInlineStyles;
-  return rows.map(function (node, i) {
-    return createElement({
-      node: node,
-      stylesheet: stylesheet,
-      useInlineStyles: useInlineStyles,
-      key: "code-segement".concat(i)
-    });
-  });
-}
-
-// only highlight.js has the highlightAuto method
-function isHighlightJs(astGenerator) {
-  return astGenerator && typeof astGenerator.highlightAuto !== 'undefined';
-}
-function getCodeTree(_ref6) {
-  var astGenerator = _ref6.astGenerator,
-    language = _ref6.language,
-    code = _ref6.code,
-    defaultCodeValue = _ref6.defaultCodeValue;
-  // figure out whether we're using lowlight/highlight or refractor/prism
-  // then attempt highlighting accordingly
-
-  // lowlight/highlight?
-  if (isHighlightJs(astGenerator)) {
-    var hasLanguage = checkForListedLanguage(astGenerator, language);
-    if (language === 'text') {
-      return {
-        value: defaultCodeValue,
-        language: 'text'
-      };
-    } else if (hasLanguage) {
-      return astGenerator.highlight(language, code);
-    } else {
-      return astGenerator.highlightAuto(code);
-    }
-  }
-
-  // must be refractor/prism, then
-  try {
-    return language && language !== 'text' ? {
-      value: astGenerator.highlight(code, language)
-    } : {
-      value: defaultCodeValue
-    };
-  } catch (e) {
-    return {
-      value: defaultCodeValue
-    };
-  }
-}
-/* harmony default export */ var highlight = (function (defaultAstGenerator, defaultStyle) {
-  return function SyntaxHighlighter(_ref7) {
-    var language = _ref7.language,
-      children = _ref7.children,
-      _ref7$style = _ref7.style,
-      style = _ref7$style === void 0 ? defaultStyle : _ref7$style,
-      _ref7$customStyle = _ref7.customStyle,
-      customStyle = _ref7$customStyle === void 0 ? {} : _ref7$customStyle,
-      _ref7$codeTagProps = _ref7.codeTagProps,
-      codeTagProps = _ref7$codeTagProps === void 0 ? {
-        className: language ? "language-".concat(language) : undefined,
-        style: highlight_objectSpread(highlight_objectSpread({}, style['code[class*="language-"]']), style["code[class*=\"language-".concat(language, "\"]")])
-      } : _ref7$codeTagProps,
-      _ref7$useInlineStyles = _ref7.useInlineStyles,
-      useInlineStyles = _ref7$useInlineStyles === void 0 ? true : _ref7$useInlineStyles,
-      _ref7$showLineNumbers = _ref7.showLineNumbers,
-      showLineNumbers = _ref7$showLineNumbers === void 0 ? false : _ref7$showLineNumbers,
-      _ref7$showInlineLineN = _ref7.showInlineLineNumbers,
-      showInlineLineNumbers = _ref7$showInlineLineN === void 0 ? true : _ref7$showInlineLineN,
-      _ref7$startingLineNum = _ref7.startingLineNumber,
-      startingLineNumber = _ref7$startingLineNum === void 0 ? 1 : _ref7$startingLineNum,
-      lineNumberContainerStyle = _ref7.lineNumberContainerStyle,
-      _ref7$lineNumberStyle = _ref7.lineNumberStyle,
-      lineNumberStyle = _ref7$lineNumberStyle === void 0 ? {} : _ref7$lineNumberStyle,
-      wrapLines = _ref7.wrapLines,
-      _ref7$wrapLongLines = _ref7.wrapLongLines,
-      wrapLongLines = _ref7$wrapLongLines === void 0 ? false : _ref7$wrapLongLines,
-      _ref7$lineProps = _ref7.lineProps,
-      lineProps = _ref7$lineProps === void 0 ? {} : _ref7$lineProps,
-      renderer = _ref7.renderer,
-      _ref7$PreTag = _ref7.PreTag,
-      PreTag = _ref7$PreTag === void 0 ? 'pre' : _ref7$PreTag,
-      _ref7$CodeTag = _ref7.CodeTag,
-      CodeTag = _ref7$CodeTag === void 0 ? 'code' : _ref7$CodeTag,
-      _ref7$code = _ref7.code,
-      code = _ref7$code === void 0 ? (Array.isArray(children) ? children[0] : children) || '' : _ref7$code,
-      astGenerator = _ref7.astGenerator,
-      rest = objectWithoutProperties_default()(_ref7, highlight_excluded);
-    astGenerator = astGenerator || defaultAstGenerator;
-    var allLineNumbers = showLineNumbers ? /*#__PURE__*/react_default.a.createElement(AllLineNumbers, {
-      containerStyle: lineNumberContainerStyle,
-      codeStyle: codeTagProps.style || {},
-      numberStyle: lineNumberStyle,
-      startingLineNumber: startingLineNumber,
-      codeString: code
-    }) : null;
-    var defaultPreStyle = style.hljs || style['pre[class*="language-"]'] || {
-      backgroundColor: '#fff'
-    };
-    var generatorClassName = isHighlightJs(astGenerator) ? 'hljs' : 'prismjs';
-    var preProps = useInlineStyles ? Object.assign({}, rest, {
-      style: Object.assign({}, defaultPreStyle, customStyle)
-    }) : Object.assign({}, rest, {
-      className: rest.className ? "".concat(generatorClassName, " ").concat(rest.className) : generatorClassName,
-      style: Object.assign({}, customStyle)
-    });
-    if (wrapLongLines) {
-      codeTagProps.style = highlight_objectSpread({
-        whiteSpace: 'pre-wrap'
-      }, codeTagProps.style);
-    } else {
-      codeTagProps.style = highlight_objectSpread({
-        whiteSpace: 'pre'
-      }, codeTagProps.style);
-    }
-    if (!astGenerator) {
-      return /*#__PURE__*/react_default.a.createElement(PreTag, preProps, allLineNumbers, /*#__PURE__*/react_default.a.createElement(CodeTag, codeTagProps, code));
-    }
-
-    /*
-     * Some custom renderers rely on individual row elements so we need to turn wrapLines on
-     * if renderer is provided and wrapLines is undefined.
-     */
-    if (wrapLines === undefined && renderer || wrapLongLines) wrapLines = true;
-    renderer = renderer || defaultRenderer;
-    var defaultCodeValue = [{
-      type: 'text',
-      value: code
-    }];
-    var codeTree = getCodeTree({
-      astGenerator: astGenerator,
-      language: language,
-      code: code,
-      defaultCodeValue: defaultCodeValue
-    });
-    if (codeTree.language === null) {
-      codeTree.value = defaultCodeValue;
-    }
-
-    // determine largest line number so that we can force minWidth on all linenumber elements
-    var lineCount = codeTree.value.length;
-    if (lineCount === 1 && codeTree.value[0].type === 'text') {
-      // Since codeTree for an unparsable text (e.g. 'a\na\na') is [{ type: 'text', value: 'a\na\na' }]
-      lineCount = codeTree.value[0].value.split('\n').length;
-    }
-    var largestLineNumber = lineCount + startingLineNumber;
-    var rows = processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines);
-    return /*#__PURE__*/react_default.a.createElement(PreTag, preProps, /*#__PURE__*/react_default.a.createElement(CodeTag, codeTagProps, !showInlineLineNumbers && allLineNumbers, renderer({
-      rows: rows,
-      stylesheet: style,
-      useInlineStyles: useInlineStyles
-    })));
-  };
-});
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/styles/hljs/default-style.js
-/* harmony default export */ var default_style = ({
-  "hljs": {
-    "display": "block",
-    "overflowX": "auto",
-    "padding": "0.5em",
-    "background": "#F0F0F0",
-    "color": "#444"
-  },
-  "hljs-subst": {
-    "color": "#444"
-  },
-  "hljs-comment": {
-    "color": "#888888"
-  },
-  "hljs-keyword": {
-    "fontWeight": "bold"
-  },
-  "hljs-attribute": {
-    "fontWeight": "bold"
-  },
-  "hljs-selector-tag": {
-    "fontWeight": "bold"
-  },
-  "hljs-meta-keyword": {
-    "fontWeight": "bold"
-  },
-  "hljs-doctag": {
-    "fontWeight": "bold"
-  },
-  "hljs-name": {
-    "fontWeight": "bold"
-  },
-  "hljs-type": {
-    "color": "#880000"
-  },
-  "hljs-string": {
-    "color": "#880000"
-  },
-  "hljs-number": {
-    "color": "#880000"
-  },
-  "hljs-selector-id": {
-    "color": "#880000"
-  },
-  "hljs-selector-class": {
-    "color": "#880000"
-  },
-  "hljs-quote": {
-    "color": "#880000"
-  },
-  "hljs-template-tag": {
-    "color": "#880000"
-  },
-  "hljs-deletion": {
-    "color": "#880000"
-  },
-  "hljs-title": {
-    "color": "#880000",
-    "fontWeight": "bold"
-  },
-  "hljs-section": {
-    "color": "#880000",
-    "fontWeight": "bold"
-  },
-  "hljs-regexp": {
-    "color": "#BC6060"
-  },
-  "hljs-symbol": {
-    "color": "#BC6060"
-  },
-  "hljs-variable": {
-    "color": "#BC6060"
-  },
-  "hljs-template-variable": {
-    "color": "#BC6060"
-  },
-  "hljs-link": {
-    "color": "#BC6060"
-  },
-  "hljs-selector-attr": {
-    "color": "#BC6060"
-  },
-  "hljs-selector-pseudo": {
-    "color": "#BC6060"
-  },
-  "hljs-literal": {
-    "color": "#78A960"
-  },
-  "hljs-built_in": {
-    "color": "#397300"
-  },
-  "hljs-bullet": {
-    "color": "#397300"
-  },
-  "hljs-code": {
-    "color": "#397300"
-  },
-  "hljs-addition": {
-    "color": "#397300"
-  },
-  "hljs-meta": {
-    "color": "#1f7199"
-  },
-  "hljs-meta-string": {
-    "color": "#4d99bf"
-  },
-  "hljs-emphasis": {
-    "fontStyle": "italic"
-  },
-  "hljs-strong": {
-    "fontWeight": "bold"
-  }
-});
-// EXTERNAL MODULE: ./node_modules/lowlight/index.js
-var lowlight = __webpack_require__(320);
-var lowlight_default = /*#__PURE__*/__webpack_require__.n(lowlight);
-
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/languages/hljs/supported-languages.js
-//
-// This file has been auto-generated by the `npm run build-languages-hljs` task
-//
-
-/* harmony default export */ var supported_languages = (['1c', 'abnf', 'accesslog', 'actionscript', 'ada', 'angelscript', 'apache', 'applescript', 'arcade', 'arduino', 'armasm', 'asciidoc', 'aspectj', 'autohotkey', 'autoit', 'avrasm', 'awk', 'axapta', 'bash', 'basic', 'bnf', 'brainfuck', 'c-like', 'c', 'cal', 'capnproto', 'ceylon', 'clean', 'clojure-repl', 'clojure', 'cmake', 'coffeescript', 'coq', 'cos', 'cpp', 'crmsh', 'crystal', 'csharp', 'csp', 'css', 'd', 'dart', 'delphi', 'diff', 'django', 'dns', 'dockerfile', 'dos', 'dsconfig', 'dts', 'dust', 'ebnf', 'elixir', 'elm', 'erb', 'erlang-repl', 'erlang', 'excel', 'fix', 'flix', 'fortran', 'fsharp', 'gams', 'gauss', 'gcode', 'gherkin', 'glsl', 'gml', 'go', 'golo', 'gradle', 'groovy', 'haml', 'handlebars', 'haskell', 'haxe', 'hsp', 'htmlbars', 'http', 'hy', 'inform7', 'ini', 'irpf90', 'isbl', 'java', 'javascript', 'jboss-cli', 'json', 'julia-repl', 'julia', 'kotlin', 'lasso', 'latex', 'ldif', 'leaf', 'less', 'lisp', 'livecodeserver', 'livescript', 'llvm', 'lsl', 'lua', 'makefile', 'markdown', 'mathematica', 'matlab', 'maxima', 'mel', 'mercury', 'mipsasm', 'mizar', 'mojolicious', 'monkey', 'moonscript', 'n1ql', 'nginx', 'nim', 'nix', 'node-repl', 'nsis', 'objectivec', 'ocaml', 'openscad', 'oxygene', 'parser3', 'perl', 'pf', 'pgsql', 'php-template', 'php', 'plaintext', 'pony', 'powershell', 'processing', 'profile', 'prolog', 'properties', 'protobuf', 'puppet', 'purebasic', 'python-repl', 'python', 'q', 'qml', 'r', 'reasonml', 'rib', 'roboconf', 'routeros', 'rsl', 'ruby', 'ruleslanguage', 'rust', 'sas', 'scala', 'scheme', 'scilab', 'scss', 'shell', 'smali', 'smalltalk', 'sml', 'sqf', 'sql', 'sql_more', 'stan', 'stata', 'step21', 'stylus', 'subunit', 'swift', 'taggerscript', 'tap', 'tcl', 'thrift', 'tp', 'twig', 'typescript', 'vala', 'vbnet', 'vbscript-html', 'vbscript', 'verilog', 'vhdl', 'vim', 'x86asm', 'xl', 'xml', 'xquery', 'yaml', 'zephir']);
-// CONCATENATED MODULE: ./node_modules/react-syntax-highlighter/dist/esm/default-highlight.js
-
-
-
-
-var highlighter = highlight(lowlight_default.a, default_style);
-highlighter.supportedLanguages = supported_languages;
-/* harmony default export */ var default_highlight = (highlighter);
-// CONCATENATED MODULE: ./src/Pages/Blog/OCP21.js
-
-
-
-
-
-
-
-var OCP21_Panel = collapse.Panel;
-var question1 = "\npublic class Question1 {\n  public static void main(String... args) {\n    String pre = \"Ben\";\n    String post = \"jamin\";\n\n    String s1 = \"Benjamin\";\n    String s2 = pre + post;\n    String s3 = \"Ben\" + \"jamin\";\n    String s4 = getName();\n\n    System.out.println(s1.equals(s2));\n    System.out.println(s1 == s2);\n    System.out.println(s1 == s3);\n    System.out.println(s1 == s4);\n    System.out.println(s3.equals(s4));\n  }\n  static String getName() {\n    return \"Benjamin\";\n  }\n}\n";
-var question2 = "\npublic class Question2{\npublic static void main(String... args) {\n\tgetName(null)\n}\n\nstatic void getName(Number number) {\n    System.out.println(\"Number\");\n}\n\nstatic void getName(Object object) {\n    System.out.println(\"Object\");\n}\n\nstatic void getName(Integer integer ) {\n    System.out.println(\"Integer\");\n}\n}\n";
-var question3 = "\nabstract class A {\n  int i = 10;\n\n  void getName() {\n    System.out.println(\"Interface A\");\n  }\n}\nabstract class B extends A {\n  int i = 20;\n\n  void getName() {\n    System.out.println(\"Interface B\");\n  }\n}\n\npublic class Question3 extends B {\n  int i = 30;\n\n  void getId() {\n    System.out.println(i);  \n  }\n\n  void getName() {\n    System.out.println(\"Question3\");\n  }\n\n  public static void main(String... args) {\n    A object = new Question3();\n\n    System.out.println(object.i);\n    object.getName();\n  }\n}\n";
-var question4 = "\nclass A {};\nclass B extends A {};\nclass C extends B {};\n\npublic class Question4 {\n\n  public static void main(String...args) {\n    List < ? super B > listA = new ArrayList();\n    List < ? extends B > listB = new ArrayList();\n\n    //B b = listA.get(0);\n    //C c = listA.get(0);\n    //listA.add(new B());\n    //listA.add(new C());\n\n    //B b = listB.get(0); \n    //C c = listB.get(0);\n    //listB.add(new B());\n    //listB.add(new C());\n  }\n}\n\n";
-var question5 = "\npublic class Question5{\n    \n    public static void main(String... args){\n        AtomicInteger count = new AtomicInteger(0);\n\n        var list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n        \n        Predicate<Integer> predicate = i -> i > 5;\n        list.stream()\n            .parallel()\n            .map(x -> x + 10)\n            .filter(x -> x %2 == 0)\n            .map(x -> x * 5)\n            .filter(predicate)\n            .peek(i -> count.getAndAdd(i));\n            \n        System.out.println(count);\n    }\n}\n\n";
-
-var OCP21_OCP21 = function OCP21() {
-  var _useContext = Object(react["useContext"])(helper["a" /* TranslationContext */]),
-      getText = _useContext.getText;
-
-  return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(Helmet["a" /* Helmet */], null, /*#__PURE__*/react_default.a.createElement("title", null, "Java SE 21 Developer Professional"), /*#__PURE__*/react_default.a.createElement("meta", {
-    name: "description",
-    content: "I took and passed the 'Java SE 21 Developer Professional' exam. I share my experience and my learning"
-  }), /*#__PURE__*/react_default.a.createElement("meta", {
-    name: "keywords",
-    content: "OCP, 21, Java, Java SE 21 Developer Professional, 1Z0-830"
-  }), /*#__PURE__*/react_default.a.createElement("meta", {
-    property: "og:title",
-    content: "Java SE 21 Developer Professional"
-  }), /*#__PURE__*/react_default.a.createElement("meta", {
-    property: "og:description",
-    content: "I took and passed the 'Java SE 21 Developer Professional' exam. I share my experience and my learning"
-  }), /*#__PURE__*/react_default.a.createElement("meta", {
-    property: "canonical",
-    content: "https://bzenth.de/blog/ocp21/"
-  })), /*#__PURE__*/react_default.a.createElement(Components["b" /* Header */], null), /*#__PURE__*/react_default.a.createElement("div", {
-    className: "page_classic blog_page"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_date"
-  }, "written in May 2026"), /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_translation"
-  }, getText("blog.onlyEnglish")), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: "blog_heading"
-  }, "My Journey to OCP21: A Personal Experience Report"), "Back in 2025, my back then teamlead and now coworker/mentor asked me if we should take this really difficult Java exam called \"Oracle Certified Professional: Java SE 21 Developer\" (OCP21). ", /*#__PURE__*/react_default.a.createElement("br", null), "I didn't know much about the OCP21 back then, but I successfully passed the exam this week. During my preparation, I was constantly looking for other people describing their experience taking the exam, but there are only a few. Therefore, I decided to share my own experience learning and taking the exam for all the people out there interested in taking on the OCP themselves. To make it a better read, I will add some questions I created myself to this post regarding topics most of the people working with Java are using on their daily basis. (They might be hard to read on smartphones thus I recommend solving them on your computer) ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("i", null, /*#__PURE__*/react_default.a.createElement("b", null, "Note:"), " I am not allowed - nor willing - to share questions I encountered during my exam. The following questions are entirely self-created practice examples inspired by public Java topics covered in the certification syllabus and are not based on actual exam questions. Examples within the text are based on things that came to my mind in that moment and not on actual exam questions."), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("ol", {
-    className: "blog_content",
-    role: "list"
-  }, /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#what"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "What is the OCP21?"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#learning"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Learning for the Exam"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#exam"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Taking the exam")), /*#__PURE__*/react_default.a.createElement("ul", null, /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#format"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Format"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#buying"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Buying"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#schedule"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Schedule"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#examitself"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "The Exam itself"))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#post"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Post Exam"))))), /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
-    href: "#final"
-  }, /*#__PURE__*/react_default.a.createElement("span", {
-    className: "title"
-  }, "Final Thoughts")))), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: "blog_heading",
-    id: "what"
-  }, "What is the OCP21?"), "For the people that don't know the OCP Exam, I asked an AI to describe the exam in a few sentences:", /*#__PURE__*/react_default.a.createElement("pre", {
-    className: "blog_code_pre"
-  }, /*#__PURE__*/react_default.a.createElement("i", null, "\"The OCP 21 Java Exam is essentially the 'Black Belt' of the programming world. Officially known as the Oracle Certified Professional: Java SE 21 Developer certification, it serves as the global gold standard for proving that a developer has reached a professional, elite level of mastery in the Java language.\"")), "The scope of the exam can be found", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    target: "_blank",
-    href: "https://mylearn.oracle.com/ou/exam/java-se-21-developer-professional-1z0-830/40805/139080/220555"
-  }, "here"), ". If I had to describe the scope within one sentence I would say that 'if it is within the language it is within the scope of the exam'.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 1: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
-    showLineNumbers: true,
-    wrapLongLines: "true",
-    className: "blog-code",
-    language: "java"
-  }, question1), /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["1"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See Results and Explaination",
-    key: "0"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_code"
-  }, "true false true true true", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "There are some things to know here. ", /*#__PURE__*/react_default.a.createElement("br", null), "First: The difference between ", /*#__PURE__*/react_default.a.createElement("code", null, ".equals()"), " and ", /*#__PURE__*/react_default.a.createElement("code", null, "=="), " is that ", /*#__PURE__*/react_default.a.createElement("code", null, ".equals()"), " ", "checks for the equality of both objects, while ", /*#__PURE__*/react_default.a.createElement("code", null, "=="), " only compares the objects' references. Thus, line 12 is true, while line 13 is false, as both strings reference different objects. ", /*#__PURE__*/react_default.a.createElement("br", null), "Second: Line 14 is where some \"magic\" happens. Java uses a String Pool for compile-time constant strings. As a string is immutable, all compile-time constant strings refer to the same object in memory. The compiler detects the concatenation of \"Ben\" and \"jamin\" at compile time and thus uses the existing string from the pool. Given this, ", /*#__PURE__*/react_default.a.createElement("code", null, "s1 == s3"), " is true."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: "blog_heading",
-    id: "learning"
-  }, "Learning for the Exam"), "My initial learning process, and what I can recommend to all, is the 'OCP Study Guide' by", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://www.selikoff.net/ocp21/",
-    target: "_blank"
-  }, "Jeanne Boyarsky and Scott Selikoff"), ". ", /*#__PURE__*/react_default.a.createElement("br", null), "Both have created similar books for the OCP 11 and OCP 17 (Java versions). This almost 1,000-page book is split into 14 chapters, starting with basic building blocks and ending with I/O. It ends each chapter with questions regarding that topic. I read the book and each chapter multiple times, and I think it is important to really understand each individual topic. ", /*#__PURE__*/react_default.a.createElement("br", null), "I used it as a guide and did deep dives into each topic I wasn't comfortable with. My favorites have been the JEPs regarding each topic as they, in my opinion, provide a great reasoning for the implementation of some features, which then helps (at least me) to use these (e.g.,", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://openjdk.org/jeps/444",
-    target: "_blank"
-  }, "on Virtual Threads"), "). ", /*#__PURE__*/react_default.a.createElement("br", null), " My recommendation is to also actively use these features. I created a repo for my learning process and continuously developed dummy features within this. At least for me, it is easier to understand how to compile Java code on the command line when having put some code on the module path multiple times (vs. just reading about it). I dont know how many more times I will compile and run my java programms using the terminal vs. 'just' starting them within my IDE but it is within the scope of the exam so it is time to learn it and I think it helps my understanding of the language I am working with on a daily basis.", /*#__PURE__*/react_default.a.createElement("br", null), " As I am only 28 years old, I am in fact almost 2 years younger than Java itself. Thus, I only used the language for a small period of time. Reading the study guide helped me understand older features, backward compatibility, and such. Thus, I can also recommend this book to people who just want to improve their Java knowledge. Knowing why ", /*#__PURE__*/react_default.a.createElement("code", null, "ThreadLocal"), " was implemented is useful for understanding why", " ", /*#__PURE__*/react_default.a.createElement("code", null, "Scoped Values"), " are added in Java 25.", /*#__PURE__*/react_default.a.createElement("br", null), " The numbers guy that I am, I wrote down all my results for the chapters, assessment tests, and test exams.", /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["0"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See my results here",
-    key: "1"
-  }, /*#__PURE__*/react_default.a.createElement("div", null, "Note: I did some of these questions multiple times (with months inbetween). I include only the result of my last run. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 1: 22/23 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 2: 15/20 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 3: 25/30 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 4: 17/22 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 5: 16/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 6: 22/26 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 7: 18/30 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 8: 17/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 9: 14/23 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 10: 21/21 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 11: 21/26 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 12: 16/25 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 13: 19/25 ", /*#__PURE__*/react_default.a.createElement("br", null), "Chapter 14: 18/25 ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 1: 30/50 ", /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 2: 28/50 ", /*#__PURE__*/react_default.a.createElement("br", null), "Testexam 3: 43/50 ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null)))), "Even though this may all be fun and exciting, there are some parts you \u2014 in my opinion \u2014 just need to learn as they may be used within the exam. The study guide does a good job here, mentioning whenever you need to simply know something.", /*#__PURE__*/react_default.a.createElement("figure", {
-    className: "blog_figure_left"
-  }, /*#__PURE__*/react_default.a.createElement("img", {
-    className: "blog_flashcards blog_img",
-    "aria-label": "All my flashcards and a tenisball"
-  }), /*#__PURE__*/react_default.a.createElement("figcaption", {
-    className: "blog_img_text"
-  }, "317 flashcards or one serve and volley at Wimbledon. ;)")), /*#__PURE__*/react_default.a.createElement("br", null), " It's up to you to decide if you need to know that a Queue has two functions to read a value, of which", " ", /*#__PURE__*/react_default.a.createElement("code", null, ".element()"), " throws a runtime exception if the queue is empty while ", /*#__PURE__*/react_default.a.createElement("code", null, ".peek()"), " returns null. I find it useful to know such things myself. I've had good experiences being able to provide actual feedback on pull requests (e.g., regarding IO) without the need to check the documentation. To provide you with a number (at the end): I had (yes, I counted them for this) 317 flashcards on my desk, which is definitely on the higher count of what I think is needed, but I wanted to be safe, not sorry. The example with the Queue was one flashcard (with the addition of the other Queue functions ", /*#__PURE__*/react_default.a.createElement("code", null, "add(T), element(), offer(T), poll()"), ").", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "I also had a note pad on my desk where I wrote down all special cases I stumbled across during my learning. To provide an example: ", /*#__PURE__*/react_default.a.createElement("br", null), "Did you know, that dividing an Integer or Long with 0 results in an ArithmeticException (RuntimeException)? But what happens when you do this with an float or double? You guessed correctly, the result is positive infinity. (With an extra function ", /*#__PURE__*/react_default.a.createElement("code", null, ".isInfinite()"), " for the reference type Double and Float) ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), " At this point, I felt well prepared to take on the exam for the first time. I failed my first attempt in a nail-biter with 33 out of 34 correct answers (required to pass). ", /*#__PURE__*/react_default.a.createElement("br", null), " Which meant: back to the drawing board. In hindsight, I think I am actually happy I did not pass the exam within my first attempt, as I did learn much more afterwards. To improve my knowledge after this attempt, I used the mock exams from Enthuware. I took all but two tests (total of 18 mock exams with 4 foundation tests) and scored an average score of 74% in them. Similar to the study guide, I used these tests as a baseline and read about all kinds of topics. I spend over an month of learning between my first and second attempt.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 2: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
-    showLineNumbers: true,
-    wrapLongLines: "true",
-    className: "blog-code",
-    language: "java"
-  }, question2), /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["1"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See Results and Explaination",
-    key: "0"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_code"
-  }, "Integer", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "The Output is Integer, as an Integer is the most specific within the three options, as it is a sub-type of Number which is a sub-type of Object. ", /*#__PURE__*/react_default.a.createElement("br", null), "If we add a function with the input type String it would not compile, as the compiler cannot tell if the function for the type String or Integer should be selected."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: "blog_heading",
-    id: "exam"
-  }, "Taking the exam"), /*#__PURE__*/react_default.a.createElement("h3", {
-    className: "blog_heading",
-    id: "format"
-  }, "Format"), "The exam can be taken online. It consists of 50 multiple choice questions, of which you need to correctly answer 34 in a given time of two hours. One question contains up to 10 options (I did not count them, that's what the study guide says :D), of which you need to choose a given number of options. The exam will tell you how many answers are correct. Some of these answers are really long (the study guide says up to 30 lines of code each). Within both of my takes, I only had a few minutes left after the last question (which is odd, as I never had issues with time in all the exams I have taken in my life). 2.5 minutes for each question sound a lot, but this time is short when there are multiple options and you need to evaulate them all one by one.", /*#__PURE__*/react_default.a.createElement("h3", {
-    className: "blog_heading",
-    id: "buying"
-  }, "Buying"), "To take the exam, you need to buy an 'attempt'. Selikoff provides a great", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://www.selikoff.net/2024/07/18/paying-for-the-java-certification-online-2024-edition/",
-    target: "_blank"
-  }, "guide"), " ", "for this. An important note is that if your employer pays for this exam, the 'exam attempts' will be granted to the account linked to the invoice address. If no account for this email address exists, you need to create one. At least in my opinion, that's an important note, as it may not be a good idea to add, e.g., a general company-wide email address or accounting as an invoice recipient. The invoice email address account is then able to send these exam attempts to other accounts. I guess this makes sense for companies where employees regularly take exams at Oracle and thus the company just buys 30 exam attempts and uses these whenever needed.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 3: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
-    showLineNumbers: true,
-    wrapLongLines: "true",
-    className: "blog-code",
-    language: "java"
-  }, question3), /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["1"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See Results and Explaination",
-    key: "0"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_code"
-  }, "10 Question3", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "The function ", /*#__PURE__*/react_default.a.createElement("code", null, "getName()"), " is correctly overridden; thus, even though the reference in line 25 is of type A the object it references is still of the type Question3. Thus polymorphism is applied and the function from Question3 is called. Note that due to the fact that the reference is of the type A this type 'decides' what functions are available. Calling ", /*#__PURE__*/react_default.a.createElement("code", null, "object.getId()"), " would not compile as this function is not available for A. Casting it to the type Question3 would allow us to call the function", " ", /*#__PURE__*/react_default.a.createElement("code", null, "((Question3) object).getId()"), ". This does not apply to fields, as they can only be hidden, which results in line 27 using the int from class A."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h3", {
-    className: "blog_heading",
-    id: "schedule"
-  }, "Schedule"), "I can once again only recommend the", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://www.selikoff.net/2024/07/18/scheduling-the-a-java-certification-online-2024-edition/",
-    target: "_blank"
-  }, "guide"), " ", "from Selikoff. I recommend completing the system check and test exam beforehand to be comfortable when it comes to your actual exam attempt. The exam attempts can be rescheduled up until 24h prior to the exam and also taken quite spontaneously. When checking the website, I was always able to schedule my attempt ~1h in the future. That\u2019s what I did with my second attempt, as I decided on Tuesday evening to take the exam, scheduled it on Wednesday morning, and wrote it 1h later. The exam comes with a check-in time which starts 30min prior to the scheduled time. AFAIK, you need to check in within these 30min. The check-in is quickly done with verification and such (especially when you have checked your system the day prior). You can start your exam attempt as soon as this check-in is complete. Thus, I started my exam attempt initially scheduled for 09:00 (check-in starts at 08:30) at 08:35 and finished at 10:35.", /*#__PURE__*/react_default.a.createElement("h3", {
-    className: "blog_heading",
-    id: "examitself"
-  }, "Exam itself"), "The exam itself is quite unspectacular: 50 questions, 2h, and go-time. Within my first attempt, I had no issues. My second attempt was quite exciting. After ~45 questions, I got an error message saying my internet connection was not stable. I was thrown out of the exam and was not able to get back in. This was quite a shocker, as I had a great feeling about my run and was almost 90% sure that I would pass this time. I immediately opened a ticket at Oracle. My result was pending as my time was still running. After my exam timed out (and was submitted, which will happen automatically if the time runs out), I got my result and passed with 35 correct answers (out of 34 required; keep in mind I only answered ~45 questions). Happy result \u2014 including those 20 minutes between my internet issues and the result, which felt like forever.", /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 4: Which three individual lines of code can be uncommented without causing compilation errors?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
-    showLineNumbers: true,
-    wrapLongLines: "true",
-    className: "blog-code",
-    language: "java"
-  }, question4), /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["1"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See Results and Explaination",
-    key: "0"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_code"
-  }, "14, 15 and 17", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "We leave the easy questions behind and start with some Generics fun. ", /*#__PURE__*/react_default.a.createElement("br", null), " listA is a list of B or a supertype of B (such as A or Object). listB is a list of B or a child type of B (such as C). ", /*#__PURE__*/react_default.a.createElement("br", null), "Given this, lines 12 and 13 do not compile because listA could be a list of A or Object, and neither can be automatically cast down to a B or C. In contrast, lines 14 and 15 do compile because both are objects of type B (since C extends B, every C is also a B). As listA is guaranteed to handle at least type B, adding these is safe.", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Line 17 compiles because no matter what specific type listB is (B or C), it is always safe to treat an element from that list as a B. This is not true for line 18, as the list might be a", " ", /*#__PURE__*/react_default.a.createElement("code", null, "List<B>"), ", which could contain objects that are not of type C. Lines 19 and 20 do not compile because the list might be a ", /*#__PURE__*/react_default.a.createElement("code", null, "List<C>"), ", making it unsafe to add a B. It could even be a list of an even more specific subtype of C. While we can see there is no more specific implementation than C in this file, the compiler cannot assume this as class D could extend B."))), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("h3", {
-    className: "blog_heading",
-    id: "post"
-  }, "Post Exam"), "You will be sent an email with your result. You can access the result manually using the Oracle CertView website. They will also send you a detailed description of how to get your certification. Thus, I can say that after all the work,", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5167E634385288732DA3655451B71F33DEA9FF72D0588E4ECA6A1E0B5599FDA5",
-    target: "_blank"
-  }, "here it is!"), /*#__PURE__*/react_default.a.createElement("h2", {
-    className: "blog_heading",
-    id: "final"
-  }, "Final Thoughts"), "After all, was it worth it? I would say 100%. In hindsight, looking back at my Java knowledge prior to taking the OCP exam, I would say that now I know that I didn't know anything. Wherever this puts me (in the past and today) on the 'Mount Stupid' graph or the", " ", /*#__PURE__*/react_default.a.createElement("a", {
-    href: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
-    target: "_blank"
-  }, "Dunning-Kruger effect"), " ", "is something I\u2019ll have to think about in the future. The exam is \u2014 as everyone who takes it says in forums and blogs \u2014 really difficult, but I am quite sure I will try to complete the OCP 25 whenever it comes out. This seems like a good way to really understand all the new features implemented. I am happy my collegue asked me to do this exam and motivated me whenever I had motivation issues. Thank you! I would not agree with the AI saying that I personally have now reached an 'elite level of mastery in the Java language', but I definitely improved a lot. When it comes to my daily work, I haven't encountered Java concepts I did not know and fully understand in a long time. ", /*#__PURE__*/react_default.a.createElement("br", null), "A few weeks ago, I was assigned the ", /*#__PURE__*/react_default.a.createElement("i", null, "privilege"), " to maintain a legacy Java 8 project waiting for its final coffin dance. It contained all kinds of retired Java features, all of which I was familiar with. Additionally, I found lots of implementations which can be improved. If this conclusion changes, I will update it in the future. To whoever reads this and is currently studying for their own OCP exam: Good luck, you got this! ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Thank you for reading this blog. Please share your thoughts, comments and ideas using the", " ", /*#__PURE__*/react_default.a.createElement(react_router_dom_min["Link"], {
-    to: "/kontakt"
-  }, "contact options"), " on this website. ", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement(divider["a" /* default */], null), /*#__PURE__*/react_default.a.createElement("b", null, "Question 5: What is the output of this code?"), /*#__PURE__*/react_default.a.createElement(default_highlight, {
-    showLineNumbers: true,
-    wrapLongLines: "true",
-    className: "blog-code",
-    language: "java"
-  }, question5), /*#__PURE__*/react_default.a.createElement(collapse, {
-    defaultActiveKey: ["1"],
-    ghost: true
-  }, /*#__PURE__*/react_default.a.createElement(OCP21_Panel, {
-    header: "See Results and Explaination",
-    key: "0"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "blog_code"
-  }, "0", /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("br", null), "Did you see it? The stream may be long and look complicated, but it lacks a terminal operation. Since Java Streams are evaluated lazily, this stream is not executed at all. Note that if a terminal operation were added, the parallel stream would not cause any issues because an AtomicInteger is used. In that case, it would result in a count of 400."))), /*#__PURE__*/react_default.a.createElement("br", null)), /*#__PURE__*/react_default.a.createElement(Components["a" /* Footer */], null));
-};
-
-/* harmony default export */ var Blog_OCP21 = (OCP21_OCP21);
-// CONCATENATED MODULE: ./src/Classic/App.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var App_App = function App() {
-  var _useState = Object(react["useState"])("de"),
-      _useState2 = slicedToArray_default()(_useState, 2),
-      language = _useState2[0],
-      setLanguage = _useState2[1];
-
-  var getText = function getText(key) {
-    if (key in translations["a" /* translations */][language]) {
-      return translations["a" /* translations */][language][key];
-    }
-
-    return translations["a" /* translations */]["de"][key];
-  };
-
-  return /*#__PURE__*/react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "app"
-  }, /*#__PURE__*/react_default.a.createElement(helper["a" /* TranslationContext */].Provider, {
-    value: {
-      language: language,
-      locales: ["de", "en"],
-      setLanguage: setLanguage,
-      texts: translations["a" /* translations */],
-      getText: getText
-    }
-  }, /*#__PURE__*/react_default.a.createElement(react_router["Switch"], null, /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["f" /* Home */], {
-    game: false
-  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/projekte"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["i" /* Projects */], {
-    game: false
-  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/skills"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["k" /* Skills */], {
-    game: false
-  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/privat"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["a" /* AboutMe */], {
-    game: false
-  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/kontakt"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["d" /* Contact */], {
-    game: false
-  }))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/blog"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["c" /* Blog */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/blog/reisebericht-4-wochen-in-aveiro"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["b" /* Aveiro */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/blog/rustyrook"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["j" /* RustyRook */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/blog/ocp21"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Blog_OCP21, null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    exact: true,
-    path: "/impressum"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["g" /* Imprint */], null))), /*#__PURE__*/react_default.a.createElement(react_router["Route"], {
-    path: "/*"
-  }, /*#__PURE__*/react_default.a.createElement(Components["c" /* ScrollToTop */], null, /*#__PURE__*/react_default.a.createElement(Pages["h" /* NotFound */], null)))))));
-};
-
-/* harmony default export */ var Classic_App = (App_App);
-// CONCATENATED MODULE: ./src/Classic/index.js
-
-
-
-react_dom_default.a.render( /*#__PURE__*/react_default.a.createElement(Classic_App, null), document.getElementById('root'));
-
-/***/ }),
-/* 651 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(4);
-
-// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__(3);
-
-// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
-var slicedToArray = __webpack_require__(21);
-
-// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/typeof.js
-var esm_typeof = __webpack_require__(23);
-
-// EXTERNAL MODULE: ./node_modules/classnames/index.js
-var classnames = __webpack_require__(2);
-var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-
-// EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(30);
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js
-var context = __webpack_require__(138);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/DisabledContext.js
-var DisabledContext = __webpack_require__(80);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/SizeContext.js
-var SizeContext = __webpack_require__(79);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/space/Compact.js
-var Compact = __webpack_require__(111);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
-var reactNode = __webpack_require__(28);
-
-// EXTERNAL MODULE: ./node_modules/antd/es/_util/type.js
-var _util_type = __webpack_require__(33);
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-function _classCallCheck(a, n) {
-  if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
-}
-
-// EXTERNAL MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js + 1 modules
-var toPropertyKey = __webpack_require__(122);
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/createClass.js
-
-function _defineProperties(e, r) {
-  for (var t = 0; t < r.length; t++) {
-    var o = r[t];
-    o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, Object(toPropertyKey["a" /* default */])(o.key), o);
-  }
-}
-function _createClass(e, r, t) {
-  return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", {
-    writable: !1
-  }), e;
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
-function _assertThisInitialized(e) {
-  if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  return e;
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
-
-
-function _possibleConstructorReturn(t, e) {
-  if (e && ("object" == Object(esm_typeof["a" /* default */])(e) || "function" == typeof e)) return e;
-  if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
-  return _assertThisInitialized(t);
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
-function _isNativeReflectConstruct() {
-  try {
-    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-  } catch (t) {}
-  return (_isNativeReflectConstruct = function _isNativeReflectConstruct() {
-    return !!t;
-  })();
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
-function _getPrototypeOf(t) {
-  return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) {
-    return t.__proto__ || Object.getPrototypeOf(t);
-  }, _getPrototypeOf(t);
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
-function _setPrototypeOf(t, e) {
-  return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) {
-    return t.__proto__ = e, t;
-  }, _setPrototypeOf(t, e);
-}
-
-// CONCATENATED MODULE: ./node_modules/antd/node_modules/@babel/runtime/helpers/esm/inherits.js
-
-function _inherits(t, e) {
-  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
-  t.prototype = Object.create(e && e.prototype, {
-    constructor: {
-      value: t,
-      writable: !0,
-      configurable: !0
-    }
-  }), Object.defineProperty(t, "prototype", {
-    writable: !1
-  }), e && _setPrototypeOf(t, e);
-}
-
-// EXTERNAL MODULE: ./node_modules/rc-util/es/Dom/dynamicCSS.js
-var dynamicCSS = __webpack_require__(113);
-
-// EXTERNAL MODULE: ./node_modules/rc-util/es/ref.js
-var es_ref = __webpack_require__(19);
-
-// EXTERNAL MODULE: ./node_modules/rc-util/es/raf.js
-var raf = __webpack_require__(13);
-
-// CONCATENATED MODULE: ./node_modules/antd/es/_util/raf.js
-
-var id = 0;
-var ids = {};
-// Support call raf with delay specified frame
-function wrapperRaf(callback) {
-  var delayFrames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  var myId = id++;
-  var restFrames = delayFrames;
-  function internalCallback() {
-    restFrames -= 1;
-    if (restFrames <= 0) {
-      callback();
-      delete ids[myId];
-    } else {
-      ids[myId] = Object(raf["a" /* default */])(internalCallback);
-    }
-  }
-  ids[myId] = Object(raf["a" /* default */])(internalCallback);
-  return myId;
-}
-wrapperRaf.cancel = function cancel(pid) {
-  if (pid === undefined) return;
-  raf["a" /* default */].cancel(ids[pid]);
-  delete ids[pid];
-};
-wrapperRaf.ids = ids; // export this for test usage
-// CONCATENATED MODULE: ./node_modules/antd/es/_util/wave.js
-
-
-
-
-
-
-
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-
-
-
-
-
-
-var styleForPseudo;
-// Where el is the DOM element you'd like to test for visibility
-function isHidden(element) {
-  if (false) {}
-  return !element || element.offsetParent === null || element.hidden;
-}
-function getValidateContainer(nodeRoot) {
-  if (nodeRoot instanceof Document) {
-    return nodeRoot.body;
-  }
-  return Array.from(nodeRoot.childNodes).find(function (ele) {
-    return (ele === null || ele === void 0 ? void 0 : ele.nodeType) === Node.ELEMENT_NODE;
-  });
-}
-function isNotGrey(color) {
-  // eslint-disable-next-line no-useless-escape
-  var match = (color || '').match(/rgba?\((\d*), (\d*), (\d*)(, [\d.]*)?\)/);
-  if (match && match[1] && match[2] && match[3]) {
-    return !(match[1] === match[2] && match[2] === match[3]);
-  }
-  return true;
-}
-var wave_Wave = /*#__PURE__*/function (_React$Component) {
-  _inherits(Wave, _React$Component);
-  function Wave() {
-    var _this;
-    _classCallCheck(this, Wave);
-    _this = _callSuper(this, Wave, arguments);
-    _this.containerRef = /*#__PURE__*/react["createRef"]();
-    _this.animationStart = false;
-    _this.destroyed = false;
-    _this.onClick = function (node, waveColor) {
-      var _a, _b;
-      var _this$props = _this.props,
-        insertExtraNode = _this$props.insertExtraNode,
-        disabled = _this$props.disabled;
-      if (disabled || !node || isHidden(node) || node.className.includes('-leave')) {
-        return;
-      }
-      _this.extraNode = document.createElement('div');
-      var _assertThisInitialize = _assertThisInitialized(_this),
-        extraNode = _assertThisInitialize.extraNode;
-      var getPrefixCls = _this.context.getPrefixCls;
-      extraNode.className = "".concat(getPrefixCls(''), "-click-animating-node");
-      var attributeName = _this.getAttributeName();
-      node.setAttribute(attributeName, 'true');
-      // Not white or transparent or grey
-      if (waveColor && waveColor !== '#fff' && waveColor !== '#ffffff' && waveColor !== 'rgb(255, 255, 255)' && waveColor !== 'rgba(255, 255, 255, 1)' && isNotGrey(waveColor) && !/rgba\((?:\d*, ){3}0\)/.test(waveColor) &&
-      // any transparent rgba color
-      waveColor !== 'transparent') {
-        extraNode.style.borderColor = waveColor;
-        var nodeRoot = ((_a = node.getRootNode) === null || _a === void 0 ? void 0 : _a.call(node)) || node.ownerDocument;
-        var nodeBody = (_b = getValidateContainer(nodeRoot)) !== null && _b !== void 0 ? _b : nodeRoot;
-        styleForPseudo = Object(dynamicCSS["a" /* updateCSS */])("\n      [".concat(getPrefixCls(''), "-click-animating-without-extra-node='true']::after, .").concat(getPrefixCls(''), "-click-animating-node {\n        --antd-wave-shadow-color: ").concat(waveColor, ";\n      }"), 'antd-wave', {
-          csp: _this.csp,
-          attachTo: nodeBody
-        });
-      }
-      if (insertExtraNode) {
-        node.appendChild(extraNode);
-      }
-      ['transition', 'animation'].forEach(function (name) {
-        node.addEventListener("".concat(name, "start"), _this.onTransitionStart);
-        node.addEventListener("".concat(name, "end"), _this.onTransitionEnd);
-      });
-    };
-    _this.onTransitionStart = function (e) {
-      if (_this.destroyed) {
-        return;
-      }
-      var node = _this.containerRef.current;
-      if (!e || e.target !== node || _this.animationStart) {
-        return;
-      }
-      _this.resetEffect(node);
-    };
-    _this.onTransitionEnd = function (e) {
-      if (!e || e.animationName !== 'fadeEffect') {
-        return;
-      }
-      _this.resetEffect(e.target);
-    };
-    _this.bindAnimationEvent = function (node) {
-      if (!node || !node.getAttribute || node.getAttribute('disabled') || node.className.includes('disabled')) {
-        return;
-      }
-      var onClick = function onClick(e) {
-        // Fix radio button click twice
-        if (e.target.tagName === 'INPUT' || isHidden(e.target)) {
-          return;
-        }
-        _this.resetEffect(node);
-        // Get wave color from target
-        var waveColor = getComputedStyle(node).getPropertyValue('border-top-color') ||
-        // Firefox Compatible
-        getComputedStyle(node).getPropertyValue('border-color') || getComputedStyle(node).getPropertyValue('background-color');
-        _this.clickWaveTimeoutId = window.setTimeout(function () {
-          return _this.onClick(node, waveColor);
-        }, 0);
-        wrapperRaf.cancel(_this.animationStartId);
-        _this.animationStart = true;
-        // Render to trigger transition event cost 3 frames. Let's delay 10 frames to reset this.
-        _this.animationStartId = wrapperRaf(function () {
-          _this.animationStart = false;
-        }, 10);
-      };
-      node.addEventListener('click', onClick, true);
-      return {
-        cancel: function cancel() {
-          node.removeEventListener('click', onClick, true);
-        }
-      };
-    };
-    _this.renderWave = function (_ref) {
-      var csp = _ref.csp;
-      var children = _this.props.children;
-      _this.csp = csp;
-      if (! /*#__PURE__*/react["isValidElement"](children)) return children;
-      var ref = _this.containerRef;
-      if (Object(es_ref["c" /* supportRef */])(children)) {
-        ref = Object(es_ref["a" /* composeRef */])(children.ref, _this.containerRef);
-      }
-      return Object(reactNode["a" /* cloneElement */])(children, {
-        ref: ref
-      });
-    };
-    return _this;
-  }
-  _createClass(Wave, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.destroyed = false;
-      var node = this.containerRef.current;
-      if (!node || node.nodeType !== 1) {
-        return;
-      }
-      this.instance = this.bindAnimationEvent(node);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      if (this.instance) {
-        this.instance.cancel();
-      }
-      if (this.clickWaveTimeoutId) {
-        clearTimeout(this.clickWaveTimeoutId);
-      }
-      this.destroyed = true;
-    }
-  }, {
-    key: "getAttributeName",
-    value: function getAttributeName() {
-      var getPrefixCls = this.context.getPrefixCls;
-      var insertExtraNode = this.props.insertExtraNode;
-      return insertExtraNode ? "".concat(getPrefixCls(''), "-click-animating") : "".concat(getPrefixCls(''), "-click-animating-without-extra-node");
-    }
-  }, {
-    key: "resetEffect",
-    value: function resetEffect(node) {
-      var _this2 = this;
-      if (!node || node === this.extraNode || !(node instanceof Element)) {
-        return;
-      }
-      var insertExtraNode = this.props.insertExtraNode;
-      var attributeName = this.getAttributeName();
-      node.setAttribute(attributeName, 'false'); // edge has bug on `removeAttribute` #14466
-      if (styleForPseudo) {
-        styleForPseudo.innerHTML = '';
-      }
-      if (insertExtraNode && this.extraNode && node.contains(this.extraNode)) {
-        node.removeChild(this.extraNode);
-      }
-      ['transition', 'animation'].forEach(function (name) {
-        node.removeEventListener("".concat(name, "start"), _this2.onTransitionStart);
-        node.removeEventListener("".concat(name, "end"), _this2.onTransitionEnd);
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react["createElement"](context["a" /* ConfigConsumer */], null, this.renderWave);
-    }
-  }]);
-  return Wave;
-}(react["Component"]);
-wave_Wave.contextType = context["b" /* ConfigContext */];
-/* harmony default export */ var wave = (wave_Wave);
-// CONCATENATED MODULE: ./node_modules/antd/es/button/button-group.js
-
-
-var __rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-
-
-
-
-var GroupSizeContext = /*#__PURE__*/react["createContext"](undefined);
-var button_group_ButtonGroup = function ButtonGroup(props) {
-  var _React$useContext = react["useContext"](context["b" /* ConfigContext */]),
-    getPrefixCls = _React$useContext.getPrefixCls,
-    direction = _React$useContext.direction;
-  var customizePrefixCls = props.prefixCls,
-    size = props.size,
-    className = props.className,
-    others = __rest(props, ["prefixCls", "size", "className"]);
-  var prefixCls = getPrefixCls('btn-group', customizePrefixCls);
-  // large => lg
-  // small => sm
-  var sizeCls = '';
-  switch (size) {
-    case 'large':
-      sizeCls = 'lg';
-      break;
-    case 'small':
-      sizeCls = 'sm';
-      break;
-    case 'middle':
-    case undefined:
-      break;
-    default:
-       false ? undefined : void 0;
-  }
-  var classes = classnames_default()(prefixCls, Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])({}, "".concat(prefixCls, "-").concat(sizeCls), sizeCls), "".concat(prefixCls, "-rtl"), direction === 'rtl'), className);
-  return /*#__PURE__*/react["createElement"](GroupSizeContext.Provider, {
-    value: size
-  }, /*#__PURE__*/react["createElement"]("div", Object(esm_extends["a" /* default */])({}, others, {
-    className: classes
-  })));
-};
-/* harmony default export */ var button_group = (button_group_ButtonGroup);
-// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/LoadingOutlined.js + 1 modules
-var LoadingOutlined = __webpack_require__(94);
-
-// EXTERNAL MODULE: ./node_modules/rc-motion/es/index.js + 13 modules
-var es = __webpack_require__(46);
-
-// CONCATENATED MODULE: ./node_modules/antd/es/button/LoadingIcon.js
-
-
-
-var getCollapsedWidth = function getCollapsedWidth() {
-  return {
-    width: 0,
-    opacity: 0,
-    transform: 'scale(0)'
-  };
-};
-var getRealWidth = function getRealWidth(node) {
-  return {
-    width: node.scrollWidth,
-    opacity: 1,
-    transform: 'scale(1)'
-  };
-};
-var LoadingIcon_LoadingIcon = function LoadingIcon(_ref) {
-  var prefixCls = _ref.prefixCls,
-    loading = _ref.loading,
-    existIcon = _ref.existIcon;
-  var visible = !!loading;
-  if (existIcon) {
-    return /*#__PURE__*/react_default.a.createElement("span", {
-      className: "".concat(prefixCls, "-loading-icon")
-    }, /*#__PURE__*/react_default.a.createElement(LoadingOutlined["a" /* default */], null));
-  }
-  return /*#__PURE__*/react_default.a.createElement(es["a" /* default */], {
-    visible: visible,
-    // We do not really use this motionName
-    motionName: "".concat(prefixCls, "-loading-icon-motion"),
-    removeOnLeave: true,
-    onAppearStart: getCollapsedWidth,
-    onAppearActive: getRealWidth,
-    onEnterStart: getCollapsedWidth,
-    onEnterActive: getRealWidth,
-    onLeaveStart: getRealWidth,
-    onLeaveActive: getCollapsedWidth
-  }, function (_ref2, ref) {
-    var className = _ref2.className,
-      style = _ref2.style;
-    return /*#__PURE__*/react_default.a.createElement("span", {
-      className: "".concat(prefixCls, "-loading-icon"),
-      style: style,
-      ref: ref
-    }, /*#__PURE__*/react_default.a.createElement(LoadingOutlined["a" /* default */], {
-      className: className
-    }));
-  });
-};
-/* harmony default export */ var button_LoadingIcon = (LoadingIcon_LoadingIcon);
-// CONCATENATED MODULE: ./node_modules/antd/es/button/button.js
-
-
-
-
-var button_rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-/* eslint-disable react/button-has-type */
-
-
-
-
-
-
-
-
-
-
-
-
-
-var rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
-var isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
-function isString(str) {
-  return typeof str === 'string';
-}
-function isUnBorderedButtonType(type) {
-  return type === 'text' || type === 'link';
-}
-// Insert one space between two chinese characters automatically.
-function insertSpace(child, needInserted) {
-  // Check the child if is undefined or null.
-  if (child === null || child === undefined) {
-    return;
-  }
-  var SPACE = needInserted ? ' ' : '';
-  // strictNullChecks oops.
-  if (typeof child !== 'string' && typeof child !== 'number' && isString(child.type) && isTwoCNChar(child.props.children)) {
-    return Object(reactNode["a" /* cloneElement */])(child, {
-      children: child.props.children.split('').join(SPACE)
-    });
-  }
-  if (typeof child === 'string') {
-    return isTwoCNChar(child) ? /*#__PURE__*/react["createElement"]("span", null, child.split('').join(SPACE)) : /*#__PURE__*/react["createElement"]("span", null, child);
-  }
-  if (Object(reactNode["b" /* isFragment */])(child)) {
-    return /*#__PURE__*/react["createElement"]("span", null, child);
-  }
-  return child;
-}
-function spaceChildren(children, needInserted) {
-  var isPrevChildPure = false;
-  var childList = [];
-  react["Children"].forEach(children, function (child) {
-    var type = Object(esm_typeof["a" /* default */])(child);
-    var isCurrentChildPure = type === 'string' || type === 'number';
-    if (isPrevChildPure && isCurrentChildPure) {
-      var lastIndex = childList.length - 1;
-      var lastChild = childList[lastIndex];
-      childList[lastIndex] = "".concat(lastChild).concat(child);
-    } else {
-      childList.push(child);
-    }
-    isPrevChildPure = isCurrentChildPure;
-  });
-  // Pass to React.Children.map to auto fill key
-  return react["Children"].map(childList, function (child) {
-    return insertSpace(child, needInserted);
-  });
-}
-var ButtonTypes = Object(_util_type["a" /* tuple */])('default', 'primary', 'ghost', 'dashed', 'link', 'text');
-var ButtonShapes = Object(_util_type["a" /* tuple */])('default', 'circle', 'round');
-var ButtonHTMLTypes = Object(_util_type["a" /* tuple */])('submit', 'button', 'reset');
-function convertLegacyProps(type) {
-  if (type === 'danger') {
-    return {
-      danger: true
-    };
-  }
-  return {
-    type: type
-  };
-}
-var button_InternalButton = function InternalButton(props, ref) {
-  var _classNames;
-  var _props$loading = props.loading,
-    loading = _props$loading === void 0 ? false : _props$loading,
-    customizePrefixCls = props.prefixCls,
-    _props$type = props.type,
-    type = _props$type === void 0 ? 'default' : _props$type,
-    danger = props.danger,
-    _props$shape = props.shape,
-    shape = _props$shape === void 0 ? 'default' : _props$shape,
-    customizeSize = props.size,
-    customDisabled = props.disabled,
-    className = props.className,
-    children = props.children,
-    icon = props.icon,
-    _props$ghost = props.ghost,
-    ghost = _props$ghost === void 0 ? false : _props$ghost,
-    _props$block = props.block,
-    block = _props$block === void 0 ? false : _props$block,
-    _props$htmlType = props.htmlType,
-    htmlType = _props$htmlType === void 0 ? 'button' : _props$htmlType,
-    rest = button_rest(props, ["loading", "prefixCls", "type", "danger", "shape", "size", "disabled", "className", "children", "icon", "ghost", "block", "htmlType"]);
-  var size = react["useContext"](SizeContext["a" /* default */]);
-  // ===================== Disabled =====================
-  var disabled = react["useContext"](DisabledContext["a" /* default */]);
-  var mergedDisabled = customDisabled !== null && customDisabled !== void 0 ? customDisabled : disabled;
-  var groupSize = react["useContext"](GroupSizeContext);
-  var _React$useState = react["useState"](!!loading),
-    _React$useState2 = Object(slicedToArray["a" /* default */])(_React$useState, 2),
-    innerLoading = _React$useState2[0],
-    setLoading = _React$useState2[1];
-  var _React$useState3 = react["useState"](false),
-    _React$useState4 = Object(slicedToArray["a" /* default */])(_React$useState3, 2),
-    hasTwoCNChar = _React$useState4[0],
-    setHasTwoCNChar = _React$useState4[1];
-  var _React$useContext = react["useContext"](context["b" /* ConfigContext */]),
-    getPrefixCls = _React$useContext.getPrefixCls,
-    autoInsertSpaceInButton = _React$useContext.autoInsertSpaceInButton,
-    direction = _React$useContext.direction;
-  var buttonRef = ref || /*#__PURE__*/react["createRef"]();
-  var isNeedInserted = function isNeedInserted() {
-    return react["Children"].count(children) === 1 && !icon && !isUnBorderedButtonType(type);
-  };
-  var fixTwoCNChar = function fixTwoCNChar() {
-    // Fix for HOC usage like <FormatMessage />
-    if (!buttonRef || !buttonRef.current || autoInsertSpaceInButton === false) {
-      return;
-    }
-    var buttonText = buttonRef.current.textContent;
-    if (isNeedInserted() && isTwoCNChar(buttonText)) {
-      if (!hasTwoCNChar) {
-        setHasTwoCNChar(true);
-      }
-    } else if (hasTwoCNChar) {
-      setHasTwoCNChar(false);
-    }
-  };
-  // =============== Update Loading ===============
-  var loadingOrDelay = typeof loading === 'boolean' ? loading : (loading === null || loading === void 0 ? void 0 : loading.delay) || true;
-  react["useEffect"](function () {
-    var delayTimer = null;
-    if (typeof loadingOrDelay === 'number') {
-      delayTimer = window.setTimeout(function () {
-        delayTimer = null;
-        setLoading(loadingOrDelay);
-      }, loadingOrDelay);
-    } else {
-      setLoading(loadingOrDelay);
-    }
-    return function () {
-      if (delayTimer) {
-        // in order to not perform a React state update on an unmounted component
-        // and clear timer after 'loadingOrDelay' updated.
-        window.clearTimeout(delayTimer);
-        delayTimer = null;
-      }
-    };
-  }, [loadingOrDelay]);
-  react["useEffect"](fixTwoCNChar, [buttonRef]);
-  var handleClick = function handleClick(e) {
-    var onClick = props.onClick;
-    // https://github.com/ant-design/ant-design/issues/30207
-    if (innerLoading || mergedDisabled) {
-      e.preventDefault();
-      return;
-    }
-    onClick === null || onClick === void 0 ? void 0 : onClick(e);
-  };
-   false ? undefined : void 0;
-   false ? undefined : void 0;
-  var prefixCls = getPrefixCls('btn', customizePrefixCls);
-  var autoInsertSpace = autoInsertSpaceInButton !== false;
-  var _useCompactItemContex = Object(Compact["a" /* useCompactItemContext */])(prefixCls, direction),
-    compactSize = _useCompactItemContex.compactSize,
-    compactItemClassnames = _useCompactItemContex.compactItemClassnames;
-  var sizeClassNameMap = {
-    large: 'lg',
-    small: 'sm',
-    middle: undefined
-  };
-  var sizeFullname = compactSize || groupSize || customizeSize || size;
-  var sizeCls = sizeFullname ? sizeClassNameMap[sizeFullname] || '' : '';
-  var iconType = innerLoading ? 'loading' : icon;
-  var linkButtonRestProps = Object(omit["a" /* default */])(rest, ['navigate']);
-  var classes = classnames_default()(prefixCls, (_classNames = {}, Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(Object(defineProperty["a" /* default */])(_classNames, "".concat(prefixCls, "-").concat(shape), shape !== 'default' && shape), "".concat(prefixCls, "-").concat(type), type), "".concat(prefixCls, "-").concat(sizeCls), sizeCls), "".concat(prefixCls, "-icon-only"), !children && children !== 0 && !!iconType), "".concat(prefixCls, "-background-ghost"), ghost && !isUnBorderedButtonType(type)), "".concat(prefixCls, "-loading"), innerLoading), "".concat(prefixCls, "-two-chinese-chars"), hasTwoCNChar && autoInsertSpace && !innerLoading), "".concat(prefixCls, "-block"), block), "".concat(prefixCls, "-dangerous"), !!danger), "".concat(prefixCls, "-rtl"), direction === 'rtl'), Object(defineProperty["a" /* default */])(_classNames, "".concat(prefixCls, "-disabled"), linkButtonRestProps.href !== undefined && mergedDisabled)), compactItemClassnames, className);
-  var iconNode = icon && !innerLoading ? icon : ( /*#__PURE__*/react["createElement"](button_LoadingIcon, {
-    existIcon: !!icon,
-    prefixCls: prefixCls,
-    loading: !!innerLoading
-  }));
-  var kids = children || children === 0 ? spaceChildren(children, isNeedInserted() && autoInsertSpace) : null;
-  if (linkButtonRestProps.href !== undefined) {
-    return /*#__PURE__*/react["createElement"]("a", Object(esm_extends["a" /* default */])({}, linkButtonRestProps, {
-      className: classes,
-      onClick: handleClick,
-      ref: buttonRef
-    }), iconNode, kids);
-  }
-  var buttonNode = /*#__PURE__*/react["createElement"]("button", Object(esm_extends["a" /* default */])({}, rest, {
-    type: htmlType,
-    className: classes,
-    onClick: handleClick,
-    disabled: mergedDisabled,
-    ref: buttonRef
-  }), iconNode, kids);
-  if (isUnBorderedButtonType(type)) {
-    return buttonNode;
-  }
-  return /*#__PURE__*/react["createElement"](wave, {
-    disabled: !!innerLoading
-  }, buttonNode);
-};
-var Button = /*#__PURE__*/react["forwardRef"](button_InternalButton);
-if (false) {}
-Button.Group = button_group;
-Button.__ANT_BUTTON = true;
-/* harmony default export */ var button_button = (Button);
-// CONCATENATED MODULE: ./node_modules/antd/es/button/index.js
-
-/* harmony default export */ var es_button = __webpack_exports__["a"] = (button_button);
+/* harmony default export */ var collapse = __webpack_exports__["a"] = (collapse_Collapse);
 
 /***/ })
 /******/ ]);
