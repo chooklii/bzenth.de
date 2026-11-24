@@ -5,6 +5,7 @@ import { Row, Col, Button, Tabs  } from "antd";
 import { TranslationContext, keyGenerator } from "../helper";
 import {
   faArchive,
+  faBook,
   faBus,
   faChess,
   faChessPawn,
@@ -37,7 +38,7 @@ const projects = [
     icon: faGraduationCap,
     img: "gradulator",
   },
-    {
+  {
     name: "RustyRook",
     link: "https://bzenth.de/blog/rustyrook",
     link_name: "projects.rustyRook.blog",
@@ -47,7 +48,7 @@ const projects = [
     tech: "projects.rustyRook.tech",
     icon: faChess,
   },
-    {
+  {
     name: "simulationmodel",
     additionalLink: "https://github.com/chooklii/simulationmodel",
     additionalLink_name: "projects.code",
@@ -56,13 +57,20 @@ const projects = [
     icon: faFlask
   },
   {
-    name: "ÖPNV-Transparenzregister",
-    additionalLink: "https://background.tagesspiegel.de/verkehr-und-smart-mobility/briefing/oepnv-transparenzregister-geht-online",
-    additionalLink_name: "projects.opnv.press",
-    info: "projects.opnv.info",
-    tech: "projects.opnv.tech",
-    icon: faBus,
-    img: "opnv",
+    name: "Bookstore",
+    additionalLink: "https://github.com/chooklii/Bookstore",
+    additionalLink_name: "projects.code",
+    info: "projects.bookstore.info",
+    tech: "projects.bookstore.tech",
+    icon: faBook
+  },
+    {
+    name: "Lichess Hide Ratings Chrome Extension",
+    additionalLink: "https://github.com/chooklii/lichess-hide-rating-extension",
+    additionalLink_name: "projects.code",
+    info: "projects.lichess.info",
+    tech: "projects.lichess.tech",
+    icon: faChessPawn
   },
   {
     name: "hart-work.de",
@@ -71,6 +79,15 @@ const projects = [
     info: "projects.hartwork.info",
     icon: faDumbbell,
     img: "hartwork",
+  },
+    {
+    name: "ÖPNV-Transparenzregister",
+    additionalLink: "https://background.tagesspiegel.de/verkehr-und-smart-mobility/briefing/oepnv-transparenzregister-geht-online",
+    additionalLink_name: "projects.opnv.press",
+    info: "projects.opnv.info",
+    tech: "projects.opnv.tech",
+    icon: faBus,
+    img: "opnv",
   },
   {
     name: "Storagable",
@@ -99,14 +116,6 @@ const projects = [
     info: "projects.numwords-rust.info",
     tech: "projects.numwords-rust.tech",
     icon: faRust
-  },
-  {
-    name: "Lichess Hide Ratings Chrome Extension",
-    additionalLink: "https://github.com/chooklii/lichess-hide-rating-extension",
-    additionalLink_name: "projects.code",
-    info: "projects.lichess.info",
-    tech: "projects.lichess.tech",
-    icon: faChessPawn
   },
   {
     name: "Router Restarter",

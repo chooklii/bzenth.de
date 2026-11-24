@@ -130,6 +130,10 @@
             "tech": "Flask Application hosted on Heilbronn University Servers",
             "press": "Press release"
         },
+        "bookstore": {
+            "info": "Android Application to save all my read books with an rating, learning and comment",
+            "tech": "Android Application Jetpack Compose in Kotlin"
+        },
         "hartwork": {
             "info": "Reference from my time as a freelancer - physiotherapie website"
         },

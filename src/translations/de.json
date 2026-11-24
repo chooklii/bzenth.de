@@ -131,6 +131,10 @@
             "tech": "Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.",
             "press": "Pressemitteilung"
         },
+        "bookstore": {
+            "info": "Android Anwendung, um alle meine gelesenen Bücher zu speichern mit Bewertung, Kommentar und Learning",
+            "tech": "Android Anwending Jetpack Compose in Kotlin"
+        },
         "hartwork": {
             "info": "Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie"
         },
