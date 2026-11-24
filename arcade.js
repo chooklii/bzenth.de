@@ -1060,7 +1060,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faBomb */
 /* unused harmony export faBone */
 /* unused harmony export faBong */
-/* unused harmony export faBook */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faBook; });
 /* unused harmony export faBookDead */
 /* unused harmony export faBookMedical */
 /* unused harmony export faBookOpen */
@@ -1087,7 +1087,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faBullhorn */
 /* unused harmony export faBullseye */
 /* unused harmony export faBurn */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faBus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faBus; });
 /* unused harmony export faBusAlt */
 /* unused harmony export faBusinessTime */
 /* unused harmony export faCalculator */
@@ -1124,7 +1124,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faCartPlus */
 /* unused harmony export faCashRegister */
 /* unused harmony export faCat */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faCertificate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faCertificate; });
 /* unused harmony export faChair */
 /* unused harmony export faChalkboard */
 /* unused harmony export faChalkboardTeacher */
@@ -1138,12 +1138,12 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faCheckDouble */
 /* unused harmony export faCheckSquare */
 /* unused harmony export faCheese */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faChess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faChess; });
 /* unused harmony export faChessBishop */
 /* unused harmony export faChessBoard */
 /* unused harmony export faChessKing */
 /* unused harmony export faChessKnight */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faChessPawn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faChessPawn; });
 /* unused harmony export faChessQueen */
 /* unused harmony export faChessRook */
 /* unused harmony export faChevronCircleDown */
@@ -1154,7 +1154,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faChevronLeft */
 /* unused harmony export faChevronRight */
 /* unused harmony export faChevronUp */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faChild; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faChild; });
 /* unused harmony export faChurch */
 /* unused harmony export faCircle */
 /* unused harmony export faCircleNotch */
@@ -1163,7 +1163,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faClipboard */
 /* unused harmony export faClipboardCheck */
 /* unused harmony export faClipboardList */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faClock; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return faClock; });
 /* unused harmony export faClone */
 /* unused harmony export faClosedCaptioning */
 /* unused harmony export faCloud */
@@ -1204,7 +1204,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faCopyright */
 /* unused harmony export faCouch */
 /* unused harmony export faCreditCard */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return faCrop; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return faCrop; });
 /* unused harmony export faCropAlt */
 /* unused harmony export faCross */
 /* unused harmony export faCrosshairs */
@@ -1214,7 +1214,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faCube */
 /* unused harmony export faCubes */
 /* unused harmony export faCut */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return faDatabase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faDatabase; });
 /* unused harmony export faDeaf */
 /* unused harmony export faDemocrat */
 /* unused harmony export faDesktop */
@@ -1251,7 +1251,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faDrum */
 /* unused harmony export faDrumSteelpan */
 /* unused harmony export faDrumstickBite */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faDumbbell; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faDumbbell; });
 /* unused harmony export faDumpster */
 /* unused harmony export faDumpsterFire */
 /* unused harmony export faDungeon */
@@ -1272,7 +1272,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faExclamation */
 /* unused harmony export faExclamationCircle */
 /* unused harmony export faExclamationTriangle */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faExpand; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return faExpand; });
 /* unused harmony export faExpandAlt */
 /* unused harmony export faExpandArrowsAlt */
 /* unused harmony export faExternalLinkAlt */
@@ -1326,7 +1326,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faFlag */
 /* unused harmony export faFlagCheckered */
 /* unused harmony export faFlagUsa */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return faFlask; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return faFlask; });
 /* unused harmony export faFlushed */
 /* unused harmony export faFolder */
 /* unused harmony export faFolderMinus */
@@ -1341,7 +1341,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faFrownOpen */
 /* unused harmony export faFunnelDollar */
 /* unused harmony export faFutbol */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return faGamepad; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return faGamepad; });
 /* unused harmony export faGasPump */
 /* unused harmony export faGavel */
 /* unused harmony export faGem */
@@ -1361,7 +1361,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faGlobeEurope */
 /* unused harmony export faGolfBall */
 /* unused harmony export faGopuram */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return faGraduationCap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return faGraduationCap; });
 /* unused harmony export faGreaterThan */
 /* unused harmony export faGreaterThanEqual */
 /* unused harmony export faGrimace */
@@ -1423,7 +1423,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faHeadSideMask */
 /* unused harmony export faHeadSideVirus */
 /* unused harmony export faHeading */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return faHeadphones; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return faHeadphones; });
 /* unused harmony export faHeadphonesAlt */
 /* unused harmony export faHeadset */
 /* unused harmony export faHeart */
@@ -1451,7 +1451,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faHourglassHalf */
 /* unused harmony export faHourglassStart */
 /* unused harmony export faHouseDamage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return faHouseUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return faHouseUser; });
 /* unused harmony export faHryvnia */
 /* unused harmony export faICursor */
 /* unused harmony export faIceCream */
@@ -1461,7 +1461,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faIdCard */
 /* unused harmony export faIdCardAlt */
 /* unused harmony export faIgloo */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return faImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return faImage; });
 /* unused harmony export faImages */
 /* unused harmony export faInbox */
 /* unused harmony export faIndent */
@@ -1472,7 +1472,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faItalic */
 /* unused harmony export faJedi */
 /* unused harmony export faJoint */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return faJournalWhills; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return faJournalWhills; });
 /* unused harmony export faKaaba */
 /* unused harmony export faKey */
 /* unused harmony export faKeyboard */
@@ -1482,9 +1482,9 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faKissWinkHeart */
 /* unused harmony export faKiwiBird */
 /* unused harmony export faLandmark */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return faLanguage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return faLanguage; });
 /* unused harmony export faLaptop */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return faLaptopCode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return faLaptopCode; });
 /* unused harmony export faLaptopHouse */
 /* unused harmony export faLaptopMedical */
 /* unused harmony export faLaugh */
@@ -1549,7 +1549,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faMicrophoneAlt */
 /* unused harmony export faMicrophoneAltSlash */
 /* unused harmony export faMicrophoneSlash */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return faMicroscope; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return faMicroscope; });
 /* unused harmony export faMinus */
 /* unused harmony export faMinusCircle */
 /* unused harmony export faMinusSquare */
@@ -1571,7 +1571,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faMouse */
 /* unused harmony export faMousePointer */
 /* unused harmony export faMugHot */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return faMusic; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return faMusic; });
 /* unused harmony export faNetworkWired */
 /* unused harmony export faNeuter */
 /* unused harmony export faNewspaper */
@@ -1624,7 +1624,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faPills */
 /* unused harmony export faPizzaSlice */
 /* unused harmony export faPlaceOfWorship */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return faPlane; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return faPlane; });
 /* unused harmony export faPlaneArrival */
 /* unused harmony export faPlaneDeparture */
 /* unused harmony export faPlaneSlash */
@@ -1659,7 +1659,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faQuestionCircle */
 /* unused harmony export faQuidditch */
 /* unused harmony export faQuoteLeft */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return faQuoteRight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return faQuoteRight; });
 /* unused harmony export faQuran */
 /* unused harmony export faRadiation */
 /* unused harmony export faRadiationAlt */
@@ -1690,7 +1690,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faRulerCombined */
 /* unused harmony export faRulerHorizontal */
 /* unused harmony export faRulerVertical */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return faRunning; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return faRunning; });
 /* unused harmony export faRupeeSign */
 /* unused harmony export faSadCry */
 /* unused harmony export faSadTear */
@@ -1707,7 +1707,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faSearchMinus */
 /* unused harmony export faSearchPlus */
 /* unused harmony export faSeedling */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return faServer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return faServer; });
 /* unused harmony export faShapes */
 /* unused harmony export faShare */
 /* unused harmony export faShareAlt */
@@ -1736,7 +1736,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faSkating */
 /* unused harmony export faSkiing */
 /* unused harmony export faSkiingNordic */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return faSkull; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return faSkull; });
 /* unused harmony export faSkullCrossbones */
 /* unused harmony export faSlash */
 /* unused harmony export faSleigh */
@@ -1850,7 +1850,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faThumbsUp */
 /* unused harmony export faThumbtack */
 /* unused harmony export faTicketAlt */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return faTimes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return faTimes; });
 /* unused harmony export faTimesCircle */
 /* unused harmony export faTint */
 /* unused harmony export faTintSlash */
@@ -1898,7 +1898,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faUnlock */
 /* unused harmony export faUnlockAlt */
 /* unused harmony export faUpload */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return faUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return faUser; });
 /* unused harmony export faUserAlt */
 /* unused harmony export faUserAltSlash */
 /* unused harmony export faUserAstronaut */
@@ -1908,7 +1908,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faUserCog */
 /* unused harmony export faUserEdit */
 /* unused harmony export faUserFriends */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return faUserGraduate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return faUserGraduate; });
 /* unused harmony export faUserInjured */
 /* unused harmony export faUserLock */
 /* unused harmony export faUserMd */
@@ -1944,9 +1944,9 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faVoicemail */
 /* unused harmony export faVolleyballBall */
 /* unused harmony export faVolumeDown */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return faVolumeMute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return faVolumeMute; });
 /* unused harmony export faVolumeOff */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return faVolumeUp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return faVolumeUp; });
 /* unused harmony export faVoteYea */
 /* unused harmony export faVrCardboard */
 /* unused harmony export faWalking */
@@ -1957,7 +1957,7 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 /* unused harmony export faWeight */
 /* unused harmony export faWeightHanging */
 /* unused harmony export faWheelchair */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return faWifi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I", function() { return faWifi; });
 /* unused harmony export faWind */
 /* unused harmony export faWindowClose */
 /* unused harmony export faWindowMaximize */
@@ -8588,7 +8588,7 @@ var LanguageSwitch_LanguageSwitch = function LanguageSwitch() {
         value: localeOption,
         key: Object(helper["b" /* keyGenerator */])()
       }, /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["t" /* faLanguage */]
+        icon: free_solid_svg_icons_index_es["u" /* faLanguage */]
       }), /*#__PURE__*/react_default.a.createElement("span", {
         className: "localeText"
       }, getText("locales." + localeOption))));
@@ -16758,7 +16758,7 @@ var Home_Home = function Home() {
         value: localeOption,
         key: Object(helper["b" /* keyGenerator */])()
       }, /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["t" /* faLanguage */]
+        icon: free_solid_svg_icons_index_es["u" /* faLanguage */]
       }), /*#__PURE__*/react_default.a.createElement("span", {
         className: "localeText"
       }, getText("locales." + localeOption))));
@@ -16853,7 +16853,7 @@ var Credits_Credits = function Credits() {
     return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_game"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["w" /* faMusic */],
+      icon: free_solid_svg_icons_index_es["x" /* faMusic */],
       className: "icon_game"
     }), "Sounds"), /*#__PURE__*/react_default.a.createElement("p", {
       className: "game_text"
@@ -16866,7 +16866,7 @@ var Credits_Credits = function Credits() {
     }, "RPG Music Pack")), /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_game headingMargin"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["p" /* faHeadphones */],
+      icon: free_solid_svg_icons_index_es["q" /* faHeadphones */],
       className: "icon_game"
     }), "Namen der Lieder"), /*#__PURE__*/react_default.a.createElement("p", {
       className: "game_text"
@@ -16899,7 +16899,7 @@ var Credits_Credits = function Credits() {
     return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_game"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["r" /* faImage */],
+      icon: free_solid_svg_icons_index_es["s" /* faImage */],
       className: "icon_game"
     }), "Grafiken"), /*#__PURE__*/react_default.a.createElement("p", {
       className: "game_text"
@@ -16919,7 +16919,7 @@ var Credits_Credits = function Credits() {
     }, "Grafikpaket")), /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_game headingMargin"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["y" /* faQuoteRight */],
+      icon: free_solid_svg_icons_index_es["z" /* faQuoteRight */],
       className: "icon_game"
     }), "Textarten"), /*#__PURE__*/react_default.a.createElement("p", {
       className: "game_text"
@@ -22743,19 +22743,19 @@ var paper = [{
 var privato = [{
   heading: "aboutme.private.headings.age",
   content: "aboutme.private.content.age",
-  icon: free_solid_svg_icons_index_es["g" /* faChild */]
+  icon: free_solid_svg_icons_index_es["h" /* faChild */]
 }, {
   heading: "aboutme.private.headings.location",
   content: "aboutme.private.content.location",
-  icon: free_solid_svg_icons_index_es["q" /* faHouseUser */]
+  icon: free_solid_svg_icons_index_es["r" /* faHouseUser */]
 }, {
   heading: "aboutme.private.headings.sport_hobbies",
   content: "aboutme.private.content.sport_hobbies",
-  icon: free_solid_svg_icons_index_es["z" /* faRunning */]
+  icon: free_solid_svg_icons_index_es["A" /* faRunning */]
 }, {
   heading: "aboutme.private.headings.other_hobbies",
   content: "aboutme.private.content.other_hobbies",
-  icon: free_solid_svg_icons_index_es["n" /* faGamepad */]
+  icon: free_solid_svg_icons_index_es["o" /* faGamepad */]
 }];
 var certificates = [{
   key: "aboutme.certificates.ocp",
@@ -22776,7 +22776,7 @@ var moreCertificates = [{
   icon: faGoogle
 }, {
   key: "aboutme.certificates.07",
-  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  icon: free_solid_svg_icons_index_es["k" /* faDatabase */],
   link: "https://www.credly.com/badges/c87857ce-e482-4f55-b154-ceb2f2bd1ea3/public_url"
 }, {
   key: "aboutme.certificates.01",
@@ -22784,19 +22784,19 @@ var moreCertificates = [{
   link: "https://www.credly.com/badges/494363a8-f79c-4e22-a74d-7cdc072ce01d/public_url"
 }, {
   key: "aboutme.certificates.03",
-  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  icon: free_solid_svg_icons_index_es["k" /* faDatabase */],
   link: "https://www.credly.com/badges/f0c9c7d1-bc0a-459e-9935-8ed668dff40a/public_url"
 }, {
   key: "aboutme.certificates.04",
-  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  icon: free_solid_svg_icons_index_es["k" /* faDatabase */],
   link: "https://www.credly.com/badges/a0f6a19e-f5b0-4fc7-b2e3-8f60759f7855/public_url"
 }, {
   key: "aboutme.certificates.05",
-  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  icon: free_solid_svg_icons_index_es["k" /* faDatabase */],
   link: "https://www.credly.com/badges/b03f80f2-84be-45bd-bdf1-b93299db7bce/public_url"
 }, {
   key: "aboutme.certificates.06",
-  icon: free_solid_svg_icons_index_es["j" /* faDatabase */],
+  icon: free_solid_svg_icons_index_es["k" /* faDatabase */],
   link: "https://www.credly.com/badges/7fc6b2cf-b9e2-4268-9823-12786a0d916f/public_url"
 }];
 
@@ -22834,7 +22834,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
     }, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_classic"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["E" /* faUserGraduate */],
+      icon: free_solid_svg_icons_index_es["F" /* faUserGraduate */],
       className: "icon"
     }), getText("aboutme.headings.path")), /*#__PURE__*/react_default.a.createElement(es_steps, {
       progressDot: true,
@@ -22849,7 +22849,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
     }, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_classic"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["v" /* faMicroscope */],
+      icon: free_solid_svg_icons_index_es["w" /* faMicroscope */],
       className: "icon"
     }), getText("aboutme.headings.papers")), /*#__PURE__*/react_default.a.createElement(list, {
       itemLayout: "horizontal",
@@ -22857,7 +22857,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
       renderItem: function renderItem(item) {
         return /*#__PURE__*/react_default.a.createElement(list.Item, null, /*#__PURE__*/react_default.a.createElement(list.Item.Meta, {
           avatar: /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-            icon: free_solid_svg_icons_index_es["s" /* faJournalWhills */],
+            icon: free_solid_svg_icons_index_es["t" /* faJournalWhills */],
             size: "2x"
           }),
           title: getText(item.key),
@@ -22877,7 +22877,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
     }, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_classic"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["d" /* faCertificate */],
+      icon: free_solid_svg_icons_index_es["e" /* faCertificate */],
       className: "icon"
     }), getText("aboutme.headings.certificates")), /*#__PURE__*/react_default.a.createElement(list, {
       itemLayout: "horizontal",
@@ -22931,7 +22931,7 @@ var AboutMe_AboutMe = function AboutMe(props) {
     }, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_classic"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["D" /* faUser */],
+      icon: free_solid_svg_icons_index_es["E" /* faUser */],
       className: "icon"
     }), getText("aboutme.headings.private")), /*#__PURE__*/react_default.a.createElement(list, {
       itemLayout: "horizontal",
@@ -25185,7 +25185,7 @@ var projects = [{
   additionalLink_name: "projects.code",
   info: "projects.bzenth.info",
   tech: "projects.bzenth.tech",
-  icon: free_solid_svg_icons_index_es["D" /* faUser */],
+  icon: free_solid_svg_icons_index_es["E" /* faUser */],
   img: "bzenth"
 }, {
   name: "Gradulator",
@@ -25195,7 +25195,7 @@ var projects = [{
   additionalLink_name: "projects.code",
   info: "projects.gradulator.info",
   tech: "projects.gradulator.tech",
-  icon: free_solid_svg_icons_index_es["o" /* faGraduationCap */],
+  icon: free_solid_svg_icons_index_es["p" /* faGraduationCap */],
   img: "gradulator"
 }, {
   name: "RustyRook",
@@ -25205,29 +25205,43 @@ var projects = [{
   additionalLink_name: "projects.code",
   info: "projects.rustyRook.info",
   tech: "projects.rustyRook.tech",
-  icon: free_solid_svg_icons_index_es["e" /* faChess */]
+  icon: free_solid_svg_icons_index_es["f" /* faChess */]
 }, {
   name: "simulationmodel",
   additionalLink: "https://github.com/chooklii/simulationmodel",
   additionalLink_name: "projects.code",
   info: "projects.simulation.info",
   tech: "projects.simulation.tech",
-  icon: free_solid_svg_icons_index_es["m" /* faFlask */]
+  icon: free_solid_svg_icons_index_es["n" /* faFlask */]
+}, {
+  name: "Bookstore",
+  additionalLink: "https://github.com/chooklii/Bookstore",
+  additionalLink_name: "projects.code",
+  info: "projects.bookstore.info",
+  tech: "projects.bookstore.tech",
+  icon: free_solid_svg_icons_index_es["c" /* faBook */]
+}, {
+  name: "Lichess Hide Ratings Chrome Extension",
+  additionalLink: "https://github.com/chooklii/lichess-hide-rating-extension",
+  additionalLink_name: "projects.code",
+  info: "projects.lichess.info",
+  tech: "projects.lichess.tech",
+  icon: free_solid_svg_icons_index_es["g" /* faChessPawn */]
+}, {
+  name: "hart-work.de",
+  link: "https://hart-work.de/",
+  link_name: "projects.site",
+  info: "projects.hartwork.info",
+  icon: free_solid_svg_icons_index_es["l" /* faDumbbell */],
+  img: "hartwork"
 }, {
   name: "ÖPNV-Transparenzregister",
   additionalLink: "https://background.tagesspiegel.de/verkehr-und-smart-mobility/briefing/oepnv-transparenzregister-geht-online",
   additionalLink_name: "projects.opnv.press",
   info: "projects.opnv.info",
   tech: "projects.opnv.tech",
-  icon: free_solid_svg_icons_index_es["c" /* faBus */],
+  icon: free_solid_svg_icons_index_es["d" /* faBus */],
   img: "opnv"
-}, {
-  name: "hart-work.de",
-  link: "https://hart-work.de/",
-  link_name: "projects.site",
-  info: "projects.hartwork.info",
-  icon: free_solid_svg_icons_index_es["k" /* faDumbbell */],
-  img: "hartwork"
 }, {
   name: "Storagable",
   additionalLink: "https://github.com/chooklii/RouterRestarter",
@@ -25254,19 +25268,12 @@ var projects = [{
   tech: "projects.numwords-rust.tech",
   icon: faRust
 }, {
-  name: "Lichess Hide Ratings Chrome Extension",
-  additionalLink: "https://github.com/chooklii/lichess-hide-rating-extension",
-  additionalLink_name: "projects.code",
-  info: "projects.lichess.info",
-  tech: "projects.lichess.tech",
-  icon: free_solid_svg_icons_index_es["f" /* faChessPawn */]
-}, {
   name: "Router Restarter",
   additionalLink: "https://github.com/chooklii/RouterRestarter",
   additionalLink_name: "projects.code",
   info: "projects.router.info",
   tech: "projects.router.tech",
-  icon: free_solid_svg_icons_index_es["H" /* faWifi */]
+  icon: free_solid_svg_icons_index_es["I" /* faWifi */]
 }, {
   name: "bool-to-yes-no",
   link: "https://www.npmjs.com/package/bool-to-yesno",
@@ -26107,7 +26114,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["u" /* faLaptopCode */]
+    icon: free_solid_svg_icons_index_es["v" /* faLaptopCode */]
   }), " ", getText("skills.programming"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, programmingLanguages.map(function (single) {
@@ -26122,7 +26129,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["i" /* faCrop */]
+    icon: free_solid_svg_icons_index_es["j" /* faCrop */]
   }), " ", getText("skills.frameworks"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, frameworks.map(function (single) {
@@ -26137,7 +26144,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["j" /* faDatabase */]
+    icon: free_solid_svg_icons_index_es["k" /* faDatabase */]
   }), " ", getText("skills.databases"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, databases.map(function (single) {
@@ -26152,7 +26159,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["A" /* faServer */]
+    icon: free_solid_svg_icons_index_es["B" /* faServer */]
   }), " ", getText("skills.technology"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, technologies.map(function (single) {
@@ -26167,7 +26174,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["o" /* faGraduationCap */]
+    icon: free_solid_svg_icons_index_es["p" /* faGraduationCap */]
   }), " ", getText("skills.other"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, other.map(function (single) {
@@ -26182,7 +26189,7 @@ var Skills_Skills = function Skills(props) {
   }, /*#__PURE__*/react_default.a.createElement("h2", {
     className: "skills-heading"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-    icon: free_solid_svg_icons_index_es["t" /* faLanguage */]
+    icon: free_solid_svg_icons_index_es["u" /* faLanguage */]
   }), " ", getText("skills.language"), ":"), /*#__PURE__*/react_default.a.createElement("div", {
     className: "skills-one-category"
   }, languages.map(function (single) {
@@ -26209,19 +26216,19 @@ var Blog_Blog = function Blog() {
     to: "/blog/reisebericht-4-wochen-in-aveiro"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
     className: "icon",
-    icon: free_solid_svg_icons_index_es["x" /* faPlane */]
+    icon: free_solid_svg_icons_index_es["y" /* faPlane */]
   }), "4 Wochen in Aveiro"), /*#__PURE__*/react_default.a.createElement(react_router_dom_min["Link"], {
     className: "link_blog",
     to: "/blog/rustyrook"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
     className: "icon",
-    icon: free_solid_svg_icons_index_es["e" /* faChess */]
+    icon: free_solid_svg_icons_index_es["f" /* faChess */]
   }), "RustyRook - Chess Engine"), /*#__PURE__*/react_default.a.createElement(react_router_dom_min["Link"], {
     className: "link_blog",
     to: "/blog/ocp21"
   }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
     className: "icon",
-    icon: free_solid_svg_icons_index_es["u" /* faLaptopCode */]
+    icon: free_solid_svg_icons_index_es["v" /* faLaptopCode */]
   }), "Java SE 21 Developer Professional")), /*#__PURE__*/react_default.a.createElement(Components["a" /* Footer */], null));
 };
 
@@ -272463,13 +272470,13 @@ module.exports = function isEqual(a, b) {
 /* 171 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"07\":\"MongoDB Overview: Core Concepts and Architecture\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\",\"moreCertificates\":\"show more Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Normal Webseite\",\"info\":\"Normal Website - All Pages are available.\",\"alt\":\"A person with dark hair sitting in front of an iMac, shot from behind. The image of the monitor is blurred. The Image is a Cartoon which was created by KI\",\"button\":\"Classic Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Play a Jump and Run Game and unlock pages by finishing levels.\",\"button\":\"Play the Arcade Modus\"}},\"skills\":{\"programming\":\"Programming languages\",\"frameworks\":\"Frameworks\",\"databases\":\"Databases\",\"technology\":\"other technologies\",\"other\":\"other skills\",\"language\":\"Languages\"},\"header\":{\"projects\":\"Projects\",\"skills\":\"Skills\",\"aboutMe\":\"About me\",\"contact\":\"Contact\",\"blog\":\"Blog\",\"imprint\":\"Imprint\"},\"locales\":{\"de\":\"German\",\"en\":\"English\"},\"aboutme\":{\"path\":{\"10\":\"IT Team lead software development at Bechtle AG\",\"11\":\"Freelancer\",\"12\":\"Software Engineer at Bechtle AG\",\"13\":\"Senior Backend Engineer at Public Value Technologies GmbH\",\"01\":\"training as an industrial clerk\",\"02\":\"Evening school technical college entrance qualification\",\"03\":\"Bachelor's degree Business informatics\",\"04\":\"Working student application developer at Bechtle AG\",\"05\":\"Bachelor thesis: 'Selection and implementation of a front-end error reporting application' - with: Bechtle AG\",\"06\":\"Full Time Software Engineer at Bechtle AG\",\"07\":\"Masters-degree Business Informatics - Information Management and Data Science\",\"08\":\"Masterthesis: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Software Engineer at Bechtle AG\"},\"paper\":{\"01\":\"Modelling and simulating the scalability of e-commerce web application architectures\",\"02\":\"Identification and classification of data architectures\",\"03\":\"IT Quality Management in the Context of Information Management - A State-of-the-Art Consideration\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Grundlagen des Onlinemarketings\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"07\":\"MongoDB Overview: Core Concepts and Architecture\",\"link\":\"Verifikationslink\",\"devoxx\":\"Devoxx Belgium 2023\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Age\",\"location\":\"Location\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Other Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Area of Öhringen, Germany\",\"sport_hobbies\":\"Running, Cycling, Swimming and general interests for all kinds of sports\",\"other_hobbies\":\"Chess, Learning Portugues, Darts, Reading Books, Private Development Projekts and Gaming\"}},\"headings\":{\"path\":\"Career\",\"papers\":\"Scientific publications\",\"private\":\"Privat\",\"zertificates\":\"Certificates and Conferences\",\"moreCertificates\":\"show more Certificates and Conferences\"},\"alt_img_one\":\"Picture of me within an old telephone booth\",\"alt_img_two\":\"Picture of me within an old telephone booth\"},\"contact\":{\"text\":\"For interest, questions, non-binding enquiries, or other concerns, please use one of the following communication channels\",\"text_game\":\"Congratulations! All levels have been successfully completed. Please let me know that you have completed all levels. If you liked the page, or if you are interested in contacting me for any other reason you are interested in contacting me, you will find the appropriate you will find the corresponding possibilities. Feel free to add me to your contacts on LinkedIn.\",\"alt_game\":\"Two happy kids sitting in front of a laptop. Both celebrate and one is pointing on the screen.\",\"alt\":\"Picture of me within an old telephone booth\"},\"imprint\":{\"01\":\"The free and freely accessible contents of this website have been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and freely accessible journalistic guides and news. Contributions identified by name reflect the opinion of the respective author and not always the opinion of the provider. Calling up the free and freely accessible content alone does not establish any contractual relationship between the user and the provider; in this respect, the provider's intention to be legally bound is lacking.\",\"02\":\"This website contains links to third-party websites (`'external links'). These websites are subject to the liability of the respective operators. When the external links were first created, the provider checked the external content for any legal violations. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as its own. It is not reasonable for the provider to constantly monitor the external links without concrete indications of legal violations. However, if legal violations become known, such external links will be deleted immediately.\",\"03\":\"The content published on this website is subject to German copyright and ancillary copyright law. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the copying, editing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Third-party content and rights are marked as such. The unauthorised reproduction or transmission of individual contents or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted. The display of this website in external frames is only permitted with written permission.\",\"04\":\"This website does not store or process any data entered or uploaded by the user. This website is hosted on Github Pages (https://pages.github.com/), provided by Github Inc, 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. For further information on the handling of user data, please refer to Github's privacy policy (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).\",\"01_heading\":\"content warning\",\"02_heading\":\"external links\",\"03_heading\":\"Copyright and neighbouring rights\",\"04_heading\":\"data privacy\",\"source\":\"Source\"},\"projects\":{\"links\":\"Links\",\"info\":\"Description\",\"tech\":\"Technology\",\"code\":\"Source Code\",\"site\":\"Website\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"My own website. Split into a regular page and an arcade-mode.\",\"tech\":\"Javascript with React.js. Bundled in two packages (Webseite + Arcade) using Webpack. Hosted on Github-Pages\"},\"gradulator\":{\"info\":\"Webapplication to calculate the current average grade of your Heilbronn University degree\",\"tech\":\"Typescript with React.js. Bundled using Webpack and hosted on Github-Pages. Due to data security all calculations are done in client-side.\"},\"opnv\":{\"info\":\"Projekt within my last bachelor semester at Heilbronn University. Tool to display and show costs of public transport in germany.\",\"tech\":\"Flask Application hosted on Heilbronn University Servers\",\"press\":\"Press release\"},\"bookstore\":{\"info\":\"Android Application to save all my read books with an rating, learning and comment\",\"tech\":\"Android Application Jetpack Compose in Kotlin\"},\"hartwork\":{\"info\":\"Reference from my time as a freelancer - physiotherapie website\"},\"numwords\":{\"info\":\"NPM package to convert numbers into their equivalent german language word\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust crate to convert u32 numbers into their equivalent german language word\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM package to convert booleans into true/false in a given language\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension to hide ratings during games on lichess.org\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Script to restart a vodafone-router at a given time of the day\",\"tech\":\"Python with Selenium\"},\"storagable\":{\"info\":\"Application to access external storage within the own home-network. Used to backup images from the smartphone and access data from a given harddrive\",\"tech\":\"Javascript with React in the Frontend - Express Backend\"},\"simulation\":{\"info\":\"Part of my masterthesis. Predict the scalability of a application by only using a few parameters (pareto principle)\",\"tech\":\"Python with the framework simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine playing on Lichess\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyGerman\":\"This Page is only available in German Language\",\"onlyEnglish\":\"\"}}");
 
 /***/ }),
 /* 172 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\",\"moreCertificates\":\"weitere Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"07\":\"MongoDB Overview: Core Concepts and Architecture\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
+module.exports = JSON.parse("{\"home\":{\"classic\":{\"heading\":\"Klassische Webseite\",\"info\":\"Normale Webseite - Alle Inhalte direkt verfügbar.\",\"alt\":\"Eine Person mit dunkeln Haaren, die von hinten aufgenommen vor einem PC sitzt. Das Bild es Monitors ist unscharf. Das Bild ist ein KI-generiertes Cartoon\",\"button\":\"Zur Webseite\"},\"arcade\":{\"heading\":\"Arcade Modus\",\"info\":\"Spiele einzelne Seiten frei, indem Jump and Run Level abgeschlossen werden.\",\"alt\":\"Videoaufnahme des Arcade-Modus. Der Modus ist ein 2D Jump and Run Spiel\",\"button\":\"Zum Arcade Modus\"}},\"skills\":{\"programming\":\"Programmiersprachen\",\"frameworks\":\"Frameworks\",\"databases\":\"Datenbanken\",\"technology\":\"weitere Technologien\",\"other\":\"sonstige Skills\",\"language\":\"Sprachen\"},\"header\":{\"projects\":\"Projekte\",\"skills\":\"Skills\",\"aboutMe\":\"Über mich\",\"contact\":\"Kontakt\",\"blog\":\"Blog\",\"imprint\":\"Impressum\"},\"locales\":{\"de\":\"Deutsch\",\"en\":\"Englisch\"},\"aboutme\":{\"path\":{\"10\":\"Teamleiter Softwareentwicklung Bechtle AG\",\"11\":\"Freiberuflicher Softwareentwickler\",\"12\":\"Softwareingenieur Bechtle AG\",\"13\":\"Senior Backend Engineer Public Value Technologies GmbH\",\"01\":\"Ausbildung zum Industriekaufmann\",\"02\":\"Abendschule Fachhochschulreife\",\"03\":\"Bachelorstudium Wirtschaftsinformatik\",\"04\":\"Werksstudent Anwendungsentwickler Bechtle AG\",\"05\":\"Bachelorthesis: Selektion und Einführung einer Front-End Error Reporting Anwendung - bei: Bechtle AG\",\"06\":\"Vollzeit Softwareingenieur Bechtle AG\",\"07\":\"Master Wirtschaftsinformatik - Informationsmanagement und Data Science\",\"08\":\"Masterarbeit: Modelling and Simulating the scalability of web application architectures\",\"09\":\"Softwareingenieur Bechtle AG\"},\"paper\":{\"01\":\"Modellierung und Simulation der Skalierbarkeit von Softwarearchitekturen von E-Commerce Webanwendungen\",\"02\":\"Identifikation und Klassifizierung von Datenarchitekturen\",\"03\":\"IT-Qualitätsmanagement im Rahmen des Informationsmanagements - Eine State-of-the-Art Betrachtung\"},\"headings\":{\"path\":\"Werdegang\",\"papers\":\"Wissenschaftliche Publikationen\",\"private\":\"Privat\",\"certificates\":\"Zertifikate und Konferenzen\",\"moreCertificates\":\"weitere Zertifikate und Konferenzen\"},\"certificates\":{\"01\":\"Gitlab Certified Associate\",\"02\":\"Fundamentals of online marketing\",\"03\":\"CRUD Operations in MongoDB\",\"04\":\"From Relational Model (SQL) to MongoDBs Document Model\",\"05\":\"MongoDB Schema Design Patterns and Anti-patterns Skill Badge\",\"06\":\"MongoDB Indexing Design Fundamentals\",\"07\":\"MongoDB Overview: Core Concepts and Architecture\",\"link\":\"Verification\",\"devoxx\":\"Devoxx 2023, Antwerpen\",\"react\":\"React Summit 2022, Amsterdam\",\"js\":\"JS-Nation 2022, Amsterdam\",\"ocp\":\"Oracle Certified Professional: Java SE 21 Developer\"},\"private\":{\"headings\":{\"age\":\"Alter\",\"location\":\"Wohnort\",\"sport_hobbies\":\"Sport Hobbies\",\"other_hobbies\":\"Andere Hobbies\"},\"content\":{\"age\":\"29\",\"location\":\"Raum Öhringen, Deutschland\",\"sport_hobbies\":\"Joggen, Radfahren, Schwimmen und allgemeines Interesse an fast jeder Sportart\",\"other_hobbies\":\"Schach, Portugisisch Lernen, Dart, Lesen, Private Entwicklungsprojekte und Videospiele\"}},\"alt_img_one\":\"Bild von mir in einer alten Telefonzelle\",\"alt_img_two\":\"Bild von mir in einer alten Telefonzelle\"},\"contact\":{\"text\":\"Bei Interesse, Fragen, unverbindlichen Anfragen oder sonstigen Anliegen bitte einen der folgenden Kommunikationskanäle verwenden\",\"text_game\":\"Glückwunsch! Alle Level wurden erfolgreich abgeschlossen. Lasse mich gerne wissen, dass du alle Level geschafft hast. Sollte dir die Seite gefallen haben, oder aus sonstigen Gründen Interesse an einer Kontaktaufnahme besteht sind findest du unterhalb entsprechende Möglichkeiten dazu. Füge mich gerne auch auf LinkedIn zu deinen Kontakten hinzu.\",\"alt_game\":\"Zwei glückliche Kinder vor einem Laptop. Beide freuen sich und das eine zeigt mit der Hand auf den Bildschirm.\",\"alt\":\"Bild von mir in einer alten Telefonzelle\"},\"imprint\":{\"01\":\"Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.\",\"02\":\"Diese Website enthält Verknüpfungen zu Websites Dritter ('externe Links'). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.\",\"03\":\"Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.\",\"04\":\"Diese Webseite speichert oder verarbeitet keine der von dem Nutzer eingegebenen oder hochgeladenen Daten. Gehostet wird diese Webseite über Github Pages (https://pages.github.com/), bereitgestellt von Github Inc., 88 Colin P Kerry Jr St, San Francisco, CA 94107, United States. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Github (https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)\",\"01_heading\":\"Warnhinweis zu Inhalten\",\"02_heading\":\"Externe Links\",\"03_heading\":\"Urheber- und Leistungsschutzrechte\",\"04_heading\":\"Datenschutz\",\"source\":\"Quelle\"},\"projects\":{\"links\":\"Links\",\"info\":\"Beschreibung\",\"tech\":\"Technologie\",\"code\":\"Programmcode\",\"site\":\"Webseite\",\"alt\":\"Image of the Website\",\"npm\":\"NPM\",\"rust\":\"Crate\",\"bzenth\":{\"info\":\"Persönliche Webseite. Zweigeteilt in reguläre Webseite und Arcade-Modus\",\"tech\":\"Javascript mit React.js. Bundled in zwei Paketen (Webseite + Arcade) mit Webpack. Hosted auf Github-Pages\"},\"gradulator\":{\"info\":\"Webanwendung um durch einfachen Upload des eigenen Notenspiegels den aktuellen Schnitt nach Prüfungsordnung der Hochschule Heilbronn zu erhalten\",\"tech\":\"Typescript mit React.js. Bundled mit Webpack und hosted auf Github-Pages. Alle Berechnungen finden aus Datenschutzgründen auf dem Client statt.\"},\"opnv\":{\"info\":\"Studienprojekt im 7. Semester. Transparente Anzeige von Kosten für den regionalen Nahverkehr je Kommune.\",\"tech\":\"Flask Anwendung gehostet auf den Servern der Hochschule Heilbronn.\",\"press\":\"Pressemitteilung\"},\"bookstore\":{\"info\":\"Android Anwendung, um alle meine gelesenen Bücher zu speichern mit Bewertung, Kommentar und Learning\",\"tech\":\"Android Anwending Jetpack Compose in Kotlin\"},\"hartwork\":{\"info\":\"Beispielhafte Referenz für meine Zeit als Freelancer - Webseite einer lokalen Physiotherapie\"},\"numwords\":{\"info\":\"NPM Paket, um Zahlen in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"numwords-rust\":{\"info\":\"Rust Crate, um u32 Integer in das entsprechende Wort der Deutschen Sprache umzuwandeln\",\"tech\":\"Rust\"},\"bool\":{\"info\":\"NPM Paket, um Booleans in das entsprechende Wort der gewünschten Sprache umzuwandeln\",\"tech\":\"Javascript\"},\"lichess\":{\"info\":\"Google Chrome Extension um Ratings während Schachspielen auf lichess.org nicht anzuzeigen\",\"tech\":\"Javascript\"},\"router\":{\"info\":\"Skript um automatisiert Vodafone-Router neuzustarten.\",\"tech\":\"Python mit Selenium\"},\"storagable\":{\"info\":\"Anwendung um im lokalen Netzwerk auf Festplatten zuzugreifen (am Raspberry Pi) und vom Handy Daten zu sichern und abzurufen (Inkl. Sync auf NAS-Server)\",\"tech\":\"Javascript mit React im FE - Express Backend. \"},\"simulation\":{\"info\":\"Teil meiner Masterarbeit - Model um die Skalierbarkeit einer Software auf Basis weniger Parameter grob zu berechnen (Pareto Prinzip)\",\"tech\":\"Python unter Verwendung von Simpy\"},\"rustyRook\":{\"info\":\"UCI Schach Engine, welche auf Lichess spielt\",\"tech\":\"Rust\",\"blog\":\"Blog\"}},\"blog\":{\"onlyEnglish\":\"Dieser Blogeintrag ist nur in Englisch verfügbar\",\"onlyGerman\":\"\"}}");
 
 /***/ }),
 /* 173 */
@@ -331177,7 +331184,7 @@ var GameHome_GameHome = function GameHome() {
         value: localeOption,
         key: Object(helper["b" /* keyGenerator */])()
       }, /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["t" /* faLanguage */]
+        icon: free_solid_svg_icons_index_es["u" /* faLanguage */]
       }), /*#__PURE__*/react_default.a.createElement("span", {
         className: "localeText"
       }, getText("locales." + localeOption))));
@@ -331319,17 +331326,17 @@ var GameHome_GameHome = function GameHome() {
       }, /*#__PURE__*/react_default.a.createElement("span", {
         className: "icon_game"
       }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["h" /* faClock */],
+        icon: free_solid_svg_icons_index_es["i" /* faClock */],
         className: "icon"
       }), levelData.record ? levelData.record / 1000 + "s" : "-"), /*#__PURE__*/react_default.a.createElement("span", {
         className: "icon_game"
       }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["l" /* faExpand */],
+        icon: free_solid_svg_icons_index_es["m" /* faExpand */],
         className: "icon"
       }), levelData.screenSize), /*#__PURE__*/react_default.a.createElement("span", {
         className: "icon_game"
       }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-        icon: free_solid_svg_icons_index_es["B" /* faSkull */],
+        icon: free_solid_svg_icons_index_es["C" /* faSkull */],
         className: "icon"
       }), levelData.deaths)));
     }
@@ -331416,7 +331423,7 @@ var GameHome_GameHome = function GameHome() {
         setMusicPlaying(!music_playing);
       }
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: music_playing ? free_solid_svg_icons_index_es["G" /* faVolumeUp */] : free_solid_svg_icons_index_es["F" /* faVolumeMute */]
+      icon: music_playing ? free_solid_svg_icons_index_es["H" /* faVolumeUp */] : free_solid_svg_icons_index_es["G" /* faVolumeMute */]
     }));
   };
 
@@ -331428,7 +331435,7 @@ var GameHome_GameHome = function GameHome() {
     }, /*#__PURE__*/react_default.a.createElement("h2", {
       className: "heading_game"
     }, /*#__PURE__*/react_default.a.createElement(index_es["a" /* FontAwesomeIcon */], {
-      icon: free_solid_svg_icons_index_es["C" /* faTimes */],
+      icon: free_solid_svg_icons_index_es["D" /* faTimes */],
       className: "icon_game"
     }), config_translation[language].screenToSmall), /*#__PURE__*/react_default.a.createElement("p", {
       className: "game_text"
